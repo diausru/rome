@@ -1,0 +1,219 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Tax Secrets Reels</title>
+<style>
+@font-face{font-family:Mont;font-weight:100 900;src:url(fonts/Montserrat-var.woff2) format('woff2')}
+@font-face{font-family:Tape;font-weight:400;src:url(fonts/CourierPrime-400.woff2) format('woff2')}
+@font-face{font-family:Tape;font-weight:700;src:url(fonts/CourierPrime-700.woff2) format('woff2')}
+html,body{margin:0;background:#000}
+#view{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Mont;background:#000}
+#cam{position:absolute;left:0;top:0;transform-origin:0 0}
+#cam > *{position:absolute;left:0;top:0;transform-origin:0 0}
+.tex{overflow:hidden}
+.card{position:absolute;left:30px;border-radius:30px;box-sizing:border-box;display:flex;align-items:center;gap:26px;padding:0 34px}
+.num{flex:none;width:86px;height:86px;border-radius:50%;background:#1E9E57;color:#fff;font-weight:800;font-size:50px;display:flex;align-items:center;justify-content:center}
+.ttl{font-weight:800;font-size:54px;line-height:1.05}
+.sub{font-weight:600;font-size:32px;margin-top:8px}
+.green{color:#1E9E57}
+#hud{position:absolute;inset:0;pointer-events:none}
+</style>
+<div id="view"><div id="cam"></div><div id="hud"></div></div>
+<script>
+// Faceless Shorts on photoreal plates. Every frame is a pure function of t: window.seek(t).
+// Plates: AI-generated photos (no text baked in, except glassv whose title/cards are reused).
+// Facts on screen are from canada.ca "Options for your own RRSPs" (RRSP options at 71).
+const V = new URLSearchParams(location.search).get('v') || 'glass';
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, p) => a + (b - a) * p;
+function spring(t, k = 120, d = 22) {
+  if (t <= 0) return 0;
+  const w0 = Math.sqrt(k), z = d / (2 * w0);
+  if (z < 1) { const wd = w0 * Math.sqrt(1 - z * z);
+    return 1 - Math.exp(-z * w0 * t) * (Math.cos(wd * t) + (z * w0 / wd) * Math.sin(wd * t)); }
+  return 1 - Math.exp(-w0 * t) * (1 + w0 * t);
+}
+function track(t, keys, k = 30, d = 11) {
+  let v = keys[0][1];
+  for (let i = 1; i < keys.length; i++) v += (keys[i][1] - keys[i - 1][1]) * spring(t - keys[i][0], k, d);
+  return v;
+}
+
+// ---------- perspective: map a w×h element onto 4 points (TL, TR, BR, BL) ----------
+function adj(m) { return [m[4]*m[8]-m[5]*m[7], m[2]*m[7]-m[1]*m[8], m[1]*m[5]-m[2]*m[4], m[5]*m[6]-m[3]*m[8], m[0]*m[8]-m[2]*m[6], m[2]*m[3]-m[0]*m[5], m[3]*m[7]-m[4]*m[6], m[1]*m[6]-m[0]*m[7], m[0]*m[4]-m[1]*m[3]]; }
+function mm(a, b) { const c = []; for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) { let s = 0; for (let k = 0; k < 3; k++) s += a[3*i+k]*b[3*k+j]; c[3*i+j] = s; } return c; }
+function mv(m, v) { return [m[0]*v[0]+m[1]*v[1]+m[2]*v[2], m[3]*v[0]+m[4]*v[1]+m[5]*v[2], m[6]*v[0]+m[7]*v[1]+m[8]*v[2]]; }
+function basis(p) { const m = [p[0], p[2], p[4], p[1], p[3], p[5], 1, 1, 1]; const v = mv(adj(m), [p[6], p[7], 1]); return mm(m, [v[0],0,0, 0,v[1],0, 0,0,v[2]]); }
+function warp(el, w, h, q) { // q = [[x,y] TL, TR, BR, BL]
+  const src = basis([0, 0, w, 0, 0, h, w, h]);
+  const dst = basis([q[0][0], q[0][1], q[1][0], q[1][1], q[3][0], q[3][1], q[2][0], q[2][1]]);
+  const t = mm(dst, adj(src)); for (let i = 0; i < 9; i++) t[i] /= t[8];
+  el.style.width = w + 'px'; el.style.height = h + 'px';
+  el.style.transform = `matrix3d(${t[0]},${t[3]},0,${t[6]},${t[1]},${t[4]},0,${t[7]},0,0,1,0,${t[2]},${t[5]},0,${t[8]})`;
+}
+const bil = (q, u, v) => [0, 1].map((k) => q[0][k]*(1-u)*(1-v) + q[1][k]*u*(1-v) + q[2][k]*u*v + q[3][k]*(1-u)*v);
+const subQuad = (q, u0, v0, u1, v1) => [bil(q, u0, v0), bil(q, u1, v0), bil(q, u1, v1), bil(q, u0, v1)];
+const handMask = (pts, w, h) => `url("data:image/svg+xml,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}'><filter id='b'><feGaussianBlur stdDeviation='2.5'/></filter><polygon filter='url(%23b)' fill='white' points='${pts.map((p) => p.join(',')).join(' ')}'/></svg>`).replace(/%2523/g, '%23')}")`;
+
+// ---------- story (same for all variants) ----------
+// S0 hook 0–3 · S1 deadline 3–5.5 · S2 RRIF · S3 annuity · S4 cash out (2.3 s each) · S5 result 12.4–16 · S6 CTA 16–20
+const T = [0, 3, 5.5, 7.8, 10.1, 12.4, 16];
+const DUR = 20;
+const stateAt = (t) => { let s = 0; for (let i = 0; i < T.length; i++) if (t >= T[i]) s = i; return s; };
+const ITEMS = [
+  { n: '!', title: 'Deadline: Dec 31', sub: 'of the year you turn 71' },
+  { n: '1', title: 'Move it to a RRIF', sub: 'Direct transfer: no tax withheld' },
+  { n: '2', title: 'Buy an annuity', sub: 'Regular income payments' },
+  { n: '3', title: 'Cash it all out', sub: 'Taxed as income' },
+];
+
+// ---------- DOM ----------
+const cam = document.getElementById('cam'), hud = document.getElementById('hud');
+const P = { glass: { src: 'plates/glass.png', w: 2688, h: 1520 }, glassv: { src: 'plates/glassv.png', w: 1520, h: 2688 }, desk: { src: 'plates/desk.png', w: 2688, h: 1520 } }[V];
+const BASE = Math.max(1080 / P.w, 1920 / P.h);
+const plate = new Image(); plate.src = P.src; plate.style.width = P.w + 'px'; plate.style.height = P.h + 'px'; cam.appendChild(plate);
+const el = (tag, css, html = '') => { const e = document.createElement(tag); e.style.cssText = css; e.innerHTML = html; return e; };
+
+// a list UI (used on the 16:9 glass and on the tablet)
+function buildList(tex, theme) {
+  const dark = theme === 'dark';
+  const ink = dark ? '#f2f1ec' : '#13202b', subc = dark ? 'rgba(242,241,236,0.72)' : '#3c4a55';
+  const cardBg = dark ? 'rgba(255,255,255,0.07)' : 'rgba(255,255,255,0.84)';
+  const head = el('div', `position:absolute;left:30px;top:26px;display:flex;align-items:center;gap:16px;color:${dark ? '#27AE60' : '#13202b'};font-weight:700;font-size:28px;letter-spacing:2px`,
+    `<div style="width:56px;height:56px;border-radius:14px;background:#1E9E57;color:#fff;font-weight:800;font-size:38px;display:flex;align-items:center;justify-content:center;letter-spacing:0">$</div>TAX SECRETS CANADA`);
+  const title = el('div', `position:absolute;left:30px;top:96px;font-weight:800;font-size:112px;color:${ink};letter-spacing:-2px;white-space:nowrap`, 'RRSP at <span class="green">71</span>?');
+  tex.append(head, title);
+  const cards = ITEMS.map((it) => {
+    const c = el('div', `top:0;width:${tex.W - 60}px;height:150px;background:${cardBg};color:${ink};box-shadow:0 12px 30px rgba(0,0,0,${dark ? 0.35 : 0.12})`,
+      `<div class="num" style="${it.n === '!' ? 'background:#F39C12' : ''}">${it.n}</div><div><div class="ttl">${it.title}</div><div class="sub" style="color:${subc}">${it.sub}</div></div>`);
+    c.className = 'card'; tex.appendChild(c); return c;
+  });
+  const res = el('div', `position:absolute;left:30px;top:0;width:${tex.W - 60}px;height:300px;border-radius:30px;background:${dark ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.9)'};color:${ink};box-sizing:border-box;padding:30px 36px;box-shadow:0 12px 30px rgba(0,0,0,0.2)`,
+    `<div style="font-weight:800;font-size:50px;line-height:1.1">Which one keeps<br>the most?</div><div style="font-weight:600;font-size:32px;color:${subc};margin-top:10px">Depends on your income</div>
+     <div style="margin-top:22px;height:84px;border-radius:18px;background:rgba(39,174,96,0.2);display:flex;align-items:center;padding:0 28px;font-weight:800;font-size:46px;color:#1E9E57"><span>YOU KEEP&nbsp;</span><span class="q" style="display:inline-block">?</span></div>`);
+  const cta = el('div', `position:absolute;left:30px;top:0;width:${tex.W - 60}px;height:250px;border-radius:30px;background:#1E9E57;color:#fff;box-sizing:border-box;padding:34px 36px;box-shadow:0 14px 36px rgba(0,0,0,0.25)`,
+    `<div style="font-weight:800;font-size:58px;line-height:1.05">Part 2:<br>the real math</div><div style="font-weight:700;font-size:32px;margin-top:14px;opacity:.9">Subscribe so you don't miss it</div>`);
+  const src = el('div', `position:absolute;left:34px;bottom:22px;font-weight:600;font-size:22px;color:${subc}`, 'Source: canada.ca · General info, not advice');
+  tex.append(res, cta, src);
+  const ring = el('div', 'position:absolute;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;border:5px solid #27AE60;opacity:0');
+  tex.appendChild(ring);
+  return { title, cards, res, cta, src, ring };
+}
+
+// place list items so the active one sits at y = focusY (texture coords)
+function layoutList(L, t, focusY, tapX) {
+  const s = stateAt(t);
+  const tIn = (i) => T[i];
+  const tp = spring(t - 0.1, 90, 20);
+  L.title.style.opacity = tp; L.title.style.transform = `translateY(${(1 - tp) * 40}px)`;
+  // scroll position: index of active item (0 = deadline at S1 … 3 = cash out at S4, 4 = result at S5)
+  const keys = [[0, -1.3], [T[1], 0], [T[2], 1], [T[3], 2], [T[4], 3], [T[5], 4]];
+  const pos = track(t, keys, 60, 15);
+  const GAP = 172;
+  L.cards.forEach((c, i) => {
+    const y = focusY - 75 + (i - pos) * GAP;
+    const act = clamp(1 - Math.abs(i - pos));
+    c.style.top = y + 'px';
+    const fadeTop = clamp((y - 150) / 70);
+    c.style.opacity = (0.45 + 0.55 * act) * fadeTop * clamp((t - T[1] + 0.2) * 3) * (1 - clamp((t - T[6]) * 3));
+    c.style.transform = `scale(${1 + 0.035 * act})`;
+    c.style.outline = act > 0.5 ? `4px solid rgba(39,174,96,${(act - 0.5) * 1.6})` : 'none';
+    c.querySelector('.sub').style.opacity = clamp(act * 1.6 - 0.4);
+  });
+  const ry = focusY - 75 + (4 - pos) * GAP;
+  L.res.style.top = ry + 'px'; L.res.style.opacity = clamp((ry - 150) / 70) * (1 - clamp((t - T[6]) * 3));
+  L.res.querySelector('.q').style.transform = `scale(${1 + 0.15 * Math.max(0, Math.sin((t - T[5]) * 6)) * clamp(t - T[5])})`;
+  const cp = spring(t - T[6], 140, 20);
+  L.cta.style.top = (focusY - 60 + (1 - cp) * 80) + 'px'; L.cta.style.opacity = clamp(cp * 2);
+  L.src.style.opacity = clamp((t - T[6] - 0.5) * 2);
+  // tap ripple at every state change
+  let rp = 1; for (let i = 1; i <= 6; i++) if (t >= T[i] && t < T[i] + 0.7) rp = (t - T[i]) / 0.7;
+  L.ring.style.left = tapX + 'px'; L.ring.style.top = focusY + 'px';
+  L.ring.style.opacity = rp < 1 ? (1 - rp) * 0.9 : 0; L.ring.style.transform = `scale(${0.4 + rp * 2.2})`;
+}
+
+let update, camAt;
+if (V === 'glass') {
+  const GLASS = [[690, 135], [1985, 290], [2040, 1110], [745, 1274]];
+  const W = 820, H = 1000, tex = el('div', ''); tex.className = 'tex'; tex.W = W;
+  warp(tex, W, H, subQuad(GLASS, 0.36, 0.05, 0.965, 0.95)); cam.appendChild(tex);
+  const L = buildList(tex, 'light');
+  const hand = new Image(); hand.src = P.src; hand.style.cssText = `width:${P.w}px;height:${P.h}px;`;
+  const HP = [[1705,560],[1780,556],[1870,568],[1970,598],[2070,603],[2150,638],[2250,698],[2350,748],[2688,765],[2688,1100],[2450,1000],[2250,912],[2150,922],[2050,917],[2035,922],[1940,897],[1868,872],[1862,830],[1878,808],[1893,780],[1878,730],[1883,690],[1908,668],[1948,650],[1850,617],[1780,612],[1720,592],[1703,572]];
+  hand.style.webkitMaskImage = hand.style.maskImage = handMask(HP, P.w, P.h);
+  cam.appendChild(hand);
+  update = (t) => layoutList(L, t, 330, 585);
+  camAt = (t) => ({ cx: track(t, [[0, 1570], [T[1], 1590], [T[5], 1560]]), cy: track(t, [[0, 760], [T[1], 700], [T[5], 740]]), z: track(t, [[0, 1.0], [T[1], 1.1], [T[5], 1.04], [T[6], 1.0]]) + 0.004 * t });
+} else if (V === 'desk') {
+  const SCREEN = [[998, 296], [1652, 296], [1652, 1138], [998, 1138]];
+  const W = 820, H = 1056, tex = el('div', 'background:linear-gradient(160deg,#1d2120,#121414);border-radius:18px'); tex.className = 'tex'; tex.W = W;
+  warp(tex, W, H, SCREEN); cam.appendChild(tex);
+  const L = buildList(tex, 'dark');
+  const TAPE = [[2325, 112], [2578, 152], [2518, 382], [2270, 372]];
+  const tape = el('div', 'font-family:Tape;color:#2a2a2a;mix-blend-mode:multiply;padding:16px 14px;box-sizing:border-box;font-size:20px;line-height:30px;white-space:pre');
+  warp(tape, 240, 260, TAPE); cam.appendChild(tape);
+  const LINES = ['RRSP AT 71', 'RRIF ......... ?', 'ANNUITY ...... ?', 'CASH OUT ..... ?', 'TAX: DEPENDS', '--------------', 'YOU KEEP    ?'];
+  const laser = el('div', 'width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:radial-gradient(circle,#fff 0 22%,rgba(255,40,30,.95) 30%,rgba(255,20,10,.35) 55%,rgba(255,0,0,0) 72%);box-shadow:0 0 30px 10px rgba(255,30,20,.35);mix-blend-mode:screen');
+  cam.appendChild(laser);
+  update = (t) => {
+    layoutList(L, t, 330, 520);
+    L.ring.style.display = 'none';
+    const n = clamp(Math.floor((t - T[5] - 0.4) * 3), 0, LINES.length);
+    tape.innerHTML = LINES.slice(0, n).map((s, i) => i === LINES.length - 1 ? `<b>${s}</b>` : s).join('\n');
+    // laser rides the active card (screen coords → plate coords: screen is axis-aligned)
+    const sx = 998 + 740 * (654 / 820), sy = 296 + 330 * (842 / 1056);
+    const on = clamp((t - T[1]) * 3) * (1 - clamp((t - T[5] + 0.2) * 4));
+    const j = Math.sin(t * 13.1) * 1.5 + Math.sin(t * 7.3), k = Math.cos(t * 11.7) * 1.4;
+    laser.style.left = (sx + j) + 'px'; laser.style.top = (sy + k) + 'px'; laser.style.opacity = on;
+  };
+  camAt = (t) => ({
+    cx: track(t, [[0, 1325], [T[5], 2420], [T[6], 1325]]),
+    cy: track(t, [[0, 720], [T[5], 400], [T[6], 720]]),
+    z: track(t, [[0, 1.05], [T[1], 1.22], [T[5], 2.0], [T[6], 1.1]]) + 0.004 * t,
+  });
+} else { // glassv: title and the three cards are baked into the photo; we drive highlights and replace the receipt
+  const CARDS = [[[305, 805], [1195, 825], [1195, 1050], [305, 1055]], [[305, 1100], [1195, 1085], [1195, 1310], [305, 1345]], [[308, 1390], [1195, 1355], [1195, 1580], [308, 1592]]];
+  const glows = CARDS.map((q) => { const g = el('div', 'border-radius:34px;box-shadow:0 0 0 7px rgba(39,174,96,0.95),0 0 40px 10px rgba(39,174,96,0.55);opacity:0'); warp(g, 890, 240, q); cam.appendChild(g); return g; });
+  const RECEIPT = [[288, 1662], [1218, 1596], [1218, 2215], [288, 2324]];
+  const panel = el('div', 'border-radius:34px;background:#f4f6f5;box-shadow:0 10px 30px rgba(0,0,0,.12);color:#13202b;box-sizing:border-box;padding:40px 46px;overflow:hidden'); warp(panel, 900, 640, RECEIPT); cam.appendChild(panel);
+  const hand = new Image(); hand.src = P.src; hand.style.cssText = `width:${P.w}px;height:${P.h}px;`;
+  const HP = [[1008,922],[1052,922],[1150,968],[1250,1028],[1350,1068],[1520,1075],[1520,1430],[1300,1390],[1200,1320],[1150,1260],[1143,1235],[1188,1218],[1208,1130],[1128,1032],[1048,982],[1008,952]];
+  hand.style.webkitMaskImage = hand.style.maskImage = handMask(HP, P.w, P.h); cam.appendChild(hand);
+  const ring = el('div', 'width:60px;height:60px;margin:-30px 0 0 -30px;border-radius:50%;border:7px solid #27AE60;opacity:0'); ring.style.left = '1010px'; ring.style.top = '925px'; cam.appendChild(ring);
+  const PAGES = [
+    `<div style="font-weight:800;font-size:76px;line-height:1.05">Turning 71<br>this year?</div><div style="font-weight:600;font-size:40px;color:#3c4a55;margin-top:24px">Your RRSP has a deadline.</div>`,
+    `<div style="font-weight:700;font-size:36px;color:#F39C12;letter-spacing:2px">DEADLINE</div><div style="font-weight:800;font-size:92px;line-height:1">Dec 31</div><div style="font-weight:600;font-size:40px;color:#3c4a55;margin-top:18px">of the year you turn 71</div>`,
+    ...ITEMS.slice(1).map((it) => `<div style="font-weight:700;font-size:36px;color:#1E9E57;letter-spacing:2px">OPTION ${it.n}</div><div style="font-weight:800;font-size:70px;line-height:1.05;margin-top:6px">${it.title}</div><div style="font-weight:600;font-size:42px;color:#3c4a55;margin-top:20px">${it.sub}</div>`),
+    `<div style="font-weight:800;font-size:60px;line-height:1.08">Which one keeps the most?</div><div style="font-weight:600;font-size:38px;color:#3c4a55;margin-top:14px">Depends on your income</div><div style="margin-top:34px;height:110px;border-radius:22px;background:rgba(39,174,96,.2);display:flex;align-items:center;justify-content:space-between;padding:0 36px;font-weight:800;font-size:60px;color:#1E9E57"><span>YOU KEEP</span><span>?</span></div>`,
+    `<div style="font-weight:800;font-size:80px;line-height:1.02;color:#1E9E57">Part 2:<br>the real math</div><div style="font-weight:700;font-size:40px;margin-top:20px">Subscribe so you don't miss it</div><div style="font-weight:600;font-size:26px;color:#6b7680;margin-top:40px">Source: canada.ca · General info, not advice</div>`,
+  ];
+  update = (t) => {
+    const s = stateAt(t), p = spring(t - T[s], 160, 22);
+    panel.innerHTML = `<div style="opacity:${clamp(p * 2)};transform:translateY(${(1 - p) * 40}px)">${PAGES[s]}</div>`;
+    glows.forEach((g, i) => { const a = (s === i + 2) ? clamp((t - T[s]) * 4) * (1 - clamp((t - T[s + 1] + 0.25) * 4)) : 0; g.style.opacity = a * (0.75 + 0.25 * Math.sin(t * 6)); });
+    let rp = 1; for (let i = 1; i <= 6; i++) if (t >= T[i] && t < T[i] + 0.7) rp = (t - T[i]) / 0.7;
+    ring.style.opacity = rp < 1 ? (1 - rp) * 0.9 : 0; ring.style.transform = `scale(${0.4 + rp * 2.2})`;
+  };
+  camAt = (t) => ({
+    cx: track(t, [[0, 760], [T[2], 740], [T[5], 760]]),
+    cy: track(t, [[0, 1150], [T[1], 1700], [T[2], 1500], [T[5], 1750], [T[6], 1500]]),
+    z: track(t, [[0, 1.25], [T[1], 1.3], [T[2], 1.12], [T[5], 1.25], [T[6], 1.05]]) + 0.004 * t,
+  });
+}
+
+// vignette + subtle grain in screen space
+hud.appendChild(el('div', 'position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.28) 100%)'));
+
+function draw(t) {
+  const c = camAt(t), S = BASE * c.z;
+  const hw = 540 / S, hh = 960 / S;               // keep the crop inside the photo
+  const cx = clamp(c.cx, hw, P.w - hw), cy = clamp(c.cy, hh, P.h - hh);
+  cam.style.transform = `translate(${540 - cx * S}px,${960 - cy * S}px) scale(${S})`;
+  update(t);
+}
+window.DUR = DUR;
+window.ready = Promise.all([document.fonts.load('800 40px Mont'), document.fonts.load('400 20px Tape'), document.fonts.load('700 20px Tape'),
+  ...[...document.images].map((i) => i.decode())]).then(() => document.fonts.ready);
+window.seek = (t) => { draw(t); return true; };
+if (!navigator.webdriver) window.ready.then(() => { const t0 = performance.now();
+  (function loop() { draw(((performance.now() - t0) / 1000) % DUR); requestAnimationFrame(loop); })(); });
+</script>
