@@ -42,7 +42,7 @@ function faceCanvas(kind: 'leaf' | 'dollar') {
   return c;
 }
 
-const CoinMesh = ({ rx, ry, rz, x, y, z, s }: { rx: number; ry: number; rz: number; x: number; y: number; z: number; s: number }) => {
+export const CoinMesh = ({ rx, ry, rz, x, y, z, s }: { rx: number; ry: number; rz: number; x: number; y: number; z: number; s: number }) => {
   const mats = useMemo(() => {
     const leaf = new THREE.CanvasTexture(faceCanvas('leaf'));
     const dollar = new THREE.CanvasTexture(faceCanvas('dollar'));
