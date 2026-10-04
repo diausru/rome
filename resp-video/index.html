@@ -1,0 +1,368 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>RESP before Dec 31</title>
+<style>
+@font-face{font-family:Unb;font-weight:100 900;src:url(fonts/Unbounded-800-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Unb;font-weight:100 900;src:url(fonts/Unbounded-800-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Man;font-weight:200 800;src:url(fonts/Manrope-800-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:Man;font-weight:200 800;src:url(fonts/Manrope-800-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+html,body{margin:0;background:#141413}canvas{display:block;max-height:100vh;margin:auto}
+</style>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+// Faceless 9:16 explainer: RESP / CESG / CLB. Pure function of time: window.seek(t) paints frame t.
+// Facts verified against canada.ca (CESG InfoCapsule 11, RESP provider user guide ch. 5-6, CRA CLB page).
+const W = 1080, H = 1920, M = 96;
+const LANG = new URLSearchParams(location.search).get('lang') === 'ru' ? 'ru' : 'en';
+const g = document.getElementById('c').getContext('2d');
+
+const PAPER = '#F3EEE4', INK = '#1C1B18', RED = '#D52B1E', MUTED = '#7D776B', CARD = '#FFFCF6', LINE = '#DDD5C6';
+
+const T = {
+  en: {
+    k1: 'CANADA · RESP', h1a: 'Canada adds', h1b: 'to every dollar you', h1c: 'save for your kid', stamp: 'DEADLINE: DEC 31',
+    k2: 'STEP 1', t2: 'Open an RESP', s2: 'Registered Education Savings Plan',
+    rows: [['Who', 'Your child is the beneficiary'], ['Needs', "Your child's SIN"], ['Where', 'Bank, credit union or RESP provider']],
+    k3: 'CESG GRANT', h3: 'Canada matches 20%', t3a: 'You put in', t3b: 'Canada adds', you: 'YOU', gov: 'CANADA',
+    c3a: '20% on the first $2,500 each year', c3b: 'Unused room? Up to $1,000 of grant in one year',
+    k4: 'LIFETIME', t4a: 'Up to', t4b: 'of grant per child', cap: 'lifetime max', c4: 'That takes $36,000 of your own contributions',
+    k5: 'LOW INCOME?', t5: 'Canada Learning Bond', s5: 'No contribution needed', first: 'first year',
+    c5a: '+$100 each eligible year, up to age 15', c5b: '+$25 once, to help open the RESP', c5c: 'For children born in 2004 or later',
+    k6: 'WHY DEC 31?', mon: 'DEC',
+    t6: ['Grant room is counted', 'by calendar year'], c6a: "Contribute by Dec 31 to use this year's $500",
+    c6b: 'Missed it? Room carries over, but catch-up', c6c: 'is capped at $1,000 of grant per year',
+    k7: 'BEFORE DEC 31', t7: 'Checklist',
+    items: ['Get your child a SIN', 'Open an RESP', 'Contribute up to $2,500', 'Low income? Ask about the CLB'],
+    foot: 'Source: canada.ca · Not financial advice',
+  },
+  ru: {
+    k1: 'КАНАДА · RESP', h1a: 'Канада добавит', h1b: 'к каждому доллару,', h1c: 'отложенному на учёбу', stamp: 'СРОК: 31 ДЕКАБРЯ',
+    k2: 'ШАГ 1', t2: 'Откройте RESP', s2: 'Накопительный план на образование',
+    rows: [['Кто', 'Ребёнок — получатель'], ['Нужно', 'SIN ребёнка'], ['Где', 'Банк, кредитный союз или провайдер RESP']],
+    k3: 'ГРАНТ CESG', h3: 'Канада добавит 20%', t3a: 'Вы вносите', t3b: 'Канада добавит', you: 'ВЫ', gov: 'КАНАДА',
+    c3a: '20% с первых $2,500 в год', c3b: 'Есть неиспользованный остаток? До $1,000 гранта за год',
+    k4: 'ЗА ВСЁ ВРЕМЯ', t4a: 'До', t4b: 'гранта на ребёнка', cap: 'максимум', c4: 'Для этого нужно внести $36,000 своих денег',
+    k5: 'НИЗКИЙ ДОХОД?', t5: 'Canada Learning Bond', s5: 'Взносы не нужны', first: 'первый год',
+    c5a: '+$100 за каждый год права, до 15 лет', c5b: '+$25 разово на открытие RESP', c5c: 'Для детей, рождённых в 2004 году и позже',
+    k6: 'ПОЧЕМУ 31 ДЕКАБРЯ?', mon: 'ДЕК',
+    t6: ['Право на грант', 'считается по годам'], c6a: 'Внесите до 31.12, чтобы взять $500 за этот год',
+    c6b: 'Пропустили? Остаток переносится, но догнать', c6c: 'можно не больше $1,000 гранта в год',
+    k7: 'ДО 31 ДЕКАБРЯ', t7: 'Чек-лист',
+    items: ['Оформите SIN ребёнку', 'Откройте RESP', 'Внесите до $2,500', 'Низкий доход? Спросите про CLB'],
+    foot: 'Источник: canada.ca · Не финансовая консультация',
+  },
+}[LANG];
+
+// ---------- motion ----------
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, p) => a + (b - a) * p;
+function spring(t, k = 170, d = 26) {
+  if (t <= 0) return 0;
+  const w0 = Math.sqrt(k), z = d / (2 * w0);
+  if (z < 1) {
+    const wd = w0 * Math.sqrt(1 - z * z);
+    return 1 - Math.exp(-z * w0 * t) * (Math.cos(wd * t) + (z * w0 / wd) * Math.sin(wd * t));
+  }
+  return 1 - Math.exp(-w0 * t) * (1 + w0 * t);
+}
+const snap = (t) => spring(t, 320, 30);   // UI: tiny overshoot
+const heavy = (t) => spring(t, 120, 24);  // big type, no overshoot
+const easeIn = (p) => p * p * p;
+function rng(seed) { return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+  let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+  t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const money = (n) => '$' + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+// ---------- drawing helpers ----------
+const font = (fam, w, s) => `${w} ${s}px ${fam === 'U' ? 'Unb' : 'Man'}`;
+function fit(text, fam, w, size, maxW) {
+  g.font = font(fam, w, size);
+  const m = g.measureText(text).width;
+  return m > maxW ? size * maxW / m : size;
+}
+function rr(x, y, w, h, r) { g.beginPath(); g.roundRect(x, y, w, h, r); }
+
+// Words rise from behind a mask line, staggered. Returns measured width.
+function rise(text, x, y, size, t, { fam = 'M', w = 800, color = INK, stagger = 0.05, maxW = W - 2 * M } = {}) {
+  size = fit(text, fam, w, size, maxW);
+  g.font = font(fam, w, size);
+  const words = text.split(' ');
+  const space = g.measureText(' ').width;
+  g.save();
+  g.beginPath(); g.rect(0, y - size * 1.05, W, size * 1.4); g.clip();
+  g.fillStyle = color; g.textBaseline = 'alphabetic'; g.textAlign = 'left';
+  let cx = x;
+  words.forEach((wd, i) => {
+    const p = heavy(t - i * stagger);
+    g.fillText(wd, cx, y + (1 - p) * size * 1.25);
+    cx += g.measureText(wd).width + space;
+  });
+  g.restore();
+  return cx - space - x;
+}
+
+function kicker(text, t, y = 330) {
+  const p = snap(t);
+  g.font = font('M', 800, 34);
+  const tw = g.measureText(text).width + 52;
+  g.save();
+  rr(M, y - 46, tw * p, 66, 33); g.fillStyle = RED; g.fill(); g.clip();
+  g.fillStyle = '#fff'; g.textBaseline = 'middle'; g.fillText(text, M + 26, y - 12);
+  g.restore();
+}
+
+function check(cx, cy, r, p, filled = true) {
+  g.save();
+  g.beginPath(); g.arc(cx, cy, r * snap(p * 3), 0, Math.PI * 2);
+  g.fillStyle = filled ? RED : 'transparent'; g.fill();
+  const q = clamp((p - 0.15) / 0.5);
+  if (q > 0) {
+    const pts = [[-0.42, 0.02], [-0.12, 0.32], [0.45, -0.3]];
+    g.strokeStyle = '#fff'; g.lineWidth = r * 0.22; g.lineCap = 'round'; g.lineJoin = 'round';
+    g.beginPath(); g.moveTo(cx + pts[0][0] * r, cy + pts[0][1] * r);
+    const seg1 = clamp(q * 2), seg2 = clamp(q * 2 - 1);
+    g.lineTo(cx + lerp(pts[0][0], pts[1][0], seg1) * r, cy + lerp(pts[0][1], pts[1][1], seg1) * r);
+    if (seg2 > 0) g.lineTo(cx + lerp(pts[1][0], pts[2][0], seg2) * r, cy + lerp(pts[1][1], pts[2][1], seg2) * r);
+    g.stroke();
+  }
+  g.restore();
+}
+
+function text(s, x, y, size, { fam = 'M', w = 700, color = INK, align = 'left', maxW = W - 2 * M, base = 'alphabetic' } = {}) {
+  size = fit(s, fam, w, size, maxW);
+  g.font = font(fam, w, size); g.fillStyle = color; g.textAlign = align; g.textBaseline = base;
+  g.fillText(s, x, y);
+}
+
+// Paper grain, generated once from a seeded RNG
+const grain = document.createElement('canvas'); grain.width = W; grain.height = H;
+{ const gg = grain.getContext('2d'), r = rng(11);
+  for (let i = 0; i < 26000; i++) { gg.fillStyle = `rgba(60,45,20,${0.02 + r() * 0.05})`; gg.fillRect(r() * W, r() * H, 1 + r() * 2, 1 + r() * 2); } }
+
+// ---------- scenes (t = local time in seconds) ----------
+function hook(t) {
+  kicker(T.k1, t - 0.05);
+  rise(T.h1a, M, 560, 104, t - 0.15);
+  const p = heavy(t - 0.45);
+  g.save(); g.translate(M, 900); g.scale(lerp(0.7, 1, p), lerp(0.7, 1, p));
+  g.beginPath(); g.rect(-20, -330, W, 380); g.clip();
+  text('20%', 0, (1 - p) * 300, 330, { fam: 'U', w: 800, color: RED });
+  g.restore();
+  rise(T.h1b, M, 1060, 76, t - 0.9);
+  rise(T.h1c, M, 1150, 76, t - 1.05);
+  // stamp slams in
+  const s = spring(t - 1.9, 400, 26);
+  if (s > 0) {
+    g.save(); g.translate(W - M - 250, 1370); g.rotate(-0.12 * s + 0.3 * (1 - s)); g.scale(lerp(2.2, 1, s), lerp(2.2, 1, s));
+    g.globalAlpha = clamp(s * 2);
+    g.font = font('U', 800, 40); const tw = g.measureText(T.stamp).width;
+    rr(-tw / 2 - 34, -50, tw + 68, 100, 14); g.lineWidth = 8; g.strokeStyle = RED; g.stroke();
+    g.fillStyle = RED; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(T.stamp, 0, 4);
+    g.restore();
+  }
+}
+
+function step1(t) {
+  kicker(T.k2, t);
+  rise(T.t2, M, 520, 112, t - 0.1, { fam: 'U' });
+  rise(T.s2, M, 600, 42, t - 0.3, { color: MUTED, w: 600, stagger: 0.03 });
+  const p = snap(t - 0.5);
+  const top = 720, h = 640 * p;
+  g.save();
+  g.shadowColor = 'rgba(40,30,10,0.14)'; g.shadowBlur = 50; g.shadowOffsetY = 20;
+  rr(M, top, W - 2 * M, h, 36); g.fillStyle = CARD; g.fill();
+  g.restore();
+  g.save(); rr(M, top, W - 2 * M, h, 36); g.clip();
+  // card header
+  g.fillStyle = INK; g.fillRect(M, top, W - 2 * M, 120);
+  text('RESP', M + 48, top + 80, 52, { fam: 'U', color: '#fff' });
+  T.rows.forEach(([k, v], i) => {
+    const y = top + 230 + i * 160, q = t - 0.9 - i * 0.35;
+    const a = snap(q);
+    g.save(); g.translate((1 - a) * 80, 0); g.globalAlpha = clamp(a * 1.5);
+    text(k.toUpperCase(), M + 130, y - 22, 30, { color: MUTED, w: 800 });
+    text(v, M + 130, y + 30, 46, { w: 700, maxW: W - 2 * M - 180 });
+    g.restore();
+    check(M + 72, y, 30, q);
+    if (i < 2) { g.fillStyle = LINE; g.fillRect(M + 48, y + 80, (W - 2 * M - 96) * a, 3); }
+  });
+  g.restore();
+}
+
+function cesg(t) {
+  kicker(T.k3, t);
+  rise(T.h3, M, 520, 96, t - 0.1, { fam: 'U', stagger: 0.04 });
+  const base = 1330, x0 = M, bw = 300, unit = 560 / 3000;
+  // your bar grows with the counter
+  const pa = spring(t - 0.6, 90, 22);
+  const you = 2500 * pa;
+  g.fillStyle = INK; rr(x0, base - you * unit, bw, you * unit, [0, 0, 18, 18]); g.fill();
+  if (pa > 0.05) text(T.you, x0 + bw / 2, base - 30, 34, { color: '#fff', align: 'center', w: 800 });
+  // Canada's block drops onto it
+  const pb = spring(t - 2.3, 260, 18);
+  const gy = lerp(-200, base - 3000 * unit, pb);
+  if (t > 2.3) {
+    g.fillStyle = RED; rr(x0, gy, bw, 500 * unit, [18, 18, 0, 0]); g.fill();
+    text('+20%', x0 + bw / 2, gy + 500 * unit / 2 + 2, 40, { fam: 'U', color: '#fff', align: 'center', base: 'middle' });
+  }
+  // right column: labels + counters
+  const rx = x0 + bw + 70, rw = W - M - rx;
+  rise(T.t3a, rx, 830, 50, t - 0.2, { w: 700, color: MUTED, maxW: rw });
+  text(money(you), rx, 960, 120, { fam: 'U', maxW: rw });
+  if (t > 2.2) {
+    rise(T.t3b, rx, 1100, 50, t - 2.2, { w: 700, color: MUTED, maxW: rw });
+    const gv = 500 * spring(t - 2.4, 120, 26);
+    text('+' + money(gv), rx, 1230, 120, { fam: 'U', color: RED, maxW: rw });
+  }
+  // captions
+  rise(T.c3a, M, 1460, 52, t - 3.2, { stagger: 0.03 });
+  rise(T.c3b, M, 1530, 36, t - 3.6, { color: MUTED, w: 600, stagger: 0.02 });
+}
+
+function life(t) {
+  kicker(T.k4, t);
+  const lw = rise(T.t4a, M, 520, 60, t - 0.1, { w: 700, color: MUTED });
+  const total = 7200 * clamp((t - 0.6) / 2.6);
+  text(money(Math.min(7200, Math.round(total / 100) * 100)), M, 700, 190, { fam: 'U', color: RED });
+  rise(T.t4b, M, 790, 52, t - 0.3, { w: 700 });
+  // cumulative staircase: 14 years x $500 + $200
+  const base = 1360, top = 900, n = 15, gap = 10, bw = (W - 2 * M - gap * (n - 1)) / n;
+  const capY = top + 40;
+  for (let i = 0; i < n; i++) {
+    const cum = Math.min(7200, (i + 1) * 500);
+    const p = snap(t - 0.6 - i * 0.17);
+    const h = (base - capY) * cum / 7200 * p;
+    g.fillStyle = i === n - 1 ? RED : INK;
+    rr(M + i * (bw + gap), base - h, bw, h, 8); g.fill();
+  }
+  const dp = clamp((t - 0.4) / 0.6);
+  g.save(); g.setLineDash([16, 12]); g.strokeStyle = RED; g.lineWidth = 4;
+  g.beginPath(); g.moveTo(M, capY); g.lineTo(M + (W - 2 * M) * dp, capY); g.stroke(); g.restore();
+  if (dp > 0.9) text(T.cap + ' $7,200', W - M, capY - 18, 32, { color: RED, align: 'right', w: 800 });
+  g.fillStyle = LINE; g.fillRect(M, base + 6, W - 2 * M, 4);
+  rise(T.c4, M, 1470, 46, t - 3.2, { stagger: 0.03 });
+  rise('$36,000 × 20% = $7,200', M, 1540, 36, t - 3.5, { color: MUTED, w: 700 });
+}
+
+function clb(t) {
+  kicker(T.k5, t);
+  rise(T.t5, M, 500, 80, t - 0.1, { fam: 'U' });
+  rise(T.s5, M, 580, 46, t - 0.35, { color: RED, w: 800 });
+  // big first coin
+  const pc = spring(t - 0.7, 260, 20);
+  const cx = M + 150, cy = 800;
+  g.save(); g.translate(cx, lerp(cy - 400, cy, pc)); g.globalAlpha = clamp(pc * 3);
+  g.beginPath(); g.arc(0, 0, 150, 0, Math.PI * 2); g.fillStyle = RED; g.fill();
+  g.beginPath(); g.arc(0, 0, 128, 0, Math.PI * 2); g.strokeStyle = 'rgba(255,255,255,.45)'; g.lineWidth = 4; g.stroke();
+  text('$500', 0, 12, 64, { fam: 'U', color: '#fff', align: 'center', base: 'middle' });
+  g.restore();
+  if (t > 0.9) {
+    rise(T.first, M + 340, 760, 44, t - 0.9, { color: MUTED, w: 700, maxW: W - M - 340 - M });
+    rise(T.c5b, M + 340, 830, 34, t - 1.1, { w: 700, maxW: W - M - 340 - M, stagger: 0.02 });
+  }
+  // 15 small coins, one per eligible year
+  const cols = 5, r = 58, gx = (W - 2 * M) / cols, top = 1040;
+  for (let i = 0; i < 15; i++) {
+    const p = spring(t - 1.6 - i * 0.12, 300, 22);
+    if (p <= 0) continue;
+    const x = M + gx * (i % cols) + gx / 2, y = top + Math.floor(i / cols) * 132;
+    g.save(); g.translate(x, lerp(y - 220, y, p)); g.globalAlpha = clamp(p * 3);
+    g.beginPath(); g.arc(0, 0, r, 0, Math.PI * 2); g.fillStyle = CARD; g.fill();
+    g.lineWidth = 5; g.strokeStyle = INK; g.stroke();
+    text('$100', 0, 4, 30, { fam: 'U', align: 'center', base: 'middle' });
+    g.restore();
+  }
+  const sum = 500 + 100 * clamp(Math.floor((t - 1.6) / 0.12) + 1, 0, 15);
+  const tp = clamp(t - 0.7);
+  if (tp > 0) {
+    text('= ' + money(t < 0.8 ? 0 : sum), M, 1440, 84, { fam: 'U', color: sum >= 2000 ? RED : INK });
+  }
+  rise(T.c5a, M, 1530, 38, t - 3.7, { w: 700, stagger: 0.02 });
+  rise(T.c5c, M, 1588, 34, t - 3.9, { color: MUTED, w: 600, stagger: 0.02 });
+}
+
+function dec31(t) {
+  kicker(T.k6, t);
+  // calendar page
+  const p = snap(t - 0.2);
+  const cw = 440, ch = 480, cx = M, cy = 420;
+  g.save(); g.translate(cx + cw / 2, cy + ch); g.rotate((1 - p) * -0.25); g.scale(p, p); g.translate(-cw / 2, -ch);
+  g.save(); g.shadowColor = 'rgba(40,30,10,0.16)'; g.shadowBlur = 50; g.shadowOffsetY = 20;
+  rr(0, 0, cw, ch, 30); g.fillStyle = CARD; g.fill(); g.restore();
+  g.save(); rr(0, 0, cw, ch, 30); g.clip(); g.fillStyle = RED; g.fillRect(0, 0, cw, 130); g.restore();
+  text(T.mon, cw / 2, 92, 64, { fam: 'U', color: '#fff', align: 'center' });
+  text('31', cw / 2, 400, 230, { fam: 'U', align: 'center' });
+  g.restore();
+  // hand-drawn ring around the date
+  const q = clamp((t - 0.9) / 0.7);
+  if (q > 0) {
+    g.save(); g.strokeStyle = RED; g.lineWidth = 10; g.lineCap = 'round';
+    g.beginPath();
+    for (let i = 0; i <= 60 * q; i++) {
+      const a = -2.2 + (i / 60) * Math.PI * 2.15, rr2 = 1 + 0.04 * Math.sin(i * 0.7);
+      const x = cx + cw / 2 + Math.cos(a) * 205 * rr2, y = cy + 318 + Math.sin(a) * 135 * rr2;
+      i ? g.lineTo(x, y) : g.moveTo(x, y);
+    }
+    g.stroke(); g.restore();
+  }
+  rise(T.t6[0], M, 1080, 66, t - 0.6, { fam: 'U', stagger: 0.04 });
+  rise(T.t6[1], M, 1170, 66, t - 0.75, { fam: 'U', stagger: 0.04 });
+  rise(T.c6a, M, 1290, 44, t - 1.4, { w: 800, color: RED, stagger: 0.03 });
+  rise(T.c6b, M, 1440, 36, t - 2.2, { w: 600, color: MUTED, stagger: 0.02 });
+  rise(T.c6c, M, 1495, 36, t - 2.3, { w: 600, color: MUTED, stagger: 0.02 });
+}
+
+function checklist(t) {
+  kicker(T.k7, t);
+  rise(T.t7, M, 540, 130, t - 0.1, { fam: 'U' });
+  T.items.forEach((s, i) => {
+    const y = 760 + i * 170, q = t - 0.6 - i * 0.45;
+    const a = snap(q);
+    g.save(); g.globalAlpha = clamp(a * 2); g.translate(0, (1 - a) * 40);
+    rr(M, y - 50, 100, 100, 22); g.lineWidth = 6; g.strokeStyle = INK; g.stroke();
+    g.restore();
+    if (q > 0.25) { g.save(); rr(M, y - 50, 100, 100, 22); g.clip(); check(M + 50, y, 50, (q - 0.25) * 1.2); g.restore(); }
+    rise(s, M + 140, y + 18, 54, q, { w: 800, maxW: W - 2 * M - 140, stagger: 0.03 });
+  });
+  rise(T.foot, M, 1520, 34, t - 2.8, { w: 600, color: MUTED, stagger: 0.02 });
+}
+
+const SCENES = [[hook, 4.4], [step1, 4.6], [cesg, 6.0], [life, 5.6], [clb, 6.4], [dec31, 5.4], [checklist, 5.2]];
+const OV = 0.25, EXIT = 0.45;
+let acc = 0;
+const PLAN = SCENES.map(([f, d], i) => { const s = { f, from: acc, d, last: i === SCENES.length - 1 }; acc += d - OV; return s; });
+const DUR = acc + OV;
+window.DUR = DUR;
+
+function progress(t) {
+  const n = PLAN.length, gap = 10, w = (W - 2 * M - gap * (n - 1)) / n;
+  PLAN.forEach((s, i) => {
+    const p = clamp((t - s.from) / (s.d - OV));
+    g.fillStyle = 'rgba(28,27,24,0.12)'; rr(M + i * (w + gap), 236, w, 8, 4); g.fill();
+    if (p > 0) { g.fillStyle = INK; rr(M + i * (w + gap), 236, w * p, 8, 4); g.fill(); }
+  });
+}
+
+function draw(t) {
+  g.fillStyle = PAPER; g.fillRect(0, 0, W, H);
+  g.drawImage(grain, 0, 0);
+  progress(t);
+  for (const s of PLAN) {
+    const lt = t - s.from;
+    if (lt < 0 || lt > s.d) continue;
+    const ex = s.last ? 0 : easeIn(clamp((lt - (s.d - EXIT)) / EXIT));
+    g.save(); g.translate(0, -220 * ex); g.globalAlpha = 1 - ex;
+    s.f(lt);
+    g.restore();
+  }
+}
+
+window.ready = Promise.all(['800 40px Unb', '500 40px Man', '700 40px Man', '800 40px Man']
+  .map((f) => document.fonts.load(f, 'Aa$Яя'))).then(() => document.fonts.ready);
+window.seek = (t) => { draw(t); return true; };
+
+if (!navigator.webdriver) {
+  window.ready.then(() => { const t0 = performance.now();
+    (function loop() { draw(((performance.now() - t0) / 1000) % DUR); requestAnimationFrame(loop); })(); });
+}
+</script>
