@@ -84,6 +84,26 @@ No conclusions are recorded until each item has a primary source:
 - [ ] Camera-shake models (operator motion with inertia, not random noise).
 - [ ] 2.5D plate parallax (depth map + displacement) as a realism method for still plates (D2).
 
+## 6b. TAX CASE #001 QC log (identify → explain → fix)
+
+| Pass | Problem found | Cause | Fix |
+|---|---|---|---|
+| Stills a | Opening frame empty (no hook) | Envelope started above frame | Envelope in frame, falling, from frame 1 |
+| Stills a | Notice shots were white blur | Hinge ODE started at 100°, past vertical on the closed side, so the panel fell shut | Start at 70° on the open side with ω₀ = −1.4 rad/s (cut on action) |
+| Stills a | Letter invisible during extraction | Tilt sign drove the leading edge into the desk | Leading edge lifts +7° |
+| Stills a–d | Wood read as corduroy, then "melted" | Band texture with too much distortion | Flat-sawn ring model (rings around a dipping log axis) |
+| Stills b | Macro cut showed no action | Blade hidden inside the envelope; f/5.6 at 85 mm gave ≈2 mm DoF | Blade rides the edge; f/11 |
+| Stills c | Rows skewed ~20° | Camera offset sideways (keystone) | Camera in line with the rows |
+| Stills c | Case folder looked like a plastic tablet | Glossy coat material | Matte fibre board, papers peeking out at an offset |
+| Preview 1 | Whole film green | Pillow dropped 16-bit RGB channels / I;16 affine returned zeros | OpenCV 16-bit read and float warpAffine |
+| Preview 2 | Ghost blur on the first frame after cuts | 180° shutter interpolated across the cut; subframe keys 0.001 apart were merged | State keys at cf−0.70 (old) and cf−0.30 (new) |
+| Preview 2 | Black first frame of the case shot | Camera read the folder's stale `matrix_world` | `view_layer.update()` before the camera solve |
+| Preview 2 | Hole in the envelope at landing | SIMPLE_DEFORM bend broke the pillow shape key | Flex as a quadratic shape key |
+| Preview 2 | Attention drop at 15.9 s (blank paper) | Slow pan over an empty area | Faster, direct move |
+| Preview 2 | Stray red lines | Underlines outlived their text | Each mark ends when its line leaves frame |
+| Preview 3 | Titles hairline-thin | Manrope woff2 is a variable font defaulting to ExtraLight | Weight axis set to 700 |
+| Preview 3 | 1 s of nothing at the start of the extraction | Smootherstep start from rest | Cut on action, letter already 12 % out |
+
 ## 7. Change log
 
 - 2026-10-05 v1: TAX CASE #001 in production. Series visual language set (§1). D6 pipeline, D7 hands off frame.
