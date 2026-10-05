@@ -2,7 +2,7 @@
 // Production bible: salary/PRODUCTION-BIBLE.md · numbers: salary/calc.py → src/salary-data.json
 // Background: one continuous tripod pan across the defocused office plate (Office.tsx, pan mode).
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
-import { LEAF } from './Coin';
+import { Flag } from './RaiseShort';
 import { Office } from './Office';
 import DATA from './salary-data.json';
 import TL from './salary-timeline.json';
@@ -180,7 +180,7 @@ export const SalaryShort = () => {
       {/* header */}
       <div style={{ position: 'absolute', left: 80, top: 96, right: 80, display: 'flex', alignItems: 'center', justifyContent: 'space-between', color: C.cream, fontSize: 24, fontWeight: 800, letterSpacing: 3 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <div style={{ width: 44, height: 44, borderRadius: 12, background: 'linear-gradient(150deg,#5fe39a,#27AE60 50%,#146b3a)', display: 'grid', placeItems: 'center', boxShadow: '0 8px 16px rgba(0,0,0,.4)' }}><svg width={30} height={30} viewBox="0 0 100 100"><path d={LEAF} fill="#fff" /></svg></div>
+          <Flag f={f} w={84} />
           TAX SECRETS CANADA
         </div>
         <div style={{ padding: '8px 18px', borderRadius: 999, ...glass, fontSize: 22 }}>2026 TAX YEAR</div>
@@ -280,7 +280,8 @@ export const SalaryShort = () => {
       {f >= T_END && (
         <>
           <div style={{ position: 'absolute', left: 80, top: 400, width: 920, opacity: clamp(endIn * 1.4), transform: `translateY(${(1 - endIn) * 60}px)` }}>
-            <div style={{ fontSize: 40, fontWeight: 800, color: C.mint, letterSpacing: 2 }}>SAME $100,000</div>
+            <Flag f={f} w={200} amp={0.06} />
+            <div style={{ marginTop: 26, fontSize: 40, fontWeight: 800, color: C.mint, letterSpacing: 2 }}>SAME $100,000</div>
             <div style={{ fontSize: 130, fontWeight: 900, letterSpacing: -5, lineHeight: 1, marginTop: 10, ...goldInk }}>$6,506</div>
             <div style={{ fontSize: 46, fontWeight: 800, color: C.cream, marginTop: 14 }}>apart, every year.</div>
             <div style={{ marginTop: 70, display: 'inline-flex', alignItems: 'center', gap: 18, padding: '22px 34px', borderRadius: 999, background: 'linear-gradient(160deg,#ffefb0,#f2c14e 50%,#cf961f)', color: '#2e2004', fontSize: 38, fontWeight: 900, boxShadow: 'inset 0 2px 1px rgba(255,255,255,.7), 0 16px 30px rgba(0,0,0,.4)', transform: `scale(${1 + 0.03 * Math.sin(TAU * (f - T_END) / 36)})` }}>Follow for the real math</div>
