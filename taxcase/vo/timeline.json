@@ -1,0 +1,95 @@
+{
+ "video": 55.0,
+ "beats": [
+  {
+   "id": "line00",
+   "text": "A letter from the C-R-A just landed.",
+   "start": 0.2,
+   "end": 2.86
+  },
+  {
+   "id": "line01",
+   "text": "Don't toss it. Don't panic.",
+   "start": 3.0,
+   "end": 5.3
+  },
+  {
+   "id": "line02",
+   "text": "Open it. Read it properly.",
+   "start": 5.45,
+   "end": 7.57
+  },
+  {
+   "id": "line03",
+   "text": "This one says you owe money.",
+   "start": 7.75,
+   "end": 9.61
+  },
+  {
+   "id": "line04",
+   "text": "Two thousand, four hundred and sixty dollars.",
+   "start": 9.9,
+   "end": 12.77
+  },
+  {
+   "id": "line05",
+   "text": "But why?",
+   "start": 13.1,
+   "end": 14.02
+  },
+  {
+   "id": "line06",
+   "text": "Start with the basics. The date. The tax year. The reference.",
+   "start": 14.48,
+   "end": 19.26
+  },
+  {
+   "id": "line07",
+   "text": "Then find the explanation.",
+   "start": 19.6,
+   "end": 21.57
+  },
+  {
+   "id": "line08",
+   "text": "Here's what changed.",
+   "start": 23.7,
+   "end": 24.88
+  },
+  {
+   "id": "line09",
+   "text": "The amount. The reason. And the deadline.",
+   "start": 26.8,
+   "end": 30.54
+  },
+  {
+   "id": "line10",
+   "text": "Before you pay, or push back, make sure every detail is right.",
+   "start": 33.5,
+   "end": 38.3
+  },
+  {
+   "id": "line11",
+   "text": "Check the details.",
+   "start": 41.04,
+   "end": 42.15
+  },
+  {
+   "id": "line12",
+   "text": "Your name. The tax year. The amount. The reason. The deadline.",
+   "start": 42.7,
+   "end": 48.99
+  },
+  {
+   "id": "line13",
+   "text": "Then keep it with your records.",
+   "start": 49.39,
+   "end": 51.12
+  },
+  {
+   "id": "line14",
+   "text": "Understand the letter, before you act.",
+   "start": 51.6,
+   "end": 54.21
+  }
+ ]
+}
