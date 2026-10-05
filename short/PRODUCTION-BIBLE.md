@@ -1,69 +1,80 @@
 # Project production bible: live-action vertical Short
 
-Status: **pre-production, nothing generated.** Last updated 2026-10-05.
+Governing document: `short/MASTER-SYSTEM.md` (Master System v1.0, saved 2026-10-05). This bible is the source of truth for continuity on the current project.
 
-Legend: ✅ verified (source given) · 📝 proposed, not yet approved · ❓ open question
+Legend: ✅ verified (source given) · 📝 decided by Claude, can be revised (record the reason when it changes) · ⏳ set at production start, when the subject is known
+
+**CURRENT VERSION:** v0. Pre-production. No subject has been given, and no frame has been rendered.
 
 ---
 
-## 1. Standing directives from the user (apply to every phase)
+## 1. Project
 
-1. **Realism brief.** 45–60 s, 9:16, ≥1080×1920, 24 fps, photoreal live action. Story first (hook → curiosity → escalation → discovery → transformation → payoff). No final music or SFX; leave timing points for them.
-2. **Post-production review.** Review every scene against the 20 criteria (skin, movement, anatomy, physics, faces, clothing, environments, reflections, shadows, camera, DoF, bokeh, sharpness, HDR, repetition, hook, attention drops, unnecessary shots, transitions, ending). For each defect: identify → explain → fix. Re-render only what failed.
-3. **Resource research.** Before technical work, check for newer or better methods in primary sources. Record decisions here. Never break continuity without checking first.
-4. **Do not create until told.** The user stopped generation on 2026-10-05. No credits are spent without a go-ahead.
+| Field | Value |
+|---|---|
+| PROJECT NAME | ⏳ |
+| VIDEO OBJECTIVE | 45–60 s vertical Short that reads as filmed live action (Master §1) |
+| TARGET AUDIENCE | ⏳. If the Short is for the Tax Secrets Canada channel: retirees and pre-retirees (`channel/RESEARCH-2026-10.md` §3) |
+| STORY | ⏳ |
+| CHARACTERS / CHARACTER APPEARANCE / WARDROBE | ⏳ |
+| LOCATION / ARCHITECTURE / OBJECTS / MATERIALS | ⏳ |
+| LIGHTING / TIME OF DAY / WEATHER | ⏳ |
+| COLOR PALETTE | ⏳ |
+| CAMERA LANGUAGE / LENS LANGUAGE / CAMERA MOVEMENT | ⏳ |
+| ANIMATION LANGUAGE / PHYSICS RULES | ⏳ |
+| CONTINUITY RULES / VISUAL MOTIFS / TRANSITIONS / EDITING RHYTHM | ⏳ |
 
-## 2. Verified environment facts
+The earlier shoebox/records idea (topic A7) is **not** adopted. It was never confirmed, and it was designed around a video-generation pipeline that is now banned (§4).
+
+## 2. Render settings (Master §5)
+
+| Setting | Value |
+|---|---|
+| Delivery | MP4, H.264, 1080×1920, 9:16, 24 fps, 45–60 s, silent |
+| Internal render | Above 1080×1920 where practical, then downsampled (Master §5). Exact scale ⏳ after a render-time test |
+| Verification | `ffprobe`: resolution, duration, fps, stream integrity. Contact sheet for visual QC (Master §28) |
+| Audio | None. Deliver a timing-marker sheet for VO / music / SFX / impacts (Master §27) |
+
+## 3. Verified environment facts
 
 | Item | Value | Source |
 |---|---|---|
-| Higgsfield balance | 560.16 credits, plan "ultra" | `balance` tool, 2026-10-05 |
-| Kling 3.0 pro, 15 s, 9:16, sound off | 22.5 credits | `generate_video get_cost`, 2026-10-05 |
-| Seedance 2.5, 15 s, 720p, no audio | 105 credits | same |
-| Seedance 2.5, 15 s, 1080p, no audio | 180 credits | same |
-| Seedance 2.5 draft (480p), 15 s | 45 credits | same |
-| GPT Image 2.5 still, 9:16 | 0.25 credits (default quality "low") | same |
-| Kling 3.0 inputs | start_image, end_image; 3–15 s; modes std/pro/4k; 16:9, 9:16, 1:1 | `models_explore get kling3_0` |
-| Seedance 2.5 inputs | start/end image, image/video/audio references; 4–30 s; 480p–1080p; draft→finalize | `models_explore get seedance_2_5` |
-| GPT Image 2.5 | image_references; quality low→max; resolution 1k/2k/4k; 9:16 supported | `models_explore get gpt_image_2_5` |
-| FFmpeg | 6.1.1, includes zscale, colorspace, lut3d, noise, deband, cas, unsharp, minterpolate, tblend, vignette, lenscorrection | `ffmpeg -version`, `ffmpeg -filters` in this container |
+| FFmpeg | 6.1.1, includes zscale, colorspace, lut3d, noise, deband, cas, unsharp, minterpolate, tblend, dblur, gblur, vignette, lenscorrection | `ffmpeg -version`, `ffmpeg -filters` in this container |
 | Remotion | ^4.0.532 with @remotion/motion-blur, /three, /transitions (in `showreel/`) | `showreel/package.json` |
 | Node | v22.22.0 | `node -v` |
+| Browser render path | Playwright + Chromium, frame-by-frame screenshots piped to FFmpeg | `reels/render.mjs` (earlier work in this repo) |
+| Chromium | pre-installed at /opt/pw-browsers | environment notes |
+| Higgsfield balance | 560.16 credits | `balance` tool, 2026-10-05. Not used for video under Master v1.0 |
 
-Not yet verified: Kling 3.0 pro output resolution in pixels. ❓ Check it on the first test clip with `ffprobe` before deciding whether an upscale (`upscale_video`, Topaz or ByteDance) is needed to reach 1080×1920.
+## 4. Decisions already made
 
-## 3. Creative decisions
+| # | Decision | Reason |
+|---|---|---|
+| D1 | **No external video-generation models** (Kling, Seedance, Higgsfield video, Veo, Runway, Sora…). The video is built with code: rendering, compositing, simulation. | Master v1.0 preamble. **This replaces** the earlier proposal (bible v0, 2026-10-05) to animate keyframes with Kling 3.0. |
+| D2 | Still images (photographs, or generated stills such as GPT Image 2.5) may be used **only as static source plates or textures** inside the code pipeline. All motion, camera, light and compositing come from code. | 📝 The Master says "any other technically appropriate methods" and bans only handing the work to video models. This repo already used still plates this way (`reels/plates/*.png` → `reels/render.mjs`). Revise if the user objects. |
+| D3 | Architecture is separated into scene data / animation logic / camera logic / visual components / timeline / render config | Master §24 |
+| D4 | No music, VO or sound design in deliverables; markers only | Master §27 |
+| D5 | Tax content: no "secret / loophole / they don't want you to know" hooks, and every tax figure must be fact-checked first | `channel/RESEARCH-2026-10.md` §4, `channel/TOPICS.md` header |
 
-| Decision | State |
-|---|---|
-| Subject: wordless story about records and a shoebox of receipts, tied to channel topic A7 (`channel/TOPICS.md`) | 📝 the user has not confirmed it |
-| No tax figures or rules on screen, so there is nothing to fact-check | 📝 |
-| No readable text inside generated frames (letters, receipts, screens), because generators render text unreliably | 📝 |
-| Time of day changes from night (pendant lamp, about 2700K, plus cool window spill) to dawn window light as the visual "transformation" | 📝 |
+## 5. Known technical limitations
 
-## 4. Technical pipeline (proposed)
+These are honest constraints of a code-only pipeline in this container, not research conclusions:
 
-1. Generate the character and location reference stills first (GPT Image 2.5). Build every keyframe from those references so faces, wardrobe and set stay the same.
-2. Turn each keyframe into a 3–6 s clip with image-to-video, one shot per generation.
-3. Edit, grade and finish in FFmpeg (or in Remotion if a composited element is needed). Rules for the finish:
-   - no added sharpening;
-   - grain matched across all shots;
-   - one grade for the whole piece;
-   - deliver 1080×1920, 24 fps.
-4. Run the post-production review (directive 2). Regenerate only the shots that fail.
+1. **Photoreal moving humans.** I have no verified method here for rendering a realistic human face or body in motion from code. Per Master §35 (physical believability and human realism come first), stories should keep humans to forms that code can render believably: partial figures, hands at a distance, silhouettes, out-of-focus presence. A full-face actor is avoided unless research finds a reliable technique. ⏳ To research before the first project.
+2. **Real 3D lighting** in WebGL / Three.js is real-time rasterisation, not path tracing. ⏳ Research whether path-traced options (for example, three-gpu-pathtracer) run headless in this container, and how long they take per frame.
+3. Rendering is CPU/GPU-limited in the container. Render time per frame has to be measured before choosing the internal resolution.
 
-Rough cost estimate: about 12 shots × 5 s × 1.5 credits/s ≈ 90 credits, plus re-takes. This is arithmetic from the Kling 3.0 pro preflight (22.5 / 15 s = 1.5 credits/s), not a quote.
+## 6. Research queue (Master §3)
 
-## 5. Research to do before production (directive 3)
+No conclusions are recorded until each item has a primary source:
 
-These are not researched yet. No conclusions are drawn until each has a primary source.
+- [ ] Remotion v4 docs: `@remotion/motion-blur` (CameraMotionBlur / Trail), `@remotion/three`, render flags (scale, codec, colour space).
+- [ ] Three.js: physically based lights and cameras, depth of field (BokehPass vs physical), path tracing headless.
+- [ ] FFmpeg 6.1: film grain (`noise` vs a grain plate), halation via `gblur` + blend, `zscale` and the BT.709 chain, downsampling filter choice.
+- [ ] Camera-shake models (operator motion with inertia, not random noise).
+- [ ] 2.5D plate parallax (depth map + displacement) as a realism method for still plates (D2).
 
-- [ ] Current image-to-video model comparison for photoreal humans: Kling 3.0 vs Seedance 2.5 vs others on Higgsfield. Use a small paid test only with approval.
-- [ ] Character consistency across separate generations (reference images, end_image chaining).
-- [ ] Grain and halation workflow in FFmpeg 6.1 vs a Remotion/WebGL pass.
-- [ ] Whether the upscaler adds artificial sharpness (review criterion 13).
-- [ ] Colour management: keep the whole chain BT.709, check what the generators output.
+## 7. Change log
 
-## 6. Change log
-
-- 2026-10-05: bible created. Pre-production only; no assets generated.
+- 2026-10-05 v0: bible created (Kling-based proposal).
+- 2026-10-05 v0.1: Master System v1.0 adopted. Kling/Seedance pipeline dropped (D1). Still plates allowed only as static sources (D2). Restructured to the Master §4 fields. The A7 subject proposal is withdrawn.
