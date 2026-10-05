@@ -122,6 +122,8 @@ SEO ANALYSIS
 Primary Keyword: tax brackets Canada
 Secondary Keywords: marginal tax rate Canada; higher tax bracket raise; how taxes work in Canada (≈4.9K/mo); income tax Canada (≈4.7K/mo); federal tax brackets 2026
 Search Intent: Understand whether a raise reduces take-home pay and how brackets apply.
+Search Questions: Will a raise put me in a higher tax bracket? · Can a raise make me take home less in Canada? · How do marginal tax rates work in Canada? · How much of my raise will I keep? · Does a raise affect my Canada Child Benefit?
+Pain / Curiosity: Fear that a raise, overtime or a promotion could cost money because of the bracket jump; confusion about how brackets apply.
 Target Audience: Employees aged 22–45 negotiating raises or overtime; parents on the CCB.
 Curiosity Angle: The widespread 'raise = less money' fear vs. the slice-by-slice reality, plus the honest benefit exception.
 

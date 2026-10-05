@@ -1,54 +1,85 @@
 {
-"video": {"title": "Will a Raise Put You in a Higher Tax Bracket? (Canada 2026)", "duration": "59.92 s (1438 frames)", "mp4": "showreel/out/raise/raise-v2-final.mp4 (share copy: raise-v2-share.mp4)"},
-"sources": [
- "CRA — Current year tax rates and income brackets (2026), canada.ca · 2026 · each rate applies only to the income in its bracket; federal 14% to $58,523, 20.5% to $117,045, 26% to $181,440, 29% to $258,482, 33% above",
- "CRA T4127 (Jan 2026) · 2026 · brackets apply to taxable income; credit mechanics",
- "Manitoba 2026 brackets (10.8% to $47,000; 12.75% to $100,000) and BPA $15,780 · Manitoba Budget 2025 bulletin",
- "CPP 5.95% (YMPE $74,600) and EI 1.63% (MIE $68,900), 2026 · CRA",
- "Example (not a CRA rule): Manitoba single employee, salary $58,000 → $60,000 in 2026: +$318 federal, +$238 Manitoba, +$119 CPP, +$33 EI; keeps $1,292 · raise/example.py",
- "CRA — Canada Child Benefit, how much you can get · payment period July 2026 – June 2027 · reduction starts above $38,237 of adjusted family net income (corroborated by 2026 news coverage)"
-],
-"yt": {
- "titles": ["The Tax Bracket Myth Most Canadians Believe", "$2,000 Raise in Canada: How Much Do You Really Keep?", "Will a Raise Put You in a Higher Tax Bracket? (Canada 2026)"],
- "description": "Worried a raise will push you into a higher tax bracket? In Canada, a higher bracket never taxes your whole income. Each rate only taxes its own slice.\n\nExample: with $60,000 of taxable income, the first $58,523 is taxed federally at 14% and only the last $1,477 at 20.5% (2026 rates). Real example, Manitoba 2026: a raise from $58,000 to $60,000 adds $318 federal tax, $238 Manitoba tax and $152 CPP + EI, so you keep $1,292 of the $2,000.\n\nOne real exception: income-tested benefits like the Canada Child Benefit shrink as family income rises (reduction starts above $38,237 of adjusted family net income for July 2026 – June 2027). On benefits? Run your numbers with a professional.\n\nSources: CRA 2026 tax rates; CRA T4127 (2026); CRA Canada Child Benefit. Examples only; general information, not tax advice.\n\n#CanadaTax #TaxBrackets #PersonalFinanceCanada",
- "hashtags": "#CanadaTax #TaxBrackets #PersonalFinanceCanada",
- "keywords": "tax brackets canada, marginal tax rate canada, raise higher tax bracket canada, how taxes work in canada, income tax canada 2026, federal tax brackets 2026, canada child benefit income",
- "pinned": "Myth check: a higher bracket only applies to the dollars above the line. The real thing to watch is benefits that shrink with income (like the CCB). Has anyone ever told you to turn down a raise because of taxes?",
- "cta": "Follow for more Canadian tax myths, with the math."
-},
-"tt": {
- "caption": "Turning down a raise because of your tax bracket? Watch this first 🇨🇦 (2026 math)",
- "keywords": "tax bracket myth canada · higher tax bracket raise · marginal tax rate explained · how much of my raise do I keep · canada taxes 2026",
- "hashtags": "#canadiantaxes #taxbrackets #personalfinancecanada #moneytok #cra",
- "pinned": "Has anyone told you a raise could make you take home less? Drop what they said; let's fact-check it.",
- "cta": "Follow for the Canadian Tax Myths series."
-},
-"ig": {
- "caption": "A higher tax bracket never taxes your whole income. 🇨🇦\n\nOnly the slice above the line pays the higher rate. With $60K of taxable income, just $1,477 is taxed at 20.5% federally; the rest stays at 14% (2026). Real example, Manitoba: a $2,000 raise → you keep $1,292.\n\nThe one exception: benefits like the Canada Child Benefit shrink as family income rises. On benefits? Run the numbers with a pro.\n\nSend this to the coworker who thinks a raise can cost them money.\n\nSources: CRA (canada.ca), 2026 rates. Examples only, general info, not advice.",
- "keywords": "tax brackets canada, marginal tax, raise, canada tax myths, 2026 tax rates",
- "hashtags": "#canadiantaxes #personalfinancecanada #taxbrackets #moneytips #canadatax",
- "pinned": "Did you believe this myth before? Be honest 😅",
- "cta": "Share it with the coworker who believes this myth."
-},
-"eng": {
- "question": "Has anyone told you to avoid a raise because of taxes?",
- "save": "A simple picture of how brackets really work, handy before a salary negotiation.",
- "share": "A coworker or friend who believes the bracket myth.",
- "follow": "Myth-busting with real 2026 numbers from an accountant."
-},
-"seo": {
- "primary": "tax brackets Canada",
- "secondary": "marginal tax rate Canada; higher tax bracket raise; how taxes work in Canada (≈4.9K/mo); income tax Canada (≈4.7K/mo); federal tax brackets 2026",
- "intent": "Understand whether a raise reduces take-home pay and how brackets apply.",
- "audience": "Employees aged 22–45 negotiating raises or overtime; parents on the CCB.",
- "angle": "The widespread 'raise = less money' fear vs. the slice-by-slice reality, plus the honest benefit exception."
-},
-"next": [
- {"topic": "The CCB clawback: when a raise really bites", "why": "The video's own exception; parents search for it", "intent": "how much ccb do I lose if income goes up", "hook": "Your raise is safe from tax brackets. Your child benefit isn't.", "angle": "Effective marginal rate = tax + CCB reduction (computed, verified)", "payoff": "A real family example"},
- {"topic": "RRSP: how a contribution lowers your taxable income", "why": "A natural follow-up (the brackets apply to taxable income)", "intent": "how much tax does rrsp save canada", "hook": "Put $5,000 in an RRSP. How much tax comes back?", "angle": "Your marginal rate decides the refund", "payoff": "A worked 2026 example"},
- {"topic": "Is your bonus taxed more?", "why": "A related myth, seasonal around year-end bonuses", "intent": "why is my bonus taxed so much canada", "hook": "Your bonus looked taxed at 40%. Was it?", "angle": "Withholding vs. actual tax (CRA bonus method, to be verified)", "payoff": "Why the year-end return evens it out"}
-],
-"series": "Canadian Tax Myths (episode 1); Real Tax Math.",
-"research": "- vidIQ (CA, 2026-10-05): 'tax brackets canada' ≈3,458/mo (competition 30.4); 'marginal tax rate canada' and 'federal tax brackets canada' below 750 but with very low competition (7.1 / 12.5) → used in keywords and the description.\n- vidIQ IG/TikTok outliers: the 'earn more, keep less' theme over-performs (a UK 'hidden salary trap' video at 108× its creator's median). No Canadian Short in the sample busts the bracket myth with numbers: an opening for us. Talking-head is the norm; our code-rendered data format differs.\n- vidIQ title scores: 'The Tax Bracket Myth Most Canadians Believe' 83; '$2,000 Raise in Canada: How Much Do You Really Keep?' 82; 'Will a Raise Put You in a Higher Tax Bracket? (Canada 2026)' 80.\n- Current context: 2026 is the first full year of the 14% bottom rate (CTV/BNN coverage of the CRA 2026 brackets); CCB thresholds indexed July 2026 ($38,237 / $82,847).",
-"retention": "Hook: '$2,000 raise' + the warning ✅. Open loop: is the myth true? → 'It doesn't' at 8 s, then HOW ✅. Density: one example at a time ✅. Change rate: myth strike → rule card → ladder fill → slices → example → deductions tick in → reveal ✅. Payoff: keep $1,292 + the honest exception ✅. Fixed during production: a 4-second empty card during 'how it works' (rule card added); a gap after the myth; ladder overlaps."
+ "video": {
+  "title": "Will a Raise Put You in a Higher Tax Bracket? (Canada 2026)",
+  "duration": "59.92 s (1438 frames)",
+  "mp4": "showreel/out/raise/raise-v2-final.mp4 (share copy: raise-v2-share.mp4)"
+ },
+ "sources": [
+  "CRA — Current year tax rates and income brackets (2026), canada.ca · 2026 · each rate applies only to the income in its bracket; federal 14% to $58,523, 20.5% to $117,045, 26% to $181,440, 29% to $258,482, 33% above",
+  "CRA T4127 (Jan 2026) · 2026 · brackets apply to taxable income; credit mechanics",
+  "Manitoba 2026 brackets (10.8% to $47,000; 12.75% to $100,000) and BPA $15,780 · Manitoba Budget 2025 bulletin",
+  "CPP 5.95% (YMPE $74,600) and EI 1.63% (MIE $68,900), 2026 · CRA",
+  "Example (not a CRA rule): Manitoba single employee, salary $58,000 → $60,000 in 2026: +$318 federal, +$238 Manitoba, +$119 CPP, +$33 EI; keeps $1,292 · raise/example.py",
+  "CRA — Canada Child Benefit, how much you can get · payment period July 2026 – June 2027 · reduction starts above $38,237 of adjusted family net income (corroborated by 2026 news coverage)"
+ ],
+ "yt": {
+  "titles": [
+   "The Tax Bracket Myth Most Canadians Believe",
+   "$2,000 Raise in Canada: How Much Do You Really Keep?",
+   "Will a Raise Put You in a Higher Tax Bracket? (Canada 2026)"
+  ],
+  "description": "Worried a raise will push you into a higher tax bracket? In Canada, a higher bracket never taxes your whole income. Each rate only taxes its own slice.\n\nExample: with $60,000 of taxable income, the first $58,523 is taxed federally at 14% and only the last $1,477 at 20.5% (2026 rates). Real example, Manitoba 2026: a raise from $58,000 to $60,000 adds $318 federal tax, $238 Manitoba tax and $152 CPP + EI, so you keep $1,292 of the $2,000.\n\nOne real exception: income-tested benefits like the Canada Child Benefit shrink as family income rises (reduction starts above $38,237 of adjusted family net income for July 2026 – June 2027). On benefits? Run your numbers with a professional.\n\nSources: CRA 2026 tax rates; CRA T4127 (2026); CRA Canada Child Benefit. Examples only; general information, not tax advice.\n\n#CanadaTax #TaxBrackets #PersonalFinanceCanada",
+  "hashtags": "#CanadaTax #TaxBrackets #PersonalFinanceCanada",
+  "keywords": "tax brackets canada, marginal tax rate canada, raise higher tax bracket canada, how taxes work in canada, income tax canada 2026, federal tax brackets 2026, canada child benefit income",
+  "pinned": "Myth check: a higher bracket only applies to the dollars above the line. The real thing to watch is benefits that shrink with income (like the CCB). Has anyone ever told you to turn down a raise because of taxes?",
+  "cta": "Follow for more Canadian tax myths, with the math."
+ },
+ "tt": {
+  "caption": "Turning down a raise because of your tax bracket? Watch this first 🇨🇦 (2026 math)",
+  "keywords": "tax bracket myth canada · higher tax bracket raise · marginal tax rate explained · how much of my raise do I keep · canada taxes 2026",
+  "hashtags": "#canadiantaxes #taxbrackets #personalfinancecanada #moneytok #cra",
+  "pinned": "Has anyone told you a raise could make you take home less? Drop what they said; let's fact-check it.",
+  "cta": "Follow for the Canadian Tax Myths series."
+ },
+ "ig": {
+  "caption": "A higher tax bracket never taxes your whole income. 🇨🇦\n\nOnly the slice above the line pays the higher rate. With $60K of taxable income, just $1,477 is taxed at 20.5% federally; the rest stays at 14% (2026). Real example, Manitoba: a $2,000 raise → you keep $1,292.\n\nThe one exception: benefits like the Canada Child Benefit shrink as family income rises. On benefits? Run the numbers with a pro.\n\nSend this to the coworker who thinks a raise can cost them money.\n\nSources: CRA (canada.ca), 2026 rates. Examples only, general info, not advice.",
+  "keywords": "tax brackets canada, marginal tax, raise, canada tax myths, 2026 tax rates",
+  "hashtags": "#canadiantaxes #personalfinancecanada #taxbrackets #moneytips #canadatax",
+  "pinned": "Did you believe this myth before? Be honest 😅",
+  "cta": "Share it with the coworker who believes this myth."
+ },
+ "eng": {
+  "question": "Has anyone told you to avoid a raise because of taxes?",
+  "save": "A simple picture of how brackets really work, handy before a salary negotiation.",
+  "share": "A coworker or friend who believes the bracket myth.",
+  "follow": "Myth-busting with real 2026 numbers from an accountant."
+ },
+ "seo": {
+  "primary": "tax brackets Canada",
+  "secondary": "marginal tax rate Canada; higher tax bracket raise; how taxes work in Canada (≈4.9K/mo); income tax Canada (≈4.7K/mo); federal tax brackets 2026",
+  "intent": "Understand whether a raise reduces take-home pay and how brackets apply.",
+  "audience": "Employees aged 22–45 negotiating raises or overtime; parents on the CCB.",
+  "angle": "The widespread 'raise = less money' fear vs. the slice-by-slice reality, plus the honest benefit exception.",
+  "questions": "Will a raise put me in a higher tax bracket? · Can a raise make me take home less in Canada? · How do marginal tax rates work in Canada? · How much of my raise will I keep? · Does a raise affect my Canada Child Benefit?",
+  "pain": "Fear that a raise, overtime or a promotion could cost money because of the bracket jump; confusion about how brackets apply."
+ },
+ "next": [
+  {
+   "topic": "The CCB clawback: when a raise really bites",
+   "why": "The video's own exception; parents search for it",
+   "intent": "how much ccb do I lose if income goes up",
+   "hook": "Your raise is safe from tax brackets. Your child benefit isn't.",
+   "angle": "Effective marginal rate = tax + CCB reduction (computed, verified)",
+   "payoff": "A real family example"
+  },
+  {
+   "topic": "RRSP: how a contribution lowers your taxable income",
+   "why": "A natural follow-up (the brackets apply to taxable income)",
+   "intent": "how much tax does rrsp save canada",
+   "hook": "Put $5,000 in an RRSP. How much tax comes back?",
+   "angle": "Your marginal rate decides the refund",
+   "payoff": "A worked 2026 example"
+  },
+  {
+   "topic": "Is your bonus taxed more?",
+   "why": "A related myth, seasonal around year-end bonuses",
+   "intent": "why is my bonus taxed so much canada",
+   "hook": "Your bonus looked taxed at 40%. Was it?",
+   "angle": "Withholding vs. actual tax (CRA bonus method, to be verified)",
+   "payoff": "Why the year-end return evens it out"
+  }
+ ],
+ "series": "Canadian Tax Myths (episode 1); Real Tax Math.",
+ "research": "- vidIQ (CA, 2026-10-05): 'tax brackets canada' ≈3,458/mo (competition 30.4); 'marginal tax rate canada' and 'federal tax brackets canada' below 750 but with very low competition (7.1 / 12.5) → used in keywords and the description.\n- vidIQ IG/TikTok outliers: the 'earn more, keep less' theme over-performs (a UK 'hidden salary trap' video at 108× its creator's median). No Canadian Short in the sample busts the bracket myth with numbers: an opening for us. Talking-head is the norm; our code-rendered data format differs.\n- vidIQ title scores: 'The Tax Bracket Myth Most Canadians Believe' 83; '$2,000 Raise in Canada: How Much Do You Really Keep?' 82; 'Will a Raise Put You in a Higher Tax Bracket? (Canada 2026)' 80.\n- Current context: 2026 is the first full year of the 14% bottom rate (CTV/BNN coverage of the CRA 2026 brackets); CCB thresholds indexed July 2026 ($38,237 / $82,847).",
+ "retention": "Hook: '$2,000 raise' + the warning ✅. Open loop: is the myth true? → 'It doesn't' at 8 s, then HOW ✅. Density: one example at a time ✅. Change rate: myth strike → rule card → ladder fill → slices → example → deductions tick in → reveal ✅. Payoff: keep $1,292 + the honest exception ✅. Fixed during production: a 4-second empty card during 'how it works' (rule card added); a gap after the myth; ladder overlaps."
 }

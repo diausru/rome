@@ -95,6 +95,8 @@ SEO ANALYSIS
 Primary Keyword: {c['seo']['primary']}
 Secondary Keywords: {c['seo']['secondary']}
 Search Intent: {c['seo']['intent']}
+Search Questions: {c['seo'].get('questions','')}
+Pain / Curiosity: {c['seo'].get('pain','')}
 Target Audience: {c['seo']['audience']}
 Curiosity Angle: {c['seo']['angle']}
 

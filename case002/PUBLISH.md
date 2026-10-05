@@ -122,6 +122,8 @@ SEO ANALYSIS
 Primary Keyword: claim parents on taxes Canada
 Secondary Keywords: sending money to parents abroad tax; Canada caregiver credit; eligible dependant; medical expenses for parents; taxes in Canada (vidIQ ≈3.5K/mo); how taxes work in Canada (≈4.9K/mo)
 Search Intent: A Canadian taxpayer, often a newcomer, wants to know whether supporting parents abroad reduces their tax.
+Search Questions: Can I claim my parents as dependants in Canada? · Is money sent to family abroad tax deductible? · Can I claim medical expenses for my parents back home? · Does the caregiver credit work if my parents live overseas? · Do I need a written agreement to deduct support?
+Pain / Curiosity: Newcomers sending hundreds a month home feel it should count at tax time; fear of missing a credit, or of claiming something CRA later denies.
 Target Audience: Immigrant and newcomer employees aged 25–50 who send money home; families planning to bring parents to Canada.
 Curiosity Angle: The common belief that 'supporting family is deductible' versus the real CRA rule, plus the residency catch.
 

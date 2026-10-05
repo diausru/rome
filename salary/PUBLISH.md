@@ -129,6 +129,8 @@ SEO ANALYSIS
 Primary Keyword: 100K salary after tax Canada
 Secondary Keywords: tax brackets Canada (vidIQ ≈3.5K/mo); income tax Canada (≈4.7K); how taxes work in Canada (≈4.9K); taxes in Canada (≈3.5K); BC vs Alberta taxes; take-home pay by province
 Search Intent: A comparison: how much of a given salary each province leaves you.
+Search Questions: How much is $100K after tax in Canada? · Which province has the lowest tax on $100,000? · Is Alberta or B.C. better for taxes? · How much tax do I pay on $100K in Ontario / Manitoba? · Is it worth moving provinces for taxes?
+Pain / Curiosity: Comparing job offers or a move between provinces, and not knowing what the same salary is really worth; curiosity about the 'Alberta is cheapest' belief.
 Target Audience: Employees aged 25–45 earning or approaching $100K; people weighing a move or job offers across provinces; newcomers choosing where to live.
 Curiosity Angle: The same paycheque gives different results; B.C. beats Alberta at this salary.
 
