@@ -32,7 +32,7 @@ SHOTS = [
     # id, start, end, lens, fstop
     ("drop", 0.00, 2.25, 35, 5.6),
     ("slit", 2.25, 4.50, 85, 11.0),
-    ("extract", 4.50, 7.00, 50, 4.0),
+    ("extract", 4.50, 7.00, 50, 5.6),
     ("notice", 7.00, 23.00, 50, 4.0),
     ("unfold", 23.00, 32.00, 35, 4.0),
     ("wait", 32.00, 40.00, 35, 5.6),
@@ -214,12 +214,16 @@ class Film:
         self.slit.scale = (max(slit, 1e-4), 1, 1)
         # --- packet (inside the envelope, then pulled out past the top of frame)
         if 4.5 <= t < 7.0:
-            u = 0.12 + 0.88 * ramp(t, 4.50, 6.85)
+            x_ = clamp((t - 4.50) / 2.2)
+            u = 0.12 + 0.88 * (1 - (1 - x_) ** 2.2)  # already being pulled at the cut, decelerates as it clears
             local = Vector((0.0, -0.002 + 0.16 * u, S.PAPER_T * 3 + 0.0009 + 0.014 * u * u))
             self.packet.location = pos + Matrix.Rotation(rot, 3, "Z") @ local
             self.packet.rotation_euler = (math.radians(7) * min(1, u * 3), 0.0, rot)
             self.packet.hide_render = False
+            bpy.context.view_layer.update()
+            self.packet_edge = self.packet.matrix_world @ Vector((-0.03, S.LETTER_H / 6, 0.0))
         else:
+            self.packet_edge = None
             self.packet.location = (0, 0, -1)
             self.packet.hide_render = True
         # --- opener: only in the slit shot; blade tip travels along the top edge inside the envelope
@@ -332,9 +336,9 @@ class Film:
             focus = tip
             shake = 0.35
         elif sid == "extract":
-            eye = keys_interp([(4.5, (-0.035, -0.085, 0.215)), (7.0, (-0.035, -0.070, 0.225))], t)
-            look = keys_interp([(4.5, (-0.035, 0.125, 0.0)), (7.0, (-0.035, 0.150, 0.0))], t)
-            focus = ENV_LAND + Vector((-0.015, S.ENV_H / 2 + 0.01, 0.004))
+            eye = keys_interp([(4.5, (-0.035, -0.055, 0.235)), (7.0, (-0.035, -0.040, 0.245))], t)
+            look = keys_interp([(4.5, (-0.035, 0.150, 0.0)), (7.0, (-0.035, 0.175, 0.0))], t)
+            focus = self.packet_edge if self.packet_edge is not None else ENV_LAND + Vector((-0.015, S.ENV_H / 2 + 0.01, 0.004))
             shake = 0.7
         elif sid == "notice":
             hdr, amt = A("header"), A("p1_amount")
@@ -377,11 +381,12 @@ class Film:
             look0 = Vector((0.070, 0.050, 0.0))
             eye0 = look0 + Vector((0.0, -0.22, 0.60))
             n_, ty, am, re, de = (B("p2_name"), B("p2_tax_year"), B("p2_amount"), B("p2_reason"), B("p2_deadline"))
+            am_l, de_l = B("p2_amount", "left"), B("p2_deadline", "left")
             k_look = [(40.0, look0), (42.6, ty + Vector((0.035, 0.0, 0))), (44.0, ty + Vector((0.035, -0.004, 0))),
-                      (46.0, am + Vector((0.03, -0.012, 0))), (49.0, re + Vector((0.025, -0.012, 0)))]
+                      (46.0, am_l + Vector((0.045, -0.012, 0))), (49.0, de_l + Vector((0.045, 0.012, 0)))]
             look = keys_interp(k_look, t)
             k_eye = [(40.0, eye0), (42.6, ty + Vector((0.02, -0.17, 0.25))), (44.0, ty + Vector((0.02, -0.17, 0.245))),
-                     (46.0, am + Vector((0.02, -0.17, 0.25))), (49.0, re + Vector((0.02, -0.17, 0.25)))]
+                     (46.0, am_l + Vector((0.035, -0.17, 0.25))), (49.0, de_l + Vector((0.035, -0.15, 0.25)))]
             eye = keys_interp(k_eye, t)
             k_focus = [(40.0, look0), (42.0, n_), (43.6, n_), (44.4, ty), (45.2, am), (46.6, am), (47.2, re),
                        (48.2, de)]
