@@ -21,3 +21,26 @@ Reference the user liked: a CPA reel "$100,000 salary after tax by province". Mo
 - On-screen footer: "Source: canada.ca · General info, not advice" (or the specific source).
 - Never print API keys (keys live in `~/.config/reels-montage/keys.env`, filled by the user). No subliminal / "25th frame" tricks. Don't work around refused downloads of external code.
 - Branch `claude/kling-ai-skill-install-goznyv`; commit and push; no PR unless asked.
+
+## Shorts series standing rules (user, 2026-10-05)
+
+- The approved format is `showreel/src/SalaryShort.tsx` ("$100K, 10 provinces"): defocused office plate with a slow pan; glass hero card; typed film-title captions; persistent data board; gold numbers; sources footer. Every Short in the series reuses this language.
+- Always include a Canadian flag somewhere in the frame (placement at Claude's discretion; code-drawn, correct 1:2:1 proportions).
+- All 48 topics in `channel/TOPICS.md` become Shorts, published to YouTube on an optimized schedule (titles, hooks, descriptions, hashtags, playlists, posting times).
+
+## REAL TAX INFORMATION MODE (user, verbatim, applies to every tax video)
+
+Before creating the educational content:
+1. Research the current Canadian tax rules relevant to this topic.
+2. Use authoritative primary sources whenever possible.
+3. Prefer current CRA / Government of Canada sources.
+4. Verify every tax-related factual claim.
+5. Do not invent thresholds, dates, eligibility rules, credits, deductions or exceptions.
+6. Distinguish clearly between: general information; eligibility requirements; exceptions; situations requiring professional advice.
+7. Do not present an example as an actual CRA rule.
+8. If the tax treatment depends on facts that cannot be established from the topic, explicitly identify the dependency.
+9. Keep a record of the sources used for the factual claims.
+10. Only after the factual research is complete, design the 45–60 second story.
+
+FACTUAL ACCURACY HAS PRIORITY OVER DRAMATIC STORYTELLING.
+Never modify a tax rule to make the story more interesting.
