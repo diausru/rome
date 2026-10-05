@@ -40,8 +40,8 @@ const barPct = (net: number) => 15 + ((net - 68000) / (76000 - 68000)) * 85;
 type Cap = { at: number; l1: string; l2?: string; until: number };
 const CAPS: Cap[] = [
   { at: 4, l1: '$100,000 salary.', l2: 'How much do you keep?', until: 60 },
-  { at: 62, l1: 'Same $100K. 10 provinces.', l2: 'One keeps $6,506 more. Which?', until: T_CARDS - 2 },
-  ...ORDER.map((p, i) => ({ at: T_CARDS + i * CARD + 2, l1: p === 'QC' ? 'Québec · aside' : `#${RANK[p]} · ${NAME[p]}`, l2: NOTE[p] || undefined, until: T_CARDS + (i + 1) * CARD - 2 })),
+  { at: 62, l1: 'Same $100K. 10 provinces.', l2: 'One keeps $6,506 more. Which?', until: T_CARDS - 6 },
+  ...ORDER.map((p, i) => ({ at: T_CARDS + i * CARD - 4, l1: p === 'QC' ? 'Québec · aside' : `#${RANK[p]} · ${NAME[p]}`, l2: NOTE[p] || undefined, until: T_CARDS + (i + 1) * CARD - 4 })),
   { at: T_TWIST + 2, l1: 'Wait — B.C. beats Alberta?', l2: 'At $100K, yes. Here is why.', until: T_GAP - 2 },
   { at: T_GAP + 2, l1: '#1 vs #9:', l2: 'same salary, different province.', until: T_STAT - 2 },
   { at: T_STAT + 2, l1: 'About 1 in 6 workers', l2: 'earns $100K or more.', until: T_END - 2 },
@@ -53,7 +53,7 @@ const Typed = ({ f }: { f: number }) => {
   const cps = 1.6; // chars per frame
   const n1 = Math.floor((f - c.at) * cps);
   const n2 = Math.floor((f - c.at - c.l1.length / cps - 3) * cps);
-  const out = clamp((c.until - f) / 6);
+  const out = clamp((c.until - f) / 4);
   const caret = Math.floor(f / 8) % 2 === 0;
   const line = (s: string, n: number, big: boolean, on: boolean) => (
     <div style={{ fontSize: big ? 62 : 44, fontWeight: big ? 900 : 700, letterSpacing: big ? -1.5 : -0.5, color: big ? C.cream : C.mint, minHeight: big ? 70 : 52, whiteSpace: 'nowrap' }}>
@@ -85,14 +85,14 @@ const Hero = ({ style, children }: { style?: React.CSSProperties; children: Reac
 // card for one province: count down $100,000 → take-home while the four deductions subtract
 const ProvinceCard = ({ p, f0, f }: { p: string; f0: number; f: number }) => {
   const t = f - f0;
-  if (t < 0 || t > CARD) return null;
+  if (t < -8 || t > CARD) return null;
   const r = BY[p], qc = p === 'QC';
   const parts: [string, number][] = [['Federal', r.fed], [qc ? 'Québec' : 'Provincial', r.prov], [qc ? 'QPP' : 'CPP', r.cpp], [qc ? 'EI+QPIP' : 'EI', r.ei]];
   let taken = 0;
   const shown = parts.map(([, v], k) => { const e = ease(t, 12 + k * 7, 20 + k * 7); taken += v * e; return e; });
   const value = 100000 - taken;
-  const enter = spring(t, 0, 14);
-  const exit = ease(t, 60, 70);
+  const enter = t < -8 ? 0 : spring(t, -8, 14);
+  const exit = ease(t, 58, 68);
   const gold = p === 'BC';
   return (
     <Hero style={{ transform: `translateY(${(1 - enter) * 90 + exit * 30}px) scale(${1 - exit * 0.08})`, opacity: clamp(enter * 1.4) * (1 - exit), filter: `blur(${(1 - clamp(enter * 1.3)) * 10 + exit * 6}px)` }}>

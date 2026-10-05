@@ -5,3 +5,5 @@ out/carousel/wide.*
 out/c2/
 out/salary/*.png
 out/salary/render.log
+out/salary/*.mp4
+out/salary/*.log
