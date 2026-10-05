@@ -4,6 +4,7 @@ import { Carousel, CW, SH, LOOP } from './Carousel';
 import { Office } from './Office';
 import { Carousel2 } from './Carousel2';
 import { SalaryShort, SDUR, SFPS } from './SalaryShort';
+import { RaiseShort, RDUR, RFPS } from './RaiseShort';
 import { useCurrentFrame } from 'remotion';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
@@ -20,6 +21,7 @@ export const RemotionRoot = () => (
     <Composition id="Carousel" component={Carousel} durationInFrames={LOOP} fps={30} width={CW} height={SH} />
     <Composition id="Carousel2" component={Carousel2} durationInFrames={LOOP} fps={30} width={CW} height={SH} />
     <Composition id="SalaryShort" component={SalaryShort} durationInFrames={SDUR} fps={SFPS} width={1080} height={1920} />
+    <Composition id="RaiseShort" component={RaiseShort} durationInFrames={RDUR} fps={RFPS} width={1080} height={1920} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );
