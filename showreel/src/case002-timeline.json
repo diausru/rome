@@ -1,0 +1,95 @@
+{
+ "total": 58.972,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "You send your parents five hundred dollars a month.",
+   "start": 0.25,
+   "end": 3.28
+  },
+  {
+   "id": "year",
+   "text": "That's six thousand a year. Can you claim it?",
+   "start": 3.58,
+   "end": 6.639
+  },
+  {
+   "id": "answer",
+   "text": "In most cases? No.",
+   "start": 7.189,
+   "end": 9.401
+  },
+  {
+   "id": "support",
+   "text": "Deductible support goes to a spouse, an ex, or your child's other parent, under a court order or written agreement.",
+   "start": 9.951,
+   "end": 17.138
+  },
+  {
+   "id": "notlist",
+   "text": "Parents aren't on that list.",
+   "start": 17.388,
+   "end": 19.025
+  },
+  {
+   "id": "credits",
+   "text": "But three tax credits can include a parent.",
+   "start": 19.575,
+   "end": 22.292
+  },
+  {
+   "id": "care",
+   "text": "The caregiver amount, if they have an impairment.",
+   "start": 22.542,
+   "end": 25.444
+  },
+  {
+   "id": "medical",
+   "text": "Medical expenses you pay for them.",
+   "start": 25.594,
+   "end": 27.835
+  },
+  {
+   "id": "eligible",
+   "text": "And the eligible dependant amount, if you're single and they live with you.",
+   "start": 27.985,
+   "end": 32.362
+  },
+  {
+   "id": "catch",
+   "text": "Now the catch.",
+   "start": 32.862,
+   "end": 34.023
+  },
+  {
+   "id": "resident",
+   "text": "For a parent, the first two require residence in Canada at some point in the year.",
+   "start": 34.423,
+   "end": 39.647
+  },
+  {
+   "id": "abroad",
+   "text": "Abroad all year, and never lived with you? These generally don't apply.",
+   "start": 39.947,
+   "end": 44.609
+  },
+  {
+   "id": "advice",
+   "text": "Bringing them here? Residency depends on the facts. Get advice, and keep proof of support.",
+   "start": 45.109,
+   "end": 51.796
+  },
+  {
+   "id": "payoff",
+   "text": "Sending money home is generous. It just isn't a write-off.",
+   "start": 52.296,
+   "end": 56.423
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 56.823,
+   "end": 58.472
+  }
+ ]
+}

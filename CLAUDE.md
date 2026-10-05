@@ -44,3 +44,14 @@ Before creating the educational content:
 
 FACTUAL ACCURACY HAS PRIORITY OVER DRAMATIC STORYTELLING.
 Never modify a tax rule to make the story more interesting.
+
+## VOICEOVER ENGINE — MANDATORY (user, 2026-10-05; full text in `channel/VOICEOVER-ENGINE.md`)
+
+Every video ships with a complete, professional voiceover designed on the SAME master timeline as the visuals:
+- Written for speech (Canadian English, confident, calm, slightly dramatic, conversational). No "hello everyone" / "in today's video" / filler. Hook in the first 1–2 s with an open loop.
+- Every important on-screen number, ranking, comparison or conclusion is explained or reinforced by the narration (complement, don't read the screen word for word).
+- Build from the actual timeline: beats → narration per beat → realistic speaking duration → pauses → key words land at or just before their visual reveal.
+- Numbers written as spoken words. Every tax claim verified (CRA / Government of Canada / provinces / StatCan).
+- Deliver: A. final script; B. timecoded VO [mm:ss.ss–mm:ss.ss]; C. delivery notes; D. audio cue points; E. total spoken duration vs. video duration.
+- If the narration does not fit, MODIFY THE VIDEO TIMELINE AND RE-RENDER. Do not just report the mismatch.
+- The audio track is produced and muxed onto the video in sync.
