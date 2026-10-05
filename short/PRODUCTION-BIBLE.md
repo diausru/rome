@@ -4,7 +4,7 @@ Governing document: `short/MASTER-SYSTEM.md` (Master System v1.0, saved 2026-10-
 
 Legend: ✅ verified (source given) · 📝 decided by Claude, can be revised (record the reason when it changes) · ⏳ set at production start, when the subject is known
 
-**CURRENT VERSION:** TAX CASE #001, v1 in production (code in `taxcase/`). Series bible below; it applies to every TAX CASE episode.
+**CURRENT VERSION:** TAX CASE #001 v1 delivered: `taxcase/build/taxcase001_final_vo.mp4` (1080×1920, 24 fps, 55.000 s, 1320 frames, H.264 + AAC 48 kHz stereo, VO −14.1 LUFS). Code in `taxcase/`. Series bible below; it applies to every TAX CASE episode.
 
 ---
 
@@ -103,8 +103,14 @@ No conclusions are recorded until each item has a primary source:
 | Preview 2 | Stray red lines | Underlines outlived their text | Each mark ends when its line leaves frame |
 | Preview 3 | Titles hairline-thin | Manrope woff2 is a variable font defaulting to ExtraLight | Weight axis set to 700 |
 | Preview 3 | 1 s of nothing at the start of the extraction | Smootherstep start from rest | Cut on action, letter already 12 % out |
+| Final 1 | Extraction 4.5–7.0 s soft | Focus on the envelope edge while the letter lifted toward the lens | Focus follows the letter's leading edge, f/5.6, reframed (edge in the lower third) |
+| Final 1 | Show-through on the letter's outside read non-mirrored | Packet UVs not flipped | u flipped |
+| Final 1 | Fifth tick off frame at 48.2 s | Camera aimed at the centres of long lines | Aim at the left-anchored fields |
+| VO | Marks not on the spoken words | Marks timed before the narration existed | Underlines and ticks re-timed to the measured VO (picture frames unchanged) |
 
 ## 7. Change log
+
+- 2026-10-05 v1 delivered: TAX CASE #001 final with an ElevenLabs v4 voiceover (Higgsfield, voice "Harrison"), footer "Fictional example · General info, not advice". 8 major revision passes (stills a–d, previews 1–3, final 1).
 
 - 2026-10-05 v1: TAX CASE #001 in production. Series visual language set (§1). D6 pipeline, D7 hands off frame.
 
