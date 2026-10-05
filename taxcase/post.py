@@ -33,15 +33,17 @@ WEIGHT = {F_BOLD: 700, F_SEMI: 600, F_REG: 500}
 
 # ---------------------------------------------------------------- overlay timeline (seconds)
 UNDERLINES = [  # (track name, start, end)
-    ("p1_amount", 11.2, 14.9),
-    ("p1_tax_year", 16.0, 19.6),
-    ("p1_notice_date", 16.8, 19.6),
-    ("see_inside", 19.9, 22.3),
+    ("p1_amount", 11.2, 14.9),          # VO "...sixty dollars" 9.9-12.8
+    ("p1_notice_date", 16.25, 19.6),    # VO "The date" 16.26
+    ("p1_tax_year", 17.25, 19.6),       # VO "The tax year" 17.26
+    ("p1_reference", 18.45, 19.6),      # VO "The reference" 18.45
+    ("see_inside", 20.5, 22.3),         # VO "...the explanation" ~20.6
     ("row_amount_value", 26.6, 32.0),
     ("row_reason_value", 28.2, 32.0),
     ("row_deadline_value", 29.8, 32.0),
 ]
-TICKS = [("p2_name", 43.0), ("p2_tax_year", 44.2), ("p2_amount", 45.4), ("p2_reason", 46.6), ("p2_deadline", 47.8)]
+# ticks land on the spoken words (VO line 12 placed at 42.70 s)
+TICKS = [("p2_name", 42.75), ("p2_tax_year", 44.2), ("p2_amount", 45.6), ("p2_reason", 46.9), ("p2_deadline", 48.2)]
 TICKS_END = 49.0
 TITLES = [  # (lines, start, end, y_center as fraction of height, size px @1080, font)
     (["WAIT."], 32.7, 39.7, 0.20, 150, F_BOLD),
@@ -81,7 +83,7 @@ def draw_marks(img, t, tr, k):
                 pts.append((xx, yy))
             d.line(pts, fill=RED, width=int(round(th)), joint="curve")
             any_mark = True
-    if 42.0 <= t < TICKS_END:
+    if 42.5 <= t < TICKS_END:
         for name, t0 in TICKS:
             if t >= t0 and name in tr:
                 p = ease((t - t0) / 0.35)
