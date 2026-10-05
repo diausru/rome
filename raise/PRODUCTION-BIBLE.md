@@ -72,4 +72,4 @@ Families receiving income-tested benefits; anyone near a benefit threshold.
 2. The Manitoba example matches the channel's home province.
 
 ## Revision log
-- v1: pending
+- v1: rendered and verified (1080×1920, 24 fps, 1296 frames, 54.0 s, clean decode). QC fixes before the final render: myth-card gap, ladder overlap with the hero, ladder over the payoff. Silent: made before the VOICEOVER ENGINE rule.

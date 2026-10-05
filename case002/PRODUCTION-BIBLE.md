@@ -42,3 +42,4 @@ HOOK $500 a month → QUESTION "can you claim it?" → ANSWER "in most cases, no
 ## Revision log
 - VO v1: 164 words at 188 wpm, too fast for "calm, slightly dramatic". VO v2: 143 words, slowed 12%, 162 wpm; the timeline was regenerated and the visuals re-timed automatically.
 - Picture QC pass 1: an empty frame of 2.4 s before NO → the hook card is held until the stamp; credit-row stamps overlapped the titles → the rows were re-laid.
+- Final: rendered and verified. Video 1080×1920, 24 fps, 1428 frames, 59.50 s, clean decode; audio AAC 48 kHz stereo, 59.50 s, −14.6 LUFS integrated. Contact sheet reviewed: the reveals land on their VO beats.
