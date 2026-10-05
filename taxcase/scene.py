@@ -559,7 +559,7 @@ def build_envelope():
 def build_packet():
     """Folded letter packet (2 sheets, tri-folded = 6 layers) that slides out of the envelope."""
     back = mat_paper("packet", "page1_back.png", albedo=(0.80, 0.76, 0.66))
-    o = grid("packet", LETTER_W, LETTER_H / 3, 20, 8, uv_rect=(0, 2 / 3, 1, 1))
+    o = grid("packet", LETTER_W, LETTER_H / 3, 20, 8, uv_rect=(1, 2 / 3, 0, 1))  # u flipped: show-through reads mirrored
     o.data.materials.append(back)
     add_mod_solidify(o, PAPER_T * 6)
     return o

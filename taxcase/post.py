@@ -47,6 +47,7 @@ TITLES = [  # (lines, start, end, y_center as fraction of height, size px @1080,
     (["WAIT."], 32.7, 39.7, 0.20, 150, F_BOLD),
     (["CHECK THE DETAILS"], 41.0, 44.6, 0.115, 54, F_BOLD),
     (["UNDERSTAND THE LETTER", "BEFORE YOU ACT."], 51.5, 55.5, 0.20, 60, F_BOLD),
+    (["Fictional example · General info, not advice"], 49.6, 55.5, 0.955, 26, F_REG),
 ]
 
 
