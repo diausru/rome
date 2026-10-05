@@ -3,3 +3,5 @@ out/s*.png
 out/coin.png
 out/carousel/wide.*
 out/c2/
+out/salary/*.png
+out/salary/render.log

@@ -234,11 +234,11 @@ const Talkers = ({ p }: { p: number }) => (
 const VERT = 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }';
 const FRAG = `
 uniform sampler2D tex; uniform vec2 dir; uniform vec2 res; uniform float final; uniform float seed;
-uniform float blurL; uniform float blurR;
+uniform float blurL; uniform float blurR; uniform float gradeU;
 varying vec2 vUv;
 float hash(vec2 p){ return fract(sin(dot(p, vec2(12.9898, 78.233)) + seed) * 43758.5453); }
 void main(){
-  float u = vUv.x;
+  float u = gradeU < 0.0 ? vUv.x : gradeU;
   float s = mix(blurL, blurR, smoothstep(0.0, 1.0, u));
   vec3 acc = vec3(0.0); float wsum = 0.0;
   for (int i = -24; i <= 24; i++) {
@@ -261,33 +261,39 @@ void main(){
   }
 }`;
 
-const Post = ({ fRef, w, h, blur }: { fRef: React.MutableRefObject<number>; w: number; h: number; blur: [number, number] }) => {
+export type Pan = { yaw: number; pitch: number; roll: number; vfov: number; grade: number };
+const Post = ({ fRef, w, h, blur, pan }: { fRef: React.MutableRefObject<number>; w: number; h: number; blur: [number, number]; pan?: React.MutableRefObject<Pan | undefined> }) => {
   const { scene } = useThree();
   const st = useMemo(() => {
     const A = new THREE.WebGLRenderTarget(w, h, { type: THREE.HalfFloatType, samples: 4 });
     const B = new THREE.WebGLRenderTarget(w, h, { type: THREE.HalfFloatType });
+    const panCam = new THREE.PerspectiveCamera(50, w / h, 0.1, 80); panCam.position.set(0, EYE, 0);
     const cams = Array.from({ length: N }, (_, k) => {
       const c = new THREE.PerspectiveCamera(VFOV, ASPECT, 0.1, 80);
       c.position.set(0, EYE, 0); c.rotation.set(0, -(k - (N - 1) / 2) * SLICE, 0, 'YXZ');
       c.updateMatrixWorld(); c.updateProjectionMatrix(); return c;
     });
     const m = new THREE.ShaderMaterial({
-      uniforms: { tex: { value: null }, dir: { value: new THREE.Vector2() }, res: { value: new THREE.Vector2(w, h) }, final: { value: 0 }, seed: { value: 0 }, blurL: { value: blur[0] }, blurR: { value: blur[1] } },
+      uniforms: { tex: { value: null }, dir: { value: new THREE.Vector2() }, res: { value: new THREE.Vector2(w, h) }, final: { value: 0 }, seed: { value: 0 }, blurL: { value: blur[0] }, blurR: { value: blur[1] }, gradeU: { value: -1 } },
       vertexShader: VERT, fragmentShader: FRAG, depthTest: false, depthWrite: false,
     });
     const qs = new THREE.Scene(); qs.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), m));
-    return { A, B, cams, m, qs, qc: new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1) };
+    return { A, B, cams, panCam, m, qs, qc: new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1) };
   }, [w, h]);
   useFrame(({ gl }) => {
-    const { A, B, cams, m, qs, qc } = st, sw = w / N;
+    const { A, B, cams, panCam, m, qs, qc } = st, sw = w / N;
+    const pv = pan?.current;
     gl.autoClear = false;
     A.scissorTest = false; A.viewport.set(0, 0, w, h); gl.setRenderTarget(A); gl.clear();
-    cams.forEach((c, k) => {
+    if (pv) {
+      panCam.fov = pv.vfov; panCam.rotation.set(pv.pitch, -pv.yaw, pv.roll, 'YXZ'); panCam.updateProjectionMatrix(); panCam.updateMatrixWorld();
+      gl.setRenderTarget(A); gl.render(scene, panCam);
+    } else cams.forEach((c, k) => {
       A.viewport.set(k * sw, 0, sw, h); A.scissor.set(k * sw, 0, sw, h); A.scissorTest = true;
       gl.setRenderTarget(A); gl.render(scene, c);
     });
     A.scissorTest = false; A.viewport.set(0, 0, w, h);
-    m.uniforms.seed.value = (fRef.current % 180) * 1.618; m.uniforms.blurL.value = blur[0]; m.uniforms.blurR.value = blur[1];
+    m.uniforms.seed.value = (fRef.current % 180) * 1.618; m.uniforms.blurL.value = blur[0]; m.uniforms.blurR.value = blur[1]; m.uniforms.gradeU.value = pv ? pv.grade : -1;
     m.uniforms.tex.value = A.texture; m.uniforms.dir.value.set(1, 0); m.uniforms.final.value = 0;
     gl.setRenderTarget(B); gl.clear(); gl.render(qs, qc);
     m.uniforms.tex.value = B.texture; m.uniforms.dir.value.set(0, 1); m.uniforms.final.value = 1;
@@ -309,8 +315,9 @@ const Setup = () => {
   return null;
 };
 
-export const Office = ({ f, loop, w, h, blur = [16, 6] }: { f: number; loop: number; w: number; h: number; blur?: [number, number] }) => {
+export const Office = ({ f, loop, w, h, blur = [16, 6], pan }: { f: number; loop: number; w: number; h: number; blur?: [number, number]; pan?: Pan }) => {
   const fRef = useRef(f); fRef.current = f;
+  const panRef = useRef(pan); panRef.current = pan;
   const p = (f % loop) / loop;
   return (
     <ThreeCanvas width={w} height={h} shadows gl={{ antialias: false }} camera={{ position: [0, EYE, 0] }}>
@@ -323,7 +330,7 @@ export const Office = ({ f, loop, w, h, blur = [16, 6] }: { f: number; loop: num
       <Desks p={p} />
       <Walkers p={p} />
       <Talkers p={p} />
-      <Post fRef={fRef} w={w} h={h} blur={blur} />
+      <Post fRef={fRef} w={w} h={h} blur={blur} pan={pan ? panRef : undefined} />
     </ThreeCanvas>
   );
 };
