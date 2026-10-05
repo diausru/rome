@@ -63,3 +63,7 @@ Every video ships with a complete, professional voiceover designed on the SAME m
 - **Background music**, quiet and well under the VO (duck under speech), mood per theme: light and curious for school and kids, warm and calm for pensions, energetic for students, etc. Overt mood only: NO subliminal / "25th frame" content.
 - **Typography per topic group** (e.g. pensions vs students vs business) while keeping the layout: glass cards, typed captions, gold numbers, flag, sources footer.
 - Claude may improve realism and details on its own initiative, as long as the established layout is kept.
+
+## PUBLISHING & GROWTH ENGINE — MANDATORY final step (user, 2026-10-05; full text in `channel/PUBLISHING-ENGINE.md`)
+
+An MP4 is never "done". After visual, technical, factual and VO QC, research the current landscape for the topic (search intent, platform discovery, current Canadian tax news and questions), run a retention analysis (fix and re-render if weak), and write `<project>/PUBLISH.md` in the exact FINAL DELIVERY structure: video specs, VO + timecodes, fact sources (source · tax year · what it supports), YouTube (3 titles, description, hashtags, keywords, pinned comment, CTA), TikTok (caption, search keywords, hashtags, pinned comment, CTA), Instagram (caption, keywords, hashtags, pinned comment, one CTA), engagement strategy, SEO analysis, next 3 topics, series fit. Same facts everywhere; no engagement bait; no copied creator material.
