@@ -6,7 +6,7 @@ Title: $100K, 10 Provinces: Who Keeps the Most? (2026)
 Duration: 59.50 s (1428 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
-MP4: showreel/out/salary/salary-v3-final.mp4 (share copy: salary-v3-share.mp4)
+MP4: showreel/out/salary/salary-v4-final.mp4 (share copy: salary-v4-share.mp4)
 
 VOICEOVER
 A hundred-thousand-dollar salary. How much do you keep? Same pay, ten provinces, and one leaves you thousands more. Quebec files its own return. Call it about sixty-nine six. At the bottom: Nova Scotia, P.E.I., Newfoundland and Labrador. All under seventy-one thousand. Then New Brunswick, Manitoba, our home, and Saskatchewan. Seventy-one to seventy-two thousand. Ontario: seventy-four two. Alberta, seventy-four and a half. But not number one. Number one... British Columbia. Seventy-five thousand, three hundred seventy-three. Why? B.C.'s first two rates, five point six and seven point seven percent, beat Alberta's eight and ten. Top versus bottom: six thousand five hundred and six dollars a year. Five hundred forty-two a month. About one in six working Canadians earns that much. Where you live is a tax decision. Follow for the real math.

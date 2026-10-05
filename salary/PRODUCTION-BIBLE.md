@@ -83,3 +83,5 @@ Take-home = salary − federal tax − provincial tax − CPP (CPP1 + CPP2) − 
 ## Revision log
 - v1: rendered and verified (1080×1920, 24 fps, 1344 frames, 56.0 s). QC found an empty hero frame plus caption gap at every card change (attention drop every 3 s), cards and bars clipped, rows in the Shorts UI zone.
 - v2: card overlap (the next card enters 8 frames before the previous one leaves), captions overlap, layout raised. Verified: 1080×1920, 24 fps, 1344 frames, 56.0 s, clean decode, continuous seam frames 206–222.
+
+- v4 (VO + flag): the timeline was rebuilt from the voiceover (salary/vo-beats.json); low and middle ranks are grouped in the VO; a Canadian flag in the header and payoff. Verified: 1080×1920, 24 fps, 1428 frames, 59.50 s, clean decode, AAC 48 kHz, −14.8 LUFS.
