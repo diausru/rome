@@ -73,3 +73,4 @@ Families receiving income-tested benefits; anyone near a benefit threshold.
 
 ## Revision log
 - v1: rendered and verified (1080×1920, 24 fps, 1296 frames, 54.0 s, clean decode). QC fixes before the final render: myth-card gap, ladder overlap with the hero, ladder over the payoff. Silent: made before the VOICEOVER ENGINE rule.
+- v2 (with VO): the timeline was rebuilt from the voiceover (raise/vo-beats.json), plus a myth strike-through and a rule card. Verified: 1080×1920, 24 fps, 1438 frames, 59.92 s, clean decode, AAC 48 kHz, −14.7 LUFS.
