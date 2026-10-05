@@ -5,8 +5,9 @@ import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { LEAF } from './Coin';
 import { Office } from './Office';
 import DATA from './salary-data.json';
+import TL from './salary-timeline.json';
 
-export const SFPS = 24, SDUR = 1344, SW = 1080, SH = 1920;
+export const SFPS = 24, SDUR = 1428, SW = 1080, SH = 1920;
 const TAU = Math.PI * 2;
 const F = 'Mont';
 const C = { cream: '#f6f1e7', gold: '#ffd65e', green: '#27AE60', mint: '#bff0d2', red: '#ff8a65', grey: '#a9b4ae' };
@@ -27,8 +28,14 @@ const NOTE: Record<string, string> = {
   QC: 'Separate Québec return · estimate', NS: 'Keeps the least', PE: '', NL: '', NB: '',
   MB: 'Our home province · brackets frozen since 2025', SK: '', ON: '', AB: 'Not #1?', BC: 'Keeps the most',
 };
-const T_CARDS = 144, CARD = 72;
-const T_TWIST = T_CARDS + CARD * 10, T_GAP = T_TWIST + 144, T_STAT = T_GAP + 120, T_END = T_STAT + 96;
+// master timeline = the voiceover (salary/vo-beats.json → tools/vo.py → salary-timeline.json)
+const BT: Record<string, { s: number; e: number }> = Object.fromEntries(TL.beats.map((b) => [b.id, { s: Math.round(b.start * SFPS), e: Math.round(b.end * SFPS) }]));
+const atB = (id: string, frac: number) => Math.round(BT[id].s + (BT[id].e - BT[id].s) * frac);
+const T_TWIST = BT.twist.s, T_GAP = BT.gap.s, T_STAT = BT.stat.s, T_END = BT.payoff.s;
+const C_START: Record<string, number> = {}, C_END: Record<string, number> = {};
+ORDER.forEach((p, i) => { C_START[p] = BT[p === 'QC' ? 'qc' : p].s - 4; });
+ORDER.forEach((p, i) => { C_END[p] = i + 1 < ORDER.length ? C_START[ORDER[i + 1]] : T_TWIST - 2; });
+const T_CARDS = C_START.QC;
 
 // ---------- leaderboard geometry ----------
 const ROW_Y0 = 850, ROW_H = 60, ROW_GAP = 3;
@@ -39,9 +46,9 @@ const barPct = (net: number) => 15 + ((net - 68000) / (76000 - 68000)) * 85;
 // ---------- typing captions ----------
 type Cap = { at: number; l1: string; l2?: string; until: number };
 const CAPS: Cap[] = [
-  { at: 4, l1: '$100,000 salary.', l2: 'How much do you keep?', until: 60 },
-  { at: 62, l1: 'Same $100K. 10 provinces.', l2: 'One keeps $6,506 more. Which?', until: T_CARDS - 6 },
-  ...ORDER.map((p, i) => ({ at: T_CARDS + i * CARD - 4, l1: p === 'QC' ? 'Québec · aside' : `#${RANK[p]} · ${NAME[p]}`, l2: NOTE[p] || undefined, until: T_CARDS + (i + 1) * CARD - 4 })),
+  { at: BT.hook.s, l1: '$100,000 salary.', l2: 'How much do you keep?', until: BT.setup.s - 2 },
+  { at: BT.setup.s, l1: 'Same $100K. 10 provinces.', l2: 'One keeps $6,506 more. Which?', until: T_CARDS - 4 },
+  ...ORDER.map((p) => ({ at: C_START[p], l1: p === 'QC' ? 'Québec · aside' : `#${RANK[p]} · ${NAME[p]}`, l2: NOTE[p] || undefined, until: C_END[p] - 2 })),
   { at: T_TWIST + 2, l1: 'Wait — B.C. beats Alberta?', l2: 'At $100K, yes. Here is why.', until: T_GAP - 2 },
   { at: T_GAP + 2, l1: '#1 vs #9:', l2: 'same salary, different province.', until: T_STAT - 2 },
   { at: T_STAT + 2, l1: 'About 1 in 6 workers', l2: 'earns $100K or more.', until: T_END - 2 },
@@ -83,16 +90,17 @@ const Hero = ({ style, children }: { style?: React.CSSProperties; children: Reac
 );
 
 // card for one province: count down $100,000 → take-home while the four deductions subtract
-const ProvinceCard = ({ p, f0, f }: { p: string; f0: number; f: number }) => {
+const ProvinceCard = ({ p, f0, len, f }: { p: string; f0: number; len: number; f: number }) => {
   const t = f - f0;
-  if (t < -8 || t > CARD) return null;
+  if (t < 0 || t > len) return null;
+  const a0 = Math.min(10, len * 0.15), step = clamp(len * 0.5 / 4, 3, 7), done = a0 + step * 4 + 2;
   const r = BY[p], qc = p === 'QC';
   const parts: [string, number][] = [['Federal', r.fed], [qc ? 'Québec' : 'Provincial', r.prov], [qc ? 'QPP' : 'CPP', r.cpp], [qc ? 'EI+QPIP' : 'EI', r.ei]];
   let taken = 0;
-  const shown = parts.map(([, v], k) => { const e = ease(t, 12 + k * 7, 20 + k * 7); taken += v * e; return e; });
+  const shown = parts.map(([, v], k) => { const e = ease(t, a0 + k * step, a0 + (k + 1) * step + 1); taken += v * e; return e; });
   const value = 100000 - taken;
-  const enter = t < -8 ? 0 : spring(t, -8, 14);
-  const exit = ease(t, 58, 68);
+  const enter = spring(t, 0, Math.min(12, Math.max(6, len * 0.3)));
+  const exit = ease(t, len - Math.min(7, len * 0.25), len);
   const gold = p === 'BC';
   return (
     <Hero style={{ transform: `translateY(${(1 - enter) * 90 + exit * 30}px) scale(${1 - exit * 0.08})`, opacity: clamp(enter * 1.4) * (1 - exit), filter: `blur(${(1 - clamp(enter * 1.3)) * 10 + exit * 6}px)` }}>
@@ -100,8 +108,8 @@ const ProvinceCard = ({ p, f0, f }: { p: string; f0: number; f: number }) => {
         <div style={{ minWidth: 92, height: 64, padding: '0 18px', borderRadius: 20, display: 'grid', placeItems: 'center', fontSize: 38, fontWeight: 900, color: qc ? '#1d2420' : '#2e2004', background: qc ? 'linear-gradient(160deg,#dfe6e2,#a9b4ae)' : 'linear-gradient(160deg,#ffefb0,#f2c14e 50%,#cf961f)', boxShadow: 'inset 0 2px 1px rgba(255,255,255,.7), 0 10px 22px rgba(0,0,0,.4)' }}>{qc ? '≈' : `#${RANK[p]}`}</div>
         <div style={{ fontSize: 44, fontWeight: 800, color: C.cream, letterSpacing: -0.5 }}>{NAME[p]}</div>
       </div>
-      <div style={{ position: 'absolute', left: 46, top: 132, fontSize: 150, fontWeight: 900, letterSpacing: -6, fontVariantNumeric: 'tabular-nums', ...(gold || t > 44 ? goldInk : { color: C.cream, textShadow: '0 4px 0 rgba(0,0,0,.25), 0 24px 40px rgba(0,0,0,.45)' }) }}>
-        {qc && t > 44 ? '≈' : ''}{money(value)}
+      <div style={{ position: 'absolute', left: 46, top: 132, fontSize: 150, fontWeight: 900, letterSpacing: -6, fontVariantNumeric: 'tabular-nums', ...(gold || t > done ? goldInk : { color: C.cream, textShadow: '0 4px 0 rgba(0,0,0,.25), 0 24px 40px rgba(0,0,0,.45)' }) }}>
+        {qc && t > done ? '≈' : ''}{money(value)}
       </div>
       <div style={{ position: 'absolute', left: 52, top: 300, fontSize: 28, fontWeight: 700, color: C.mint, letterSpacing: 2 }}>TAKE-HOME OF $100,000</div>
       <div style={{ position: 'absolute', left: 52, top: 350, display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 56, rowGap: 16, width: 816 }}>
@@ -187,7 +195,7 @@ export const SalaryShort = () => {
           <div style={{ position: 'absolute', left: 44, top: 96, fontSize: 168, fontWeight: 900, letterSpacing: -7, ...goldInk }}>$100,000</div>
           <div style={{ position: 'absolute', left: 52, top: 300, display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 40, rowGap: 14, width: 820 }}>
             {qmarks.map((k, i) => {
-              const e = ease(f, 70 + i * 8, 82 + i * 8);
+              const e = ease(f, BT.setup.s + 10 + i * 8, BT.setup.s + 22 + i * 8);
               return (
                 <div key={k} style={{ display: 'flex', justifyContent: 'space-between', fontSize: 34, fontWeight: 700, color: C.cream, opacity: e, transform: `translateX(${(1 - e) * -24}px)` }}>
                   <span style={{ opacity: 0.85 }}>{k}</span><span style={{ color: C.red }}>−$?</span>
@@ -195,11 +203,11 @@ export const SalaryShort = () => {
               );
             })}
           </div>
-          <div style={{ position: 'absolute', left: 52, top: 410, fontSize: 30, fontWeight: 700, color: C.cream, opacity: 0.8 * ease(f, 104, 118) }}>Single · employment income only</div>
+          <div style={{ position: 'absolute', left: 52, top: 410, fontSize: 30, fontWeight: 700, color: C.cream, opacity: 0.8 * ease(f, BT.setup.s + 50, BT.setup.s + 64) }}>Single · employment income only</div>
         </Hero>
       )}
 
-      {ORDER.map((p, i) => <ProvinceCard key={p} p={p} f0={T_CARDS + i * CARD} f={f} />)}
+      {ORDER.map((p) => <ProvinceCard key={p} p={p} f0={C_START[p]} len={C_END[p] - C_START[p]} f={f} />)}
 
       {/* S4: the twist */}
       {f >= T_TWIST - 2 && f < T_GAP + 4 && (() => {
@@ -211,7 +219,7 @@ export const SalaryShort = () => {
               <span>2026 rates</span><span style={{ color: C.gold }}>B.C.</span><span>Alberta</span>
             </div>
             {rows.map(([a, b, c], k) => {
-              const ek = ease(f, T_TWIST + 14 + k * 14, T_TWIST + 26 + k * 14);
+              const ek = ease(f, atB('twist', [0.3, 0.5, 0.85][k]) - 4, atB('twist', [0.3, 0.5, 0.85][k]) + 8);
               return (
                 <div key={a} style={{ position: 'absolute', left: 52, right: 52, top: 120 + k * 118, display: 'grid', gridTemplateColumns: '1.3fr 1fr 1fr', alignItems: 'baseline', opacity: ek, transform: `translateY(${(1 - ek) * 20}px)`, borderTop: '1.5px solid rgba(255,255,255,.14)', paddingTop: 22 }}>
                   <span style={{ fontSize: 34, fontWeight: 700, color: C.cream }}>{a}</span>
@@ -227,11 +235,11 @@ export const SalaryShort = () => {
       {/* S5: the gap */}
       {f >= T_GAP - 2 && f < T_STAT + 4 && (() => {
         const e = spring(f, T_GAP, 16), o = 1 - ease(f, T_STAT - 10, T_STAT);
-        const m = ease(f, T_GAP + 50, T_GAP + 64);
+        const m = ease(f, atB('gap', 0.74) - 4, atB('gap', 0.74) + 10);
         return (
           <Hero style={{ transform: `translateY(${(1 - e) * 90}px)`, opacity: clamp(e * 1.4) * o }}>
             <div style={{ position: 'absolute', left: 52, top: 50, fontSize: 32, fontWeight: 800, color: C.mint, letterSpacing: 2 }}>B.C. $75,373 − N.S. $68,867</div>
-            <div style={{ position: 'absolute', left: 44, top: 100, fontSize: 168, fontWeight: 900, letterSpacing: -7, ...goldInk }}>{money(6506 * ease(f, T_GAP + 8, T_GAP + 40))}</div>
+            <div style={{ position: 'absolute', left: 44, top: 100, fontSize: 168, fontWeight: 900, letterSpacing: -7, ...goldInk }}>{money(6506 * ease(f, T_GAP + 4, atB('gap', 0.45)))}</div>
             <div style={{ position: 'absolute', left: 52, top: 290, fontSize: 40, fontWeight: 800, color: C.cream }}>a year more in your pocket</div>
             <div style={{ position: 'absolute', left: 52, top: 380, fontSize: 64, fontWeight: 900, color: C.cream, opacity: m, transform: `translateY(${(1 - m) * 20}px)` }}>= <span style={goldInk}>$542</span> every month</div>
           </Hero>
@@ -255,7 +263,7 @@ export const SalaryShort = () => {
         {ORDER.map((p, i) => {
           const hi = (p === 'BC' || p === 'AB') ? twistHi : 0;
           const hg = (p === 'BC' || p === 'NS') ? gapHi : 0;
-          return <LRow key={p} p={p} f={f} land={T_CARDS + (i + 1) * CARD - 2} hi={Math.max(hi, hg)} />;
+          return <LRow key={p} p={p} f={f} land={C_END[p] - 2} hi={Math.max(hi, hg)} />;
         })}
         {/* gap bracket between #1 and #9 */}
         {gapHi > 0 && (

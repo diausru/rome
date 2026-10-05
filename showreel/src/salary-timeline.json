@@ -1,0 +1,119 @@
+{
+ "total": 58.923,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "A hundred-thousand-dollar salary. How much do you keep?",
+   "start": 0.2,
+   "end": 3.48
+  },
+  {
+   "id": "setup",
+   "text": "Same pay, ten provinces, and one leaves you thousands more.",
+   "start": 3.75,
+   "end": 7.535
+  },
+  {
+   "id": "qc",
+   "text": "Quebec files its own return. Call it about sixty-nine six.",
+   "start": 7.855,
+   "end": 11.611
+  },
+  {
+   "id": "NS",
+   "text": "At the bottom: Nova Scotia,",
+   "start": 11.881,
+   "end": 13.889
+  },
+  {
+   "id": "PE",
+   "text": "P.E.I.,",
+   "start": 13.939,
+   "end": 14.775
+  },
+  {
+   "id": "NL",
+   "text": "Newfoundland and Labrador.",
+   "start": 14.825,
+   "end": 16.59
+  },
+  {
+   "id": "low",
+   "text": "All under seventy-one thousand.",
+   "start": 16.68,
+   "end": 18.572
+  },
+  {
+   "id": "NB",
+   "text": "Then New Brunswick,",
+   "start": 18.842,
+   "end": 19.98
+  },
+  {
+   "id": "MB",
+   "text": "Manitoba, our home,",
+   "start": 20.03,
+   "end": 21.69
+  },
+  {
+   "id": "SK",
+   "text": "and Saskatchewan.",
+   "start": 21.74,
+   "end": 22.936
+  },
+  {
+   "id": "mid",
+   "text": "Seventy-one to seventy-two thousand.",
+   "start": 23.026,
+   "end": 25.069
+  },
+  {
+   "id": "ON",
+   "text": "Ontario: seventy-four two.",
+   "start": 25.339,
+   "end": 27.568
+  },
+  {
+   "id": "AB",
+   "text": "Alberta, seventy-four and a half. But not number one.",
+   "start": 27.798,
+   "end": 31.566
+  },
+  {
+   "id": "BC",
+   "text": "Number one... British Columbia. Seventy-five thousand, three hundred seventy-three.",
+   "start": 31.976,
+   "end": 37.183
+  },
+  {
+   "id": "twist",
+   "text": "Why? B.C.'s first two rates, five point six and seven point seven percent, beat Alberta's eight and ten.",
+   "start": 37.543,
+   "end": 44.561
+  },
+  {
+   "id": "gap",
+   "text": "Top versus bottom: six thousand five hundred and six dollars a year. Five hundred forty-two a month.",
+   "start": 44.881,
+   "end": 51.18
+  },
+  {
+   "id": "stat",
+   "text": "About one in six working Canadians earns that much.",
+   "start": 51.5,
+   "end": 54.565
+  },
+  {
+   "id": "payoff",
+   "text": "Where you live is a tax decision.",
+   "start": 54.885,
+   "end": 56.812
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 57.042,
+   "end": 58.563
+  }
+ ]
+}

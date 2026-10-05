@@ -1,0 +1,83 @@
+{
+ "lead": 0.2,
+ "beats": [
+  [
+   "hook",
+   "You got a two-thousand-dollar raise. Now someone warns you: higher tax bracket.",
+   0.26,
+   1.0
+  ],
+  [
+   "myth",
+   "The myth? That the higher rate hits your whole salary.",
+   0.19,
+   1.02
+  ],
+  [
+   "nope",
+   "It doesn't.",
+   0.3,
+   1.08
+  ],
+  [
+   "how",
+   "Canada uses marginal rates. Each rate only taxes its own slice.",
+   0.22,
+   1.0
+  ],
+  [
+   "s14",
+   "Say your taxable income is sixty thousand. The first fifty-eight thousand, five hundred twenty-three is taxed federally at fourteen percent.",
+   0.19,
+   1.0
+  ],
+  [
+   "s205",
+   "Only the last one thousand, four hundred seventy-seven pays twenty point five.",
+   0.3,
+   1.02
+  ],
+  [
+   "example",
+   "Real example: Manitoba, twenty twenty-six. Salary from fifty-eight to sixty thousand.",
+   0.19,
+   1.0
+  ],
+  [
+   "deduct",
+   "Federal: three eighteen. Manitoba: two thirty-eight. C.P.P. and E.I.: one fifty-two.",
+   0.22,
+   1.0
+  ],
+  [
+   "keep",
+   "You keep one thousand, two hundred and ninety-two dollars. More money. Not less.",
+   0.3,
+   1.04
+  ],
+  [
+   "exception",
+   "One exception: the Canada Child Benefit starts shrinking once family net income passes about thirty-eight thousand.",
+   0.19,
+   1.0
+  ],
+  [
+   "advice",
+   "On benefits? Run the numbers with a pro.",
+   0.26,
+   1.02
+  ],
+  [
+   "payoff",
+   "A higher bracket never taxes your whole income.",
+   0.19,
+   1.06
+  ],
+  [
+   "cta",
+   "Follow for the real math.",
+   0.3,
+   1.0
+  ]
+ ]
+}

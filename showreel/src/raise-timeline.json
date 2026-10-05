@@ -1,0 +1,83 @@
+{
+ "total": 59.619,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "You got a two-thousand-dollar raise. Now someone warns you: higher tax bracket.",
+   "start": 0.2,
+   "end": 4.827
+  },
+  {
+   "id": "myth",
+   "text": "The myth? That the higher rate hits your whole salary.",
+   "start": 5.087,
+   "end": 8.192
+  },
+  {
+   "id": "nope",
+   "text": "It doesn't.",
+   "start": 8.382,
+   "end": 9.172
+  },
+  {
+   "id": "how",
+   "text": "Canada uses marginal rates. Each rate only taxes its own slice.",
+   "start": 9.472,
+   "end": 13.948
+  },
+  {
+   "id": "s14",
+   "text": "Say your taxable income is sixty thousand. The first fifty-eight thousand, five hundred twenty-three is taxed federally at fourteen percent.",
+   "start": 14.168,
+   "end": 21.929
+  },
+  {
+   "id": "s205",
+   "text": "Only the last one thousand, four hundred seventy-seven pays twenty point five.",
+   "start": 22.119,
+   "end": 27.03
+  },
+  {
+   "id": "example",
+   "text": "Real example: Manitoba, twenty twenty-six. Salary from fifty-eight to sixty thousand.",
+   "start": 27.33,
+   "end": 33.35
+  },
+  {
+   "id": "deduct",
+   "text": "Federal: three eighteen. Manitoba: two thirty-eight. C.P.P. and E.I.: one fifty-two.",
+   "start": 33.54,
+   "end": 39.809
+  },
+  {
+   "id": "keep",
+   "text": "You keep one thousand, two hundred and ninety-two dollars. More money. Not less.",
+   "start": 40.029,
+   "end": 45.254
+  },
+  {
+   "id": "exception",
+   "text": "One exception: the Canada Child Benefit starts shrinking once family net income passes about thirty-eight thousand.",
+   "start": 45.554,
+   "end": 51.846
+  },
+  {
+   "id": "advice",
+   "text": "On benefits? Run the numbers with a pro.",
+   "start": 52.036,
+   "end": 54.701
+  },
+  {
+   "id": "payoff",
+   "text": "A higher bracket never taxes your whole income.",
+   "start": 54.961,
+   "end": 57.608
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 57.798,
+   "end": 59.319
+  }
+ ]
+}

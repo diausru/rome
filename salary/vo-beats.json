@@ -1,0 +1,119 @@
+{
+ "lead": 0.2,
+ "beats": [
+  [
+   "hook",
+   "A hundred-thousand-dollar salary. How much do you keep?",
+   0.27,
+   1.0
+  ],
+  [
+   "setup",
+   "Same pay, ten provinces, and one leaves you thousands more.",
+   0.32,
+   1.0
+  ],
+  [
+   "qc",
+   "Quebec files its own return. Call it about sixty-nine six.",
+   0.27,
+   1.0
+  ],
+  [
+   "NS",
+   "At the bottom: Nova Scotia,",
+   0.05,
+   1.0
+  ],
+  [
+   "PE",
+   "P.E.I.,",
+   0.05,
+   1.0
+  ],
+  [
+   "NL",
+   "Newfoundland and Labrador.",
+   0.09,
+   1.0
+  ],
+  [
+   "low",
+   "All under seventy-one thousand.",
+   0.27,
+   1.0
+  ],
+  [
+   "NB",
+   "Then New Brunswick,",
+   0.05,
+   1.0
+  ],
+  [
+   "MB",
+   "Manitoba, our home,",
+   0.05,
+   1.0
+  ],
+  [
+   "SK",
+   "and Saskatchewan.",
+   0.09,
+   1.0
+  ],
+  [
+   "mid",
+   "Seventy-one to seventy-two thousand.",
+   0.27,
+   1.0
+  ],
+  [
+   "ON",
+   "Ontario: seventy-four two.",
+   0.23,
+   1.02
+  ],
+  [
+   "AB",
+   "Alberta, seventy-four and a half. But not number one.",
+   0.41,
+   1.04
+  ],
+  [
+   "BC",
+   "Number one... British Columbia. Seventy-five thousand, three hundred seventy-three.",
+   0.36,
+   1.04
+  ],
+  [
+   "twist",
+   "Why? B.C.'s first two rates, five point six and seven point seven percent, beat Alberta's eight and ten.",
+   0.32,
+   1.0
+  ],
+  [
+   "gap",
+   "Top versus bottom: six thousand five hundred and six dollars a year. Five hundred forty-two a month.",
+   0.32,
+   1.02
+  ],
+  [
+   "stat",
+   "About one in six working Canadians earns that much.",
+   0.32,
+   1.0
+  ],
+  [
+   "payoff",
+   "Where you live is a tax decision.",
+   0.23,
+   1.06
+  ],
+  [
+   "cta",
+   "Follow for the real math.",
+   0.36,
+   1.0
+  ]
+ ]
+}

@@ -55,3 +55,11 @@ Every video ships with a complete, professional voiceover designed on the SAME m
 - Deliver: A. final script; B. timecoded VO [mm:ss.ss–mm:ss.ss]; C. delivery notes; D. audio cue points; E. total spoken duration vs. video duration.
 - If the narration does not fit, MODIFY THE VIDEO TIMELINE AND RE-RENDER. Do not just report the mismatch.
 - The audio track is produced and muxed onto the video in sync.
+
+## Next-phase production rules (user, 2026-10-05; apply from the next new topic, not retroactively)
+
+- **Topic-matched background:** the plate behind the cards changes per topic and approximates the story: different offices, a school or classroom (kids / RESP / students), a Main Street storefront, a field or rural road, a retirement setting, an airport or train for travel. Keep it moving, defocused and real-looking (Master §1/§12).
+- **Topic props in the scene** when they serve the story: money, a vacation, a plane or train with a family or business traveller (e.g. "are trips tax-deductible?"). Realistic, not cartoon.
+- **Background music**, quiet and well under the VO (duck under speech), mood per theme: light and curious for school and kids, warm and calm for pensions, energetic for students, etc. Overt mood only: NO subliminal / "25th frame" content.
+- **Typography per topic group** (e.g. pensions vs students vs business) while keeping the layout: glass cards, typed captions, gold numbers, flag, sources footer.
+- Claude may improve realism and details on its own initiative, as long as the established layout is kept.

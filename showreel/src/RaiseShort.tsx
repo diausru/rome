@@ -4,8 +4,9 @@
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { LEAF } from './Coin';
 import { Office } from './Office';
+import TL from './raise-timeline.json';
 
-export const RFPS = 24, RDUR = 1296, RW = 1080, RH = 1920;
+export const RFPS = 24, RDUR = 1438, RW = 1080, RH = 1920;
 const TAU = Math.PI * 2;
 const C = { cream: '#f6f1e7', gold: '#ffd65e', green: '#27AE60', mint: '#bff0d2', red: '#ff8a65', orange: '#F39C12', flag: '#D52B1E' };
 const clamp = (x: number, a = 0, b = 1) => Math.min(b, Math.max(a, x));
@@ -14,7 +15,10 @@ const ease = (f: number, a: number, b: number) => sstep((f - a) / (b - a));
 const spring = (f: number, a: number, dur = 14) => { const t = clamp((f - a) / dur); return t >= 1 ? 1 : 1 - Math.exp(-6 * t) * Math.cos(7.5 * t); };
 const money = (n: number) => '$' + Math.round(n).toLocaleString('en-US');
 
-const S2 = 60, S3 = 168, S4 = 528, S5 = 864, S6 = 1104;
+// master timeline = the voiceover (raise/vo-beats.json → tools/vo.py → raise-timeline.json)
+const BT: Record<string, { s: number; e: number }> = Object.fromEntries(TL.beats.map((b) => [b.id, { s: Math.round(b.start * RFPS), e: Math.round(b.end * RFPS) }]));
+const atB = (id: string, frac: number) => Math.round(BT[id].s + (BT[id].e - BT[id].s) * frac);
+const S2 = BT.myth.s, S3 = BT.how.s, S4 = BT.example.s, S5 = BT.exception.s, S6 = BT.payoff.s;
 
 const glass: React.CSSProperties = {
   background: 'linear-gradient(155deg, rgba(255,255,255,.16), rgba(255,255,255,.05) 60%)',
@@ -60,15 +64,15 @@ export const Flag = ({ f, w = 96, amp = 0.05 }: { f: number; w?: number; amp?: n
 // ---------- typed captions ----------
 type Cap = { at: number; l1: string; l2?: string; until: number };
 const CAPS: Cap[] = [
-  { at: 4, l1: 'Got a raise?', l2: '“Now I’m in a higher bracket…”', until: S2 - 2 },
-  { at: S2 + 2, l1: 'The myth:', l2: 'your whole pay gets the higher rate.', until: S3 - 4 },
-  { at: S3 + 2, l1: 'How it really works:', l2: 'each rate only taxes its own slice.', until: 346 },
-  { at: 350, l1: 'Only $1,477 crosses the line.', l2: 'That slice pays 20.5%. Not the rest.', until: S4 - 4 },
-  { at: S4 + 2, l1: 'Real example, Manitoba 2026:', l2: 'a $2,000 raise.', until: 716 },
-  { at: 720, l1: 'You keep $1,292 of it.', l2: 'More money. Not less.', until: S5 - 4 },
-  { at: S5 + 2, l1: 'One real exception:', l2: 'benefits that shrink with income.', until: 1000 },
-  { at: 1004, l1: 'On benefits?', l2: 'Run your numbers with a pro.', until: S6 - 4 },
-  { at: S6 + 2, l1: 'A higher bracket never', l2: 'taxes your whole income.', until: RDUR + 10 },
+  { at: BT.hook.s, l1: 'Got a raise?', l2: '“Now I’m in a higher bracket…”', until: S2 - 2 },
+  { at: S2, l1: 'The myth:', l2: 'your whole pay gets the higher rate.', until: S3 - 4 },
+  { at: S3, l1: 'How it really works:', l2: 'watch the slices.', until: BT.s205.s - 2 },
+  { at: BT.s205.s, l1: 'Only $1,477 crosses the line.', l2: 'That slice pays 20.5%. Not the rest.', until: S4 - 4 },
+  { at: S4, l1: 'Real example, Manitoba 2026:', l2: 'a $2,000 raise.', until: BT.keep.s - 2 },
+  { at: BT.keep.s, l1: 'You keep $1,292 of it.', l2: 'More money. Not less.', until: S5 - 4 },
+  { at: S5, l1: 'One real exception:', l2: 'benefits that shrink with income.', until: BT.advice.s - 2 },
+  { at: BT.advice.s, l1: 'On benefits?', l2: 'Run your numbers with a pro.', until: S6 - 4 },
+  { at: S6, l1: 'A higher bracket never', l2: 'taxes your whole income.', until: RDUR + 10 },
 ];
 const Typed = ({ f }: { f: number }) => {
   const c = CAPS.find((c) => f >= c.at && f < c.until);
@@ -107,7 +111,7 @@ const BR = [
 ];
 const L_Y0 = 890, L_H = 92, L_GAP = 10;
 const Ladder = ({ f }: { f: number }) => {
-  const inc = 60000 * ease(f, S3 + 30, S3 + 150);              // example: $60,000 of taxable income
+  const inc = 58523 * ease(f, atB('s14', 0.45), atB('s14', 0.75)) + 1477 * ease(f, BT.s205.s, atB('s205', 0.6));              // example: $60,000 of taxable income
   const show = ease(f, S3 - 6, S3 + 20);
   const dim = (1 - 0.35 * ease(f, S4, S4 + 14) - 0.25 * ease(f, S5, S5 + 14)) * (1 - ease(f, S6 - 10, S6 + 6));
   return (
@@ -147,8 +151,9 @@ export const RaiseShort = () => {
   const grade = 0.15 + 0.85 * sstep(T);
 
   const h1 = inOut(f, 2, S3);            // raise card stays under the myth
-  const myth = ease(f, S2 + 6, S2 + 18);
-  const h3 = inOut(f, S3, S4);
+  const myth = ease(f, S2 + 2, S2 + 14);
+  const hHow = inOut(f, S3, BT.s14.s);
+  const h3 = inOut(f, BT.s14.s, S4);
   const h4 = inOut(f, S4, S5);
   const h5 = inOut(f, S5, S6);
   const end = spring(f, S6 + 6, 18);
@@ -156,7 +161,7 @@ export const RaiseShort = () => {
   // example: +$2,000 → keep $1,292 (raise/example.py)
   const parts: [string, number][] = [['Federal', 318.06], ['Manitoba', 238.24], ['CPP', 119], ['EI', 32.6]];
   let taken = 0;
-  const shown = parts.map(([, v], k) => { const e = ease(f, S4 + 40 + k * 14, S4 + 54 + k * 14); taken += v * e; return e; });
+  const shown = parts.map(([, v], k) => { const a = atB('deduct', [0.02, 0.33, 0.66, 0.82][k]); const e = ease(f, a, a + 12); taken += v * e; return e; });
 
   return (
     <AbsoluteFill style={{ background: '#06170f', fontFamily: 'Mont', overflow: 'hidden' }}>
@@ -181,17 +186,25 @@ export const RaiseShort = () => {
           <div style={{ position: 'absolute', left: 52, top: 50, fontSize: 30, fontWeight: 800, color: C.mint, letterSpacing: 3 }}>YOUR RAISE</div>
           <div style={{ position: 'absolute', left: 44, top: 96, fontSize: 168, fontWeight: 900, letterSpacing: -7, ...goldInk }}>+$2,000</div>
           <div style={{ position: 'absolute', left: 52, top: 300, width: 816, opacity: myth, transform: `translateY(${(1 - myth) * 20}px)` }}>
-            <div style={{ display: 'inline-block', padding: '6px 18px', borderRadius: 12, background: 'linear-gradient(160deg,#ff8a65,#d84315)', color: '#fff', fontSize: 28, fontWeight: 900, letterSpacing: 4, transform: `rotate(-3deg) scale(${1 + 0.25 * (1 - spring(f, S2 + 6, 12))})`, boxShadow: '0 10px 22px rgba(0,0,0,.4)' }}>MYTH</div>
-            <div style={{ marginTop: 14, fontSize: 38, fontWeight: 800, color: C.cream, lineHeight: 1.2, textShadow: shadowInk }}>“The higher rate hits my whole salary.”</div>
+            <div style={{ display: 'inline-block', padding: '6px 18px', borderRadius: 12, background: 'linear-gradient(160deg,#ff8a65,#d84315)', color: '#fff', fontSize: 28, fontWeight: 900, letterSpacing: 4, transform: `rotate(-3deg) scale(${1 + 0.25 * (1 - spring(f, S2 + 2, 12))})`, boxShadow: '0 10px 22px rgba(0,0,0,.4)' }}>MYTH</div>
+            <div style={{ position: 'relative', marginTop: 14, fontSize: 38, fontWeight: 800, color: C.cream, lineHeight: 1.2, textShadow: shadowInk, opacity: 1 - 0.45 * ease(f, BT.nope.s, BT.nope.s + 8) }}>“The higher rate hits my whole salary.”<div style={{ position: 'absolute', left: -6, top: '50%', height: 6, borderRadius: 3, background: '#ff8a65', width: `${102 * ease(f, BT.nope.s, BT.nope.s + 10)}%`, boxShadow: '0 4px 12px rgba(0,0,0,.4)' }} /></div>
           </div>
         </Hero>
       )}
 
+      {/* S3a: the rule */}
+      {f >= S3 - 2 && f < BT.s14.s + 2 && (
+        <Hero style={{ ...hHow.style, height: 300 }}>
+          <div style={{ position: 'absolute', left: 52, top: 44, display: 'inline-block', padding: '8px 18px', borderRadius: 14, background: 'linear-gradient(160deg,#5fe39a,#27AE60 50%,#146b3a)', color: '#fff', fontSize: 26, fontWeight: 900, letterSpacing: 3 }}>MARGINAL RATES</div>
+          <div style={{ position: 'absolute', left: 52, top: 110, width: 816, fontSize: 50, fontWeight: 900, color: C.cream, lineHeight: 1.12, textShadow: shadowInk }}>Each rate taxes only <span style={goldInk}>its own slice</span> of income.</div>
+        </Hero>
+      )}
+
       {/* S3: slices */}
-      {f >= S3 - 2 && f < S4 + 2 && (
+      {f >= BT.s14.s - 2 && f < S4 + 2 && (
         <Hero style={h3.style}>
           <div style={{ position: 'absolute', left: 52, top: 46, fontSize: 30, fontWeight: 800, color: C.mint, letterSpacing: 3 }}>EXAMPLE · $60,000 TAXABLE INCOME</div>
-          {[['$58,523', 'taxed at 14%', C.cream, S3 + 60], ['$1,477', 'taxed at 20.5%', C.gold, S3 + 150]].map(([a, b, col, at], k) => {
+          {[['$58,523', 'taxed at 14%', C.cream, atB('s14', 0.45)], ['$1,477', 'taxed at 20.5%', C.gold, BT.s205.s + 6]].map(([a, b, col, at], k) => {
             const e = ease(f, at as number, (at as number) + 16);
             return (
               <div key={k} style={{ position: 'absolute', left: 52, top: 110 + k * 150, display: 'flex', alignItems: 'baseline', gap: 26, opacity: e, transform: `translateX(${(1 - e) * -30}px)` }}>
@@ -200,7 +213,7 @@ export const RaiseShort = () => {
               </div>
             );
           })}
-          <div style={{ position: 'absolute', left: 52, top: 420, fontSize: 26, fontWeight: 700, color: C.cream, opacity: 0.8 * ease(f, S3 + 200, S3 + 220) }}>Each rate applies only to its own bracket. — CRA</div>
+          <div style={{ position: 'absolute', left: 52, top: 420, fontSize: 26, fontWeight: 700, color: C.cream, opacity: 0.8 * ease(f, atB('s205', 0.5), atB('s205', 0.5) + 14) }}>Each rate applies only to its own bracket. — CRA</div>
         </Hero>
       )}
 
@@ -211,8 +224,8 @@ export const RaiseShort = () => {
             <div style={{ padding: '8px 16px', borderRadius: 14, background: 'linear-gradient(160deg,#ffefb0,#f2c14e 50%,#cf961f)', color: '#2e2004', fontSize: 26, fontWeight: 900, letterSpacing: 2 }}>EXAMPLE</div>
             <div style={{ fontSize: 32, fontWeight: 800, color: C.cream }}>Manitoba · single · 2026</div>
           </div>
-          <div style={{ position: 'absolute', left: 46, top: 112, fontSize: 150, fontWeight: 900, letterSpacing: -6, fontVariantNumeric: 'tabular-nums', ...(f > S4 + 100 ? goldInk : { color: C.cream, textShadow: shadowInk }) }}>{money(2000 - taken)}</div>
-          <div style={{ position: 'absolute', left: 52, top: 278, fontSize: 28, fontWeight: 700, color: C.mint, letterSpacing: 2 }}>{f > S4 + 100 ? 'YOU KEEP — OF THE $2,000 RAISE' : 'THE $2,000 RAISE'}</div>
+          <div style={{ position: 'absolute', left: 46, top: 112, fontSize: 150, fontWeight: 900, letterSpacing: -6, fontVariantNumeric: 'tabular-nums', ...(f > BT.keep.s ? goldInk : { color: C.cream, textShadow: shadowInk }) }}>{money(2000 - taken)}</div>
+          <div style={{ position: 'absolute', left: 52, top: 278, fontSize: 28, fontWeight: 700, color: C.mint, letterSpacing: 2 }}>{f > BT.keep.s ? 'YOU KEEP — OF THE $2,000 RAISE' : 'THE $2,000 RAISE'}</div>
           <div style={{ position: 'absolute', left: 52, top: 330, display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 56, rowGap: 16, width: 816 }}>
             {parts.map(([k, v], i) => (
               <div key={k} style={{ display: 'flex', justifyContent: 'space-between', fontSize: 32, fontWeight: 700, opacity: shown[i], transform: `translateX(${(1 - shown[i]) * -24}px)`, color: C.cream }}>
@@ -229,10 +242,10 @@ export const RaiseShort = () => {
         <Hero style={h5.style}>
           <div style={{ position: 'absolute', left: 52, top: 44, display: 'inline-block', padding: '8px 18px', borderRadius: 14, background: 'linear-gradient(160deg,#ffc56b,#F39C12 60%,#c26f00)', color: '#2a1600', fontSize: 26, fontWeight: 900, letterSpacing: 3 }}>EXCEPTION</div>
           <div style={{ position: 'absolute', left: 52, top: 110, width: 816, fontSize: 46, fontWeight: 900, color: C.cream, lineHeight: 1.15, textShadow: shadowInk }}>Some benefits shrink as family income rises.</div>
-          <div style={{ position: 'absolute', left: 52, top: 250, width: 816, fontSize: 32, fontWeight: 700, color: C.cream, lineHeight: 1.3, opacity: ease(f, S5 + 40, S5 + 56) }}>
+          <div style={{ position: 'absolute', left: 52, top: 250, width: 816, fontSize: 32, fontWeight: 700, color: C.cream, lineHeight: 1.3, opacity: ease(f, atB('exception', 0.2), atB('exception', 0.2) + 14) }}>
             <span style={{ color: C.gold }}>Canada Child Benefit:</span> reduced once adjusted family net income passes <span style={{ color: C.gold }}>$38,237</span>
           </div>
-          <div style={{ position: 'absolute', left: 52, top: 410, fontSize: 22, fontWeight: 600, color: C.cream, opacity: 0.75 * ease(f, S5 + 60, S5 + 76) }}>CRA · payment period July 2026 – June 2027 · depends on your family</div>
+          <div style={{ position: 'absolute', left: 52, top: 410, fontSize: 22, fontWeight: 600, color: C.cream, opacity: 0.75 * ease(f, atB('exception', 0.6), atB('exception', 0.6) + 14) }}>CRA · payment period July 2026 – June 2027 · depends on your family</div>
         </Hero>
       )}
 
@@ -244,7 +257,7 @@ export const RaiseShort = () => {
           <Flag f={f} w={220} amp={0.06} />
           <div style={{ marginTop: 34, fontSize: 40, fontWeight: 800, color: C.mint, letterSpacing: 2 }}>THE RULE</div>
           <div style={{ fontSize: 58, fontWeight: 900, color: C.cream, lineHeight: 1.1, marginTop: 8, textShadow: shadowInk }}>Each rate only taxes<br /><span style={goldInk}>its own slice.</span></div>
-          <div style={{ marginTop: 50, display: 'inline-flex', alignItems: 'center', padding: '22px 34px', borderRadius: 999, background: 'linear-gradient(160deg,#ffefb0,#f2c14e 50%,#cf961f)', color: '#2e2004', fontSize: 38, fontWeight: 900, boxShadow: 'inset 0 2px 1px rgba(255,255,255,.7), 0 16px 30px rgba(0,0,0,.4)', transform: `scale(${1 + 0.03 * Math.sin(TAU * (f - S6) / 36)})` }}>Follow for the real math</div>
+          <div style={{ marginTop: 50, display: 'inline-flex', alignItems: 'center', padding: '22px 34px', borderRadius: 999, background: 'linear-gradient(160deg,#ffefb0,#f2c14e 50%,#cf961f)', color: '#2e2004', fontSize: 38, fontWeight: 900, boxShadow: 'inset 0 2px 1px rgba(255,255,255,.7), 0 16px 30px rgba(0,0,0,.4)', opacity: ease(f, BT.cta.s - 4, BT.cta.s + 8), transform: `scale(${1 + 0.03 * Math.sin(TAU * (f - S6) / 36)})` }}>Follow for the real math</div>
         </div>
       )}
       {f >= S6 && (
