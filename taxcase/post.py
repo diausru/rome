@@ -13,6 +13,7 @@ import math
 import os
 import subprocess
 
+import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -27,12 +28,15 @@ F_BOLD = REPO + "/resp-video/fonts/Manrope-800-latin.woff2"
 F_SEMI = REPO + "/resp-video/fonts/Manrope-700-latin.woff2"
 F_REG = REPO + "/resp-video/fonts/Manrope-500-latin.woff2"
 
+# Manrope files here are variable fonts that default to ExtraLight; set the weight axis explicitly
+WEIGHT = {F_BOLD: 700, F_SEMI: 600, F_REG: 500}
+
 # ---------------------------------------------------------------- overlay timeline (seconds)
 UNDERLINES = [  # (track name, start, end)
-    ("p1_amount", 11.2, 23.0),
-    ("p1_tax_year", 15.5, 23.0),
-    ("p1_notice_date", 16.3, 23.0),
-    ("see_inside", 19.9, 23.0),
+    ("p1_amount", 11.2, 14.9),
+    ("p1_tax_year", 16.0, 19.6),
+    ("p1_notice_date", 16.8, 19.6),
+    ("see_inside", 19.9, 22.3),
     ("row_amount_value", 26.6, 32.0),
     ("row_reason_value", 28.2, 32.0),
     ("row_deadline_value", 29.8, 32.0),
@@ -40,9 +44,9 @@ UNDERLINES = [  # (track name, start, end)
 TICKS = [("p2_name", 43.0), ("p2_tax_year", 44.2), ("p2_amount", 45.4), ("p2_reason", 46.6), ("p2_deadline", 47.8)]
 TICKS_END = 49.0
 TITLES = [  # (lines, start, end, y_center as fraction of height, size px @1080, font)
-    (["WAIT."], 32.7, 39.7, 0.20, 168, F_BOLD),
-    (["CHECK THE DETAILS"], 41.3, 48.8, 0.115, 64, F_BOLD),
-    (["UNDERSTAND THE LETTER", "BEFORE YOU ACT."], 51.5, 55.5, 0.20, 74, F_BOLD),
+    (["WAIT."], 32.7, 39.7, 0.20, 150, F_BOLD),
+    (["CHECK THE DETAILS"], 41.0, 44.6, 0.115, 54, F_BOLD),
+    (["UNDERSTAND THE LETTER", "BEFORE YOU ACT."], 51.5, 55.5, 0.20, 60, F_BOLD),
 ]
 
 
@@ -127,12 +131,10 @@ def film_finish(a, f, rng):
     a = a * (1 - 0.10 * np.clip(r2 / 1.56, 0, 1) ** 1.3)[..., None]
     # lateral chromatic aberration: red slightly larger, blue slightly smaller (sub-pixel at 1080)
     for ch, sc in ((0, 1.0007), (2, 0.9993)):
-        src = Image.fromarray(np.clip(a[..., ch] * 65535, 0, 65535).astype(np.uint16))
-        # affine resample about the centre: output pixel x maps to source (x - cx) / sc + cx
         cx, cy = w / 2, h / 2
-        im = src.transform((w, h), Image.AFFINE, (1 / sc, 0, cx - cx / sc, 0, 1 / sc, cy - cy / sc),
-                           resample=Image.BICUBIC)
-        a[..., ch] = np.asarray(im, dtype=np.float32) / 65535.0
+        M = np.float32([[sc, 0, cx - cx * sc], [0, sc, cy - cy * sc]])
+        a[..., ch] = cv2.warpAffine(np.ascontiguousarray(a[..., ch]), M, (w, h), flags=cv2.INTER_CUBIC,
+                                    borderMode=cv2.BORDER_REFLECT)
     # grain: luminance-weighted (strongest in mid-tones), slightly soft, almost no chroma
     lum = a @ np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
     amp = 0.022 * (0.35 + 1.3 * lum * (1 - lum) * 2)
@@ -155,6 +157,10 @@ def titles(img, t):
             continue
         a = ease((t - t0) / 0.30) * (1 - ease((t - (t1 - 0.30)) / 0.30))
         f = ImageFont.truetype(fpath, int(size * s))
+        try:
+            f.set_variation_by_axes([WEIGHT.get(fpath, 700)])
+        except OSError:
+            pass
         lh = int(size * s * 1.12)
         y = int(h * yc - lh * len(lines) / 2)
         for i, line in enumerate(lines):
@@ -166,9 +172,9 @@ def titles(img, t):
             sd = ImageDraw.Draw(sh)
             xx = x
             for ch, cw in zip(line, widths):
-                sd.text((xx, y + i * lh), ch, font=f, fill=(0, 0, 0, int(150 * a)))
+                sd.text((xx, y + i * lh), ch, font=f, fill=(0, 0, 0, int(110 * a)))
                 xx += cw
-            sh = sh.filter(ImageFilter.GaussianBlur(10 * s))
+            sh = sh.filter(ImageFilter.GaussianBlur(6 * s))
             over = Image.alpha_composite(over, sh)
             d = ImageDraw.Draw(over)
             xx = x
@@ -191,8 +197,7 @@ def main():
     src = os.path.join(HERE, "build", f"frames_{a.tag}")
     with open(os.path.join(HERE, "build", "tracks.json")) as fh:
         tracks = json.load(fh)
-    first = Image.open(os.path.join(src, "f0001.png"))
-    w, h = first.size
+    h, w = cv2.imread(os.path.join(src, "f0001.png"), cv2.IMREAD_UNCHANGED).shape[:2]
     k = w / REF_W
     out = a.out or os.path.join(HERE, "build", f"taxcase001_{a.tag}.mp4")
     enc = subprocess.Popen(
@@ -203,9 +208,8 @@ def main():
     rng = np.random.default_rng(2026)
     for f in range(1, NF + 1):
         t = (f - 1) / FPS
-        im = Image.open(os.path.join(src, f"f{f:04d}.png"))
-        arr = np.asarray(im, dtype=np.float32)
-        arr = arr / (65535.0 if arr.max() > 255 else 255.0)
+        raw = cv2.imread(os.path.join(src, f"f{f:04d}.png"), cv2.IMREAD_UNCHANGED)
+        arr = raw[..., ::-1].astype(np.float32) / (65535.0 if raw.dtype == np.uint16 else 255.0)
         im8 = Image.fromarray(np.clip(arr[..., :3] * 255, 0, 255).astype(np.uint8))
         im8 = draw_marks(im8, t, tracks.get(str(f), {}), k)
         a_ = np.asarray(im8, dtype=np.float32) / 255.0

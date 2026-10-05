@@ -214,7 +214,7 @@ class Film:
         self.slit.scale = (max(slit, 1e-4), 1, 1)
         # --- packet (inside the envelope, then pulled out past the top of frame)
         if 4.5 <= t < 7.0:
-            u = ramp(t, 4.70, 6.85)
+            u = 0.12 + 0.88 * ramp(t, 4.50, 6.85)
             local = Vector((0.0, -0.002 + 0.16 * u, S.PAPER_T * 3 + 0.0009 + 0.014 * u * u))
             self.packet.location = pos + Matrix.Rotation(rot, 3, "Z") @ local
             self.packet.rotation_euler = (math.radians(7) * min(1, u * 3), 0.0, rot)
@@ -270,17 +270,10 @@ class Film:
                 c.hide_render = not show_pages
         # envelope flex (bend modifier) and bulge
         self.set_env_shape(flex, bulge=1.0 - 0.75 * ramp(t, 5.0, 6.6) if t < 7.0 else 0.25)
+        bpy.context.view_layer.update()
         self.camera(t)
 
     def set_env_shape(self, flex, bulge):
-        m = self.env.modifiers.get("flex")
-        if m is None:
-            m = self.env.modifiers.new("flex", "SIMPLE_DEFORM")
-            m.deform_method = "BEND"
-            m.deform_axis = "Y"
-            # keep the bend before solidify
-            self.env.modifiers.move(len(self.env.modifiers) - 1, 0)
-        m.angle = flex
         self.env["bulge"] = bulge
         # bulge: scale the pillow in Z through a shape key
         me = self.env.data
@@ -289,7 +282,12 @@ class Film:
             flat = self.env.shape_key_add(name="flat")
             for v in flat.data:
                 v.co.z = S.PAPER_T * 2
+            fx = self.env.shape_key_add(name="flex")
+            fx.slider_min = -1.0
+            for v in fx.data:
+                v.co.z += 0.006 * (v.co.x / (S.ENV_W / 2)) ** 2   # ends lift 6 mm at value 1
         me.shape_keys.key_blocks["flat"].value = 1.0 - bulge
+        me.shape_keys.key_blocks["flex"].value = max(-1.0, min(1.0, flex / math.radians(5.0) * 0.5))
 
     # ----------------------------------------------------------------- page-space helpers
     def page_point(self, letter, px, py, lift=0.00015):
@@ -334,9 +332,9 @@ class Film:
             focus = tip
             shake = 0.35
         elif sid == "extract":
-            eye = keys_interp([(4.5, (-0.020, -0.165, 0.250)), (7.0, (-0.020, -0.150, 0.236))], t)
-            look = Vector((-0.020, 0.115, 0.0))
-            focus = ENV_LAND + Vector((0.0, S.ENV_H / 2, 0.0))
+            eye = keys_interp([(4.5, (-0.035, -0.085, 0.215)), (7.0, (-0.035, -0.070, 0.225))], t)
+            look = keys_interp([(4.5, (-0.035, 0.125, 0.0)), (7.0, (-0.035, 0.150, 0.0))], t)
+            focus = ENV_LAND + Vector((-0.015, S.ENV_H / 2 + 0.01, 0.004))
             shake = 0.7
         elif sid == "notice":
             hdr, amt = A("header"), A("p1_amount")
@@ -344,16 +342,16 @@ class Film:
             fold = self.page_point(self.p1, 1275, 1150)
             # camera moves: settle after the fall, push to the amount, then travel over the notice
             k_look = [(7.0, hdr + Vector((0.0, -0.035, 0))), (8.6, hdr + Vector((0.0, -0.03, 0))),
-                      (11.0, amt), (14.0, amt + Vector((0.004, 0.0, 0))),
-                      (16.8, ref + Vector((-0.02, 0.0, 0))), (18.4, ref + Vector((-0.02, -0.004, 0))),
+                      (11.0, amt), (14.4, amt + Vector((0.004, 0.0, 0))),
+                      (15.7, ref + Vector((-0.02, 0.0, 0))), (18.4, ref + Vector((-0.02, -0.004, 0))),
                       (20.6, see), (22.0, see), (23.0, fold)]
-            k_dist = [(7.0, 0.36), (8.6, 0.355), (11.0, 0.235), (14.0, 0.225), (16.8, 0.215), (20.6, 0.22),
+            k_dist = [(7.0, 0.36), (8.6, 0.355), (11.0, 0.235), (14.4, 0.225), (15.7, 0.215), (20.6, 0.22),
                       (23.0, 0.25)]
             look = keys_interp(k_look, t)
             dist = keys_interp([(a, (b, 0, 0)) for a, b in k_dist], t).x
             view_dir = Vector((0.03, 0.62, -0.78)).normalized()
             eye = look - view_dir * dist
-            k_focus = [(7.0, hdr), (9.4, hdr), (10.2, amt), (14.6, amt), (15.6, yr), (18.6, yr), (19.6, see),
+            k_focus = [(7.0, hdr), (9.4, hdr), (10.2, amt), (14.4, amt), (15.5, yr), (18.6, yr), (19.6, see),
                        (22.2, see), (23.0, fold)]
             focus = keys_interp(k_focus, t)
             shake = 0.6
@@ -422,12 +420,25 @@ class Film:
             self.cam.data.keyframe_insert("lens", frame=f)
             self.cam.data.dof.keyframe_insert("focus_distance", frame=f)
             self.cam.data.dof.keyframe_insert("aperture_fstop", frame=f)
-            self.env.modifiers["flex"].keyframe_insert("angle", frame=f)
+            self.env.data.shape_keys.key_blocks["flex"].keyframe_insert("value", frame=f)
             self.env.data.shape_keys.key_blocks["flat"].keyframe_insert("value", frame=f)
             for o in bpy.data.objects:
                 if o.type == "MESH":
                     o.keyframe_insert("hide_render", frame=f)
             self.record(f, t)
+        cut_frames = [int(round(sh[1] * FPS)) + 1 for sh in SHOTS[1:]]
+        for cf in cut_frames:
+            for f_eval, f_key in ((cf, cf - 0.30), (cf - 1, cf - 0.70)):
+                self.apply((f_eval - 1) / FPS)
+                for o in animated:
+                    o.keyframe_insert("location", frame=f_key)
+                    o.keyframe_insert("rotation_euler", frame=f_key)
+                self.slit.keyframe_insert("scale", frame=f_key)
+                self.cam.data.keyframe_insert("lens", frame=f_key)
+                self.cam.data.dof.keyframe_insert("focus_distance", frame=f_key)
+                self.cam.data.dof.keyframe_insert("aperture_fstop", frame=f_key)
+                self.env.data.shape_keys.key_blocks["flex"].keyframe_insert("value", frame=f_key)
+                self.env.data.shape_keys.key_blocks["flat"].keyframe_insert("value", frame=f_key)
         # constant interpolation for visibility; linear for everything else (every frame is keyed)
         for o in bpy.data.objects:
             ad = o.animation_data
@@ -453,7 +464,7 @@ class Film:
                 x0, y0, x1, y1 = self.anchors[n]
                 tr[n] = [self.project(self.page_point(self.p1, x0, y1 + 14)),
                          self.project(self.page_point(self.p1, x1, y1 + 14))]
-            see = [self.project(self.page_point(self.p1, 1600, 838)), self.project(self.page_point(self.p1, 2280, 838))]
+            see = [self.project(self.page_point(self.p1, 1795, 872)), self.project(self.page_point(self.p1, 2285, 872))]
             tr["see_inside"] = see
             for n in ["p2_name", "p2_tax_year", "p2_amount", "p2_reason", "p2_deadline"]:
                 x0, y0, x1, y1 = self.anchors[n]
