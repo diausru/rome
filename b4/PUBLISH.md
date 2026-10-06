@@ -7,7 +7,7 @@ Title: How Much of a $1,000 Invoice Is Actually Yours? (Self-Employed, Canada)
 Duration: 60.00 s (1440 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
-Render method: Code-built composite (Python / OpenCV). Still photo plate of the desk + matted still photo of a hand and pen (Higgsfield GPT Image 2.5 + background removal; no video generator). The hand is moved rigidly so the pen tip rides the ink head. Ink is revealed only along single-line font strokes (EMS Tech) in natural stroke order with human jitter, warped onto the paper by its homography and multiplied into it. Virtual camera with operator micro-motion. Contact shadow, plate-matched lighting on the hand, film grain. Narration: ElevenLabs v4 via Higgsfield (voice "Harrison"), placed on the master timeline, −14.1 LUFS.
+Render method: Code-built composite (Python / OpenCV). Still photo plate of the desk + matted still photo of a hand and pen (Higgsfield GPT Image 2.5 + background removal; no video generator). The whole hand, wrist and cuff are in the photo (sleeve extended past the frame edges); the hand rotates about a wrist that glides along the line, so the pen tip rides the ink head without rigid sliding. Ink is revealed only along single-line font strokes (EMS Tech) in natural stroke order with human jitter, warped onto the paper by its homography and multiplied into it. Virtual camera with operator micro-motion. Contact shadow, plate-matched lighting on the hand, film grain. Narration: ElevenLabs via Higgsfield text2speech_v2 (series voice "Grady"), long pauses shortened to 0.38 s and tempo ×1.07, placed on the master timeline, −14.1 LUFS integrated, −1.8 dBTP. Source tag: two lines on a near-opaque dark plate at the top-left (outside the Shorts bottom UI).
 Final MP4: b4/build/b4_final.mp4 (master, 230 MB); share copy b4/build/b4_share.mp4 (24 MB). Build outputs, not in git.
 
 ⸻
@@ -16,25 +16,25 @@ VOICEOVER
 
 You send a client a thousand-dollar invoice. How much of it is actually yours? Self-employed? Nobody takes tax off for you. Say you net sixty thousand dollars this year, in Manitoba. First, C-P-P. You pay both halves. About six thousand, seven hundred. Federal tax: about five thousand, one hundred and fifty. Manitoba: about four thousand, two hundred. Add it up: about sixteen thousand, one hundred dollars. Roughly twenty-seven percent. But that's an average. In this example, each extra dollar costs about thirty-six cents. So from every thousand-dollar invoice, move about two hundred and seventy dollars into a separate tax account. The day it's paid. Owe more than three thousand, this year and in one of the last two? You may have to pay in instalments. The invoice isn't your income. What's left after tax is.
 
-(135 words, 55.7 s of speech, 146 wpm. Last word ends at 00:59.14; video 01:00.00.)
+(135 words, 56.22 s of speech, ≈144 wpm. Last word ends at 00:59.02; video 01:00.00.)
 
 ⸻
 
 VOICEOVER TIMECODES
 
-[00:00.25–00:05.28] "You send a client a thousand-dollar invoice. How much of it is actually yours?"
-[00:05.58–00:08.75] "Self-employed? Nobody takes tax off for you."
-[00:09.05–00:12.83] "Say you net sixty thousand dollars this year, in Manitoba."
-[00:13.13–00:19.20] "First, C-P-P. You pay both halves. About six thousand, seven hundred."
-[00:19.50–00:23.44] "Federal tax: about five thousand, one hundred and fifty."
-[00:23.74–00:26.85] "Manitoba: about four thousand, two hundred."
-[00:27.26–00:33.00] "Add it up: about sixteen thousand, one hundred dollars. Roughly twenty-seven percent."
-[00:33.42–00:39.32] "But that's an average. In this example, each extra dollar costs about thirty-six cents."
-[00:39.62–00:47.86] "So from every thousand-dollar invoice, move about two hundred and seventy dollars into a separate tax account. The day it's paid."
-[00:48.16–00:54.51] "Owe more than three thousand, this year and in one of the last two? You may have to pay in instalments."
-[00:54.81–00:59.14] "The invoice isn't your income. What's left after tax is."
+[00:00.20–00:05.26] "You send a client a thousand-dollar invoice. How much of it is actually yours?"
+[00:05.52–00:08.36] "Self-employed? Nobody takes tax off for you."
+[00:08.62–00:12.20] "Say you net sixty thousand dollars this year, in Manitoba."
+[00:12.46–00:18.93] "First, C-P-P. You pay both halves. About six thousand, seven hundred."
+[00:19.19–00:22.45] "Federal tax: about five thousand, one hundred and fifty."
+[00:22.71–00:25.56] "Manitoba: about four thousand, two hundred."
+[00:25.82–00:31.94] "Add it up: about sixteen thousand, one hundred dollars. Roughly twenty-seven percent."
+[00:32.20–00:38.68] "But that's an average. In this example, each extra dollar costs about thirty-six cents."
+[00:38.94–00:47.37] "So from every thousand-dollar invoice, move about two hundred and seventy dollars into a separate tax account. The day it's paid."
+[00:47.63–00:54.30] "Owe more than three thousand, this year and in one of the last two? You may have to pay in instalments."
+[00:54.56–00:59.02] "The invoice isn't your income. What's left after tax is."
 
-Audio cue points: 00:02.5 "$1,000" complete (hook) · 00:14.0 "C-P-P" → "CPP 11.9%" · 00:17.2 the CPP figure lands with "$6,724" · 00:27.0 the total line is drawn (impact) · 00:31.2 "twenty-seven percent" → "≈27%" circled at 00:32.3 · 00:33.4 "But that's an average" (twist, pause before) · 00:38.5 "thirty-six cents" lands as "36¢" completes · 00:43.5 "two hundred and seventy" → "$270" · 00:54.6 camera pulls back (payoff) · 00:55.0 "$270" circled.
+Audio cue points: 00:02.5 "$1,000" complete (hook) · 00:12.95 "C-P-P" → "CPP 11.9%" · 00:18.65 "$6,724" complete as "six thousand, seven hundred" ends · 00:26.55 the total line is drawn (impact) · 00:31.5 "twenty-seven percent" → "≈27%", circled by 00:32.25 · 00:32.20 "But that's an average" (twist) · 00:37.3 "36¢" complete, "thirty-six cents" at ≈00:38 · 00:40.7–00:44.8 "$270" written under "two hundred and seventy" · 00:54.2 camera pulls back (payoff) · 00:54.7 "$270" circled.
 
 ⸻
 
@@ -42,25 +42,25 @@ DRAWING TIMELINE
 
 [00:00.00] Hand already over the blank sheet, pen raised (hook frame)
 [00:00.30–00:02.53] writes "$1,000"
-[00:03.10–00:05.03] writes "yours?"
-[00:06.60–00:09.36] writes "0 withheld"
+[00:03.30–00:05.23] writes "yours?"
+[00:06.50–00:09.26] writes "0 withheld"
 [00:09.36–00:12.28] writes "$60K · MB"
-[00:13.60–00:15.83] writes "CPP 11.9%"
-[00:16.90–00:18.85] writes "$6,724" (right column)
-[00:19.30–00:21.41] writes "Federal"
-[00:21.49–00:23.42] writes "$5,155"
-[00:23.60–00:24.78] writes "MB"
-[00:24.86–00:26.76] writes "$4,227"
-[00:27.00–00:27.35] draws the total line under the column
-[00:27.60–00:30.31] writes "= $16,106"
-[00:30.60–00:32.26] writes "≈27%"
-[00:32.31–00:33.04] circles "≈27%"
-[00:34.80–00:38.11] writes "next $1 ≈ 36¢"
-[00:41.80–00:45.93] writes "set aside $270"
-[00:48.00–00:52.56] writes "> $3K → instalments"
-[00:55.00–00:55.72] circles "$270"
-[00:55.72–00:57.00] hand withdraws out of frame (lower right)
-[00:54.60–00:57.40] camera pulls back from the line to the whole page; holds to 01:00.00
+[00:12.95–00:15.18] writes "CPP 11.9%"
+[00:16.70–00:18.65] writes "$6,724" (right column)
+[00:19.10–00:21.21] writes "Federal"
+[00:21.29–00:23.22] writes "$5,155"
+[00:23.32–00:24.50] writes "MB"
+[00:24.58–00:26.47] writes "$4,227"
+[00:26.55–00:26.90] draws the total line under the column
+[00:26.98–00:29.69] writes "= $16,106"
+[00:29.81–00:31.47] writes "≈27%"
+[00:31.52–00:32.25] circles "≈27%"
+[00:34.00–00:37.31] writes "next $1 ≈ 36¢"
+[00:40.70–00:44.83] writes "set aside $270"
+[00:47.40–00:51.96] writes "> $3K → instalments"
+[00:54.70–00:55.42] circles "$270"
+[00:55.82–] hand withdraws toward the lower right
+[00:54.20–00:57.00] camera pulls back from the line to the whole page; holds to 01:00.00
 Pen: black fine-liner throughout; stroke order from the single-line font; pen lifts between strokes (minimum-jerk moves).
 
 ⸻
@@ -211,5 +211,5 @@ Series fit: "Real Tax Math" (handwritten). Playlist: Self-Employed in Canada.
 - Hook (0–2 s): the hand is already over the paper on frame 1 and writes "$1,000" while the narration asks "how much is yours?" ✅
 - Visual change: a new written element every 1.5–4 s through 55 s ✅. Camera follows the active line, then pulls back for the payoff ✅
 - Escalation: one line, three deductions, the total, the average, the twist (36¢), the action, the rule ✅
-- Weakest moments: 05.0–06.6 s (the hand moves aside, nothing is written for 1.6 s during "Self-employed?") and 38.1–41.8 s (3.7 s between "36¢" and "set aside", while the narration starts the action line). Both carry narration, and the second ends on the key number. Judged acceptable; no re-render.
+- Weakest moments: 05.2–06.5 s (1.3 s with no new ink during "Self-employed?") and 37.3–40.7 s (3.4 s between "36¢" and "set aside", while the narration finishes "thirty-six cents" and starts the action line). Both carry narration and the camera keeps moving. Judged acceptable.
 - Payoff: "$270" circled, the camera pulls back over the whole worked page as the narration lands "What's left after tax is." ✅
