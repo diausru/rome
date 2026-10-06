@@ -1,7 +1,7 @@
 """Realistic handwritten explainer engine (Tax Secrets Canada, HANDWRITTEN mode).
 
 Plate:  a still photograph of the desk with a blank sheet (assets/plate_b.png, Higgsfield GPT Image 2.5, D2 still plate).
-Hand:   a still photograph of a hand holding a marker, matted (assets/hand_a_cut.png). Never deformed: it is moved
+Hand:   a still photograph of a hand holding a marker, matted (assets/hand_c_cut.png). Never deformed: it is moved
         rigidly so the pen tip sits exactly on the ink head, with a small wrist rotation, pen-lift scale and a soft
         contact shadow that separates when the pen lifts.
 Ink:    single-line font strokes (EMS Tech, OFL) laid out in paper millimetres, with per-glyph jitter. Ink is
@@ -26,8 +26,9 @@ PX_PER_MM = 6.0                       # paper-space ink resolution
 
 # ---------------------------------------------------------------- plate geometry (measured in assets/plate_b.png)
 PAPER_QUAD = np.float32([[232, 865], [1167, 731], [1349, 2074], [388, 2186]])   # TL, TR, BR, BL (plate px)
-HAND_TIP = np.float32([793, 1200])    # pen tip in assets/hand_a_cut.png
-HAND_SCALE = 0.70                     # hand photo px/mm (≈6.5) → plate px/mm (≈4.55)
+HAND_TIP = np.float32([350, 953])     # pen tip in assets/hand_c_cut.png (whole hand inside the photo)
+HAND_WRIST = np.float32([985, 1825])  # wrist / cuff centre in the same photo (pivot for finger-scale strokes)
+HAND_SCALE = 0.92                     # matched by pen length: 538 px here vs 706 px in the first hand photo (×0.70)
 
 
 def paper_homography():
@@ -220,23 +221,31 @@ class Renderer:
         plate = cv2.imread(os.path.join(HERE, "assets", "plate_b.png"), cv2.IMREAD_COLOR)
         self.plate = plate.astype(np.float32) / 255.0
         self.ph, self.pw = plate.shape[:2]
-        hand = cv2.imread(os.path.join(HERE, "assets", "hand_a_cut.png"), cv2.IMREAD_UNCHANGED)
-        # extend the sleeve below the photo's bottom edge so the arm always leaves the frame (rows repeated with
-        # the arm's slant: the sleeve runs down-right at about 2 px per row near the bottom)
-        ext = 1400
-        last = hand[-6:].copy()
+        hand = cv2.imread(os.path.join(HERE, "assets", "hand_c_cut.png"), cv2.IMREAD_UNCHANGED)
+        # the hand, wrist and cuff are fully inside the photo; only the sleeve touches the right and bottom edges.
+        # Continue the sleeve past both edges so no photo border can ever appear inside our frame.
+        h0, w0 = hand.shape[:2]
+        right = np.zeros((h0, 900, 4), hand.dtype)
+        rows = np.where(hand[:, -1, 3] > 0)[0]
+        for r in rows:
+            src = hand[r, -10:]
+            right[r] = np.tile(src, (90, 1))[:900]
+        hand = np.concatenate([hand, right], 1)
+        ext = 1500
+        last = hand[-8:].copy()
         pad = np.zeros((ext, hand.shape[1], 4), hand.dtype)
         for i in range(ext):
-            shift = int(i * 0.18)
-            row = last[i % 6]
+            shift = int(i * 0.31)                      # the forearm runs down-right ≈0.31 px per row near the edge
+            row = last[i % 8]
             pad[i, shift:] = row[:hand.shape[1] - shift] if shift else row
         hand = np.concatenate([hand, pad], 0)
         hand = cv2.resize(hand, None, fx=HAND_SCALE, fy=HAND_SCALE, interpolation=cv2.INTER_AREA)
         self.hand_rgb = hand[..., :3].astype(np.float32) / 255.0
+        # the hand photo is lit neutral/cool; the desk is late-afternoon warm
+        self.hand_rgb = np.clip(self.hand_rgb * np.float32([0.90, 0.98, 1.06])[None, None, :], 0, 1)
         self.hand_a = hand[..., 3].astype(np.float32) / 255.0
+        self.wrist = HAND_WRIST * HAND_SCALE
         self.tip = HAND_TIP * HAND_SCALE
-        # light the hand like the plate: the plate is warmer and slightly darker than the hand photo
-        self.hand_rgb = np.clip(self.hand_rgb * np.float32([0.93, 0.97, 1.03])[None, None, :] * 0.97, 0, 1)
         # illumination map from the blank paper (uniform albedo): window-blind light and shade, extended over the desk
         lum = cv2.cvtColor(plate, cv2.COLOR_BGR2GRAY).astype(np.float32)
         mask = np.zeros(lum.shape, np.uint8)
@@ -277,13 +286,27 @@ class Renderer:
         warped = cv2.warpPerspective(cov, H_INK, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
         ink = np.float32([0.10, 0.09, 0.09])                  # BGR, near-black marker
         out = out * (1 - warped[..., None] * (1 - ink[None, None, :]) * 0.94)
-        # hand
+        # hand: the wrist glides along the line (low-passed pen path); small strokes are made by rotating the hand
+        # about the wrist, so the tip lands exactly on the ink head while the hand itself barely moves.
         pos, lift = tl.state(t)
-        tip_plate = mm_to_plate(pos)
-        ang = PAPER_ANGLE + (pos[0] - 120) * 0.035 + (pos[1] - 150) * 0.012   # wrist pivot
-        scale = 1.0 + 0.018 * lift
-        M = cv2.getRotationMatrix2D((float(self.tip[0]), float(self.tip[1])), -ang, scale)
-        M[:, 2] += tip_plate - self.tip
+        P = mm_to_plate(pos)
+        lag = [tl.state(max(0.0, t - d))[0] for d in (0.0, 0.12, 0.25, 0.4, 0.55, 0.7)]
+        ws = (sum(p[0] for p in lag) / len(lag), sum(p[1] for p in lag) / len(lag))
+        base = math.radians(PAPER_ANGLE + (ws[0] - 110) * 0.05 + (ws[1] - 150) * 0.015
+                            + 0.4 * math.sin(2 * math.pi * 0.21 * t))           # slow drift + breathing
+        sc = 1.0 + 0.018 * lift
+        v0 = self.tip - self.wrist                                               # wrist → tip in the photo
+        def rot(v, a):
+            return np.float32([v[0] * math.cos(a) - v[1] * math.sin(a), v[0] * math.sin(a) + v[1] * math.cos(a)])
+        W = mm_to_plate(ws) - rot(v0, base) * sc                                 # wrist if the tip sat on the smoothed path
+        d = P - W
+        phi = math.atan2(d[1], d[0]) - math.atan2(v0[1], v0[0])
+        k = float(np.clip(np.linalg.norm(d) / (np.linalg.norm(v0) * sc), 0.965, 1.035)) * sc
+        R = np.float32([[math.cos(phi), -math.sin(phi)], [math.sin(phi), math.cos(phi)]]) * k
+        M = np.zeros((2, 3), np.float32)
+        M[:, :2] = R
+        M[:, 2] = W - R @ self.wrist
+        M[:, 2] += P - (R @ self.tip + M[:, 2])                                  # exact tip contact
         lift_px = np.float32([3.0, -9.0]) * lift            # pen lifts toward the camera: slight up-left drift
         M[:, 2] += lift_px
         ha = cv2.warpAffine(self.hand_a, M, (self.pw, self.ph), flags=cv2.INTER_LINEAR)

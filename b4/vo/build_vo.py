@@ -1,4 +1,4 @@
-"""B4 voiceover: place the 11 ElevenLabs v4 lines (Higgsfield, voice "Harrison") at the times in film.VO, master to
+"""B4 voiceover: place the 11 ElevenLabs lines (Higgsfield text2speech_v2, voice "Grady", processed by prep_grady.py) at the times in film.VO, master to
 -14 LUFS (exact second-pass gain), 48 kHz stereo → vo/vo_master.wav."""
 import os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -6,13 +6,12 @@ sys.path.insert(0, os.path.dirname(HERE))
 from film import VO, DUR
 for (a, pa, _, _, ea), (b, pb, _, sb, _) in zip(VO, VO[1:]):
     assert pa + ea < pb + sb, (a, b)
-for f, *_r in VO:  # decode the downloaded mp3s once (mono 48 kHz)
-    wav = os.path.join(HERE, f + ".wav")
-    if not os.path.exists(wav):
-        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", os.path.join(HERE, f + ".mp3"), "-ac", "1", "-ar", "48000", wav], check=True)
+PROC = os.path.join(HERE, "grady", "proc")
+if not os.path.exists(os.path.join(PROC, "line00.wav")):
+    subprocess.run([sys.executable, os.path.join(HERE, "prep_grady.py")], check=True)
 inputs, filt = [], []
 for i, (f, place, *_r) in enumerate(VO):
-    inputs += ["-i", os.path.join(HERE, f + ".wav")]
+    inputs += ["-i", os.path.join(PROC, f + ".wav")]
     ms = int(round(place * 1000))
     filt.append(f"[{i}:a]adelay={ms}|{ms},apad=whole_dur={DUR}[a{i}]")
 mix = "".join(f"[a{i}]" for i in range(len(VO))) + f"amix=inputs={len(VO)}:normalize=0:duration=longest[m]"

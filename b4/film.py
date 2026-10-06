@@ -19,18 +19,18 @@ DUR = 60.0
 NF = int(DUR * E.FPS)
 
 # ---------------------------------------------------------------- voiceover placement (file start, seconds)
-VO = [  # file, place, text, speech start/end inside the file (silencedetect, -40 dB)
-    ("line00", 0.25, "You send a client a thousand-dollar invoice. How much of it is actually yours?", 0.00, 5.03),
-    ("line01", 5.58, "Self-employed? Nobody takes tax off for you.", 0.00, 3.17),
-    ("line02", 9.05, "Say you net sixty thousand dollars this year, in Manitoba.", 0.00, 3.78),
-    ("line03", 13.13, "First, C-P-P. You pay both halves. About six thousand, seven hundred.", 0.00, 6.07),
-    ("line04", 19.50, "Federal tax: about five thousand, one hundred and fifty.", 0.00, 3.94),
-    ("line05", 23.74, "Manitoba: about four thousand, two hundred.", 0.00, 3.11),
-    ("line06", 27.15, "Add it up: about sixteen thousand, one hundred dollars. Roughly twenty-seven percent.", 0.11, 5.85),
-    ("line07", 33.30, "But that's an average. In this example, each extra dollar costs about thirty-six cents.", 0.12, 6.02),
-    ("line08", 39.62, "So from every thousand-dollar invoice, move about two hundred and seventy dollars into a separate tax account. The day it's paid.", 0.00, 8.24),
-    ("line09", 48.16, "Owe more than three thousand, this year and in one of the last two? You may have to pay in instalments.", 0.00, 6.35),
-    ("line10", 54.81, "The invoice isn't your income. What's left after tax is.", 0.00, 4.33),
+VO = [  # file (vo/grady/proc), place, text, speech start/end inside the processed file
+    ("line00", 0.20, "You send a client a thousand-dollar invoice. How much of it is actually yours?", 0.00, 5.06),
+    ("line01", 5.52, "Self-employed? Nobody takes tax off for you.", 0.00, 2.84),
+    ("line02", 8.62, "Say you net sixty thousand dollars this year, in Manitoba.", 0.00, 3.58),
+    ("line03", 12.46, "First, C-P-P. You pay both halves. About six thousand, seven hundred.", 0.00, 6.47),
+    ("line04", 19.19, "Federal tax: about five thousand, one hundred and fifty.", 0.00, 3.26),
+    ("line05", 22.71, "Manitoba: about four thousand, two hundred.", 0.00, 2.85),
+    ("line06", 25.82, "Add it up: about sixteen thousand, one hundred dollars. Roughly twenty-seven percent.", 0.00, 6.12),
+    ("line07", 32.20, "But that's an average. In this example, each extra dollar costs about thirty-six cents.", 0.00, 6.48),
+    ("line08", 38.94, "So from every thousand-dollar invoice, move about two hundred and seventy dollars into a separate tax account. The day it's paid.", 0.00, 8.43),
+    ("line09", 47.63, "Owe more than three thousand, this year and in one of the last two? You may have to pay in instalments.", 0.00, 6.67),
+    ("line10", 54.56, "The invoice isn't your income. What's left after tax is.", 0.00, 4.46),
 ]
 
 
@@ -47,49 +47,48 @@ def build():
 
     # hook
     t = write("1000", "$1,000", 24, 42, 12, 0.3, speed=150)
-    t = write("yours", "yours?", 112, 42, 9, max(t + 0.08, 3.1), speed=135)
-    tl.retreat(t + 0.1, to=(150, 110), next_start=6.6)
+    t = write("yours", "yours?", 112, 42, 9, max(t + 0.08, 3.3), speed=135)
+    tl.retreat(t + 0.1, to=(150, 110), next_start=6.5)
     # self-employed: nothing is withheld
-    t = write("withheld", "0 withheld", 24, 66, 8, 6.6)
-    tl.retreat(t + 0.1, to=(150, 120), next_start=9.2)
+    t = write("withheld", "0 withheld", 24, 66, 8, 6.5)
     # setup
-    t = write("net", "$60K · MB", 24, 92, 9, 9.2)
+    t = write("net", "$60K · MB", 24, 92, 9, max(t + 0.1, 8.95))
     # CPP
-    t = write("cpp", "CPP 11.9%", 24, 120, 8, 13.6)
-    t = write("cppv", "$6,724", 192, 120, 9, max(t + 0.08, 16.9), align="right")
+    t = write("cpp", "CPP 11.9%", 24, 120, 8, max(t + 0.1, 12.95))
+    t = write("cppv", "$6,724", 192, 120, 9, max(t + 0.08, 16.7), align="right")
     # federal / Manitoba
-    t = write("fed", "Federal", 24, 142, 8, max(t + 0.1, 19.3))
-    t = write("fedv", "$5,155", 192, 142, 9, max(t + 0.08, 20.7), align="right")
-    t = write("mb", "MB", 24, 164, 8, max(t + 0.1, 23.6))
-    t = write("mbv", "$4,227", 192, 164, 9, max(t + 0.08, 24.6), align="right")
+    t = write("fed", "Federal", 24, 142, 8, max(t + 0.1, 19.1))
+    t = write("fedv", "$5,155", 192, 142, 9, max(t + 0.08, 20.25), align="right")
+    t = write("mb", "MB", 24, 164, 8, max(t + 0.1, 22.6))
+    t = write("mbv", "$4,227", 192, 164, 9, max(t + 0.08, 23.55), align="right")
     # total
-    t = tl.write(W.underline(138, 194, 169), max(t + 0.08, 27.0), speed=260, name="ul")
-    t = write("tot", "= $16,106", 192, 186, 10, max(t + 0.08, 27.6), align="right")
-    t = write("pct", "≈27%", 24, 186, 10, max(t + 0.12, 30.6))
+    t = tl.write(W.underline(138, 194, 169), max(t + 0.08, 25.85), speed=260, name="ul")
+    t = write("tot", "= $16,106", 192, 186, 10, max(t + 0.08, 26.4), align="right")
+    t = write("pct", "≈27%", 24, 186, 10, max(t + 0.12, 29.55))
     t = tl.write(W.circle(boxes["pct"], pad=3.5), t + 0.05, speed=260, name="pct_circle")
-    tl.retreat(t + 0.1, to=(165, 222), next_start=34.8)
+    tl.retreat(t + 0.1, to=(165, 222), next_start=34.0)
     # twist: the next dollar
-    t = write("next", "next $1 ≈ 36¢", 24, 212, 8, 34.8)
-    tl.retreat(t + 0.1, to=(170, 245), next_start=41.8)
+    t = write("next", "next $1 ≈ 36¢", 24, 212, 8, 34.0)
+    tl.retreat(t + 0.1, to=(170, 245), next_start=40.7)
     # action
-    t = write("aside", "set aside $270", 24, 238, 9, 41.8)
-    tl.retreat(t + 0.1, to=(175, 262), next_start=48.0)
+    t = write("aside", "set aside $270", 24, 238, 9, 40.7)
+    tl.retreat(t + 0.1, to=(175, 262), next_start=47.4)
     # instalments
-    t = write("inst", "> $3K → instalments", 24, 262, 7, 48.0)
-    tl.retreat(t + 0.15, to=(185, 250), next_start=55.0)
+    t = write("inst", "> $3K → instalments", 24, 262, 7, 47.4)
+    tl.retreat(t + 0.15, to=(185, 250), next_start=54.7)
     # payoff: circle the number that matters
     x0, y0, x1, y1 = boxes["aside"]
-    t = tl.write(W.circle((x0 + (x1 - x0) * 0.66, y0, x1, y1), pad=3.2), 55.0, speed=240, name="final_circle")
+    t = tl.write(W.circle((x0 + (x1 - x0) * 0.66, y0, x1, y1), pad=3.2), 54.7, speed=240, name="final_circle")
     tl.retreat(t + 0.4, to=(232, 300))
     return tl, boxes
 
 
 def camera_track(tl, boxes):
     """Camera keys (time, paper-mm centre x, y, zoom). Zoom 1.9 while writing keeps ~176 mm of paper width."""
-    K = [(0.0, 104, 66, 1.60), (2.6, 104, 58, 1.76), (6.5, 104, 70, 1.78), (9.5, 104, 88, 1.78),
-         (13.8, 104, 116, 1.78), (19.4, 104, 136, 1.78), (23.6, 104, 156, 1.78), (28.0, 104, 176, 1.78),
-         (33.4, 104, 196, 1.74), (35.2, 104, 208, 1.78), (42.2, 104, 230, 1.78), (48.2, 104, 246, 1.78),
-         (54.6, 106, 230, 1.62), (57.4, 108, 160, 1.26), (60.0, 108, 158, 1.24)]
+    K = [(0.0, 104, 66, 1.60), (2.6, 104, 58, 1.76), (6.3, 104, 70, 1.78), (8.9, 104, 88, 1.78),
+         (12.9, 104, 116, 1.78), (19.0, 104, 136, 1.78), (22.5, 104, 156, 1.78), (26.2, 104, 176, 1.78),
+         (32.2, 104, 196, 1.74), (34.0, 104, 208, 1.78), (40.6, 104, 230, 1.78), (47.3, 104, 246, 1.78),
+         (54.2, 106, 230, 1.62), (57.0, 108, 160, 1.26), (60.0, 108, 158, 1.24)]
     return K
 
 
@@ -106,26 +105,27 @@ def cam_at(K, t):
 
 
 REPO = os.path.dirname(HERE)
-FOOT = ["Example: 2026 · Manitoba · single · $60K net self-employment income · no other income or deductions",
-        "Source: canada.ca (CRA) · General info, not advice"]
+FOOT = ["Example: 2026 · Manitoba · single · $60K net self-employment income",
+        "No other income · Source: canada.ca · Not advice"]
 
 
 def footer_layer():
     """Small, persistent footer over a soft bottom scrim (repo rule: on-screen source + not-advice line)."""
     from PIL import Image, ImageDraw, ImageFont
     im = Image.new("RGBA", (E.OUT_W, E.OUT_H), (0, 0, 0, 0))
+    # compact source tag on a dark rounded plate, top-left (the Shorts UI covers the bottom of the screen)
     scrim = np.zeros((E.OUT_H, E.OUT_W), np.float32)
-    h0 = E.OUT_H - 190
-    scrim[h0:] = np.linspace(0, 0.55, E.OUT_H - h0)[:, None]
     d = ImageDraw.Draw(im)
-    f = ImageFont.truetype(REPO + "/resp-video/fonts/Manrope-500-latin.woff2", 23)
+    f = ImageFont.truetype(REPO + "/resp-video/fonts/Manrope-500-latin.woff2", 26)
     try:
-        f.set_variation_by_axes([500])
+        f.set_variation_by_axes([600])
     except OSError:
         pass
+    x0, y0, lh, pad = 40, 128, 36, 16
+    w = max(d.textlength(l, font=f) for l in FOOT)
+    d.rounded_rectangle([x0, y0, x0 + w + 2 * pad, y0 + lh * len(FOOT) + 2 * pad - 6], radius=14, fill=(14, 12, 10, 150))
     for i, line in enumerate(FOOT):
-        w = d.textlength(line, font=f)
-        d.text(((E.OUT_W - w) / 2, E.OUT_H - 92 + i * 34), line, font=f, fill=(240, 236, 228, 225))
+        d.text((x0 + pad, y0 + pad + i * lh), line, font=f, fill=(246, 242, 234, 245))
     a = np.asarray(im).astype(np.float32) / 255.0
     return scrim, a[..., :3][..., ::-1].copy(), a[..., 3]
 
