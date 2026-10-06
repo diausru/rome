@@ -55,3 +55,4 @@ Choosing between the options, mixing them, annuity terms, and estate and spouse 
 ## Revision log
 - VO v1 (Grady): 64.3 s, too long → 4 lines trimmed and regenerated → 62.7 s → the "three options" beat removed, atempo 1.03 → 59.21 s. The timeline was regenerated and the visuals re-keyed automatically.
 - Plate v1: camera too low and close → raised to y 1.5 with a gentler push.
+- Final: rendered and verified. Video 1080×1920, 24 fps, 1428 frames, 59.50 s, clean decode; audio AAC 48 kHz stereo, −14.2 LUFS integrated (VO + ducked music). Contact sheet from the final MP4 reviewed: the reveals land on their VO beats. Share copy e3-share.mp4 (CRF 20, 15.5 MB).
