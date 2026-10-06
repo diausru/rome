@@ -1,0 +1,54 @@
+{
+ "video": {"title": "RESP: the 20% grant + the Canada Learning Bond", "duration": "58.00 s (1392 frames)", "mp4": "showreel/out/d3/d3-final.mp4 (share copy: d3-share.mp4)"},
+ "sources": [
+  "ESDC — How much money can be added to RESPs (canada.ca) · current rules · CESG 20% of the first $2,500 a year (up to $500), lifetime max $7,200, until the year the child turns 17; catch-up up to $1,000 a year with unused room",
+  "CRA — Canada Education Savings Grant (canada.ca) · current · repayment of the CESG/CLB if the beneficiary doesn't pursue post-secondary education",
+  "CRA / ESDC — Canada Learning Bond (canada.ca) · current · lower-income families, born 2004+, $500 + $100 a year up to $2,000, no contribution needed",
+  "Example only: $2,500 a year from birth → $500 a year → $7,200 reached in year 15"
+ ],
+ "yt": {
+  "titles": ["RESP: Put In $2,500, Get $500 Every Year (Canada)", "The RESP Grant Most Parents Only Half Understand", "RESP Grant Explained: $500 a Year, $7,200 Max, and the Catch"],
+  "description": "Put $2,500 a year into your child's RESP and the government adds $500. That's the Canada Education Savings Grant (CESG): 20% of the first $2,500 contributed each year, up to $7,200 per child, available until the end of the year the child turns 17.\n\nExample: $2,500 a year from birth reaches the full $7,200 grant in year 15.\nMissed years? Unused grant room carries forward: you can get up to $1,000 of grant in one year (a $5,000 contribution).\nLower-income family? The Canada Learning Bond adds up to $2,000 for children born in 2004 or later, with no contribution needed.\n\nThe catch: if your child doesn't go on to post-secondary education, the grant and the bond are repaid to the government.\n\nSources: ESDC and CRA (canada.ca): How much money can be added to RESPs; Canada Education Savings Grant; Canada Learning Bond. The $2,500-a-year plan is an example. General information, not financial advice.\n\n#RESP #CanadaTax #PersonalFinanceCanada",
+  "hashtags": "#RESP #CanadaTax #PersonalFinanceCanada",
+  "keywords": "resp grant, resp canada, canada education savings grant, cesg, canada learning bond, resp catch up, resp for kids, education savings canada, personal finance canada",
+  "pinned": "Recap: 20% of the first $2,500 a year → up to $500, max $7,200 per child. Unused room carries forward (up to $1,000 of grant a year). Lower income: the Canada Learning Bond adds up to $2,000. Did you start your child's RESP at birth, or are you catching up?",
+  "cta": "Follow Tax Secrets Canada for the real math; next: RRSP vs TFSA."
+ },
+ "tt": {
+  "caption": "Put $2,500 into your kid's RESP and the government adds $500. 🇨🇦 Here's the rest most parents miss.",
+  "keywords": "resp grant · resp canada · cesg · canada learning bond · education savings for kids",
+  "hashtags": "#resp #canadianparents #personalfinancecanada #canadiantaxes #momsofcanada",
+  "pinned": "Did you open an RESP at birth, or are you catching up? (General info, not advice.)",
+  "cta": "Follow for the next one: RRSP vs TFSA."
+ },
+ "ig": {
+  "caption": "$2,500 in → +$500 from the government. Every year. 🇨🇦\n\nThe Canada Education Savings Grant pays 20% on the first $2,500 you put into an RESP each year, up to $7,200 per child (until the year they turn 17). Missed years? Unused room carries forward (up to $1,000 of grant a year). Lower-income families can also get the Canada Learning Bond: up to $2,000, no contribution needed.\n\nThe catch: no post-secondary → the grant goes back.\n\nSave this and share it with a new parent.\n\nSources: ESDC / CRA (canada.ca). General info, not advice.",
+  "keywords": "resp, resp grant, cesg, canada learning bond, saving for kids canada",
+  "hashtags": "#resp #canadianparents #educationsavings #canadiantaxes #personalfinancecanada #canadatax",
+  "pinned": "New parents 🙋: did you know about the Canada Learning Bond?",
+  "cta": "Share this with a new parent."
+ },
+ "eng": {
+  "question": "Did you start the RESP at birth, or are you catching up?",
+  "save": "The three numbers ($500 a year, $7,200 max, $1,000 catch-up) plus the CLB, ready for when you open or top up an RESP.",
+  "share": "New and expecting parents; grandparents who want to contribute; newcomer families.",
+  "follow": "A family-money series alongside retirement: RESP → CCB and your income → childcare expenses."
+ },
+ "seo": {
+  "primary": "RESP grant",
+  "secondary": "canada education savings grant; cesg; canada learning bond; resp catch up; resp for kids; personal finance canada (vidIQ ≈8,688/mo, recorded 2026-10-05)",
+  "intent": "A parent wants to know how much the government adds to an RESP and how to get all of it.",
+  "audience": "Parents of children 0–17, expecting parents, grandparents; lower-income and newcomer families for the CLB.",
+  "angle": "Everyone knows '$500'; few know the cap, the catch-up and the bond, and the repayment catch.",
+  "questions": "How much does the government add to an RESP? · What is the RESP lifetime grant maximum? · Can I catch up on missed RESP grants? · What is the Canada Learning Bond and who qualifies? · What happens to the RESP grant if my child doesn't go to university?",
+  "pain": "Fear of leaving free grant money on the table; guilt about not starting early; uncertainty about what happens if the child doesn't go to school."
+ },
+ "next": [
+  {"topic": "RRSP vs TFSA: how to decide (D6)", "why": "Next in the plan; evergreen; high search", "intent": "rrsp or tfsa", "hook": "RRSP or TFSA? One question decides it.", "angle": "Mechanics, not investment advice; 2026 limits verified", "payoff": "A simple decision frame"},
+  {"topic": "GIS: the benefit low-income seniors miss (E4)", "why": "Completes the retirement set", "intent": "who qualifies for GIS", "hook": "Many low-income seniors qualify for GIS. Are you one?", "angle": "Eligibility; what income counts", "payoff": "How to check and apply"},
+  {"topic": "CCB and your income (D2)", "why": "Same parent audience as RESP", "intent": "how the Canada Child Benefit is calculated", "hook": "Your raise just shrank your CCB. Here's why.", "angle": "Income-tested reduction with verified 2026–27 thresholds", "payoff": "What counts as family net income"}
+ ],
+ "series": "Family Money (episode 1: RESP grant → CCB and income → childcare expenses). Playlist: 'Family Money Canada'.",
+ "research": "- vidIQ: credits at 0 until 2026-11-04 → no paid calls. Head-term context from earlier pulls: 'personal finance canada' ≈8,688/mo.\n- Web (2026-10): many 2026 RESP guides (WealthNorth, LiveInCanada, SILaws for newcomers) push '$7,200 free grants'; ESDC published 2026 indexation of the Additional CESG brackets (notice 2025-1114). Angle: complete the picture (cap, catch-up, CLB, repayment) rather than repeat 'free money'.\n- Newcomer families are a strong sub-audience (the CLB and SILaws' newcomer guides).",
+ "retention": "Hook (0–2 s): a concrete in/out ($2,500 → $500) ✅. Open loop: 'Not the rest' pays off through the cap, catch-up, bond and catch ✅. Information density: one number per beat ✅. Visual change rate: labels pinned to the real stacks, a year-by-year counter, the camera on the piggy bank, the family and the cap ✅. Escalation: grant → cap → catch-up → bond → catch ✅. Payoff: an action ('start early, contribute steadily') ✅. Weakest point: 10–19 s (program name + rule); the 20% → $7,200 swap keeps motion. No re-render needed."
+}

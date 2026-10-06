@@ -16,13 +16,13 @@ export const beatsFrom = (tl: { beats: { id: string; start: number; end: number 
   Object.fromEntries(tl.beats.map((b) => [b.id, { s: Math.round(b.start * fps), e: Math.round(b.end * fps) }]));
 
 export type Cap = { at: number; l1: string; l2?: string; until: number };
-export const Typed = ({ f, caps }: { f: number; caps: Cap[] }) => {
+export const Typed = ({ f, caps, head = SERIF }: { f: number; caps: Cap[]; head?: string }) => {
   const c = caps.find((c) => f >= c.at && f < c.until);
   if (!c) return null;
   const cps = 1.6, n1 = Math.floor((f - c.at) * cps), n2 = Math.floor((f - c.at - c.l1.length / cps - 3) * cps);
   const caret = Math.floor(f / 8) % 2 === 0, t2 = !!c.l2 && n2 >= 0;
   const line = (s: string, n: number, big: boolean, on: boolean) => (
-    <div style={{ fontFamily: big ? SERIF : SANS, fontSize: big ? 64 : 38, fontWeight: big ? 800 : 600, letterSpacing: big ? -0.5 : 0.2, color: big ? C.cream : C.soft, minHeight: big ? 74 : 46, whiteSpace: 'nowrap' }}>
+    <div style={{ fontFamily: big ? head : SANS, fontSize: big ? 64 : 38, fontWeight: big ? (head === SERIF ? 800 : 900) : 600, letterSpacing: big ? -0.5 : 0.2, color: big ? C.cream : C.soft, minHeight: big ? 74 : 46, whiteSpace: 'nowrap' }}>
       {s.slice(0, clamp(n, 0, s.length))}
       {on && <span style={{ display: 'inline-block', width: 4, height: big ? 54 : 34, marginLeft: 6, background: C.gold, opacity: caret ? 1 : 0, transform: 'translateY(6px)' }} />}
     </div>
@@ -61,8 +61,8 @@ export const Hero = ({ f, a, children, top = 96, size = 150, line = true, out }:
   );
 };
 
-export const Line = ({ f, a, top, children, color = C.cream, size = 36, serif = false }: { f: number; a: number; top: number; children: React.ReactNode; color?: string; size?: number; serif?: boolean }) => (
-  <div style={{ position: 'absolute', left: 56, right: 56, top, fontFamily: serif ? SERIF : SANS, fontSize: size, fontWeight: serif ? 700 : 600, color, lineHeight: 1.25, opacity: ease(f, a, a + 10), transform: `translateY(${(1 - ease(f, a, a + 10)) * 14}px)` }}>{children}</div>
+export const Line = ({ f, a, top, children, color = C.cream, size = 36, serif = false, head = SERIF }: { f: number; a: number; top: number; children: React.ReactNode; color?: string; size?: number; serif?: boolean; head?: string }) => (
+  <div style={{ position: 'absolute', left: 56, right: 56, top, fontFamily: serif ? head : SANS, fontSize: size, fontWeight: serif ? (head === SERIF ? 700 : 900) : 600, color, lineHeight: 1.25, opacity: ease(f, a, a + 10), transform: `translateY(${(1 - ease(f, a, a + 10)) * 14}px)` }}>{children}</div>
 );
 
 export const pill: React.CSSProperties = { display: 'flex', alignItems: 'center', gap: 10, padding: '12px 20px', borderRadius: 999, background: 'rgba(16,12,8,.5)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,236,200,.2)', fontFamily: SANS, fontSize: 22, fontWeight: 800, letterSpacing: 1, color: C.cream };

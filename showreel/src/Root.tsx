@@ -14,6 +14,7 @@ import { E3Short, E3DUR, E3FPS } from './E3Short';
 import { E2Short, E2DUR, E2FPS } from './E2Short';
 import { E2v2, E2V2DUR, E2V2FPS } from './E2v2';
 import { E1v2, E1DUR, E1FPS } from './E1v2';
+import { D3v2, D3DUR, D3FPS } from './D3v2';
 import { useCurrentFrame } from 'remotion';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
@@ -24,6 +25,8 @@ Promise.all([
   new FontFace('Tape', `url(${staticFile('CourierPrime-700.woff2')})`, { weight: '700' }),
   new FontFace('Fraunces', `url(${staticFile('Fraunces-600.ttf')})`, { weight: '600' }),
   new FontFace('Fraunces', `url(${staticFile('Fraunces-800.ttf')})`, { weight: '800' }),
+  new FontFace('Nunito', `url(${staticFile('Nunito-700.ttf')})`, { weight: '700' }),
+  new FontFace('Nunito', `url(${staticFile('Nunito-900.ttf')})`, { weight: '900' }),
 ].map((f) => f.load().then((ff) => document.fonts.add(ff)))).then(() => continueRender(fontHandle));
 
 export const RemotionRoot = () => (
@@ -40,6 +43,7 @@ export const RemotionRoot = () => (
     <Composition id="E2Short" component={E2Short} durationInFrames={E2DUR} fps={E2FPS} width={1080} height={1920} />
     <Composition id="E2v2" component={E2v2} durationInFrames={E2V2DUR} fps={E2V2FPS} width={1080} height={1920} />
     <Composition id="E1v2" component={E1v2} durationInFrames={E1DUR} fps={E1FPS} width={1080} height={1920} />
+    <Composition id="D3v2" component={D3v2} durationInFrames={D3DUR} fps={D3FPS} width={1080} height={1920} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );

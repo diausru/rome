@@ -1,0 +1,51 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Put twenty-five hundred a year into your kid's RESP, and the government adds five hundred.",
+   0.28
+  ],
+  [
+   "loop",
+   "Most parents know that part. Not the rest.",
+   0.36
+  ],
+  [
+   "rule",
+   "It's the Canada Education Savings Grant: twenty percent on the first twenty-five hundred, every year, up to seventy-two hundred per child.",
+   0.28
+  ],
+  [
+   "example",
+   "Start at birth with twenty-five hundred a year, and you reach the full seventy-two hundred in about fifteen years.",
+   0.36
+  ],
+  [
+   "catchup",
+   "Missed a few years? Unused room carries forward. You can catch up, up to a thousand dollars of grant a year.",
+   0.28
+  ],
+  [
+   "bond",
+   "Lower-income family? The Canada Learning Bond adds up to two thousand dollars, and you don't have to contribute a cent.",
+   0.36
+  ],
+  [
+   "catch",
+   "The catch: if your child doesn't go on to post-secondary, the grant money goes back.",
+   0.36
+  ],
+  [
+   "payoff",
+   "Start early, contribute steadily, and let the grant do the heavy lifting.",
+   0.24
+  ],
+  [
+   "cta",
+   "Follow for the real math.",
+   0.4
+  ]
+ ],
+ "tempo": 1.0
+}
