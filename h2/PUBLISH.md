@@ -148,6 +148,7 @@ Series: Manitoba Money (episode 1: renters credit → Manitoba tax landscape →
 ## Research notes (how this package was built)
 - vidIQ (2026-10-06, 5 credits): 'manitoba renters tax credit' <750/mo; related demand in 'manitoba' ≈8,836/mo and 'manitoba winnipeg' ≈4,079/mo → a local call-out hook; Manitoba/Winnipeg in the title and hashtags.
 - Web: Manitoba Budget 2026 raised the renters credit to $625; local news coverage makes it timely for the 2027 filing season.
+- vidIQ title score (short-form, 5 credits): 'Rent in Manitoba? Don't Miss This Tax Credit (2026)' = 82 (kept as primary; local call-out titles score lower on generic models but match the local audience).
 
 ## Retention analysis
 Hook (0–2 s): a local call-out plus 'don't want to miss' ✅. Open loop 'it went up' → $625 at 9 s ✅. Visual: amounts pinned on the envelope and keys; snow outside, steam from the coffee ✅. 50 s, dense. Weakest point: 20–28 s (the checklist); three short lines carry it.
