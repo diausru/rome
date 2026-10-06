@@ -123,7 +123,7 @@ def footer_layer():
         pass
     x0, y0, lh, pad = 40, 128, 36, 16
     w = max(d.textlength(l, font=f) for l in FOOT)
-    d.rounded_rectangle([x0, y0, x0 + w + 2 * pad, y0 + lh * len(FOOT) + 2 * pad - 6], radius=14, fill=(14, 12, 10, 150))
+    d.rounded_rectangle([x0, y0, x0 + w + 2 * pad, y0 + lh * len(FOOT) + 2 * pad - 6], radius=14, fill=(18, 16, 14, 228))
     for i, line in enumerate(FOOT):
         d.text((x0 + pad, y0 + pad + i * lh), line, font=f, fill=(246, 242, 234, 245))
     a = np.asarray(im).astype(np.float32) / 255.0
