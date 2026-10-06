@@ -1,0 +1,15 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "Throwing out old receipts? CRA can ask for them years later.", 0.28],
+  ["loop", "So how long is long enough?", 0.36],
+  ["rule", "Generally, six years. For business records, six years from the end of the tax year they relate to.", 0.28],
+  ["example", "Business receipts for twenty twenty-six? Keep them until at least the end of twenty thirty-two.", 0.36],
+  ["late", "Filed late? The six years start when you file. Disputing an assessment? Keep everything until it's resolved.", 0.36],
+  ["digital", "Scans and digital files count, as long as they're complete and readable.", 0.28],
+  ["early", "Want to destroy them sooner? You need CRA's permission first.", 0.36],
+  ["payoff", "Six years, digital is fine, and never toss the proof too early.", 0.24],
+  ["cta", "Follow for the real math.", 0.4]
+ ],
+ "tempo": 1.0
+}
