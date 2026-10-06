@@ -1,0 +1,65 @@
+{
+ "total": 59.24,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Take CPP at sixty, or wait until seventy? The gap is bigger than most people think.",
+   "start": 0.25,
+   "end": 7.214
+  },
+  {
+   "id": "loop",
+   "text": "Three very different cheques.",
+   "start": 7.494,
+   "end": 9.804
+  },
+  {
+   "id": "early",
+   "text": "Start at sixty: minus zero point six percent a month. Thirty-six percent, for life.",
+   "start": 10.164,
+   "end": 17.322
+  },
+  {
+   "id": "late",
+   "text": "Wait past sixty-five: plus zero point seven a month. Up to forty-two percent at seventy.",
+   "start": 17.602,
+   "end": 24.81
+  },
+  {
+   "id": "example",
+   "text": "Say it's a thousand dollars at sixty-five. At sixty: six forty. At seventy: fourteen twenty.",
+   "start": 25.09,
+   "end": 34.265
+  },
+  {
+   "id": "breakeven",
+   "text": "Waiting from sixty-five to seventy pays off, roughly, if you live past eighty-two.",
+   "start": 34.625,
+   "end": 40.24
+  },
+  {
+   "id": "odds",
+   "text": "The federal government says about half of today's retirees will reach ninety.",
+   "start": 40.52,
+   "end": 45.496
+  },
+  {
+   "id": "health",
+   "text": "Serious health concerns? Earlier may make sense. Good health? Later may pay more.",
+   "start": 45.856,
+   "end": 52.544
+  },
+  {
+   "id": "payoff",
+   "text": "It's a lifetime decision. Run your own numbers, and get advice.",
+   "start": 52.824,
+   "end": 57.262
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 57.502,
+   "end": 58.84
+  }
+ ]
+}

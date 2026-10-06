@@ -22,9 +22,10 @@ function camera(f: number, keys: Focus[], glide: number) {
   return cur;
 }
 
-export const PhotoPlate = ({ f, src, iw, ih, W = 1080, H = 1920, keys, glide = 36, blur = 0.6, snow, steam }: {
+export const PhotoPlate = ({ f, src, iw, ih, W = 1080, H = 1920, keys, glide = 36, blur = 0.6, snow, steam, children }: {
   f: number; src: string; iw: number; ih: number; W?: number; H?: number; keys: Focus[]; glide?: number; blur?: number;
   snow?: Rect[]; steam?: { u: number; v: number; w: number };
+  children?: React.ReactNode; // overlay in image space (position children with % of the image), not blurred
 }) => {
   const s0 = Math.max(W / iw, H / ih);
   const c = camera(f, keys, glide);
@@ -56,6 +57,7 @@ export const PhotoPlate = ({ f, src, iw, ih, W = 1080, H = 1920, keys, glide = 3
           );
         })}
       </div>
+      {children && <div style={{ position: 'absolute', left: x, top: y, width: pw, height: ph }}>{children}</div>}
       {/* light breathing + vignette */}
       <AbsoluteFill style={{ background: 'radial-gradient(120% 80% at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.45) 100%)', opacity: 0.9 + 0.1 * Math.sin(f * 0.03) }} />
     </AbsoluteFill>

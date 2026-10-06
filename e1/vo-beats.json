@@ -1,0 +1,16 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "Take CPP at sixty, or wait until seventy? The gap is bigger than most people think.", 0.28],
+  ["loop", "Three very different cheques.", 0.36],
+  ["early", "Start at sixty: minus zero point six percent a month. Thirty-six percent, for life.", 0.28],
+  ["late", "Wait past sixty-five: plus zero point seven a month. Up to forty-two percent at seventy.", 0.28],
+  ["example", "Say it's a thousand dollars at sixty-five. At sixty: six forty. At seventy: fourteen twenty.", 0.36],
+  ["breakeven", "Waiting from sixty-five to seventy pays off, roughly, if you live past eighty-two.", 0.28],
+  ["odds", "The federal government says about half of today's retirees will reach ninety.", 0.36],
+  ["health", "Serious health concerns? Earlier may make sense. Good health? Later may pay more.", 0.28],
+  ["payoff", "It's a lifetime decision. Run your own numbers, and get advice.", 0.24],
+  ["cta", "Follow for the real math.", 0.4]
+ ],
+ "tempo": 1.03
+}
