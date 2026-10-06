@@ -43,3 +43,4 @@ Future marginal rate (unknown); RRSP withdrawals can affect income-tested benefi
 ## Revision log
 - VO v1 66.97 s → the hook and limits lines were shortened and regenerated (2 lines) → 60.99 s → atempo 1.03 → 59.44 s. A batch call timed out but had submitted; the five jobs were recovered from the generation history (no duplicate spend).
 - Stills QC: the example label wrapped onto the first line → shortened; the TFSA lines wrapped → 40 px and a shorter room line.
+- Final: rendered and verified. 1080×1920, 24 fps, 1428 frames, 59.50 s, clean decode, AAC 48 kHz, −14.1 LUFS; contact sheet from the final MP4 reviewed (jar pins step through the example). Share copy d6-share.mp4.
