@@ -55,3 +55,8 @@ Choosing between levers, couples' income planning, RRIF withdrawal timing: "The 
 - Plate v1: washed out, kitchen not readable → darker floor and sage cabinets, cabinets and fridge moved to the back wall, less window glare; standing figure moved into frame.
 - Stills QC: empty lower half during the hook → the income bar now enters at 1.5 s.
 - Final: rendered and verified. Video 1080×1920, 24 fps, 1428 frames, 59.50 s, clean decode; audio AAC 48 kHz stereo, −14.3 LUFS integrated (VO + ducked music). Contact sheet from the final MP4 reviewed. Share copy e2-share.mp4 (CRF 20, 14.4 MB).
+
+## v2: improved look (user feedback 2026-10-06)
+Feedback: less blur, more movement, more beauty, minimalist. Decision (user picked option 1): a photoreal plate generated without text or numbers (Higgsfield gpt_image_2_5, 9:16, 2 variants, 0.5 credits; upscaled to 4K, 2 credits), animated in code. File: `showreel/public/plates/e2-b-4k.jpg`. It shows a retired couple reading a letter by a window onto a snowy Canadian street; on the table, a coffee mug, reading glasses, an envelope and coins.
+Code: `Plate.tsx` (camera moves to what the VO is about: couple → the letter in their hands → wider for the levers → wide on the payoff; slow push; falling snow in the window; steam over the mug; light breathing; 0.8 px blur) and `E2v2.tsx` (minimal cards, gold hairlines, mask-reveal numbers, light sweep, a persistent pill strip). Facts, VO and timeline are unchanged.
+QC of stills: the second caption line was too faint over the bright window → stronger top gradient and brighter text; the example card was empty while the bar filled → a live income label rides the bar; snow was invisible → bigger flakes.

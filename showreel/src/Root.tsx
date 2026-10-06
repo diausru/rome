@@ -12,6 +12,7 @@ import { RaiseShort, RDUR, RFPS } from './RaiseShort';
 import { Case002, CDUR, CFPS } from './Case002';
 import { E3Short, E3DUR, E3FPS } from './E3Short';
 import { E2Short, E2DUR, E2FPS } from './E2Short';
+import { E2v2, E2V2DUR, E2V2FPS } from './E2v2';
 import { useCurrentFrame } from 'remotion';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
@@ -36,6 +37,7 @@ export const RemotionRoot = () => (
     <Composition id="KitchenTest" component={KitchenTest} durationInFrames={300} fps={24} width={540} height={960} defaultProps={{ blur: 8 }} />
     <Composition id="E3Short" component={E3Short} durationInFrames={E3DUR} fps={E3FPS} width={1080} height={1920} />
     <Composition id="E2Short" component={E2Short} durationInFrames={E2DUR} fps={E2FPS} width={1080} height={1920} />
+    <Composition id="E2v2" component={E2v2} durationInFrames={E2V2DUR} fps={E2V2FPS} width={1080} height={1920} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );
