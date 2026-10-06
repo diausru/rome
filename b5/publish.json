@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "Crossed $30K? When Freelancers Must Charge GST (handwritten)",
+  "duration": "68.2 s (1636 frames)",
+  "mp4": "b5/build/b5_final.mp4 (share copy: b5_share.mp4)"
+ },
+ "sources": [
+  "canada.ca — When to register for and start charging the GST/HST (CRA) · current rules (checked 2026-10-06 via search results) · small supplier = not over $30,000 in taxable supplies over four consecutive calendar quarters; over four quarters → not a small supplier at the end of the month following the quarter, 29 days to register; over $30,000 in a single quarter → charge GST/HST on that supply",
+  "GST/HST rates by province (taxtips.ca \"Sales tax rates 2026\"; CRA GST/HST rates page to confirm) · 2026 · GST 5%; HST 13% / 14% / 15%; Manitoba = 5% GST plus its own retail sales tax",
+  "canada.ca — Input tax credits (CRA) · current · GST/HST paid on business purchases can be recovered as input tax credits once registered",
+  "Example (not a CRA rule): quarters $5,000 / $8,000 / $9,000 / $9,500 = $31,500; $1,000 × 5% = $50. Sole proprietor, Manitoba, taxable sales. Verification note: canada.ca cannot be opened from the build machine; claims were checked through search results. Some secondary sites state the timing differently (\"end of the second month\", \"30 days\"); the video follows the canada.ca wording. Open the canada.ca page once before publishing."
+ ],
+ "yt": {
+  "titles": [
+   "Crossed $30K? When Freelancers Must Charge GST (Canada)",
+   "The $30,000 GST Rule Isn't Per Year",
+   "Freelancers: When Do You Have to Register for GST/HST?"
+  ],
+  "description": "Freelancing in Canada and getting close to $30,000? The GST/HST threshold isn't counted per calendar year. It's any four consecutive calendar quarters.\n\nExample: $5,000 + $8,000 + $9,000 + $9,500 over four quarters = $31,500, over the line. You stop being a small supplier at the end of the month after that quarter, then you have 29 days to register. Cross $30,000 in a single quarter and you charge GST/HST on the very sale that put you over.\n\nAfter that, a $1,000 invoice in Manitoba carries $50 of GST. That $50 was never yours. The upside: GST/HST you pay on business costs comes back as input tax credits. HST provinces charge 13–15%, and provincial sales taxes have their own rules.\n\nSource: CRA, \"When to register for and start charging the GST/HST\" (canada.ca). Example only; general information, not tax advice.\n\n#GST #SelfEmployed #CanadaTax",
+  "hashtags": "#GST #SelfEmployed #CanadaTax",
+  "keywords": "gst registration canada, do i need to charge gst, small supplier gst canada, gst threshold 30000, gst hst freelancer canada, when to register for gst, input tax credits canada, self employed taxes canada, side hustle taxes canada, manitoba gst",
+  "pinned": "The part most people miss: it's ANY four quarters in a row, not your tax year. Are you tracking your last four quarters, or just your annual total?",
+  "cta": "Follow Tax Secrets Canada for the real math behind self-employed taxes."
+ },
+ "tt": {
+  "caption": "Crossed $30K freelancing? 🇨🇦 The GST rule isn't per year, and one quarter can trigger it on the spot.",
+  "keywords": "gst registration canada · do I need to charge gst · small supplier canada · freelancer taxes canada · side hustle gst",
+  "hashtags": "#gst #selfemployedcanada #canadiantaxes #freelancecanada #sidehustle",
+  "pinned": "Example only (Manitoba, 5% GST). Are you under or over $30K for your last four quarters? 👇",
+  "cta": "Follow for the next one: what you can claim as a freelancer."
+ },
+ "ig": {
+  "caption": "The $30,000 GST rule isn't per year. 🇨🇦\n\nIt's any four calendar quarters in a row. $5K + $8K + $9K + $9.5K = $31.5K → you're over. You stop being a small supplier at the end of the next month, then you have 29 days to register. Cross $30K in one quarter? GST applies to that very sale.\n\nAfter that, every $1,000 invoice in Manitoba carries $50 of GST, and that $50 isn't yours. GST you pay on business costs comes back as input tax credits.\n\nSave this before your next invoice. Source: CRA (canada.ca). Example only, general info, not advice.",
+  "keywords": "gst canada freelancer, small supplier, gst registration, self employed canada, canada tax tips",
+  "hashtags": "#gst #selfemployedcanada #canadiantaxes #freelancelife #smallbusinesscanada #taxtips",
+  "pinned": "Did you know it's any four quarters, not the calendar year? 👇",
+  "cta": "Save this for the day you hit $30K."
+ },
+ "eng": {
+  "question": "Are you tracking your last four quarters, or just your yearly total?",
+  "save": "The exact test (four quarters in a row, or one quarter), the timing (end of next month + 29 days) and the $50-per-$1,000 picture.",
+  "share": "A friend whose side hustle is growing past $2,500 a month.",
+  "follow": "The B4 → B5 self-employed series: the actual math on paper, with sources."
+ },
+ "seo": {
+  "primary": "gst registration canada",
+  "secondary": "do i need to charge gst; small supplier; gst threshold 30000; input tax credits; self employed taxes canada (vidIQ data pending: 0 credits on 2026-10-06)",
+  "intent": "A freelancer near $30,000 wants to know when GST registration and charging start.",
+  "audience": "Canadian freelancers, contractors and side-hustlers approaching $30K of sales",
+  "angle": "The $30,000 test is a rolling four-quarter window, not the tax year; one quarter can trigger it immediately.",
+  "questions": "Do I need to charge GST under $30,000? · Is the $30,000 GST threshold per year? · When do I have to register for GST? · What happens if I cross $30,000 in one quarter? · Can I get back GST I paid on expenses?",
+  "pain": "Fear of owing GST you never collected after an unexpectedly good quarter."
+ },
+ "next": [
+  {
+   "topic": "Same $60K freelancer, different province",
+   "why": "province comparisons are the channel's strongest format; the B4 calculator already generalises",
+   "intent": "self employed tax by province",
+   "hook": "Same $60K freelancer. One province takes more.",
+   "angle": "provincial brackets and credits differ more than people expect",
+   "payoff": "a written leaderboard on paper (verify every 2026 rate)"
+  },
+  {
+   "topic": "RRSP for the self-employed: what $5,000 does to the B4 math",
+   "why": "shows the marginal-rate twist (36¢) in action",
+   "intent": "should self employed contribute to RRSP",
+   "hook": "Put $5,000 in an RRSP. Watch the $16,106 shrink.",
+   "angle": "the deduction saves at the marginal rate, not the average",
+   "payoff": "before/after numbers side by side"
+  },
+  {
+   "topic": "Quick method of accounting for GST/HST",
+   "why": "the natural follow-up for newly registered freelancers",
+   "intent": "gst quick method canada",
+   "hook": "Registered for GST? There may be a simpler way to remit it.",
+   "angle": "remitting a flat percentage of sales instead of tracking every ITC",
+   "payoff": "who can use it and a worked example (rates and eligibility to verify on canada.ca)"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B4. Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ: balance 0 credits on 2026-10-06 (renews 2026-11-04). Demand research fell back to web search: freelancer guides consistently answer \"do I need to charge GST under $30,000\" and stress that the test is a rolling four-quarter window, which confirms the angle. Run one vidIQ keyword call (\"gst registration canada\", country CA) when credits are available and adjust the title and keywords if needed.",
+ "retention": "- Hook (0–2 s): \"$30K\" is written on the first words and the question \"tax collector?\" opens the loop ✅\n- Visual change: a new written element every 1–4 s; three push-ins on circled items ✅\n- Escalation: the rule → the sum → the timing → the single-quarter exception → the invoice → \"not yours\" → ITCs → other provinces → the rule circled ✅\n- Weakest moment: 36.5–39.6 s (3 s without new ink while the single-quarter rule finishes). The camera moves down to the next line; judged acceptable.\n- Payoff: the opening rule is circled and the camera pulls back over the whole worked page ✅",
+ "_label": "B5 · $30K GST rule (handwritten)",
+ "_mp4": "b5_share.mp4",
+ "_vo": "You just crossed thirty thousand dollars in sales. Did you just become a tax collector? For G-S-T, thirty thousand isn't per year. It's any four calendar quarters in a row. Say you billed five thousand, then eight, then nine, then nine and a half. That's thirty-one thousand, five hundred. Over the line. You stop being a small supplier at the end of the next month. Then you have twenty-nine days to register. Cross thirty thousand in a single quarter? You charge G-S-T on the very sale that put you over. After that, a thousand-dollar invoice in Manitoba carries fifty dollars of G-S-T. That fifty was never yours. You collect it for the government. The upside: G-S-T you pay on business costs comes back as input tax credits. In H-S-T provinces it's thirteen to fifteen percent. And provincial sales taxes have their own rules. Watch your last four quarters, not your tax year.",
+ "_votc": "[00:00.20–00:05.59] \"You just crossed thirty thousand dollars in sales. Did you just become a tax collector?\"\n[00:05.89–00:13.88] \"For G-S-T, thirty thousand isn't per year. It's any four calendar quarters in a row.\"\n[00:14.16–00:20.45] \"Say you billed five thousand, then eight, then nine, then nine and a half.\"\n[00:20.72–00:24.69] \"That's thirty-one thousand, five hundred. Over the line.\"\n[00:25.00–00:31.10] \"You stop being a small supplier at the end of the next month. Then you have twenty-nine days to register.\"\n[00:31.55–00:39.07] \"Cross thirty thousand in a single quarter? You charge G-S-T on the very sale that put you over.\"\n[00:39.39–00:45.30] \"After that, a thousand-dollar invoice in Manitoba carries fifty dollars of G-S-T.\"\n[00:45.56–00:49.08] \"That fifty was never yours. You collect it for the government.\"\n[00:49.41–00:55.40] \"The upside: G-S-T you pay on business costs comes back as input tax credits.\"\n[00:55.70–01:03.18] \"In H-S-T provinces it's thirteen to fifteen percent. And provincial sales taxes have their own rules.\"\n[01:03.67–01:07.58] \"Watch your last four quarters, not your tax year.\""
+}
