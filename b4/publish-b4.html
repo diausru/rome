@@ -1,0 +1,189 @@
+<title>B4 Invoice Math Publishing Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: one reading column of copy-ready fields, grouped by platform; a sticky platform bar; facts and sources at the end. */
+:root {
+  --bg: #f3f5f7;
+  --surface: #ffffff;
+  --ink: #17202a;
+  --muted: #5b6673;
+  --line: #d9dee4;
+  --accent: #c0182f;
+  --accent-soft: #fbe9ec;
+  --ok: #1f7a4d;
+  --display: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --surface: #19212a; --ink: #e7ecf1; --muted: #9aa6b2; --line: #2b3540;
+    --accent: #ff5a6e; --accent-soft: #3a1c22; --ok: #5fd39a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --surface: #19212a; --ink: #e7ecf1; --muted: #9aa6b2; --line: #2b3540;
+  --accent: #ff5a6e; --accent-soft: #3a1c22; --ok: #5fd39a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.55 var(--body); }
+.wrap { max-width: 760px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; display: flex; flex-direction: column; gap: 28px; }
+header { display: flex; flex-direction: column; gap: 10px; }
+.eyebrow { font: 600 12px/1 var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 800 clamp(28px, 6vw, 42px)/1.05 var(--display); font-stretch: 80%; margin: 0; text-wrap: balance; }
+.specs { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--muted); font-size: 14px; }
+.specs b { color: var(--ink); font-weight: 600; }
+.check { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--accent); background: var(--accent-soft); border-radius: 8px; font-size: 15px; }
+.check strong { color: var(--accent); }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding-block: 8px; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+nav a { font: 600 14px/1 var(--body); color: var(--ink); text-decoration: none; padding: 8px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+nav a:hover, nav a:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+section { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 64px; }
+h2 { font: 700 22px/1.2 var(--display); font-stretch: 85%; margin: 0; display: flex; align-items: baseline; gap: 10px; }
+h2 small { font: 400 14px var(--body); color: var(--muted); }
+.field { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.field-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.label { font: 600 12px/1 var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.label .tag { color: var(--accent); margin-left: 6px; letter-spacing: .04em; }
+.text { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; font: inherit; }
+.text.mono { font: 400 14px/1.6 var(--mono); }
+button.copy { font: 600 13px/1 var(--body); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; cursor: pointer; flex: none; }
+button.copy:hover { border-color: var(--accent); color: var(--accent); }
+button.copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.copy.done { color: var(--ok); border-color: var(--ok); }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tbl { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 600 12px var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; }
+summary { cursor: pointer; font-weight: 600; }
+ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; }
+.foot { color: var(--muted); font-size: 13px; }
+@media (prefers-reduced-motion: no-preference) { button.copy { transition: color .15s, border-color .15s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Tax Secrets Canada · Real Tax Math · B4</div>
+    <h1>How Much of a $1,000 Invoice Is Actually Yours?</h1>
+    <div class="specs">
+      <span><b>60.0 s</b> · 1080×1920 · 24 fps</span>
+      <span>Voice <b>Grady</b> · −14 LUFS</span>
+      <span>Handwritten explainer</span>
+      <span>Example: <b>2026 · Manitoba · $60K net</b></span>
+    </div>
+    <div class="check"><span>✓</span><div><strong>Before you post:</strong> open the canada.ca pages for line 22200 and required tax instalments once and confirm the wording. They could only be checked through search results from the build machine.</div></div>
+  </header>
+
+  <nav aria-label="Platforms">
+    <a href="#youtube">YouTube</a><a href="#tiktok">TikTok</a><a href="#instagram">Instagram</a><a href="#facts">Facts</a><a href="#next">Next topics</a>
+  </nav>
+
+  <section id="youtube">
+    <h2>YouTube Shorts <small>title · description · tags · comment</small></h2>
+    <div class="field"><div class="field-head"><span class="label">Title<span class="tag">primary</span></span><button class="copy">Copy</button></div><p class="text">How Much of a $1,000 Invoice Is Actually Yours?</p></div>
+    <div class="grid2">
+      <div class="field"><div class="field-head"><span class="label">Alternative A</span><button class="copy">Copy</button></div><p class="text">Self-Employed in Canada? Set Aside This Much From Every Invoice</p></div>
+      <div class="field"><div class="field-head"><span class="label">Alternative B</span><button class="copy">Copy</button></div><p class="text">Freelancers: The Tax Math Nobody Shows You (Canada)</p></div>
+    </div>
+    <div class="field"><div class="field-head"><span class="label">Description</span><button class="copy">Copy</button></div><p class="text">Self-employed in Canada? Nobody withholds tax for you, so here's the real math on a $1,000 invoice.
+
+Example (2026, Manitoba, single, $60,000 net self-employment income, no other income or deductions):
+CPP (both halves, 11.9%): $6,724
+Federal tax: $5,155
+Manitoba tax: $4,227
+Total: about $16,106, roughly 27% of net income.
+
+But that's the average. In this example, each extra dollar costs about 36¢. A simple habit: move about $270 of every $1,000 into a separate tax account the day you're paid. And if your net tax owing is over $3,000 this year and in one of the last two, you may have to pay by instalments.
+
+Different province or income = different numbers. Sources: CRA (canada.ca, line 22200; required tax instalments), CRA T4127 2026. General information, not tax advice.
+
+#SelfEmployed #CanadaTax #CRA</p></div>
+    <div class="grid2">
+      <div class="field"><div class="field-head"><span class="label">Hashtags</span><button class="copy">Copy</button></div><p class="text mono">#SelfEmployed #CanadaTax #CRA</p></div>
+      <div class="field"><div class="field-head"><span class="label">CTA</span><button class="copy">Copy</button></div><p class="text">Follow Tax Secrets Canada for the real math behind self-employed taxes; next: GST/HST, and when you have to register.</p></div>
+    </div>
+    <div class="field"><div class="field-head"><span class="label">Keywords / tags</span><button class="copy">Copy</button></div><p class="text mono">self employed taxes canada, how much tax to set aside self employed, freelancer taxes canada, self employed cpp both halves, cpp self employed 11.9, tax instalments canada, self employed taxes explained, tax tips canada, manitoba self employed tax, side hustle taxes canada</p></div>
+    <div class="field"><div class="field-head"><span class="label">Pinned comment</span><button class="copy">Copy</button></div><p class="text">Rule of thumb from this example: about 27% on average, about 36% on the next dollar. Your number depends on your province and income. Which do you do: a separate tax account, or a guess in April?</p></div>
+  </section>
+
+  <section id="tiktok">
+    <h2>TikTok <small>caption · search · comment</small></h2>
+    <div class="field"><div class="field-head"><span class="label">Caption</span><button class="copy">Copy</button></div><p class="text">A client pays you $1,000. How much is actually yours? 🇨🇦 Watch the math (self-employed, Manitoba, 2026 example).</p></div>
+    <div class="grid2">
+      <div class="field"><div class="field-head"><span class="label">Hashtags</span><button class="copy">Copy</button></div><p class="text mono">#selfemployed #canadiantaxes #freelancecanada #personalfinancecanada #sidehustle</p></div>
+      <div class="field"><div class="field-head"><span class="label">Search keywords</span><button class="copy">Copy</button></div><p class="text mono">self employed taxes canada · how much to save for taxes freelancer · cpp self employed · tax instalments canada · side hustle tax canada</p></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><div class="field-head"><span class="label">Pinned comment</span><button class="copy">Copy</button></div><p class="text">Example only: 2026, MB, $60K net. In your province is it more or less than 27%? Drop your province and I'll do the next one with it.</p></div>
+      <div class="field"><div class="field-head"><span class="label">CTA</span><button class="copy">Copy</button></div><p class="text">Follow for the next invoice math: GST/HST.</p></div>
+    </div>
+  </section>
+
+  <section id="instagram">
+    <h2>Instagram Reels <small>caption · keywords · comment</small></h2>
+    <div class="field"><div class="field-head"><span class="label">Caption</span><button class="copy">Copy</button></div><p class="text">Your invoice isn't your income. 🇨🇦
+
+Self-employed in Manitoba, $60K net (2026 example): CPP $6,724 + federal $5,155 + MB $4,227 ≈ $16,106. That's about 27%, and the next dollar costs about 36¢.
+
+Save this, and move about $270 of every $1,000 into a tax account the day you're paid.
+
+Example only, general info, not advice. Sources: CRA (canada.ca), T4127 2026.</p></div>
+    <div class="grid2">
+      <div class="field"><div class="field-head"><span class="label">Hashtags</span><button class="copy">Copy</button></div><p class="text mono">#selfemployedcanada #canadiantaxes #freelancelife #personalfinancecanada #taxtips #smallbusinesscanada</p></div>
+      <div class="field"><div class="field-head"><span class="label">Search keywords</span><button class="copy">Copy</button></div><p class="text mono">self employed taxes canada, freelancer tax, how much to set aside for taxes, cpp self employed, canada tax tips</p></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><div class="field-head"><span class="label">Pinned comment</span><button class="copy">Copy</button></div><p class="text">Do you set money aside every invoice, or every April? 👇</p></div>
+      <div class="field"><div class="field-head"><span class="label">CTA</span><button class="copy">Copy</button></div><p class="text">Save this for your next invoice.</p></div>
+    </div>
+  </section>
+
+  <section id="facts">
+    <h2>Facts on screen <small>2026 example, b4/calc.py</small></h2>
+    <div class="tbl"><table>
+      <thead><tr><th>Line</th><th>On paper</th><th>Exact</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>CPP, both halves</td><td class="num">$6,724</td><td class="num">$6,723.50</td><td>11.9% × ($60,000 − $3,500); CRA/ESDC 2026 rates</td></tr>
+        <tr><td>Federal tax</td><td class="num">$5,155</td><td class="num">$5,155.43</td><td>CRA T4127 Jan 2026; canada.ca lines 22200 / 31000</td></tr>
+        <tr><td>Manitoba tax</td><td class="num">$4,227</td><td class="num">$4,226.55</td><td>T4127 2026; Manitoba Budget 2025</td></tr>
+        <tr><td>Total</td><td class="num">$16,106</td><td class="num">$16,105.48</td><td>26.84% of $60,000</td></tr>
+        <tr><td>Next $1</td><td class="num">≈36¢</td><td class="num">$0.3556</td><td>Marginal cost in this example</td></tr>
+        <tr><td>Set aside</td><td class="num">$270</td><td class="num">$268.42</td><td>Per $1,000, rounded to a practical figure</td></tr>
+        <tr><td>Instalments</td><td class="num">&gt; $3K</td><td class="num">$3,000</td><td>canada.ca, required tax instalments (Québec $1,800)</td></tr>
+      </tbody>
+    </table></div>
+    <details><summary>Engagement plan</summary>
+      <p class="text">Question: Do you set tax aside from every invoice, or deal with it in April?
+Save trigger: a worked example with the exact lines and one habit (≈$270 per $1,000) to copy.
+Share trigger: anyone who just went freelance or started a side hustle.
+Follow reason: an accountant who writes the actual math on paper, with sources.</p>
+    </details>
+  </section>
+
+  <section id="next">
+    <h2>Next topics <small>series “Real Tax Math”</small></h2>
+    <ol>
+      <li><b>GST/HST: when a freelancer has to register.</b> Hook: “You crossed $30,000. Did you just become a GST collector?” (threshold wording to verify on canada.ca)</li>
+      <li><b>Same $60K, different province.</b> Hook: “Same $60K freelancer. One province takes more.” A written leaderboard on paper (verify every 2026 rate).</li>
+      <li><b>RRSP for the self-employed.</b> Hook: “Put $5,000 in an RRSP. Watch the $16,106 shrink.” The deduction saves at the marginal rate.</li>
+    </ol>
+    <p class="foot">Playlist: Self-Employed in Canada. General information, not tax advice. Full package with timecodes: b4/PUBLISH.md.</p>
+  </section>
+</div>
+
+<script>
+document.querySelectorAll("button.copy").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var text = btn.closest(".field").querySelector(".text");
+    var done = function () { btn.textContent = "Copied"; btn.classList.add("done"); setTimeout(function () { btn.textContent = "Copy"; btn.classList.remove("done"); }, 1600); };
+    var select = function () { var r = document.createRange(); r.selectNodeContents(text); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; };
+    try { navigator.clipboard.writeText(text.textContent).then(done, select); } catch (e) { select(); }
+  });
+});
+</script>

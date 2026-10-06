@@ -1,5 +1,5 @@
 """B4 — "How much of a $1,000 invoice is yours?" Handwritten explainer, 60 s, 1080x1920, 24 fps.
-Master timeline = the measured voiceover (vo/line00..10, ElevenLabs v4 via Higgsfield, voice "Harrison").
+Master timeline = the measured voiceover (vo/line00..10, ElevenLabs v4 via Higgsfield, voice "Grady", processed by vo/prep_grady.py).
   python3 film.py --preview      (540x960 frames every 0.5 s → assets/contact_*.jpg)
   python3 film.py                (full render → build/b4_silent.mp4, then post.py adds footer, grain, VO)
 """
@@ -69,6 +69,8 @@ def build():
     tl.retreat(t + 0.1, to=(165, 222), next_start=34.0)
     # twist: the next dollar
     t = write("next", "next $1 ≈ 36¢", 24, 212, 8, 34.0)
+    x0, y0, x1, y1 = boxes["next"]
+    t = tl.write(W.underline(x0 + (x1 - x0) * 0.74, x1 + 1.0, y1 + 3.0), t + 0.06, speed=240, name="ul36")
     tl.retreat(t + 0.1, to=(170, 245), next_start=40.7)
     # action
     t = write("aside", "set aside $270", 24, 238, 9, 40.7)
@@ -84,11 +86,29 @@ def build():
 
 
 def camera_track(tl, boxes):
-    """Camera keys (time, paper-mm centre x, y, zoom). Zoom 1.9 while writing keeps ~176 mm of paper width."""
-    K = [(0.0, 104, 66, 1.60), (2.6, 104, 58, 1.76), (6.3, 104, 70, 1.78), (8.9, 104, 88, 1.78),
+    """Camera keys (time, paper-mm centre x, y, zoom). 1.78 while writing (≈ the full writing width); a push-in
+    (≈3.1) whenever a sum is circled or underlined, held while the narration lands it, then back to the line."""
+    it = {i["name"]: i for i in tl.items}
+
+    def centre(name, fx=0.5):
+        x0, y0, x1, y1 = boxes[name]
+        return x0 + (x1 - x0) * fx, (y0 + y1) / 2
+    px, py = centre("pct")
+    nx, ny = centre("next", 0.87)
+    ax, ay = centre("aside", 0.83)
+    c27, u36, c270 = it["pct_circle"], it["ul36"], it["final_circle"]
+    K = [(0.0, 88, 50, 1.32), (2.9, 104, 58, 1.76), (6.3, 104, 70, 1.78), (8.9, 104, 88, 1.78),
          (12.9, 104, 116, 1.78), (19.0, 104, 136, 1.78), (22.5, 104, 156, 1.78), (26.2, 104, 176, 1.78),
-         (32.2, 104, 196, 1.74), (34.0, 104, 208, 1.78), (40.6, 104, 230, 1.78), (47.3, 104, 246, 1.78),
-         (54.2, 106, 230, 1.62), (57.0, 108, 160, 1.26), (60.0, 108, 158, 1.24)]
+         (29.6, 98, 180, 1.86),
+         # ≈27% circled → push in, hold through "But that's an average", back for the next line
+         (c27["t0"] + 0.1, px + 8, py, 2.6), (c27["t1"] + 0.35, px + 4, py + 1, 3.1), (33.4, px + 5, py + 2, 3.15),
+         (34.4, 104, 208, 1.80),
+         # 36¢ underlined → push in while "thirty-six cents" lands
+         (u36["t0"] - 0.2, 100, 208, 1.95), (u36["t1"] + 0.45, nx - 6, ny + 1, 3.1), (39.6, nx - 6, ny + 2, 3.15),
+         (40.6, 104, 230, 1.78), (47.3, 104, 246, 1.78),
+         # payoff: $270 circled → push in, then pull back over the whole page
+         (c270["t0"] - 0.3, ax - 10, ay, 2.2), (c270["t1"] + 0.3, ax - 4, ay + 1, 3.0), (56.5, ax - 4, ay + 2, 3.05),
+         (58.7, 108, 160, 1.26), (60.0, 108, 158, 1.24)]
     return K
 
 

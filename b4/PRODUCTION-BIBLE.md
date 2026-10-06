@@ -3,7 +3,7 @@
 Mode: REALISTIC HANDWRITTEN EXPLAINER (`channel/HANDWRITTEN-ENGINE.md`). Governing rules: `/CLAUDE.md`, `short/MASTER-SYSTEM.md`.
 Topic B4 in `channel/TOPICS.md` ("How much tax to set aside from every invoice"). Chosen for this mode because the whole answer is a calculation that can be watched being written (§3, §39).
 
-**CURRENT VERSION:** v2 (see the revision log).
+**CURRENT VERSION:** v3 (see the revision log).
 
 ## 1. Content strategy
 | Field | Value |
@@ -39,7 +39,9 @@ Calculator: `b4/calc.py`.
 | Pen physics | Wrist-pivot model (v2): the wrist follows the pen path low-passed over 0.7 s; small strokes are made by rotating the hand about the wrist (≈2.5° per 8 mm letter), so the hand no longer translates with every letter. The pen tip is locked to the ink head; minimum-jerk pen-up moves with a lift (1.8% scale, the shadow separating); wrist rotation follows paper position; contact shadow toward the lower right (light from the upper left) |
 | Light continuity | The hand is multiplied by an illumination map measured from the blank paper, so the blind shadows fall across the hand too |
 | Ink | EMS Tech single-line font (SIL OFL, `hersheytext` 2.0.0), per-glyph jitter (offset, ±2° rotation, ±3% scale), 0.75 mm marker line, touch-down dots, fibre modulation, multiplied into the paper |
-| Camera | Virtual camera on the plate: zoom 1.60 → 1.78 while writing (≈ the full writing width), follows the active line; pull back to 1.24 for the payoff; operator micro-motion |
+| Camera | Virtual camera on the plate (v3): opens wide (1.32) on the mug, steam and blank sheet, pushes in to 1.78 for writing and follows the active line; pushes in to ≈3.1 on every circled/underlined sum (≈27%, 36¢, $270) and holds while the narration lands it; final pull back to 1.24 over the whole page. Handheld operator motion from smoothed random noise (non-periodic), small roll and focus-breathing zoom |
+| Living background | (v3) Window light breathes: a sun map of the blind stripes (paper illumination + desk luminance ratio, objects masked) is dimmed by two slow cloud passes (≈21 s, ≈45.5 s) and swayed a few px by a breeze; the hand and its shadow follow the same light. Code-made coffee steam (advected, domain-warped noise) curls over the mug, brighter in sun stripes |
+| Motion blur | (v3) 180° shutter: line changes and retreats (pen-up moves > 15 mm) are rendered with 4–11 sub-frame samples; writing itself stays sharp |
 | Typography | Handwriting only on the paper; a compact source tag (Manrope 600, 26 px) on a dark rounded plate at the top-left, outside the Shorts bottom UI zone (v2) |
 | Canadian identity | The paper flag in the plate, $ notation, CPP / MB / CRA terms |
 
@@ -54,3 +56,4 @@ Calculator: `b4/calc.py`.
 ## 5. Revision log
 - v1 (2026-10-06): writing speed 55 → 110 → 135 mm/s and pen-up overheads cut, because the writing lagged the narration by up to 4 s; text trimmed to key numbers; hand-retreats only when there is ≥0.9 s; camera widened (text was cropped on the left); the hand is in frame from frame 1 (the hook); sleeve extended past the frame edge; the hand relit by the paper's illumination map.
 - v2 (2026-10-06, user feedback): "the hand is always cut off, it looks like a robot" → the first hand photo had the back of the hand touching the photo's right edge, so a straight cut appeared inside our frame; replaced by a photo with the whole hand inside (hand_c), sleeve extended past both edges, and a wrist-pivot motion model instead of rigid translation. "The text at the bottom is barely visible" → the footer line was wider than the frame and sat in the Shorts UI zone; now a two-line tag on a near-opaque dark plate (alpha 228/255) at the top-left; a first v2 render used alpha 150 and the handwriting scrolling underneath showed through, so it was raised and re-rendered. Voice switched to Grady (series rule), timeline re-cut to the new measured narration.
+- v3 (2026-10-06, user direction: "natural camera, push in when we mark a sum, the background must move, maximum realism"): living window light and coffee steam, non-periodic handheld camera, push-ins on ≈27% / 36¢ (new underline) / $270, establishing wide at the start, 180° motion blur on big hand moves. A first try blurred the hand on every inter-letter move (wrist rotation read as speed), so the blur is limited to moves over 15 mm.
