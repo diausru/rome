@@ -6,7 +6,7 @@ Title: OAS clawback: the line, the 15%, and 3 legal levers
 Duration: 59.50 s (1428 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
-MP4: showreel/out/e2/e2-final.mp4 (share copy: e2-share.mp4)
+MP4: showreel/out/e2v2/e2v2-final.mp4 (share copy: e2v2-share.mp4)
 
 VOICEOVER
 Retired, with income over ninety-five thousand? The government takes back part of your OAS. But there are legal ways to keep more. It's the recovery tax: fifteen cents for every dollar above the line. Net income of a hundred and ten thousand? About fourteen thousand seven hundred over. Fifteen percent: twenty-two hundred dollars. Taken from your OAS starting July twenty twenty-seven. Lever one: at sixty-five, split up to half your RRIF income with your spouse. Lever two: TFSA withdrawals aren't income, so they don't count. Lever three: delay OAS. Each month, up to seventy, adds point six percent. The right lever depends on your whole picture. Plan for the line. Follow for the real math.
