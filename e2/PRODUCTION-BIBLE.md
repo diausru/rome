@@ -54,3 +54,4 @@ Choosing between levers, couples' income planning, RRIF withdrawal timing: "The 
 - VO v1: 70.7 s, too long → 8 lines shortened and regenerated → 58.75 s (115 words).
 - Plate v1: washed out, kitchen not readable → darker floor and sage cabinets, cabinets and fridge moved to the back wall, less window glare; standing figure moved into frame.
 - Stills QC: empty lower half during the hook → the income bar now enters at 1.5 s.
+- Final: rendered and verified. Video 1080×1920, 24 fps, 1428 frames, 59.50 s, clean decode; audio AAC 48 kHz stereo, −14.3 LUFS integrated (VO + ducked music). Contact sheet from the final MP4 reviewed. Share copy e2-share.mp4 (CRF 20, 14.4 MB).
