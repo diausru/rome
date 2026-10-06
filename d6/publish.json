@@ -1,0 +1,55 @@
+{
+ "video": {"title": "RRSP vs TFSA: how to decide", "duration": "59.50 s (1428 frames)", "mp4": "showreel/out/d6/d6-final.mp4 (share copy: d6-share.mp4)"},
+ "sources": [
+  "CRA — MP, DB, RRSP, DPSP, ALDA, TFSA limits (canada.ca) · 2026 · TFSA dollar limit $7,000; RRSP dollar limit $33,810",
+  "CRA — How contributions affect your RRSP deduction limit (canada.ca) · current · 18% of the previous year's earned income up to the annual limit",
+  "CRA — RRSP; Withdrawing from your own RRSPs (canada.ca) · current · deductible contributions; withdrawals are income",
+  "CRA — What is a TFSA; Withdrawing from a TFSA (canada.ca) · current · not deductible; tax-free growth and withdrawals; withdrawn amounts re-added as room on Jan 1 of the next year",
+  "Illustration only: $1,000 of income, money doubles, 30% marginal rate in and out → $1,400 either way; 20% later → RRSP $1,600; 40% later → RRSP $1,200"
+ ],
+ "yt": {
+  "titles": ["RRSP or TFSA? One Question Decides It", "RRSP vs TFSA: The Tax Rate Rule (Canada 2026)", "RRSP or TFSA? Same $1,400… Until Your Tax Rate Changes"],
+  "description": "RRSP or TFSA? It isn't about which one is \"better\". It's your tax rate now versus later.\n\nRRSP: contributions are deductible, so you save tax today, but withdrawals are taxed as income.\nTFSA: no deduction going in, but growth and withdrawals are tax-free, and the amount you withdraw comes back as contribution room on January 1 of the next year.\n\nIllustration: $1,000 of income that doubles, at the same 30% rate going in and coming out, leaves $1,400 in either account. A lower rate later (20%) favours the RRSP ($1,600); a higher rate later (40%) favours the TFSA ($1,400 vs $1,200).\n\n2026 limits: TFSA $7,000 (plus unused room); RRSP 18% of last year's earned income, up to $33,810. Check your own room in CRA My Account.\n\nSources: CRA (canada.ca). The example is an illustration. Mechanics only, not investment advice.\n\n#RRSP #TFSA #PersonalFinanceCanada",
+  "hashtags": "#RRSP #TFSA #PersonalFinanceCanada",
+  "keywords": "rrsp vs tfsa, rrsp or tfsa, tfsa limit 2026, rrsp limit 2026, tfsa canada, rrsp canada, tax free savings account, personal finance canada, canadian taxes",
+  "pinned": "Recap: same tax rate in and out → same result. Lower rate later → RRSP ahead. Higher later → TFSA ahead. 2026: TFSA $7,000, RRSP up to $33,810 (18% of last year's earned income). Which way are you leaning, and do you expect your rate to go up or down?",
+  "cta": "Follow Tax Secrets Canada for the real math; next: GIS for low-income seniors."
+ },
+ "tt": {
+  "caption": "RRSP or TFSA? 🇨🇦 It's not which is better. It's your tax rate now vs later.",
+  "keywords": "rrsp vs tfsa · tfsa limit 2026 · rrsp limit 2026 · canadian savings · tax free savings account",
+  "hashtags": "#rrsp #tfsa #personalfinancecanada #canadiantaxes #moneytips",
+  "pinned": "Expect your tax rate to be higher or lower later? That's your answer. (General info, not advice.)",
+  "cta": "Follow for the next one: GIS for seniors."
+ },
+ "ig": {
+  "caption": "RRSP or TFSA? One question decides it. 🇨🇦\n\nRRSP: deducted now, taxed when it comes out. TFSA: taxed now, tax-free when it comes out (and the room comes back next year).\nSame tax rate in and out → the same result ($1,000 that doubles → $1,400 either way, at 30%). Lower rate later → RRSP ahead. Higher later → TFSA ahead.\n\n2026 limits: TFSA $7,000 · RRSP 18% of last year's earned income, up to $33,810.\n\nSave this for contribution season.\n\nSource: CRA (canada.ca). Illustration only, not investment advice.",
+  "keywords": "rrsp vs tfsa, tfsa, rrsp, canadian savings, tax tips canada",
+  "hashtags": "#rrsp #tfsa #personalfinancecanada #canadiantaxes #savingmoney #canadatax",
+  "pinned": "RRSP team or TFSA team? 🙋 And why?",
+  "cta": "Save this for contribution season."
+ },
+ "eng": {
+  "question": "Do you expect your tax rate to be higher or lower in retirement?",
+  "save": "The decision rule plus the 2026 limits, for RRSP season (contributions for 2026 count until early March 2027).",
+  "share": "Young professionals starting to save; couples deciding where to put savings.",
+  "follow": "Mechanics, not hype: the series explains how each account is taxed, with CRA sources."
+ },
+ "seo": {
+  "primary": "RRSP vs TFSA",
+  "secondary": "rrsp or tfsa; tfsa limit 2026; rrsp limit 2026; tfsa (vidIQ ≈20,925/mo, recorded 2026-10-06 in e3); rrsp (≈5,076/mo); personal finance canada (≈8,688/mo)",
+  "intent": "A Canadian saver wants a simple rule for choosing between an RRSP and a TFSA, plus this year's limits.",
+  "audience": "Employees aged 22–45 starting or growing savings; newcomers learning the accounts.",
+  "angle": "Replace 'which is better' with one question (tax rate now vs later), proven with a small equal-outcome example.",
+  "questions": "Should I put money in an RRSP or a TFSA? · What is the TFSA limit for 2026? · What is the RRSP limit for 2026? · Are TFSA withdrawals taxed? · Do I get TFSA room back after a withdrawal?",
+  "pain": "Fear of picking the 'wrong' account; confusion from conflicting advice online."
+ },
+ "next": [
+  {"topic": "GIS: the benefit low-income seniors miss (E4)", "why": "Next in the plan; links to 'TFSA withdrawals don't affect GIS'", "intent": "who qualifies for GIS", "hook": "Many low-income seniors qualify for GIS. Are you one?", "angle": "Eligibility and what income counts", "payoff": "How to check and apply"},
+  {"topic": "What makes an expense deductible (A6)", "why": "Next in the plan; broad audience", "intent": "can I deduct this expense", "hook": "Can you deduct it? CRA asks one question first.", "angle": "Earning income + reasonable + records", "payoff": "A three-question test"},
+  {"topic": "Records: what to keep and for how long (A7)", "why": "Evergreen; pairs with deductions", "intent": "how long to keep tax records canada", "hook": "Throwing out old receipts? Not so fast.", "angle": "The CRA retention period, verified", "payoff": "A simple keep-list"}
+ ],
+ "series": "Savings Mechanics (episode 1: RRSP vs TFSA → FHSA → spousal RRSP later). Playlist: 'Savings Accounts Canada'.",
+ "research": "- vidIQ: credits at 0 until 2026-11-04 → no paid calls. Recorded volumes from the 2026-10-06 pull: 'tfsa' ≈20,925/mo, 'rrsp' ≈5,076/mo, 'rrsp withdrawal strategy' ≈4,791/mo.\n- Web: 'RRSP vs TFSA' is a perennial query; most top results compare features. This Short's angle (one deciding question + an equal-outcome example) is distinct. No creator material copied.\n- Timing: RRSP season (Jan–early Mar) is the seasonal peak; also publish now (evergreen) and re-promote in January.",
+ "retention": "Hook (0–2 s): a common dilemma + 'one question' ✅. Open loop: the question is answered at 9 s, proven by the example at 32–40 s ✅. Information density: two mechanics, one example, one rule, two limits ✅. Visual change rate: the camera moves between the jars, the woman and the skyline; the jar amounts change at each step ✅. Escalation: mechanics → proof → rule → numbers ✅. Payoff: a reframe ✅. Weakest point: 13–31 s (two definition beats); the camera moving jar to jar carries it. No re-render needed."
+}

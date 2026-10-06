@@ -1,0 +1,59 @@
+{
+ "total": 59.439,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "RRSP or TFSA? One question decides it.",
+   "start": 0.25,
+   "end": 4.69
+  },
+  {
+   "id": "loop",
+   "text": "It's your tax rate. Now, and later.",
+   "start": 4.97,
+   "end": 8.46
+  },
+  {
+   "id": "rrsp",
+   "text": "RRSP: your contribution is deducted now, so you save tax today. But every dollar you take out is taxed as income.",
+   "start": 8.82,
+   "end": 18.465
+  },
+  {
+   "id": "tfsa",
+   "text": "TFSA: no deduction going in. But growth and withdrawals are tax-free, and the room comes back the next year.",
+   "start": 18.745,
+   "end": 26.743
+  },
+  {
+   "id": "example",
+   "text": "Say you earn a thousand dollars and it doubles. Same tax rate going in and coming out? Both leave you fourteen hundred.",
+   "start": 27.103,
+   "end": 35.628
+  },
+  {
+   "id": "verdict",
+   "text": "Lower rate in retirement? The RRSP comes out ahead. Higher later? The TFSA.",
+   "start": 35.908,
+   "end": 42.979
+  },
+  {
+   "id": "limits",
+   "text": "Twenty twenty-six limits: seven thousand for the TFSA, up to thirty-three thousand eight hundred ten for the RRSP.",
+   "start": 43.339,
+   "end": 52.539
+  },
+  {
+   "id": "payoff",
+   "text": "So don't ask which is better. Ask which fits your tax rate.",
+   "start": 52.899,
+   "end": 57.181
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 57.421,
+   "end": 59.039
+  }
+ ]
+}

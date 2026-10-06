@@ -1,0 +1,51 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "RRSP or TFSA? One question decides it.",
+   0.28
+  ],
+  [
+   "loop",
+   "It's your tax rate. Now, and later.",
+   0.36
+  ],
+  [
+   "rrsp",
+   "RRSP: your contribution is deducted now, so you save tax today. But every dollar you take out is taxed as income.",
+   0.28
+  ],
+  [
+   "tfsa",
+   "TFSA: no deduction going in. But growth and withdrawals are tax-free, and the room comes back the next year.",
+   0.36
+  ],
+  [
+   "example",
+   "Say you earn a thousand dollars and it doubles. Same tax rate going in and coming out? Both leave you fourteen hundred.",
+   0.28
+  ],
+  [
+   "verdict",
+   "Lower rate in retirement? The RRSP comes out ahead. Higher later? The TFSA.",
+   0.36
+  ],
+  [
+   "limits",
+   "Twenty twenty-six limits: seven thousand for the TFSA, up to thirty-three thousand eight hundred ten for the RRSP.",
+   0.36
+  ],
+  [
+   "payoff",
+   "So don't ask which is better. Ask which fits your tax rate.",
+   0.24
+  ],
+  [
+   "cta",
+   "Follow for the real math.",
+   0.4
+  ]
+ ],
+ "tempo": 1.03
+}
