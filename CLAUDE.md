@@ -104,4 +104,4 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 ## Pace: one video at a time (user, 2026-10-06)
 
 - Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
-- Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain): D2, D5, C3, F1, F5, in that order.
+- Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain): D5, C3, F1, F5, in that order (D2 delivered 2026-10-06).

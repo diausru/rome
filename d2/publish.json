@@ -1,5 +1,9 @@
 {
- "video": {"title": "Canada Child Benefit and your income", "duration": "62.21 s (1493 frames)", "mp4": "showreel/out/d2/d2-final.mp4 (share copy: d2-share.mp4)"},
+ "video": {
+  "title": "Canada Child Benefit and your income",
+  "duration": "62.21 s (1493 frames)",
+  "mp4": "showreel/out/d2/d2-final.mp4 (share copy: d2-share.mp4)"
+ },
  "sources": [
   "CRA — Canada child benefit: How much you can get (canada.ca) · July 2026 – June 2027 · maximums $8,157 (<6) / $6,883 (6–17); AFNI thresholds $38,237 / $82,847; reduction rates 7% / 13.5% / 19% / 23%; based on 2025 AFNI",
   "Government of Canada news releases, July 2026 (canada.ca) · 2026–27 · CCB payments increasing; up to $8,157 per child under 6",
@@ -7,7 +11,11 @@
   "CRA — RRSP deduction (line 20800) and net income (line 23600) (canada.ca) · general · RRSP contributions lower net income"
  ],
  "yt": {
-  "titles": ["Got a Raise? Your Canada Child Benefit Could Shrink", "Canada Child Benefit 2026–27: How Your Income Changes It", "CCB Explained: Up to $8,157 per Child (and What Lowers It)"],
+  "titles": [
+   "Got a Raise? Your Canada Child Benefit Could Shrink",
+   "Canada Child Benefit 2026–27: How Your Income Changes It",
+   "CCB Explained: Up to $8,157 per Child (and What Lowers It)"
+  ],
   "description": "Got a raise? Your Canada Child Benefit (CCB) could shrink, but not right away: it runs a year behind.\n\nPayments from July 2026 to June 2027 use your family's 2025 net income. The maximum is $8,157 a year per child under 6 and $6,883 per child aged 6 to 17. Once adjusted family net income passes $38,237, the benefit is reduced (7% of the income above that for one child, 13.5% for two, 19% for three, 23% for four or more, up to $82,847).\n\nExample: one child under 6 and a family net income of $70,000 → about $5,934 a year (≈ $494 a month). A $10,000 raise → about $700 a year less, starting the July after you file. One lever: RRSP contributions lower your net income.\n\nThe big rule: you and your spouse or common-law partner must both file a return every year, even with no income, or the payments stop.\n\nSource: CRA, canada.ca (Canada child benefit). The $70,000 family is an example. General information, not advice.\n\n#CanadaChildBenefit #CCB #CanadaTax",
   "hashtags": "#CanadaChildBenefit #CCB #CanadaTax",
   "keywords": "canada child benefit, canada child benefits, child benefits in canada, ccb 2026, how much is canada child benefit, canada child benefit eligibility, ccb income threshold, ccb raise, adjusted family net income, canada child benefit explained",
@@ -44,11 +52,32 @@
   "pain": "Surprise drops in July; losing payments by not filing."
  },
  "next": [
-  {"topic": "Child care expenses: who claims (D5)", "why": "Next in the plan; same family audience", "intent": "child care expenses deduction canada", "hook": "Paying for daycare? Usually the lower-income parent claims it.", "angle": "Who claims, limits by age, receipts", "payoff": "Don't toss the daycare receipts"},
-  {"topic": "Small business deduction (C3)", "why": "In the plan; business owners", "intent": "small business tax rate canada", "hook": "Why a corporation pays less on its first $500,000.", "angle": "Federal + Manitoba rates, verified", "payoff": "When it applies"},
-  {"topic": "Vehicle expenses + logbook (B6)", "why": "In the plan; self-employed", "intent": "car expenses self employed canada", "hook": "Drive for work? Without a logbook, it's a guess.", "angle": "Business-use percentage, the logbook rule", "payoff": "Keep a log"}
+  {
+   "topic": "Child care expenses: who claims (D5)",
+   "why": "Next in the plan; same family audience",
+   "intent": "child care expenses deduction canada",
+   "hook": "Paying for daycare? Usually the lower-income parent claims it.",
+   "angle": "Who claims, limits by age, receipts",
+   "payoff": "Don't toss the daycare receipts"
+  },
+  {
+   "topic": "Small business deduction (C3)",
+   "why": "In the plan; business owners",
+   "intent": "small business tax rate canada",
+   "hook": "Why a corporation pays less on its first $500,000.",
+   "angle": "Federal + Manitoba rates, verified",
+   "payoff": "When it applies"
+  },
+  {
+   "topic": "Vehicle expenses + logbook (B6)",
+   "why": "In the plan; self-employed",
+   "intent": "car expenses self employed canada",
+   "hook": "Drive for work? Without a logbook, it's a guess.",
+   "angle": "Business-use percentage, the logbook rule",
+   "payoff": "Keep a log"
+  }
  ],
  "series": "Family Money (CCB → child care expenses → RESP). Playlist: 'Families & Kids'.",
- "research": "- vidIQ (2026-10-06, 5 credits): 'canada child benefit' ≈4,855/mo (competition 20.2); 'canada child benefits' ≈4,498/mo; 'child benefits in canada' ≈3,387/mo (competition 9.4); long-tail questions on how much, eligibility, payment dates → answer 'how much' and 'what changes it' up front.\n- Web: the July 2026 Government of Canada releases on the 2026–27 increase keep the topic timely.",
+ "research": "- vidIQ (2026-10-06, 5 credits): 'canada child benefit' ≈4,855/mo (competition 20.2); 'canada child benefits' ≈4,498/mo; 'child benefits in canada' ≈3,387/mo (competition 9.4); long-tail questions on how much, eligibility, payment dates → answer 'how much' and 'what changes it' up front.\n- Web: the July 2026 Government of Canada releases on the 2026–27 increase keep the topic timely.\n- vidIQ title score (short-form, 5 credits): 'Got a Raise? Your Canada Child Benefit Could Shrink' = 83 (primary).",
  "retention": "Hook (0–2 s): a raise + 'could shrink' + 'not right away' open loop; family faces in frame, no card ✅. Each beat lands one number ($8,157 → $38,237 → $494 → −$700) ✅. The 'big rule' at 46 s re-hooks ✅. 62 s; weakest point: 7–16 s (base-year dates); the card states them in one line."
 }

@@ -46,3 +46,4 @@ Timing: a raise in 2026 enters the 2026 return (filed in 2027) and changes the p
 
 ## 3. QC log
 - Stills v1: first 7.6 s keep the top clear (no card) so the family is seen; jar pins collided with the strip at example/lever → camera keys lowered (v 0.5 / 0.48), checked again: clear.
+- Final: 1491 frames (mux trims the hold to the audio length), 62.20 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.4 LUFS; contact sheet checked; sent to the user; vidIQ title score 83; kit card #13.
