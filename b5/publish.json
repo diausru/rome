@@ -1,6 +1,6 @@
 {
  "video": {
-  "title": "Crossed $30K? When Freelancers Must Charge GST (handwritten)",
+  "title": "Crossed $30K? When You Must Register for GST in Canada (handwritten)",
   "duration": "68.2 s (1636 frames)",
   "mp4": "b5/build/b5_final.mp4 (share copy: b5_share.mp4)"
  },
@@ -12,13 +12,13 @@
  ],
  "yt": {
   "titles": [
-   "Crossed $30K? When Freelancers Must Charge GST (Canada)",
-   "The $30,000 GST Rule Isn't Per Year",
+   "Crossed $30K? When You Must Register for GST in Canada",
+   "GST Registration in Canada: The $30K Rule Isn't Per Year",
    "Freelancers: When Do You Have to Register for GST/HST?"
   ],
-  "description": "Freelancing in Canada and getting close to $30,000? The GST/HST threshold isn't counted per calendar year. It's any four consecutive calendar quarters.\n\nExample: $5,000 + $8,000 + $9,000 + $9,500 over four quarters = $31,500, over the line. You stop being a small supplier at the end of the month after that quarter, then you have 29 days to register. Cross $30,000 in a single quarter and you charge GST/HST on the very sale that put you over.\n\nAfter that, a $1,000 invoice in Manitoba carries $50 of GST. That $50 was never yours. The upside: GST/HST you pay on business costs comes back as input tax credits. HST provinces charge 13–15%, and provincial sales taxes have their own rules.\n\nSource: CRA, \"When to register for and start charging the GST/HST\" (canada.ca). Example only; general information, not tax advice.\n\n#GST #SelfEmployed #CanadaTax",
-  "hashtags": "#GST #SelfEmployed #CanadaTax",
-  "keywords": "gst registration canada, do i need to charge gst, small supplier gst canada, gst threshold 30000, gst hst freelancer canada, when to register for gst, input tax credits canada, self employed taxes canada, side hustle taxes canada, manitoba gst",
+  "description": "Freelancing in Canada and getting close to $30,000? The GST/HST threshold isn't counted per calendar year. It's any four consecutive calendar quarters.\n\nExample: $5,000 + $8,000 + $9,000 + $9,500 over four quarters = $31,500, over the line. You stop being a small supplier at the end of the month after that quarter, then you have 29 days to register. Cross $30,000 in a single quarter and you charge GST/HST on the very sale that put you over.\n\nAfter that, a $1,000 invoice in Manitoba carries $50 of GST. That $50 was never yours. The upside: GST/HST you pay on business costs comes back as input tax credits. HST provinces charge 13–15%, and provincial sales taxes have their own rules.\n\nSource: CRA, \"When to register for and start charging the GST/HST\" (canada.ca). Example only; general information, not tax advice.\n\n#GSTRegistration #SelfEmployed #CanadaTax",
+  "hashtags": "#GSTRegistration #SelfEmployed #CanadaTax",
+  "keywords": "gst registration canada, gst hst canada, gst canada, how does gst work, do i need to charge gst, small supplier gst canada, gst threshold 30000, gst hst freelancer canada, when to register for gst, input tax credits canada, self employed taxes canada, side hustle taxes canada, manitoba gst",
   "pinned": "The part most people miss: it's ANY four quarters in a row, not your tax year. Are you tracking your last four quarters, or just your annual total?",
   "cta": "Follow Tax Secrets Canada for the real math behind self-employed taxes."
  },
@@ -44,7 +44,7 @@
  },
  "seo": {
   "primary": "gst registration canada",
-  "secondary": "do i need to charge gst; small supplier; gst threshold 30000; input tax credits; self employed taxes canada (vidIQ data pending: 0 credits on 2026-10-06)",
+  "secondary": "gst registration canada (vidIQ CA ≈3,812/mo, competition 6); gst hst canada (≈4,984/mo); gst canada (≈3,508/mo); how does gst work (≈3,425/mo); hst (≈10,003/mo, rising)",
   "intent": "A freelancer near $30,000 wants to know when GST registration and charging start.",
   "audience": "Canadian freelancers, contractors and side-hustlers approaching $30K of sales",
   "angle": "The $30,000 test is a rolling four-quarter window, not the tax year; one quarter can trigger it immediately.",
@@ -78,7 +78,7 @@
   }
  ],
  "series": "Real Tax Math (handwritten), after B4. Playlist: Self-Employed in Canada.",
- "research": "- vidIQ: balance 0 credits on 2026-10-06 (renews 2026-11-04). Demand research fell back to web search: freelancer guides consistently answer \"do I need to charge GST under $30,000\" and stress that the test is a rolling four-quarter window, which confirms the angle. Run one vidIQ keyword call (\"gst registration canada\", country CA) when credits are available and adjust the title and keywords if needed.",
+ "research": "- vidIQ keyword research (CA, 2026-10-06, after the subscription was activated): 'gst registration canada' ≈3,812 searches/mo, competition 6 (overall 69.7, the best ratio in the cluster); 'gst hst canada' ≈4,984/mo (competition 23); 'gst canada' ≈3,508/mo (12.4); 'how does gst work' ≈3,425/mo (23); 'hst' ≈10,003/mo (+85% vs its 30-day baseline). Exact phrases '30000 gst threshold', 'gst hst registration', 'input tax credits' are below 750/mo. Strategy: 'GST registration' goes into the primary title; the head terms go into the description and keywords.\n- vidIQ title score (short-form): 'GST Registration in Canada: The $30K Rule Isn't Per Year' 69 (one call; other titles not scored to save credits). Primary keeps the hook ('Crossed $30K?') and adds the keyword.\n- Web search (before vidIQ was active): freelancer guides stress the rolling four-quarter window, confirming the angle.",
  "retention": "- Hook (0–2 s): \"$30K\" is written on the first words and the question \"tax collector?\" opens the loop ✅\n- Visual change: a new written element every 1–4 s; three push-ins on circled items ✅\n- Escalation: the rule → the sum → the timing → the single-quarter exception → the invoice → \"not yours\" → ITCs → other provinces → the rule circled ✅\n- Weakest moment: 36.5–39.6 s (3 s without new ink while the single-quarter rule finishes). The camera moves down to the next line; judged acceptable.\n- Payoff: the opening rule is circled and the camera pulls back over the whole worked page ✅",
  "_label": "B5 · $30K GST rule (handwritten)",
  "_mp4": "b5_share.mp4",

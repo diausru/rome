@@ -1,0 +1,88 @@
+{
+ "video": {
+  "title": "How to Write Off Your Car in Canada (handwritten)",
+  "duration": "64.06 s (1537 frames)",
+  "mp4": "b6/build/b6_final.mp4 (share copy: b6_share.mp4)"
+ },
+ "sources": [
+  "canada.ca — Motor vehicle expenses (CRA business expenses) · current rules (checked 2026-10-06 via search results) · deductible part = business km ÷ total km × vehicle expenses; fuel, insurance, maintenance, licence and registration are operating expenses; interest, leasing and CCA have limits",
+  "canada.ca — Documenting the use of a vehicle (CRA, simplified logbook) · current · after a full-year base logbook, a 3-month sample logbook can be used if business use stays within 10% of the base year",
+  "CRA position on personal driving (canada.ca allowance pages; summarised by search results) · current · trips between home and your regular place of business are personal; logbook entries need date, destination, purpose and kilometres",
+  "Department of Finance Canada — 2026 automobile deduction limits and expense benefit rates (January 2026) · 2026 · 73¢/km for the first 5,000 km and 67¢ after (provinces) is the limit on the deduction of tax-exempt allowances paid by employers",
+  "Example (not a CRA rule, b6/calc.py): 12,000 ÷ 20,000 = 60%; 60% × $6,200 = $3,720; in the B4 example (2026, Manitoba, single, $60,000 net self-employment income) tax + CPP falls by $1,322.95. Verification note: canada.ca cannot be opened from the build machine; claims were checked through search results. Open the CRA motor vehicle expenses page once before publishing."
+ ],
+ "yt": {
+  "titles": [
+   "How to Write Off Your Car in Canada (Self-Employed)",
+   "Can You Write Off Your Car? Only This Part",
+   "Self-Employed Vehicle Tax Deductions: The Real Math (Canada)"
+  ],
+  "description": "Self-employed in Canada? You can't write off your car. You can write off the business part of it, and only if you can prove it.\n\nExample: 20,000 km driven, 12,000 for business = 60% business use. Gas, insurance, repairs and licence: $6,200. 60% × $6,200 = $3,720 deduction. In our 2026 Manitoba example ($60K net self-employment income) that saves about $1,323 of tax and CPP.\n\nTwo traps: driving from home to your regular place of business is personal, and the 73¢/km rate is the limit for employer-paid allowances; self-employed people claim actual costs. Keep a logbook (date, destination, purpose, km). After one full year, a 3-month sample can work if your driving stays similar.\n\nSources: CRA (canada.ca) motor vehicle expenses and simplified logbook; Department of Finance 2026 automobile rates. Example only; general information, not tax advice.\n\n#SelfEmployed #TaxDeductions #CanadaTax",
+  "hashtags": "#SelfEmployed #TaxDeductions #CanadaTax",
+  "keywords": "how to write off your car, vehicle tax deductions, write off car self employed canada, vehicle expenses self employed canada, cra logbook, business use of vehicle, cra mileage rate 2026, self employed tax deductions, tax tips canada, tax write offs",
+  "pinned": "The two things people get wrong: commuting to your regular workplace is personal, and 73¢/km isn't the self-employed method. Do you keep a logbook, or estimate at tax time?",
+  "cta": "Follow Tax Secrets Canada for the real math behind self-employed taxes."
+ },
+ "tt": {
+  "caption": "Can you write off your car? 🚗🇨🇦 Only the part you can prove. Here's the math (self-employed, 2026 example).",
+  "keywords": "how to write off your car canada · vehicle expenses self employed · cra logbook · business kilometres · cra mileage rate 2026",
+  "hashtags": "#selfemployedcanada #taxdeductions #canadiantaxes #smallbusinesscanada #sidehustle",
+  "pinned": "Logbook app or paper? 👇 (Example only: 60% business use, MB 2026.)",
+  "cta": "Follow for the next one in the self-employed series."
+ },
+ "ig": {
+  "caption": "Your car isn't the write-off. Your business kilometres are. 🚗🇨🇦\n\n20,000 km driven, 12,000 for business = 60%. 60% × $6,200 of costs = $3,720 deduction, about $1,323 saved in our 2026 Manitoba example.\n\nWatch out: home → your regular workplace is personal, and 73¢/km is the employer-allowance limit, not the self-employed method. Keep a logbook: date, destination, purpose, km.\n\nSave this before tax season. Sources: CRA (canada.ca), Finance Canada 2026 rates. Example only, general info, not advice.",
+  "keywords": "write off car canada, vehicle expenses, self employed deductions, cra logbook, canada tax tips",
+  "hashtags": "#selfemployedcanada #taxdeductions #canadiantaxes #smallbusinesscanada #taxtips #freelancelife",
+  "pinned": "Did you know commuting doesn't count? 👇",
+  "cta": "Save this and start your logbook today."
+ },
+ "eng": {
+  "question": "Do you keep a logbook, or estimate your business kilometres at tax time?",
+  "save": "The formula (business km ÷ total km × costs), the two traps and the logbook fields in one page.",
+  "share": "A friend who drives for clients, deliveries or job sites.",
+  "follow": "The B4 → B5 → B6 self-employed series: actual math on paper, with sources."
+ },
+ "seo": {
+  "primary": "how to write off your car",
+  "secondary": "how to write off your car (vidIQ ≈4,226/mo); vehicle tax deductions (≈3,651/mo, competition 28.8); self employed tax deductions (≈3,850/mo); tax tips canada (≈5,298/mo, competition 8.3)",
+  "intent": "A self-employed Canadian wants to know whether and how much of a car can be deducted.",
+  "audience": "Freelancers, contractors, trades, delivery and sales people who drive for work",
+  "angle": "You don't write off the car, you write off the business kilometres you can prove; plus the commute and 73¢ traps.",
+  "questions": "Can I write off my car if I'm self-employed? · How do I calculate business use of a vehicle? · Is driving to work deductible? · Can I use the CRA mileage rate as self-employed? · What does a CRA logbook need?",
+  "pain": "Fear of losing the deduction in a review; confusion between the mileage rate and actual costs."
+ },
+ "next": [
+  {
+   "topic": "Home office for the self-employed (business-use-of-home)",
+   "why": "the other big self-employed deduction; same ratio logic on paper (area %)",
+   "intent": "home office deduction self employed canada",
+   "hook": "Your rent isn't a write-off. Your office square feet might be.",
+   "angle": "the same \"business share\" math as the car",
+   "payoff": "a worked area-percentage example (rules to verify on canada.ca)"
+  },
+  {
+   "topic": "Same $60K freelancer, different province",
+   "why": "province comparisons are the channel's strongest format",
+   "intent": "self employed tax by province",
+   "hook": "Same $60K freelancer. One province takes more.",
+   "angle": "provincial brackets differ more than people expect",
+   "payoff": "a written leaderboard (verify every 2026 rate)"
+  },
+  {
+   "topic": "RRSP for the self-employed: $5,000 into the B4 math",
+   "why": "the marginal-rate twist in action",
+   "intent": "should self employed contribute to RRSP",
+   "hook": "Put $5,000 in an RRSP. Watch the $16,106 shrink.",
+   "angle": "the deduction saves at the marginal rate",
+   "payoff": "before/after numbers side by side"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B5. Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ keyword research (CA, 2026-10-06, one call, seed \"vehicle expenses self employed canada\"): \"how to write off your car\" ≈4,226/mo (competition 45.5); \"vehicle tax deductions\" ≈3,651/mo (28.8); \"self employed tax deductions\" ≈3,850/mo (41); \"self employed taxes\" ≈4,780/mo (23.2); \"tax tips canada\" ≈5,298/mo (8.3); \"tax write offs\" ≈3,588/mo. Canadian exact phrases are below 750/mo. Strategy: the hook and title use the searched phrase \"write off your car\"; the description carries \"vehicle tax deductions\" and \"self employed tax deductions\".\n- Web search: articles titled \"CRA Mileage Rate 2026: the 73¢ rate, with one big catch\" show the rate is widely confused with the self-employed method; the video corrects it with the Finance Canada source.",
+ "retention": "- Hook (0–2 s): the searched question plus a twist answer (\"only the part you can prove\") ✅\n- Visual change: new ink every 1–4 s; four push-ins (60%, $3,720, $1,323, business km) ✅\n- Escalation: ratio → costs → deduction → real saving → two traps → logbook → payoff ✅\n- Weakest moment: 42.9–46.4 s (3.5 s without new ink while \"self-employed people claim actual costs\" finishes); the camera moves to the next line. Acceptable.\n- Payoff: the first number (\"12,000 biz\") is circled on \"business kilometres\" and the camera pulls back ✅",
+ "_label": "B6 · Car write-off (handwritten)",
+ "_mp4": "b6_share.mp4",
+ "_vo": "Can you write off your car? Only the part you can prove. Say you drove twenty thousand kilometres this year. Twelve thousand were for your business. That's sixty percent business use. Gas, insurance, repairs, licence: six thousand two hundred dollars for the year. Sixty percent of that is three thousand, seven hundred and twenty. That's your deduction. In our sixty-thousand-dollar Manitoba example, that saves about thirteen hundred dollars of tax and C-P-P. But driving from home to your regular place of business? That's personal. And that seventy-three cents a kilometre? That's for employer allowances. Self-employed people claim actual costs. No logbook? The C-R-A can deny the claim. Date, destination, purpose, kilometres. Keep one full year. After that, a three-month sample can work, if your driving stays similar. Your car isn't the write-off. Your business kilometres are.",
+ "_votc": "[00:00.20–00:04.02] \"Can you write off your car? Only the part you can prove.\"\n[00:04.32–00:09.61] \"Say you drove twenty thousand kilometres this year. Twelve thousand were for your business.\"\n[00:09.86–00:11.85] \"That's sixty percent business use.\"\n[00:12.15–00:17.58] \"Gas, insurance, repairs, licence: six thousand two hundred dollars for the year.\"\n[00:17.87–00:24.17] \"Sixty percent of that is three thousand, seven hundred and twenty. That's your deduction.\"\n[00:24.47–00:31.86] \"In our sixty-thousand-dollar Manitoba example, that saves about thirteen hundred dollars of tax and C-P-P.\"\n[00:32.28–00:36.49] \"But driving from home to your regular place of business? That's personal.\"\n[00:36.79–00:44.71] \"And that seventy-three cents a kilometre? That's for employer allowances. Self-employed people claim actual costs.\"\n[00:45.11–00:52.58] \"No logbook? The C-R-A can deny the claim. Date, destination, purpose, kilometres.\"\n[00:52.88–00:59.80] \"Keep one full year. After that, a three-month sample can work, if your driving stays similar.\"\n[01:00.25–01:03.46] \"Your car isn't the write-off. Your business kilometres are.\""
+}
