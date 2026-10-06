@@ -1,16 +1,60 @@
 {
  "voice": "Grady (ElevenLabs via Higgsfield)",
  "beats": [
-  ["hook", "Paying for daycare? Part of it can come off your taxable income.", 0.28],
-  ["loop", "But usually, only one parent can claim it.", 0.36],
-  ["what", "Daycare centres, nursery schools, caregivers and day camps can all count.", 0.32],
-  ["limits", "The limit: eight thousand a year per child under seven, five thousand from seven to sixteen.", 0.32],
-  ["who", "Generally, the parent with the lower net income claims it.", 0.28],
-  ["example", "Say one parent earns ninety thousand, the other thirty, and daycare cost nine thousand. The lower earner claims eight thousand.", 0.32],
-  ["cap", "There's also a cap: two-thirds of that parent's earned income.", 0.32],
-  ["exceptions", "The higher earner claims only in specific cases, like when the other parent was in school or in hospital.", 0.32],
-  ["receipts", "Keep every receipt. For a babysitter, get their social insurance number on it.", 0.32],
-  ["payoff", "And because it lowers net income, it can help your child benefit too.", 0.32],
-  ["cta", "Follow for the real math.", 0.4]
+  [
+   "hook",
+   "Paying for daycare? Part of it can come off your taxable income.",
+   0.28
+  ],
+  [
+   "loop",
+   "But usually, only one parent can claim it.",
+   0.36
+  ],
+  [
+   "what",
+   "Daycare centres, nursery schools, caregivers and day camps can all count.",
+   0.32
+  ],
+  [
+   "limits",
+   "The limit: eight thousand a year per child under seven, five thousand from seven to sixteen.",
+   0.32
+  ],
+  [
+   "who",
+   "Generally, the parent with the lower net income claims it.",
+   0.28
+  ],
+  [
+   "example",
+   "Say one parent earns ninety thousand, the other thirty, and daycare cost nine thousand. The lower earner claims eight thousand.",
+   0.32
+  ],
+  [
+   "cap",
+   "There's also a cap: two-thirds of that parent's earned income.",
+   0.32
+  ],
+  [
+   "exceptions",
+   "The higher earner claims only in specific cases, like when the other parent was in school or in hospital.",
+   0.32
+  ],
+  [
+   "receipts",
+   "Keep every receipt. For a babysitter, get their social insurance number on it.",
+   0.32
+  ],
+  [
+   "payoff",
+   "And because it lowers net income, it can help your child benefit too.",
+   0.32
+  ],
+  [
+   "cta",
+   "Next: why a small corporation pays just nine percent. Follow so you don't miss it.",
+   0.4
+  ]
  ]
 }

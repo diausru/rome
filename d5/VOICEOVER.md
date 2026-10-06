@@ -14,7 +14,7 @@ There's also a cap: two-thirds of that parent's earned income.
 The higher earner claims only in specific cases, like when the other parent was in school or in hospital.
 Keep every receipt. For a babysitter, get their social insurance number on it.
 And because it lowers net income, it can help your child benefit too.
-Follow for the real math.
+Next: why a small corporation pays just nine percent. Follow so you don't miss it.
 
 ## B + C. Timecoded voiceover and delivery notes
 | Time | Beat | Narration | Delivery |
@@ -29,7 +29,7 @@ Follow for the real math.
 | [00:39.17–00:46.21] | exceptions | “The higher earner claims only in specific cases, like when the other parent was in school or in hospital.” | careful, measured |
 | [00:46.53–00:52.48] | receipts | “Keep every receipt. For a babysitter, get their social insurance number on it.” | practical, firm |
 | [00:52.80–00:57.20] | payoff | “And because it lowers net income, it can help your child benefit too.” | a bonus link to the CCB |
-| [00:57.52–00:59.01] | cta | “Follow for the real math.” | friendly, short |
+| [00:57.52–01:04.62] | cta | “Next: why a small corporation pays just nine percent. Follow so you don't miss it.” | a teaser, inviting |
 
 ## D. Audio cue points
 | Time | Visual event |
@@ -43,8 +43,10 @@ Follow for the real math.
 | 00:39.52 | school / hospital list |
 | 00:48.91 | SIN on the receipt |
 | 00:52.80 | flag + 'Lower earner claims. Keep the receipts.' + CCB link |
-| 00:57.52 | follow CTA |
+| 00:20.68 | scene change 1: whip push from home to the daycare door |
+| 00:39.17 | scene change 2: whip push to the evening kitchen |
+| 00:57.52 | bridge pill 'Next: why a corporation pays 9% →' + 'Follow so you don't miss it' |
 
 ## E. Duration check
-- 137 words, 55.6 s of speech, 148 wpm.
-- Narration ends at 00:59.01; VO file 59.41 s; video 59.92 s (1438 frames at 24 fps); hold on the final frame 0.91 s. ✅ Fits.
+- 147 words, 61.2 s of speech, 144 wpm.
+- Narration ends at 01:04.62; VO file 65.02 s; video 65.54 s (1573 frames at 24 fps); hold on the final frame 0.92 s. ✅ Fits.

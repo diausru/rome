@@ -1,9 +1,10 @@
 // "Child care expenses: who claims" (topic D5, family group) in the approved look (Kit + Plate).
 // Master timeline = Grady voiceover (d5/vo-beats.json → tools/vo_hf.py → d5-timeline.json). Facts: d5/PRODUCTION-BIBLE.md.
-// Plate: a daycare entrance on an autumn morning; a parent hugs a preschooler goodbye, an educator waves; on the cubby shelf,
-// a dinosaur backpack, a lunch box, a blank slip (the receipt), car keys and a coffee. Family group type: Nunito headings.
+// Three photo scenes of the same mother and daughter (series upgrade 2026-10-06), each shown once, joined by a code
+// "whip push" (SceneCuts): 1) morning at home, zipping the pink jacket; 2) the daycare door, goodbye hug, educator waves;
+// 3) evening at the kitchen table, sorting receipts while the girl colours. Family group type: Nunito headings.
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
-import { PhotoPlate, type Focus } from './Plate';
+import { PhotoPlate, SceneCuts, type Focus } from './Plate';
 import { Flag } from './RaiseShort';
 import TL from './d5-timeline.json';
 import { C, SANS, Card, Header, Hero, Line, Typed, beatsFrom, ease, pill, shade, type Cap } from './Kit';
@@ -15,19 +16,25 @@ const HEAD = 'Nunito';
 const TAU = Math.PI * 2;
 const at = (id: string, fr: number) => Math.round(B[id].s + (B[id].e - B[id].s) * fr);
 
-// object positions in the plate (image coordinates of each object's top)
-const BAG = { u: 0.2, v: 0.55 }, BOX = { u: 0.4, v: 0.59 }, SLIP = { u: 0.52, v: 0.69 }, CUP = { u: 0.93, v: 0.555 };
+// scene changes where the meaning changes: who claims (scene 2), exceptions (scene 3)
+const CUTS = [B.who.s, B.exceptions.s];
+// object positions per plate (image coordinates of each object's top)
+const BOX1 = { u: 0.4, v: 0.6 }, SLIP = { u: 0.52, v: 0.69 }, BOX2 = { u: 0.4, v: 0.59 }, STACK = { u: 0.41, v: 0.69 };
 
-const KEYS: Focus[] = [
-  { f: 0, u: 0.4, v: 0.3, k: 1.15 },                   // the goodbye hug
-  { f: B.loop.s, u: 0.4, v: 0.3, k: 1.28 },            // push in
-  { f: B.what.s, u: 0.6, v: 0.35, k: 1.1 },            // the room, the educator
-  { f: B.limits.s, u: 0.25, v: 0.55, k: 1.25 },        // the backpack
-  { f: B.who.s, u: 0.4, v: 0.35, k: 1.2 },             // parent and child
+const K1: Focus[] = [
+  { f: 0, u: 0.5, v: 0.28, k: 1.15 },                  // mother zips the jacket
+  { f: B.loop.s, u: 0.55, v: 0.28, k: 1.3 },           // push in on the girl
+  { f: B.what.s, u: 0.7, v: 0.42, k: 1.15 },           // boots and coats by the door
+  { f: B.limits.s, u: 0.4, v: 0.55, k: 1.25 },         // the lunch box
+];
+const K2: Focus[] = [
+  { f: 0, u: 0.4, v: 0.33, k: 1.2 },                   // the goodbye hug
   { f: B.example.s, u: 0.5, v: 0.6, k: 1.25 },         // the slip
   { f: B.cap.s, u: 0.45, v: 0.56, k: 1.3 },            // lunch box
-  { f: B.exceptions.s, u: 0.62, v: 0.35, k: 1.15 },    // the room
-  { f: B.receipts.s, u: 0.52, v: 0.64, k: 1.35 },      // the slip
+];
+const K3: Focus[] = [
+  { f: 0, u: 0.62, v: 0.3, k: 1.15 },                  // evening: mother and daughter at the table
+  { f: B.receipts.s, u: 0.45, v: 0.62, k: 1.3 },       // the receipts
   { f: B.payoff.s, u: 0.5, v: 0.5, k: 1.0 },           // wide
 ];
 
@@ -82,12 +89,20 @@ export const D5v2 = () => {
   const lift = 1 - ease(f, B.payoff.s - 6, B.payoff.s + 6);
   return (
     <AbsoluteFill style={{ background: '#0d0b09', fontFamily: SANS, overflow: 'hidden' }}>
-      <PhotoPlate f={f} src="plates/d5-4k.jpg" iw={2294} ih={4096} keys={KEYS} glide={40} blur={0.8} steam={{ u: CUP.u, v: CUP.v, w: 0.06 }}>
-        <Pin f={f} a={at('limits', 0.3)} b={B.who.s} p={BAG} top="PER CHILD UNDER 7" big="up to $8,000" sub="a year · age 7–16: $5,000" />
-        <Pin f={f} a={at('example', 0.7)} b={B.cap.s} p={SLIP} top="LOWER EARNER CLAIMS" big="$8,000" sub="of $9,000 paid" />
-        <Pin f={f} a={at('cap', 0.4)} b={B.exceptions.s} p={BOX} top="2/3 × $30,000" big="up to $20,000" sub="so the $8,000 fits" col={C.cream} />
-        <Pin f={f} a={at('receipts', 0.4)} b={B.payoff.s} p={SLIP} top="BABYSITTER?" big="SIN on the receipt" col={C.green} />
-      </PhotoPlate>
+      <SceneCuts f={f} cuts={CUTS} scene={(i) => i === 0 ? (
+        <PhotoPlate f={f} src="plates/d5-s1-4k.jpg" iw={2294} ih={4096} keys={K1} glide={40} blur={0.8} steam={{ u: 0.9, v: 0.565, w: 0.06 }}>
+          <Pin f={f} a={at('limits', 0.3)} b={B.who.s} p={BOX1} top="PER CHILD UNDER 7" big="up to $8,000" sub="a year · age 7–16: $5,000" />
+        </PhotoPlate>
+      ) : i === 1 ? (
+        <PhotoPlate f={f} src="plates/d5-4k.jpg" iw={2294} ih={4096} keys={K2} glide={40} blur={0.8} steam={{ u: 0.93, v: 0.555, w: 0.06 }}>
+          <Pin f={f} a={at('example', 0.7)} b={B.cap.s} p={SLIP} top="LOWER EARNER CLAIMS" big="$8,000" sub="of $9,000 paid" />
+          <Pin f={f} a={at('cap', 0.4)} b={B.exceptions.s} p={BOX2} top="2/3 × $30,000" big="up to $20,000" sub="so the $8,000 fits" col={C.cream} />
+        </PhotoPlate>
+      ) : (
+        <PhotoPlate f={f} src="plates/d5-s3-4k.jpg" iw={2294} ih={4096} keys={K3} glide={40} blur={0.8} steam={{ u: 0.93, v: 0.53, w: 0.06 }}>
+          <Pin f={f} a={at('receipts', 0.4)} b={B.payoff.s} p={STACK} top="BABYSITTER?" big="SIN on the receipt" col={C.green} />
+        </PhotoPlate>
+      )} />
       <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(8,6,4,.82) 0%, rgba(8,6,4,.55) 14%, rgba(8,6,4,0) 28%, rgba(8,6,4,0) 50%, rgba(8,6,4,.55) 66%, rgba(8,6,4,.8) 100%)', opacity: 1 - 0.75 * lift }} />
       <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(8,6,4,.82) 0%, rgba(8,6,4,.55) 14%, rgba(8,6,4,0) 28%, rgba(8,6,4,0) 100%)', opacity: 0.75 * lift }} />
       <Header f={f} chip="CRA · LINE 21400" />
@@ -134,7 +149,8 @@ export const D5v2 = () => {
           <Flag f={f} w={150} amp={0.06} />
           <div style={{ marginTop: 26, fontFamily: HEAD, fontSize: 54, fontWeight: 900, lineHeight: 1.15, color: C.cream, textShadow: shade }}>Lower earner claims.<br />Keep the receipts.</div>
           <div style={{ marginTop: 14, fontSize: 28, fontWeight: 700, color: C.gold, textShadow: shade }}>It lowers net income, which can help your CCB too.</div>
-          <div style={{ marginTop: 30, display: 'inline-flex', padding: '20px 32px', borderRadius: 999, background: 'linear-gradient(160deg,#fff1c2,#f1c75b 50%,#c88f1f)', color: '#2b1d03', fontSize: 34, fontWeight: 900, boxShadow: '0 16px 30px rgba(0,0,0,.4)', opacity: ease(f, B.cta.s - 4, B.cta.s + 8), transform: `scale(${1 + 0.03 * Math.sin(TAU * (f - B.cta.s) / 36)})` }}>Follow for the real math</div>
+          <div style={{ marginTop: 30, display: 'inline-flex', padding: '20px 32px', borderRadius: 999, background: 'linear-gradient(160deg,#fff1c2,#f1c75b 50%,#c88f1f)', color: '#2b1d03', fontSize: 34, fontWeight: 900, boxShadow: '0 16px 30px rgba(0,0,0,.4)', opacity: ease(f, B.cta.s - 4, B.cta.s + 8), transform: `scale(${1 + 0.03 * Math.sin(TAU * (f - B.cta.s) / 36)})` }}>Next: why a corporation pays 9% →</div>
+          <div style={{ marginTop: 12, fontSize: 26, fontWeight: 700, color: C.cream, textShadow: shade, opacity: ease(f, at('cta', 0.55), at('cta', 0.65)) }}>Follow so you don't miss it</div>
           <div style={{ marginTop: 26, fontSize: 19, fontWeight: 600, color: C.soft, lineHeight: 1.45, opacity: ease(f, B.payoff.s + 16, B.payoff.s + 30) }}>
             Source: canada.ca (CRA: line 21400 child care expenses; Form T778; Folio S1-F3-C1) · the $90,000 / $30,000 family is an example · general info, not advice
           </div>

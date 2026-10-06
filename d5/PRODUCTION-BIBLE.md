@@ -40,8 +40,10 @@ Two parents earning $90,000 and $30,000; one child aged 3; daycare $9,000. The $
 | PINS | backpack "up to $8,000" · slip "lower earner claims $8,000" · lunch box "2/3 × $30,000 = up to $20,000" · slip "SIN on the receipt" |
 | STRIP | under 7 $8,000 · 7–16 $5,000 · lower earner claims · cap 2/3 earned income · ✓ receipts |
 | LIVE | steam from the coffee; camera between the goodbye hug, the room and the shelf props |
-| VOICE | Grady; 137 words; 59.41 s (inside the tolerance); CTA reused from G3 |
-| RENDER | 1080×1920, 24 fps, 1438 frames (59.9 s) |
+| VOICE | Grady; 147 words; 65.02 s (inside the tolerance); bridge CTA (new line): "Next: why a small corporation pays just nine percent. Follow so you don't miss it." |
+| SCENES | Series upgrade (user, 2026-10-06): three plates of the same mother and daughter, generated with the daycare plate as image reference (gpt_image_2_5 + 4K upscale each): 1) `d5-s1-4k.jpg` morning hallway, zipping the pink jacket (hook → limits); 2) `d5-4k.jpg` daycare door (who → cap); 3) `d5-s3-4k.jpg` evening kitchen, sorting receipts while the girl colours (exceptions → end). Cuts at `who` and `exceptions` with `SceneCuts` (Plate.tsx): an 18-frame whip push, both plates travelling edge to edge, ghost-trail motion blur, warm light sweep. Checked: no text in any plate, same people |
+| RENDER | 1080×1920, 24 fps, 1573 frames (65.5 s) |
 
 ## 3. QC log
 - Stills v1: the example hero overflowed the card; the exceptions label wrapped into the first line; the backpack pin sat under the card → hero is "$8,000" with a line under it; label "EXCEPTIONS" plus a lead-in line; pin moved down onto the backpack. Re-checked: clear.
+- v2 (2026-10-06): three scenes + transitions + bridge CTA. Transition v1 showed a black edge at the peak (incoming plate offset) → reworked to an edge-to-edge push; re-checked frame by frame: seamless.

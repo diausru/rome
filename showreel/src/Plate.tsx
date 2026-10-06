@@ -63,3 +63,37 @@ export const PhotoPlate = ({ f, src, iw, ih, W = 1080, H = 1920, keys, glide = 3
     </AbsoluteFill>
   );
 };
+
+// Scene change between photo plates (user, 2026-10-06: three scenes per video, each shown once, with a designed
+// transition). A "whip push": the outgoing plate accelerates sideways, scales up and smears (motion blur faked with
+// trailing ghost copies + growing blur), the incoming plate arrives from the other side and settles; a warm light
+// sweep crosses the frame at the peak. All code, no video model.
+
+export const SceneCuts = ({ f, cuts, dur = 18, W = 1080, scene }: {
+  f: number; cuts: number[]; dur?: number; W?: number; scene: (i: number) => React.ReactNode;
+}) => {
+  let i = 0;
+  for (const c of cuts) if (f >= c + dur / 2) i++;
+  const j = cuts.findIndex((c) => f >= c - dur / 2 && f < c + dur / 2);
+  if (j < 0) return <AbsoluteFill>{scene(i)}</AbsoluteFill>;
+  const t = clamp((f - (cuts[j] - dur / 2)) / dur);   // 0 → 1 across the cut
+  const dir = j % 2 === 0 ? 1 : -1;                    // alternate the whip direction
+  const p = t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;   // ease in-out: accelerate, then settle
+  const smear = Math.sin(Math.PI * t);                  // 0 at the ends, 1 at the cut
+  const bl = 0.8 + 26 * smear, s0 = 1 + 0.06 * smear;
+  // both plates travel together, edge to edge (a "push"), so the frame never shows a gap
+  const layer = (node: React.ReactNode, x: number, o: number, key: string) => (
+    <AbsoluteFill key={key} style={{ transform: `translateX(${x}px) scale(${s0})`, filter: `blur(${bl}px) brightness(${1 + 0.2 * smear})`, opacity: o }}>{node}</AbsoluteFill>
+  );
+  const xo = -dir * W * p, xi = dir * W * (1 - p);
+  const ghosts = (node: React.ReactNode, x: number, tag: string) =>
+    [0.1, 0.05, 0].map((g, n) => layer(node, x + dir * W * g * smear, n === 2 ? 1 : 0.3 * smear, `${tag}${n}`));
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', background: '#000' }}>
+      {ghosts(scene(j), xo, 'o')}
+      {ghosts(scene(j + 1), xi, 'i')}
+      <AbsoluteFill style={{ background: `linear-gradient(${dir > 0 ? 100 : 80}deg, rgba(255,214,140,0) ${-40 + 160 * t}%, rgba(255,226,170,.5) ${-20 + 160 * t}%, rgba(255,214,140,0) ${0 + 160 * t}%)`, mixBlendMode: 'screen', opacity: smear }} />
+      <AbsoluteFill style={{ background: '#fff4e0', opacity: 0.1 * Math.pow(smear, 3) }} />
+    </AbsoluteFill>
+  );
+};
