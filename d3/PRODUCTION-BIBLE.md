@@ -47,3 +47,4 @@ Whether the grant must be repaid depends on the child's future education; transf
 ## Revision log
 - VO v1 48.9 s; an example beat was added (one new line) → 57.24 s.
 - Stills QC: the hook card was empty for 4 s → "$2,500 /year" first, then "+$500"; the catch-up card was empty → "Unused grant room carries forward." first, then $1,000.
+- Final: rendered and verified. 1080×1920, 24 fps, 1392 frames, 58.00 s, clean decode, AAC 48 kHz, −14.0 LUFS; contact sheet from the final MP4 reviewed (pins, counter, filled cards). Share copy d3-share.mp4.
