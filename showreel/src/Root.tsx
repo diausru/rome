@@ -19,6 +19,7 @@ import { D6v2, D6DUR, D6FPS } from './D6v2';
 import { E4v2, E4DUR, E4FPS } from './E4v2';
 import { A6v2, A6DUR, A6FPS } from './A6v2';
 import { A7v2, A7DUR, A7FPS } from './A7v2';
+import { H2v2, H2DUR, H2FPS } from './H2v2';
 import { useCurrentFrame } from 'remotion';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
@@ -52,6 +53,7 @@ export const RemotionRoot = () => (
     <Composition id="E4v2" component={E4v2} durationInFrames={E4DUR} fps={E4FPS} width={1080} height={1920} />
     <Composition id="A6v2" component={A6v2} durationInFrames={A6DUR} fps={A6FPS} width={1080} height={1920} />
     <Composition id="A7v2" component={A7v2} durationInFrames={A7DUR} fps={A7FPS} width={1080} height={1920} />
+    <Composition id="H2v2" component={H2v2} durationInFrames={H2DUR} fps={H2FPS} width={1080} height={1920} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );

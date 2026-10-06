@@ -1,0 +1,15 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "Rent in Manitoba? There's a credit on your tax return you don't want to miss.", 0.28],
+  ["loop", "And for twenty twenty-six, it went up.", 0.36],
+  ["amount", "The Renters Affordability Tax Credit: up to six hundred twenty-five dollars for the twenty twenty-six tax year. For twenty twenty-five, it was up to five seventy-five.", 0.36],
+  ["who", "You need to live in Manitoba on December thirty-first, be at least sixteen, and pay rent on your main home here.", 0.28],
+  ["months", "Moved during the year? You claim the months you rented.", 0.36],
+  ["seniors", "Eligible seniors can also get a top-up of up to three hundred fifty-seven dollars.", 0.36],
+  ["claim", "You claim it on form MB four seventy-nine with your return, so keep your rent records.", 0.28],
+  ["payoff", "File your return, fill in the form, and get what's yours.", 0.24],
+  ["cta", "Follow for the real math.", 0.4]
+ ],
+ "tempo": 1.0
+}
