@@ -105,3 +105,8 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 
 - Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
 - Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain): D5, C3, F1, F5, in that order (D2 delivered 2026-10-06).
+
+## Series upgrade (user, 2026-10-06; from D5 on)
+
+- **CTA = a bridge to the next video**, different every time: the last VO line names the next topic and asks to follow, e.g. "Next: why a small corporation pays nine percent. Follow so you don't miss it." The on-screen pill shows the next topic. One new Grady line per video (≈0.3 credits). No engagement bait.
+- **Three photo scenes per video (option B)**: three plates of the same people/place in story order (e.g. morning at home → daycare door → evening receipts), each shown once, changed at a beat boundary where the meaning changes, with a designed code transition (directional motion blur + push, light sweep). Keep the people consistent (use the first plate as the image reference); check every plate for text. Cost ≈ 3 × (variants + 4K upscale).
