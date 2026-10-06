@@ -35,3 +35,4 @@ Sources: gov.mb.ca and canada.ca search-result text (direct fetch blocked), 2026
 | LIVE | snow in the window panes; steam over the coffee |
 | VOICE | Grady; 125 words; 49.66 s (inside the tolerance) |
 | RENDER | 1080×1920, 24 fps, 1204 frames (50.2 s) |
+- Final: 1204 frames, 50.17 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.1 LUFS; contact sheet checked; sent to the user; kit card #11.
