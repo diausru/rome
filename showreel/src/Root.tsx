@@ -2,10 +2,13 @@ import { Composition, continueRender, delayRender, staticFile } from 'remotion';
 import { Showreel, SHOWREEL_FRAMES } from './Showreel';
 import { Carousel, CW, SH, LOOP } from './Carousel';
 import { Office } from './Office';
+import { Home } from './Home';
+const HomeTest = () => { const f = useCurrentFrame(); return <Home f={f} T={f / 300} w={540} h={960} />; };
 import { Carousel2 } from './Carousel2';
 import { SalaryShort, SDUR, SFPS } from './SalaryShort';
 import { RaiseShort, RDUR, RFPS } from './RaiseShort';
 import { Case002, CDUR, CFPS } from './Case002';
+import { E3Short, E3DUR, E3FPS } from './E3Short';
 import { useCurrentFrame } from 'remotion';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
@@ -14,6 +17,8 @@ Promise.all([
   new FontFace('Mont', `url(${staticFile('Montserrat-var.woff2')})`, { weight: '100 900' }),
   new FontFace('Tape', `url(${staticFile('CourierPrime-400.woff2')})`, { weight: '400' }),
   new FontFace('Tape', `url(${staticFile('CourierPrime-700.woff2')})`, { weight: '700' }),
+  new FontFace('Fraunces', `url(${staticFile('Fraunces-600.ttf')})`, { weight: '600' }),
+  new FontFace('Fraunces', `url(${staticFile('Fraunces-800.ttf')})`, { weight: '800' }),
 ].map((f) => f.load().then((ff) => document.fonts.add(ff)))).then(() => continueRender(fontHandle));
 
 export const RemotionRoot = () => (
@@ -24,6 +29,8 @@ export const RemotionRoot = () => (
     <Composition id="SalaryShort" component={SalaryShort} durationInFrames={SDUR} fps={SFPS} width={1080} height={1920} />
     <Composition id="RaiseShort" component={RaiseShort} durationInFrames={RDUR} fps={RFPS} width={1080} height={1920} />
     <Composition id="Case002" component={Case002} durationInFrames={CDUR} fps={CFPS} width={1080} height={1920} />
+    <Composition id="HomeTest" component={HomeTest} durationInFrames={300} fps={24} width={540} height={960} />
+    <Composition id="E3Short" component={E3Short} durationInFrames={E3DUR} fps={E3FPS} width={1080} height={1920} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );

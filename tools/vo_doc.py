@@ -8,8 +8,8 @@ def tc(x): m = int(x // 60); return f"{m:02d}:{x - 60 * m:05.2f}"
 sp = sum(b['end'] - b['start'] for b in t['beats']); w = sum(len(b['text'].split()) for b in t['beats'])
 vid = d['frames'] / d['fps']
 md = [f"# {d['title']}: voiceover package (VOICEOVER ENGINE, items A–E)", "",
- "Master timeline = the narration. It is synthesized beat by beat by `tools/vo.py`, the measured times are written to the timeline JSON, and every reveal in the composition is computed from them.",
- "Voice: Piper TTS en_US-joe-medium (CC0 dataset), the same voice on every Short. Post: high-pass 80 Hz, +2 dB at 3.2 kHz, −1.5 dB at 250 Hz, 2.5:1 compression, loudnorm −14 LUFS / −1.5 dBTP, 48 kHz stereo, AAC 192k.", "",
+ d.get("engine", "Master timeline = the narration. It is synthesized beat by beat by `tools/vo.py`, the measured times are written to the timeline JSON, and every reveal in the composition is computed from them."),
+ d.get("voice", "Voice: Piper TTS en_US-joe-medium (CC0 dataset), the same voice on every Short. Post: high-pass 80 Hz, +2 dB at 3.2 kHz, −1.5 dB at 250 Hz, 2.5:1 compression, loudnorm −14 LUFS / −1.5 dBTP, 48 kHz stereo, AAC 192k."), "",
  "## A. Final script", *[b['text'] for b in t['beats']], "",
  "## B + C. Timecoded voiceover and delivery notes", "| Time | Beat | Narration | Delivery |", "|---|---|---|---|",
  *[f"| [{tc(b['start'])}–{tc(b['end'])}] | {b['id']} | “{b['text']}” | {d['notes'].get(b['id'], 'normal')} |" for b in t['beats']], "",

@@ -114,11 +114,11 @@ const SKIN = ['#e0b896', '#c68e66', '#8d5a3b', '#f1d0b5', '#a8714d'];
 const HAIR = ['#2a1d15', '#5a3d26', '#151515', '#b38a5a', '#8a8a8a'];
 const mat = (c: string) => new THREE.MeshStandardMaterial({ color: c, roughness: 0.82 });
 
-type Look = { top: THREE.Material; pants: THREE.Material; skin: THREE.Material; hair: THREE.Material; h: number };
-const looks: Look[] = (() => { const r = rng(42); return Array.from({ length: 40 }, () => ({ top: mat(TOPS[Math.floor(r() * TOPS.length)]), pants: mat(PANTS[Math.floor(r() * PANTS.length)]), skin: mat(SKIN[Math.floor(r() * SKIN.length)]), hair: mat(HAIR[Math.floor(r() * HAIR.length)]), h: 0.94 + r() * 0.12 })); })();
+export type Look = { top: THREE.Material; pants: THREE.Material; skin: THREE.Material; hair: THREE.Material; h: number };
+export const looks: Look[] = (() => { const r = rng(42); return Array.from({ length: 40 }, () => ({ top: mat(TOPS[Math.floor(r() * TOPS.length)]), pants: mat(PANTS[Math.floor(r() * PANTS.length)]), skin: mat(SKIN[Math.floor(r() * SKIN.length)]), hair: mat(HAIR[Math.floor(r() * HAIR.length)]), h: 0.94 + r() * 0.12 })); })();
 
 // leg/arm swing a (rad), body bob b; seated hides legs
-const Person = ({ look, a = 0, b = 0, arm = 0, seated = false }: { look: Look; a?: number; b?: number; arm?: number; seated?: boolean }) => (
+export const Person = ({ look, a = 0, b = 0, arm = 0, seated = false }: { look: Look; a?: number; b?: number; arm?: number; seated?: boolean }) => (
   <group scale={look.h} position={[0, b, 0]}>
     {!seated && [-1, 1].map((s) => (
       <group key={s} position={[s * 0.1, 0.9, 0]} rotation={[s * a, 0, 0]}>
@@ -231,8 +231,8 @@ const Talkers = ({ p }: { p: number }) => (
 );
 
 // ---------- post: per-slide cameras → variable blur → grade ----------
-const VERT = 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }';
-const FRAG = `
+export const VERT = 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }';
+export const FRAG = `
 uniform sampler2D tex; uniform vec2 dir; uniform vec2 res; uniform float final; uniform float seed;
 uniform float blurL; uniform float blurR; uniform float gradeU;
 varying vec2 vUv;

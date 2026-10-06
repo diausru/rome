@@ -1,0 +1,59 @@
+{
+ "total": 59.215,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Turning seventy-one? Your RRSP has a deadline: December thirty-first.",
+   "start": 0.25,
+   "end": 6.164
+  },
+  {
+   "id": "loop",
+   "text": "Miss it, and the whole account can hit one tax return.",
+   "start": 6.444,
+   "end": 9.913
+  },
+  {
+   "id": "cash",
+   "text": "One: cash out. On three hundred thousand dollars, it's all income that year, and thirty percent is withheld up front.",
+   "start": 10.273,
+   "end": 18.356
+  },
+  {
+   "id": "annuity",
+   "text": "Two: an annuity. No tax withheld on the transfer; you're taxed as payments come in.",
+   "start": 18.636,
+   "end": 25.447
+  },
+  {
+   "id": "rrif",
+   "text": "Three: move it to a RRIF. No tax withheld on a direct transfer either.",
+   "start": 25.687,
+   "end": 31.748
+  },
+  {
+   "id": "minimum",
+   "text": "Withdrawals start the next year. At seventy-two, the minimum is five point four percent: sixteen thousand two hundred. No tax withheld, but it's still income.",
+   "start": 31.988,
+   "end": 44.266
+  },
+  {
+   "id": "catch",
+   "text": "The real danger is doing nothing. Miss the deadline, and the full value can be taxed as income.",
+   "start": 44.626,
+   "end": 52.012
+  },
+  {
+   "id": "payoff",
+   "text": "Pick your path before December thirty-first. Talk to your issuer and a pro.",
+   "start": 52.372,
+   "end": 57.188
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 57.428,
+   "end": 58.815
+  }
+ ]
+}

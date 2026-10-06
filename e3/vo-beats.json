@@ -1,0 +1,51 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Turning seventy-one? Your RRSP has a deadline: December thirty-first.",
+   0.28
+  ],
+  [
+   "loop",
+   "Miss it, and the whole account can hit one tax return.",
+   0.36
+  ],
+  [
+   "cash",
+   "One: cash out. On three hundred thousand dollars, it's all income that year, and thirty percent is withheld up front.",
+   0.28
+  ],
+  [
+   "annuity",
+   "Two: an annuity. No tax withheld on the transfer; you're taxed as payments come in.",
+   0.24
+  ],
+  [
+   "rrif",
+   "Three: move it to a RRIF. No tax withheld on a direct transfer either.",
+   0.24
+  ],
+  [
+   "minimum",
+   "Withdrawals start the next year. At seventy-two, the minimum is five point four percent: sixteen thousand two hundred. No tax withheld, but it's still income.",
+   0.36
+  ],
+  [
+   "catch",
+   "The real danger is doing nothing. Miss the deadline, and the full value can be taxed as income.",
+   0.36
+  ],
+  [
+   "payoff",
+   "Pick your path before December thirty-first. Talk to your issuer and a pro.",
+   0.24
+  ],
+  [
+   "cta",
+   "Follow for the real math.",
+   0.4
+  ]
+ ],
+ "tempo": 1.03
+}
