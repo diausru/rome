@@ -31,8 +31,8 @@ FACT SOURCES
 ⸻
 YOUTUBE SHORTS
 
-Primary Title: How Long Should You Keep Tax Records in Canada?
-Alternative Title A: Throwing Out Old Receipts? CRA Can Ask Years Later
+Primary Title: Throwing Out Old Receipts? CRA Can Ask Years Later
+Alternative Title A: How Long Should You Keep Tax Records in Canada?
 Alternative Title B: The 6-Year Rule for Receipts in Canada (and Its Exceptions)
 
 Description:
@@ -153,6 +153,7 @@ Series: Business Tax Basics (episode 2: what's deductible → records → tax pe
 ## Research notes (how this package was built)
 - vidIQ (2026-10-06, 5 credits): 'how long to keep tax records canada' <750 searches/mo, competition 47.9, no related keywords → low YouTube search demand for the exact phrase; the video leans on a pain hook for Shorts discovery, while the title keeps the question for long-tail search.
 - WebSearch: CRA's records pages and IC78-10R are the primary sources; no news trigger, an evergreen topic.
+- vidIQ title score (short-form, 5 credits): 'Throwing Out Old Receipts? CRA Can Ask Years Later' = 96 → primary title.
 
 ## Retention analysis
 Hook (0–2 s): a common action ('throwing out old receipts?') plus a consequence ✅. Open loop: 'how long is enough?' answered at 8 s ✅. Visual: the rules are pinned onto the real box, slips and phone; the camera moves between the desk and the shelf ✅. Length 47 s (short and dense, good for completion). Weakest point: 21–30 s (two exceptions in one beat); the two-line card carries it.

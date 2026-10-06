@@ -1,5 +1,9 @@
 {
- "video": {"title": "Records: what to keep, and for how long", "duration": "47.21 s (1133 frames)", "mp4": "showreel/out/a7/a7-final.mp4 (share copy: a7-share.mp4)"},
+ "video": {
+  "title": "Records: what to keep, and for how long",
+  "duration": "47.21 s (1133 frames)",
+  "mp4": "showreel/out/a7/a7-final.mp4 (share copy: a7-share.mp4)"
+ },
  "sources": [
   "CRA — Where to keep your records, for how long and how to request permission to destroy them early (canada.ca) · current · generally 6 years from the end of the last tax year they relate to; paper and electronic; Form T137",
   "CRA — IC78-10R Books and records retention/destruction (canada.ca) · current · late-filed returns: 6 years from filing; objections/appeals: until resolved",
@@ -7,7 +11,11 @@
   "Example only: business records for 2026 → keep until at least the end of 2032"
  ],
  "yt": {
-  "titles": ["How Long Should You Keep Tax Records in Canada?", "Throwing Out Old Receipts? CRA Can Ask Years Later", "The 6-Year Rule for Receipts in Canada (and Its Exceptions)"],
+  "titles": [
+   "Throwing Out Old Receipts? CRA Can Ask Years Later",
+   "How Long Should You Keep Tax Records in Canada?",
+   "The 6-Year Rule for Receipts in Canada (and Its Exceptions)"
+  ],
   "description": "Throwing out old receipts? CRA can ask for them years later.\n\nGenerally, keep your records for six years; for business records, six years from the end of the tax year they relate to. Example: business receipts for 2026 → keep until at least the end of 2032.\nExceptions: filed late? The six years start when you file. Disputing an assessment (objection or appeal)? Keep everything until it's resolved.\nScans and digital files count, as long as they're complete and readable. Want to destroy records sooner? You need CRA's permission first (Form T137).\n\nSources: CRA (canada.ca): Where to keep your records and for how long; IC78-10R. General information, not advice.\n\n#CanadaTax #CRA #SmallBusinessCanada",
   "hashtags": "#CanadaTax #CRA #SmallBusinessCanada",
   "keywords": "how long to keep tax records canada, how long to keep receipts canada, cra record keeping, cra 6 year rule, business records canada, digital receipts cra, self employed canada taxes, cra audit records",
@@ -44,11 +52,32 @@
   "pain": "Fear of throwing out something CRA later asks for; clutter of old paperwork."
  },
  "next": [
-  {"topic": "Manitoba renters credit (H2)", "why": "Next in the plan; home-province audience", "intent": "manitoba renters tax credit", "hook": "Rent in Manitoba? There's a credit on your return.", "angle": "Verified 2026 amount and who qualifies", "payoff": "Where to claim it"},
-  {"topic": "Your first pay stub explained (G3)", "why": "Next in the plan; young audience", "intent": "pay stub deductions canada", "hook": "Your first paycheque is smaller than you expected. Here's why.", "angle": "CPP, EI and income tax, verified 2026 rates", "payoff": "Read your stub in 10 seconds"},
-  {"topic": "Tax to set aside per invoice (B4)", "why": "Already in production in the handwritten mode (parallel session)", "intent": "how much tax to set aside self employed canada", "hook": "Got paid $1,000? Not all of it is yours.", "angle": "A simple set-aside rule with verified rates", "payoff": "A per-invoice habit"}
+  {
+   "topic": "Manitoba renters credit (H2)",
+   "why": "Next in the plan; home-province audience",
+   "intent": "manitoba renters tax credit",
+   "hook": "Rent in Manitoba? There's a credit on your return.",
+   "angle": "Verified 2026 amount and who qualifies",
+   "payoff": "Where to claim it"
+  },
+  {
+   "topic": "Your first pay stub explained (G3)",
+   "why": "Next in the plan; young audience",
+   "intent": "pay stub deductions canada",
+   "hook": "Your first paycheque is smaller than you expected. Here's why.",
+   "angle": "CPP, EI and income tax, verified 2026 rates",
+   "payoff": "Read your stub in 10 seconds"
+  },
+  {
+   "topic": "Tax to set aside per invoice (B4)",
+   "why": "Already in production in the handwritten mode (parallel session)",
+   "intent": "how much tax to set aside self employed canada",
+   "hook": "Got paid $1,000? Not all of it is yours.",
+   "angle": "A simple set-aside rule with verified rates",
+   "payoff": "A per-invoice habit"
+  }
  ],
  "series": "Business Tax Basics (episode 2: what's deductible → records → tax per invoice → GST/HST). Playlist: 'Self-Employed Taxes Canada'.",
- "research": "- vidIQ (2026-10-06, 5 credits): 'how long to keep tax records canada' <750 searches/mo, competition 47.9, no related keywords → low YouTube search demand for the exact phrase; the video leans on a pain hook for Shorts discovery, while the title keeps the question for long-tail search.\n- WebSearch: CRA's records pages and IC78-10R are the primary sources; no news trigger, an evergreen topic.",
+ "research": "- vidIQ (2026-10-06, 5 credits): 'how long to keep tax records canada' <750 searches/mo, competition 47.9, no related keywords → low YouTube search demand for the exact phrase; the video leans on a pain hook for Shorts discovery, while the title keeps the question for long-tail search.\n- WebSearch: CRA's records pages and IC78-10R are the primary sources; no news trigger, an evergreen topic.\n- vidIQ title score (short-form, 5 credits): 'Throwing Out Old Receipts? CRA Can Ask Years Later' = 96 → primary title.",
  "retention": "Hook (0–2 s): a common action ('throwing out old receipts?') plus a consequence ✅. Open loop: 'how long is enough?' answered at 8 s ✅. Visual: the rules are pinned onto the real box, slips and phone; the camera moves between the desk and the shelf ✅. Length 47 s (short and dense, good for completion). Weakest point: 21–30 s (two exceptions in one beat); the two-line card carries it."
 }
