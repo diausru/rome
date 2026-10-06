@@ -36,3 +36,4 @@ A $1,200 annual phone bill with 60% business use → $720 claimed (the business 
 
 ## Revision log
 - Stills QC: the car-keys pin was clipped at the right edge and wrapped → moved in, no-wrap pins; the payoff wrapped to four lines → two lines at 42 px; "50%" appeared in both the card and the pin → the card now carries the sentence and the pin the number.
+- Final: rendered and verified. 1080×1920, 24 fps, 1435 frames, 59.79 s, clean decode, AAC 48 kHz, −14.0 LUFS; contact sheet from the final MP4 reviewed (pins on phone, laptop, car keys, coffee, folders; checklist strip). Share copy a6-share.mp4.
