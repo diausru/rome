@@ -48,14 +48,15 @@ export const Card = ({ f, a, b, label, tone = 'gold', children, h = 380, top = 1
   );
 };
 
-export const Hero = ({ f, a, children, top = 96, size = 150, line = true }: { f: number; a: number; children: React.ReactNode; top?: number; size?: number; line?: boolean }) => {
-  const e = ease(f, a, a + 12);
+export const Hero = ({ f, a, children, top = 96, size = 150, line = true, out }: { f: number; a: number; children: React.ReactNode; top?: number; size?: number; line?: boolean; out?: number }) => {
+  const e = ease(f, a, a + 12) - (out !== undefined ? ease(f, out, out + 10) : 0);
+  if (out !== undefined && f > out + 11) return null;
   return (
     <div style={{ position: 'absolute', left: 52, top }}>
       <div style={{ overflow: 'hidden', height: size * 1.12, paddingRight: 20 }}>
-        <div style={{ fontFamily: SANS, fontSize: size, fontWeight: 900, letterSpacing: -size * 0.03, lineHeight: 1.1, fontVariantNumeric: 'tabular-nums', transform: `translateY(${(1 - e) * 100}%)`, ...goldText }}>{children}</div>
+        <div style={{ fontFamily: SANS, fontSize: size, fontWeight: 900, letterSpacing: -size * 0.03, lineHeight: 1.1, fontVariantNumeric: 'tabular-nums', transform: `translateY(${(out !== undefined && f > out ? -(1 - e) : 1 - e) * 100}%)`, ...goldText }}>{children}</div>
       </div>
-      {line && <div style={{ marginTop: 6, marginLeft: 4, width: 300 * ease(f, a + 8, a + 26), height: 2, background: 'linear-gradient(90deg,#f1c75b,rgba(241,199,91,0))' }} />}
+      {line && <div style={{ marginTop: 6, marginLeft: 4, width: 300 * ease(f, a + 8, a + 26) * (out !== undefined ? 1 - ease(f, out, out + 8) : 1), height: 2, background: 'linear-gradient(90deg,#f1c75b,rgba(241,199,91,0))' }} />}
     </div>
   );
 };

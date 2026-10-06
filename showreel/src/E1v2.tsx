@@ -90,12 +90,14 @@ export const E1v2 = () => {
         <Line f={f} a={B.loop.s} top={286} color={C.soft}>Same pension. Three very different cheques.</Line>
       </Card>
       <Card f={f} a={B.early.s} b={B.late.s} label="START AT 60" tone="red">
+        <Hero f={f} a={at('early', 0.1)} out={at('early', 0.5)}>−0.6%<span style={{ fontSize: 56 }}> /month</span></Hero>
         <Hero f={f} a={at('early', 0.55)}>−36%</Hero>
-        <Line f={f} a={at('early', 0.15)} top={286} color={C.soft} size={32}>−0.6% for each month before 65. Permanent.</Line>
+        <Line f={f} a={at('early', 0.15)} top={286} color={C.soft} size={32}>each month before 65 · −36% at 60, for life</Line>
       </Card>
       <Card f={f} a={B.late.s} b={B.example.s} label="WAIT TO 70" tone="green">
+        <Hero f={f} a={at('late', 0.1)} out={at('late', 0.55)}>+0.7%<span style={{ fontSize: 56 }}> /month</span></Hero>
         <Hero f={f} a={at('late', 0.6)}>+42%</Hero>
-        <Line f={f} a={at('late', 0.15)} top={286} color={C.soft} size={32}>+0.7% for each month after 65. No extra after 70.</Line>
+        <Line f={f} a={at('late', 0.15)} top={286} color={C.soft} size={32}>each month after 65 · up to +42% at 70</Line>
       </Card>
       {/* example: the card moves up to the sky so the coin stacks carry the numbers */}
       <Card f={f} a={B.example.s} b={B.breakeven.s} label="EXAMPLE · $1,000 A MONTH AT 65" top={360} h={300}>

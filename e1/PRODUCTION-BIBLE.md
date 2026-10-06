@@ -47,3 +47,4 @@ Break-even, simplified (labelled "simplified… ignoring inflation, tax and retu
 ## Revision log
 - VO: 60.79 s → atempo 1.03 → 59.24 s (no regeneration).
 - Stills QC: the "IT DEPENDS" card wrapped and overlapped → split into two short rows (question + outcome).
+- Render 1 verified (1428 frames, 59.50 s, clean decode, −14.0 LUFS). QC: the START AT 60 / WAIT TO 70 cards stood empty about 3.5 s before the total appeared → the monthly rate (−0.6%/month, +0.7%/month) now shows first and swaps to −36% / +42% on the VO word (Kit Hero `out`); lines shortened. Final render in progress.
