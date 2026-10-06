@@ -1,0 +1,84 @@
+{
+ "video": {
+  "title": "Your first pay stub, explained",
+  "duration": "57.67 s (1384 frames)",
+  "mp4": "showreel/out/g3/g3-final.mp4 (share copy: g3-share.mp4)"
+ },
+ "sources": [
+  "CRA — CPP contribution rates, maximums and exemptions (canada.ca) · 2026 · 5.95%, $3,500 exemption, YMPE $74,600",
+  "CRA — Second additional CPP (CPP2) rates and maximums (canada.ca) · 2026 · 4% from $74,600 to YAMPE $85,000",
+  "CRA — EI premium rates and maximums (canada.ca) · 2026 · 1.63% (outside Quebec), maximum insurable earnings $68,900",
+  "CRA — payroll guidance and TD1 forms (canada.ca) · 2026 · deductions stop at the yearly maximum; tax withheld depends on TD1",
+  "CRA T4127 (2026 editions) via the series parameter set (salary/calc.py) · 2026 · federal and Manitoba brackets and credits used in the $52,000 example"
+ ],
+ "yt": {
+  "titles": [
+   "Why Your First Paycheque Is Smaller (Canada 2026)",
+   "Your First Pay Stub Explained: CPP, EI and Income Tax",
+   "$2,000 Paycheque, $1,555 Take-Home: Where It Went"
+  ],
+  "description": "First paycheque smaller than you expected? Three deductions come off every pay in Canada: CPP, EI and income tax.\n\nExample (Manitoba, 2026): $52,000 a year, paid every two weeks = $2,000 a cheque.\n• CPP: about $110.99 (5.95% above the $3,500 yearly exemption)\n• EI: about $32.60 (1.63% of insurable earnings, outside Quebec)\n• Income tax: about $301.56 (federal + Manitoba, based on your TD1 forms)\n→ take-home about $1,554.85.\n\nThe twist: once you reach the yearly maximum, CPP and EI deductions stop until January. For 2026 that's $85,000 of earnings for CPP (including the extra CPP2 between $74,600 and $85,000) and $68,900 for EI. At tax time, your return settles the difference: a refund or a balance owing.\n\nThe example uses yearly amounts ÷ 26; your employer's payroll tables can differ slightly. Sources: CRA payroll pages (canada.ca), 2026. General information, not advice.\n\n#CanadaTax #PayStub #FirstJob",
+  "hashtags": "#CanadaTax #PayStub #FirstJob",
+  "keywords": "pay stub deductions canada, first paycheque canada, cpp ei income tax, paycheque deductions 2026, income tax canada, canada pension plan, tax return canada, canadian tax guide, td1 form, take home pay manitoba",
+  "pinned": "2026 example: $2,000 gross → CPP $110.99, EI $32.60, tax $301.56 → about $1,555 take-home. What surprised you most on your first pay stub?",
+  "cta": "Follow Tax Secrets Canada for the real math; next: how the Canada Child Benefit changes with your income."
+ },
+ "tt": {
+  "caption": "First paycheque smaller than you expected? 🇨🇦 Here's exactly where $445 went.",
+  "keywords": "pay stub canada · first paycheque · cpp ei deductions · income tax canada · take home pay",
+  "hashtags": "#paystub #firstjob #canadiantaxes #personalfinancecanada #cpp",
+  "pinned": "Which deduction surprised you most: CPP, EI or tax? (General info, not advice.)",
+  "cta": "Follow for the next one: the Canada Child Benefit and your income."
+ },
+ "ig": {
+  "caption": "Your first paycheque, explained. 🇨🇦\n\n$52,000 in Manitoba, paid every two weeks = $2,000 gross.\nCPP ≈ $110.99 · EI ≈ $32.60 · income tax ≈ $301.56 → take-home ≈ $1,555.\n\nOnce you reach the yearly maximum, CPP and EI stop until January (2026: $85,000 for CPP incl. CPP2, $68,900 for EI). Your tax return settles the rest.\n\nSend this to someone starting their first job.\n\nSource: CRA (canada.ca), 2026. Example only. General info, not advice.",
+  "keywords": "pay stub canada, first job, cpp, ei, income tax, take home pay",
+  "hashtags": "#paystub #firstjob #canadiantaxes #personalfinancecanada #canadatax #manitoba",
+  "pinned": "First job? Save this for your first pay stub 📌",
+  "cta": "Send this to someone starting their first job."
+ },
+ "eng": {
+  "question": "What surprised you most on your first pay stub: CPP, EI or income tax?",
+  "save": "The three deductions and the 2026 ceilings, to check a pay stub.",
+  "share": "Students, new grads, newcomers starting their first Canadian job, and their parents.",
+  "follow": "Clear, verified payroll and tax math from a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "pay stub deductions canada",
+  "secondary": "first paycheque; CPP EI income tax; income tax canada (vidIQ ≈4,728/mo); canada pension plan (≈3,478/mo); tax return canada (≈4,573/mo); canadian tax guide (≈4,746/mo)",
+  "intent": "A new worker wants to understand why net pay is lower than gross and what each deduction is.",
+  "audience": "First-job workers, students, newcomers, parents of teens.",
+  "angle": "One real-looking $2,000 cheque broken into three lines, plus the year-end twist.",
+  "questions": "What are the deductions on a Canadian pay stub? · How much CPP comes off each pay? · What is EI on my paycheque? · Why is my paycheque bigger later in the year? · Why did I get a tax refund?",
+  "pain": "Surprise at a small first cheque; not knowing what CPP/EI/TD1 mean."
+ },
+ "next": [
+  {
+   "topic": "Canada Child Benefit and your income (D2)",
+   "why": "Next in the plan; families",
+   "intent": "how is ccb calculated",
+   "hook": "Got a raise? Your CCB might drop next July.",
+   "angle": "Verified 2026–27 benefit-year thresholds",
+   "payoff": "Why filing on time keeps it flowing"
+  },
+  {
+   "topic": "Child care expenses deduction (D5)",
+   "why": "In the plan; families",
+   "intent": "child care expenses deduction canada",
+   "hook": "Daycare receipts? Don't throw them out.",
+   "angle": "Who claims, limits by age",
+   "payoff": "Lower-income spouse usually claims"
+  },
+  {
+   "topic": "Small business deduction (C3)",
+   "why": "In the plan; business owners",
+   "intent": "small business tax rate canada",
+   "hook": "Why corporations pay less tax on the first $500,000.",
+   "angle": "Federal + Manitoba rates, verified",
+   "payoff": "When it applies"
+  }
+ ],
+ "series": "First Job Money (pay stub → TD1 forms → your first tax return). Playlist: 'Payroll & Your Paycheque'.",
+ "research": "- vidIQ (2026-10-06, 5 credits): 'pay stub deductions canada' <750/mo; related 'income tax canada' ≈4,728/mo, 'canadian tax guide' ≈4,746/mo, 'tax return canada' ≈4,573/mo, 'canada pension plan' ≈3,478/mo → hook on the felt moment, broad terms in the title and keywords.\n- vidIQ title score (short-form, 5 credits): 'Why Your First Paycheque Is Smaller (Canada 2026)' = 91 (primary). vidIQ balance after: 1,955 credits.",
+ "retention": "Hook (0–2 s): a felt moment ('smaller than you expected?') + open loop ('where the money went'); face visible in the first second ✅. The stub builds line by line in the strip (each number a reveal) ✅. Twist at 40 s re-hooks before the end ✅. 57.7 s. Weakest point: 16–28 s (CPP + EI); short beats with a new hero number each carry it."
+}

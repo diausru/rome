@@ -1,0 +1,60 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Got a raise? Your Canada Child Benefit could shrink, but not right away.",
+   0.28
+  ],
+  [
+   "loop",
+   "It runs a year behind.",
+   0.36
+  ],
+  [
+   "base",
+   "Payments from July twenty twenty-six to June twenty twenty-seven use your family's net income from twenty twenty-five.",
+   0.32
+  ],
+  [
+   "max",
+   "The maximum: about eight thousand one hundred sixty a year for a child under six.",
+   0.32
+  ],
+  [
+   "threshold",
+   "Once family net income passes about thirty-eight thousand, it starts to shrink.",
+   0.32
+  ],
+  [
+   "example",
+   "One child under six, family income seventy thousand: about four ninety-four a month.",
+   0.32
+  ],
+  [
+   "raise",
+   "A ten-thousand-dollar raise cuts it by seven hundred a year, starting the July after you file.",
+   0.32
+  ],
+  [
+   "lever",
+   "One lever: RRSP contributions lower your net income.",
+   0.32
+  ],
+  [
+   "file",
+   "And the big rule: you and your spouse both file every year, even with no income, or the payments stop.",
+   0.32
+  ],
+  [
+   "payoff",
+   "So take the raise. Just plan for that July.",
+   0.24
+  ],
+  [
+   "cta",
+   "Follow for the real math.",
+   0.4
+  ]
+ ]
+}

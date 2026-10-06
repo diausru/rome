@@ -1,0 +1,71 @@
+{
+ "total": 61.697,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Got a raise? Your Canada Child Benefit could shrink, but not right away.",
+   "start": 0.25,
+   "end": 5.407
+  },
+  {
+   "id": "loop",
+   "text": "It runs a year behind.",
+   "start": 5.687,
+   "end": 7.275
+  },
+  {
+   "id": "base",
+   "text": "Payments from July twenty twenty-six to June twenty twenty-seven use your family's net income from twenty twenty-five.",
+   "start": 7.635,
+   "end": 16.117
+  },
+  {
+   "id": "max",
+   "text": "The maximum: about eight thousand one hundred sixty a year for a child under six.",
+   "start": 16.437,
+   "end": 22.117
+  },
+  {
+   "id": "threshold",
+   "text": "Once family net income passes about thirty-eight thousand, it starts to shrink.",
+   "start": 22.437,
+   "end": 27.3
+  },
+  {
+   "id": "example",
+   "text": "One child under six, family income seventy thousand: about four ninety-four a month.",
+   "start": 27.62,
+   "end": 34.636
+  },
+  {
+   "id": "raise",
+   "text": "A ten-thousand-dollar raise cuts it by seven hundred a year, starting the July after you file.",
+   "start": 34.956,
+   "end": 40.751
+  },
+  {
+   "id": "lever",
+   "text": "One lever: RRSP contributions lower your net income.",
+   "start": 41.071,
+   "end": 45.935
+  },
+  {
+   "id": "file",
+   "text": "And the big rule: you and your spouse both file every year, even with no income, or the payments stop.",
+   "start": 46.255,
+   "end": 55.32
+  },
+  {
+   "id": "payoff",
+   "text": "So take the raise. Just plan for that July.",
+   "start": 55.64,
+   "end": 59.574
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 59.814,
+   "end": 61.297
+  }
+ ]
+}

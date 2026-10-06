@@ -1,0 +1,16 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "First paycheque smaller than you expected? Here's where the money went.", 0.28],
+  ["loop", "Three deductions, every single pay.", 0.36],
+  ["setup", "Say you earn fifty-two thousand a year in Manitoba, paid every two weeks. That's two thousand dollars a cheque.", 0.36],
+  ["cpp", "First, CPP: about a hundred and eleven dollars. That's your future pension.", 0.28],
+  ["ei", "Then EI: about thirty-three. That's employment insurance.", 0.28],
+  ["tax", "And income tax: about three hundred, federal and Manitoba together, based on your TD1 form.", 0.36],
+  ["net", "So you take home roughly fifteen hundred fifty-five.", 0.36],
+  ["twist", "The twist: once you hit the yearly maximum for CPP or EI, those deductions stop until January.", 0.36],
+  ["payoff", "And at tax time, your return settles the difference: a refund, or a balance owing.", 0.24],
+  ["cta", "Follow for the real math.", 0.4]
+ ],
+ "tempo": 1.0
+}
