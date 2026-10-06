@@ -53,3 +53,4 @@ Manitoba employee, 2026, $52,000 salary, 26 biweekly pays, basic TD1 claims, no 
 - Stills v1: hook face hidden behind the top card; $2,000 pin over the phone instead of the envelope → hook card delayed to 30% of the beat (first ~1.3 s shows the face clearly), envelope pin moved to the envelope.
 - Stills v2: CPP key at u 0.55 revealed the skyline tower → u 0.45. CPP card empty for ~1 s and its note wrapped → hero earlier, note shortened.
 - Footer: T4127 reference replaced by the example's actual method ("yearly tax ÷ 26").
+- Final: 1383 frames (mux trims the last hold frame to the audio length), 57.66 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.3 LUFS; contact sheet checked (no skyline tower in frame); sent to the user; kit card #12.
