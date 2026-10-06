@@ -89,7 +89,7 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 
 ## Paid tools budget (user, 2026-10-06)
 
-- vidIQ: the user is on the minimum plan; use it sparingly, a little at a time. Check `vidiq_balance` (free) before any paid call. At most one paid vidIQ call per video (for example a single title score), only when free methods (WebSearch, keyword data already recorded in earlier PUBLISH.md files) can't answer. Never batch several paid calls. Report the credits spent in the reply.
+- vidIQ (user, updated 2026-10-06: the user is buying a subscription and WANTS demand/interest research with it, minimal requests): check `vidiq_balance` (free) first. Per video, BEFORE writing the script: one `vidiq_keyword_research` call (mode `questions` or `research`, country CA) to see what people actually search and ask, and use it to pick the hook and the first-frame wording; after the render, at most one `vidiq_score_title` for the chosen title. Never batch extra calls. Report the credits spent. If the balance is 0, fall back to WebSearch and recorded data and say so.
 - Higgsfield: generate only the VO lines needed; re-generate only lines that changed.
 - **Duration tolerance (user, 2026-10-06):** a finished VO anywhere from 45 s to 1:10 is acceptable. Inside that range do NOT spend credits or regenerate/trim/speed up audio to hit 60 s; just set the video length to the VO (+≈0.5 s hold) and move on. Only outside 45 s–1:10 shorten or extend.
 
