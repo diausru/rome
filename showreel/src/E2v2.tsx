@@ -136,16 +136,16 @@ export const E2v2 = () => {
         <Hero f={f} a={B.rule.s + 6}>15¢</Hero>
         <Line f={f} a={at('rule', 0.45)} top={286} color={C.soft}>for every $1 of net income above the line</Line>
       </Card>
-      <Card f={f} a={B.example.s} b={B.timing.s} label="EXAMPLE · NET INCOME">
-        <div style={{ position: 'absolute', left: 56, top: 112, width: BW, height: 14, borderRadius: 7, background: 'rgba(255,255,255,.12)' }} />
-        <div style={{ position: 'absolute', left: 56, top: 112, width: px(Math.min(LINE, 60000 + 50000 * ease(f, B.example.s + 4, at('example', 0.3)))), height: 14, borderRadius: '7px 0 0 7px', background: 'linear-gradient(90deg,#3f8f63,#7fe0a8)' }} />
-        <div style={{ position: 'absolute', left: 56 + px(LINE), top: 112, width: (px(110000) - px(LINE)) * over, height: 14, borderRadius: '0 7px 7px 0', background: 'linear-gradient(90deg,#ff8f6b,#d84315)' }} />
-        <div style={{ position: 'absolute', left: 56 + px(60000 + 50000 * ease(f, B.example.s + 4, at('example', 0.3))) - 80, top: 72, width: 160, textAlign: 'center', fontSize: 22, fontWeight: 800, color: C.cream, opacity: ease(f, B.example.s + 4, B.example.s + 12) }}>{money(60000 + 50000 * ease(f, B.example.s + 4, at('example', 0.3)))}</div>
-        <div style={{ position: 'absolute', left: 56 + px(LINE) - 1, top: 96, width: 2, height: 46, background: C.gold }} />
-        <div style={{ position: 'absolute', left: 56 + px(LINE) - 120, top: 150, width: 240, textAlign: 'center', fontSize: 20, fontWeight: 700, color: C.gold, letterSpacing: 1 }}>line $95,323</div>
-        <Line f={f} a={at('example', 0.35)} top={196} color={C.red} size={34}>{money(14677 * over)} over the line × 15%</Line>
-        {rec > 0 && <Hero f={f} a={at('example', 0.72)} top={244} size={96} line={false}>$2,201.55</Hero>}
-        <Line f={f} a={at('example', 0.8)} top={342} color={C.soft} size={24}>of OAS repaid</Line>
+      <Card f={f} a={B.example.s} b={B.timing.s} label="EXAMPLE · NET INCOME" h={420}>
+        <div style={{ position: 'absolute', left: 56, top: 140, width: BW, height: 14, borderRadius: 7, background: 'rgba(255,255,255,.12)' }} />
+        <div style={{ position: 'absolute', left: 56, top: 140, width: px(Math.min(LINE, 60000 + 50000 * ease(f, B.example.s + 4, at('example', 0.3)))), height: 14, borderRadius: '7px 0 0 7px', background: 'linear-gradient(90deg,#3f8f63,#7fe0a8)' }} />
+        <div style={{ position: 'absolute', left: 56 + px(LINE), top: 140, width: (px(110000) - px(LINE)) * over, height: 14, borderRadius: '0 7px 7px 0', background: 'linear-gradient(90deg,#ff8f6b,#d84315)' }} />
+        <div style={{ position: 'absolute', left: 56 + px(60000 + 50000 * ease(f, B.example.s + 4, at('example', 0.3))) - 80, top: 100, width: 160, textAlign: 'center', fontSize: 22, fontWeight: 800, color: C.cream, opacity: ease(f, B.example.s + 4, B.example.s + 12) }}>{money(60000 + 50000 * ease(f, B.example.s + 4, at('example', 0.3)))}</div>
+        <div style={{ position: 'absolute', left: 56 + px(LINE) - 1, top: 124, width: 2, height: 46, background: C.gold }} />
+        <div style={{ position: 'absolute', left: 56 + px(LINE) - 120, top: 178, width: 240, textAlign: 'center', fontSize: 20, fontWeight: 700, color: C.gold, letterSpacing: 1 }}>line $95,323</div>
+        <Line f={f} a={at('example', 0.35)} top={222} color={C.red} size={34}>{money(14677 * over)} over the line × 15%</Line>
+        {rec > 0 && <Hero f={f} a={at('example', 0.72)} top={268} size={96} line={false}>$2,201.55</Hero>}
+        <Line f={f} a={at('example', 0.8)} top={374} color={C.soft} size={24}>of OAS repaid</Line>
       </Card>
       <Card f={f} a={B.timing.s} b={B.split.s} label="WHEN IT'S TAKEN">
         <Hero f={f} a={B.timing.s + 6} size={110}>Jul 2027</Hero>
