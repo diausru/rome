@@ -1,0 +1,71 @@
+{
+ "total": 59.407,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Paying for daycare? Part of it can come off your taxable income.",
+   "start": 0.25,
+   "end": 3.77
+  },
+  {
+   "id": "loop",
+   "text": "But usually, only one parent can claim it.",
+   "start": 4.05,
+   "end": 6.678
+  },
+  {
+   "id": "what",
+   "text": "Daycare centres, nursery schools, caregivers and day camps can all count.",
+   "start": 7.038,
+   "end": 13.048
+  },
+  {
+   "id": "limits",
+   "text": "The limit: eight thousand a year per child under seven, five thousand from seven to sixteen.",
+   "start": 13.368,
+   "end": 20.365
+  },
+  {
+   "id": "who",
+   "text": "Generally, the parent with the lower net income claims it.",
+   "start": 20.685,
+   "end": 23.957
+  },
+  {
+   "id": "example",
+   "text": "Say one parent earns ninety thousand, the other thirty, and daycare cost nine thousand. The lower earner claims eight thousand.",
+   "start": 24.237,
+   "end": 33.805
+  },
+  {
+   "id": "cap",
+   "text": "There's also a cap: two-thirds of that parent's earned income.",
+   "start": 34.125,
+   "end": 38.846
+  },
+  {
+   "id": "exceptions",
+   "text": "The higher earner claims only in specific cases, like when the other parent was in school or in hospital.",
+   "start": 39.166,
+   "end": 46.211
+  },
+  {
+   "id": "receipts",
+   "text": "Keep every receipt. For a babysitter, get their social insurance number on it.",
+   "start": 46.531,
+   "end": 52.484
+  },
+  {
+   "id": "payoff",
+   "text": "And because it lowers net income, it can help your child benefit too.",
+   "start": 52.804,
+   "end": 57.204
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 57.524,
+   "end": 59.007
+  }
+ ]
+}

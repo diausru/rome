@@ -1,0 +1,53 @@
+{
+ "video": {"title": "Child care expenses: who claims", "duration": "59.92 s (1438 frames)", "mp4": "showreel/out/d5/d5-final.mp4 (share copy: d5-share.mp4)"},
+ "sources": [
+  "CRA — Line 21400 Child care expenses: expenses you can claim; who can claim; how to claim (canada.ca) · current · eligible expenses, lower-net-income rule and exceptions, receipts with SIN",
+  "CRA — Income Tax Folio S1-F3-C1, Child Care Expense Deduction (canada.ca) · current · $8,000 (under 7) / $5,000 (7–16) / $11,000 (DTC-eligible); 2/3 of earned income cap",
+  "CRA — Form T778, Child Care Expenses Deduction (canada.ca) · current · the form used to calculate the claim"
+ ],
+ "yt": {
+  "titles": ["Paying for Daycare? Which Parent Claims It (Canada)", "Child Care Expenses: Who Claims and How Much", "Daycare Tax Deduction in Canada: Up to $8,000 per Child"],
+  "description": "Paying for daycare? Part of it can come off your taxable income, but usually only one parent can claim it.\n\nWhat can count: daycare centres, nursery schools, caregivers like babysitters or nannies, and day camps. Yearly limit per child: $8,000 under age 7, $5,000 from 7 to 16 ($11,000 if the child is eligible for the disability tax credit).\n\nGenerally, the parent with the lower net income claims it, and the claim is capped at two-thirds of that parent's earned income. Example: parents earning $90,000 and $30,000, $9,000 of daycare for a 3-year-old → the $30,000 parent claims $8,000.\n\nThe higher earner claims only in specific cases (e.g. the other parent was in school or in hospital), with weekly limits on Form T778. Keep every receipt; for a babysitter, their SIN must be on it. And because it lowers net income, it can help your Canada Child Benefit too.\n\nSources: CRA, canada.ca (line 21400, Form T778, Folio S1-F3-C1). The family is an example. General information, not advice.\n\n#CanadaTax #Daycare #TaxTips",
+  "hashtags": "#CanadaTax #Daycare #TaxTips",
+  "keywords": "child care expenses canada, daycare tax deduction canada, line 21400, t778, who claims child care expenses, child care expenses lower income spouse, canada tax, tax tips, canadian tax guide, childcare tax refund",
+  "pinned": "Up to $8,000 per child under 7, usually claimed by the lower-income parent, capped at 2/3 of their earned income. Babysitter? Get their SIN on the receipt. Who claims it in your house?",
+  "cta": "Follow Tax Secrets Canada for the real math; next: the small business deduction."
+ },
+ "tt": {
+  "caption": "Paying for daycare? 🇨🇦 Usually only ONE parent can claim it. Here's which one.",
+  "keywords": "daycare tax deduction canada · child care expenses · line 21400 · canada tax tips · parents taxes",
+  "hashtags": "#daycare #canadiantaxes #momsofcanada #taxtips #personalfinancecanada",
+  "pinned": "Did you know it's usually the lower earner who claims? (General info, not advice.)",
+  "cta": "Follow for the next one: the small business deduction."
+ },
+ "ig": {
+  "caption": "Paying for daycare? Part of it can come off your taxable income. 🇨🇦\n\nUp to $8,000 per child under 7 ($5,000 for 7–16). Usually the parent with the LOWER net income claims it, capped at 2/3 of their earned income.\n\nExample: $90,000 + $30,000 parents, $9,000 daycare → the $30,000 parent claims $8,000.\n\nKeep every receipt (babysitter? their SIN on it). Bonus: it lowers net income, which can help your CCB too.\n\nSend this to a parent paying for daycare.\n\nSource: CRA (canada.ca). Example only. General info, not advice.",
+  "keywords": "daycare tax canada, child care expenses, parents canada, ccb, tax tips",
+  "hashtags": "#daycare #canadianparents #canadiantaxes #taxtips #personalfinancecanada #canadatax",
+  "pinned": "Save this for tax season 📌 receipts!",
+  "cta": "Send this to a parent paying for daycare."
+ },
+ "eng": {
+  "question": "In your house, who claims the daycare: the lower earner?",
+  "save": "The limits ($8,000 / $5,000), the 2/3 cap and the receipt rule.",
+  "share": "Parents with kids in daycare, camps or with a babysitter.",
+  "follow": "Family tax rules, verified, from a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "child care expenses canada",
+  "secondary": "daycare tax deduction canada; line 21400; T778; canada tax (≈4,177/mo); taxtips (≈4,835/mo); canadian tax guide (≈4,746/mo)",
+  "intent": "A parent wants to know whether daycare is deductible, how much, and which parent claims it.",
+  "audience": "Parents of children under 16 paying for daycare, camps or a babysitter.",
+  "angle": "The 'which parent' rule most people get wrong, with one clean example.",
+  "questions": "Can I deduct daycare in Canada? · Which parent claims child care expenses? · How much child care can I claim? · Can the higher-income spouse claim child care? · Do I need my babysitter's SIN?",
+  "pain": "Claiming on the wrong return; missing receipts or a babysitter's SIN."
+ },
+ "next": [
+  {"topic": "Small business deduction (C3)", "why": "Next in the plan; incorporated owners", "intent": "small business tax rate canada", "hook": "Why a small corporation pays less tax on its first $500,000.", "angle": "Federal + Manitoba rates, verified", "payoff": "When it applies, when it doesn't"},
+  {"topic": "Vehicle expenses + logbook (B6)", "why": "In the plan; self-employed", "intent": "car expenses self employed canada", "hook": "Drive for work? Without a logbook, it's a guess.", "angle": "Business-use percentage and the logbook", "payoff": "Keep a log"},
+  {"topic": "First-time home buyers (F1)", "why": "In the plan; high interest", "intent": "first time home buyer canada tax", "hook": "Buying your first home? Three tax tools to know.", "angle": "FHSA, HBP, home buyers' amount, verified", "payoff": "Which one first"}
+ ],
+ "series": "Family Money (CCB → child care expenses → RESP). Playlist: 'Families & Kids'.",
+ "research": "- vidIQ (2026-10-06, 5 credits): 'child care expenses deduction canada' <750/mo; broad 'taxtips' ≈4,835/mo, 'canadian tax guide' ≈4,746/mo, 'canada tax' ≈4,177/mo → a situation hook for the feed; broad terms in the title and keywords.",
+ "retention": "Hook (0–2 s): 'Paying for daycare?' + 'only one parent can claim it' open loop; the goodbye hug, no card ✅. The answer ('lower net income') lands at 21 s and the example proves it at 34 s ✅. Bonus link to the CCB at the end rewards watching ✅. 60 s; weakest point: 39–46 s (exceptions); kept to two bullets."
+}
