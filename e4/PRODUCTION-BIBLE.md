@@ -41,3 +41,4 @@ canada.ca is egress-blocked here; claims read from canada.ca search-result text 
 ## Revision log
 - VO: two lines were stuck in the provider queue for over 15 minutes (already charged) → those two were regenerated once (0.9 credits); all other lines are first takes. 62.0 s, inside the tolerance, so no speed-up.
 - Stills QC: the amount pinned on the envelope sat under the bottom grade → the bottom grade lifts while the pin is shown; the 240,000 card was empty at first → its line enters first; the strip duplicated the pinned amount → the strip starts at "who qualifies".
+- Final: rendered and verified. 1080×1920, 24 fps, 1500 frames, 62.50 s, clean decode, AAC 48 kHz, −14.4 LUFS; contact sheet from the final MP4 reviewed. Share copy e4-share.mp4.
