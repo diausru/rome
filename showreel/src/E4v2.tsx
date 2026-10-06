@@ -6,7 +6,7 @@ import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { PhotoPlate, type Focus } from './Plate';
 import { Flag } from './RaiseShort';
 import TL from './e4-timeline.json';
-import { C, SANS, SERIF, Card, Grades, Header, Hero, Line, Typed, beatsFrom, ease, pill, shade, type Cap } from './Kit';
+import { C, SANS, SERIF, Card, Header, Hero, Line, Typed, beatsFrom, ease, pill, shade, type Cap } from './Kit';
 
 export const E4FPS = 24;
 const B = beatsFrom(TL, E4FPS);
@@ -36,10 +36,10 @@ const CAPS: Cap[] = [
 ];
 
 const Strip = ({ f }: { f: number }) => {
-  const show = ease(f, B.what.s + 20, B.what.s + 32) * (1 - ease(f, B.payoff.s - 6, B.payoff.s + 6));
+  const show = ease(f, B.who.s, B.who.s + 12) * (1 - ease(f, B.payoff.s - 6, B.payoff.s + 6));
   if (show <= 0) return null;
   const items: [number, React.ReactNode][] = [
-    [B.what.s + 20, <><span style={{ color: C.soft, fontWeight: 600 }}>up to</span><span style={{ color: C.gold }}>$1,138.90/mo</span></>],
+    [B.who.s, <><span style={{ color: C.soft, fontWeight: 600 }}>up to</span><span style={{ color: C.gold }}>$1,138.90/mo</span></>],
     [at('who', 0.6), <><span style={{ color: C.soft, fontWeight: 600 }}>income under</span><span style={{ color: C.gold }}>$23,112</span></>],
     [B.file.s + 10, <><span style={{ color: C.green }}>✓</span>file taxes</>],
   ];
@@ -69,7 +69,9 @@ export const E4v2 = () => {
           </div>
         )}
       </PhotoPlate>
-      <Grades />
+      {/* series grade, with the bottom lifted while the envelope carries the amount */}
+      <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(8,6,4,.82) 0%, rgba(8,6,4,.55) 14%, rgba(8,6,4,0) 28%, rgba(8,6,4,0) 50%, rgba(8,6,4,.55) 66%, rgba(8,6,4,.8) 100%)', opacity: 1 - 0.75 * pinOn }} />
+      <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(8,6,4,.82) 0%, rgba(8,6,4,.55) 14%, rgba(8,6,4,0) 28%, rgba(8,6,4,0) 100%)', opacity: 0.75 * pinOn }} />
       <Header f={f} chip="GIS · 2026" />
       <Typed f={f} caps={CAPS} />
       <Strip f={f} />
@@ -79,8 +81,8 @@ export const E4v2 = () => {
         <Line f={f} a={at('hook', 0.65)} top={186} size={34} color={C.soft}>And easy to miss.</Line>
       </Card>
       <Card f={f} a={B.loop.s} b={B.what.s} label="ESDC ESTIMATE · 2015" tone="red">
-        <Hero f={f} a={at('loop', 0.5)}>240,000</Hero>
-        <Line f={f} a={at('loop', 0.62)} top={286} color={C.soft} size={28}>eligible seniors didn't receive it (about 1 in 10)</Line>
+        <Hero f={f} a={at('loop', 0.45)}>240,000</Hero>
+        <Line f={f} a={at('loop', 0.08)} top={286} color={C.soft} size={28}>eligible seniors didn't receive it (about 1 in 10)</Line>
       </Card>
       {/* what: card in the sky so the envelope on the table carries the amount */}
       <Card f={f} a={B.what.s} b={B.who.s} label="GUARANTEED INCOME SUPPLEMENT" top={360} h={300}>

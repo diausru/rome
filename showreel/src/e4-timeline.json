@@ -1,0 +1,59 @@
+{
+ "total": 61.996,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Sixty-five or older, on a low income? There's a monthly, tax-free payment you might be missing.",
+   "start": 0.25,
+   "end": 6.723
+  },
+  {
+   "id": "loop",
+   "text": "The government's own estimate: in twenty fifteen, about two hundred forty thousand eligible seniors didn't get it.",
+   "start": 7.003,
+   "end": 14.847
+  },
+  {
+   "id": "what",
+   "text": "It's the Guaranteed Income Supplement. Up to eleven hundred thirty-eight dollars a month for a single senior, on top of OAS.",
+   "start": 15.207,
+   "end": 23.244
+  },
+  {
+   "id": "who",
+   "text": "You need to receive OAS, live in Canada, and, if you're single, have income under twenty-three thousand one hundred twelve dollars, not counting OAS.",
+   "start": 23.524,
+   "end": 35.039
+  },
+  {
+   "id": "exempt",
+   "text": "TFSA withdrawals don't count. And the first five thousand dollars you earn from work won't reduce it.",
+   "start": 35.319,
+   "end": 42.255
+  },
+  {
+   "id": "file",
+   "text": "The key: file your taxes every year. That's how your eligibility is reviewed.",
+   "start": 42.615,
+   "end": 49.082
+  },
+  {
+   "id": "delay",
+   "text": "And if you qualify, don't delay OAS. You can't get GIS while you wait.",
+   "start": 49.362,
+   "end": 55.407
+  },
+  {
+   "id": "payoff",
+   "text": "Know a senior on a low income? Make sure they've checked.",
+   "start": 55.767,
+   "end": 60.003
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 60.243,
+   "end": 61.596
+  }
+ ]
+}

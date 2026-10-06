@@ -36,3 +36,8 @@ canada.ca is egress-blocked here; claims read from canada.ca search-result text 
 | LIVE ELEMENTS | snow in the window; steam over the tea |
 | MUSIC | `tools/music.py pension`, −24 LUFS, ducked |
 | VOICE | Grady (no regeneration or speed-up if the VO lands between 45 s and 1:10, per the user rule) |
+| RENDER | 1080×1920, 24 fps, 1500 frames (62.50 s; the VO is 62.0 s, inside the 45 s–1:10 tolerance, so no audio rework) |
+
+## Revision log
+- VO: two lines were stuck in the provider queue for over 15 minutes (already charged) → those two were regenerated once (0.9 credits); all other lines are first takes. 62.0 s, inside the tolerance, so no speed-up.
+- Stills QC: the amount pinned on the envelope sat under the bottom grade → the bottom grade lifts while the pin is shown; the 240,000 card was empty at first → its line enters first; the strip duplicated the pinned amount → the strip starts at "who qualifies".
