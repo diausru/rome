@@ -1,0 +1,15 @@
+build/
+__pycache__/
+assets/*.tgz
+assets/*.jpg
+assets/plate_a.png
+assets/hand_a.png
+assets/hand_b.png
+assets/hand_b_cut.png
+assets/plates_compare.png
+assets/cut_compare.png
+assets/font_compare.png
+assets/package/svg_fonts/*
+!assets/package/svg_fonts/EMSTech.svg
+vo/*.wav
+!vo/vo_master.wav
