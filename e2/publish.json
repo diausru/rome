@@ -1,0 +1,55 @@
+{
+ "video": {"title": "OAS clawback: the line, the 15%, and 3 legal levers", "duration": "59.50 s (1428 frames)", "mp4": "showreel/out/e2/e2-final.mp4 (share copy: e2-share.mp4)"},
+ "sources": [
+  "Service Canada — Old Age Security pension recovery tax; Repayment of OAS pension (canada.ca) · 2026 income year · 15% of net world income above $95,323, recovered from OAS paid July 2027 – June 2028, withheld monthly",
+  "CRA — Pension income splitting (canada.ca) · current rules · up to 50% of eligible pension income; at 65+ includes RRIF and annuity payments; joint election T1032",
+  "CRA — What is a TFSA (canada.ca) · current · TFSA income and withdrawals don't affect federal income-tested benefits such as OAS and GIS",
+  "Service Canada — OAS: when to start your pension (canada.ca) · current · +0.6% per month of deferral, up to 36% at 70; no GIS while delaying",
+  "Example only: $110,000 net income → $14,677 over → $2,201.55 recovered (labelled EXAMPLE on screen)"
+ ],
+ "yt": {
+  "titles": ["OAS Clawback 2026: The $95,323 Line (and 3 Legal Ways to Keep More)", "How the OAS Clawback Actually Works in Canada", "Earn Over $95K in Retirement? Your OAS Gets Clawed Back"],
+  "description": "Retired with income over $95,323? Part of your Old Age Security goes back. Here's exactly how much, and three legal levers.\n\nThe OAS recovery tax: for 2026 income, you repay 15% of your net world income above $95,323. Example: net income of $110,000 is $14,677 over the line, so $2,201.55 is recovered, withheld from your OAS payments from July 2027 to June 2028.\n\nThree legal levers:\n1) Pension income splitting: at 65+, up to 50% of eligible pension income (including RRIF and annuity payments) can be allocated to your spouse (joint election, Form T1032).\n2) TFSA withdrawals aren't income, so they don't affect OAS.\n3) Delaying OAS: +0.6% for each month after 65, up to +36% at 70 (you can't get GIS while you delay).\n\nWhich lever fits depends on your whole picture. Talk to a tax professional.\n\nSources: Service Canada, OAS pension recovery tax; CRA, Pension income splitting; What is a TFSA; OAS: when to start (canada.ca). $110,000 is an example. General information, not tax advice.\n\n#OAS #RetirementCanada #CanadaTax",
+  "hashtags": "#OAS #RetirementCanada #CanadaTax",
+  "keywords": "oas clawback, oas clawback 2026, oas recovery tax, old age security clawback threshold, how to avoid oas clawback, pension income splitting canada, retirement income canada, canadian retirement, rrif and oas",
+  "pinned": "Quick recap: for 2026 income the line is $95,323. Above it, 15¢ of OAS per $1 goes back, taken from your OAS starting July 2027. Levers: pension splitting at 65+, TFSA withdrawals, delaying OAS. Are you close to the line, or comfortably under it?",
+  "cta": "Follow Tax Secrets Canada for the real retirement math; next: CPP at 60, 65 or 70."
+ },
+ "tt": {
+  "caption": "Over $95K in retirement? 🇨🇦 Here's how the OAS clawback really works, and 3 legal ways to keep more.",
+  "keywords": "oas clawback · oas clawback 2026 · old age security recovery tax · retirement taxes canada · pension splitting canada",
+  "hashtags": "#oas #retirementcanada #canadiantaxes #personalfinancecanada #seniorscanada",
+  "pinned": "Which lever would help your family most: splitting, TFSA or delaying OAS? (General info, not advice.)",
+  "cta": "Follow for the next one: CPP at 60, 65 or 70."
+ },
+ "ig": {
+  "caption": "The OAS clawback isn't a penalty on all your OAS. It's 15¢ per $1 above a line. 🇨🇦\n\nFor 2026 income the line is $95,323. Example: $110,000 net income → $14,677 over → $2,201.55 recovered from OAS paid July 2027 – June 2028.\n\n3 legal levers: pension income splitting at 65+ (up to 50% of eligible pension income), TFSA withdrawals (not income), and delaying OAS (+0.6% a month, up to 36% at 70).\n\nSave this, and share it with a parent near the line.\n\nSources: Service Canada / CRA (canada.ca). $110,000 is an example. General info, not advice.",
+  "keywords": "oas clawback, old age security, retirement canada, pension splitting, canadian seniors",
+  "hashtags": "#oas #oldagesecurity #retirementplanning #canadiantaxes #personalfinancecanada #canadatax",
+  "pinned": "Is anyone in your family near $95K of retirement income? 🙋 Which lever surprised you most?",
+  "cta": "Share this with a parent near the line."
+ },
+ "eng": {
+  "question": "Are you (or your parents) close to the $95,323 line, or comfortably under it?",
+  "save": "The exact formula (15% above $95,323) plus the three levers, ready for year-end planning.",
+  "share": "Adult children helping parents with RRIF withdrawals; couples with one high pension.",
+  "follow": "The retirement series continues: RRSP at 71 → OAS clawback → CPP timing → GIS, all with CRA sources on screen."
+ },
+ "seo": {
+  "primary": "OAS clawback",
+  "secondary": "oas clawback (vidIQ ≈5,324/mo, competition 26.9, from the 2026-10-06 related-keyword pull); canadian retirement (≈11,614/mo); retirement income canada (≈4,414/mo); retirement planning canada (≈3,947/mo); rrsp to rrif (≈4,756/mo, series link)",
+  "intent": "A retiree or near-retiree wants to know if and how much OAS they'll lose, and what they can legally do about it.",
+  "audience": "Canadians aged 64–75 with pension/RRIF income near $95K; couples with uneven pensions; adult children who help.",
+  "angle": "Fear → mechanism: it's 15¢ per $1 above a line, not 'losing OAS'; then 3 verified levers.",
+  "questions": "What is the OAS clawback threshold for 2026? · How much OAS will I lose? · When is the OAS clawback taken? · Does pension splitting reduce the OAS clawback? · Do TFSA withdrawals affect OAS?",
+  "pain": "Fear of losing a pension earned over a lifetime; confusion about which year's income counts and when the money is taken."
+ },
+ "next": [
+  {"topic": "CPP at 60, 65 or 70: the break-even math (E1)", "why": "Next in the plan; the same audience; pairs with the OAS-delay lever", "intent": "when should I take CPP", "hook": "Take CPP at 60 or wait to 70? The gap is bigger than you think.", "angle": "Verified adjustment rates and a clear break-even example", "payoff": "What the decision depends on"},
+  {"topic": "GIS: the benefit low-income seniors miss (E4)", "why": "Same audience; links to 'no GIS while delaying OAS'", "intent": "who qualifies for GIS", "hook": "Many low-income seniors qualify for GIS. Are you one of them?", "angle": "Eligibility and what income counts (TFSA doesn't)", "payoff": "How to check and apply"},
+  {"topic": "RRSP vs TFSA: how to decide (D6)", "why": "Bridges retirement and savers; TFSA's 'doesn't count for OAS' is a hook", "intent": "rrsp or tfsa", "hook": "RRSP or TFSA? One question decides it.", "angle": "Mechanics, not investment advice; 2026 limits verified", "payoff": "A simple decision frame"}
+ ],
+ "series": "Retirement Taxes (episode 2: RRSP at 71 → OAS clawback → CPP timing → GIS). Playlist: 'Retirement Taxes Canada'.",
+ "research": "- vidIQ (CA, 2026-10-06, related-keyword pull during E3 research): 'oas clawback' ≈5,324 searches/mo, competition 26.9 (medium volume, low-to-medium competition: the best ratio in the retirement cluster). vidIQ credits are now at 0 until 2026-11-04, so no separate E2 keyword pull was possible.\n- vidIQ title scores (short-form): 'OAS Clawback 2026: The $95,323 Line (and 3 Legal Ways to Keep More)' 87; 'How the OAS Clawback Actually Works in Canada' 85; 'Earn Over $95K in Retirement? Your OAS Gets Clawed Back' 83.\n- Web news (2026-10): OAS rose for Oct–Dec 2026 (Service Canada: up to $762.50/month at 65–74, $838.75 at 75+); articles (money.ca, Fool.ca, H&R Block) are explaining the clawback right now, so the topic is timely. Publish this week while the October increase is in the news.",
+ "retention": "Hook (0–3 s): a concrete number plus a loss ('takes back part of your OAS') ✅. Open loop: 'legal ways to keep more' is paid off by the 3 levers (30–50 s) ✅. Information density: one rule, one example, one date, three levers ✅. Visual change rate: the bar fills and turns red, the counters run, a lever row lands every ~6 s ✅. Escalation: fear → mechanism → math → control ✅. Payoff: a reframe ('plan for the line, not the panic') ✅. CTA: 1.5 s, soft ✅. Weakest point: 9–15 s (rule only); the bar on screen keeps the motion. No re-render needed."
+}

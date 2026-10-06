@@ -1,0 +1,65 @@
+{
+ "total": 58.749,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Retired, with income over ninety-five thousand? The government takes back part of your OAS.",
+   "start": 0.25,
+   "end": 6.887
+  },
+  {
+   "id": "loop",
+   "text": "But there are legal ways to keep more.",
+   "start": 7.167,
+   "end": 9.304
+  },
+  {
+   "id": "rule",
+   "text": "It's the recovery tax: fifteen cents for every dollar above the line.",
+   "start": 9.664,
+   "end": 15.147
+  },
+  {
+   "id": "example",
+   "text": "Net income of a hundred and ten thousand? About fourteen thousand seven hundred over. Fifteen percent: twenty-two hundred dollars.",
+   "start": 15.427,
+   "end": 25.316
+  },
+  {
+   "id": "timing",
+   "text": "Taken from your OAS starting July twenty twenty-seven.",
+   "start": 25.596,
+   "end": 29.502
+  },
+  {
+   "id": "split",
+   "text": "Lever one: at sixty-five, split up to half your RRIF income with your spouse.",
+   "start": 29.862,
+   "end": 36.896
+  },
+  {
+   "id": "tfsa",
+   "text": "Lever two: TFSA withdrawals aren't income, so they don't count.",
+   "start": 37.136,
+   "end": 42.006
+  },
+  {
+   "id": "delay",
+   "text": "Lever three: delay OAS. Each month, up to seventy, adds point six percent.",
+   "start": 42.246,
+   "end": 49.895
+  },
+  {
+   "id": "payoff",
+   "text": "The right lever depends on your whole picture. Plan for the line.",
+   "start": 50.255,
+   "end": 56.613
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 56.853,
+   "end": 58.349
+  }
+ ]
+}

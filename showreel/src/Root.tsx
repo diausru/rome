@@ -4,11 +4,14 @@ import { Carousel, CW, SH, LOOP } from './Carousel';
 import { Office } from './Office';
 import { Home } from './Home';
 const HomeTest = () => { const f = useCurrentFrame(); return <Home f={f} T={f / 300} w={540} h={960} />; };
+import { Kitchen } from './Kitchen';
+const KitchenTest = ({ blur = 8 }: { blur?: number }) => { const f = useCurrentFrame(); return <Kitchen f={f} T={f / 300} w={540} h={960} blur={blur} />; };
 import { Carousel2 } from './Carousel2';
 import { SalaryShort, SDUR, SFPS } from './SalaryShort';
 import { RaiseShort, RDUR, RFPS } from './RaiseShort';
 import { Case002, CDUR, CFPS } from './Case002';
 import { E3Short, E3DUR, E3FPS } from './E3Short';
+import { E2Short, E2DUR, E2FPS } from './E2Short';
 import { useCurrentFrame } from 'remotion';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
@@ -30,7 +33,9 @@ export const RemotionRoot = () => (
     <Composition id="RaiseShort" component={RaiseShort} durationInFrames={RDUR} fps={RFPS} width={1080} height={1920} />
     <Composition id="Case002" component={Case002} durationInFrames={CDUR} fps={CFPS} width={1080} height={1920} />
     <Composition id="HomeTest" component={HomeTest} durationInFrames={300} fps={24} width={540} height={960} />
+    <Composition id="KitchenTest" component={KitchenTest} durationInFrames={300} fps={24} width={540} height={960} defaultProps={{ blur: 8 }} />
     <Composition id="E3Short" component={E3Short} durationInFrames={E3DUR} fps={E3FPS} width={1080} height={1920} />
+    <Composition id="E2Short" component={E2Short} durationInFrames={E2DUR} fps={E2FPS} width={1080} height={1920} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );

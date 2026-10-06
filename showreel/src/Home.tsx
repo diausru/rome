@@ -108,7 +108,7 @@ const Room = ({ p }: { p: number }) => {
   );
 };
 
-const Post = ({ fRef, w, h, blur, cam }: { fRef: React.MutableRefObject<number>; w: number; h: number; blur: number; cam: React.MutableRefObject<{ z: number; x: number; yaw: number; pitch: number; grade: number }> }) => {
+export const Post = ({ fRef, w, h, blur, cam }: { fRef: React.MutableRefObject<number>; w: number; h: number; blur: number; cam: React.MutableRefObject<{ z: number; x: number; y?: number; yaw: number; pitch: number; grade: number }> }) => {
   const { scene } = useThree();
   const st = useMemo(() => {
     const A = new THREE.WebGLRenderTarget(w, h, { type: THREE.HalfFloatType, samples: 4 });
@@ -120,7 +120,7 @@ const Post = ({ fRef, w, h, blur, cam }: { fRef: React.MutableRefObject<number>;
   }, [w, h, blur]);
   useFrame(({ gl }) => {
     const { A, B, c, mt, qs, qc } = st, v = cam.current;
-    c.position.set(v.x, 1.5, v.z); c.rotation.set(v.pitch, v.yaw, 0, 'YXZ'); c.updateMatrixWorld();
+    c.position.set(v.x, v.y ?? 1.5, v.z); c.rotation.set(v.pitch, v.yaw, 0, 'YXZ'); c.updateMatrixWorld();
     gl.autoClear = false;
     gl.setRenderTarget(A); gl.clear(); gl.render(scene, c);
     mt.uniforms.seed.value = (fRef.current % 180) * 1.618; mt.uniforms.gradeU.value = v.grade;
@@ -132,15 +132,15 @@ const Post = ({ fRef, w, h, blur, cam }: { fRef: React.MutableRefObject<number>;
   return null;
 };
 
-const Setup = () => {
+export const Setup = ({ bg = '#2a2018', env = 0.35 }: { bg?: string; env?: number }) => {
   const { gl, scene } = useThree();
   useMemo(() => {
     const pm = new THREE.PMREMGenerator(gl);
     scene.environment = pm.fromScene(new RoomEnvironment(), 0.04).texture;
-    scene.environmentIntensity = 0.35;
-    scene.background = new THREE.Color('#2a2018');
+    scene.environmentIntensity = env;
+    scene.background = new THREE.Color(bg);
     gl.toneMapping = THREE.ACESFilmicToneMapping; gl.toneMappingExposure = 1.0;
-  }, [gl, scene]);
+  }, [gl, scene, bg, env]);
   return null;
 };
 

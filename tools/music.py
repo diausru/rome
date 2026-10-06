@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Procedural background music bed (original, no samples). usage: music.py <mood> <seconds> <out.wav>
-moods: pension (warm EP + pad, 72 BPM, D major) — more added per topic group."""
+moods: pension (warm EP + pad, 72 BPM, D major), pension2 (same palette, 76 BPM, F major: F–Am–Dm–Bb) — more added per topic group."""
 import sys, numpy as np, wave
 mood, dur, out = sys.argv[1], float(sys.argv[2]), sys.argv[3]
 SR = 48000
-P = {'pension': dict(bpm=72, prog=[(50, [62, 66, 69, 73, 76]), (47, [62, 66, 69, 71, 74]), (43, [62, 66, 67, 71, 74]), (45, [61, 64, 67, 69, 76])], ep=0.22, pad=0.10, bass=0.16)}[mood]
+P = {'pension': dict(bpm=72, prog=[(50, [62, 66, 69, 73, 76]), (47, [62, 66, 69, 71, 74]), (43, [62, 66, 67, 71, 74]), (45, [61, 64, 67, 69, 76])], ep=0.22, pad=0.10, bass=0.16),
+     'pension2': dict(bpm=76, prog=[(41, [60, 65, 69, 72, 77]), (45, [60, 64, 69, 72, 76]), (38, [62, 65, 69, 72, 74]), (46, [62, 65, 70, 72, 77])], ep=0.22, pad=0.10, bass=0.16)}[mood]
 n = int(dur * SR); t = np.arange(n) / SR; out_l = np.zeros(n); out_r = np.zeros(n)
 mtof = lambda m: 440 * 2 ** ((m - 69) / 12)
 beat = 60 / P['bpm']; bar = 4 * beat

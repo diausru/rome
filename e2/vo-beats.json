@@ -1,0 +1,56 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Retired, with income over ninety-five thousand? The government takes back part of your OAS.",
+   0.28
+  ],
+  [
+   "loop",
+   "But there are legal ways to keep more.",
+   0.36
+  ],
+  [
+   "rule",
+   "It's the recovery tax: fifteen cents for every dollar above the line.",
+   0.28
+  ],
+  [
+   "example",
+   "Net income of a hundred and ten thousand? About fourteen thousand seven hundred over. Fifteen percent: twenty-two hundred dollars.",
+   0.28
+  ],
+  [
+   "timing",
+   "Taken from your OAS starting July twenty twenty-seven.",
+   0.36
+  ],
+  [
+   "split",
+   "Lever one: at sixty-five, split up to half your RRIF income with your spouse.",
+   0.24
+  ],
+  [
+   "tfsa",
+   "Lever two: TFSA withdrawals aren't income, so they don't count.",
+   0.24
+  ],
+  [
+   "delay",
+   "Lever three: delay OAS. Each month, up to seventy, adds point six percent.",
+   0.36
+  ],
+  [
+   "payoff",
+   "The right lever depends on your whole picture. Plan for the line.",
+   0.24
+  ],
+  [
+   "cta",
+   "Follow for the real math.",
+   0.4
+  ]
+ ],
+ "tempo": 1.0
+}
