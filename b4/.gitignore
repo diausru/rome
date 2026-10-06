@@ -13,3 +13,10 @@ assets/package/svg_fonts/*
 !assets/package/svg_fonts/EMSTech.svg
 vo/*.wav
 !vo/vo_master.wav
+assets/hand_c.png
+assets/hand_d.png
+assets/hand_a_cut.png
+assets/hand_c_check.jpg
+vo/grady/*.wav
+vo/grady/proc/*.wav
+vo/line*.mp3

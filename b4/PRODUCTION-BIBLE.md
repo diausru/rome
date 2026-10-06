@@ -3,7 +3,7 @@
 Mode: REALISTIC HANDWRITTEN EXPLAINER (`channel/HANDWRITTEN-ENGINE.md`). Governing rules: `/CLAUDE.md`, `short/MASTER-SYSTEM.md`.
 Topic B4 in `channel/TOPICS.md` ("How much tax to set aside from every invoice"). Chosen for this mode because the whole answer is a calculation that can be watched being written (§3, §39).
 
-**CURRENT VERSION:** v1 (see the revision log).
+**CURRENT VERSION:** v2 (see the revision log).
 
 ## 1. Content strategy
 | Field | Value |
@@ -35,12 +35,12 @@ Calculator: `b4/calc.py`.
 | Field | Value |
 |---|---|
 | Plate | `assets/plate_b.png`: overhead ~75°, walnut desk, blank sheet, late-afternoon window light with blind shadows, paper Canadian flag on a stand, black coffee mug, calculator edge, reading glasses (Higgsfield GPT Image 2.5, still plate, bible D2) |
-| Hand | `assets/hand_a_cut.png`: right hand with a black fine-liner, white cuff, navy sleeve (generated still, matted with Higgsfield background removal). Moved rigidly; never deformed |
-| Pen physics | The pen tip is locked to the ink head; minimum-jerk pen-up moves with a lift (1.8% scale, the shadow separating); wrist rotation follows paper position; contact shadow toward the lower right (light from the upper left) |
+| Hand | `assets/hand_c_cut.png` (v2): right hand with a black fine-liner, the WHOLE hand, wrist and cuff inside the photo, the sleeve leaving through the bottom edge (generated still, matted with Higgsfield background removal); the sleeve is extended past both photo edges so no photo border can enter the frame. Never deformed |
+| Pen physics | Wrist-pivot model (v2): the wrist follows the pen path low-passed over 0.7 s; small strokes are made by rotating the hand about the wrist (≈2.5° per 8 mm letter), so the hand no longer translates with every letter. The pen tip is locked to the ink head; minimum-jerk pen-up moves with a lift (1.8% scale, the shadow separating); wrist rotation follows paper position; contact shadow toward the lower right (light from the upper left) |
 | Light continuity | The hand is multiplied by an illumination map measured from the blank paper, so the blind shadows fall across the hand too |
 | Ink | EMS Tech single-line font (SIL OFL, `hersheytext` 2.0.0), per-glyph jitter (offset, ±2° rotation, ±3% scale), 0.75 mm marker line, touch-down dots, fibre modulation, multiplied into the paper |
 | Camera | Virtual camera on the plate: zoom 1.60 → 1.78 while writing (≈ the full writing width), follows the active line; pull back to 1.24 for the payoff; operator micro-motion |
-| Typography | Handwriting only on the paper; a small sans footer (Manrope 500) with the assumptions and the source |
+| Typography | Handwriting only on the paper; a compact source tag (Manrope 600, 26 px) on a dark rounded plate at the top-left, outside the Shorts bottom UI zone (v2) |
 | Canadian identity | The paper flag in the plate, $ notation, CPP / MB / CRA terms |
 
 ## 4. Decisions
@@ -49,7 +49,8 @@ Calculator: `b4/calc.py`.
 | B1 | Photographic hand plate + code-driven motion instead of a CG hand | TAX CASE #001 (D7): the reachable CG hand reads as a mannequin. Disclosed limitation: fingers do not flex while writing |
 | B2 | The paper carries only key numbers and short notes; the narration explains | Real writing speed (≈110–150 mm/s pen tip at 8–12 mm letters) cannot fit long phrases into 60 s |
 | B3 | Black ink only | One pen in the hand; a pen swap would need a second hand plate |
-| B4 | Voice: ElevenLabs v4 "Harrison" (same as TAX CASE #001) | Channel consistency |
+| B4 | Voice (v2): ElevenLabs via Higgsfield text2speech_v2, preset "Grady" (repo rule from 2026-10-06). Long inner pauses shortened to 0.38 s and tempo ×1.07 (`vo/prep_grady.py`) so the narration fits 60 s | Series voice rule; Grady reads ≈6% slower than Harrison |
 
 ## 5. Revision log
 - v1 (2026-10-06): writing speed 55 → 110 → 135 mm/s and pen-up overheads cut, because the writing lagged the narration by up to 4 s; text trimmed to key numbers; hand-retreats only when there is ≥0.9 s; camera widened (text was cropped on the left); the hand is in frame from frame 1 (the hook); sleeve extended past the frame edge; the hand relit by the paper's illumination map.
+- v2 (2026-10-06, user feedback): "the hand is always cut off, it looks like a robot" → the first hand photo had the back of the hand touching the photo's right edge, so a straight cut appeared inside our frame; replaced by a photo with the whole hand inside (hand_c), sleeve extended past both edges, and a wrist-pivot motion model instead of rigid translation. "The text at the bottom is barely visible" → the footer line was wider than the frame and sat in the Shorts UI zone; now a two-line tag on a dark plate at the top-left. Voice switched to Grady (series rule), timeline re-cut to the new measured narration.
