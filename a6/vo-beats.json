@@ -1,0 +1,16 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "Can you write it off? Before anything else, CRA asks one question.", 0.28],
+  ["loop", "Did you spend it to earn income?", 0.36],
+  ["rule", "As a rule, a reasonable expense you pay to earn business income is deductible. Personal costs are not.", 0.28],
+  ["split", "Phone used sixty percent for the business? Twelve hundred a year becomes seven hundred twenty deductible.", 0.36],
+  ["capital", "Something that lasts for years, like a laptop or a car, isn't deducted all at once. It's claimed over time.", 0.28],
+  ["meals", "Business meals and entertainment? Generally, only half.", 0.36],
+  ["employee", "On a salary? You can deduct expenses only if your contract requires you to pay them.", 0.36],
+  ["proof", "And keep the receipts. Records generally have to be kept for six years.", 0.28],
+  ["payoff", "Earn income, keep it reasonable, claim only the business part, and keep the proof.", 0.24],
+  ["cta", "Follow for the real math.", 0.4]
+ ],
+ "tempo": 1.0
+}

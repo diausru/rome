@@ -1,0 +1,65 @@
+{
+ "total": 59.283,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Can you write it off? Before anything else, CRA asks one question.",
+   "start": 0.25,
+   "end": 6.304
+  },
+  {
+   "id": "loop",
+   "text": "Did you spend it to earn income?",
+   "start": 6.584,
+   "end": 8.526
+  },
+  {
+   "id": "rule",
+   "text": "As a rule, a reasonable expense you pay to earn business income is deductible. Personal costs are not.",
+   "start": 8.886,
+   "end": 16.331
+  },
+  {
+   "id": "split",
+   "text": "Phone used sixty percent for the business? Twelve hundred a year becomes seven hundred twenty deductible.",
+   "start": 16.611,
+   "end": 24.809
+  },
+  {
+   "id": "capital",
+   "text": "Something that lasts for years, like a laptop or a car, isn't deducted all at once. It's claimed over time.",
+   "start": 25.169,
+   "end": 33.882
+  },
+  {
+   "id": "meals",
+   "text": "Business meals and entertainment? Generally, only half.",
+   "start": 34.162,
+   "end": 38.322
+  },
+  {
+   "id": "employee",
+   "text": "On a salary? You can deduct expenses only if your contract requires you to pay them.",
+   "start": 38.682,
+   "end": 44.474
+  },
+  {
+   "id": "proof",
+   "text": "And keep the receipts. Records generally have to be kept for six years.",
+   "start": 44.834,
+   "end": 49.469
+  },
+  {
+   "id": "payoff",
+   "text": "Earn income, keep it reasonable, claim only the business part, and keep the proof.",
+   "start": 49.749,
+   "end": 57.203
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 57.443,
+   "end": 58.883
+  }
+ ]
+}

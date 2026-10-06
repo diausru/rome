@@ -1,0 +1,55 @@
+{
+ "video": {"title": "What makes an expense deductible", "duration": "59.79 s (1435 frames)", "mp4": "showreel/out/a6/a6-final.mp4 (share copy: a6-share.mp4)"},
+ "sources": [
+  "CRA Guide T4002, Chapter 3 (canada.ca) · current · a reasonable current expense incurred to earn business income is deductible; personal expenses aren't; claim only the business part; capital property via CCA",
+  "CRA — Line 8523, Meals and entertainment (canada.ca) · current · generally 50% (exceptions apply)",
+  "CRA Guide T4044 / line 22900 (canada.ca) · current · employees: only expenses the contract required them to pay (Form T2200)",
+  "CRA — Business records (canada.ca) · current · keep records generally six years from the end of the tax year they relate to",
+  "Example only: $1,200 phone bill × 60% business use = $720"
+ ],
+ "yt": {
+  "titles": ["Can You Write It Off? CRA's First Question", "Is It Tax Deductible in Canada? The 4-Part Test", "Write-Offs in Canada: What CRA Actually Allows"],
+  "description": "Can you write it off? Before anything else, CRA asks: did you spend it to earn income?\n\nThe general rule (CRA Guide T4002): a reasonable current expense you incur to earn business income is deductible; personal costs are not. Mixed use? Claim only the business part (example: a $1,200 phone bill used 60% for the business = $720).\nSomething that lasts for years, like a laptop or a car, isn't deducted all at once; it's claimed over time through capital cost allowance (CCA).\nBusiness meals and entertainment: generally only 50%.\nOn a salary? You can deduct employment expenses only if your contract requires you to pay them (your employer signs Form T2200).\nAnd keep the proof: records generally for six years.\n\nSources: CRA (canada.ca): T4002, line 8523, T4044, Business records. The phone example is an illustration. General information, not advice.\n\n#CanadaTax #SmallBusinessCanada #SelfEmployed",
+  "hashtags": "#CanadaTax #SmallBusinessCanada #SelfEmployed",
+  "keywords": "tax deductible expenses canada, can i write it off canada, business expenses cra, self employed deductions canada, capital cost allowance, meals and entertainment 50 percent, t2200 employment expenses, cra receipts 6 years",
+  "pinned": "The 4-part test: earn income · reasonable · business part only · keep proof. What's the expense you're never sure about? Drop it below (general info, not advice).",
+  "cta": "Follow Tax Secrets Canada for the real math; next: what records to keep, and for how long."
+ },
+ "tt": {
+  "caption": "Can you write it off? 🇨🇦 CRA asks one question first. Here's the 4-part test.",
+  "keywords": "write off canada · tax deductible expenses · self employed canada · small business taxes canada · cra rules",
+  "hashtags": "#smallbusinesscanada #selfemployed #canadiantaxes #cra #writeoff",
+  "pinned": "What's the expense you always wonder about? (General info, not advice.)",
+  "cta": "Follow for the next one: what receipts to keep and for how long."
+ },
+ "ig": {
+  "caption": "Can you write it off? CRA's first question: did you spend it to earn income? 🇨🇦\n\n✓ Reasonable cost to earn business income → deductible. Personal → not.\n✓ Mixed use → the business part only ($1,200 phone × 60% = $720, example).\n✓ Lasts for years → claimed over time (CCA).\n✓ Meals & entertainment → generally 50%.\n✓ Employees → only if your contract requires it (T2200).\n✓ Keep records → generally 6 years.\n\nSave this for tax season.\n\nSource: CRA (canada.ca). General info, not advice.",
+  "keywords": "tax deductions canada, write offs, small business canada, self employed taxes, cra",
+  "hashtags": "#smallbusinesscanada #selfemployedcanada #canadiantaxes #taxtips #entrepreneurcanada #canadatax",
+  "pinned": "Self-employed or salaried? 🙋 Which rule surprised you?",
+  "cta": "Save this for tax season."
+ },
+ "eng": {
+  "question": "What's the one expense you're never sure you can claim?",
+  "save": "The four-part test plus the 50% meals rule and the 6-year records rule.",
+  "share": "New freelancers, side-hustlers and small-business owners; salaried employees who assume they can deduct work costs.",
+  "follow": "Business-tax basics from a real accountant, with CRA sources on screen."
+ },
+ "seo": {
+  "primary": "tax deductible expenses Canada",
+  "secondary": "can I write it off; business expenses CRA; self-employed deductions Canada; capital cost allowance; meals and entertainment 50%; T2200",
+  "intent": "A freelancer, small-business owner or employee wants to know whether a specific cost can be deducted.",
+  "audience": "Self-employed people, side-hustlers and small-business owners aged 22–55; employees with work costs.",
+  "angle": "Replace 'write-off hacks' with CRA's actual test: income purpose, reasonableness, business part, capital vs current, proof.",
+  "questions": "What expenses can I deduct in Canada? · Can I write off my phone? · Can I deduct my laptop? · Are business meals deductible in Canada? · Can employees deduct expenses?",
+  "pain": "Fear of missing deductions versus fear of a CRA review for claiming the wrong thing."
+ },
+ "next": [
+  {"topic": "Records: what to keep and for how long (A7)", "why": "Next in the plan; the direct follow-up to 'keep the proof'", "intent": "how long to keep tax records canada", "hook": "Throwing out old receipts? Not so fast.", "angle": "The six-year rule and what counts as a record", "payoff": "A simple keep-list"},
+  {"topic": "Manitoba renters credit (H2)", "why": "Next in the plan; home-province audience", "intent": "manitoba renters tax credit", "hook": "Rent in Manitoba? There's a credit on your return.", "angle": "Verified 2026 amount and who qualifies", "payoff": "Where to claim it"},
+  {"topic": "Your first pay stub explained (G3)", "why": "Next in the plan; young audience", "intent": "pay stub deductions canada", "hook": "Your first paycheque is smaller than you expected. Here's why.", "angle": "CPP, EI and income tax, verified 2026 rates", "payoff": "Read your stub in 10 seconds"}
+ ],
+ "series": "Business Tax Basics (episode 1: what's deductible → records → tax per invoice → GST/HST). Playlist: 'Self-Employed Taxes Canada'.",
+ "research": "- vidIQ: balance 0 at production time (the user is subscribing) → no paid calls; WebSearch used for context. 'Write off' searches are dominated by US content; Canadian-specific framing (CRA, T4002, T2200) is the differentiator.\n- No 'loophole/secret' framing, per the channel rule.",
+ "retention": "Hook (0–2 s): a universal question ('Can you write it off?') plus 'one question' ✅. Open loop answered at 7 s, then a checklist that ticks on ✅. Visual: each rule is pinned onto a real object on the counter; the camera moves object to object ✅. Escalation: rule → split → capital → meals → employees → proof ✅. Payoff: a four-part checklist ✅. Weakest point: 9–16 s (the abstract rule); the owner at work plus the two-line card carry it."
+}
