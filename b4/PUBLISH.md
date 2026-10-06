@@ -7,8 +7,9 @@ Title: How Much of a $1,000 Invoice Is Actually Yours? (Self-Employed, Canada)
 Duration: 60.00 s (1440 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
-Render method: Code-built composite (Python / OpenCV). Still photo plate of the desk + matted still photo of a hand and pen (Higgsfield GPT Image 2.5 + background removal; no video generator). The whole hand, wrist and cuff are in the photo (sleeve extended past the frame edges); the hand rotates about a wrist that glides along the line, so the pen tip rides the ink head without rigid sliding. Ink is revealed only along single-line font strokes (EMS Tech) in natural stroke order with human jitter, warped onto the paper by its homography and multiplied into it. Virtual camera with operator micro-motion. Contact shadow, plate-matched lighting on the hand, film grain. Narration: ElevenLabs via Higgsfield text2speech_v2 (series voice "Grady"), long pauses shortened to 0.38 s and tempo ×1.07, placed on the master timeline, −14.1 LUFS integrated, −1.8 dBTP. Source tag: two lines on a near-opaque dark plate at the top-left (outside the Shorts bottom UI).
+Render method: Code-built composite (Python / OpenCV). Still photo plate of the desk + matted still photo of a hand and pen (Higgsfield GPT Image 2.5 + background removal; no video generator). The whole hand, wrist and cuff are in the photo (sleeve extended past the frame edges); the hand rotates about a wrist that glides along the line, so the pen tip rides the ink head without rigid sliding. Ink is revealed only along single-line font strokes (EMS Tech) in natural stroke order with human jitter, warped onto the paper by its homography and multiplied into it. Virtual camera with non-periodic handheld motion and push-ins on every marked sum. Living light (passing cloud, blind sway) and code-made coffee steam; 180° motion blur on big hand moves. Contact shadow, plate-matched lighting on the hand, film grain. Narration: ElevenLabs via Higgsfield text2speech_v2 (series voice "Grady"), long pauses shortened to 0.38 s and tempo ×1.07, placed on the master timeline, −14.1 LUFS integrated, −1.8 dBTP. Source tag: two lines on a near-opaque dark plate at the top-left (outside the Shorts bottom UI).
 Final MP4: b4/build/b4_final.mp4 (master, 230 MB); share copy b4/build/b4_share.mp4 (24 MB). Build outputs, not in git.
+Publishing page (Artifact): https://claude.ai/artifact/2Q8SiYJdJhLE8htrtvNbyk (source b4/publish-b4.html)
 
 ⸻
 
@@ -56,11 +57,12 @@ DRAWING TIMELINE
 [00:29.81–00:31.47] writes "≈27%"
 [00:31.52–00:32.25] circles "≈27%"
 [00:34.00–00:37.31] writes "next $1 ≈ 36¢"
+[00:37.37–00:37.57] underlines "36¢"
 [00:40.70–00:44.83] writes "set aside $270"
 [00:47.40–00:51.96] writes "> $3K → instalments"
 [00:54.70–00:55.42] circles "$270"
 [00:55.82–] hand withdraws toward the lower right
-[00:54.20–00:57.00] camera pulls back from the line to the whole page; holds to 01:00.00
+Camera: 00:00 wide on the desk (mug, steam, blank sheet) → push in by 00:02.9; push-ins on "≈27%" (00:31.6–00:33.4, held), "36¢" (00:37.2–00:39.6, held), "$270" (00:54.4–00:56.5, held); pull back over the whole page 00:56.5–00:58.7; holds to 01:00.00.
 Pen: black fine-liner throughout; stroke order from the single-line font; pen lifts between strokes (minimum-jerk moves).
 
 ⸻

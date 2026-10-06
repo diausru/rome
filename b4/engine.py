@@ -28,6 +28,20 @@ PX_PER_MM = 6.0                       # paper-space ink resolution
 PAPER_QUAD = np.float32([[232, 865], [1167, 731], [1349, 2074], [388, 2186]])   # TL, TR, BR, BL (plate px)
 HAND_TIP = np.float32([350, 953])     # pen tip in assets/hand_c_cut.png (whole hand inside the photo)
 HAND_WRIST = np.float32([985, 1825])  # wrist / cuff centre in the same photo (pivot for finger-scale strokes)
+# objects on the desk (plate px): excluded from the desk light estimate
+MUG = (170, 350, 160)                 # coffee surface centre and radius
+OBJ_CIRCLES = [(190, 370, 230)]
+OBJ_POLYS = [[[0, 500], [150, 500], [150, 720], [0, 720]], [[1170, 0], [1520, 0], [1520, 600], [1170, 600]],
+             [[1330, 850], [1520, 850], [1520, 1500], [1330, 1500]], [[0, 2140], [440, 2580], [400, 2688], [0, 2688]]]
+
+
+def cloud(t):
+    """Fraction of direct sun lost to a passing cloud at time t (two slow, soft passes and a faint shimmer)."""
+    def bump(t, c, w):
+        return math.exp(-((t - c) / w) ** 2)
+    return float(np.clip(0.42 * bump(t, 21.0, 3.2) + 0.30 * bump(t, 45.5, 2.6) + 0.02 * math.sin(2 * math.pi * 0.7 * t), 0, 0.6))
+
+
 HAND_SCALE = 0.92                     # matched by pen length: 538 px here vs 706 px in the first hand photo (×0.70)
 
 
@@ -202,6 +216,13 @@ class Timeline:
                 lift = 0.0 if u < 1 else 0.0
         return pos, lift
 
+    def moving(self, t):
+        """True while the pen is up and travelling (a 'move' segment): only then is the hand fast enough to blur."""
+        for t0, t1, kind, data in self.segs:
+            if t0 <= t < t1:
+                return kind == "move" and math.dist(data[0], data[1]) > 15.0   # line changes and retreats only
+        return False
+
     def ink_upto(self, t):
         """All draw segments (fully or partially) completed by time t: list of point lists."""
         out = []
@@ -265,6 +286,129 @@ class Renderer:
         n = self.rng.standard_normal((self.ink_h // 4, self.ink_w // 4)).astype(np.float32)
         n = cv2.resize(cv2.GaussianBlur(n, (0, 0), 1.2), (self.ink_w, self.ink_h))
         self.fibre = np.clip(0.93 + 0.05 * n, 0.82, 1.0)
+        self._init_light(plate)
+        self._init_steam()
+        self._init_camera_noise()
+
+    # ------------------------------------------------------------ living light (window blinds, passing cloud)
+    def _init_light(self, plate):
+        """Sun map s∈[0,1] over the whole plate: 1 inside a blind stripe of direct sun, 0 in the slat shade.
+        Paper: the illumination map of the blank sheet. Desk: local / regional luminance (normalised blur over wood
+        only), so the wood grain and the objects are not mistaken for light. Objects get an inpainted, smooth value."""
+        lum = cv2.cvtColor(plate, cv2.COLOR_BGR2GRAY).astype(np.float32)
+        h, w = lum.shape
+        paper = np.zeros((h, w), np.uint8)
+        cv2.fillConvexPoly(paper, PAPER_QUAD.astype(np.int32), 255)
+        obj = np.zeros((h, w), np.uint8)
+        for (cx, cy, r) in OBJ_CIRCLES:
+            cv2.circle(obj, (cx, cy), r, 255, -1)
+        for poly in OBJ_POLYS:
+            cv2.fillPoly(obj, [np.int32(poly)], 255)
+        desk = ((paper == 0) & (obj == 0)).astype(np.float32)
+        desk = cv2.erode(desk, np.ones((15, 15), np.uint8))
+
+        def nblur(x, m, sg):
+            return cv2.GaussianBlur(x * m, (0, 0), sg) / np.maximum(cv2.GaussianBlur(m, (0, 0), sg), 1e-4)
+        ratio = nblur(lum, desk, 10) / np.maximum(nblur(lum, desk, 90), 1.0)
+        lo, hi = np.percentile(ratio[desk > 0], [8, 92])
+        s_desk = np.clip((ratio - lo) / (hi - lo), 0, 1)
+        pm = paper > 0
+        plo, phi = np.percentile(self.illum[pm], [5, 97])
+        s_pap = np.clip((self.illum - plo) / (phi - plo), 0, 1)
+        sm = np.where(pm, s_pap, np.where(desk > 0, s_desk, 0)).astype(np.float32)
+        hole = ((~pm) & (desk == 0)).astype(np.uint8)
+        q = 4
+        small = cv2.resize(sm, (w // q, h // q), interpolation=cv2.INTER_AREA)
+        hs = cv2.resize(hole, (w // q, h // q), interpolation=cv2.INTER_NEAREST)
+        small = cv2.inpaint((small * 255).astype(np.uint8), hs, 9, cv2.INPAINT_TELEA).astype(np.float32) / 255
+        self.sun_small = cv2.GaussianBlur(small, (0, 0), 1.0)
+        # strength of the direct-sun component (lit / shade − 1): wood shows the stripes harder than the paper
+        g = np.where(pm, 0.20, 0.40).astype(np.float32)
+        self.gain = cv2.GaussianBlur(cv2.resize(g, (w // q, h // q), interpolation=cv2.INTER_AREA), (0, 0), 2)
+        self.sun_now = cv2.resize(self.sun_small, (w, h), interpolation=cv2.INTER_LINEAR)
+        d = np.float32([1.0, 1.06])
+        self.stripe_n = np.float32([d[1], -d[0]]) / np.linalg.norm(d)     # perpendicular to the blind stripes
+
+    def light_ratio(self, t):
+        """Per-pixel exposure ratio vs the photographed light at time t: a passing cloud dims the sun component,
+        a breeze sways the blind (the stripes drift a few pixels and back)."""
+        c = cloud(t)
+        sway = 5.0 * math.sin(2 * math.pi * 0.11 * t + 0.6) + 2.0 * math.sin(2 * math.pi * 0.29 * t + 2.1) \
+            + 1.2 * self._noise1d(t, 3)
+        q = 4
+        M = np.float32([[1, 0, self.stripe_n[0] * sway / q], [0, 1, self.stripe_n[1] * sway / q]])
+        s1 = cv2.warpAffine(self.sun_small, M, self.sun_small.shape[::-1], borderMode=cv2.BORDER_REFLECT)
+        s0 = self.sun_small
+        r = (1 + self.gain * (1 - c) * s1) / (1 + self.gain * s0)
+        return cv2.resize(r, (self.pw, self.ph), interpolation=cv2.INTER_LINEAR)[..., None]
+
+    # ------------------------------------------------------------ coffee steam (code-made wisps over the mug)
+    def _init_steam(self):
+        rng = np.random.default_rng(5)
+        self.st_q = 4
+        self.st_box = (0, 0, 760, 860)                                   # plate px window around the mug
+        bw, bh = (self.st_box[2] - self.st_box[0]) // self.st_q, (self.st_box[3] - self.st_box[1]) // self.st_q
+        self.st_shape = (bh, bw)
+        T = 256
+
+        def tile_noise(sg):                                              # periodic (tileable) Gaussian-filtered noise
+            f = np.fft.fft2(rng.standard_normal((T, T)))
+            k = np.fft.fftfreq(T)
+            g = np.exp(-2 * (math.pi * sg) ** 2 * (k[:, None] ** 2 + k[None, :] ** 2))
+            return np.real(np.fft.ifft2(f * g)).astype(np.float32)
+        self.st_n1 = tile_noise(4)
+        self.st_n2 = tile_noise(9)
+        for n in (self.st_n1, self.st_n2):
+            n /= n.std()
+        yy, xx = np.mgrid[0:bh, 0:bw].astype(np.float32)
+        self.st_xx, self.st_yy = xx, yy
+
+    def _wrap_sample(self, img, x, y):
+        T = img.shape[0]
+        return cv2.remap(img, np.mod(x, T).astype(np.float32), np.mod(y, T).astype(np.float32),
+                         cv2.INTER_LINEAR, borderMode=cv2.BORDER_WRAP)
+
+    def steam(self, t):
+        """Alpha of the steam layer in its window (low res). Seen from above, steam lifts toward the lens and is
+        carried by the room air toward the upper left; it curls and breaks up."""
+        q = self.st_q
+        cx, cy, r = MUG[0] / q, MUG[1] / q, MUG[2] / q
+        dv = np.float32([-0.55, -0.83])
+        x, y = self.st_xx, self.st_yy
+        px, py = x - cx, y - cy
+        a = px * dv[0] + py * dv[1]                                      # along the drift
+        b = -px * dv[1] + py * dv[0]                                     # across it
+        env = np.exp(-np.maximum(a, 0) / (2.2 * r)) * np.clip((a + 0.9 * r) / (0.9 * r), 0, 1)
+        env *= np.exp(-(b ** 2) / (2 * (0.55 * r + 0.25 * np.maximum(a, 0)) ** 2))
+        v = 7.0                                                          # low-res px / s
+        wx = 7 * self._wrap_sample(self.st_n2, x * 0.7 + 3.1 * t, y * 0.7 - 1.7 * t)
+        wy = 7 * self._wrap_sample(self.st_n2, x * 0.7 + 90 - 1.3 * t, y * 0.7 + 40 + 2.2 * t)
+        sx = x - dv[0] * v * t + wx
+        sy = y - dv[1] * v * t + wy
+        f = 0.65 * self._wrap_sample(self.st_n1, sx, sy) + 0.35 * self._wrap_sample(self.st_n1, sx * 2.1 + 50, sy * 2.1 + 9)
+        dens = np.clip(f * 0.9 - 0.15, 0, 1.6) * env
+        return np.clip(dens * 0.40, 0, 0.48)
+
+    # ------------------------------------------------------------ handheld operator noise (non-periodic)
+    def _init_camera_noise(self):
+        rng = np.random.default_rng(77)
+        self.nz_rate = 96
+        n = int(80 * self.nz_rate)
+        tracks = []
+        for k in range(6):
+            slow = cv2.GaussianBlur(rng.standard_normal((n, 1)).astype(np.float32), (0, 0), 0.9 * self.nz_rate)[:, 0]
+            fast = cv2.GaussianBlur(rng.standard_normal((n, 1)).astype(np.float32), (0, 0), 0.16 * self.nz_rate)[:, 0]
+            slow /= slow.std()
+            fast /= fast.std()
+            tracks.append(0.8 * slow + 0.35 * fast)
+        self.nz = np.stack(tracks)
+
+    def _noise1d(self, t, k):
+        i = t * self.nz_rate
+        i0 = int(i)
+        u = i - i0
+        i0 = min(max(i0, 0), self.nz.shape[1] - 2)
+        return float(self.nz[k, i0] * (1 - u) + self.nz[k, i0 + 1] * u)
 
     def ink_layer(self, strokes):
         cov = np.zeros((self.ink_h, self.ink_w), np.float32)
@@ -279,23 +423,19 @@ class Renderer:
         cov = cv2.GaussianBlur(cov, (0, 0), 0.6)
         return np.clip(cov, 0, 1) * self.fibre
 
-    def frame(self, tl, t, cam):
-        out = self.plate.copy()
-        # ink
-        cov = self.ink_layer(tl.ink_upto(t))
-        warped = cv2.warpPerspective(cov, H_INK, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
-        ink = np.float32([0.10, 0.09, 0.09])                  # BGR, near-black marker
-        out = out * (1 - warped[..., None] * (1 - ink[None, None, :]) * 0.94)
-        # hand: the wrist glides along the line (low-passed pen path); small strokes are made by rotating the hand
+    def hand_matrix(self, tl, t):
+        """Affine plate transform of the hand photo at time t, and the pen lift."""
+        # the wrist glides along the line (low-passed pen path); small strokes are made by rotating the hand
         # about the wrist, so the tip lands exactly on the ink head while the hand itself barely moves.
         pos, lift = tl.state(t)
         P = mm_to_plate(pos)
         lag = [tl.state(max(0.0, t - d))[0] for d in (0.0, 0.12, 0.25, 0.4, 0.55, 0.7)]
         ws = (sum(p[0] for p in lag) / len(lag), sum(p[1] for p in lag) / len(lag))
         base = math.radians(PAPER_ANGLE + (ws[0] - 110) * 0.05 + (ws[1] - 150) * 0.015
-                            + 0.4 * math.sin(2 * math.pi * 0.21 * t))           # slow drift + breathing
+                            + 0.4 * math.sin(2 * math.pi * 0.21 * t) + 0.25 * self._noise1d(t, 4))   # drift + breathing
         sc = 1.0 + 0.018 * lift
         v0 = self.tip - self.wrist                                               # wrist → tip in the photo
+
         def rot(v, a):
             return np.float32([v[0] * math.cos(a) - v[1] * math.sin(a), v[0] * math.sin(a) + v[1] * math.cos(a)])
         W = mm_to_plate(ws) - rot(v0, base) * sc                                 # wrist if the tip sat on the smoothed path
@@ -307,29 +447,64 @@ class Renderer:
         M[:, :2] = R
         M[:, 2] = W - R @ self.wrist
         M[:, 2] += P - (R @ self.tip + M[:, 2])                                  # exact tip contact
-        lift_px = np.float32([3.0, -9.0]) * lift            # pen lifts toward the camera: slight up-left drift
-        M[:, 2] += lift_px
-        ha = cv2.warpAffine(self.hand_a, M, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
-        hrgb = cv2.warpAffine(self.hand_rgb, M, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
-        # contact shadow: light from the upper left → shadow falls lower-right, separates with lift
-        off = np.float32([22 + 26 * lift, 30 + 30 * lift])
-        Ms = M.copy()
-        Ms[:, 2] += off
-        sh = cv2.warpAffine(self.hand_a, Ms, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
-        sh = cv2.GaussianBlur(sh, (0, 0), 14 + 10 * lift)
-        out = out * (1 - 0.42 * sh[..., None])
+        M[:, 2] += np.float32([3.0, -9.0]) * lift          # pen lifts toward the camera: slight up-left drift
+        return M, lift
+
+    def frame(self, tl, t, cam):
+        ratio = self.light_ratio(t)                          # living window light
+        out = self.plate * ratio
+        # ink
+        cov = self.ink_layer(tl.ink_upto(t))
+        warped = cv2.warpPerspective(cov, H_INK, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
+        ink = np.float32([0.10, 0.09, 0.09])                  # BGR, near-black marker
+        out = out * (1 - warped[..., None] * (1 - ink[None, None, :]) * 0.94)
+        # coffee steam over the mug, brighter where it crosses a sun stripe
+        x0, y0, x1, y1 = self.st_box
+        a = cv2.resize(self.steam(t), (x1 - x0, y1 - y0), interpolation=cv2.INTER_CUBIC)[..., None]
+        lit = (0.45 + 0.75 * self.sun_now[y0:y1, x0:x1])[..., None] * ratio[y0:y1, x0:x1]
+        col = np.float32([0.90, 0.92, 0.95])[None, None, :] * lit
+        out[y0:y1, x0:x1] = out[y0:y1, x0:x1] * (1 - a) + np.clip(col, 0, 1) * a
+        # hand, with a 180° shutter: fast pen-up moves are motion-blurred like real 24 fps footage
+        M0, lift0 = self.hand_matrix(tl, t)
+        Ma, _ = self.hand_matrix(tl, max(0.0, t - 1 / 96))
+        Mb, _ = self.hand_matrix(tl, t + 1 / 96)
+        travel = float(np.abs(Mb[:, 2] - Ma[:, 2]).max())
+        if travel > 4.0 and (tl.moving(t - 1 / 96) or tl.moving(t + 1 / 96)):
+            n = int(min(11, 4 + travel // 5))
+            samples = [self.hand_matrix(tl, max(0.0, t + (i / (n - 1) - 0.5) / 48)) for i in range(n)]
+        else:
+            samples = [(M0, lift0)]
+        ha = np.zeros((self.ph, self.pw), np.float32)
+        hpre = np.zeros((self.ph, self.pw, 3), np.float32)
+        sh = np.zeros((self.ph, self.pw), np.float32)
+        for M, lift in samples:
+            a_ = cv2.warpAffine(self.hand_a, M, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
+            rgb = cv2.warpAffine(self.hand_rgb, M, (self.pw, self.ph), flags=cv2.INTER_LINEAR)
+            ha += a_
+            hpre += rgb * a_[..., None]
+            # contact shadow: light from the upper left → shadow falls lower-right, separates with lift
+            Ms = M.copy()
+            Ms[:, 2] += np.float32([22 + 26 * lift, 30 + 30 * lift])
+            sh += cv2.GaussianBlur(cv2.warpAffine(self.hand_a, Ms, (self.pw, self.ph), flags=cv2.INTER_LINEAR),
+                                   (0, 0), 14 + 10 * lift)
+        ns = len(samples)
+        ha /= ns
+        sh /= ns
+        hrgb = hpre / ns / np.maximum(ha, 1e-4)[..., None]
+        out = out * (1 - (0.42 * sh)[..., None] * (0.55 + 0.45 * (1 - cloud(t))))
         # the hand is a few cm above the paper: it receives the same window light/shade, slightly softened
-        light = (0.25 + 0.80 * self.illum)[..., None]
+        light = (0.25 + 0.80 * self.illum)[..., None] * ratio
         out = out * (1 - ha[..., None]) + np.clip(hrgb * light, 0, 1) * ha[..., None]
-        # camera
         return self.camera(out, cam, t)
 
     def camera(self, img, cam, t):
         cx, cy, z = cam
-        # operator micro-motion
-        jx = 2.2 * math.sin(2 * math.pi * 0.31 * t + 0.4) + 1.3 * math.sin(2 * math.pi * 0.77 * t + 1.9)
-        jy = 1.8 * math.sin(2 * math.pi * 0.23 * t + 2.2) + 1.1 * math.sin(2 * math.pi * 0.91 * t + 0.3)
-        rot = 0.12 * math.sin(2 * math.pi * 0.17 * t + 1.1)
+        # handheld operator: smoothed random drift (non-periodic), a little roll and focus-breathing zoom
+        amp = (1.78 / z) ** 0.5                              # keep the shake similar on screen in a close-up
+        jx = 3.2 * amp * self._noise1d(t, 0)
+        jy = 2.8 * amp * self._noise1d(t, 1)
+        rot = 0.16 * self._noise1d(t, 2)
+        z = z * (1 + 0.004 * self._noise1d(t, 5))
         cw = self.pw / z
         s = OUT_W / cw
         M = cv2.getRotationMatrix2D((cx + jx, cy + jy), rot, s)

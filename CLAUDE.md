@@ -68,6 +68,13 @@ Every video ships with a complete, professional voiceover designed on the SAME m
 
 An additional Tax Secrets Canada mode: a realistic hand physically writes the explanation (numbers, arrows, circles, calculations) on paper, 9:16, 45–60 s. Style reference: `channel/refs/handwritten-reference.png` (reference only, never copied). Use it only when handwriting is the clearest way to explain the topic (§39); otherwise use the card format or a hybrid. Key rules: research and fact-check first; the VO is the master timeline; a drawing timeline with stroke order; ink is revealed only under the moving pen tip (no fades or typewriter effects); one continuous hand and pen; final delivery in the §37 structure plus the publishing package.
 
+### Handwritten mode: realism and delivery rules (user, 2026-10-06)
+
+- **Publishing artifact for every video:** besides `<project>/PUBLISH.md`, publish an Artifact page with the full publishing package (titles, description, hashtags, keywords, pinned comments, CTAs for YouTube / TikTok / Instagram, with copy buttons) and give the user the link.
+- **Natural camera:** handheld-style, non-periodic operator motion; motivated moves. **Push in on every sum that is circled or underlined** (hold while the narration lands it), then return to the line; establishing wide at the start, pull back to the whole page at the end.
+- **Living background:** the plate must never look frozen: window light that breathes (passing cloud, blind sway), steam from a hot drink, etc. All made in code, subtle and physically plausible.
+- **Maximum realism and quality:** 180° shutter motion blur on fast hand moves, light continuity between the hand, paper and desk, nothing that reads as CG or as a still photo.
+
 ## PUBLISHING & GROWTH ENGINE — MANDATORY final step (user, 2026-10-05; full text in `channel/PUBLISHING-ENGINE.md`)
 
 An MP4 is never "done". After visual, technical, factual and VO QC, research the current landscape for the topic (search intent, platform discovery, current Canadian tax news and questions), run a retention analysis (fix and re-render if weak), and write `<project>/PUBLISH.md` in the exact FINAL DELIVERY structure: video specs, VO + timecodes, fact sources (source · tax year · what it supports), YouTube (3 titles, description, hashtags, keywords, pinned comment, CTA), TikTok (caption, search keywords, hashtags, pinned comment, CTA), Instagram (caption, keywords, hashtags, pinned comment, one CTA), engagement strategy, SEO analysis, next 3 topics, series fit. Same facts everywhere; no engagement bait; no copied creator material.
