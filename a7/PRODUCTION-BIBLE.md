@@ -35,3 +35,4 @@ For individuals' personal returns, CRA's consumer pages say "at least six years 
 
 ## Revision log
 - Stills QC: the "destroy early" pin sat on the shelf at the right edge, under the card → moved onto the archive box; the "6 years" pin touched the strip → the rule framing was lowered.
+- Final: rendered and verified. 1080×1920, 24 fps, 1130 frames after mux (-shortest trims the last 3 hold frames to the 47.2 s audio), 47.2 s, clean decode, AAC 48 kHz, −14.1 LUFS; contact sheet from the final MP4 reviewed. Share copy a7-share.mp4.
