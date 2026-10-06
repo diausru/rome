@@ -3,7 +3,7 @@ TAX SECRETS CANADA
 REALISTIC HANDWRITTEN EXPLAINER
 
 VIDEO
-Title: Crossed $30K? When Freelancers Must Charge GST (Canada)
+Title: Crossed $30K? When You Must Register for GST in Canada
 Duration: 68.2 s (1636 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
@@ -86,8 +86,8 @@ Verification note: canada.ca cannot be opened from the build machine; claims wer
 
 YOUTUBE SHORTS
 
-Primary Title: Crossed $30K? When Freelancers Must Charge GST (Canada)
-Alternative A: The $30,000 GST Rule Isn't Per Year
+Primary Title: Crossed $30K? When You Must Register for GST in Canada
+Alternative A: GST Registration in Canada: The $30K Rule Isn't Per Year
 Alternative B: Freelancers: When Do You Have to Register for GST/HST?
 
 Description:
@@ -99,13 +99,13 @@ After that, a $1,000 invoice in Manitoba carries $50 of GST. That $50 was never 
 
 Source: CRA, "When to register for and start charging the GST/HST" (canada.ca). Example only; general information, not tax advice.
 
-#GST #SelfEmployed #CanadaTax
+#GSTRegistration #SelfEmployed #CanadaTax
 
 Hashtags:
-#GST #SelfEmployed #CanadaTax
+#GSTRegistration #SelfEmployed #CanadaTax
 
 Keywords:
-gst registration canada, do i need to charge gst, small supplier gst canada, gst threshold 30000, gst hst freelancer canada, when to register for gst, input tax credits canada, self employed taxes canada, side hustle taxes canada, manitoba gst
+gst registration canada, gst hst canada, gst canada, how does gst work, do i need to charge gst, small supplier gst canada, gst threshold 30000, gst hst freelancer canada, when to register for gst, input tax credits canada, self employed taxes canada, side hustle taxes canada, manitoba gst
 
 Pinned Comment:
 The part most people miss: it's ANY four quarters in a row, not your tax year. Are you tracking your last four quarters, or just your annual total?
@@ -195,7 +195,9 @@ Series fit: "Real Tax Math" (handwritten), episode after B4. Playlist: Self-Empl
 ========================================
 
 ## Research notes
-- vidIQ: balance 0 credits on 2026-10-06 (renews 2026-11-04). Demand research fell back to web search: freelancer guides consistently answer "do I need to charge GST under $30,000" and stress that the test is a rolling four-quarter window, which confirms the angle. Run one vidIQ keyword call ("gst registration canada", country CA) when credits are available and adjust the title and keywords if needed.
+- vidIQ keyword research (CA, 2026-10-06, after the subscription was activated): 'gst registration canada' ≈3,812 searches/mo, competition 6 (overall 69.7, the best ratio in the cluster); 'gst hst canada' ≈4,984/mo (competition 23); 'gst canada' ≈3,508/mo (12.4); 'how does gst work' ≈3,425/mo (23); 'hst' ≈10,003/mo (+85% vs its 30-day baseline). Exact phrases '30000 gst threshold', 'gst hst registration', 'input tax credits' are below 750/mo. Strategy: 'GST registration' goes into the primary title; the head terms go into the description and keywords.
+- vidIQ title score (short-form): 'GST Registration in Canada: The $30K Rule Isn't Per Year' 69 (one call; other titles not scored to save credits). Primary keeps the hook ('Crossed $30K?') and adds the keyword.
+- Web search (before vidIQ was active): freelancer guides stress the rolling four-quarter window, confirming the angle.
 
 ## Retention analysis
 - Hook (0–2 s): "$30K" is written on the first words and the question "tax collector?" opens the loop ✅
