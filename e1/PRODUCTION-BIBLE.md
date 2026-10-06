@@ -48,3 +48,4 @@ Break-even, simplified (labelled "simplified… ignoring inflation, tax and retu
 - VO: 60.79 s → atempo 1.03 → 59.24 s (no regeneration).
 - Stills QC: the "IT DEPENDS" card wrapped and overlapped → split into two short rows (question + outcome).
 - Render 1 verified (1428 frames, 59.50 s, clean decode, −14.0 LUFS). QC: the START AT 60 / WAIT TO 70 cards stood empty about 3.5 s before the total appeared → the monthly rate (−0.6%/month, +0.7%/month) now shows first and swaps to −36% / +42% on the VO word (Kit Hero `out`); lines shortened. Final render in progress.
+- Final: re-rendered and verified. 1080×1920, 24 fps, 1428 frames, 59.50 s, clean decode, AAC 48 kHz, −14.0 LUFS; rate→total swap checked on frames 300/360/480/560. Share copy e1-share.mp4 (CRF 20, 14.5 MB).
