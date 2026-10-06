@@ -198,6 +198,7 @@ Series fit: "Real Tax Math" (handwritten), after B5. Playlist: Self-Employed in 
 
 ## Research notes
 - vidIQ keyword research (CA, 2026-10-06, one call, seed "vehicle expenses self employed canada"): "how to write off your car" ≈4,226/mo (competition 45.5); "vehicle tax deductions" ≈3,651/mo (28.8); "self employed tax deductions" ≈3,850/mo (41); "self employed taxes" ≈4,780/mo (23.2); "tax tips canada" ≈5,298/mo (8.3); "tax write offs" ≈3,588/mo. Canadian exact phrases are below 750/mo. Strategy: the hook and title use the searched phrase "write off your car"; the description carries "vehicle tax deductions" and "self employed tax deductions".
+- vidIQ title score (short-form): 'How to Write Off Your Car in Canada (Self-Employed)' 89 (one call).
 - Web search: articles titled "CRA Mileage Rate 2026: the 73¢ rate, with one big catch" show the rate is widely confused with the self-employed method; the video corrects it with the Finance Canada source.
 
 ## Retention analysis
