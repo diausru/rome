@@ -74,3 +74,14 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - **Chosen voice: Grady** (user, 2026-10-06; the user has used it before). Higgsfield `generate_audio` with model `text2speech_v2`, variant `elevenlabs`, voice_type `preset`, voice_id `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678`. Keep it for the whole series. Test: 21 words in 7.97 s (≈158 wpm), mp3 44.1 kHz mono.
 - Network access to Higgsfield results now works (cloudfront `d8j0ntlcm91z4` / `d1xarpci4ikg0w`, `cdn.higgsfield.ai`): generate per beat, download, measure → master timeline → mux.
 - Topic order: follow `channel/PUBLISHING-PLAN.md` §4 (user, 2026-10-06: "go by the list"). Next: E3, E2, E1, D3, D6, E4, A6, …
+
+## Paid tools budget (user, 2026-10-06)
+
+- vidIQ: the user is on the minimum plan; use it sparingly, a little at a time. Check `vidiq_balance` (free) before any paid call. At most one paid vidIQ call per video (for example a single title score), only when free methods (WebSearch, keyword data already recorded in earlier PUBLISH.md files) can't answer. Never batch several paid calls. Report the credits spent in the reply.
+- Higgsfield: generate only the VO lines needed; re-generate only lines that changed.
+
+## Design direction (user, 2026-10-06; applies to the next videos, finished ones stay as they are)
+
+- Less background blur: the plate must read as a real scene with visible movement and detail (people and objects moving), not a wash.
+- More design and beauty in the foreground, but minimalist: one idea per card, clear hierarchy, clean and precise. Keep the layout (glass cards, typed captions, gold numbers, flag, sources footer).
+- Do not start the next topic until the user approves the improved look.
