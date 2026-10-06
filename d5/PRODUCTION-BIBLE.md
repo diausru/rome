@@ -47,3 +47,4 @@ Two parents earning $90,000 and $30,000; one child aged 3; daycare $9,000. The $
 ## 3. QC log
 - Stills v1: the example hero overflowed the card; the exceptions label wrapped into the first line; the backpack pin sat under the card → hero is "$8,000" with a line under it; label "EXCEPTIONS" plus a lead-in line; pin moved down onto the backpack. Re-checked: clear.
 - v2 (2026-10-06): three scenes + transitions + bridge CTA. Transition v1 showed a black edge at the peak (incoming plate offset) → reworked to an edge-to-edge push; re-checked frame by frame: seamless.
+- Final: 1572 frames (mux trims the hold to the audio length), 65.52 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.1 LUFS; contact sheet checked (3 scenes, same family); sent to the user; vidIQ title score 66; kit card #14.

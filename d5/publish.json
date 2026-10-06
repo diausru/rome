@@ -77,6 +77,6 @@
   }
  ],
  "series": "Family Money (CCB → child care expenses → RESP). Playlist: 'Families & Kids'.",
- "research": "- vidIQ (2026-10-06, 5 credits): 'child care expenses deduction canada' <750/mo; broad 'taxtips' ≈4,835/mo, 'canadian tax guide' ≈4,746/mo, 'canada tax' ≈4,177/mo → a situation hook for the feed; broad terms in the title and keywords.",
+ "research": "- vidIQ (2026-10-06, 5 credits): 'child care expenses deduction canada' <750/mo; broad 'taxtips' ≈4,835/mo, 'canadian tax guide' ≈4,746/mo, 'canada tax' ≈4,177/mo → a situation hook for the feed; broad terms in the title and keywords.\n- vidIQ title score (short-form, 5 credits): 'Paying for Daycare? Which Parent Claims It (Canada)' = 66. Only one score call per video (budget rule); the numeric alternative 'Daycare Tax Deduction in Canada: Up to $8,000 per Child' was not scored.",
  "retention": "Hook (0–2 s): 'Paying for daycare?' + 'only one parent can claim it' open loop; the goodbye hug, no card ✅. The answer ('lower net income') lands at 21 s and the example proves it at 34 s ✅. Bonus link to the CCB at the end rewards watching ✅. 65 s; three scenes (home → daycare → evening) change at the meaning shifts (who claims, exceptions), each with a whip-push transition, and the ending bridges to the next video; weakest point: 39–46 s (exceptions); kept to two bullets."
 }
