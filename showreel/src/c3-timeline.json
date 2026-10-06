@@ -1,0 +1,65 @@
+{
+ "total": 64.776,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "How does a small corporation in Manitoba pay just nine percent tax on its profit?",
+   "start": 0.25,
+   "end": 5.763
+  },
+  {
+   "id": "loop",
+   "text": "It's called the small business deduction.",
+   "start": 6.043,
+   "end": 8.635
+  },
+  {
+   "id": "rate",
+   "text": "On the first five hundred thousand of active business income, federal tax is nine percent, and Manitoba adds zero.",
+   "start": 8.995,
+   "end": 18.019
+  },
+  {
+   "id": "general",
+   "text": "Above that, the general rate: twenty-seven percent combined.",
+   "start": 18.339,
+   "end": 22.814
+  },
+  {
+   "id": "example",
+   "text": "Say your company earns a hundred and twenty thousand in profit. That's about ten thousand eight hundred in tax, instead of thirty-two thousand four hundred.",
+   "start": 23.134,
+   "end": 32.654
+  },
+  {
+   "id": "who",
+   "text": "It's for Canadian-controlled private corporations earning active business income.",
+   "start": 33.014,
+   "end": 38.17
+  },
+  {
+   "id": "traps",
+   "text": "Two traps: large investment income inside the company shrinks the limit, and an incorporated employee, a personal services business, doesn't get it at all.",
+   "start": 38.49,
+   "end": 49.875
+  },
+  {
+   "id": "catch",
+   "text": "And it's a deferral, not a gift. When you pay yourself dividends, you pay personal tax on them.",
+   "start": 50.235,
+   "end": 57.018
+  },
+  {
+   "id": "payoff",
+   "text": "Low rate inside the company, tax again on the way out. Plan both.",
+   "start": 57.338,
+   "end": 62.613
+  },
+  {
+   "id": "cta",
+   "text": "Follow for the real math.",
+   "start": 62.893,
+   "end": 64.376
+  }
+ ]
+}

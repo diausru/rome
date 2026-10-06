@@ -1,0 +1,15 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "How does a small corporation in Manitoba pay just nine percent tax on its profit?", 0.28],
+  ["loop", "It's called the small business deduction.", 0.36],
+  ["rate", "On the first five hundred thousand of active business income, federal tax is nine percent, and Manitoba adds zero.", 0.32],
+  ["general", "Above that, the general rate: twenty-seven percent combined.", 0.32],
+  ["example", "Say your company earns a hundred and twenty thousand in profit. That's about ten thousand eight hundred in tax, instead of thirty-two thousand four hundred.", 0.36],
+  ["who", "It's for Canadian-controlled private corporations earning active business income.", 0.32],
+  ["traps", "Two traps: large investment income inside the company shrinks the limit, and an incorporated employee, a personal services business, doesn't get it at all.", 0.36],
+  ["catch", "And it's a deferral, not a gift. When you pay yourself dividends, you pay personal tax on them.", 0.32],
+  ["payoff", "Low rate inside the company, tax again on the way out. Plan both.", 0.28],
+  ["cta", "Follow for the real math.", 0.4]
+ ]
+}
