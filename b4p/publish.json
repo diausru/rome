@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "Sole Proprietor Taxes in Canada: Same $60K, 9 Provinces (handwritten)",
+  "duration": "65.07 s (1561 frames)",
+  "mp4": "b4p/build/b4p_final.mp4 (share copy: b4p_share.mp4)"
+ },
+ "sources": [
+  "CRA T4127 Payroll Deductions Formulas (122nd ed. Jan 2026, 123rd ed. Jul 2026) and 2026 provincial budgets, as recorded in salary/PRODUCTION-BIBLE.md · 2026 · federal and provincial 2026 brackets and basic personal amounts; Ontario surtax and Health Premium → federal $5,155.43 and the provincial amounts on paper",
+  "CRA / ESDC 2026 CPP for the self-employed (11.9%, $3,500 exemption, YMPE $74,600); canada.ca lines 22200 / 31000 · 2026 · CPP $6,723.50, identical in every province outside Québec",
+  "BC Budget 2026 (BC tax reduction: $690 maximum, phased out by $44,952 of net income) · 2026 · no BC low-income reduction at this income",
+  "Example (not a CRA rule, b4p/calc.py): single, $60,000 net self-employment income, no other income or deductions. Provincial tax: BC $2,363 · AB $2,441 · ON $2,724 · SK $3,485 · NB $3,896 · NL $4,157 · MB $4,227 · PE $4,515 · NS $5,179. Gap $2,816. Verification note: rates were cross-checked to the dollar at $100K against catax.tools for BC, AB, ON, SK, MB and NS (salary project). canada.ca cannot be opened from the build machine."
+ ],
+ "yt": {
+  "titles": [
+   "Sole Proprietor Taxes in Canada: Same $60K, 9 Provinces",
+   "Same $60K Freelancer, 9 Provinces: Who Pays the Most Tax?",
+   "Self-Employed in Canada? Your Province Changes Your Tax Bill"
+  ],
+  "description": "Same $60,000 of freelance profit, nine provinces, and a $2,816-a-year gap. Federal tax and CPP are the same everywhere (about $11,879); the difference is provincial tax.\n\nProvincial tax on $60K net self-employment income (2026, single, no other income or deductions): B.C. $2,363 · Alberta $2,441 · Ontario $2,724 · Manitoba $4,227 · Nova Scotia $5,179 (highest). So the share to set aside runs from about 23.7% in B.C. to 28.4% in Nova Scotia. Québec isn't included: it has its own return and pension plan.\n\nNext: what a $5,000 RRSP contribution does to this bill.\n\nSources: CRA T4127 (2026), 2026 provincial budgets, CRA self-employed CPP. Example only; general information, not tax advice.\n\n#SelfEmployed #CanadaTax #SoleProprietor",
+  "hashtags": "#SelfEmployed #CanadaTax #SoleProprietor",
+  "keywords": "sole proprietor taxes canada, self employed taxes by province, self employed tax return canada, self employed taxes explained, taxes in canada, freelancer taxes canada, provincial tax comparison 2026, bc vs alberta taxes, self employed taxes",
+  "pinned": "Numbers are for 2026, single, $60K net self-employment income, no other income. Which province are you in, and how close is your set-aside to these numbers?",
+  "cta": "Next: what a $5,000 RRSP does to this bill. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Same $60K freelance profit. 9 provinces. One pays $2,816 more a year 🇨🇦 (2026 math)",
+  "keywords": "self employed tax by province · sole proprietor taxes canada · freelancer taxes canada 2026 · bc vs alberta taxes · provincial tax comparison",
+  "hashtags": "#selfemployedcanada #canadiantaxes #freelancecanada #soleproprietor #personalfinancecanada",
+  "pinned": "Drop your province 👇 Example only: $60K net, single, 2026.",
+  "cta": "Follow for the RRSP episode next."
+ },
+ "ig": {
+  "caption": "Your province is part of your tax rate. 🇨🇦\n\nSame $60K of freelance profit (2026, single): federal tax + CPP ≈ $11,879 everywhere. Provincial tax: B.C. $2,363 · Alberta $2,441 · Ontario $2,724 · Manitoba $4,227 · Nova Scotia $5,179. Gap: $2,816 a year for the same work. Set-aside: 23.7% to 28.4%.\n\nQuébec not included (own return). Sources: CRA T4127 2026, provincial budgets. Example only, general info, not advice.",
+  "keywords": "self employed canada, sole proprietor taxes, provincial tax, freelancer taxes, canada tax 2026",
+  "hashtags": "#selfemployedcanada #canadiantaxes #soleproprietor #freelancelife #smallbusinesscanada #taxtips",
+  "pinned": "Did Alberta not being #1 surprise you? 👇",
+  "cta": "Follow for the RRSP episode next."
+ },
+ "eng": {
+  "question": "Which province are you in, and does your set-aside match?",
+  "save": "Five provincial numbers and the set-aside range on one page.",
+  "share": "A freelancer thinking about moving provinces, or anyone who says Alberta always has the lowest tax.",
+  "follow": "The self-employed series continues with the RRSP episode (bridge CTA)."
+ },
+ "seo": {
+  "primary": "sole proprietor taxes canada",
+  "secondary": "sole proprietor taxes canada (vidIQ ≈4,868/mo, competition 12.8); self employed tax return canada (≈4,489/mo); self employed taxes explained (≈3,736/mo); taxes in canada (≈3,485/mo)",
+  "intent": "A freelancer wants to know how much their province changes the tax bill.",
+  "audience": "Canadian sole proprietors and freelancers, including people considering a move between provinces",
+  "angle": "Federal tax and CPP are identical; the whole gap is provincial, and Alberta isn't #1 at $60K.",
+  "questions": "Which province has the lowest tax for self-employed? · How much tax on $60,000 self-employed in Ontario / BC / Alberta? · Is Alberta cheaper for freelancers? · How much should I set aside in my province?",
+  "pain": "Not knowing which set-aside percentage applies; comparing provinces before a move."
+ },
+ "next": [
+  {
+   "topic": "RRSP for the self-employed: $5,000 into the B4 math (promised in this video's CTA)",
+   "why": "shows the marginal-rate twist; direct continuation",
+   "intent": "should self employed contribute to RRSP",
+   "hook": "Put $5,000 in an RRSP. Watch the $16,106 shrink.",
+   "angle": "the deduction saves at the marginal rate, not the average",
+   "payoff": "before/after numbers side by side"
+  },
+  {
+   "topic": "Freelancer year one, month by month (B7)",
+   "why": "ties B4, B5, B6, B3 into one checklist",
+   "intent": "first year self employed canada taxes",
+   "hook": "Your first year freelancing: four numbers to watch.",
+   "angle": "one calendar with every deadline",
+   "payoff": "a written timeline (dates to verify)"
+  },
+  {
+   "topic": "Tax instalments: the dates and the $3,000 rule",
+   "why": "\"how to pay quarterly taxes self employed\" ≈4,333/mo (vidIQ)",
+   "intent": "how to pay quarterly taxes self employed canada",
+   "hook": "Owe more than $3,000? CRA may want it four times a year.",
+   "angle": "the reminder letters and the interest",
+   "payoff": "the four dates and how the amounts are set (verify on canada.ca)"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B3. Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ keyword research (CA, 2026-10-07, one call, seed \"self employed tax by province canada\"): \"sole proprietor taxes canada\" ≈4,868/mo, competition 12.8 (overall 67.9, the best ratio); \"self employed tax return canada\" ≈4,489/mo (18); \"self employed taxes explained\" ≈3,736/mo; \"how to pay quarterly taxes self employed\" ≈4,333/mo (18.4) → topic 3 above. The exact phrase is below 750/mo. Strategy: \"Sole Proprietor Taxes in Canada\" leads the title.\n- BC Budget 2026: BC tax reduction confirmed zero at this income.",
+ "retention": "- Hook (0–2 s): same money, nine provinces, \"the bill isn't the same\" (open loop: who pays most?) ✅\n- Visual change: a new province line every 2–3 s through 33 s; two push-ins (gap, set-aside range) ✅\n- Escalation: same federal → provincial list → highest → gap → what it means for the set-aside → bridge ✅\n- Weakest moment: 4.4–7.7 s (no new ink while the hook line finishes); the camera pushes in. Acceptable.\n- Payoff: the $2,816 gap circled, then the bridge line written on paper ✅",
+ "_label": "B4P · $60K, 9 provinces (handwritten)",
+ "_mp4": "b4p_share.mp4",
+ "_vo": "Same sixty thousand dollars of freelance profit. Nine provinces. The tax bill isn't the same. Federal tax and C-P-P are the same everywhere: about eleven thousand, nine hundred. The difference is the provincial tax. B.C.: about two thousand, three hundred and sixty. Alberta: twenty-four forty. Ontario: twenty-seven twenty-four. Manitoba, our home: four thousand, two hundred and twenty-seven. Nova Scotia: five thousand, one hundred and seventy-nine. The highest. Top to bottom: two thousand, eight hundred and sixteen dollars a year. For the same work. So your set-aside isn't one number. Here it runs from under twenty-four percent to over twenty-eight. Quebec isn't on this page. It has its own return and its own pension plan. Next: what a five-thousand-dollar R-R-S-P does to this bill. Follow so you don't miss it.",
+ "_votc": "[00:00.20–00:07.24] \"Same sixty thousand dollars of freelance profit. Nine provinces. The tax bill isn't the same.\"\n[00:07.57–00:13.76] \"Federal tax and C-P-P are the same everywhere: about eleven thousand, nine hundred.\"\n[00:14.04–00:16.02] \"The difference is the provincial tax.\"\n[00:16.32–00:19.43] \"B.C.: about two thousand, three hundred and sixty.\"\n[00:19.74–00:24.48] \"Alberta: twenty-four forty. Ontario: twenty-seven twenty-four.\"\n[00:24.81–00:29.81] \"Manitoba, our home: four thousand, two hundred and twenty-seven.\"\n[00:30.13–00:35.05] \"Nova Scotia: five thousand, one hundred and seventy-nine. The highest.\"\n[00:35.45–00:42.16] \"Top to bottom: two thousand, eight hundred and sixteen dollars a year. For the same work.\"\n[00:42.48–00:50.79] \"So your set-aside isn't one number. Here it runs from under twenty-four percent to over twenty-eight.\"\n[00:51.15–00:56.66] \"Quebec isn't on this page. It has its own return and its own pension plan.\"\n[00:57.11–01:04.47] \"Next: what a five-thousand-dollar R-R-S-P does to this bill. Follow so you don't miss it.\""
+}
