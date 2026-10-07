@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "RRSP for the Self-Employed in Canada: What $5,000 Really Saves (handwritten)",
+  "duration": "69.35 s (1664 frames)",
+  "mp4": "rrsp-se/build/rrsp_final.mp4 (share copy: rrsp_share.mp4)"
+ },
+ "sources": [
+  "CRA RRSP limits (canada.ca), as reported by Questrade, TD, Fidelity and Wealthsimple · 2026 · 2026 RRSP dollar limit $33,810; 18% of the previous year's earned income; deadline March 1, 2027 for the 2026 tax year",
+  "taxtips.ca (RRSP and CPP); CRA Schedule 8 / line 22200 · current · RRSP contributions do not reduce CPP contributions; self-employed CPP is based on net self-employment income",
+  "CRA T4127 (Jan 2026), Manitoba 2026 rates (as in b4/PRODUCTION-BIBLE.md) · 2026 · federal −$700.00 (14%), Manitoba −$637.50 (12.75%) on a $5,000 deduction in this example",
+  "Example (not a CRA rule, rrsp-se/calc.py): the B4 freelancer (2026, Manitoba, single, $60,000 net self-employment income) with enough RRSP room. Total tax + CPP $16,105.48 → $14,767.98; saving $1,337.50 (26.75%). Verification note: canada.ca cannot be opened from the build machine; claims were checked through search results. Check your own room on your notice of assessment or in CRA My Account."
+ ],
+ "yt": {
+  "titles": [
+   "RRSP for the Self-Employed in Canada: What $5,000 Really Saves",
+   "Self-Employed? Your RRSP Saves Less Than You Think",
+   "RRSP Explained for Freelancers: 27¢, Not 36¢"
+  ],
+  "description": "Self-employed in Canada and thinking about an RRSP? Here's what a $5,000 contribution really does to the tax bill.\n\nExample (2026, Manitoba, single, $60K net self-employment income, enough RRSP room): taxable income drops by $5,000. Federal tax −$700, Manitoba tax −$637.50. The bill goes from about $16,106 to $14,768: about $1,338 saved, roughly 27¢ per dollar. Not 36¢, because self-employed CPP is based on business income and doesn't go down.\n\nRules: your room is 18% of last year's earned income, up to $33,810 for 2026 (check your notice of assessment). Contribute by March 1, 2027 for 2026. It's a deferral: withdrawals are taxed later.\n\nNext: tax instalments and the $3,000 rule.\n\nSources: CRA (canada.ca) RRSP limits; CRA T4127 2026. Example only; general information, not tax advice.\n\n#RRSP #SelfEmployed #CanadaTax",
+  "hashtags": "#RRSP #SelfEmployed #CanadaTax",
+  "keywords": "rrsp canada, rrsp explained, rrsp self employed canada, rrsp tax refund, rrsp contribution limit 2026, rrsp deadline 2027, self employed taxes canada, sole proprietor taxes canada, rrsp vs tfsa",
+  "pinned": "The part that surprises freelancers: the RRSP cuts income tax, not CPP. Did you expect 36¢ back per dollar?",
+  "cta": "Next: tax instalments and the $3,000 rule. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Freelancer puts $5K in an RRSP. How much tax comes back? 🇨🇦 (Spoiler: not 36¢ per dollar.)",
+  "keywords": "rrsp self employed canada · rrsp tax refund · rrsp explained · rrsp deadline 2027 · freelancer taxes canada",
+  "hashtags": "#rrsp #selfemployedcanada #canadiantaxes #freelancecanada #personalfinancecanada",
+  "pinned": "Example only: MB 2026, $60K net. RRSP or TFSA first for you? 👇",
+  "cta": "Follow for tax instalments next."
+ },
+ "ig": {
+  "caption": "A $5,000 RRSP saves a freelancer about $1,338, not $1,800. 🇨🇦\n\n2026 Manitoba example ($60K net self-employed): federal −$700, Manitoba −$637.50, CPP unchanged. That's about 27¢ per dollar, because CPP is based on business income, not taxable income.\n\nRoom: 18% of last year's earned income, max $33,810. Deadline for 2026: March 1, 2027. Withdrawals are taxed later.\n\nSources: CRA (canada.ca). Example only, general info, not advice.",
+  "keywords": "rrsp canada, rrsp explained, self employed rrsp, rrsp deadline, canada tax tips",
+  "hashtags": "#rrsp #selfemployedcanada #canadiantaxes #personalfinancecanada #freelancelife #taxtips",
+  "pinned": "Did you know RRSPs don't lower CPP? 👇",
+  "cta": "Follow for tax instalments next."
+ },
+ "eng": {
+  "question": "Did you expect 36¢ back per dollar?",
+  "save": "The before/after bill and the RRSP rules (room, limit, deadline) on one page.",
+  "share": "A freelancer deciding between an RRSP and a TFSA before March 1.",
+  "follow": "The self-employed series continues with tax instalments (bridge CTA)."
+ },
+ "seo": {
+  "primary": "rrsp canada",
+  "secondary": "rrsp canada (vidIQ ≈4,423/mo, competition 8.3); rrsp explained (≈4,494/mo); rrsp vs tfsa (≈5,056/mo); rrsp (≈5,076/mo)",
+  "intent": "A self-employed Canadian wants to know what an RRSP contribution actually saves.",
+  "audience": "Freelancers and sole proprietors deciding on an RRSP before the deadline",
+  "angle": "The RRSP saves income tax at the marginal rate, but self-employed CPP doesn't drop: 27¢, not 36¢.",
+  "questions": "How much tax does an RRSP save if I'm self-employed? · Does an RRSP reduce CPP? · What is the 2026 RRSP limit? · When is the RRSP deadline for 2026?",
+  "pain": "Expecting a bigger refund than the RRSP delivers; not knowing the room or the deadline."
+ },
+ "next": [
+  {
+   "topic": "Tax instalments and the $3,000 rule (promised in this video's CTA)",
+   "why": "\"how to pay quarterly taxes self employed\" ≈4,333/mo (vidIQ)",
+   "intent": "how to pay tax instalments canada self employed",
+   "hook": "Owe more than $3,000? CRA may want it four times a year.",
+   "angle": "the reminders and the interest",
+   "payoff": "the four dates and the three ways amounts are set (verify on canada.ca)"
+  },
+  {
+   "topic": "RRSP vs TFSA for the self-employed",
+   "why": "\"rrsp vs tfsa\" ≈5,056/mo; this video's 27¢ result changes the comparison",
+   "intent": "rrsp vs tfsa self employed",
+   "hook": "27¢ back per dollar. Is the TFSA better for you?",
+   "angle": "today's rate vs the rate at withdrawal",
+   "payoff": "a written comparison (mechanics only, not investment advice)"
+  },
+  {
+   "topic": "Freelancer year one, month by month (B7)",
+   "why": "ties the series into one checklist",
+   "intent": "first year self employed canada taxes",
+   "hook": "Your first year freelancing: four numbers to watch.",
+   "angle": "one calendar with every deadline",
+   "payoff": "a written timeline (dates to verify)"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B4P. Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ keyword research (CA, 2026-10-07, one call, seed \"rrsp self employed canada\"): \"rrsp canada\" ≈4,423/mo (competition 8.3, overall 69.3); \"rrsp explained\" ≈4,494/mo (15.4); \"rrsp vs tfsa\" ≈5,056/mo (14); \"rrsp\" ≈5,076/mo (−46% vs its 30-day baseline, seasonal: RRSP searches peak before the March deadline). Exact phrases are below 750/mo.\n- Timing note: RRSP interest rises in January–February (deadline season); this Short is evergreen and can be re-promoted then.",
+ "retention": "- Hook (0–2 s): a concrete amount and a direct question ✅\n- Visual change: a new line every 2–4 s; two push-ins ($1,338 and 27¢) ✅\n- Escalation: bill → deduction → federal → provincial → new bill → the twist (27¢ vs 36¢) → why (CPP) → rules → bridge ✅\n- Weakest moment: 3.9–10.0 s (no new ink while the setup line is spoken); the camera pushes in from the wide shot. Acceptable.\n- Payoff: the twist is explained by \"CPP: no change\"; the bridge line is written on paper ✅",
+ "_label": "RRSP-SE · $5K RRSP (handwritten)",
+ "_mp4": "rrsp_share.mp4",
+ "_vo": "Put five thousand dollars into an R-R-S-P. How much of your tax bill goes away? Same freelancer: sixty thousand net, Manitoba. The bill was about sixteen thousand, one hundred. The R-R-S-P deduction cuts taxable income by five thousand. Federal tax drops seven hundred. Manitoba tax drops about six hundred and thirty-eight. New bill: about fourteen thousand, seven hundred and sixty-eight. You saved about one thousand, three hundred and thirty-eight. That's about twenty-seven cents per dollar. Not thirty-six. Why? Your C-P-P doesn't go down. It's based on your business income, not your taxable income. Your room is eighteen percent of last year's earned income, up to thirty-three thousand, eight hundred and ten. For twenty twenty-six, contribute by March first, twenty twenty-seven. And it's a deferral. You pay tax when you take the money out. Next: tax instalments, and the three-thousand-dollar rule. Follow so you don't miss it.",
+ "_votc": "[00:00.20–00:06.33] \"Put five thousand dollars into an R-R-S-P. How much of your tax bill goes away?\"\n[00:06.63–00:13.91] \"Same freelancer: sixty thousand net, Manitoba. The bill was about sixteen thousand, one hundred.\"\n[00:14.18–00:18.91] \"The R-R-S-P deduction cuts taxable income by five thousand.\"\n[00:19.18–00:24.99] \"Federal tax drops seven hundred. Manitoba tax drops about six hundred and thirty-eight.\"\n[00:25.29–00:33.18] \"New bill: about fourteen thousand, seven hundred and sixty-eight. You saved about one thousand, three hundred and thirty-eight.\"\n[00:33.54–00:37.75] \"That's about twenty-seven cents per dollar. Not thirty-six.\"\n[00:38.03–00:45.89] \"Why? Your C-P-P doesn't go down. It's based on your business income, not your taxable income.\"\n[00:46.24–00:53.55] \"Your room is eighteen percent of last year's earned income, up to thirty-three thousand, eight hundred and ten.\"\n[00:53.83–00:57.93] \"For twenty twenty-six, contribute by March first, twenty twenty-seven.\"\n[00:58.24–01:02.05] \"And it's a deferral. You pay tax when you take the money out.\"\n[01:02.45–01:08.75] \"Next: tax instalments, and the three-thousand-dollar rule. Follow so you don't miss it.\""
+}
