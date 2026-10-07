@@ -1,5 +1,5 @@
 {
- "total": 64.776,
+ "total": 69.733,
  "beats": [
   {
    "id": "hook",
@@ -10,56 +10,56 @@
   {
    "id": "loop",
    "text": "It's called the small business deduction.",
-   "start": 6.043,
-   "end": 8.635
+   "start": 6.003,
+   "end": 8.595
   },
   {
    "id": "rate",
    "text": "On the first five hundred thousand of active business income, federal tax is nine percent, and Manitoba adds zero.",
-   "start": 8.995,
-   "end": 18.019
+   "start": 8.835,
+   "end": 17.859
   },
   {
    "id": "general",
    "text": "Above that, the general rate: twenty-seven percent combined.",
-   "start": 18.339,
-   "end": 22.814
+   "start": 18.099,
+   "end": 22.574
   },
   {
    "id": "example",
    "text": "Say your company earns a hundred and twenty thousand in profit. That's about ten thousand eight hundred in tax, instead of thirty-two thousand four hundred.",
-   "start": 23.134,
-   "end": 32.654
+   "start": 22.814,
+   "end": 32.334
   },
   {
    "id": "who",
    "text": "It's for Canadian-controlled private corporations earning active business income.",
-   "start": 33.014,
-   "end": 38.17
+   "start": 32.574,
+   "end": 37.73
   },
   {
    "id": "traps",
    "text": "Two traps: large investment income inside the company shrinks the limit, and an incorporated employee, a personal services business, doesn't get it at all.",
-   "start": 38.49,
-   "end": 49.875
+   "start": 37.97,
+   "end": 49.355
   },
   {
    "id": "catch",
    "text": "And it's a deferral, not a gift. When you pay yourself dividends, you pay personal tax on them.",
-   "start": 50.235,
-   "end": 57.018
+   "start": 49.595,
+   "end": 56.378
   },
   {
    "id": "payoff",
    "text": "Low rate inside the company, tax again on the way out. Plan both.",
-   "start": 57.338,
-   "end": 62.613
+   "start": 56.618,
+   "end": 61.893
   },
   {
    "id": "cta",
-   "text": "Follow for the real math.",
-   "start": 62.893,
-   "end": 64.376
+   "text": "Next: sold a stock for a profit? Why only half of it is taxed. Follow so you don't miss it.",
+   "start": 62.133,
+   "end": 69.493
   }
  ]
 }

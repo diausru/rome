@@ -41,8 +41,10 @@ Manitoba CCPC, $120,000 of active business income, no associated corporations, A
 | PINS | folders "9%" · laptop "≈ $10,800 tax vs $32,400" · mug "passive income over $50,000: limit shrinks" · keys "dividends: taxed personally" |
 | STRIP | limit $500,000 · small business 9% · general 27% · ✓ CCPC · active income · ✗ passive over $50K shrinks it |
 | LIVE | steam from the mug; camera between owner, employee and bench |
-| VOICE | Grady; 142 words; 64.78 s (inside the tolerance); CTA reused from G3 |
-| RENDER | 1080×1920, 24 fps, 1567 frames (65.3 s) |
+| VOICE | Grady; 157 words; 69.73 s (inside the tolerance after trimming pauses to ≤0.24 s, no new credits); bridge CTA (new line): "Next: sold a stock for a profit? Why only half of it is taxed. Follow so you don't miss it." |
+| SCENES | Series upgrade: three plates of the same cabinetmaker (workshop plate as image reference; gpt_image_2_5 + 4K upscale each): 1) `c3-s1-4k.jpg` morning, sliding the workshop door open (hook → general); 2) `c3-4k.jpg` the working day (example → who); 3) `c3-s3-4k.jpg` evening at the corner desk under a lamp (traps → end). Cuts at `example` and `traps` with SceneCuts. Checked: no text, same person |
+| RENDER | 1080×1920, 24 fps, 1686 frames (70.2 s) |
 
 ## 3. QC log
 - Stills v1: first 9 s keep the top clear (owner visible); pins placed below the strip by lowering the camera key at example/traps; all cards fit. No changes needed.
+- v2 (2026-10-07): three scenes + bridge CTA; VO 70.65 s with the longer CTA → pauses trimmed to ≤0.24 s → 69.73 s. Stills re-checked (scenes, both transitions, CTA).
