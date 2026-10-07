@@ -1,0 +1,86 @@
+{
+ "video": {
+  "title": "Work From Home Tax Deduction in Canada (handwritten)",
+  "duration": "65.92 s (1582 frames)",
+  "mp4": "b3/build/b3_final.mp4 (share copy: b3_share.mp4)"
+ },
+ "sources": [
+  "canada.ca — Business-use-of-home expenses (CRA) · current rules (checked 2026-10-07 via search results) · conditions (principal place of business, or used only for business and regularly to meet clients); eligible expenses (heat, electricity, water, insurance, maintenance, mortgage interest, property taxes, rent); business area ÷ total area × expenses; reduce further for personal use; no loss, carry forward",
+  "Professional commentary on CCA and the principal residence exemption (IG Wealth Management, wealthnorth.ca, TD tax planning guide; via search) · current · claiming CCA on a home office can create tax (recapture / reduced principal residence exemption) when the home is sold; the video only says \"can cost you when you sell. Get advice first\"",
+  "Example (not a CRA rule, b3/calc.py): 120 ÷ 1,000 = 12%; 12% × $20,200 = $2,424; in the B4 example (2026, Manitoba, single, $60,000 net self-employment income) tax + CPP falls by $862.05. Scope: self-employed (T2125). Employees use different rules (T2200 / T777) and are not covered. Verification note: canada.ca cannot be opened from the build machine; claims were checked through search results. Open the CRA business-use-of-home page once before publishing."
+ ],
+ "yt": {
+  "titles": [
+   "Work From Home Tax Deduction in Canada (Self-Employed)",
+   "Your Rent Isn't a Write-Off. Your Office Might Be.",
+   "Home Office Deduction for the Self-Employed: The Real Math"
+  ],
+  "description": "Self-employed and working from home? Your rent isn't the write-off. The business share of your home is, if the space qualifies.\n\nThe test: the workspace is your main place of business, or it's used only for business and to meet clients regularly. Example: 120 sq ft office in a 1,000 sq ft apartment = 12%. Rent, utilities and insurance of $20,200 × 12% = $2,424 deduction, about $862 of tax and CPP saved in our 2026 Manitoba example ($60K net self-employment income).\n\nThree limits: shared space is cut again by business hours; the claim can't create a business loss (the extra carries forward); and owners should get advice before claiming depreciation (CCA) on the home.\n\nThis covers the self-employed only; employees have different rules. Source: CRA, business-use-of-home expenses (canada.ca). Example only; general information, not tax advice.\n\n#WorkFromHome #SelfEmployed #CanadaTax",
+  "hashtags": "#WorkFromHome #SelfEmployed #CanadaTax",
+  "keywords": "work from home tax deduction, home office deduction canada, business use of home expenses, self employed home office canada, cra home office, home office expenses canada, self employed tax deductions, tax write offs, tax tips canada",
+  "pinned": "Quick check: is your workspace your main place of business, or a corner of the kitchen table? That one fact changes the claim. (Self-employed rules; employees use different ones.)",
+  "cta": "Follow Tax Secrets Canada for the real math behind self-employed taxes."
+ },
+ "tt": {
+  "caption": "Work from home? 🏠🇨🇦 Your rent isn't a write-off, but your office square feet might be. Self-employed math (2026 example).",
+  "keywords": "work from home tax deduction canada · home office self employed · business use of home cra · freelancer deductions canada · tax write offs canada",
+  "hashtags": "#workfromhome #selfemployedcanada #canadiantaxes #taxdeductions #freelancecanada",
+  "pinned": "Separate room or kitchen table? 👇 (Example only: 12% office, MB 2026.)",
+  "cta": "Follow for the next one in the self-employed series."
+ },
+ "ig": {
+  "caption": "Your home isn't the write-off. Your workspace is. 🏠🇨🇦\n\nSelf-employed? 120 sq ft office ÷ 1,000 sq ft home = 12%. 12% × $20,200 of rent, utilities and insurance = $2,424 deduction, about $862 saved in our 2026 Manitoba example.\n\nWatch out: shared space gets cut by business hours, the claim can't create a loss (it carries forward), and owners should get advice before claiming depreciation on the home.\n\nSave this before tax season. Source: CRA (canada.ca). Self-employed rules only. Example only, general info, not advice.",
+  "keywords": "work from home deduction, home office canada, self employed deductions, business use of home, canada tax tips",
+  "hashtags": "#workfromhome #selfemployedcanada #canadiantaxes #taxdeductions #smallbusinesscanada #freelancelife",
+  "pinned": "Do you have a dedicated office, or a shared corner? 👇",
+  "cta": "Save this and measure your office today."
+ },
+ "eng": {
+  "question": "Is your workspace a dedicated room or a shared corner?",
+  "save": "The area formula, the qualifying test and the three limits on one page.",
+  "share": "A freelancer friend who works from their apartment.",
+  "follow": "The self-employed series (B4 → B5 → B6 → B3): the actual math on paper, with sources."
+ },
+ "seo": {
+  "primary": "work from home tax deduction",
+  "secondary": "work from home tax deduction (vidIQ ≈4,996/mo, competition 39); home office deduction canada, business use of home, cra home office (<750/mo each)",
+  "intent": "A self-employed Canadian working from home wants to know what part of home costs is deductible.",
+  "audience": "Freelancers and sole proprietors who work from an apartment or house",
+  "angle": "The home isn't the write-off; the qualifying workspace share is, with three limits.",
+  "questions": "Can I deduct rent if I work from home? · How do I calculate business use of home? · Does a kitchen table office count? · Can home office expenses create a loss? · Should I claim CCA on my home office?",
+  "pain": "Fear of over-claiming or missing a deduction; confusion between employee and self-employed rules."
+ },
+ "next": [
+  {
+   "topic": "Same $60K freelancer, different province",
+   "why": "province comparisons are the channel's strongest format",
+   "intent": "self employed tax by province",
+   "hook": "Same $60K freelancer. One province takes more.",
+   "angle": "provincial brackets differ more than people expect",
+   "payoff": "a written leaderboard (verify every 2026 rate)"
+  },
+  {
+   "topic": "RRSP for the self-employed: $5,000 into the B4 math",
+   "why": "the marginal-rate twist in action",
+   "intent": "should self employed contribute to RRSP",
+   "hook": "Put $5,000 in an RRSP. Watch the $16,106 shrink.",
+   "angle": "the deduction saves at the marginal rate",
+   "payoff": "before/after numbers side by side"
+  },
+  {
+   "topic": "Freelancer year one, month by month (B7)",
+   "why": "ties B4, B5, B6 and B3 into one checklist",
+   "intent": "first year self employed canada taxes",
+   "hook": "Your first year freelancing: four numbers to watch.",
+   "angle": "one calendar with every deadline",
+   "payoff": "a written timeline (dates to verify on canada.ca)"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B6. Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ keyword research (CA, 2026-10-07, one call, seed \"home office deduction canada\"): \"work from home tax deduction\" ≈4,996/mo (competition 39) is the only measurable phrase; Canadian variants (\"home office deduction canada\", \"home office expenses canada\", \"cra home office\", \"t2200 form\") are below 750/mo. Strategy: the title and hook use \"work from home\"; the description carries \"home office\" and \"business use of home\".\n- Risk handling: TOPICS.md flags B3 🔴 because rules differ by audience. The video is limited to the self-employed and says so; employee rules are named as out of scope.",
+ "retention": "- Hook (0–2 s): the searched phrase \"work from home\" plus a contradiction (\"rent isn't a write-off\") ✅\n- Visual change: new ink every 1–4 s; four push-ins (12%, $2,424, $862, the workspace) ✅\n- Escalation: who qualifies → the ratio → the deduction → the real saving → three limits → payoff ✅\n- Weakest moment: 7.8–15.5 s (two qualifier lines, writing ~2 s behind the words); the narration carries it. Acceptable.\n- Payoff: \"120 office\" circled on \"your workspace is\", pull back over the page ✅",
+ "_label": "B3 · Home office (handwritten)",
+ "_mp4": "b3_share.mp4",
+ "_vo": "Work from home? Your rent isn't a write-off. Your office square feet might be. This is for the self-employed. The space must be your main place of business, or used only for business and to meet clients regularly. Say your apartment is one thousand square feet. Your office room is one hundred and twenty. That's twelve percent. Rent, utilities, insurance: twenty thousand two hundred a year. Twelve percent of that is two thousand, four hundred and twenty-four. That's your deduction. In our sixty-thousand-dollar Manitoba example, that's about eight hundred and sixty dollars of tax and C-P-P saved. Kitchen table? If the space is also personal, you cut the claim again, by the hours it's used for business. And it can't create a business loss. The extra carries forward to next year. Own your home? Claiming depreciation on the office can cost you when you sell. Get advice first. Your home isn't the write-off. Your workspace is.",
+ "_votc": "[00:00.20–00:06.20] \"Work from home? Your rent isn't a write-off. Your office square feet might be.\"\n[00:06.52–00:14.84] \"This is for the self-employed. The space must be your main place of business, or used only for business and to meet clients regularly.\"\n[00:15.14–00:20.47] \"Say your apartment is one thousand square feet. Your office room is one hundred and twenty.\"\n[00:20.73–00:22.55] \"That's twelve percent.\"\n[00:22.86–00:27.31] \"Rent, utilities, insurance: twenty thousand two hundred a year.\"\n[00:27.59–00:33.58] \"Twelve percent of that is two thousand, four hundred and twenty-four. That's your deduction.\"\n[00:33.88–00:41.51] \"In our sixty-thousand-dollar Manitoba example, that's about eight hundred and sixty dollars of tax and C-P-P saved.\"\n[00:41.94–00:49.21] \"Kitchen table? If the space is also personal, you cut the claim again, by the hours it's used for business.\"\n[00:49.51–00:54.76] \"And it can't create a business loss. The extra carries forward to next year.\"\n[00:55.16–01:01.65] \"Own your home? Claiming depreciation on the office can cost you when you sell. Get advice first.\"\n[01:02.10–01:05.32] \"Your home isn't the write-off. Your workspace is.\""
+}
