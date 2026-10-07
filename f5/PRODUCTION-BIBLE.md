@@ -42,3 +42,4 @@ Bought $300,000, sold $450,000, lived there all 5 years and designated every yea
 
 ## 3. QC log
 - Stills v1: all beats clean; two small lines wrapped (family, flip) → shortened.
+- v2 (2026-10-07): three scenes + bridge CTA to F4 (VO 68.70 s, no trimming). Stills: life-beat camera pushed to k 2.2 so the mother and newborn sit below the card. Final: 1660 frames, 69.20 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.2 LUFS; contact sheet checked; vidIQ title score 83 ('Selling Your Home in Canada? It's Tax-Free… Usually'); kit card #17. Metricool: not sent (user rule 2026-10-07).
