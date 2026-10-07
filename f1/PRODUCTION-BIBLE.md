@@ -43,3 +43,4 @@ Shares held as capital property in a non-registered account: proceeds $16,000 �
 ## 3. QC log
 - Stills v1: example card empty until the result → the price and cost lines come in first, then "= $5,950"; re-checked spacing (hero moved down 22 px). Pins clear of the strip.
 - v2 (2026-10-07): three scenes + bridge CTA to F5; VO 70.41 s with the longer CTA → pauses 0.18 s → 69.61 s, no new credits. Stills checked (3 scenes, both whip transitions, pins on the evening envelope and tea, CTA pill fits on one line).
+- Final: 1683 frames, 70.13 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.0 LUFS; contact sheet checked (3 scenes, same man, CTA pill); vidIQ title score 79 ('Capital Gains Tax in Canada: Only Half Is Taxed'); kit card #16; Metricool drafts Sat 2026-11-28 (TikTok 10:00, IG 12:00, YT 16:00).
