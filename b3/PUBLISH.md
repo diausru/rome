@@ -194,6 +194,7 @@ Series fit: "Real Tax Math" (handwritten), after B6. Playlist: Self-Employed in 
 
 ## Research notes
 - vidIQ keyword research (CA, 2026-10-07, one call, seed "home office deduction canada"): "work from home tax deduction" ≈4,996/mo (competition 39) is the only measurable phrase; Canadian variants ("home office deduction canada", "home office expenses canada", "cra home office", "t2200 form") are below 750/mo. Strategy: the title and hook use "work from home"; the description carries "home office" and "business use of home".
+- vidIQ title score (short-form): 'Work From Home Tax Deduction in Canada (Self-Employed)' 80 (one call).
 - Risk handling: TOPICS.md flags B3 🔴 because rules differ by audience. The video is limited to the self-employed and says so; employee rules are named as out of scope.
 
 ## Retention analysis
