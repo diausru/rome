@@ -191,6 +191,7 @@ Series fit: "Real Tax Math" (handwritten), after B3. Playlist: Self-Employed in 
 
 ## Research notes
 - vidIQ keyword research (CA, 2026-10-07, one call, seed "self employed tax by province canada"): "sole proprietor taxes canada" ≈4,868/mo, competition 12.8 (overall 67.9, the best ratio); "self employed tax return canada" ≈4,489/mo (18); "self employed taxes explained" ≈3,736/mo; "how to pay quarterly taxes self employed" ≈4,333/mo (18.4) → topic 3 above. The exact phrase is below 750/mo. Strategy: "Sole Proprietor Taxes in Canada" leads the title.
+- vidIQ title score (short-form): 'Sole Proprietor Taxes in Canada: Same $60K, 9 Provinces' 80 (one call).
 - BC Budget 2026: BC tax reduction confirmed zero at this income.
 
 ## Retention analysis
