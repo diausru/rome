@@ -106,6 +106,10 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
 - Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): F5 next (D2, D5 delivered 2026-10-06; C3, F1 delivered 2026-10-07).
 
+## Metricool: only on command (user, 2026-10-07)
+
+- Never create, update or schedule anything in Metricool unless the user explicitly says so for that video. Per video: make the video, run the analysis and the publishing package, then STOP and wait. Prepared payloads may sit in `channel/metricool/schedule.json`, but nothing is sent.
+
 ## Series upgrade (user, 2026-10-06; from D5 on)
 
 - **CTA = a bridge to the next video**, different every time: the last VO line names the next topic and asks to follow, e.g. "Next: why a small corporation pays nine percent. Follow so you don't miss it." The on-screen pill shows the next topic. One new Grady line per video (≈0.3 credits). No engagement bait.
