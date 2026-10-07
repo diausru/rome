@@ -6,7 +6,7 @@ Cadence Tue / Thu / Sat (`channel/PUBLISHING-PLAN.md` §2). Times from Metricool
 Texts, first comments, YouTube titles/tags: from the Publishing Kit (`channel/publishing-kit.html`, `<project>/publish.json`).
 AI disclosure on every post (Grady voice and generated photo plates): YouTube isAiGeneratedContent, TikTok isAigc, Instagram isAiGenerated.
 **Media = placeholder** (a public 10-s test clip, rehosted by Metricool). Replace it with the real `<project>/…-share.mp4` in each draft.
-Only finished videos are scheduled (20). New videos get added when they are done.
+Only finished videos are scheduled (21). New videos get added when they are done.
 
 | Date | Video | Title |
 |---|---|---|
@@ -30,3 +30,4 @@ Only finished videos are scheduled (20). New videos get added when they are done
 | 2026-11-21 | #13 · CCB & Your Raise | Got a Raise? Your Canada Child Benefit Could Shrink |
 | 2026-11-24 | #14 · Daycare: Who Claims | Paying for Daycare? Which Parent Claims It (Canada) |
 | 2026-11-26 | #15 · Small Business 9% | 9% Tax? How Small Business Tax Works in Canada |
+| 2026-11-28 | #16 · Capital Gains: Only Half | Capital Gains Tax in Canada: Only Half Is Taxed |

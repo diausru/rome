@@ -36,8 +36,10 @@ Shares held as capital property in a non-registered account: proceeds $16,000 �
 | PINS | coins "gain $5,950" · coins "$2,975 taxable" · envelope "back 3 years / forward" · mug "superficial loss: loss denied" |
 | STRIP | inclusion 1/2 · losses 3 yrs back · forward · ✗ rebuy within 30 days · ✓ TFSA |
 | LIVE | steam from the coffee; camera between the reader, the coins and the table props |
-| VOICE | Grady; 151 words; 67.40 s (inside the 45 s–1:10 tolerance); CTA reused from G3 |
-| RENDER | 1080×1920, 24 fps, 1630 frames (67.9 s) |
+| SCENES | Series upgrade: three plates of the same man (kitchen plate job 77c06c14 as image reference; gpt_image_2_5 + 4K upscale each): 1) `f1-s1-4k.jpg` morning at a café window, phone turned away (hook → formula); 2) `f1-4k.jpg` the kitchen table (example → rate); 3) `f1-s3-4k.jpg` evening at the same table under a lamp, sorting blank statements (losses → end). Cuts at `example` and `losses` with SceneCuts. Checked: no text, same person |
+| VOICE | Grady; 159 words; bridge CTA "Next: when selling your home isn't tax-free. Follow so you don't miss it." (new line, ≈0.3 credits); pauses trimmed to 0.18 s → 69.61 s (inside the 45 s–1:10 tolerance) |
+| RENDER | 1080×1920, 24 fps, 1683 frames (70.1 s) |
 
 ## 3. QC log
 - Stills v1: example card empty until the result → the price and cost lines come in first, then "= $5,950"; re-checked spacing (hero moved down 22 px). Pins clear of the strip.
+- v2 (2026-10-07): three scenes + bridge CTA to F5; VO 70.41 s with the longer CTA → pauses 0.18 s → 69.61 s, no new credits. Stills checked (3 scenes, both whip transitions, pins on the evening envelope and tea, CTA pill fits on one line).

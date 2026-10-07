@@ -4,57 +4,57 @@
   [
    "hook",
    "Sold a stock for a profit? You're not taxed on all of it. Only half.",
-   0.28
+   0.18
   ],
   [
    "loop",
    "Here's how the math works.",
-   0.36
+   0.18
   ],
   [
    "formula",
    "Your capital gain is the selling price, minus your cost, the adjusted cost base, minus selling costs.",
-   0.32
+   0.18
   ],
   [
    "example",
    "Bought shares for ten thousand, sold them for sixteen thousand, paid fifty dollars in fees. The gain: five thousand nine hundred fifty.",
-   0.36
+   0.18
   ],
   [
    "half",
    "Only half of it, two thousand nine hundred seventy-five, is added to your income, at your regular tax rate.",
-   0.32
+   0.18
   ],
   [
    "rate",
    "And the planned jump to two-thirds was cancelled. It's still one-half.",
-   0.36
+   0.18
   ],
   [
    "losses",
    "Capital losses only offset capital gains. Unused ones can go back three years, or forward with no time limit.",
-   0.32
+   0.18
   ],
   [
    "trap",
    "One trap: sell at a loss and buy it back within thirty days, and the loss is denied.",
-   0.32
+   0.18
   ],
   [
    "tfsa",
    "And inside a TFSA, gains generally aren't taxed at all.",
-   0.32
+   0.18
   ],
   [
    "payoff",
    "Track your cost base. Every sale goes on your return.",
-   0.28
+   0.18
   ],
   [
    "cta",
-   "Follow for the real math.",
-   0.4
+   "Next: when selling your home isn't tax-free. Follow so you don't miss it.",
+   0.2
   ]
  ]
 }

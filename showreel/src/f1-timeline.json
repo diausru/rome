@@ -1,5 +1,5 @@
 {
- "total": 67.399,
+ "total": 69.611,
  "beats": [
   {
    "id": "hook",
@@ -10,62 +10,62 @@
   {
    "id": "loop",
    "text": "Here's how the math works.",
-   "start": 6.023,
-   "end": 7.218
+   "start": 5.923,
+   "end": 7.118
   },
   {
    "id": "formula",
    "text": "Your capital gain is the selling price, minus your cost, the adjusted cost base, minus selling costs.",
-   "start": 7.578,
-   "end": 15.333
+   "start": 7.298,
+   "end": 15.053
   },
   {
    "id": "example",
    "text": "Bought shares for ten thousand, sold them for sixteen thousand, paid fifty dollars in fees. The gain: five thousand nine hundred fifty.",
-   "start": 15.653,
-   "end": 25.647
+   "start": 15.233,
+   "end": 25.227
   },
   {
    "id": "half",
    "text": "Only half of it, two thousand nine hundred seventy-five, is added to your income, at your regular tax rate.",
-   "start": 26.007,
-   "end": 33.153
+   "start": 25.407,
+   "end": 32.553
   },
   {
    "id": "rate",
    "text": "And the planned jump to two-thirds was cancelled. It's still one-half.",
-   "start": 33.473,
-   "end": 39.025
+   "start": 32.733,
+   "end": 38.285
   },
   {
    "id": "losses",
    "text": "Capital losses only offset capital gains. Unused ones can go back three years, or forward with no time limit.",
-   "start": 39.385,
-   "end": 49.284
+   "start": 38.465,
+   "end": 48.364
   },
   {
    "id": "trap",
    "text": "One trap: sell at a loss and buy it back within thirty days, and the loss is denied.",
-   "start": 49.604,
-   "end": 56.048
+   "start": 48.544,
+   "end": 54.988
   },
   {
    "id": "tfsa",
    "text": "And inside a TFSA, gains generally aren't taxed at all.",
-   "start": 56.368,
-   "end": 60.702
+   "start": 55.168,
+   "end": 59.502
   },
   {
    "id": "payoff",
    "text": "Track your cost base. Every sale goes on your return.",
-   "start": 61.022,
-   "end": 65.236
+   "start": 59.682,
+   "end": 63.896
   },
   {
    "id": "cta",
-   "text": "Follow for the real math.",
-   "start": 65.516,
-   "end": 66.999
+   "text": "Next: when selling your home isn't tax-free. Follow so you don't miss it.",
+   "start": 64.076,
+   "end": 69.411
   }
  ]
 }

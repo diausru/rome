@@ -1,10 +1,11 @@
 // "Capital gains basics" (topic F1, investing group) in the approved look (Kit + Plate).
 // Master timeline = Grady voiceover (f1/vo-beats.json → tools/vo_hf.py → f1-timeline.json). Facts: f1/PRODUCTION-BIBLE.md.
-// Plate: a Sunday-morning kitchen table; a man reads a tablet by a window with autumn trees; on the table, a closed laptop,
-// a stack of coins, a fountain pen, a plain envelope and a coffee. Investing group type: Fraunces (SERIF) headings.
+// Three photo scenes of the same man (series upgrade 2026-10-06), each shown once, joined by SceneCuts:
+// 1) morning at a café window, phone in hand (he just sold); 2) the kitchen table with coins, envelope and coffee (the math);
+// 3) evening at the same table under a lamp, sorting statements (losses, traps, filing). Fraunces (SERIF) headings. Bridge CTA to F5.
 // The first beats keep the top clear so the man is seen; then cards at the top, amounts pinned on the table props.
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
-import { PhotoPlate, type Focus } from './Plate';
+import { PhotoPlate, SceneCuts, type Focus } from './Plate';
 import { Flag } from './RaiseShort';
 import TL from './f1-timeline.json';
 import { C, SANS, SERIF, Card, Header, Hero, Line, Typed, beatsFrom, ease, pill, shade, type Cap } from './Kit';
@@ -16,19 +17,25 @@ const HEAD = SERIF;
 const TAU = Math.PI * 2;
 const at = (id: string, fr: number) => Math.round(B[id].s + (B[id].e - B[id].s) * fr);
 
-// object positions in the plate (image coordinates of each object's top)
-const COINS = { u: 0.47, v: 0.69 }, ENV = { u: 0.82, v: 0.7 }, MUG = { u: 0.8, v: 0.48 };
+// scene changes where the meaning changes: the worked example (scene 2), the losses and traps (scene 3)
+const CUTS = [B.example.s, B.losses.s];
+// object positions per plate (image coordinates of each object's top)
+const COINS = { u: 0.47, v: 0.69 }, ENV3 = { u: 0.74, v: 0.67 }, MUG3 = { u: 0.84, v: 0.47 };
 
-const KEYS: Focus[] = [
-  { f: 0, u: 0.55, v: 0.25, k: 1.15 },                 // the man reading
-  { f: B.loop.s, u: 0.6, v: 0.25, k: 1.3 },            // push in on the tablet
-  { f: B.formula.s, u: 0.35, v: 0.55, k: 1.2 },        // the laptop
-  { f: B.example.s, u: 0.45, v: 0.55, k: 1.25 },       // the coins
+const K1: Focus[] = [
+  { f: 0, u: 0.5, v: 0.3, k: 1.15 },                   // morning café: the man
+  { f: B.loop.s, u: 0.68, v: 0.38, k: 1.3 },           // push in on the phone
+  { f: B.formula.s, u: 0.65, v: 0.6, k: 1.2 },         // coffee and croissant
+];
+const K2: Focus[] = [
+  { f: 0, u: 0.45, v: 0.55, k: 1.25 },                 // the coins
   { f: B.half.s, u: 0.4, v: 0.58, k: 1.3 },            // coins and pen
   { f: B.rate.s, u: 0.55, v: 0.3, k: 1.2 },            // the man
-  { f: B.losses.s, u: 0.75, v: 0.55, k: 1.25 },        // the envelope
-  { f: B.trap.s, u: 0.8, v: 0.45, k: 1.3 },            // the coffee
-  { f: B.tfsa.s, u: 0.25, v: 0.45, k: 1.2 },           // the plant
+];
+const K3: Focus[] = [
+  { f: 0, u: 0.72, v: 0.55, k: 1.25 },                 // evening: the envelope
+  { f: B.trap.s, u: 0.8, v: 0.45, k: 1.3 },            // the tea
+  { f: B.tfsa.s, u: 0.4, v: 0.35, k: 1.2 },            // the man with his statements
   { f: B.payoff.s, u: 0.5, v: 0.5, k: 1.0 },           // wide
 ];
 
@@ -82,12 +89,19 @@ export const F1v2 = () => {
   const lift = 1 - ease(f, B.payoff.s - 6, B.payoff.s + 6);
   return (
     <AbsoluteFill style={{ background: '#0d0b09', fontFamily: SANS, overflow: 'hidden' }}>
-      <PhotoPlate f={f} src="plates/f1-4k.jpg" iw={2294} ih={4096} keys={KEYS} glide={40} blur={0.8} steam={{ u: 0.86, v: 0.475, w: 0.06 }}>
-        <Pin f={f} a={at('example', 0.85)} b={B.half.s} p={COINS} top="$16,000 − $10,000 − $50" big="gain $5,950" />
-        <Pin f={f} a={at('half', 0.35)} b={B.rate.s} p={COINS} top="HALF IS TAXABLE" big="$2,975" sub="added to your income" />
-        <Pin f={f} a={at('losses', 0.6)} b={B.trap.s} p={ENV} top="UNUSED NET CAPITAL LOSSES" big="back 3 years" sub="or forward, no time limit" col={C.cream} />
-        <Pin f={f} a={at('trap', 0.6)} b={B.tfsa.s} p={MUG} top="SUPERFICIAL LOSS" big="loss denied" sub="rebought within 30 days" col={C.red} />
-      </PhotoPlate>
+      <SceneCuts f={f} cuts={CUTS} scene={(i) => i === 0 ? (
+        <PhotoPlate f={f} src="plates/f1-s1-4k.jpg" iw={2294} ih={4096} keys={K1} glide={40} blur={0.8} steam={{ u: 0.84, v: 0.53, w: 0.06 }} />
+      ) : i === 1 ? (
+        <PhotoPlate f={f} src="plates/f1-4k.jpg" iw={2294} ih={4096} keys={K2} glide={40} blur={0.8} steam={{ u: 0.86, v: 0.475, w: 0.06 }}>
+          <Pin f={f} a={at('example', 0.85)} b={B.half.s} p={COINS} top="$16,000 − $10,000 − $50" big="gain $5,950" />
+          <Pin f={f} a={at('half', 0.35)} b={B.rate.s} p={COINS} top="HALF IS TAXABLE" big="$2,975" sub="added to your income" />
+        </PhotoPlate>
+      ) : (
+        <PhotoPlate f={f} src="plates/f1-s3-4k.jpg" iw={2294} ih={4096} keys={K3} glide={40} blur={0.8} steam={{ u: 0.86, v: 0.47, w: 0.06 }}>
+          <Pin f={f} a={at('losses', 0.6)} b={B.trap.s} p={ENV3} top="UNUSED NET CAPITAL LOSSES" big="back 3 years" sub="or forward, no time limit" col={C.cream} />
+          <Pin f={f} a={at('trap', 0.6)} b={B.tfsa.s} p={MUG3} top="SUPERFICIAL LOSS" big="loss denied" sub="rebought within 30 days" col={C.red} />
+        </PhotoPlate>
+      )} />
       <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(8,6,4,.82) 0%, rgba(8,6,4,.55) 14%, rgba(8,6,4,0) 28%, rgba(8,6,4,0) 50%, rgba(8,6,4,.55) 66%, rgba(8,6,4,.8) 100%)', opacity: 1 - 0.75 * lift }} />
       <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(8,6,4,.82) 0%, rgba(8,6,4,.55) 14%, rgba(8,6,4,0) 28%, rgba(8,6,4,0) 100%)', opacity: 0.75 * lift }} />
       <Header f={f} chip="CRA · CAPITAL GAINS" />
@@ -132,7 +146,8 @@ export const F1v2 = () => {
         <div style={{ position: 'absolute', left: 80, right: 80, top: 1010, opacity: end, transform: `translateY(${(1 - end) * 40}px)` }}>
           <Flag f={f} w={150} amp={0.06} />
           <div style={{ marginTop: 26, fontFamily: HEAD, fontSize: 58, fontWeight: 800, lineHeight: 1.1, color: C.cream, textShadow: shade }}>Half is taxed.<br />Track your cost base.</div>
-          <div style={{ marginTop: 34, display: 'inline-flex', padding: '20px 32px', borderRadius: 999, background: 'linear-gradient(160deg,#fff1c2,#f1c75b 50%,#c88f1f)', color: '#2b1d03', fontSize: 34, fontWeight: 900, boxShadow: '0 16px 30px rgba(0,0,0,.4)', opacity: ease(f, B.cta.s - 4, B.cta.s + 8), transform: `scale(${1 + 0.03 * Math.sin(TAU * (f - B.cta.s) / 36)})` }}>Follow for the real math</div>
+          <div style={{ marginTop: 34, display: 'inline-flex', padding: '20px 32px', borderRadius: 999, background: 'linear-gradient(160deg,#fff1c2,#f1c75b 50%,#c88f1f)', color: '#2b1d03', fontSize: 34, fontWeight: 900, boxShadow: '0 16px 30px rgba(0,0,0,.4)', opacity: ease(f, B.cta.s - 4, B.cta.s + 8), transform: `scale(${1 + 0.03 * Math.sin(TAU * (f - B.cta.s) / 36)})` }}>Next: selling your home, when it's taxed →</div>
+          <div style={{ marginTop: 12, fontSize: 26, fontWeight: 700, color: C.cream, textShadow: shade, opacity: ease(f, at('cta', 0.6), at('cta', 0.7)) }}>Follow so you don't miss it</div>
           <div style={{ marginTop: 28, fontSize: 19, fontWeight: 600, color: C.soft, lineHeight: 1.45, opacity: ease(f, B.payoff.s + 16, B.payoff.s + 30) }}>
             Source: canada.ca (CRA guide T4037 Capital Gains; capital losses; Department of Finance on the inclusion rate) · the share sale is an example · general info, not advice
           </div>

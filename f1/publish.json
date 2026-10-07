@@ -1,5 +1,9 @@
 {
- "video": {"title": "Capital gains basics", "duration": "67.92 s (1630 frames)", "mp4": "showreel/out/f1/f1-final.mp4 (share copy: f1-share.mp4)"},
+ "video": {
+  "title": "Capital gains basics",
+  "duration": "70.12 s (1683 frames)",
+  "mp4": "showreel/out/f1/f1-final.mp4 (share copy: f1-share.mp4)"
+ },
  "sources": [
   "CRA — Guide T4037 Capital Gains (canada.ca) · current · gain = proceeds − ACB − outlays and expenses; superficial loss rule",
   "Department of Finance / CRA — capital gains inclusion rate updates (canada.ca) · 2025 · the proposed increase to 2/3 was cancelled; inclusion rate remains 1/2",
@@ -7,7 +11,11 @@
   "CRA — TFSA guide RC4466 (canada.ca) · current · income and gains in a TFSA are generally not taxed"
  ],
  "yt": {
-  "titles": ["Capital Gains Tax in Canada: Only Half Is Taxed", "Sold a Stock for a Profit? Capital Gains Explained (Canada)", "Capital Gains in Canada: Still One-Half for 2026"],
+  "titles": [
+   "Capital Gains Tax in Canada: Only Half Is Taxed",
+   "Sold a Stock for a Profit? Capital Gains Explained (Canada)",
+   "Capital Gains in Canada: Still One-Half for 2026"
+  ],
   "description": "Sold a stock for a profit? In Canada you're not taxed on all of it: only half.\n\nYour capital gain = selling price − your cost (the adjusted cost base) − selling costs. Example: bought shares for $10,000, sold for $16,000, $50 in fees → a $5,950 gain. Only half, $2,975, is added to your income and taxed at your regular rate.\n\nThe proposed increase of the inclusion rate to two-thirds was cancelled: it's still one-half.\n\nCapital losses only offset capital gains; unused net capital losses can be carried back 3 years or forward indefinitely. One trap: sell at a loss and buy the same shares back within 30 days (before or after), and the loss is denied (superficial loss). Inside a TFSA, gains are generally not taxed.\n\nTrack your cost base: every sale goes on your return (Schedule 3).\n\nSources: CRA guide T4037; Department of Finance (canada.ca). The share sale is an example. General information, not advice.\n\n#CapitalGains #CanadaTax #Investing",
   "hashtags": "#CapitalGains #CanadaTax #Investing",
   "keywords": "capital gains tax canada, capital gains, capital gains tax, what is capital gains tax, capital gains canada, capital gains tax explained, capital gains inclusion rate, superficial loss, adjusted cost base, capital losses canada",
@@ -44,9 +52,30 @@
   "pain": "Confusion after the 2/3 announcement; losing a loss to the 30-day rule."
  },
  "next": [
-  {"topic": "Selling your home: when the PRE doesn't cover you (F5)", "why": "Next in the plan; homeowners", "intent": "principal residence exemption canada", "hook": "Your home sale is tax-free, unless…", "angle": "Designation, change in use, the flipping rule", "payoff": "Report the sale either way"},
-  {"topic": "Rental deductions + the CCA trap (F4)", "why": "In the plan; landlords", "intent": "rental income tax canada", "hook": "Claiming depreciation on your rental? Read this first.", "angle": "Deductible expenses, CCA recapture", "payoff": "When CCA backfires"},
-  {"topic": "Year-end moves before Dec 31 (C5)", "why": "Timely in late November", "intent": "year end tax planning canada", "hook": "Five things to do before December 31.", "angle": "Verified deadlines", "payoff": "A checklist"}
+  {
+   "topic": "Selling your home: when the PRE doesn't cover you (F5)",
+   "why": "Next in the plan; homeowners",
+   "intent": "principal residence exemption canada",
+   "hook": "Your home sale is tax-free, unless…",
+   "angle": "Designation, change in use, the flipping rule",
+   "payoff": "Report the sale either way"
+  },
+  {
+   "topic": "Rental deductions + the CCA trap (F4)",
+   "why": "In the plan; landlords",
+   "intent": "rental income tax canada",
+   "hook": "Claiming depreciation on your rental? Read this first.",
+   "angle": "Deductible expenses, CCA recapture",
+   "payoff": "When CCA backfires"
+  },
+  {
+   "topic": "Year-end moves before Dec 31 (C5)",
+   "why": "Timely in late November",
+   "intent": "year end tax planning canada",
+   "hook": "Five things to do before December 31.",
+   "angle": "Verified deadlines",
+   "payoff": "A checklist"
+  }
  ],
  "series": "Investing Basics (capital gains → selling your home → rental property). Playlist: 'Investing & Property'.",
  "research": "- vidIQ (2026-10-06, 5 credits): 'capital gains tax canada' <750/mo; 'capital gains' ≈13,779/mo (+164% vs baseline), 'capital gains tax' ≈6,405/mo, 'what is capital gains tax' ≈5,146/mo, 'capital gains canada' ≈3,936/mo (competition 15.5) → 'only half' hook; 'Capital Gains Tax' + Canada in the title; the cancelled 2/3 change answers a live question.",
