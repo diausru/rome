@@ -195,6 +195,7 @@ Series fit: "Real Tax Math" (handwritten), after B4P. Playlist: Self-Employed in
 
 ## Research notes
 - vidIQ keyword research (CA, 2026-10-07, one call, seed "rrsp self employed canada"): "rrsp canada" ≈4,423/mo (competition 8.3, overall 69.3); "rrsp explained" ≈4,494/mo (15.4); "rrsp vs tfsa" ≈5,056/mo (14); "rrsp" ≈5,076/mo (−46% vs its 30-day baseline, seasonal: RRSP searches peak before the March deadline). Exact phrases are below 750/mo.
+- vidIQ title score (short-form): 'RRSP for the Self-Employed in Canada: What $5,000 Really Saves' 82 (one call).
 - Timing note: RRSP interest rises in January–February (deadline season); this Short is evergreen and can be re-promoted then.
 
 ## Retention analysis
