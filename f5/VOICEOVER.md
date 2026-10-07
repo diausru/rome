@@ -12,7 +12,7 @@ Two: one home per family, per year. Own a cottage too? Only one of them is cover
 Three: the flipping rule. Sell a home you owned less than three hundred sixty-five days, and the profit is fully taxed as business income.
 Unless a life event applies, like a death in the family or a new baby.
 So it's tax-free, if you report it, and if it was really your home.
-Follow for the real math.
+Next: renting out a property, and the deduction that can backfire. Follow so you don't miss it.
 
 ## B + C. Timecoded voiceover and delivery notes
 | Time | Beat | Narration | Delivery |
@@ -25,20 +25,22 @@ Follow for the real math.
 | [00:39.89–00:50.29] | flip | “Three: the flipping rule. Sell a home you owned less than three hundred sixty-five days, and the profit is fully taxed as business income.” | warning |
 | [00:50.61–00:55.60] | life | “Unless a life event applies, like a death in the family or a new baby.” | softer |
 | [00:55.92–01:00.64] | payoff | “So it's tax-free, if you report it, and if it was really your home.” | warm, decisive |
-| [01:00.92–01:02.41] | cta | “Follow for the real math.” | friendly, short |
+| [01:00.92–01:08.30] | cta | “Next: renting out a property, and the deduction that can backfire. Follow so you don't miss it.” | warm bridge: name the next topic, then the follow |
 
 ## D. Audio cue points
 | Time | Visual event |
 |---|---|
 | 00:00.25 | family loading the car, no card |
 | 00:15.42 | $150,000 hero; pinned on the envelope |
+| 00:18.77 | scene cut 1: old kitchen → moving-day porch (whip push) |
 | 00:25.06 | late designation: up to $8,000 |
 | 00:33.58 | one per year, pinned on the keys |
+| 00:39.89 | scene cut 2: porch → the new home (whip push) |
 | 00:44.57 | 365 days hero; 'fully taxed' pin |
 | 00:51.61 | life-event exceptions |
 | 00:55.92 | flag + 'Tax-free, if you report it and it was really home.' |
-| 01:00.92 | follow CTA |
+| 01:00.92 | pill 'Next: rental deductions and the CCA trap →' + 'Follow so you don't miss it' |
 
 ## E. Duration check
-- 145 words, 59.5 s of speech, 146 wpm.
-- Narration ends at 01:02.41; VO file 62.81 s; video 63.33 s (1520 frames at 24 fps); hold on the final frame 0.93 s. ✅ Fits.
+- 157 words, 65.4 s of speech, 144 wpm.
+- Narration ends at 01:08.30; VO file 68.70 s; video 69.21 s (1661 frames at 24 fps); hold on the final frame 0.91 s. ✅ Fits.

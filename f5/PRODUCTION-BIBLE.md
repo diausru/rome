@@ -36,8 +36,9 @@ Bought $300,000, sold $450,000, lived there all 5 years and designated every yea
 | PINS | envelope "$150,000 gain" · envelope "late: up to $8,000" · keys "one per year" · envelope "under 365 days: fully taxed" |
 | STRIP | ✓ report + designate · 1 home · per family · per year · ✗ under 365 days → fully taxed |
 | LIVE | steam from the coffee; camera between the family at the car and the porch props |
-| VOICE | Grady; 145 words; 62.81 s (inside the tolerance); CTA reused from G3 |
-| RENDER | 1080×1920, 24 fps, 1520 frames (63.3 s) |
+| SCENES | Series upgrade: three plates of the same family (porch plate job 07780d4a as image reference; gpt_image_2_5 + 4K upscale each): 1) `f5-s1-4k.jpg` years earlier, a winter evening in the kitchen of the brick house (hook → example); 2) `f5-4k.jpg` moving day on the porch (report → family); 3) `f5-s3-4k.jpg` the new home after the move, the mother holding a newborn (flip → end). Cuts at `report` and `flip` with SceneCuts. Checked: no text, same family |
+| VOICE | Grady; 157 words; bridge CTA "Next: renting out a property, and the deduction that can backfire. Follow so you don't miss it." (new line, ≈0.3 credits); 68.70 s (inside the 45 s–1:10 tolerance, no trimming) |
+| RENDER | 1080×1920, 24 fps, 1661 frames (69.2 s) |
 
 ## 3. QC log
 - Stills v1: all beats clean; two small lines wrapped (family, flip) → shortened.

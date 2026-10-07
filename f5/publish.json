@@ -1,5 +1,9 @@
 {
- "video": {"title": "Selling your home: when the exemption doesn't cover you", "duration": "63.33 s (1520 frames)", "mp4": "showreel/out/f5/f5-final.mp4 (share copy: f5-share.mp4)"},
+ "video": {
+  "title": "Selling your home: when the exemption doesn't cover you",
+  "duration": "69.21 s (1661 frames)",
+  "mp4": "showreel/out/f5/f5-final.mp4 (share copy: f5-share.mp4)"
+ },
  "sources": [
   "CRA — Reporting the sale of your principal residence (canada.ca) · current · report on Schedule 3 + Form T2091(IND); late designation penalty: lesser of $8,000 or $100 per complete month",
   "CRA — Principal residence; Income Tax Folio S1-F3-C2 (canada.ca) · current · one principal residence per family unit per year",
@@ -7,7 +11,11 @@
   "CRA — Guide T4037 (canada.ca) · current · exemption formula (1 + years designated) ÷ years owned"
  ],
  "yt": {
-  "titles": ["Selling Your Home in Canada? It's Tax-Free… Usually", "Principal Residence Exemption: 3 Ways It Goes Wrong", "Sold Your House in Canada? Report It (or Pay Up to $8,000)"],
+  "titles": [
+   "Selling Your Home in Canada? It's Tax-Free… Usually",
+   "Principal Residence Exemption: 3 Ways It Goes Wrong",
+   "Sold Your House in Canada? Report It (or Pay Up to $8,000)"
+  ],
   "description": "Selling your home in Canada? The gain is usually tax-free thanks to the principal residence exemption. Usually.\n\nExample: bought for $300,000, lived there 5 years, sold for $450,000 → a $150,000 gain that can be fully exempt.\n\nThree ways it goes wrong:\n1. You still have to report the sale and designate the home (Schedule 3 + Form T2091). A late designation can cost $100 a month, up to $8,000.\n2. One home per family unit, per year. Own a cottage too? Only one is covered for any given year.\n3. The flipping rule (sales since 2023): sell a home you owned less than 365 days and the profit is fully taxed as business income, with no exemption, unless a life event applies (for example a death in the family or a new child joining the household).\n\nSo it's tax-free, if you report it and it was really your home.\n\nSources: CRA (canada.ca): principal residence, Folio S1-F3-C2, flipped property rules. The $300,000 home is an example. General information, not advice.\n\n#RealEstateCanada #CanadaTax #TaxTips",
   "hashtags": "#RealEstateCanada #CanadaTax #TaxTips",
   "keywords": "principal residence exemption, principal residence exemption canada, selling house tax canada, capital gains on selling a house, property flipping rule canada, t2091, tax tips canada, canadian taxes, home sale tax canada, cottage principal residence",
@@ -44,9 +52,30 @@
   "pain": "Not reporting a tax-free sale; a cottage surprise; selling within a year."
  },
  "next": [
-  {"topic": "Rental deductions + the CCA trap (F4)", "why": "Next in the plan; landlords", "intent": "rental income tax canada", "hook": "Claiming depreciation on your rental? Read this first.", "angle": "Deductible expenses, CCA recapture", "payoff": "When CCA backfires"},
-  {"topic": "Year-end moves before Dec 31 (C5)", "why": "Timely in late November", "intent": "year end tax planning canada", "hook": "Five things to do before December 31.", "angle": "Verified deadlines", "payoff": "A checklist"},
-  {"topic": "What triggers a CRA review (A4)", "why": "In the plan; high curiosity", "intent": "cra audit triggers", "hook": "Why did CRA pick YOUR return?", "angle": "Verified CRA review types", "payoff": "How to be ready"}
+  {
+   "topic": "Rental deductions + the CCA trap (F4)",
+   "why": "Next in the plan; landlords",
+   "intent": "rental income tax canada",
+   "hook": "Claiming depreciation on your rental? Read this first.",
+   "angle": "Deductible expenses, CCA recapture",
+   "payoff": "When CCA backfires"
+  },
+  {
+   "topic": "Year-end moves before Dec 31 (C5)",
+   "why": "Timely in late November",
+   "intent": "year end tax planning canada",
+   "hook": "Five things to do before December 31.",
+   "angle": "Verified deadlines",
+   "payoff": "A checklist"
+  },
+  {
+   "topic": "What triggers a CRA review (A4)",
+   "why": "In the plan; high curiosity",
+   "intent": "cra audit triggers",
+   "hook": "Why did CRA pick YOUR return?",
+   "angle": "Verified CRA review types",
+   "payoff": "How to be ready"
+  }
  ],
  "series": "Investing Basics (capital gains → selling your home → rental property). Playlist: 'Investing & Property'.",
  "research": "- vidIQ (2026-10-06, 5 credits): 'principal residence exemption canada' <750/mo; 'principal residence exemption' ≈3,516/mo; 'tax tips canada' ≈5,298/mo (competition 8.3); 'canadian accountant' ≈4,563/mo; 'capital gains tax' ≈6,405/mo → a 'usually tax-free' hook, the exemption named in the title, 'tax tips' in tags.",

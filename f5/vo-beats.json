@@ -1,14 +1,50 @@
 {
  "voice": "Grady (ElevenLabs via Higgsfield)",
  "beats": [
-  ["hook", "Selling your home in Canada? The gain is usually tax-free. Usually.", 0.28],
-  ["loop", "Here are three ways it goes wrong.", 0.36],
-  ["example", "Say you bought for three hundred thousand, lived there five years, and sold for four fifty. That hundred-fifty-thousand gain can be fully exempt.", 0.36],
-  ["report", "One: you still have to report the sale and designate the home on your return. Designate late, and the penalty can reach eight thousand dollars.", 0.36],
-  ["family", "Two: one home per family, per year. Own a cottage too? Only one of them is covered for any given year.", 0.36],
-  ["flip", "Three: the flipping rule. Sell a home you owned less than three hundred sixty-five days, and the profit is fully taxed as business income.", 0.32],
-  ["life", "Unless a life event applies, like a death in the family or a new baby.", 0.32],
-  ["payoff", "So it's tax-free, if you report it, and if it was really your home.", 0.28],
-  ["cta", "Follow for the real math.", 0.4]
+  [
+   "hook",
+   "Selling your home in Canada? The gain is usually tax-free. Usually.",
+   0.28
+  ],
+  [
+   "loop",
+   "Here are three ways it goes wrong.",
+   0.36
+  ],
+  [
+   "example",
+   "Say you bought for three hundred thousand, lived there five years, and sold for four fifty. That hundred-fifty-thousand gain can be fully exempt.",
+   0.36
+  ],
+  [
+   "report",
+   "One: you still have to report the sale and designate the home on your return. Designate late, and the penalty can reach eight thousand dollars.",
+   0.36
+  ],
+  [
+   "family",
+   "Two: one home per family, per year. Own a cottage too? Only one of them is covered for any given year.",
+   0.36
+  ],
+  [
+   "flip",
+   "Three: the flipping rule. Sell a home you owned less than three hundred sixty-five days, and the profit is fully taxed as business income.",
+   0.32
+  ],
+  [
+   "life",
+   "Unless a life event applies, like a death in the family or a new baby.",
+   0.32
+  ],
+  [
+   "payoff",
+   "So it's tax-free, if you report it, and if it was really your home.",
+   0.28
+  ],
+  [
+   "cta",
+   "Next: renting out a property, and the deduction that can backfire. Follow so you don't miss it.",
+   0.4
+  ]
  ]
 }
