@@ -48,3 +48,4 @@ Manitoba CCPC, $120,000 of active business income, no associated corporations, A
 ## 3. QC log
 - Stills v1: first 9 s keep the top clear (owner visible); pins placed below the strip by lowering the camera key at example/traps; all cards fit. No changes needed.
 - v2 (2026-10-07): three scenes + bridge CTA; VO 70.65 s with the longer CTA → pauses trimmed to ≤0.24 s → 69.73 s. Stills re-checked (scenes, both transitions, CTA).
+- Final: 1685 frames (mux trims the hold to the audio length), 70.23 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.1 LUFS; contact sheet checked (3 scenes, same person); sent to the user; vidIQ title score 78; kit card #15.
