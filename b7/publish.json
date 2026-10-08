@@ -1,0 +1,91 @@
+{
+ "video": {
+  "title": "How to File Self-Employed Taxes in Canada: The Year-One Calendar (handwritten)",
+  "duration": "67.00 s (1608 frames)",
+  "mp4": "b7/build/b7_final.mp4 (share copy: b7_share.mp4)"
+ },
+ "sources": [
+  "canada.ca — Important dates for individuals; CRA newsroom tax tip \"Self-employed? Make filing easier with these tips from the CRA\" (2026) · 2025 tax year (checked 2026-10-08 via search results) · self-employed individuals (and their spouse or common-law partner) file by June 15; any balance owing is due by April 30; exception: business expenses mainly tied to a tax-shelter investment → file by April 30",
+  "canada.ca — CRA interest on balances owing (via search; quoted CRA wording) · current · daily compound interest on an unpaid balance from the day after it is due (May 1)",
+  "canada.ca — Fiscal period, sole proprietorships and partnerships (CRA) · current · self-employed individuals generally use a December 31 year-end; the alternative method (Form T1139) is an exception",
+  "canada.ca — CRA tax tip \"Are you self-employed? Know your tax obligations\"; taxtips.ca books and records · current · keep records and supporting documents for six years from the end of the last tax year they relate to",
+  "canada.ca — When to register for and start charging the GST/HST (CRA), recorded in b5/ · current · small-supplier limit $30,000 over four consecutive calendar quarters; registration required once exceeded",
+  "CRA RRSP pages via Questrade/TD/Wealthsimple summaries, recorded in rrsp-se/ · 2026 · contributions in the first 60 days of a year can be deducted for the previous year (2026 tax year: by March 1, 2027)",
+  "canada.ca — Income tax instalments, Who has to pay (CRA), recorded in inst/ · 2026 · instalments only when net tax owing > $3,000 this year AND in one of the two previous years ($1,800 in Québec)",
+  "Example (not a CRA rule): \"27% → tax acct\" is the B4 example (Manitoba, single, $60,000 net self-employment income, 2026: tax + CPP ≈ $270 per $1,000). Records: a vehicle logbook is the CRA's recommended support for business kilometres (b6/). Verification note: canada.ca cannot be opened from the build machine; claims were checked through search results. Open the canada.ca pages once before publishing."
+ ],
+ "yt": {
+  "titles": [
+   "How to File Self-Employed Taxes in Canada: The Year-One Calendar",
+   "Self-Employed Taxes in Canada: Your First Year, Month by Month",
+   "First Year Freelancing in Canada? The Tax Dates That Cost Money"
+  ],
+  "description": "Your first year self-employed in Canada has a tax calendar. Here it is on one page.\n\n• Month one: open a separate tax account (our example sets aside about 27%: $270 from every $1,000).\n• Day one: keep every receipt, and a kilometre log if you drive for work. The CRA can ask for records going back six years.\n• Every quarter: watch your sales. Over $30,000 in four consecutive quarters → you must register for GST/HST.\n• December 31: for most sole proprietors, the business year ends.\n• First 60 days of the new year: RRSP contributions can still be deducted for the year that ended.\n• April 30: pay your balance. With no instalments yet, the whole bill is due at once.\n• June 15: filing deadline for the self-employed. Interest on any unpaid balance already started May 1.\n• Year two: if your bill was over $3,000, instalment reminders can start.\n\nNext: taxes on creator and platform income.\n\nSources: CRA (canada.ca): important dates for individuals, fiscal period, records, GST/HST registration, RRSP, instalments. Example only; general information, not tax advice.\n\n#SelfEmployed #CanadaTax #CRA",
+  "hashtags": "#SelfEmployed #CanadaTax #CRA",
+  "keywords": "how to file self employed taxes in canada, self employed taxes canada, first year self employed canada, freelancer taxes canada, self employed tax deadline canada, june 15 tax deadline, sole proprietor taxes canada, cra tax, tax tips canada",
+  "pinned": "Which date surprised you most in your first year: April 30 or June 15?",
+  "cta": "Next: taxes on creator and platform income. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "First year freelancing in Canada? 🇨🇦 Every tax date on one page: Dec 31, +60 days, Apr 30, Jun 15.",
+  "keywords": "self employed taxes canada · first year freelancing canada · cra deadlines · june 15 tax deadline · gst registration 30k",
+  "hashtags": "#selfemployedcanada #canadiantaxes #cra #freelancecanada #sidehustle",
+  "pinned": "Pay by April 30, file by June 15. Which one did you know? 👇",
+  "cta": "Follow for creator and platform income taxes next."
+ },
+ "ig": {
+  "caption": "Your first freelance year in Canada, on one page. 🇨🇦\n\nMonth one: a separate tax account. Day one: receipts + a km log (records: 6 years). Over $30K in 4 quarters: GST/HST registration. Dec 31: year ends. +60 days: RRSP deadline. Apr 30: pay. Jun 15: file (interest from May 1). Year two: instalments may start.\n\nSources: CRA (canada.ca). Example only, general info, not advice.",
+  "keywords": "self employed canada, freelancer taxes canada, cra deadlines, first year self employed, canada tax tips",
+  "hashtags": "#selfemployedcanada #canadiantaxes #freelancelife #smallbusinesscanada #taxtips #cra",
+  "pinned": "Save this for your first tax season 👇",
+  "cta": "Follow for creator and platform income taxes next."
+ },
+ "eng": {
+  "question": "Which date surprised you most in your first year: April 30 or June 15?",
+  "save": "The whole first-year calendar on one page.",
+  "share": "A friend who just went freelance.",
+  "follow": "The self-employed series continues with creator and platform income (bridge CTA)."
+ },
+ "seo": {
+  "primary": "how to file self employed taxes in canada",
+  "secondary": "how to file self employed taxes in canada (vidIQ question ≈5,072/mo, competition 10.4); how to file taxes as self employed in canada (≈4,515/mo); self employed taxes (≈4,780/mo); self employed taxes explained (≈3,736/mo); tax tips canada (≈5,298/mo, 8.3)",
+  "intent": "A new freelancer wants the order of tax tasks and deadlines in year one.",
+  "audience": "Canadians in their first year of self-employment or a side business",
+  "angle": "One handwritten calendar: setup, records, GST trigger, year-end, RRSP window, pay vs file dates, year-two instalments.",
+  "questions": "When is the self-employed tax deadline in Canada? · Do I pay by April 30 or June 15? · When do I need a GST number? · How long do I keep receipts? · Do I pay instalments in my first year?",
+  "pain": "Missing April 30 because the filing date is June 15; being surprised by GST and instalments."
+ },
+ "next": [
+  {
+   "topic": "Taxes on creator and platform income (B8, promised in this video's CTA)",
+   "why": "next in PUBLISHING-PLAN §4 row 10; creators and platform sellers search for it",
+   "intent": "youtube income taxes canada",
+   "hook": "Paid by YouTube, Etsy or Uber? The CRA sees it as business income.",
+   "angle": "platform reporting + what counts as income",
+   "payoff": "a written checklist (facts to verify first)"
+  },
+  {
+   "topic": "RRSP vs TFSA for the self-employed",
+   "why": "\"rrsp vs tfsa\" ≈5,056/mo; follows the 27¢ result",
+   "intent": "rrsp vs tfsa self employed",
+   "hook": "27¢ back per dollar. Is the TFSA better for you?",
+   "angle": "today's rate vs the rate at withdrawal",
+   "payoff": "a written comparison (mechanics only)"
+  },
+  {
+   "topic": "CRA My Account for freelancers",
+   "why": "\"cra my account\", \"canada revenue agency\" searches",
+   "intent": "how to use cra my account",
+   "hook": "Your balance and reminders already live in your CRA account.",
+   "angle": "what to check before each date",
+   "payoff": "a checklist (no personal data)"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after INST. Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ keyword research (CA, 2026-10-08): \"tax tips canada\" ≈5,298/mo (competition 8.3); \"canadian tax guide\" ≈4,746/mo (13.3); \"how to file taxes in canada\" ≈4,957/mo; \"self employed taxes\" ≈4,780/mo; \"self employed taxes explained\" ≈3,736/mo; the exact phrase \"first year self employed canada taxes\" is below 750/mo.\n- vidIQ viewer questions (CA): \"how to calculate quarterly taxes self employed\" ≈5,381/mo (7.8); \"how to file self employed taxes in canada\" ≈5,072/mo (10.4); \"how to pay taxes self employed\" ≈5,049/mo; \"how to avoid overpaying taxes as self employed\" ≈4,882/mo; \"how to file taxes as self employed in canada\" ≈4,515/mo.\n- Trend check: \"how to file taxes\" ≈8,650/mo is −46% vs its baseline (off-season, October); self-employed questions hold ≈5,000/mo. Publish now as evergreen, re-promote January–April.\n- Competitors (vidIQ outliers, Shorts, 1 year, \"self employed taxes canada\"; YouTube search CA \"first year self employed canada taxes\"): Shorts results are lifestyle clips, a TurboTax Canada ad and US tax humour; long-form leaders are 7–24 min explainers (Gabrielle Talks Money 16K views, Danish Ghazi T2125 walkthrough 96K, Hussain A. 6:49 with outlier score 221, Omar Tinoco 18 min walkthrough). Nobody shows a Canadian year-one calendar in under a minute: that is this video's angle.\n- vidIQ title scores (short-form): 'How to File Self-Employed Taxes in Canada: The Year-One Calendar' 90 (primary, matches the ≈5,072/mo question); 'Self-Employed Taxes in Canada: Your First Year, Month by Month' 83; 'First Year Freelancing in Canada? The Tax Dates That Cost Money' 83.\n- vidIQ credits for B7: keyword research + questions + outliers + YouTube search + 3 title scores (balance 1,805 before the search and titles; 1,785 after).",
+ "retention": "- Hook (0–2 s): \"a calendar, and missing it costs money\" (stakes) ✅\n- Visual change: a new dated line every 5–7 s; two push-ins (circled \"Apr 30\", underlined \"Jun 15\") ✅\n- Escalation: setup → records → GST trigger → year-end → RRSP window → pay vs file → year two → bridge ✅\n- Weakest moment: 10.4–13.6 s (no ink between the account line and the records line); the camera drifts down. Acceptable.\n- Payoff: the pay-vs-file split (April 30 vs June 15) on paper; the bridge line is written ✅",
+ "_label": "B7 · First freelance year calendar (handwritten)",
+ "_mp4": "b7_share.mp4",
+ "_vo": "Your first freelance year has a calendar, and missing it costs money. Month one: open a separate tax account. Our example puts two seventy from every thousand in it. Keep every receipt, and a kilometre log if you drive for work. The C-R-A can ask for six years of records. Pass thirty thousand in sales over four quarters in a row, and you'll need a G-S-T number. December thirty-first: for most sole proprietors, the business year ends. Then you have sixty days to put money into an R-R-S-P and deduct it for that year. April thirtieth: pay it all. With no instalments yet, the whole bill lands at once. June fifteenth: file your return. Interest on unpaid tax already started May first. Year two: if the bill was over three thousand, instalment reminders can start. Next: taxes on creator and platform income. Follow so you don't miss it.",
+ "_votc": "[00:00.20–00:05.22] \"Your first freelance year has a calendar, and missing it costs money.\"\n[00:05.57–00:13.03] \"Month one: open a separate tax account. Our example puts two seventy from every thousand in it.\"\n[00:13.43–00:22.53] \"Keep every receipt, and a kilometre log if you drive for work. The C-R-A can ask for six years of records.\"\n[00:22.93–00:29.48] \"Pass thirty thousand in sales over four quarters in a row, and you'll need a G-S-T number.\"\n[00:29.89–00:34.97] \"December thirty-first: for most sole proprietors, the business year ends.\"\n[00:35.37–00:41.18] \"Then you have sixty days to put money into an R-R-S-P and deduct it for that year.\"\n[00:41.58–00:47.87] \"April thirtieth: pay it all. With no instalments yet, the whole bill lands at once.\"\n[00:48.31–00:55.10] \"June fifteenth: file your return. Interest on unpaid tax already started May first.\"\n[00:55.50–01:00.42] \"Year two: if the bill was over three thousand, instalment reminders can start.\"\n[01:00.87–01:06.40] \"Next: taxes on creator and platform income. Follow so you don't miss it.\""
+}
