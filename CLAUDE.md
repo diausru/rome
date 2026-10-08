@@ -109,6 +109,10 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
 - Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): none left (D2, D5 delivered 2026-10-06; C3, F1, F5 delivered 2026-10-07; F4, C5 delivered 2026-10-08); next new topic per PUBLISHING-PLAN §4 (A4).
 
+## Coordination with the handwritten session (user, 2026-10-08)
+
+- Before every new card-format topic, check what the parallel handwritten "Real Tax Math" session has made or promised (its project folders, `<project>/PUBLISH.md` "NEXT 3 TOPICS", the bridge CTA in its `publish.json`, the Publishing Kit labels "(handwritten)"). Never make the same topic or the same angle. The handwritten session owns the self-employed B-series (B1–B8, B4P, RRSP-SE, INST); the card series skips those and takes the next non-overlapping topic in PUBLISHING-PLAN §4. Record the check in the bible.
+
 ## Metricool: only on command (user, 2026-10-07)
 
 - Never create, update or schedule anything in Metricool unless the user explicitly says so for that video. Per video: make the video, run the analysis and the publishing package, then STOP and wait. Prepared payloads may sit in `channel/metricool/schedule.json`, but nothing is sent.
