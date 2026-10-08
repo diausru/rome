@@ -190,6 +190,7 @@ Series fit: "Real Tax Math" (handwritten), after RRSP-SE. Playlist: Self-Employe
 
 ## Research notes
 - vidIQ keyword research (CA, 2026-10-08, one call, seed "tax instalments canada"): "how to pay quarterly taxes" ≈3,927/mo (competition 14.2); "cra tax" ≈5,002/mo (12.7, overall 68.1); "canada revenue agency" ≈5,190/mo; "income tax canada" ≈4,728/mo; "cra" ≈29,128/mo (+10% vs its baseline); Canadian instalment phrases below 750/mo. Title leads with "How to Pay Quarterly Taxes in Canada" and names "CRA Instalments".
+- vidIQ title score (short-form): 'How to Pay Quarterly Taxes in Canada (CRA Instalments)' 92 (one call).
 - Interest rate: CRA Q4 2026 overdue rate 7% (and 5% on non-corporate overpayments); the video says "seven percent right now" and the description dates it.
 
 ## Retention analysis
