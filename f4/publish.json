@@ -1,0 +1,83 @@
+{
+ "video": {
+  "title": "Rental property: deductions and the CCA trap",
+  "duration": "69.29 s (1663 frames)",
+  "mp4": "showreel/out/f4/f4-final.mp4 (share copy: f4-share.mp4)"
+ },
+ "sources": [
+  "CRA — Rental expenses you can deduct (Form T776) (canada.ca) · current · deductible expenses: mortgage interest, property tax, insurance, repairs, utilities, management fees; not your own labour",
+  "CRA — Guide T4036 Rental Income: current or capital expenses (canada.ca) · current · repairing wooden steps = current; replacing with concrete = capital",
+  "CRA — Capital cost allowance for rental property: classes, amount you can claim, CCA example (canada.ca) · current · Class 1 4%, half-year rule, land not depreciable, CCA can't create or increase a rental loss, claim any amount",
+  "CRA — Form T776 line 9947 Recaptured CCA; T4036 separate class for rentals of $50,000+ (canada.ca) · current · recapture added to income in the year of sale",
+  "Calculation: f4/example.py ($300,000 building, 10 years of full CCA = $96,395; UCC $203,605) · example, not a CRA rule"
+ ],
+ "yt": {
+  "titles": [
+   "Rental Income Tax in Canada: The Deduction That Bites Back",
+   "Renting Out a Property? Read This Before You Claim CCA",
+   "Rental Property Taxes Canada: Deductions, CCA and Recapture"
+  ],
+  "description": "Renting out a property in Canada? Here's what you can deduct, and the one deduction that can come back when you sell.\n\nCurrent expenses are deducted the same year: mortgage interest (not the principal), property tax, insurance, repairs, utilities, management fees. Your own labour isn't deductible.\n\nRepair or improvement? Fixing a wooden step restores it: a current expense. Replacing it with concrete improves it: a capital cost.\n\nCapital costs of the building are claimed slowly as capital cost allowance (CCA): most rental buildings are Class 1, 4% a year on the declining balance, half that in the year you buy. Never on the land. CCA can't create or increase a rental loss, and it's optional: claim any amount, or none.\n\nThe trap: example: a $300,000 building, full CCA for 10 years = $96,395 deducted. Sell the building for more than you paid, and that $96,395 comes back as recaptured CCA: added to your income in the year of sale and fully taxable (a capital gain is only half taxable).\n\nCCA is often a deferral, not a gift. Plan before you claim.\n\nSources: CRA guide T4036 Rental Income; CCA for rental property; Form T776 (canada.ca). The $300,000 building is an example. General information, not advice.\n\n#RentalProperty #CanadaTax #Landlord",
+  "hashtags": "#RentalProperty #CanadaTax #Landlord",
+  "keywords": "rental income tax canada, rental property tax canada, tax deductions for rental property, cra rules rental property, capital cost allowance rental property, cca recapture, rental property depreciation canada, landlord taxes canada, real estate tax strategies, rental property",
+  "pinned": "Class 1: 4% a year (half in year one), never on land. CCA can't create a rental loss. Sell the building for more than its UCC and the CCA comes back as fully taxable income. Do you claim CCA on your rental?",
+  "cta": "Follow Tax Secrets Canada; next: money moves to make before December 31."
+ },
+ "tt": {
+  "caption": "Renting out a property? 🇨🇦 What you can deduct, and the one deduction that can bite you when you sell (CCA recapture).",
+  "keywords": "rental income tax canada · landlord taxes · capital cost allowance · cca recapture · rental property deductions",
+  "hashtags": "#rentalproperty #landlordtips #canadiantaxes #realestatecanada #personalfinancecanada",
+  "pinned": "Claim CCA or not? It depends on your rate now vs the year you sell. (General info, not advice.)",
+  "cta": "Follow for the next one: money moves before December 31."
+ },
+ "ig": {
+  "caption": "Renting out a property? One deduction can bite you when you sell. 🇨🇦\n\nDeduct now: mortgage interest (not principal), property tax, insurance, repairs, utilities.\nRepair = current. Improvement = capital.\nCapital costs → CCA: 4% a year on most rental buildings (half in year one), never on land. Can't create a rental loss. Optional.\n\nThe trap: $300,000 building, 10 years of full CCA = $96,395. Sell for more than you paid → $96,395 added to your income, fully taxed.\n\nSend this to a friend who rents out a property.\n\nSource: CRA (canada.ca). Example only. General info, not advice.",
+  "keywords": "rental property canada, landlord, cca, recapture, tax canada",
+  "hashtags": "#rentalproperty #landlordcanada #canadiantaxes #realestateinvesting #personalfinancecanada #canadatax",
+  "pinned": "Save this before you claim CCA 📌",
+  "cta": "Send this to a friend who rents out a property."
+ },
+ "eng": {
+  "question": "Do you claim CCA on your rental, or skip it?",
+  "save": "Deduct now vs capital; CCA 4%; recapture on sale.",
+  "share": "Landlords, people renting out a basement or condo, buyers of a first rental.",
+  "follow": "Property tax rules, verified, from a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "rental income tax canada",
+  "secondary": "rental income tax canada (≈3,605/mo, competition 11.3); rental property (≈30,713/mo); real estate tax strategies (≈5,399/mo); tax deductions (≈3,508/mo); tax deductions for rental property; cra rules rental property",
+  "intent": "A landlord wants to know what they can deduct and whether claiming depreciation (CCA) is a good idea.",
+  "audience": "Small landlords: a condo, duplex or basement suite.",
+  "angle": "Deductions first (useful), then the trap (recapture) with one worked number.",
+  "questions": "What expenses can I deduct on a rental property in Canada? · Should I claim CCA on my rental? · What is CCA recapture? · Can CCA create a rental loss? · Is a renovation deductible?"
+ },
+ "next": [
+  {
+   "topic": "Year-end moves before Dec 31 (C5)",
+   "why": "Next in the plan; timely in late November",
+   "intent": "year end tax planning canada",
+   "hook": "Five things to do before December 31.",
+   "angle": "Verified deadlines",
+   "payoff": "A checklist"
+  },
+  {
+   "topic": "What triggers a CRA review (A4)",
+   "why": "In the plan; high curiosity",
+   "intent": "cra audit triggers",
+   "hook": "Why did CRA pick YOUR return?",
+   "angle": "Verified CRA review types",
+   "payoff": "What to keep ready"
+  },
+  {
+   "topic": "Overlooked self-employed expenses (B2)",
+   "why": "In the plan; self-employed audience",
+   "intent": "self employed tax deductions canada",
+   "hook": "Expenses freelancers forget to claim.",
+   "angle": "CRA-listed expenses",
+   "payoff": "A checklist"
+  }
+ ],
+ "series": "Investing Basics (capital gains → selling your home → rental property). Playlist: 'Investing & Property'.",
+ "research": "- vidIQ (2026-10-08, 5 credits): 'rental property tax canada' <750/mo; 'rental income tax canada' ≈3,605/mo (competition 11.3, best opportunity); 'rental property' ≈30,713/mo (+190%); 'real estate tax strategies' ≈5,399/mo → hook on the risk, 'rental income tax' in the title.",
+ "retention": "Hook (0–4 s): 'one deduction can bite you when you sell' open loop ✅. Concrete contrast (wood vs concrete step) at 15 s ✅. Scene changes at 25 s and 38 s reset attention ✅. One worked number ($96,395) shown twice: deducted, then recaptured ✅. Weakest point: 31–37 s (two rules), short and carried by the pin 'CCA $0'."
+}

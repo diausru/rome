@@ -1,0 +1,65 @@
+{
+ "total": 68.764,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Renting out a property? One deduction can bite you when you sell.",
+   "start": 0.25,
+   "end": 4.477
+  },
+  {
+   "id": "loop",
+   "text": "First, what you can deduct.",
+   "start": 4.697,
+   "end": 6.857
+  },
+  {
+   "id": "deduct",
+   "text": "Mortgage interest, property tax, insurance, repairs, utilities. Not the principal, and not your own labour.",
+   "start": 7.077,
+   "end": 14.677
+  },
+  {
+   "id": "capital",
+   "text": "Fix a wooden step? Deduct it now. Upgrade it to concrete? That's a capital cost.",
+   "start": 14.897,
+   "end": 21.377
+  },
+  {
+   "id": "cca",
+   "text": "Those are claimed slowly, as capital cost allowance: four percent a year on most rental buildings, half in year one. Never on land.",
+   "start": 21.597,
+   "end": 32.274
+  },
+  {
+   "id": "limit",
+   "text": "It can't create or increase a rental loss. And it's optional.",
+   "start": 32.494,
+   "end": 37.969
+  },
+  {
+   "id": "trap",
+   "text": "The trap: claim it in full for ten years on a three-hundred-thousand-dollar building. That's about ninety-six thousand.",
+   "start": 38.189,
+   "end": 46.992
+  },
+  {
+   "id": "recap",
+   "text": "Sell for more than you paid, and it all comes back as recapture: fully taxed income, not half like a capital gain.",
+   "start": 47.212,
+   "end": 56.105
+  },
+  {
+   "id": "payoff",
+   "text": "CCA is often a deferral, not a gift. Plan before you claim.",
+   "start": 56.325,
+   "end": 61.925
+  },
+  {
+   "id": "cta",
+   "text": "Next: money moves to make before December thirty-first. Follow so you don't miss it.",
+   "start": 62.145,
+   "end": 68.364
+  }
+ ]
+}
