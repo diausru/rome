@@ -41,3 +41,4 @@ As B4 v3. Paper: "year one calendar" · "month one: 27% → tax acct" · "receip
 
 ## 5. Revision log
 - v1 (2026-10-08): preview fixes above; "Jun 15" line split so it is not auto-shrunk.
+- v1 render QC (2026-10-08): 1080×1920, 24 fps, 1608 frames, 67.00 s, full decode clean, −14.1 LUFS, peak −1.9 dBFS; frame strip clean. Publishing Kit version 21 (27 cards).

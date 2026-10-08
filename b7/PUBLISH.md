@@ -209,7 +209,7 @@ Series fit: Real Tax Math (handwritten), after INST. Playlist: Self-Employed in 
 - Trend check: "how to file taxes" ≈8,650/mo is −46% vs its baseline (off-season, October); self-employed questions hold ≈5,000/mo. Publish now as evergreen, re-promote January–April.
 - Competitors (vidIQ outliers, Shorts, 1 year, "self employed taxes canada"; YouTube search CA "first year self employed canada taxes"): Shorts results are lifestyle clips, a TurboTax Canada ad and US tax humour; long-form leaders are 7–24 min explainers (Gabrielle Talks Money 16K views, Danish Ghazi T2125 walkthrough 96K, Hussain A. 6:49 with outlier score 221, Omar Tinoco 18 min walkthrough). Nobody shows a Canadian year-one calendar in under a minute: that is this video's angle.
 - vidIQ title scores (short-form): 'How to File Self-Employed Taxes in Canada: The Year-One Calendar' 90 (primary, matches the ≈5,072/mo question); 'Self-Employed Taxes in Canada: Your First Year, Month by Month' 83; 'First Year Freelancing in Canada? The Tax Dates That Cost Money' 83.
-- vidIQ credits for B7: keyword research + questions + outliers + YouTube search + 3 title scores (balance 1,805 before the search and titles; 1,785 after).
+- vidIQ credits for B7: keyword research + questions + outliers + YouTube search + 3 title scores (the YouTube search and the 3 title scores cost 20 credits; balance 1,775 on 2026-10-08 after B7).
 
 ## Retention analysis
 - Hook (0–2 s): "a calendar, and missing it costs money" (stakes) ✅
