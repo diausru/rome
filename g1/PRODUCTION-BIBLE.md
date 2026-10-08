@@ -43,6 +43,7 @@ Arrived and resident from September 1, 2026: 122 days → $16,452 × 122 ÷ 365 
 | PINS | keys "resident from the day you arrive" · envelope "statement of income: 2 years abroad" · folder "122 days ≈ $5,499" · envelope "RC151 · RC66" |
 | STRIP | 1 residency date · 2 world income after · 3 2 years abroad listed · 4 credits × days · ✓ RC151 · RC66 |
 | VOICE | Grady; 139 words; 60.92 s; bridge CTA "Next: the benefits newcomers can claim. Follow so you don't miss it." |
-| RENDER | 1080×1920, 24 fps |
+| RENDER | 1080×1920, 24 fps, 1475 frames (61.5 s) |
 
 ## 3. QC log
+- Stills v1: prorate pin clipped at the right edge → removed (the card carries the number); two card notes wrapped → shortened. Final: 1475 frames, 61.46 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.2 LUFS; contact sheet checked. vidIQ title scores 88 / 88 → primary 'How to File Taxes in Canada as a Newcomer (Year One Rules)' (exact search phrase). Kit card #21. Metricool: not sent.
