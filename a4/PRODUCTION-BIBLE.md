@@ -38,6 +38,7 @@ Sources: canada.ca (direct fetch blocked by the proxy; page text via search rest
 | PINS | face-down papers "T4 · T5 copies already at CRA" · envelope "keep receipts" · shoebox "picked at random" · receipts "a review asks for receipts, documents" · sealed envelope "reply before the deadline" |
 | STRIP | 1 slips vs return · 2 claims · 3 history · 4 random · review ≠ audit |
 | VOICE | Grady; 132 words; 64.66 s; bridge CTA "Next: your first Canadian tax return as a newcomer. Follow so you don't miss it." |
-| RENDER | 1080×1920, 24 fps |
+| RENDER | 1080×1920, 24 fps, 1564 frames (65.2 s) |
 
 ## 3. QC log
+- Stills v1: two pins clipped at the right edge (T4/T5 copies, review receipts) → moved left; reply pin collided with the end text → removed; review note wrapped → shortened. Final: 1564 frames, 65.17 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.2 LUFS; contact sheet checked. vidIQ title scores 95 ('Why Did CRA Pick YOUR Return? The 4 Official Reasons', chosen) · 84; 25 credits total by balance. Kit card #20. Metricool: not sent.
