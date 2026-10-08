@@ -4,7 +4,7 @@ REALISTIC HANDWRITTEN EXPLAINER
 
 VIDEO
 Title: $10K Side Hustle in Canada: How Much Tax Do You Pay?
-Duration: 57.72 s (1385 frames)
+Duration: 57.71 s (1385 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
 Render method: Code-built composite (Python / OpenCV), the B4 engine: still desk plate + matted whole-hand photo (no video generator), wrist-pivot hand motion with the pen tip on the ink head, single-line font ink revealed only along the pen path, living window light, code-made coffee steam, handheld camera with push-ins on circled figures, 180° motion blur on big hand moves, grain. Ending: handwritten curiosity-loop CTA. Narration: ElevenLabs via Higgsfield text2speech_v2 (series voice "Grady"), long pauses shortened to 0.38 s, no tempo change, −14 LUFS, limiter.
@@ -17,7 +17,7 @@ VOICEOVER
 
 Ten thousand dollars from your channel. How much tax? It depends on one thing. Case one: it's your only income. Manitoba, twenty twenty-six. That's under the basic personal amount. Zero income tax. But C-P-P still applies. Seven hundred seventy-three, fifty. Case two: the same ten thousand, on top of a sixty-thousand-dollar salary. Now every extra dollar lands in your top bracket. About twenty-nine seventy in income tax. Plus eleven ninety in C-P-P. Both halves, and your job already used the exemption. Total: four thousand, one sixty-one. Same ten thousand. More than five times the bill. And on a hundred-thousand-dollar salary? Should we run that one next? Say yes in the comments, and we'll do the math.
 
-(116 words, 50.0 s of speech, ≈139 wpm. Last word ends at 00:54.32; video 00:57.72.)
+(116 words, 50.0 s of speech, ≈139 wpm. Last word ends at 00:54.32; video 00:57.71.)
 
 ⸻
 
@@ -34,7 +34,7 @@ VOICEOVER TIMECODES
 [00:47.55–00:51.18] "And on a hundred-thousand-dollar salary? Should we run that one next?"
 [00:51.53–00:54.32] "Say yes in the comments, and we'll do the math."
 
-Audio cue points: 00:00.3 "$10K side income: tax?" · 00:05.5 "case 1: only income" · 00:10.5 "income tax $0", $0 circled ≈14.0 + push-in · 00:15.4 "CPP $773.50" · 00:20.6 "case 2: + $60K salary" · 00:28.0 "income tax $2,971" · 00:33.1 "CPP $1,190" · 00:39.8 "total $4,161", circled ≈42.6 + push-in · 00:44.0 "vs $774 → 5x+" · 00:47.4 arrow from the circle · 00:48.5 "on a $100K salary?" · 00:52.0 "run it next? say yes", underlined ≈55.6 · still hold to 57.72.
+Audio cue points: 00:00.3 "$10K side income: tax?" · 00:05.5 "case 1: only income" · 00:10.5 "income tax $0", $0 circled ≈14.0 + push-in · 00:15.4 "CPP $773.50" · 00:20.6 "case 2: + $60K salary" · 00:28.0 "income tax $2,971" · 00:33.1 "CPP $1,190" · 00:39.8 "total $4,161", circled ≈42.6 + push-in · 00:44.0 "vs $774 → 5x+" · 00:47.4 arrow from the circle · 00:48.5 "on a $100K salary?" · 00:52.0 "run it next? say yes", underlined ≈55.6 · still hold to 57.71.
 
 ⸻
 

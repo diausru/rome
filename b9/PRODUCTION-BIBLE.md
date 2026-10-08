@@ -44,3 +44,5 @@ As B4 v3. Paper: see PUBLISH.md drawing timeline.
 
 ## 6. Revision log
 - v1 (2026-10-08): preview fixes: circle padding on "$0" and "$4,161"; CTA question shortened so the arrow head clears the "?".
+- v1 render QC (2026-10-08): 1080×1920, 24 fps, 1385 frames, 57.71 s, full decode clean, −14.0 LUFS, peak −2.6 dBFS; frame strip clean; final CTA readable at the hold (the source tag covers the top line in the last frame, by design of the top-left tag).
+- Publishing Kit version 27 (32 cards, merged onto the live v26 with the card session's #21).
