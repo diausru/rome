@@ -43,6 +43,7 @@ Sources: canada.ca (direct fetch blocked by the network proxy; facts from canada
 | STRIP | ✓ donations · ✓ TFSA timing · ✓ FHSA opened · ✓ RESP $2,500 · RRSP +60 days |
 | LIVE | code snow behind both windows; steam over the cocoa |
 | VOICE | Grady; 146 words; first assembly 71.78 s → `tempo` 1.04 in vo_hf (no new credits) → 69.16 s; bridge CTA "Next: what actually makes CRA review your return. Follow so you don't miss it." |
-| RENDER | 1080×1920, 24 fps |
+| RENDER | 1080×1920, 24 fps, 1672 frames (69.7 s) |
 
 ## 3. QC log
+- Stills v1: FHSA and RRSP notes wrapped → shortened (RRSP note keeps '60 days', not 'Jan–Feb', since day 60 is March 1); code snow over the couple in scene 3 → removed. Final: 1672 frames, 69.67 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.1 LUFS; contact sheet checked. vidIQ title scores: 92 ('Do This Before Dec 31: 4 Tax Moves for Canadians (2026)', chosen) · 86 · 80; kit card #19. Metricool: not sent.
