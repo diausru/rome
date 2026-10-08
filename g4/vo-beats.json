@@ -1,0 +1,13 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "New to Canada? Some government payments can start almost right away. But only if you ask.", 0.28],
+  ["cgeb", "One: the Canada Groceries and Essentials Benefit, the old GST/HST credit. Tax-free, paid every three months.", 0.26],
+  ["ccb", "Two: the Canada child benefit. Up to eight thousand one hundred fifty-seven dollars a year for each child under six.", 0.26],
+  ["temp", "On a work or study permit? You generally need eighteen months in Canada first.", 0.26],
+  ["apply", "Apply as soon as you arrive: form RC151, or RC66 if you have kids. You'll need a social insurance number.", 0.28],
+  ["dental", "Three: the Canadian Dental Care Plan, for families with no dental insurance and income under ninety thousand.", 0.26],
+  ["file", "The catch: all of them run on your tax return. File every year, even with zero income.", 0.3],
+  ["cta", "Next: own property back home? When CRA wants form T1135. Follow so you don't miss it.", 0.4]
+ ]
+}

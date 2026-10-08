@@ -1,0 +1,171 @@
+<title>Newcomer Benefits Topic Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column like an accountant's working paper — verdict first, then the evidence ledger (demand → competitors → audience → titles), each a ruled section with tabular figures. */
+:root {
+  --bg: #f6f8fa;
+  --paper: #ffffff;
+  --ink: #18212b;
+  --muted: #5b6672;
+  --rule: #d9e0e7;
+  --accent: #a3283b;      /* cranberry: the deadline */
+  --gold: #a87412;        /* ledger figures */
+  --good: #2f7a52;
+  --bar: #c9d3dd;
+  --bar-hi: #a3283b;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+    --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+  --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--muted); margin: 0; }
+.verdict { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; padding: 20px 22px; display: grid; gap: 10px; }
+.verdict h2 { margin: 0; font: 600 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.verdict ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+section { display: grid; gap: 16px; border-top: 1px solid var(--rule); padding-top: 24px; }
+section h2 { font: 700 24px/1.15 var(--display); margin: 0; text-wrap: balance; }
+section > p { margin: 0; max-width: 64ch; color: var(--muted); }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.kv div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 4px; }
+.kv b { font: 600 28px/1.1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.kv span { font-size: 13px; color: var(--muted); }
+.bars { display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: minmax(150px, 230px) 1fr auto; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 12px; background: transparent; border-radius: 3px; position: relative; }
+.bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 3px; }
+.bar.hi .fill { background: var(--bar-hi); }
+.bar .num { font: 500 13px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 92px; text-align: right; }
+.bar .num small { color: var(--good); }
+.note { font-size: 13px; color: var(--muted); }
+.table { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+.tag.us { color: var(--accent); border-color: var(--accent); }
+.titles { display: grid; gap: 10px; }
+.t { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; }
+.t.win { border-color: var(--accent); }
+.t q { quotes: none; font-weight: 600; min-width: 0; }
+.t .score { font: 600 30px/1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.t .meter { grid-column: 1 / -1; height: 6px; background: var(--bar); border-radius: 3px; overflow: hidden; }
+.t .meter i { display: block; height: 100%; background: var(--gold); }
+.t.win .meter i { background: var(--accent); }
+.gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.gap div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; }
+.gap h3 { margin: 0; font: 600 15px/1.3 var(--body); }
+.gap p { margin: 0; font-size: 14px; color: var(--muted); }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; }
+@media (max-width: 520px) { .bar { grid-template-columns: 1fr auto; } .bar .track { grid-column: 1 / -1; order: 3; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Tax Secrets Canada · Short G4 · анализ vidIQ · 8 октября 2026</div>
+    <h1>Пособия, которые может получить <em>новичок</em></h1>
+    <p class="lede">Короткий разбор перед сценарием: спрос, конкуренты, вирусные Shorts и оценка заголовков.</p>
+  </header>
+
+  <div class="verdict">
+    <h2>Вывод</h2>
+    <ul>
+      <li>Люди ищут конкретные пособия, а не «benefits for newcomers»: «canada child benefit» около 4 855 запросов в месяц, «newcomers to canada» около 4 375. Конкуренция низкая (20 и 17).</li>
+      <li>Название CGEB уже знакомо: Short правительства (ESDC) о новом пособии набрал 15 млн просмотров. Но никто коротко не объясняет, что новичку нужно ПОДАТЬ заявление (RC151 / RC66), а не ждать декларации, и что владельцам разрешений нужно 18 месяцев для CCB. Это наш угол.</li>
+      <li>Заголовки: 83 и 82. Основной — «New to Canada? 3 Benefits You Can Claim Right Away».</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Спрос</h2>
+    <p>Ежемесячные запросы на YouTube, оценка vidIQ, регион CA. Красным отмечен запрос, под который написан заголовок.</p>
+    <div class="kv">
+      <div><b>4 855</b><span>canada child benefit · конкуренция 20,2</span></div>
+      <div><b>4 375</b><span>newcomers to canada · конкуренция 16,8</span></div>
+      <div><b>&lt;750</b><span>benefits for newcomers in canada</span></div>
+    </div>
+    <div class="bars" aria-label="Search volume per month">
+      <div class="bar"><span>canada child benefit</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">4 855</span></div>
+      <div class="bar hi"><span>newcomers to canada</span><span class="track"><span class="fill" style="width:90.1%"></span></span><span class="num">4 375</span></div>
+      <div class="bar"><span>benefits for newcomers in canada</span><span class="track"><span class="fill" style="width:15.4%"></span></span><span class="num">&lt;750</span></div>
+    </div>
+    <p class="note">Шкала от 0 до 4 855 запросов в месяц. Широкий запрос «canada immigration» (около 113 206 в месяц, конкуренция 43,6) не показан на шкале: он про иммиграцию, а не про пособия.</p>
+  </section>
+
+  <section>
+    <h2>Конкуренты на YouTube</h2>
+    <p>Самые просматриваемые видео по запросу «benefits for newcomers canada child benefit gst credit», регион CA, с 2024 года.</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Видео</th><th>Канал</th><th>Просмотры</th><th>Длина</th><th>Подход</th></tr></thead>
+        <tbody>
+          <tr><td>Tax Benefits and Credits for Newcomers to Canada with Ese Umoh</td><td>Narcity · 34,8 тыс.</td><td class="n">130 433</td><td class="n">2:15</td><td>реклама CRA, outlier ×8,3</td></tr>
+          <tr><td>Канадські виплати: GST, Child Benefit…</td><td>Ангеліна Таран · 9,9 тыс.</td><td class="n">16 971</td><td class="n">35:49</td><td>длинное интервью</td></tr>
+          <tr><td>Punjabi: «7 льгот для живущих в Канаде»</td><td>Punjab Motive · 9,6 тыс.</td><td class="n">6 497</td><td class="n">16:27</td><td>обзор льгот</td></tr>
+          <tr><td>RC151 GST/HST — How to apply</td><td>CANADAFORMS · 4 тыс.</td><td class="n">5 707</td><td class="n">12:51</td><td>заполнение формы</td></tr>
+          <tr><td>Do Newcomers Have to File Taxes in Canada</td><td>Instaccountant · 3,8 тыс.</td><td class="n">5 658</td><td class="n">0:52</td><td>Short, общий</td></tr>
+          <tr><td>How to Apply for Benefits and Tax Credits for Newcomers</td><td>Immigration.ca · 38,1 тыс.</td><td class="n">2 476</td><td class="n">1:09</td><td>outlier ×12,9</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Лидер — спонсорский ролик CRA. Остальные длинные, на других языках или про одну форму. Чек-листа «три пособия + как подать + правило 18 месяцев» в коротком формате нет. Названия CGEB (с 3 июля 2026) у конкурентов ещё нет: они говорят «GST/HST credit».</p>
+  </section>
+
+  <section>
+    <h2>Вирусные Shorts по теме</h2>
+    <p>Поиск vidIQ по Shorts за год: «canada child benefit newcomers money».</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Short</th><th>Канал</th><th>Просмотры</th><th>Длина</th></tr></thead>
+        <tbody>
+          <tr><td>The new Canada Grocery and Essentials Benefit</td><td>ESDC (правительство) · 12,1 тыс.</td><td class="n">15 055 987</td><td class="n">0:16</td></tr>
+          <tr><td>Canada Groceries &amp; Essentials Benefit — How Much Could You Get?</td><td>Jassi Dhandian Punjabi · 56,6 тыс.</td><td class="n">70 261</td><td class="n">0:27</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Остальные результаты не по теме (реклама страховок). Вывод: CGEB — горячее слово, его стоит назвать в первые 10 секунд.</p>
+  </section>
+
+  <section>
+    <h2>Наш угол</h2>
+    <div class="gap">
+      <div><h3>Три пособия по порядку</h3><p>CGEB (бывший GST/HST credit), Canada child benefit до $8 157 на ребёнка до 6 лет, стоматология CDCP.</p></div>
+      <div><h3>Подать, а не ждать</h3><p>RC151 или RC66 сразу после получения SIN. На рабочей или учебной визе для CCB обычно нужно 18 месяцев.</p></div>
+      <div><h3>Подвох</h3><p>Всё считается по декларации: подавать каждый год, даже без дохода. Мостик к следующей теме: T1135, имущество за границей.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Оценка заголовков</h2>
+    <p>vidIQ score_title, формат Short. Оценены два сильнейших варианта.</p>
+    <div class="titles">
+      <div class="t win"><q>New to Canada? 3 Benefits You Can Claim Right Away</q><span class="score">83</span><span class="meter"><i style="width:83%"></i></span></div>
+      <div class="t"><q>Newcomers to Canada: Child Benefit, CGEB and Dental (How to Apply)</q><span class="score">82</span><span class="meter"><i style="width:82%"></i></span></div>
+    </div>
+    <p class="note">Основной — с более высокой оценкой и цифрой «3». Второй содержит поисковые фразы «newcomers to canada» и «child benefit»; подходит для описания и TikTok.</p>
+  </section>
+
+  <footer>
+    <span>Мои вызовы vidIQ: 25 кредитов (исследование запросов, поиск конкурентов, вирусные Shorts, оценка двух заголовков). Общий баланс за это время 1 665 → 1 625: ещё 15, вероятно, потратил параллельный рукописный чат.</span>
+    <span>Налоговые факты ролика проверены по canada.ca (CRA, Government of Canada) и записаны в g4/PRODUCTION-BIBLE.md. Общая информация, не консультация.</span>
+  </footer>
+</div>

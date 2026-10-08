@@ -1,0 +1,53 @@
+{
+ "total": 67.19,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "New to Canada? Some government payments can start almost right away. But only if you ask.",
+   "start": 0.25,
+   "end": 6.65
+  },
+  {
+   "id": "cgeb",
+   "text": "One: the Canada Groceries and Essentials Benefit, the old GST/HST credit. Tax-free, paid every three months.",
+   "start": 6.93,
+   "end": 15.97
+  },
+  {
+   "id": "ccb",
+   "text": "Two: the Canada child benefit. Up to eight thousand one hundred fifty-seven dollars a year for each child under six.",
+   "start": 16.23,
+   "end": 25.475
+  },
+  {
+   "id": "temp",
+   "text": "On a work or study permit? You generally need eighteen months in Canada first.",
+   "start": 25.735,
+   "end": 31.856
+  },
+  {
+   "id": "apply",
+   "text": "Apply as soon as you arrive: form RC151, or RC66 if you have kids. You'll need a social insurance number.",
+   "start": 32.116,
+   "end": 42.483
+  },
+  {
+   "id": "dental",
+   "text": "Three: the Canadian Dental Care Plan, for families with no dental insurance and income under ninety thousand.",
+   "start": 42.763,
+   "end": 50.581
+  },
+  {
+   "id": "file",
+   "text": "The catch: all of them run on your tax return. File every year, even with zero income.",
+   "start": 50.841,
+   "end": 57.874
+  },
+  {
+   "id": "cta",
+   "text": "Next: own property back home? When CRA wants form T1135. Follow so you don't miss it.",
+   "start": 58.174,
+   "end": 66.79
+  }
+ ]
+}
