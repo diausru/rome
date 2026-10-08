@@ -1,0 +1,183 @@
+<title>Dec 31 Topic Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column like an accountant's working paper — verdict first, then the evidence ledger (demand → competitors → audience → titles), each a ruled section with tabular figures. */
+:root {
+  --bg: #f6f8fa;
+  --paper: #ffffff;
+  --ink: #18212b;
+  --muted: #5b6672;
+  --rule: #d9e0e7;
+  --accent: #a3283b;      /* cranberry: the deadline */
+  --gold: #a87412;        /* ledger figures */
+  --good: #2f7a52;
+  --bar: #c9d3dd;
+  --bar-hi: #a3283b;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+    --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+  --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--muted); margin: 0; }
+.verdict { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; padding: 20px 22px; display: grid; gap: 10px; }
+.verdict h2 { margin: 0; font: 600 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.verdict ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+section { display: grid; gap: 16px; border-top: 1px solid var(--rule); padding-top: 24px; }
+section h2 { font: 700 24px/1.15 var(--display); margin: 0; text-wrap: balance; }
+section > p { margin: 0; max-width: 64ch; color: var(--muted); }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.kv div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 4px; }
+.kv b { font: 600 28px/1.1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.kv span { font-size: 13px; color: var(--muted); }
+.bars { display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: minmax(150px, 230px) 1fr auto; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 12px; background: transparent; border-radius: 3px; position: relative; }
+.bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 3px; }
+.bar.hi .fill { background: var(--bar-hi); }
+.bar .num { font: 500 13px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 92px; text-align: right; }
+.bar .num small { color: var(--good); }
+.note { font-size: 13px; color: var(--muted); }
+.table { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+.tag.us { color: var(--accent); border-color: var(--accent); }
+.titles { display: grid; gap: 10px; }
+.t { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; }
+.t.win { border-color: var(--accent); }
+.t q { quotes: none; font-weight: 600; min-width: 0; }
+.t .score { font: 600 30px/1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.t .meter { grid-column: 1 / -1; height: 6px; background: var(--bar); border-radius: 3px; overflow: hidden; }
+.t .meter i { display: block; height: 100%; background: var(--gold); }
+.t.win .meter i { background: var(--accent); }
+.gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.gap div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; }
+.gap h3 { margin: 0; font: 600 15px/1.3 var(--body); }
+.gap p { margin: 0; font-size: 14px; color: var(--muted); }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; }
+@media (max-width: 520px) { .bar { grid-template-columns: 1fr auto; } .bar .track { grid-column: 1 / -1; order: 3; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Tax Secrets Canada · Short C5 · анализ vidIQ · 8 октября 2026</div>
+    <h1>Что сделать до <em>31 декабря</em></h1>
+    <p class="lede">Полный разбор темы перед сценарием: спрос, конкуренты, вирусные Shorts, голос аудитории и оценка заголовков. Все цифры получены из vidIQ 8 октября 2026, по Канаде, где это указано.</p>
+  </header>
+
+  <div class="verdict">
+    <h2>Вывод</h2>
+    <ul>
+      <li>Спрос сезонный и реальный: «year end tax planning» ищут около 3 940 раз в месяц, общий запрос «tax planning» растёт (+21,8% к базе).</li>
+      <li>Тему держат длинные видео на 6–28 минут. Канадского Short с проверенным чек-листом на 31 декабря среди вирусных роликов нет. Это наше окно.</li>
+      <li>Лучший заголовок: «Do This Before Dec 31: 4 Tax Moves for Canadians (2026)», оценка 92 из 100.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Спрос</h2>
+    <p>Ежемесячные поисковые запросы на YouTube, оценка vidIQ. Красным отмечены запросы, под которые написан заголовок.</p>
+    <div class="kv">
+      <div><b>3 940</b><span>year end tax planning · конкуренция 30,5</span></div>
+      <div><b>+21,8%</b><span>рост «tax planning» к базе 30 дней</span></div>
+      <div><b>&lt;750</b><span>точная фраза «year end tax planning canada»</span></div>
+    </div>
+    <div class="bars" aria-label="Search volume per month">
+      <div class="bar"><span>tfsa</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">20 925</span></div>
+      <div class="bar"><span>tax planning</span><span class="track"><span class="fill" style="width:81.6%"></span></span><span class="num">17 072 <small>▲22%</small></span></div>
+      <div class="bar"><span>tax tips</span><span class="track"><span class="fill" style="width:46%"></span></span><span class="num">9 624</span></div>
+      <div class="bar"><span>rrsp</span><span class="track"><span class="fill" style="width:24.3%"></span></span><span class="num">5 076</span></div>
+      <div class="bar"><span>canadian taxes</span><span class="track"><span class="fill" style="width:18.9%"></span></span><span class="num">3 954</span></div>
+      <div class="bar hi"><span>year end tax planning</span><span class="track"><span class="fill" style="width:18.8%"></span></span><span class="num">3 940</span></div>
+    </div>
+    <p class="note">Шкала от 0 до 20 925 запросов в месяц. «cra» (29 128) и «retirement planning» (364 178) не показаны: это соседние темы, а не наша.</p>
+  </section>
+
+  <section>
+    <h2>Конкуренты на YouTube</h2>
+    <p>Самые просматриваемые видео по запросу «year end tax planning canada», регион CA, опубликованные после сентября 2024.</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Видео</th><th>Канал</th><th>Просмотры</th><th>Длина</th><th>Что берут</th></tr></thead>
+        <tbody>
+          <tr><td>DO THIS to PAY LESS TAXES in Canada in 2026</td><td>Michael Kim, CPA · 17,6 тыс.</td><td class="n">322 417</td><td class="n">11:54</td><td>3 стратегии, outlier ×209</td></tr>
+          <tr><td>Do This BEFORE Dec 31 – Canadian Tax Tips (2025)</td><td>Canadian in a T-Shirt · 212 тыс.</td><td class="n">120 029</td><td class="n">6:33</td><td>FHSA, RESP, TFSA, RRSP; 403 комментария</td></tr>
+          <tr><td>Do This BEFORE Dec 31 and save your taxes in Canada</td><td>Canada Tried and Tested · 23 тыс.</td><td class="n">12 298</td><td class="n">14:19</td><td>общий чек-лист</td></tr>
+          <tr><td>'If you need money earlier next year, take it out this year'</td><td>BNN Bloomberg · 186 тыс.</td><td class="n">8 281</td><td class="n">7:33</td><td>сроки снятия из TFSA</td></tr>
+          <tr><td>Тот же сюжет, короткий клип</td><td>BNN Bloomberg</td><td class="n">7 373</td><td class="n">0:55</td><td>TFSA, без проверенного чек-листа</td></tr>
+          <tr><td>Year-End Tax Tips You Don't Want to Miss</td><td>RealEstateTaxTips · 58,7 тыс.</td><td class="n">6 699</td><td class="n">27:52</td><td>для инвесторов в недвижимость</td></tr>
+          <tr><td>Year-End Tax Planning Tips: Do These Things By Dec 31st!</td><td>adviice · 10,4 тыс.</td><td class="n">3 290</td><td class="n">8:29</td><td>пенсионное планирование</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Формулировка «Do This Before Dec 31» уже работает у двух каналов. Короткий формат по теме есть только у BNN, и это отрывок из эфира, а не чек-лист.</p>
+  </section>
+
+  <section>
+    <h2>Вирусные Shorts по теме</h2>
+    <p>Поиск vidIQ по Shorts за год: «year end tax tips canada before december 31». Канадских налоговых Shorts на эту тему среди выбросов нет. Ближайшие по смыслу:</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Short</th><th>Канал</th><th>Просмотры</th><th>Выше среднего канала</th></tr></thead>
+        <tbody>
+          <tr><td>How can I make the most of my money before the tax year ends?</td><td>Aviva UK · Великобритания</td><td class="n">51 992</td><td class="n">×89,6</td></tr>
+          <tr><td>Smart Year-End Tax Planning FAQ</td><td>Hidden Money Podcast · США</td><td class="n">18 508</td><td class="n">×15</td></tr>
+          <tr><td>Retirement Timing and Tax Tips</td><td>Camarda Wealth · США</td><td class="n">11 562</td><td class="n">×107</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Вывод: формат «успей до конца налогового года» вызывает отклик даже у маленьких каналов (1,5–9 тыс. подписчиков), а канадская версия пустует.</p>
+  </section>
+
+  <section>
+    <h2>Голос аудитории</h2>
+    <p>Индекс вопросов vidIQ по фразам «tax before december 31» и «tfsa withdrawal» пуст. Проверка идеи по комментариям 94 тематических каналов (95 веток, 360 комментариев) дала результат «недостаточно данных»: прямых просьб о таком ролике нет, одна смежная ветка про лимиты TFSA и RRSP.</p>
+    <p>Это не значит, что тема слабая: спрос видно по поиску и по 403 комментариям у Canadian in a T-Shirt. Это значит, что зрители не формулируют запрос в комментариях, они ищут его в декабре.</p>
+  </section>
+
+  <section>
+    <h2>Наш угол</h2>
+    <div class="gap">
+      <div><h3>Чек-лист за минуту</h3><p>Четыре действия и один миф вместо 6–28 минут у конкурентов.</p></div>
+      <div><h3>Только проверенное</h3><p>Каждый срок взят у CRA и ESDC. Продажу акций в убыток убрали: на canada.ca не нашлось, какая дата считается.</p></div>
+      <div><h3>Миф в конце</h3><p>«RRSP не до 31 декабря» закрывает интригу из первых секунд и даёт повод сохранить.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Оценка заголовков</h2>
+    <p>vidIQ score_title, формат Short, с привязкой к нашему каналу.</p>
+    <div class="titles">
+      <div class="t win"><q>Do This Before Dec 31: 4 Tax Moves for Canadians (2026)</q><span class="score">92</span><span class="meter"><i style="width:92%"></i></span></div>
+      <div class="t"><q>4 Money Moves That Expire on December 31 (Canada)</q><span class="score">86</span><span class="meter"><i style="width:86%"></i></span></div>
+      <div class="t"><q>Year-End Tax Planning Canada: The Dec 31 Checklist</q><span class="score">80</span><span class="meter"><i style="width:80%"></i></span></div>
+    </div>
+    <p class="note">Победитель ставится основным заголовком YouTube. Вариант с 86 подходит для TikTok, где заголовок короче.</p>
+  </section>
+
+  <footer>
+    <span>Потрачено кредитов vidIQ: 75 по балансу (1 850 → 1 775). Вызовы: исследование запросов, два запроса вопросов, вирусные Shorts, поиск конкурентов, анализ комментариев, оценка трёх заголовков. Обновление баланса 6 ноября.</span>
+    <span>Налоговые факты ролика проверены по canada.ca (CRA и ESDC) и записаны в c5/PRODUCTION-BIBLE.md. Общая информация, не консультация.</span>
+  </footer>
+</div>

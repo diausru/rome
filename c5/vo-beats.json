@@ -1,0 +1,46 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Four money moves expire on December thirty-first. And one deadline almost everyone gets wrong.",
+   0.28
+  ],
+  [
+   "donate",
+   "One: donations. Give by December thirty-first, and it counts on this year's return. Keep the official receipt.",
+   0.26
+  ],
+  [
+   "tfsa",
+   "Two: need TFSA money early next year? Take it out in December. The room comes back January first, not a whole year later.",
+   0.26
+  ],
+  [
+   "fhsa",
+   "Three: saving for a first home? Open an FHSA before the year ends, even empty. That starts eight thousand dollars of room, and unused room carries forward.",
+   0.26
+  ],
+  [
+   "resp",
+   "Four: put twenty-five hundred dollars in a child's RESP by December thirty-first, and the government adds a five-hundred-dollar grant for this year.",
+   0.28
+  ],
+  [
+   "rrsp",
+   "And the myth: your RRSP deadline isn't December. It's sixty days into the new year. Unless you turned seventy-one.",
+   0.28
+  ],
+  [
+   "payoff",
+   "Four moves, one date. Put it in your calendar now.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: what actually makes CRA review your return. Follow so you don't miss it.",
+   0.4
+  ]
+ ],
+ "tempo": 1.04
+}

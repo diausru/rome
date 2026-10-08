@@ -91,6 +91,7 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 
 - vidIQ (user, updated 2026-10-06: the user is buying a subscription and WANTS demand/interest research with it, minimal requests): check `vidiq_balance` (free) first. Per video, BEFORE writing the script: one `vidiq_keyword_research` call (mode `questions` or `research`, country CA) to see what people actually search and ask, and use it to pick the hook and the first-frame wording; after the render, at most one `vidiq_score_title` for the chosen title. Never batch extra calls. Report the credits spent. If the balance is 0, fall back to WebSearch and recorded data and say so.
 - Higgsfield: generate only the VO lines needed; re-generate only lines that changed.
+- **Full vidIQ analysis per video (user, 2026-10-08; from C5 on, overrides the "one call" rule above):** before the script: keyword research (`research`, CA), viewer questions (`questions`), trends (`rising` or trending/outlier videos for the topic), competitor analysis (top videos / channels on the topic: views, angle, length, what they miss). After the render: score ALL three titles (`vidiq_score_title`) and pick the best. Publish the result as a designed analysis Artifact page per video (demand, questions, trends, competitors, our angle, title scores) and give the user the link. Report the credits spent.
 - **Duration tolerance (user, 2026-10-06):** a finished VO anywhere from 45 s to 1:10 is acceptable. Inside that range do NOT spend credits or regenerate/trim/speed up audio to hit 60 s; just set the video length to the VO (+≈0.5 s hold) and move on. Only outside 45 s–1:10 shorten or extend.
 
 ## Design direction (user, 2026-10-06; applies to the next videos, finished ones stay as they are)
@@ -104,7 +105,7 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 ## Pace: one video at a time (user, 2026-10-06)
 
 - Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
-- Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): none left (D2, D5 delivered 2026-10-06; C3, F1, F5 delivered 2026-10-07; F4 delivered 2026-10-08); next new topic per PUBLISHING-PLAN §4 (C5).
+- Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): none left (D2, D5 delivered 2026-10-06; C3, F1, F5 delivered 2026-10-07; F4, C5 delivered 2026-10-08); next new topic per PUBLISHING-PLAN §4 (A4).
 
 ## Metricool: only on command (user, 2026-10-07)
 
