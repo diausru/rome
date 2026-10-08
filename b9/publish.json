@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "$10K Side Hustle in Canada: How Much Tax Do You Pay? (handwritten)",
+  "duration": "57.72 s (1385 frames)",
+  "mp4": "b9/build/b9_final.mp4 (share copy: b9_share.mp4)"
+ },
+ "sources": [
+  "CRA T4127 Payroll Deductions Formulas (Jan 2026), recorded in salary/ and b4/ · 2026 · federal 14% to $58,523 then 20.5%; federal BPA $16,452; Manitoba 10.8% to $47,000 then 12.75%; Manitoba BPA $15,780",
+  "CRA / ESDC 2026 CPP figures (Investment Executive, Advisor.ca reports of the CRA announcement; b4/) · 2026 · 5.95% each for employee and employer, 11.9% self-employed, basic exemption $3,500, YMPE $74,600",
+  "CRA Schedule 8 (CPP on self-employment and other earnings) and lines 22200 / 31000 (via search summaries) · 2026 · employment and self-employment earnings are combined on one schedule, so the $3,500 exemption is applied once; self-employed CPP covers both halves; half is deductible (line 22200) with the enhanced part, the base part is a credit (line 31000)",
+  "Calculation (not a CRA rule): b9/calc.py. Case 1: $10,000 net self-employment income only → taxable income $9,548.25, below both basic personal amounts → $0 income tax; CPP (10,000 − 3,500) × 11.9% = $773.50. Case 2: on top of a $60,000 salary → extra federal $1,838.23 + Manitoba $1,132.93 = $2,971.15 income tax, CPP 10,000 × 11.9% = $1,190, total $4,161.15 (41.6%). Assumptions: Manitoba, single, 2026, $10,000 is net (after expenses), no other income or credits beyond the basics. Dependencies: province, other income, deductions/credits. Verification note: canada.ca cannot be opened from the build machine; the Schedule 8 exemption-sharing mechanic is from the form's structure (search summary). Check Schedule 8 on canada.ca before publishing."
+ ],
+ "yt": {
+  "titles": [
+   "$10K Side Hustle in Canada: How Much Tax Do You Pay?",
+   "Same $10K Side Income, Two Very Different Tax Bills (Canada)",
+   "$774 or $4,161? The Tax on a $10K Side Hustle"
+  ],
+  "description": "$10,000 from your channel or side hustle. How much tax do you pay in Canada? It depends on one thing: what else you earn.\n\nCase 1 — it's your only income (Manitoba, 2026): taxable income is under the basic personal amount, so $0 income tax. But self-employed CPP still applies: ($10,000 − $3,500) × 11.9% = $773.50.\n\nCase 2 — the same $10,000 on top of a $60,000 salary: every extra dollar lands in your top bracket, about $2,971 in income tax, plus $1,190 of CPP (both halves; your job already used the $3,500 exemption). Total: $4,161 — more than five times the bill.\n\nOn a $100,000 salary? Say yes in the comments and we'll run it next.\n\nSources: CRA T4127 (2026 rates), CRA CPP 2026, Schedule 8. Example only (Manitoba, single, $10K net, basic credits); general information, not tax advice.\n\n#SideHustle #CanadaTax #SelfEmployed",
+  "hashtags": "#SideHustle #CanadaTax #SelfEmployed",
+  "keywords": "side hustle taxes canada, taxes for side hustles, how much tax on side income canada, self employed taxes canada, cpp self employed, youtube income tax canada, second income tax canada, tax on 10000 side income",
+  "pinned": "Should we run it for a $100,000 salary next? Yes or no 👇",
+  "cta": "And on a $100,000 salary? Say yes in the comments, and we'll do the math."
+ },
+ "tt": {
+  "caption": "$10K side hustle in Canada 🇨🇦 Tax: $774… or $4,161. It depends on one thing.",
+  "keywords": "side hustle taxes canada · tax on side income · self employed cpp · youtube income tax canada · second job tax canada",
+  "hashtags": "#sidehustle #canadiantaxes #selfemployedcanada #cra #taxtips",
+  "pinned": "$100K salary + $10K side income: want that one next? Say yes 👇",
+  "cta": "Say yes and we'll run the $100K case next."
+ },
+ "ig": {
+  "caption": "Same $10K side income. Two very different tax bills. 🇨🇦\n\nOnly income (MB, 2026): $0 income tax, $773.50 CPP. On top of a $60K salary: ≈$2,971 income tax + $1,190 CPP = $4,161. More than 5×.\n\nSources: CRA (T4127 2026, CPP 2026, Schedule 8). Example only, general info, not advice.",
+  "keywords": "side hustle canada, side income tax, self employed canada, canada tax tips, cpp self employed",
+  "hashtags": "#sidehustlecanada #canadiantaxes #selfemployedcanada #taxtips #cra #personalfinancecanada",
+  "pinned": "$100K salary next? Say yes 👇",
+  "cta": "Say yes for the $100K case."
+ },
+ "eng": {
+  "question": "Should we run the same $10K on a $100,000 salary next?",
+  "save": "The two-case math (only income vs on top of a salary) on one page.",
+  "share": "A friend with a day job and a side hustle.",
+  "follow": "The next case is decided in the comments (curiosity-loop CTA)."
+ },
+ "seo": {
+  "primary": "side hustle taxes canada",
+  "secondary": "taxes for side hustles (vidIQ ≈4,621/mo, competition 24.9); self employed taxes (≈4,780/mo, 25.1); self employment tax (≈3,802/mo); taxes in canada (≈3,485/mo); exact \"side hustle taxes canada\" below 750/mo",
+  "intent": "Someone with side income wants to know how much tax it costs.",
+  "audience": "Canadians with a day job and a side hustle, new creators",
+  "angle": "Same $10K, two bills: the tax depends on your other income; CPP applies even at $0 income tax.",
+  "questions": "How much tax do I pay on side hustle income in Canada? · Do I pay CPP on side income? · Is $10,000 of side income taxable if it's my only income? · Why is my side income taxed so high?",
+  "pain": "Surprise tax bill at filing because the side income lands on top of a salary."
+ },
+ "next": [
+  {
+   "topic": "$10K on top of a $100,000 salary (answer to this video's CTA)",
+   "why": "the CTA asks it; a calculation in the same format",
+   "intent": "tax on side income high income canada",
+   "hook": "$100K job, $10K side hustle. Here's the bill.",
+   "angle": "26% federal bracket + CPP2 / max CPP effects (to be computed)",
+   "payoff": "one number vs $4,161"
+  },
+  {
+   "topic": "C4 expenses the CRA often denies",
+   "why": "next non-B topic in PUBLISHING-PLAN §4 row 11 (the card series may own it: coordinate)",
+   "intent": "what expenses can i claim self employed canada",
+   "hook": "Phone, car, camera: which ones does the CRA push back on?",
+   "angle": "personal vs business use",
+   "payoff": "a written checklist"
+  },
+  {
+   "topic": "Instalments for side hustlers",
+   "why": "a $4,161 bill can cross the $3,000 instalment line (INST)",
+   "intent": "do i need to pay tax instalments side hustle",
+   "hook": "Your side hustle just pushed you over $3,000. Now what?",
+   "angle": "the two-year test with a salary",
+   "payoff": "a written check"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B8 (answers the B8 CTA). Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ keyword research (CA, 2026-10-08, seed \"side hustle taxes canada\"): \"taxes for side hustles\" ≈4,621/mo (competition 24.9); \"self employed taxes\" ≈4,780/mo (25.1); \"self employed tax\" ≈3,995/mo; \"self employment tax\" ≈3,802/mo; \"small business taxes\" ≈4,372/mo; \"taxes\" ≈82,592/mo (+19% vs baseline); exact Canadian phrase below 750/mo.\n- vidIQ Shorts outliers (\"side hustle taxes\", 1 year): side-hustle shorts break out on income stories (\"This Side Hustle will Make me Over $600!\" 4.5M views; \"my favorite side hustle in my backyard\" breakout 240×) and none shows the tax on the money.\n- vidIQ YouTube search (CA, by views): top results are side-hustle idea videos (vending machines 61M, Diary of a CEO 6.2M) with no Canadian tax math. Gap: the after-tax cost of side income, two cases.\n- vidIQ title scores (short-form): '$10K Side Hustle in Canada: How Much Tax Do You Pay?' 92 (primary); 'Same $10K Side Income, Two Very Different Tax Bills (Canada)' 84. Third title not scored (25-credit cap).\n- vidIQ credits for B9: 25 (keyword research 5, outliers 5, YouTube search 5, 2 title scores 10); balance 1,710 → 1,685.",
+ "retention": "- Hook (0–2 s): \"$10K… how much tax? It depends on one thing\" (open loop) ✅\n- Visual change: new ink every 2–5 s; push-ins on the circled $0 and the circled $4,161 ✅\n- Escalation: case 1 (good news, then CPP) → case 2 → total → \"5x+\" → next case ✅\n- Weakest moment: 24.6–28.0 s (no ink while \"top bracket\" is explained); the camera holds on case 2. Acceptable.\n- Ending: arrow from the circled $4,161 to \"on a $100K salary?\", underlined \"run it next? say yes\", ≈1 s still hold ✅",
+ "_label": "B9 · $10K side income, two bills (handwritten)",
+ "_mp4": "b9_share.mp4",
+ "_vo": "Ten thousand dollars from your channel. How much tax? It depends on one thing. Case one: it's your only income. Manitoba, twenty twenty-six. That's under the basic personal amount. Zero income tax. But C-P-P still applies. Seven hundred seventy-three, fifty. Case two: the same ten thousand, on top of a sixty-thousand-dollar salary. Now every extra dollar lands in your top bracket. About twenty-nine seventy in income tax. Plus eleven ninety in C-P-P. Both halves, and your job already used the exemption. Total: four thousand, one sixty-one. Same ten thousand. More than five times the bill. And on a hundred-thousand-dollar salary? Should we run that one next? Say yes in the comments, and we'll do the math.",
+ "_votc": "[00:00.20–00:04.95] \"Ten thousand dollars from your channel. How much tax? It depends on one thing.\"\n[00:05.35–00:10.01] \"Case one: it's your only income. Manitoba, twenty twenty-six.\"\n[00:10.36–00:14.33] \"That's under the basic personal amount. Zero income tax.\"\n[00:14.73–00:19.95] \"But C-P-P still applies. Seven hundred seventy-three, fifty.\"\n[00:20.50–00:25.19] \"Case two: the same ten thousand, on top of a sixty-thousand-dollar salary.\"\n[00:25.59–00:32.58] \"Now every extra dollar lands in your top bracket. About twenty-nine seventy in income tax.\"\n[00:32.98–00:39.21] \"Plus eleven ninety in C-P-P. Both halves, and your job already used the exemption.\"\n[00:39.66–00:46.70] \"Total: four thousand, one sixty-one. Same ten thousand. More than five times the bill.\"\n[00:47.55–00:51.18] \"And on a hundred-thousand-dollar salary? Should we run that one next?\"\n[00:51.53–00:54.32] \"Say yes in the comments, and we'll do the math.\""
+}
