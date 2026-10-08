@@ -4,7 +4,7 @@ REALISTIC HANDWRITTEN EXPLAINER
 
 VIDEO
 Title: YouTube Taxes in Canada: What the CRA Actually Counts
-Duration: 59.37 s (1425 frames)
+Duration: 59.33 s (1424 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
 Render method: Code-built composite (Python / OpenCV), the B4 engine: still desk plate + matted whole-hand photo (no video generator), wrist-pivot hand motion with the pen tip on the ink head, single-line font ink revealed only along the pen path, living window light, code-made coffee steam, handheld camera with a push-in on the circled total, 180° motion blur on big hand moves, grain. Ending: handwritten curiosity-loop CTA (arrow from the circled total to the question, underlined ask, still hold). Narration: ElevenLabs via Higgsfield text2speech_v2 (series voice "Grady"), long pauses shortened to 0.38 s, no tempo change, −14 LUFS.
@@ -17,7 +17,7 @@ VOICEOVER
 
 Brands sent you free stuff? The C-R-A may call that income. If your channel runs as a business, not a personal pastime, everything it earns counts. Cash or not. Our example creator: six thousand from ads. Twenty-five hundred from a sponsor. Plus fifteen hundred in products, kept in exchange for posts. The bank account says eighty-five hundred. The C-R-A counts ten thousand, at fair market value. Selling on Etsy, or driving for Uber? Since twenty twenty-four, many platforms report their sellers to the C-R-A. Real business expenses can come off. And past thirty thousand in sales, you'll need a G-S-T number. So: ten thousand of income. How much tax is actually on it? Want the real math? Ask below. Your question could be our next video.
 
-(127 words, 53.2 s of speech, ≈143 wpm. Last word ends at 00:57.07; video 00:59.37.)
+(127 words, 53.2 s of speech, ≈143 wpm. Last word ends at 00:57.07; video 00:59.33.)
 
 ⸻
 
@@ -33,7 +33,7 @@ VOICEOVER TIMECODES
 [00:47.89–00:52.24] "So: ten thousand of income. How much tax is actually on it?"
 [00:52.59–00:57.07] "Want the real math? Ask below. Your question could be our next video."
 
-Audio cue points: 00:00.3 "free stuff = income?" · 00:12.8 "ads $6,000" · 00:15.6 "sponsor $2,500" · 00:19.0 "products $1,500 (FMV)" · 00:23.2 "bank: $8,500" · 00:26.4 "CRA: $10,000", circled ≈29.8 + push-in · 00:31.0 "platforms report: 2024+" · 00:39.2 "- costs · $30K → GST #" · 00:47.0 arrow from the circle · 00:48.1 "how much tax on it?" · 00:52.7 "want the math? ask below", underlined 56.7–57.6 · hold to 59.37.
+Audio cue points: 00:00.3 "free stuff = income?" · 00:12.8 "ads $6,000" · 00:15.6 "sponsor $2,500" · 00:19.0 "products $1,500 (FMV)" · 00:23.2 "bank: $8,500" · 00:26.4 "CRA: $10,000", circled ≈29.8 + push-in · 00:31.0 "platforms report: 2024+" · 00:39.2 "- costs · $30K → GST #" · 00:47.0 arrow from the circle · 00:48.1 "how much tax on it?" · 00:52.7 "want the math? ask below", underlined 56.7–57.6 · hold to 59.33.
 
 ⸻
 
