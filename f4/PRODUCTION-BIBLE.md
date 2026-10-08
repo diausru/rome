@@ -40,6 +40,7 @@ Building portion $300,000 (land excluded), Class 1, full CCA every year (net ren
 | STRIP | ✓ current: deduct now · capital → CCA · 4% class 1 · ½ in year one · ✗ no CCA rental loss · recapture fully taxed |
 | LIVE | steam over the coffee / tea; camera between the landlord and the props |
 | VOICE | Grady; 146 words; three lines re-generated shorter (first take 76.2 s) → 68.76 s; bridge CTA "Next: money moves to make before December thirty-first. Follow so you don't miss it." |
-| RENDER | 1080×1920, 24 fps |
+| RENDER | 1080×1920, 24 fps, 1663 frames (69.3 s) |
 
 ## 3. QC log
+- Stills v1: 'CCA $0' pin on the tea collided with the strip → limit camera key v 0.4; repair card note wrapped → shortened. Final render: 1663 frames, 69.29 s, h264 1080×1920 + AAC 48 kHz, decode OK, −14.0 LUFS (the background job hit its time limit during the share encode; render complete, share copy rebuilt and re-verified). Contact sheet checked. vidIQ title score 81 ('Rental Income Tax in Canada: The Deduction That Bites Back'); kit card #18. Metricool: not sent (user rule 2026-10-07).
