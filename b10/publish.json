@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "Why a Bigger Salary Means Less Tax on Your Side Hustle (handwritten)",
+  "duration": "63.54 s (1524 frames)",
+  "mp4": "b10/build/b10_final.mp4 (share copy: b10_share.mp4)"
+ },
+ "sources": [
+  "CRA T4127 Payroll Deductions Formulas (Jan 2026), recorded in salary/ and b4/ · 2026 · federal 20.5% from $58,523 to $117,045; Manitoba 12.75% to $100,000 then 17.4%",
+  "CRA 2026 CPP and CPP2 figures (b4/; Payworks, Wagepoint, Canada Pension Map summaries of the CRA rates, search 2026-10-08) · 2026 · CPP 5.95% each side up to YMPE $74,600 (max $4,230.45 employee); CPP2 4% each side on $74,600–$85,000 (max $416 employee, $832 self-employed); no exemption for CPP2",
+  "CRA Schedule 8 (combined employment and self-employment earnings; b9/) · 2026 · contributions already made through employment count toward the annual maxima, so self-employment earnings above them add no CPP/CPP2",
+  "Calculation (not a CRA rule): b10/calc.py. $10,000 net self-employment income on top of a $100,000 salary (MB, single, 2026): federal 20.5% × $10,000 = $2,050.00; Manitoba: taxable income $98,873 → $108,873, $1,127 at 12.75% + $8,873 at 17.4% = $1,687.59; CPP $0 (salary already above YAMPE). Total $3,737.59 vs $4,161.15 at a $60,000 salary (b9/): $423.56 less. Dependencies: province, other income, credits; the $10K is net of expenses. Verification note: canada.ca cannot be opened from the build machine; check the CRA CPP2 page before publishing."
+ ],
+ "yt": {
+  "titles": [
+   "Why a Bigger Salary Means Less Tax on Your Side Hustle (Canada)",
+   "$100K Salary + $10K Side Hustle: The CPP Surprise",
+   "Same $10K Side Hustle, Bigger Salary, Smaller Tax Bill"
+  ],
+  "description": "Same $10,000 side hustle. Bigger salary. Smaller tax bill. Here's why (Manitoba, 2026).\n\nOn top of a $100,000 salary, the extra $10,000 pays federal tax at 20.5% ($2,050) and Manitoba tax at 12.75% / 17.4% ($1,688). But CPP: $0. Your job already paid the maximum CPP and CPP2 for the year, so self-employment income above it adds no contributions.\n\nTotal: $3,738. On a $60,000 salary the same $10,000 cost $4,161, including $1,190 of CPP. That's $424 less at the higher salary.\n\nSame $10K in Alberta or Ontario? Pick one in the comments and we'll run it next.\n\nSources: CRA T4127 (2026 rates), CRA CPP/CPP2 2026, Schedule 8. Example only (Manitoba, single, $10K net); general information, not tax advice.\n\n#SideHustle #CanadaTax #CPP",
+  "hashtags": "#SideHustle #CanadaTax #CPP",
+  "keywords": "side hustle taxes canada, cpp maximum contribution, cpp self employed, cpp2 explained, taxes for side hustles, 100k salary side hustle tax, canada pension plan, cpp explained",
+  "pinned": "Alberta or Ontario: where should we run the same $10K next? 👇",
+  "cta": "Same $10K in Alberta or Ontario? Pick one in the comments."
+ },
+ "tt": {
+  "caption": "Bigger salary, SMALLER tax on the same $10K side hustle? 🇨🇦 The CPP surprise.",
+  "keywords": "side hustle taxes canada · cpp maximum · cpp2 · 100k salary canada · self employed cpp",
+  "hashtags": "#sidehustle #canadiantaxes #cpp #personalfinancecanada #cra",
+  "pinned": "AB or ON next? 👇",
+  "cta": "Pick AB or ON in the comments."
+ },
+ "ig": {
+  "caption": "Same $10K side hustle. Bigger salary. Smaller tax bill. 🇨🇦\n\n$100K salary (MB, 2026): federal $2,050 + Manitoba $1,688 + CPP $0 (the job already maxed CPP and CPP2) = $3,738. On a $60K salary: $4,161. $424 less.\n\nSources: CRA (T4127 2026, CPP/CPP2 2026). Example only, general info, not advice.",
+  "keywords": "side hustle canada, cpp maximum, cpp2, canada tax tips, self employed canada",
+  "hashtags": "#sidehustlecanada #canadiantaxes #cpp #taxtips #personalfinancecanada #cra",
+  "pinned": "Alberta or Ontario next? 👇",
+  "cta": "Vote AB or ON below."
+ },
+ "eng": {
+  "question": "Alberta or Ontario: where should we run the same $10K next?",
+  "save": "The $60K vs $100K side-income math with the CPP maximum on one page.",
+  "share": "A friend with a good salary and a side business.",
+  "follow": "Viewers pick the next province (curiosity-loop CTA)."
+ },
+ "seo": {
+  "primary": "side hustle taxes canada",
+  "secondary": "cpp explained (vidIQ ≈4,101/mo, competition 15.4); canada pension plan (≈3,478/mo; CA ≈5,325); canada pension plan explained (≈3,714/mo); taxes for side hustles (≈4,621/mo, from B9); personal finance canada (≈8,688/mo, +43% vs baseline)",
+  "intent": "A higher earner with side income wants to know what it really costs.",
+  "audience": "Canadians earning $85K+ with a side business or creator income",
+  "angle": "The CPP maximum makes side income cheaper at a higher salary, even with a higher income-tax rate.",
+  "questions": "Do I pay CPP on side income if my job already maxed it? · How much tax on side income with a $100K salary? · What is CPP2? · Why is my side income taxed at 33%+?",
+  "pain": "Fear of a huge bill on side income at a high salary; double-paying CPP."
+ },
+ "next": [
+  {
+   "topic": "The same $10K in Alberta or Ontario (answer to this video's CTA)",
+   "why": "the CTA vote picks it; province comparisons work on the channel",
+   "intent": "side hustle tax alberta / ontario",
+   "hook": "Same $10K. Different province. Different bill.",
+   "angle": "provincial rates at $100K (ON surtax / AB 10%)",
+   "payoff": "one number vs $3,738"
+  },
+  {
+   "topic": "CPP2 explained in one page",
+   "why": "\"cpp explained\" ≈4,101/mo, low competition; this video raised CPP2",
+   "intent": "what is cpp2",
+   "hook": "There's a second CPP on your pay stub. What is it?",
+   "angle": "the $74,600–$85,000 band",
+   "payoff": "max $416 / $832"
+  },
+  {
+   "topic": "RRSP for side income: what it saves at $100K",
+   "why": "links RRSP-SE to this case",
+   "intent": "rrsp deduction side income",
+   "hook": "At $100K, every RRSP dollar saves more. How much?",
+   "angle": "marginal rate 37.9% here (to compute)",
+   "payoff": "a worked number"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B9 (answers the B9 CTA). Playlist: Self-Employed in Canada.",
+ "research": "- vidIQ keyword research (CA, 2026-10-08, seed \"cpp self employed\"): \"cpp explained\" ≈4,101/mo (competition 15.4); \"canada pension plan\" ≈3,478/mo (CA ≈5,325); \"canada pension plan explained\" ≈3,714/mo; \"personal finance canada\" ≈8,688/mo (+43% vs baseline); \"cpp\" ≈50,361/mo (−46%, global); exact \"cpp self employed\" below 750/mo.\n- vidIQ Shorts outliers (\"100k salary side hustle tax\"): side-hustle money stories and a US \"$150k Salary: Expectation vs. Reality\" tax short (323K views, breakout 59) → salary-vs-tax reality checks work; no Canadian CPP angle.\n- vidIQ YouTube search (CA, by views, \"CPP maximum contribution self employed second job canada\"): only one relevant result (Canada Pension Map, CPP enhancement, 8K views, outlier 108) → the topic is under-served on YouTube.\n- vidIQ title scores (short-form): 'Why a Bigger Salary Means Less Tax on Your Side Hustle (Canada)' 93 (primary); '$100K Salary + $10K Side Hustle: The CPP Surprise' 77. Third title not scored (25-credit cap).\n- vidIQ credits: five calls at listed prices (keyword research, outliers 5, YouTube search 5, 2 title scores 10); balance 1,645 → 1,635 (the balance is shared with the parallel card session, so the measured change is not a clean per-video count).",
+ "retention": "- Hook (0–2 s): a paradox (\"bigger salary, smaller tax bill\") ✅\n- Visual change: new ink every 3–5 s; push-ins on the circled $0 and the double-underlined $3,738 ✅\n- Escalation: tax up (20.5% / 17.4%) → CPP twist ($1,190 → $0) → total → −$424 → vote ✅\n- Weakest moment: 24.3–29.2 s (no ink while the 17.4% sentence ends); camera drifts to the next line. Acceptable.\n- Ending: arrow down the left margin from the total → \"same $10K in AB or ON?\", both options circled, ≈1 s still hold ✅",
+ "_label": "B10 · $100K salary + $10K side hustle (handwritten)",
+ "_mp4": "b10_share.mp4",
+ "_vo": "Same ten-thousand-dollar side hustle. Bigger salary. Smaller tax bill. Here's why. Manitoba, twenty twenty-six. This time the salary is one hundred thousand. Federal tax on the extra ten thousand: twenty point five percent. Two thousand and fifty. Manitoba: you cross the hundred-thousand line, so most of it is taxed at seventeen point four. Sixteen eighty-eight. Now C-P-P. At a sixty-thousand salary, the side income paid eleven ninety. At a hundred thousand, your job already paid the maximum. C-P-P one and C-P-P two. So the side income pays zero. Total: three thousand, seven thirty-eight. Four twenty-four less than at the smaller salary. Same ten thousand in Alberta, or in Ontario? Pick one in the comments. That's the next one we run.",
+ "_votc": "[00:00.20–00:06.23] \"Same ten-thousand-dollar side hustle. Bigger salary. Smaller tax bill. Here's why.\"\n[00:06.62–00:12.41] \"Manitoba, twenty twenty-six. This time the salary is one hundred thousand.\"\n[00:12.81–00:19.55] \"Federal tax on the extra ten thousand: twenty point five percent. Two thousand and fifty.\"\n[00:19.95–00:28.45] \"Manitoba: you cross the hundred-thousand line, so most of it is taxed at seventeen point four. Sixteen eighty-eight.\"\n[00:28.95–00:35.66] \"Now C-P-P. At a sixty-thousand salary, the side income paid eleven ninety.\"\n[00:36.06–00:45.54] \"At a hundred thousand, your job already paid the maximum. C-P-P one and C-P-P two. So the side income pays zero.\"\n[00:45.99–00:52.51] \"Total: three thousand, seven thirty-eight. Four twenty-four less than at the smaller salary.\"\n[00:53.36–00:56.37] \"Same ten thousand in Alberta, or in Ontario?\"\n[00:56.72–00:59.74] \"Pick one in the comments. That's the next one we run.\""
+}
