@@ -49,4 +49,4 @@ As B4 v3. Paper: "free stuff = income?" · "business, not a pastime" · "ads $6,
 ## 6. Revision log
 - v1 (2026-10-08): preview fixes: writing sped up so the circle lands on "ten thousand"; circle padding; arrow path clear of text; final framing at zoom 1.6 so the question is readable.
 - v1 render QC (2026-10-08): 1080×1920, 24 fps, 1424 frames, 59.33 s, full decode clean; first mux peaked at −0.7 dBFS → audio remuxed with a limiter (no video re-render): −14.1 LUFS, peak −2.8 dBFS. Frame strip clean; final CTA readable at the hold.
-- Publishing Kit version 24 (29 cards, merged onto the live v23 from the card session).
+- Publishing Kit version 25 (30 cards: B8 merged with the card session's #20).
