@@ -1,0 +1,13 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "Why did CRA pick your return? CRA actually publishes the reasons. There are four.", 0.28],
+  ["mismatch", "One: your return doesn't match a slip. Employers and banks send CRA copies of your T4s and T5s, and the computer compares them.", 0.26],
+  ["claims", "Two: the deductions and credits you claimed. Some get a closer look, so keep the receipts.", 0.26],
+  ["history", "Three: your history with CRA. Past problems can bring a second look.", 0.26],
+  ["random", "Four: pure chance. Some returns are simply picked at random.", 0.3],
+  ["review", "And a review is not an audit. CRA reviews about three million returns a year, mostly to confirm your claims can be supported.", 0.28],
+  ["letter", "If a letter comes, send what they ask for before the deadline. And keep your records for six years.", 0.3],
+  ["cta", "Next: your first Canadian tax return as a newcomer. Follow so you don't miss it.", 0.4]
+ ]
+}
