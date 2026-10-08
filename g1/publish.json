@@ -1,0 +1,83 @@
+{
+ "video": {
+  "title": "New to Canada: your first tax return",
+  "duration": "61.46 s (1475 frames)",
+  "mp4": "showreel/out/g1/g1-final.mp4 (share copy: g1-share.mp4)"
+ },
+ "sources": [
+  "CRA — Newcomers to Canada (canada.ca) · current · residency from significant residential ties, usually the arrival date; NR74",
+  "CRA — Completing your return for newcomers (canada.ca) · current · world income for the resident part; Statement of Income for up to 2 years before; treaty exemption",
+  "CRA — Federal non-refundable tax credits for newcomers and emigrants (canada.ca) · 2025 guide · prorating by days resident; exceptions; 90% rule",
+  "CRA — RC151 (Canada Groceries and Essentials Benefit, formerly GST/HST credit) and RC66 (CCB) (canada.ca) · current · apply before the first return; SIN needed",
+  "CRA T4127 · 2026 · federal basic personal amount $16,452 (example: × 122/365 = $5,499)"
+ ],
+ "yt": {
+  "titles": [
+   "How to File Taxes in Canada as a Newcomer (Year One Rules)",
+   "New to Canada? Your First Tax Return Is Different (Here's How)",
+   "First Tax Return in Canada: 4 Things Newcomers Must Know"
+  ],
+  "description": "New to Canada? Your first tax return works differently. Here's what changes in year one.\n\n1. Residency: you become a resident for tax purposes when you establish significant residential ties (a home, a spouse or partner, social ties), usually the day you arrive. Unsure? Form NR74.\n2. World income: from that day you report income from every country (a tax treaty can exempt some). Foreign income earned before you arrived is generally not taxed in Canada.\n3. Statement of income: you still list what you earned abroad, up to two years before, so CRA can calculate your benefits.\n4. Prorated credits: most federal credits are prorated by days resident. Example: arrive September 1, 2026 → 122 days → basic personal amount ≈ $5,499 instead of $16,452.\n\nBenefits: apply right away, before your first return: Form RC151 (GST/HST credit, now the Canada Groceries and Essentials Benefit) or RC66 if you have children. You need a SIN first.\n\nThen file by April 30, every year, even with no income, or the payments stop.\n\nSources: CRA, Newcomers to Canada; Completing your return for newcomers; Federal non-refundable tax credits for newcomers; RC151; RC66 (canada.ca). The September example is illustrative. General information, not advice.\n\n#NewToCanada #CanadaTax #Newcomers",
+  "hashtags": "#NewToCanada #CanadaTax #Newcomers",
+  "keywords": "how to file taxes in canada, tax return canada, newcomer tax return canada, first tax return canada, moving to canada, canadian tax guide, new immigrant taxes canada, statement of income newcomer, rc151, rc66 canada child benefit",
+  "pinned": "Year one: resident from your ties (usually arrival), world income after that, 2 years of foreign income listed for benefits, credits prorated by days. Apply RC151 / RC66 now. When did you arrive?",
+  "cta": "Follow Tax Secrets Canada; next: the benefits newcomers can claim."
+ },
+ "tt": {
+  "caption": "New to Canada? 🇨🇦 Your first tax return works differently. 4 things that change in year one.",
+  "keywords": "new to canada taxes · first tax return canada · newcomer benefits · how to file taxes in canada",
+  "hashtags": "#newtocanada #canadiantaxes #immigrantlife #newcomers #personalfinancecanada",
+  "pinned": "Apply RC151 / RC66 before your first return. (General info, not advice.)",
+  "cta": "Follow for the next one: benefits newcomers can claim."
+ },
+ "ig": {
+  "caption": "New to Canada? Your first tax return is different. 🇨🇦\n\n1. Resident from the day you set up ties (usually arrival)\n2. World income after that day\n3. List foreign income from up to 2 years before (for benefits)\n4. Credits prorated by days: arrive Sept 1 → ≈ a third\n\nApply for benefits now: RC151, or RC66 with kids. Then file by April 30, every year, even at $0.\n\nSend this to someone who just moved here.\n\nSource: CRA (canada.ca). Example only. General info, not advice.",
+  "keywords": "new to canada, newcomer taxes, first tax return, canada benefits",
+  "hashtags": "#newtocanada #canadiantaxes #newcomers #immigrantcanada #personalfinancecanada #canadatax",
+  "pinned": "Save this for your first tax season 📌",
+  "cta": "Send this to someone who just moved here."
+ },
+ "eng": {
+  "question": "When did you arrive in Canada?",
+  "save": "The 4 year-one rules + RC151 / RC66.",
+  "share": "Friends and family who just moved to Canada.",
+  "follow": "Canadian tax rules for newcomers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "how to file taxes in canada",
+  "secondary": "moving to canada (≈15,852/mo, +125%); how to file taxes in canada (≈4,957/mo); tax return canada (≈4,573/mo, competition 10.6); canadian tax guide (≈4,746/mo); how to file taxes canada (≈3,808/mo)",
+  "intent": "A newcomer wants to know how their first Canadian tax return differs.",
+  "audience": "New permanent residents, workers and students in their first year.",
+  "angle": "What is different in year one, from CRA's newcomer pages; competitors teach CRA account setup or software.",
+  "questions": "Do newcomers report foreign income? · When do I become a resident for tax? · Can I get benefits before filing? · Why is my basic personal amount smaller? · When is my first return due?"
+ },
+ "next": [
+  {
+   "topic": "Benefits newcomers can claim (G4)",
+   "why": "Bridge in this video",
+   "intent": "benefits for newcomers canada",
+   "hook": "New to Canada? Money you may be missing.",
+   "angle": "Verified benefits",
+   "payoff": "A checklist"
+  },
+  {
+   "topic": "Foreign assets: T1135 (G2)",
+   "why": "Next newcomer question",
+   "intent": "t1135 foreign property canada",
+   "hook": "Own property back home? CRA may need a form.",
+   "angle": "Verified threshold and rules",
+   "payoff": "Who must file"
+  },
+  {
+   "topic": "Got a CRA letter? (A5)",
+   "why": "Follows A4",
+   "intent": "cra letter what to do",
+   "hook": "Opened a CRA letter? Do this first.",
+   "angle": "Verified CRA steps",
+   "payoff": "Calm action plan"
+  }
+ ],
+ "series": "New to Canada (first return → benefits → foreign assets). Playlist: 'New to Canada'.",
+ "research": "- vidIQ (2026-10-08): my calls = 25 credits (keyword research, competitor search, Shorts outliers, two title scores 88 / 88); balance moved 1,725 → 1,675 (the other 25 most likely the parallel handwritten session, shared account). See the analysis Artifact.",
+ "retention": "Hook (0–6 s): 'Your first tax return works differently' ✅. Arrival scene matches a big rising audience ('moving to canada') ✅. Concrete example ($5,499) at 33 s ✅. Two scene changes (15 s, 40 s) ✅. Weakest point: 25–32 s (statement of income), short and carried by the '2 years' hero."
+}

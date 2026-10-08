@@ -1,0 +1,13 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "New to Canada? Your first tax return works differently. Here's what changes.", 0.28],
+  ["residency", "You become a resident when you set up real ties here: a home, a spouse, a life. Usually the day you arrive.", 0.26],
+  ["world", "From that day, you report your world income, from every country. Before it, Canada generally doesn't tax your foreign income.", 0.26],
+  ["soi", "But you still list what you earned abroad, up to two years back, so CRA can work out your benefits.", 0.26],
+  ["prorate", "Your credits shrink to match. Arrive in September, and the basic personal amount is cut to about a third.", 0.28],
+  ["benefits", "Don't wait for the return. Apply for benefits right away, with form RC151, or RC66 if you have kids.", 0.26],
+  ["deadline", "Then file by April thirtieth, every year, even with no income, or the payments stop.", 0.3],
+  ["cta", "Next: the benefits newcomers can claim. Follow so you don't miss it.", 0.4]
+ ]
+}
