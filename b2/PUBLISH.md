@@ -4,7 +4,7 @@ REALISTIC HANDWRITTEN EXPLAINER
 
 VIDEO
 Title: How Tax Write-Offs Actually Work for Self-Employed Canadians
-Duration: 67.68 s (1624 frames)
+Duration: 67.67 s (1624 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
 Render method: Code-built composite (Python / OpenCV), the B4 engine: still desk plate + matted whole-hand photo (no video generator), wrist-pivot hand motion with the pen tip on the ink head, single-line font ink revealed only along the pen path, living window light, code-made coffee steam, handheld camera with push-ins on circled figures, 180° motion blur on big hand moves, grain. Ending: handwritten curiosity-loop CTA. Narration: ElevenLabs via Higgsfield text2speech_v2 (series voice "Grady"), long pauses shortened to 0.38 s, no tempo change, −14 LUFS, limiter.
@@ -17,7 +17,7 @@ VOICEOVER
 
 Four expenses freelancers forget to claim. Together, they're worth almost six hundred dollars. Our Manitoba freelancer nets sixty thousand. Let's go through the receipts. One: your phone. If forty percent of the use is business, that's three eighty-four of a nine-sixty plan. Two: bank and payment fees. Account fees, card fees, the cut PayPal or Stripe takes. Say four twenty a year. Three: your accountant. Bookkeeping and the business part of your tax return. Six hundred. Four: dues and licences tied to the business. Two fifty. Total: sixteen fifty-four. Now the honest part: a write-off isn't free money. It lowers taxable income, so this freelancer saves about thirty-six cents per dollar. Five eighty-eight. And there's a fifth one people miss. Want it next? Comment five, and we'll break it down.
 
-(130 words, 59.2 s of speech, ≈132 wpm. Last word ends at 01:03.38; video 01:07.68.)
+(130 words, 59.2 s of speech, ≈132 wpm. Last word ends at 01:03.38; video 01:07.67.)
 
 ⸻
 

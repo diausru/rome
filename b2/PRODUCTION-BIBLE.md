@@ -40,3 +40,5 @@ Mode: REALISTIC HANDWRITTEN EXPLAINER, series "Real Tax Math" (… → B9 → B1
 
 ## 5. Revision log
 - v1 (2026-10-09): preview fixes: CTA writing sped up so the circle lands before the hold; circle padding on $588 and the 5.
+- v1 render QC (2026-10-09): 1080×1920, 24 fps, 1624 frames, 67.67 s, full decode clean, −14.1 LUFS, peak −2.3 dBFS; frame strip clean; CTA readable at the hold.
+- Publishing Kit version 32 (37 cards, merged with the card session's #23–#24).
