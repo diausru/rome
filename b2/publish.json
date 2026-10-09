@@ -1,0 +1,86 @@
+{
+ "video": {
+  "title": "How Tax Write-Offs Actually Work for Self-Employed Canadians (handwritten)",
+  "duration": "67.68 s (1624 frames)",
+  "mp4": "b2/build/b2_final.mp4 (share copy: b2_share.mp4)"
+ },
+ "sources": [
+  "CRA — Business expenses, Guide T4002 / Form T2125 expense lines (via search summaries, 2026-10-09) · current · reasonable expenses incurred to earn business income are deductible; for mixed-use items only the business portion (e.g. a personal cell phone used partly for business); interest and bank charges (incl. card and payment-processing fees on business sales); accounting / legal fees for the business; business licences, dues and memberships (initiation fees excluded for dues)",
+  "CRA T4127 (Jan 2026) and CPP 2026, via b4/calc.py · 2026 · tax + CPP for the B4 freelancer (MB, single, $60,000 net): $16,105.48",
+  "Calculation (not a CRA rule): b2/calc.py. Example expenses: phone 40% × $960 = $384; bank + payment fees $420; accountant $600; dues / licences $250; total $1,654. Tax + CPP $16,105.48 → $15,517.26: saved $588.22 (35.6¢ per $1). Amounts are illustrative; the business-use share must be supportable (log or reasonable estimate). Dependencies: actual use, province, income level. Verification note: canada.ca cannot be opened from the build machine; check T4002 on canada.ca before publishing."
+ ],
+ "yt": {
+  "titles": [
+   "How Tax Write-Offs Actually Work for Self-Employed Canadians",
+   "4 Tax Write-Offs Freelancers Forget in Canada",
+   "4 Expenses Freelancers Forget: What They Really Save"
+  ],
+  "description": "Four expenses freelancers forget to claim, and what they're really worth.\n\nExample: a Manitoba freelancer netting $60,000 (2026).\n• Phone: 40% business use of a $960 plan = $384\n• Bank and payment fees (account, card, PayPal/Stripe): $420\n• Accountant (bookkeeping + the business part of the return): $600\n• Business dues and licences: $250\nTotal: $1,654.\n\nThe honest part: a write-off isn't free money. It lowers taxable income, so this freelancer saves about 36¢ per dollar (income tax + CPP): $588.\n\nThere's a fifth one people miss. Want it next? Comment 5.\n\nSources: CRA Guide T4002 (business expenses), CRA T4127 2026 rates, CPP 2026. Example only; general information, not tax advice.\n\n#SelfEmployed #CanadaTax #TaxDeductions",
+  "hashtags": "#SelfEmployed #CanadaTax #TaxDeductions",
+  "keywords": "self employed tax deductions canada, tax write offs canada, how tax write offs work, self employed taxes canada, business expenses canada, sole proprietor taxes canada, tax tips canada, freelancer taxes canada",
+  "pinned": "Want #5 next? Comment 5 👇",
+  "cta": "There's a fifth one people miss. Want it next? Comment 5."
+ },
+ "tt": {
+  "caption": "4 expenses freelancers forget to claim 🇨🇦 …and why a write-off isn't free money.",
+  "keywords": "tax write offs canada · self employed deductions canada · freelancer taxes · how write offs work · cra business expenses",
+  "hashtags": "#taxwriteoffs #selfemployedcanada #canadiantaxes #freelancer #cra",
+  "pinned": "Comment 5 for the fifth one 👇",
+  "cta": "Comment 5 for #5."
+ },
+ "ig": {
+  "caption": "4 expenses freelancers forget. 🇨🇦\n\nPhone (business share) $384 · bank + payment fees $420 · accountant $600 · dues/licences $250 = $1,654. A write-off isn't free money: at ~36¢ per $1 this freelancer saves $588 (MB, $60K net, 2026).\n\nSources: CRA (T4002, T4127 2026). Example only, general info, not advice.",
+  "keywords": "tax write offs canada, self employed canada, freelancer taxes, business expenses, canada tax tips",
+  "hashtags": "#taxwriteoffs #selfemployedcanada #canadiantaxes #freelancelife #taxtips #cra",
+  "pinned": "Comment 5 for the fifth one 👇",
+  "cta": "Comment 5 for #5."
+ },
+ "eng": {
+  "question": "Which of the four did you forget? (Comment 5 for the fifth.)",
+  "save": "A checklist of four overlooked expenses with the real savings math.",
+  "share": "A freelancer friend before tax season.",
+  "follow": "The fifth expense is the next video if viewers ask (curiosity-loop CTA)."
+ },
+ "seo": {
+  "primary": "self employed tax deductions canada",
+  "secondary": "tax tips canada (vidIQ ≈5,298/mo, competition 8.3); sole proprietor taxes canada (≈4,868/mo, 12.8); self employed taxes (≈4,780/mo); self employed taxes explained (≈3,736/mo); business tax deductions (≈4,077/mo); tax deductions (≈3,508/mo)",
+  "intent": "A freelancer wants to know what else to claim and what it saves.",
+  "audience": "Canadian freelancers and sole proprietors",
+  "angle": "Four overlooked expenses plus the honest math: a write-off saves your marginal rate, not 100%.",
+  "questions": "What can I write off as self-employed in Canada? · Can I deduct my phone? · Are PayPal fees deductible? · Can I deduct my accountant? · How much does a write-off actually save?",
+  "pain": "Leaving money on the table; misunderstanding write-offs as free money."
+ },
+ "next": [
+  {
+   "topic": "Expense #5 (answer to this video's CTA): capital cost allowance on your laptop / gear",
+   "why": "the CTA promises a fifth; CCA is the classic missed one",
+   "intent": "can i write off my laptop self employed canada",
+   "hook": "You can't write off your laptop all at once. Here's what you can do.",
+   "angle": "CCA classes and the first-year rule (needs a fact pass)",
+   "payoff": "a worked first-year number"
+  },
+  {
+   "topic": "Same $10K side hustle in Alberta or Ontario (B10 vote)",
+   "why": "B10's CTA asked; depends on comments",
+   "intent": "side hustle tax alberta ontario",
+   "hook": "Same $10K, different province.",
+   "angle": "provincial rates at $100K",
+   "payoff": "one number vs $3,738"
+  },
+  {
+   "topic": "Meals: why only 50%",
+   "why": "common question with a firm CRA rule",
+   "intent": "can i write off meals self employed canada",
+   "hook": "That client lunch? Half of it.",
+   "angle": "the 50% limit",
+   "payoff": "a worked number"
+  }
+ ],
+ "series": "Real Tax Math (handwritten), after B10. Playlist: Self-Employed in Canada. PUBLISHING-PLAN §4 row 8 (B2).",
+ "research": "- vidIQ keyword research (CA, 2026-10-09, seed \"self employed tax deductions canada\"): \"tax tips canada\" ≈5,298/mo (competition 8.3); \"sole proprietor taxes canada\" ≈4,868/mo (12.8); \"self employed taxes\" ≈4,780/mo; \"business tax deductions\" ≈4,077/mo; \"self employed taxes explained\" ≈3,736/mo; \"tax deductions\" ≈3,508/mo; exact phrase below 750/mo.\n- vidIQ Shorts outliers (\"tax write offs self employed\", 1 year): \"How Tax Write-Offs Actually Work 👀\" (1.5M views), \"These tax write offs ain't helping that much\" and \"Stop Buying Things Just for the Tax Write-Off\" (154K) → the honest-math angle (a write-off ≠ free money) is what performs; all US.\n- vidIQ YouTube search (CA, by views): Ramsey \"Do You Not Know How Tax Deductions Work?\" (2.4M), US write-off lists; Canadian long-form (Canadian in a T-Shirt, Michael Kim CPA) is general. Gap: Canadian overlooked expenses with the real savings number.\n- vidIQ title scores (short-form): 'How Tax Write-Offs Actually Work for Self-Employed Canadians' 84 (primary); '4 Tax Write-Offs Freelancers Forget in Canada' 54. Third title not scored (25-credit cap).\n- vidIQ credits for B2: 25 (keyword research 5, outliers 5, YouTube search 5, 2 title scores 10); balance 1,610 → 1,585.",
+ "retention": "- Hook (0–2 s): a count plus a dollar promise (\"four… almost six hundred\") ✅\n- Visual change: one receipt per 5–8 s; push-ins on the underlined total and the circled $588 ✅\n- Escalation: four items → total → the honest twist (36¢, not $1) → saved $588 → #5 teaser ✅\n- Weakest moment: 25.2–31.2 s (the long fees sentence while the line is already written); acceptable.\n- Ending: \"+ #5 people miss\" continues the list → \"want it? comment 5\" with the 5 circled, ≈1.5 s still hold ✅",
+ "_label": "B2 · 4 forgotten expenses (handwritten)",
+ "_mp4": "b2_share.mp4",
+ "_vo": "Four expenses freelancers forget to claim. Together, they're worth almost six hundred dollars. Our Manitoba freelancer nets sixty thousand. Let's go through the receipts. One: your phone. If forty percent of the use is business, that's three eighty-four of a nine-sixty plan. Two: bank and payment fees. Account fees, card fees, the cut PayPal or Stripe takes. Say four twenty a year. Three: your accountant. Bookkeeping and the business part of your tax return. Six hundred. Four: dues and licences tied to the business. Two fifty. Total: sixteen fifty-four. Now the honest part: a write-off isn't free money. It lowers taxable income, so this freelancer saves about thirty-six cents per dollar. Five eighty-eight. And there's a fifth one people miss. Want it next? Comment five, and we'll break it down.",
+ "_votc": "[00:00.20–00:06.99] \"Four expenses freelancers forget to claim. Together, they're worth almost six hundred dollars.\"\n[00:07.39–00:12.12] \"Our Manitoba freelancer nets sixty thousand. Let's go through the receipts.\"\n[00:12.52–00:20.12] \"One: your phone. If forty percent of the use is business, that's three eighty-four of a nine-sixty plan.\"\n[00:20.52–00:30.61] \"Two: bank and payment fees. Account fees, card fees, the cut PayPal or Stripe takes. Say four twenty a year.\"\n[00:31.01–00:37.15] \"Three: your accountant. Bookkeeping and the business part of your tax return. Six hundred.\"\n[00:37.55–00:41.97] \"Four: dues and licences tied to the business. Two fifty.\"\n[00:42.42–00:49.03] \"Total: sixteen fifty-four. Now the honest part: a write-off isn't free money.\"\n[00:49.38–00:57.26] \"It lowers taxable income, so this freelancer saves about thirty-six cents per dollar. Five eighty-eight.\"\n[00:58.11–01:00.00] \"And there's a fifth one people miss.\"\n[01:00.30–01:03.38] \"Want it next? Comment five, and we'll break it down.\""
+}
