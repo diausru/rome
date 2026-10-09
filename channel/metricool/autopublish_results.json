@@ -1,0 +1,204 @@
+{
+ "status": "PAUSED after a user denial on 2026-10-22 10:00 TikTok; posts from 2026-10-27 onward not processed (still draft)",
+ "results": [
+  {
+   "date": "2026-10-13",
+   "time": "10:00",
+   "network": "tiktok",
+   "title_or_text_start": "Same $100K, 10 Provinces: Who Keeps the Most?",
+   "old_id": 391729404,
+   "new_id": 391739300,
+   "uuid": "-6220876767033474755",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-3261832450721657184.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-13",
+   "time": "12:00",
+   "network": "instagram",
+   "title_or_text_start": "$100K in Canada: how much do you actually keep?",
+   "old_id": 391729621,
+   "new_id": 391739384,
+   "uuid": "6847919645333604917",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-17167227977456511923.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-13",
+   "time": "16:00",
+   "network": "youtube",
+   "title_or_text_start": "Same $100K, 10 Provinces: Who Keeps the Most?",
+   "old_id": 391729784,
+   "new_id": 391739444,
+   "uuid": "-3746987073063269690",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-3746680473279331266.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-15",
+   "time": "10:00",
+   "network": "tiktok",
+   "title_or_text_start": "The Tax Bracket Myth Most Canadians Believe",
+   "old_id": 391729830,
+   "new_id": 391739526,
+   "uuid": "8919380167416496278",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-14621673789427180994.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-15",
+   "time": "12:00",
+   "network": "instagram",
+   "title_or_text_start": "A higher tax bracket never taxes your whole income.",
+   "old_id": 391729873,
+   "new_id": 391739546,
+   "uuid": "-4530686341582532832",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-5930931391236874786.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-15",
+   "time": "16:00",
+   "network": "youtube",
+   "title_or_text_start": "The Tax Bracket Myth Most Canadians Believe",
+   "old_id": 391729895,
+   "new_id": 391739570,
+   "uuid": "5386955466692054257",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-5394369155652935343.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-17",
+   "time": "10:00",
+   "network": "tiktok",
+   "title_or_text_start": "Can You Claim Money You Send Your Parents? (Canada Tax)",
+   "old_id": 391729927,
+   "new_id": 391739585,
+   "uuid": "-3876983061315567486",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-18076680542799800801.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-17",
+   "time": "12:00",
+   "network": "instagram",
+   "title_or_text_start": "Your parents aren't a tax deduction.",
+   "old_id": 391729995,
+   "new_id": 391739802,
+   "uuid": "6229872449127269522",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-12490663644421959306.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-17",
+   "time": "16:00",
+   "network": "youtube",
+   "title_or_text_start": "Can You Claim Money You Send Your Parents? (Canada Tax)",
+   "old_id": 391730039,
+   "new_id": 391739812,
+   "uuid": "-7571449755748777034",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-8779159198207960322.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-20",
+   "time": "10:00",
+   "network": "tiktok",
+   "title_or_text_start": "What Happens to Your RRSP at 71? (Don't Miss Dec 31)",
+   "old_id": 391730090,
+   "new_id": 391739819,
+   "uuid": "-7358532612053513330",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-10610007723149645830.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-20",
+   "time": "12:00",
+   "network": "instagram",
+   "title_or_text_start": "Turning 71 this year? Your RRSP has a December 31 deadline.",
+   "old_id": 391730150,
+   "new_id": 391739834,
+   "uuid": "-9026825555815281151",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-6007738991981916997.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-20",
+   "time": "16:00",
+   "network": "youtube",
+   "title_or_text_start": "What Happens to Your RRSP at 71? (Don't Miss Dec 31)",
+   "old_id": 391730171,
+   "new_id": 391739844,
+   "uuid": "-321363962846230040",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-8463441223744278696.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-22",
+   "time": "12:00",
+   "network": "instagram",
+   "title_or_text_start": "The OAS clawback isn't a penalty on all your OAS.",
+   "old_id": 391730282,
+   "new_id": 391739969,
+   "uuid": "1857686061737331028",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-16763519638319335407.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-22",
+   "time": "16:00",
+   "network": "youtube",
+   "title_or_text_start": "OAS Clawback 2026: The $95,323 Line (and 3 Legal Ways to Keep More)",
+   "old_id": 391730320,
+   "new_id": 391739990,
+   "uuid": "4277660348584315042",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-876915418510755061.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-24",
+   "time": "10:00",
+   "network": "tiktok",
+   "title_or_text_start": "CPP at 60, 65 or 70? The Real Math",
+   "old_id": 391730350,
+   "new_id": 391740001,
+   "uuid": "2141134740928417348",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-2763363371002137811.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-24",
+   "time": "12:00",
+   "network": "instagram",
+   "title_or_text_start": "Same pension, three very different cheques.",
+   "old_id": 391730376,
+   "new_id": 391740024,
+   "uuid": "-1439942167185570955",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-15100226414285845524.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-24",
+   "time": "16:00",
+   "network": "youtube",
+   "title_or_text_start": "CPP at 60, 65 or 70? The Real Math",
+   "old_id": 391730410,
+   "new_id": 391740036,
+   "uuid": "3023176107747856116",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-4611039226427234532.mp4",
+   "draft_after": false
+  },
+  {
+   "date": "2026-10-22",
+   "time": "10:00",
+   "network": "tiktok",
+   "title_or_text_start": "OAS Clawback 2026: The $95,323 Line (and 3 Legal Ways to Keep More)",
+   "old_id": 391730256,
+   "new_id": null,
+   "uuid": "-737365471849527142",
+   "media": "https://static.metricool.com/planner/202610/6507798-file-14678485306746495866.mp4",
+   "draft_after": true,
+   "error": "updateScheduledPost call denied by the user in the permission prompt; not retried, post left as draft"
+  }
+ ]
+}
