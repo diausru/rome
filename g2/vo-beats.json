@@ -1,0 +1,13 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  ["hook", "Own an apartment back home? Savings in a foreign bank? CRA may want a form, even if you owe zero tax.", 0.28],
+  ["form", "It's form T1135. You file it if your foreign property cost more than one hundred thousand dollars, at any time in the year.", 0.26],
+  ["counts", "That includes foreign bank accounts, a rental property abroad, even U.S. stocks held at a Canadian broker.", 0.26],
+  ["excluded", "Not included: a vacation home you mainly use yourself, and anything inside your RRSP or TFSA.", 0.26],
+  ["cost", "It's measured by cost, not today's price. For newcomers, cost is the value on the day you became resident.", 0.26],
+  ["first", "And you don't file it for the year you arrive. The rule starts the next year.", 0.28],
+  ["late", "File it late, and the penalty is twenty-five dollars a day, up to two thousand five hundred. Even with no tax owing.", 0.3],
+  ["cta", "Next: leaving Canada? The departure tax. Follow so you don't miss it.", 0.4]
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "video": {
+  "title": "Foreign property: who files T1135",
+  "duration": "64.04 s (1537 frames)",
+  "mp4": "showreel/out/g2/g2-final.mp4 (share copy: g2-share.mp4)"
+ },
+ "sources": [
+  "CRA — Foreign Income Verification Statement (canada.ca) · current · residents file T1135 when specified foreign property cost more than $100,000 at any time in the year; due with the return; even with no tax payable; +3-year reassessment",
+  "CRA — Questions and answers about Form T1135 (canada.ca) · current · what counts (foreign bank funds, foreign real property, shares of non-resident corporations even through a broker); exclusions (personal-use property, active business, RRSP/TFSA); Part A under $250,000 / Part B; new residents: cost = FMV on becoming resident; no T1135 for the year you first become resident",
+  "CRA — Questions and answers about penalties, foreign reporting (canada.ca) · current · late filing: greater of $100 or $25 a day up to 100 days ($2,500); higher if knowing or grossly negligent"
+ ],
+ "yt": {
+  "titles": [
+   "Own Property Back Home? The CRA Form T1135 Explained",
+   "Foreign Assets Over $100K? You May Need to File T1135",
+   "New to Canada With Property Abroad? Know This CRA Form"
+  ],
+  "description": "Own an apartment back home or savings in a foreign bank? CRA may want Form T1135, even if you owe no tax.\n\nWho files: Canadian residents whose specified foreign property cost more than $100,000 in total, at any time in the year. Under $250,000 all year → the simplified Part A; $250,000 or more → the detailed Part B.\n\nCounts: money in foreign bank accounts, a rental property abroad, shares of foreign companies (U.S. stocks), even held at a Canadian broker.\nDoesn't count: a vacation home you use mainly yourself, property used only in an active business, and anything inside an RRSP or TFSA.\n\nCost, not market value. For newcomers, the cost is the fair market value on the day you became resident.\n\nThe year you become resident: no T1135. The $100,000 test starts the next year. Your world income is still reported.\n\nLate? The penalty is the greater of $100 or $25 a day, up to $2,500 (more if the failure is knowing). It's due with your return (April 30, or June 15 if you or your spouse run a business).\n\nSources: CRA, Foreign Income Verification Statement; Questions and answers about Form T1135; Questions and answers about penalties (canada.ca). The couple is an example. General information, not advice.\n\n#T1135 #NewToCanada #CanadaTax",
+  "hashtags": "#T1135 #NewToCanada #CanadaTax",
+  "keywords": "t1135, t1135 canada, cra t1135, foreign property reporting canada, specified foreign property, foreign assets canada tax, t1135 penalties, new to canada property abroad, foreign income verification statement, us stocks t1135",
+  "pinned": "T1135 in one line: cost of foreign property over $100,000 at any time → file it with your return. RRSP/TFSA and a vacation home you mainly use don't count. Newcomers: not for your arrival year. Did you know about this form?",
+  "cta": "Follow Tax Secrets Canada; next: leaving Canada? The departure tax."
+ },
+ "tt": {
+  "caption": "Own property back home? 🇨🇦 Canada may want form T1135, even if you owe zero tax. Who files and what counts.",
+  "keywords": "t1135 canada · foreign property canada tax · new to canada property abroad · cra foreign assets",
+  "hashtags": "#t1135 #newtocanada #canadiantaxes #immigrantlife #personalfinancecanada",
+  "pinned": "Over $100,000 at cost, at any time in the year → T1135. Not for your arrival year. (General info, not advice.)",
+  "cta": "Follow for the next one: leaving Canada? The departure tax."
+ },
+ "ig": {
+  "caption": "Own property back home? Canada may want a form. 🇨🇦\n\nForm T1135: file it if your foreign property COST more than $100,000 at any time in the year.\n\n✅ Counts: foreign bank accounts · a rental abroad · U.S. stocks (even at a Canadian broker)\n❌ Doesn't: a vacation home you mainly use · RRSP / TFSA\n\nNewcomers: cost = value on the day you became resident, and no T1135 for your arrival year.\nLate: $25 a day, up to $2,500, even with no tax owing.\n\nSend this to someone with an apartment back home.\n\nSource: CRA (canada.ca). Example only. General info, not advice.",
+  "keywords": "t1135, foreign property, new to canada, cra",
+  "hashtags": "#t1135 #newtocanada #canadiantaxes #immigrantcanada #personalfinancecanada #canadatax",
+  "pinned": "Save this before your second tax season in Canada 📌",
+  "cta": "Send this to someone with an apartment back home."
+ },
+ "eng": {
+  "question": "Did you know about form T1135?",
+  "save": "The $100,000 cost test, what counts, the arrival-year rule.",
+  "share": "Newcomers and anyone with property or savings abroad.",
+  "follow": "Canadian tax rules for newcomers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "t1135",
+  "secondary": "every T1135 term <750/mo with very low competition (t1135 reporting 5.3, cra t1135 8.3, foreign property reporting 7.3, t1135 23); broad 'cra' ≈26,538/mo",
+  "intent": "A resident with property or savings abroad wants to know if they must report it.",
+  "audience": "Newcomers with an apartment or accounts back home; investors holding U.S. stocks outside registered plans.",
+  "angle": "Newcomer-first T1135 in 60 s: the cost test, what counts, cost on arrival, the arrival-year exemption, the late penalty; competitors bury it in long audit videos.",
+  "questions": "Do I have to report property in my home country? · Do U.S. stocks count for T1135? · Is it cost or market value? · Do newcomers file T1135 in the first year? · What is the T1135 penalty?"
+ },
+ "next": [
+  {"topic": "Leaving Canada: departure tax (G5)", "why": "Bridge in this video", "intent": "departure tax canada", "hook": "Leaving Canada? You may be taxed on gains you never sold.", "angle": "Deemed disposition, verified exceptions (to verify on canada.ca)", "payoff": "What's taxed, what isn't"},
+  {"topic": "Got a CRA letter? (A5)", "why": "Follows A4 and the T1135 penalty", "intent": "cra letter what to do", "hook": "Opened a CRA letter? Do this first.", "angle": "Verified CRA steps", "payoff": "Calm action plan"},
+  {"topic": "Tuition and student credits (D1)", "why": "Next card-format row in the plan (C4 belongs to the handwritten session)", "intent": "tuition tax credit canada", "hook": "Your tuition slip is worth money.", "angle": "Verified T2202 rules and carry-forward", "payoff": "What to claim and when"}
+ ],
+ "series": "New to Canada (first return → benefits → foreign assets → departure tax). Playlist: 'New to Canada'.",
+ "research": "- vidIQ (2026-10-09): my calls = 25 credits (keyword research, competitor search, Shorts outliers, two title scores 83 / 82); balance moved 1,625 → 1,575 (the other 25 most likely the parallel handwritten session, shared account). See the analysis Artifact.",
+ "retention": "Hook (0–9 s): two concrete questions + 'even if you owe zero tax' ✅. Big number ($100,000) at 12 s ✅. Lists (counts / doesn't) give quick value ✅. Two scene changes (19 s, 43 s) ✅. Good-news turn (no T1135 in year one) before the penalty ✅. Weakest point: 35–43 s (cost vs value), carried by the calculator pin."
+}
