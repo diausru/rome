@@ -47,3 +47,4 @@ Sources: canada.ca (direct fetch blocked by the proxy; page text via search rest
 
 ## 3. QC log
 - Stills v1: scene-1 photo frame clipped at the left → wider start (k 1.12); "not today's price" pin clipped at the right → moved left; scene-3 key pin fell off-frame → removed (the card and strip carry "year 1: not required").
+- Final: 1537 frames, 64.04 s, h264 1080×1920 24 fps + AAC 48 kHz, decode OK, −14.1 LUFS; contact sheet checked (cards, pins, strip, scene cuts, end block, flag). vidIQ title scores 83 / 82 → primary "Own Property Back Home? The CRA Form T1135 Explained". Kit card #23 (Kit v30). Metricool: not sent.
