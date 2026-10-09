@@ -45,3 +45,4 @@ Sources: canada.ca (direct fetch blocked by the proxy; page text via search rest
 
 ## 3. QC log
 - Stills v1: CGEB pin collided with the strip → moved to the envelope; CCB note wrapped → shortened; dental caption clipped → "3 · Dental Care Plan"; dental pin covered the baby → removed (the card carries the number); end line → "It all runs on your return."
+- Final: 1625 frames, 67.71 s, h264 1080×1920 24 fps + AAC 48 kHz, decode OK, −13.8 LUFS; contact sheet checked (cards, pins, strip, scene cuts, end block, flag). First mux with `-shortest` dropped 4 hold frames → re-muxed with padded audio to the full 1625 frames. vidIQ title scores 83 / 82 → primary "New to Canada? 3 Benefits You Can Claim Right Away". Kit card #22 (Kit v28). Metricool: not sent.
