@@ -48,3 +48,4 @@ Shares outside an RRSP/TFSA bought for $40,000, FMV $100,000 on leaving → gain
 
 ## 3. QC log
 - Stills v1: short-stay label and note wrapped → shortened; T1161 note wrapped → shortened; end headline left "tax" alone → "Plan the departure tax / before you leave."; scene 3 camera raised. Known trade-off: in scene 3 the couple stands at the very top of the plate, so the faces sit behind the header/card; the table, sea and suitcase carry the scene.
+- Final: 1684 frames, 70.17 s, h264 1080×1920 24 fps + AAC 48 kHz, decode OK, −14.1 LUFS; contact sheet checked (cards, pins, strip, both scene cuts mid-transition, end block, flag). vidIQ title scores 82 / 76 → primary "Leaving Canada? The Departure Tax Explained in 60 Seconds". Kit card #24 (Kit v31). Metricool: not sent.
