@@ -41,3 +41,5 @@ Mode: REALISTIC HANDWRITTEN EXPLAINER, series "Real Tax Math" (… → B8 → B9
 
 ## 5. Revision log
 - v1 (2026-10-08): preview fixes: circle timing on $0; lines under the double underline moved down 3 mm.
+- v1 render QC (2026-10-09): 1080×1920, 24 fps, 1524 frames, 63.50 s, full decode clean, −14.1 LUFS, peak −2.8 dBFS; frame strip clean; vote readable at the hold.
+- Publishing Kit version 29 (34 cards, merged with the card session's #22).

@@ -1,5 +1,5 @@
 {
- "vo_stats": "120 words, 55.8 s of speech, ≈129 wpm. Last word ends at 00:59.74; video 01:03.54.",
+ "vo_stats": "120 words, 55.8 s of speech, ≈129 wpm. Last word ends at 00:59.74; video 01:03.50.",
  "cues": "00:00.3 \"same $10K, bigger salary?\" · 00:06.8 \"salary $100K · MB 2026\" · 00:13.0 \"fed 20.5% → $2,050\" · 00:20.2 \"MB 17.4% → $1,688\" · 00:29.2 \"CPP @ $60K: $1,190\" · 00:36.3 \"CPP @ $100K: $0\", then \"(job maxed CPP + CPP2)\", $0 circled ≈44.3 + push-in · 00:46.2 \"total $3,738\", double-underlined ≈49.3 + push-in · 00:50.4 \"vs $4,161 → -$424\" · 00:53.8 arrow down the margin · 00:54.7 \"same $10K in\" · 00:57.5 \"AB or ON ?\", AB and ON circled ≈60.0–61.4 · still hold to the end.",
  "drawing": "See build/timeline.json. Paper lines in order: same $10K, bigger salary? · salary $100K · MB 2026 · fed 20.5% → $2,050 · MB 17.4% → $1,688 · CPP @ $60K: $1,190 · CPP @ $100K: $0 ($0 circled, push-in) · (job maxed CPP + CPP2) · total $3,738 (double-underlined, push-in) · vs $4,161 → -$424 · arrow down the left margin → same $10K in · AB or ON ? (both circled) · ≈1 s still hold."
 }

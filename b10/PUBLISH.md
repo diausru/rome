@@ -4,7 +4,7 @@ REALISTIC HANDWRITTEN EXPLAINER
 
 VIDEO
 Title: Why a Bigger Salary Means Less Tax on Your Side Hustle (Canada)
-Duration: 63.54 s (1524 frames)
+Duration: 63.50 s (1524 frames)
 Resolution: 1080×1920 (9:16)
 FPS: 24
 Render method: Code-built composite (Python / OpenCV), the B4 engine: still desk plate + matted whole-hand photo (no video generator), wrist-pivot hand motion with the pen tip on the ink head, single-line font ink revealed only along the pen path, living window light, code-made coffee steam, handheld camera with push-ins on circled figures, 180° motion blur on big hand moves, grain. Ending: handwritten curiosity-loop CTA. Narration: ElevenLabs via Higgsfield text2speech_v2 (series voice "Grady"), long pauses shortened to 0.38 s, no tempo change, −14 LUFS, limiter.
@@ -17,7 +17,7 @@ VOICEOVER
 
 Same ten-thousand-dollar side hustle. Bigger salary. Smaller tax bill. Here's why. Manitoba, twenty twenty-six. This time the salary is one hundred thousand. Federal tax on the extra ten thousand: twenty point five percent. Two thousand and fifty. Manitoba: you cross the hundred-thousand line, so most of it is taxed at seventeen point four. Sixteen eighty-eight. Now C-P-P. At a sixty-thousand salary, the side income paid eleven ninety. At a hundred thousand, your job already paid the maximum. C-P-P one and C-P-P two. So the side income pays zero. Total: three thousand, seven thirty-eight. Four twenty-four less than at the smaller salary. Same ten thousand in Alberta, or in Ontario? Pick one in the comments. That's the next one we run.
 
-(120 words, 55.8 s of speech, ≈129 wpm. Last word ends at 00:59.74; video 01:03.54.)
+(120 words, 55.8 s of speech, ≈129 wpm. Last word ends at 00:59.74; video 01:03.50.)
 
 ⸻
 
