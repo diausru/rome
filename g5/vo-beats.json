@@ -1,0 +1,45 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Leaving Canada for good? CRA can tax your investments, even if you never sell them.",
+   0.28
+  ],
+  [
+   "rule",
+   "When you become a non-resident, most of what you own is treated as sold at market value. That's the departure tax.",
+   0.26
+  ],
+  [
+   "example",
+   "Say you bought shares for forty thousand. They're worth a hundred thousand when you go. That's a sixty-thousand-dollar gain, and half of it, thirty thousand, is added to your income.",
+   0.28
+  ],
+  [
+   "excluded",
+   "Not included: your RRSP, TFSA and pensions, and personal items under ten thousand dollars.",
+   0.26
+  ],
+  [
+   "short",
+   "Lived here five years or less? Property you brought with you is generally out.",
+   0.26
+  ],
+  [
+   "forms",
+   "If everything you own is worth more than twenty-five thousand, you also list it on form T1161.",
+   0.26
+  ],
+  [
+   "defer",
+   "Can't pay now? Form T1244 defers it, interest-free, until you sell. Owe over sixteen thousand five hundred federally? CRA wants security.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: your tuition slip, and what it's worth at tax time. Follow so you don't miss it.",
+   0.4
+  ]
+ ]
+}
