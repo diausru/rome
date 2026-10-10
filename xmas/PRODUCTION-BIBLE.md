@@ -51,3 +51,4 @@ Shares bought for $10,000, worth $30,000, given to an adult son → deemed sold 
 
 ## 3. QC log
 - Stills v1: spouse card label wrapped → shortened to "CATCH #1 · A GIFT TO YOUR SPOUSE OR PARTNER"; in scene 2 the cottage pins sat on the strip / under the card → new `below` pin anchored at the cottage's base; in scene 3 the box pin touched the strip → camera lowered (v 0.56 → 0.5). Re-checked: clean.
+- Final: 2157 frames, 89.88 s, h264 1080×1920 24 fps + AAC 48 kHz, decode OK, −14.1 LUFS; contact sheet checked (cards, pins, strip, both scene cuts, end block, flag, sources footer). vidIQ title scores 87 / 82 → primary "Giving Money for Christmas in Canada? Know This Tax Rule First". Kit card #25 (Kit v33). Metricool: not sent yet; needs `xmas-share.mp4` in the Drive folder, then TT 10:00 / IG 11:00 / YT 16:00 on Tue Dec 22 (America/Winnipeg).
