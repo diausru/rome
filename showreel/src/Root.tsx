@@ -33,6 +33,7 @@ import { G1v2, G1DUR, G1FPS } from './G1v2';
 import { G4v2, G4DUR, G4FPS } from './G4v2';
 import { G2v2, G2DUR, G2FPS } from './G2v2';
 import { G5v2, G5DUR, G5FPS } from './G5v2';
+import { XmasV2, XMASDUR, XMASFPS } from './XmasV2';
 import { useCurrentFrame } from 'remotion';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
@@ -80,6 +81,7 @@ export const RemotionRoot = () => (
     <Composition id="G4v2" component={G4v2} durationInFrames={G4DUR} fps={G4FPS} width={1080} height={1920} />
     <Composition id="G2v2" component={G2v2} durationInFrames={G2DUR} fps={G2FPS} width={1080} height={1920} />
     <Composition id="G5v2" component={G5v2} durationInFrames={G5DUR} fps={G5FPS} width={1080} height={1920} />
+    <Composition id="XmasV2" component={XmasV2} durationInFrames={XMASDUR} fps={XMASFPS} width={1080} height={1920} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );

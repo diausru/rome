@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Procedural background music bed (original, no samples). usage: music.py <mood> <seconds> <out.wav>
-moods: pension (warm EP + pad, 72 BPM, D major), pension2 (same palette, 76 BPM, F major: F–Am–Dm–Bb), kids (light and curious: 104 BPM, C major, high voicings + eighth-note plucks), work (young and upbeat: 92 BPM, G major: G–Em–C–D, light plucks) — more added per topic group."""
+moods: pension (warm EP + pad, 72 BPM, D major), pension2 (same palette, 76 BPM, F major: F–Am–Dm–Bb), kids (light and curious: 104 BPM, C major, high voicings + eighth-note plucks), work (young and upbeat: 92 BPM, G major: G–Em–C–D, light plucks), holiday (festive and warm: 84 BPM, F major: F–Dm–Bb–C, celesta line + soft sleigh-bell shimmer) — more added per topic group."""
 import sys, numpy as np, wave
 mood, dur, out = sys.argv[1], float(sys.argv[2]), sys.argv[3]
 SR = 48000
 P = {'pension': dict(bpm=72, prog=[(50, [62, 66, 69, 73, 76]), (47, [62, 66, 69, 71, 74]), (43, [62, 66, 67, 71, 74]), (45, [61, 64, 67, 69, 76])], ep=0.22, pad=0.10, bass=0.16),
      'pension2': dict(bpm=76, prog=[(41, [60, 65, 69, 72, 77]), (45, [60, 64, 69, 72, 76]), (38, [62, 65, 69, 72, 74]), (46, [62, 65, 70, 72, 77])], ep=0.22, pad=0.10, bass=0.16),
      'kids': dict(bpm=104, prog=[(48, [72, 76, 79, 84]), (43, [71, 74, 79, 83]), (45, [72, 76, 81, 84]), (41, [72, 77, 81, 84])], ep=0.16, pad=0.07, bass=0.13, pluck=0.09),
-     'work': dict(bpm=92, prog=[(43, [67, 71, 74, 79]), (40, [67, 71, 76, 79]), (36, [67, 72, 76, 79]), (38, [66, 69, 74, 78])], ep=0.18, pad=0.08, bass=0.15, pluck=0.06)}[mood]
+     'work': dict(bpm=92, prog=[(43, [67, 71, 74, 79]), (40, [67, 71, 76, 79]), (36, [67, 72, 76, 79]), (38, [66, 69, 74, 78])], ep=0.18, pad=0.08, bass=0.15, pluck=0.06),
+     'holiday': dict(bpm=84, prog=[(41, [65, 69, 72, 77]), (38, [62, 65, 69, 74]), (46, [62, 65, 70, 74]), (36, [64, 67, 70, 72])], ep=0.17, pad=0.08, bass=0.14, celesta=0.07, bells=0.035)}[mood]
 n = int(dur * SR); t = np.arange(n) / SR; out_l = np.zeros(n); out_r = np.zeros(n)
 mtof = lambda m: 440 * 2 ** ((m - 69) / 12)
 beat = 60 / P['bpm']; bar = 4 * beat
@@ -43,6 +44,18 @@ for b in range(nbars):
         pent = [chord[0], chord[1], chord[2], chord[0] + 12, chord[2], chord[1]]
         for k in range(8):
             if rng.uniform() < 0.8: add(ep(pent[k % len(pent)] + 12, 0.5, rng.uniform(0.5, 0.8)) * P['pluck'], t0 + k * beat / 2, 0.35 if k % 2 else -0.35)
+    if P.get('celesta'):                                       # music-box celesta: a gentle arpeggio, two octaves up
+        line = [chord[0], chord[2], chord[1], chord[3], chord[2], chord[1]]
+        for k in range(6):
+            tt = np.arange(int(1.2 * SR)) / SR; fq = mtof(line[k] + 12)
+            cel = (np.sin(2 * np.pi * fq * tt) + 0.3 * np.sin(2 * np.pi * 4 * fq * tt) * np.exp(-tt * 9)) * np.exp(-tt * 3.2) * np.minimum(1, tt / 0.003)
+            add(cel * P['celesta'] * rng.uniform(0.7, 1.0), t0 + k * (4 * beat / 6), 0.3 * np.sin(k))
+    if P.get('bells'):                                         # soft sleigh-bell shimmer on the off-beats (band-passed noise)
+        for k in range(8):
+            if k % 2 == 1 or rng.uniform() < 0.3:
+                ln = int(0.18 * SR); nz = rng.standard_normal(ln); tt = np.arange(ln) / SR
+                hp = np.diff(np.concatenate([[0], nz])); env = np.exp(-tt * 22) * (1 + 0.5 * np.sin(2 * np.pi * 38 * tt))
+                add(hp * env * P['bells'] * rng.uniform(0.6, 1.0), t0 + k * beat / 2, 0.5 if k % 4 == 1 else -0.5)
     for k, pos in enumerate([0, 1.5, 2.5, 3.0]):           # soft comping
         notes = chord if k == 0 else chord[1:4]
         for q, m in enumerate(notes):

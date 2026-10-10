@@ -1,0 +1,150 @@
+<title>Gift Tax Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column like an accountant's working paper — verdict first, then the evidence ledger (demand → competitors → audience → titles), each a ruled section with tabular figures. */
+:root {
+  --bg: #f6f8fa;
+  --paper: #ffffff;
+  --ink: #18212b;
+  --muted: #5b6672;
+  --rule: #d9e0e7;
+  --accent: #a3283b;      /* cranberry: the deadline */
+  --gold: #a87412;        /* ledger figures */
+  --good: #2f7a52;
+  --bar: #c9d3dd;
+  --bar-hi: #a3283b;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+    --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+  --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--muted); margin: 0; }
+.verdict { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; padding: 20px 22px; display: grid; gap: 10px; }
+.verdict h2 { margin: 0; font: 600 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.verdict ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+section { display: grid; gap: 16px; border-top: 1px solid var(--rule); padding-top: 24px; }
+section h2 { font: 700 24px/1.15 var(--display); margin: 0; text-wrap: balance; }
+section > p { margin: 0; max-width: 64ch; color: var(--muted); }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.kv div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 4px; }
+.kv b { font: 600 28px/1.1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.kv span { font-size: 13px; color: var(--muted); }
+.bars { display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: minmax(150px, 230px) 1fr auto; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 12px; background: transparent; border-radius: 3px; position: relative; }
+.bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 3px; }
+.bar.hi .fill { background: var(--bar-hi); }
+.bar .num { font: 500 13px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 92px; text-align: right; }
+.bar .num small { color: var(--good); }
+.note { font-size: 13px; color: var(--muted); }
+.table { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+.tag.us { color: var(--accent); border-color: var(--accent); }
+.titles { display: grid; gap: 10px; }
+.t { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; }
+.t.win { border-color: var(--accent); }
+.t q { quotes: none; font-weight: 600; min-width: 0; }
+.t .score { font: 600 30px/1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.t .meter { grid-column: 1 / -1; height: 6px; background: var(--bar); border-radius: 3px; overflow: hidden; }
+.t .meter i { display: block; height: 100%; background: var(--gold); }
+.t.win .meter i { background: var(--accent); }
+.gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.gap div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; }
+.gap h3 { margin: 0; font: 600 15px/1.3 var(--body); }
+.gap p { margin: 0; font-size: 14px; color: var(--muted); }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; }
+@media (max-width: 520px) { .bar { grid-template-columns: 1fr auto; } .bar .track { grid-column: 1 / -1; order: 3; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Tax Secrets Canada · Рождественский Short (22 декабря) · анализ vidIQ · 10 октября 2026</div>
+    <h1>Подарки и налоги: <em>в Канаде налога на подарки нет, но…</em></h1>
+    <p class="lede">Короткий разбор перед сценарием: спрос, конкуренты, наш угол и оценка заголовков.</p>
+  </header>
+
+  <div class="verdict">
+    <h2>Вывод</h2>
+    <ul>
+      <li>Каждый декабрь люди ищут «gift tax»: «gift tax rules» около 4 299 запросов в месяц, «gift tax» около 3 939 (весь мир, в основном США).</li>
+      <li>В выдаче американские ответы (IRS, годовой лимит) и индийские ролики. Канадский ответ («налога на подарки нет, но есть атрибуция, условная продажа и правило $500 от работодателя») в формате Short никто не дал.</li>
+      <li>Заголовки: 87 и 82. Основной — «Giving Money for Christmas in Canada? Know This Tax Rule First».</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Спрос</h2>
+    <p>Ежемесячные запросы на YouTube, оценка vidIQ.</p>
+    <div class="bars" aria-label="Search volume per month">
+      <div class="bar"><span>tax planning canada</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">4 950</span></div>
+      <div class="bar hi"><span>gift tax rules</span><span class="track"><span class="fill" style="width:86.8%"></span></span><span class="num">4 299</span></div>
+      <div class="bar"><span>estate planning canada</span><span class="track"><span class="fill" style="width:80%"></span></span><span class="num">3 961</span></div>
+      <div class="bar"><span>gift tax</span><span class="track"><span class="fill" style="width:79.6%"></span></span><span class="num">3 939</span></div>
+    </div>
+    <p class="note">Шкала от 0 до 4 950 запросов в месяц. «gift tax» — глобальный запрос, в основном про США; канадские формулировки вынесены в описание и ключевые слова.</p>
+  </section>
+
+  <section>
+    <h2>Конкуренты на YouTube</h2>
+    <p>Самые просматриваемые видео по запросу «gift tax canada», регион CA.</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Видео</th><th>Канал</th><th>Просмотры</th><th>Длина</th><th>Подход</th></tr></thead>
+        <tbody>
+          <tr><td>How Much Money Can You Gift Without Paying Taxes? (2025 &amp; 2026)</td><td>Tax Savvy Advisor</td><td class="n">612 734</td><td class="n">4:36</td><td>США, IRS</td></tr>
+          <tr><td>ролик о налоге IRS на подарки детям</td><td>Jeremy Keil</td><td class="n">≈230 000</td><td class="n">—</td><td>США, IRS</td></tr>
+          <tr><td>Pass Real Estate to Your Kids in Canada Without a Tax Disaster (5 Ways)</td><td>RealEstateTaxTips</td><td class="n">≈195 000</td><td class="n">25:48</td><td>Канада, недвижимость, длинный</td></tr>
+          <tr><td>ролик о подарках детям в Канаде</td><td>Marvin Hutchinson (ИИ-персонаж)</td><td class="n">≈67 600</td><td class="n">—</td><td>Канада</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">В топе американские правила IRS и индийские ролики про подарки от родителей. Канадские ролики длинные и только про недвижимость. Короткого канадского разбора всех четырёх правил нет.</p>
+  </section>
+
+  <section>
+    <h2>Наш угол</h2>
+    <div class="gap">
+      <div><h3>Подарок — не доход</h3><p>Налога на подарки нет, полученный подарок не декларируется. Налог платится с того, что подарок приносит потом.</p></div>
+      <div><h3>Две ловушки</h3><p>Деньги супругу на инвестиции и детям до 18 лет: доход облагается у дарителя (исключение — TFSA супруга). Акции, дача, крипта не супругу считаются проданными: $10 000 → $30 000, прибыль $20 000, к доходу добавляется $10 000.</p></div>
+      <div><h3>Подарок от работодателя</h3><p>Неденежные подарки до $500 в год не облагаются, облагается только превышение; деньги облагаются всегда. Мостик к ролику 29 декабря: лимит TFSA с 1 января.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Оценка заголовков</h2>
+    <p>vidIQ score_title, формат Short. Оценены два сильнейших варианта.</p>
+    <div class="titles">
+      <div class="t win"><q>Giving Money for Christmas in Canada? Know This Tax Rule First</q><span class="score">87</span><span class="meter"><i style="width:87%"></i></span></div>
+      <div class="t"><q>Canada Has No Gift Tax… But These Gifts Can Still Cost You</q><span class="score">82</span><span class="meter"><i style="width:82%"></i></span></div>
+    </div>
+    <p class="note">Основной заголовок привязан к поводу (Рождество) и к действию зрителя. Второй вариант с открытой петлёй использован как хук и подпись в TikTok.</p>
+  </section>
+
+  <footer>
+    <span>Мои вызовы vidIQ: 25 кредитов (две проверки запросов, поиск конкурентов, оценка двух заголовков). Баланс 1 515 → 1 490.</span>
+    <span>Налоговые факты ролика проверены по canada.ca (CRA) и записаны в xmas/PRODUCTION-BIBLE.md. Семья и акции — пример. Общая информация, не консультация.</span>
+  </footer>
+</div>

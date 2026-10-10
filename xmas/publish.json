@@ -1,0 +1,85 @@
+{
+ "video": {
+  "title": "Gifts and tax in Canada (Christmas special)",
+  "duration": "89.88 s (2157 frames)",
+  "mp4": "showreel/out/xmas/xmas-final.mp4 (share copy: xmas-share.mp4)"
+ },
+ "sources": [
+  "CRA — Amounts that are not reported or taxed; Income Tax Folio S3-F9-C1 (canada.ca) · current · gifts and inheritances generally not reported; income earned on them afterwards is taxable",
+  "CRA — IT-511R (archived), T4037 Capital Gains 2025 (canada.ca) · 2025 · attribution of income and capital gains on property given to a spouse or common-law partner; spousal rollover at cost",
+  "CRA — How to contribute to a TFSA (canada.ca); Income Tax Act s. 74.5(12)(c) · current · spouse's own TFSA contributions are not attributed",
+  "CRA — IT-510 (archived) (canada.ca) · current law s. 74.1(2) · interest and dividends on gifts to related minors under 18 attributed to the giver",
+  "CRA — Transfers of capital property; T4037 (canada.ca) · 2025 · gift to a non-spouse = deemed disposition at fair market value; recipient's cost = FMV",
+  "Finance Canada 2026 backgrounder; CRA What's new (canada.ca) · 2026 · capital gains inclusion rate one-half",
+  "CRA — Gifts, awards, and long-service awards (T4130) (canada.ca) · current · non-cash gifts and awards up to $500 a year not taxable, excess taxable; cash and near-cash always taxable"
+ ],
+ "yt": {
+  "titles": [
+   "Giving Money for Christmas in Canada? Know This Tax Rule First",
+   "Canada Has No Gift Tax… But These Gifts Can Still Cost You",
+   "Christmas Gifts and CRA: What's Tax-Free and What Isn't"
+  ],
+  "description": "Giving money or investments this Christmas? Canada has no gift tax, and a gift you receive isn't income. But some gifts can still cost the person who gives them.\n\n1) Money you give your spouse or common-law partner to invest: the interest, dividends and capital gains are taxed to you (the attribution rules). Exception: money your spouse puts into their own TFSA isn't attributed back to you.\n\n2) Money you give kids under 18 (children, grandchildren, other related minors): interest and dividends are taxed to you.\n\n3) Gifts that aren't cash (shares, a cottage, crypto) to anyone but your spouse: CRA treats it as sold at fair market value.\nExample: shares bought for $10,000 and worth $30,000, given to your adult son → you report a $20,000 capital gain; half of it, $10,000, is added to your income. His cost becomes $30,000.\n\n4) Gifts from your employer: non-cash gifts and awards up to $500 a year in total are tax-free (only the excess is taxable). Cash and near-cash gifts are always taxable.\n\nThe gift itself is tax-free. What it earns, and what grew before you gave it, may not be. Exceptions exist (prescribed-rate loans, principal residence, separation); ask a professional before a large gift.\n\nNext: your TFSA room resets on January 1.\n\nSources: CRA, Amounts that are not reported or taxed; Transfers of capital property; T4037; How to contribute to a TFSA; Gifts, awards and long-service awards (canada.ca). The family and the shares are an example. General information, not advice.\n\n#GiftTax #CanadaTax #Christmas",
+  "hashtags": "#GiftTax #CanadaTax #Christmas #CRA #PersonalFinanceCanada",
+  "keywords": "gift tax canada, is there a gift tax in canada, giving money to family canada tax, gifting shares canada, attribution rules canada, employer gift tax canada, christmas gift tax, gift tax rules",
+  "pinned": "Quick check: is a $1,000 cash gift from your parents taxable in Canada? No, the gift isn't income. But the interest it earns later is. (General info, not advice.)",
+  "cta": "Next: your TFSA room resets on January 1. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Canada has no gift tax 🎁 but some Christmas gifts can still cost the giver. Spouse, kids, shares, and that gift from your boss.",
+  "keywords": "gift tax canada · is there a gift tax in canada · giving money to family canada · christmas gift tax",
+  "hashtags": "#gifttax #canadiantaxes #christmas #personalfinancecanada #cra",
+  "pinned": "Non-cash gifts from your employer: up to $500 a year tax-free. Cash: always taxable. (General info, not advice.)",
+  "cta": "Follow for the next one: your TFSA room on January 1."
+ },
+ "ig": {
+  "caption": "Canada has no gift tax. 🎁🇨🇦 But some gifts still cost the person who gives them.\n\n✅ A gift you receive isn't income\n1️⃣ Spouse invests the money → interest, dividends, gains taxed to YOU (their own TFSA: exception)\n2️⃣ Kids under 18 → interest and dividends taxed to you\n3️⃣ Shares, a cottage, crypto to anyone but your spouse → treated as sold at market value\n   e.g. $10K shares now worth $30K → you report a $20K gain\n🎁 From your boss: non-cash gifts up to $500/yr tax-free, cash always taxable\n\nSend this to whoever is giving the big gift this year.\n\nSource: CRA (canada.ca). Example only. General info, not advice.",
+  "keywords": "gift tax canada, christmas gifts tax, attribution rules, gifting shares",
+  "hashtags": "#gifttax #canadiantaxes #christmas #personalfinancecanada #canadatax #cra",
+  "pinned": "Save this before you write the big cheque 📌",
+  "cta": "Send this to whoever is giving the big gift this year."
+ },
+ "eng": {
+  "question": "Have you ever given (or received) shares or crypto as a gift?",
+  "save": "The four gift rules (spouse, kids, property, employer) in one place.",
+  "share": "Parents and grandparents planning a big Christmas gift.",
+  "follow": "Canadian tax rules for real-life moments, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "gift tax canada",
+  "secondary": "gift tax rules (≈4,299/mo); gift tax (≈3,939, global); tax planning canada (≈4,950); estate planning canada (≈3,961)",
+  "intent": "Someone giving or receiving money at Christmas wants to know whether tax applies in Canada.",
+  "audience": "Parents and grandparents, couples, employees getting a holiday gift.",
+  "angle": "The US 'gift tax' answer floods search; the Canadian answer (no gift tax, but attribution, deemed disposition, the $500 employer rule) in one verified 90-second Short. No Canadian Short on it.",
+  "questions": "Is there a gift tax in Canada? · Do I pay tax on money my parents gave me? · Can I give my spouse money to invest? · What happens if I gift shares to my child? · Are Christmas gifts from my employer taxable?"
+ },
+ "next": [
+  {
+   "topic": "TFSA room on January 1 (New Year special, Dec 29)",
+   "why": "Bridge in this video; the second extra video the user added",
+   "intent": "tfsa contribution room",
+   "hook": "January first, your TFSA room resets. Check before you deposit.",
+   "angle": "Verified 2027 limit (CRA announces it in November), how room carries forward, the 1%/month over-contribution tax",
+   "payoff": "How to check your room on My Account"
+  },
+  {
+   "topic": "Tuition and student credits (D1)",
+   "why": "Next card-format row in the plan (bridged from G5)",
+   "intent": "tuition tax credit canada",
+   "hook": "Your tuition slip is worth money at tax time.",
+   "angle": "Verified T2202 rules, transfer and carry-forward",
+   "payoff": "What to claim and when"
+  },
+  {
+   "topic": "Got a CRA letter? (A5)",
+   "why": "Follows A4",
+   "intent": "cra letter what to do",
+   "hook": "Opened a CRA letter? Do this first.",
+   "angle": "Verified CRA steps",
+   "payoff": "Calm action plan"
+  }
+ ],
+ "series": "Holiday specials (Dec 22 gifts → Dec 29 TFSA room), between the main list videos. Playlist: 'Family & money'.",
+ "research": "- vidIQ (2026-10-09/10): my calls = 25 credits (two keyword checks, competitor search, two title scores 87 / 82); balance 1,515 → 1,490 (−25).",
+ "retention": "Hook (0–7 s): 'Cash under the tree? … can still cost the giver' (open loop) ✅. First answer by 8 s (not income), then two numbered catches, each with its own hero ✅. Scene changes at 41 s and 66 s refresh the frame before attention dips ✅. Gold example number at 59 s ✅. Weakest point: 15–26 s (the longest line, the spouse rule), carried by the strip and the 'taxed to you' hero."
+}

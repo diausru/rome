@@ -107,7 +107,7 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 ## Pace: one video at a time (user, 2026-10-06)
 
 - Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
-- Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): none left (D2, D5 delivered 2026-10-06; C3, F1, F5 delivered 2026-10-07; F4, C5, A4, G1 delivered 2026-10-08; G4, G2, G5 delivered 2026-10-09); next new topic per PUBLISHING-PLAN §4 that is not a handwritten B-topic and not C4 (claimed by the handwritten session): D1 tuition, bridged from G5.
+- Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): none left (D2, D5 delivered 2026-10-06; C3, F1, F5 delivered 2026-10-07; F4, C5, A4, G1 delivered 2026-10-08; G4, G2, G5 delivered 2026-10-09; holiday extras added by the user: `xmas` gifts & tax for Tue Dec 22 delivered 2026-10-10, up to 1:30 for that video only; the New Year extra for Tue Dec 29, TFSA room on Jan 1, waits for the user's go); next new topic per PUBLISHING-PLAN §4 that is not a handwritten B-topic and not C4 (claimed by the handwritten session): D1 tuition, bridged from G5.
 
 ## Coordination with the handwritten session (user, 2026-10-08)
 
