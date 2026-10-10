@@ -4,52 +4,52 @@
   [
    "hook",
    "Cash under the tree? Canada has no gift tax. But some gifts can still cost the giver.",
-   0.3
+   0.18
   ],
   [
    "receive",
    "Got a gift? It's not income. You don't report it. But what the money earns later is taxed.",
-   0.28
+   0.16
   ],
   [
    "spouse",
    "First catch: give money to your spouse to invest, and the interest, dividends and capital gains are taxed to you, not them.",
-   0.26
+   0.15
   ],
   [
    "tfsa",
    "The exception: money your spouse puts into their own TFSA. That isn't attributed back to you.",
-   0.26
+   0.15
   ],
   [
    "kids",
    "Same idea for kids under eighteen. Interest and dividends on money you give them are taxed to you.",
-   0.3
+   0.18
   ],
   [
    "property",
    "Second catch: gifts that aren't cash. Give shares, a cottage or crypto to anyone but your spouse, and CRA treats it as sold at market value.",
-   0.26
+   0.15
   ],
   [
    "example",
    "Bought shares for ten thousand dollars, now worth thirty? Give them to your son, and you report a twenty-thousand-dollar gain. Half of it is taxable.",
-   0.3
+   0.18
   ],
   [
    "boss",
    "And the gift from your boss: non-cash gifts up to five hundred dollars a year are tax-free. Cash is always taxable.",
-   0.3
+   0.18
   ],
   [
    "payoff",
    "So the gift itself is free. What it earns, and what grew before you gave it, may not be.",
-   0.25
+   0.15
   ],
   [
    "cta",
-   "Next: your TFSA room resets on January first. Follow so you don't miss it.",
-   0.25
+   "Next: down on a stock? Why December thirtieth matters. Follow so you don't miss it.",
+   0.15
   ]
  ]
 }

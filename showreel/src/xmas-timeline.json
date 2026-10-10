@@ -1,5 +1,5 @@
 {
- "total": 89.372,
+ "total": 89.414,
  "beats": [
   {
    "id": "hook",
@@ -10,56 +10,56 @@
   {
    "id": "receive",
    "text": "Got a gift? It's not income. You don't report it. But what the money earns later is taxed.",
-   "start": 7.882,
-   "end": 14.333
+   "start": 7.762,
+   "end": 14.213
   },
   {
    "id": "spouse",
    "text": "First catch: give money to your spouse to invest, and the interest, dividends and capital gains are taxed to you, not them.",
-   "start": 14.613,
-   "end": 25.639
+   "start": 14.373,
+   "end": 25.399
   },
   {
    "id": "tfsa",
    "text": "The exception: money your spouse puts into their own TFSA. That isn't attributed back to you.",
-   "start": 25.899,
-   "end": 32.944
+   "start": 25.549,
+   "end": 32.594
   },
   {
    "id": "kids",
    "text": "Same idea for kids under eighteen. Interest and dividends on money you give them are taxed to you.",
-   "start": 33.204,
-   "end": 40.484
+   "start": 32.744,
+   "end": 40.024
   },
   {
    "id": "property",
    "text": "Second catch: gifts that aren't cash. Give shares, a cottage or crypto to anyone but your spouse, and CRA treats it as sold at market value.",
-   "start": 40.784,
-   "end": 54.672
+   "start": 40.204,
+   "end": 54.092
   },
   {
    "id": "example",
    "text": "Bought shares for ten thousand dollars, now worth thirty? Give them to your son, and you report a twenty-thousand-dollar gain. Half of it is taxable.",
-   "start": 54.932,
-   "end": 65.609
+   "start": 54.242,
+   "end": 64.919
   },
   {
    "id": "boss",
    "text": "And the gift from your boss: non-cash gifts up to five hundred dollars a year are tax-free. Cash is always taxable.",
-   "start": 65.909,
-   "end": 75.119
+   "start": 65.099,
+   "end": 74.309
   },
   {
    "id": "payoff",
    "text": "So the gift itself is free. What it earns, and what grew before you gave it, may not be.",
-   "start": 75.419,
-   "end": 82.732
+   "start": 74.489,
+   "end": 81.802
   },
   {
    "id": "cta",
-   "text": "Next: your TFSA room resets on January first. Follow so you don't miss it.",
-   "start": 82.982,
-   "end": 89.122
+   "text": "Next: down on a stock? Why December thirtieth matters. Follow so you don't miss it.",
+   "start": 81.952,
+   "end": 89.264
   }
  ]
 }

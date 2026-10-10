@@ -24,3 +24,4 @@ g5/vo/*.wav
 .claude/settings.local.json
 xmas/vo/*.wav
 /out/
+ny/vo/*.wav

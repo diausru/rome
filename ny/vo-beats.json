@@ -1,0 +1,50 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Down on a stock this year? Sell by December thirtieth, and that loss can cut the tax on your gains.",
+   0.3
+  ],
+  [
+   "rule",
+   "A capital loss offsets capital gains. Only gains, not your salary.",
+   0.28
+  ],
+  [
+   "example",
+   "Twelve thousand in gains, and another stock down eight thousand? Sell the loser, and your net gain is four thousand. Half is taxable: two thousand, not six.",
+   0.3
+  ],
+  [
+   "date",
+   "Why the thirtieth? Trades settle one business day later, and settlement sets the tax year.",
+   0.3
+  ],
+  [
+   "trap",
+   "The trap: buy it back within thirty days, before or after, or let your spouse buy it, and the loss is denied for this year.",
+   0.26
+  ],
+  [
+   "acb",
+   "It usually moves into the cost of the new shares instead.",
+   0.28
+  ],
+  [
+   "tfsa",
+   "Losses inside a TFSA or RRSP? You can't claim them at all.",
+   0.3
+  ],
+  [
+   "payoff",
+   "Check your gains before the thirtieth. Your broker can confirm the cut-off.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: the CRA form for investments outside Canada. Follow so you don't miss it.",
+   0.25
+  ]
+ ]
+}

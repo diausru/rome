@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Gifts and tax in Canada (Christmas special)",
-  "duration": "89.88 s (2157 frames)",
+  "duration": "89.92 s (2158 frames)",
   "mp4": "showreel/out/xmas/xmas-final.mp4 (share copy: xmas-share.mp4)"
  },
  "sources": [
@@ -19,18 +19,18 @@
    "Canada Has No Gift Tax… But These Gifts Can Still Cost You",
    "Christmas Gifts and CRA: What's Tax-Free and What Isn't"
   ],
-  "description": "Giving money or investments this Christmas? Canada has no gift tax, and a gift you receive isn't income. But some gifts can still cost the person who gives them.\n\n1) Money you give your spouse or common-law partner to invest: the interest, dividends and capital gains are taxed to you (the attribution rules). Exception: money your spouse puts into their own TFSA isn't attributed back to you.\n\n2) Money you give kids under 18 (children, grandchildren, other related minors): interest and dividends are taxed to you.\n\n3) Gifts that aren't cash (shares, a cottage, crypto) to anyone but your spouse: CRA treats it as sold at fair market value.\nExample: shares bought for $10,000 and worth $30,000, given to your adult son → you report a $20,000 capital gain; half of it, $10,000, is added to your income. His cost becomes $30,000.\n\n4) Gifts from your employer: non-cash gifts and awards up to $500 a year in total are tax-free (only the excess is taxable). Cash and near-cash gifts are always taxable.\n\nThe gift itself is tax-free. What it earns, and what grew before you gave it, may not be. Exceptions exist (prescribed-rate loans, principal residence, separation); ask a professional before a large gift.\n\nNext: your TFSA room resets on January 1.\n\nSources: CRA, Amounts that are not reported or taxed; Transfers of capital property; T4037; How to contribute to a TFSA; Gifts, awards and long-service awards (canada.ca). The family and the shares are an example. General information, not advice.\n\n#GiftTax #CanadaTax #Christmas",
+  "description": "Giving money or investments this Christmas? Canada has no gift tax, and a gift you receive isn't income. But some gifts can still cost the person who gives them.\n\n1) Money you give your spouse or common-law partner to invest: the interest, dividends and capital gains are taxed to you (the attribution rules). Exception: money your spouse puts into their own TFSA isn't attributed back to you.\n\n2) Money you give kids under 18 (children, grandchildren, other related minors): interest and dividends are taxed to you.\n\n3) Gifts that aren't cash (shares, a cottage, crypto) to anyone but your spouse: CRA treats it as sold at fair market value.\nExample: shares bought for $10,000 and worth $30,000, given to your adult son → you report a $20,000 capital gain; half of it, $10,000, is added to your income. His cost becomes $30,000.\n\n4) Gifts from your employer: non-cash gifts and awards up to $500 a year in total are tax-free (only the excess is taxable). Cash and near-cash gifts are always taxable.\n\nThe gift itself is tax-free. What it earns, and what grew before you gave it, may not be. Exceptions exist (prescribed-rate loans, principal residence, separation); ask a professional before a large gift.\n\nNext: down on a stock? Why December 30 matters.\n\nSources: CRA, Amounts that are not reported or taxed; Transfers of capital property; T4037; How to contribute to a TFSA; Gifts, awards and long-service awards (canada.ca). The family and the shares are an example. General information, not advice.\n\n#GiftTax #CanadaTax #Christmas",
   "hashtags": "#GiftTax #CanadaTax #Christmas #CRA #PersonalFinanceCanada",
   "keywords": "gift tax canada, is there a gift tax in canada, giving money to family canada tax, gifting shares canada, attribution rules canada, employer gift tax canada, christmas gift tax, gift tax rules",
   "pinned": "Quick check: is a $1,000 cash gift from your parents taxable in Canada? No, the gift isn't income. But the interest it earns later is. (General info, not advice.)",
-  "cta": "Next: your TFSA room resets on January 1. Follow so you don't miss it."
+  "cta": "Next: down on a stock? Why December 30 matters. Follow so you don't miss it."
  },
  "tt": {
   "caption": "Canada has no gift tax 🎁 but some Christmas gifts can still cost the giver. Spouse, kids, shares, and that gift from your boss.",
   "keywords": "gift tax canada · is there a gift tax in canada · giving money to family canada · christmas gift tax",
   "hashtags": "#gifttax #canadiantaxes #christmas #personalfinancecanada #cra",
   "pinned": "Non-cash gifts from your employer: up to $500 a year tax-free. Cash: always taxable. (General info, not advice.)",
-  "cta": "Follow for the next one: your TFSA room on January 1."
+  "cta": "Follow for the next one: the December 30 deadline for selling a losing stock."
  },
  "ig": {
   "caption": "Canada has no gift tax. 🎁🇨🇦 But some gifts still cost the person who gives them.\n\n✅ A gift you receive isn't income\n1️⃣ Spouse invests the money → interest, dividends, gains taxed to YOU (their own TFSA: exception)\n2️⃣ Kids under 18 → interest and dividends taxed to you\n3️⃣ Shares, a cottage, crypto to anyone but your spouse → treated as sold at market value\n   e.g. $10K shares now worth $30K → you report a $20K gain\n🎁 From your boss: non-cash gifts up to $500/yr tax-free, cash always taxable\n\nSend this to whoever is giving the big gift this year.\n\nSource: CRA (canada.ca). Example only. General info, not advice.",
@@ -55,12 +55,12 @@
  },
  "next": [
   {
-   "topic": "TFSA room on January 1 (New Year special, Dec 29)",
+   "topic": "Tax-loss selling before December 30 (New Year extra, Dec 29)",
    "why": "Bridge in this video; the second extra video the user added",
-   "intent": "tfsa contribution room",
-   "hook": "January first, your TFSA room resets. Check before you deposit.",
-   "angle": "Verified 2027 limit (CRA announces it in November), how room carries forward, the 1%/month over-contribution tax",
-   "payoff": "How to check your room on My Account"
+   "intent": "tax loss harvesting canada",
+   "hook": "Down on a stock? Sell by December thirtieth.",
+   "angle": "Settlement date + T+1, the superficial loss trap with a spouse, TFSA/RRSP losses",
+   "payoff": "A clear cut-off date and one trap to avoid"
   },
   {
    "topic": "Tuition and student credits (D1)",
@@ -79,7 +79,7 @@
    "payoff": "Calm action plan"
   }
  ],
- "series": "Holiday specials (Dec 22 gifts → Dec 29 TFSA room), between the main list videos. Playlist: 'Family & money'.",
+ "series": "Holiday specials (Dec 22 gifts → Dec 29 tax-loss selling), between the main list videos. Playlist: 'Family & money'.",
  "research": "- vidIQ (2026-10-09/10): my calls = 25 credits (two keyword checks, competitor search, two title scores 87 / 82); balance 1,515 → 1,490 (−25).",
  "retention": "Hook (0–7 s): 'Cash under the tree? … can still cost the giver' (open loop) ✅. First answer by 8 s (not income), then two numbered catches, each with its own hero ✅. Scene changes at 41 s and 66 s refresh the frame before attention dips ✅. Gold example number at 59 s ✅. Weakest point: 15–26 s (the longest line, the spouse rule), carried by the strip and the 'taxed to you' hero."
 }

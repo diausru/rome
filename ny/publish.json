@@ -1,0 +1,84 @@
+{
+ "video": {
+  "title": "Down on a stock? Sell by December 30 (New Year extra)",
+  "duration": "66.29 s (1591 frames)",
+  "mp4": "showreel/out/ny/ny-final.mp4 (share copy: ny-share.mp4)"
+ },
+ "sources": [
+  "CRA — Capital losses; What is a superficial loss; T4037 Capital Gains 2025 (canada.ca) · current · allowable capital losses offset only taxable capital gains; superficial loss: you or an affiliated person (e.g. spouse) buys the same property 30 days before or after and still holds it 30 days after → loss denied, usually added to the cost of the substituted property",
+  "Finance Canada 2026 backgrounder; CRA What's new (canada.ca) · 2026 · capital gains inclusion rate one-half",
+  "CRA technical interpretation 2012-0468931C6 (TEI roundtable 2012, continuing IT-133) · current CRA position · the settlement date is the date of disposition of exchange-traded shares",
+  "Canadian Securities Administrators news release (May 27, 2024) · 2024 → · Canadian equity and ETF trades settle T+1",
+  "CIBC 2026 Year-End Tax Roadmap; TMX Money tax-loss selling primer · 2026 · last trade date for a 2026 sale: Wednesday, December 30 (settles December 31)",
+  "CRA — Before you contribute to a TFSA; T4040 RRSPs (canada.ca) · current · losses inside a TFSA or RRSP cannot be claimed"
+ ],
+ "yt": {
+  "titles": [
+   "Down on a Stock? Sell Before December 30 (Canada Tax-Loss Selling)",
+   "Tax Loss Harvesting in Canada: The December 30 Deadline",
+   "The 30-Day Rule That Cancels Your Capital Loss (Canada)"
+  ],
+  "description": "Down on a stock this year? In Canada, a capital loss can offset your capital gains, but only if the sale lands in the right year.\n\nThe rule: capital losses offset capital gains only (not your salary or other income).\nExample: a $12,000 gain on one stock and an $8,000 loss on another. Sell the loser and your net gain is $4,000; half is taxable, so $2,000 instead of $6,000.\n\nWhy December 30 (2026): Canadian trades settle one business day later (T+1), and CRA treats the settlement date as the date you sold. A trade on Wednesday, December 30 settles December 31; a December 31 trade settles in 2027. Confirm the cut-off with your broker.\n\nThe trap: if you or an affiliated person (like your spouse) buys the same stock within 30 days before or after the sale and still holds it 30 days later, it's a superficial loss and the loss is denied. It usually gets added to the cost of the shares bought back instead.\n\nLosses inside a TFSA or RRSP can't be claimed at all.\n\nNext: investments outside Canada, and the CRA form you can't skip.\n\nSources: CRA, Capital losses; What is a superficial loss; T4037 (canada.ca); CRA interpretation 2012-0468931C6 (settlement date); Canadian Securities Administrators (T+1, 2024). The numbers are an example. General information, not advice.\n\n#TaxLossHarvesting #CanadaTax #Investing",
+  "hashtags": "#TaxLossHarvesting #CanadaTax #Investing #CRA #PersonalFinanceCanada",
+  "keywords": "tax loss harvesting canada, tax loss selling canada, superficial loss rule, capital loss canada, capital gains canada, year end tax tips canada, december 30 deadline, t+1 settlement canada, tax loss harvesting explained",
+  "pinned": "Quick check: you sold a stock at a loss on December 20 and your spouse bought the same stock on January 10. Does the loss count? (Hint: 30 days after the sale, and your spouse is affiliated.) General info, not advice.",
+  "cta": "Next: investments outside Canada, and the CRA form you can't skip. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Down on a stock? 📉 In Canada the last day to lock in a 2026 loss is December 30, and buying it back too soon cancels it.",
+  "keywords": "tax loss harvesting canada · superficial loss rule · capital loss canada · year end tax tips canada",
+  "hashtags": "#taxlossharvesting #canadiantaxes #investingcanada #personalfinancecanada #cra",
+  "pinned": "Selling in a TFSA or RRSP? Those losses can't be claimed at all. (General info, not advice.)",
+  "cta": "Follow for the next one: the CRA form for investments outside Canada."
+ },
+ "ig": {
+  "caption": "Down on a stock this year? 📉🇨🇦 The deadline is December 30, not 31.\n\n1️⃣ Capital losses offset capital gains only\n   e.g. $12K gain − $8K loss = $4K net → $2K taxable instead of $6K\n2️⃣ Trades settle a business day later (T+1), and settlement sets the tax year\n   → sell by Wed, Dec 30, 2026\n❌ Buy it back within 30 days (or your spouse does) → superficial loss, denied\n❌ Losses inside a TFSA or RRSP can't be claimed\n\nSend this to the friend holding a losing stock.\n\nSource: CRA (canada.ca), CSA. Example only. General info, not advice.",
+  "keywords": "tax loss harvesting, tax loss selling canada, superficial loss, capital gains canada",
+  "hashtags": "#taxlossharvesting #canadiantaxes #investingcanada #personalfinancecanada #canadatax #stocks",
+  "pinned": "Save this for next December too 📌",
+  "cta": "Send this to the friend holding a losing stock."
+ },
+ "eng": {
+  "question": "Did you sell anything at a loss this year, or are you holding on?",
+  "save": "The December 30 cut-off and the 30-day rule in one place.",
+  "share": "Investors with a non-registered account and a losing position.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "tax loss harvesting canada",
+  "secondary": "tax loss harvesting (≈11,326/mo, competition 54); tax loss harvesting explained (≈10,196); what is tax loss harvesting (≈4,829); capital gains canada (≈3,936, competition 15.5); superficial loss rule (<750)",
+  "intent": "An investor with a losing stock wants to know whether and when selling it lowers this year's tax.",
+  "audience": "DIY investors with non-registered accounts (Wealthsimple, Questrade, bank brokerages), 25–60.",
+  "angle": "The Canadian year-end mechanics in 66 seconds: the settlement-date rule and T+1 give a December 30 cut-off, plus the superficial loss trap with a spouse. Canadian competitors are long-form and small; no Canadian Short covers it.",
+  "questions": "What is the last day for tax-loss selling in Canada? · What is a superficial loss? · Can my spouse buy back the stock I sold at a loss? · Can I claim a loss in my TFSA? · Do capital losses reduce my salary income?"
+ },
+ "next": [
+  {
+   "topic": "Foreign property over $100,000: T1135 (#23, Dec 30)",
+   "why": "Bridge in this video; it is the next post in the feed",
+   "intent": "t1135 foreign income verification",
+   "hook": "Savings or stocks outside Canada? CRA wants a form.",
+   "angle": "Already produced (G2)",
+   "payoff": "Who files and the penalty"
+  },
+  {
+   "topic": "Tuition and student credits (D1)",
+   "why": "Next card-format row in the plan",
+   "intent": "tuition tax credit canada",
+   "hook": "Your tuition slip is worth money at tax time.",
+   "angle": "Verified T2202 rules, transfer and carry-forward",
+   "payoff": "What to claim and when"
+  },
+  {
+   "topic": "Got a CRA letter? (A5)",
+   "why": "Follows A4",
+   "intent": "cra letter what to do",
+   "hook": "Opened a CRA letter? Do this first.",
+   "angle": "Verified CRA steps",
+   "payoff": "Calm action plan"
+  }
+ ],
+ "series": "Holiday extras (Dec 22 gifts → Dec 29 tax-loss selling), bridged into the main feed (#23 T1135 on Dec 30). Playlist: 'Investing & tax'.",
+ "research": "- vidIQ (2026-10-10): my calls = 25 credits (keyword research, competitor search, Shorts outliers, two title scores 92 / 80); balance 1,490 → 1,465.",
+ "retention": "Hook (0–6 s): 'Down on a stock? Sell by December thirtieth' (a date and a payoff) ✅. Rule by 7 s, worked example with a gold '$4,000 net' at 20 s and a pin at 24 s ✅. 'Why the thirtieth?' answers the hook's open loop at 26–32 s ✅. Scene change into New Year's Eve at 33 s with the spouse exactly when the spouse rule is spoken ✅. Weakest point: 33–45 s (the longest line, the superficial loss), carried by the red card and the strip."
+}
