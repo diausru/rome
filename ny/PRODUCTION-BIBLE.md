@@ -49,3 +49,4 @@ Gain $12,000 on one stock + loss $8,000 sold on another in the same year → net
 
 ## 3. QC log
 - Stills v1: in scene 3 the top card covered the couple's faces → scene-3 cards moved to the lower third (top 1150), strip moved under them, camera keys adjusted; bottle blur patch first misplaced (below the neck) → moved onto the neck and re-checked at full resolution (frames 1300, 1400): no legible lettering.
+- Final: 1591 frames, 66.29 s, h264 1080×1920 24 fps + AAC 48 kHz, decode OK, −14.0 LUFS; contact sheet checked (cards, pin, strip in both positions, both scene cuts, end block, flag, footer). vidIQ titles 92 / 80 → primary "Down on a Stock? Sell Before December 30 (Canada Tax-Loss Selling)". Kit card #26 (Kit v34). Metricool: not sent; needs `ny-share.mp4` in the Drive folder, then TT 10:00 / IG 11:00 / YT 16:00 on Tue Dec 29 (America/Winnipeg).
