@@ -65,7 +65,7 @@ const Formula: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   return (
     <div>
       <Head title={p.title} sub={p.sub} />
-      <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: 18, fontFamily: F.serif, fontWeight: 800 }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: 18, fontFamily: F.serif, fontWeight: 800, zoom: p.scale ?? 1 } as React.CSSProperties}>
         {toks.map((s, i) => {
           const t = s.t ?? p.t + i * 0.5; const k = ramp(c.now, t, 0.35);
           const cur = c.now >= t && (i === toks.length - 1 || c.now < (toks[i + 1].t ?? p.t + (i + 1) * 0.5));
@@ -84,17 +84,18 @@ const Formula: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
 
 // ---------- C. bracket table with the portion of income on each step ----------
 const Brackets: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
-  const rows = p.value as Pn[]; const maxPart = Math.max(...rows.map((r) => r.part), 1);
+  const rows = (Array.isArray(p.value) ? p.value : p.value.rows) as Pn[]; const maxPart = Math.max(...rows.map((r) => r.part), 1);
+  const anyIncome = rows.some((r) => r.part > 0);
   const gap = p.gap ?? 0.7; const top = rows.reduce((a, r, i) => (r.part > 0 ? i : a), 0);
   let sum = 0;
   return (
     <div>
       <Head title={p.title} sub={p.sub} flag={p.flag} />
       <div style={{ display: 'grid', gridTemplateColumns: '220px 90px 1fr 130px', fontSize: 15, letterSpacing: 2, color: C.faint, fontWeight: 700, padding: '0 8px 8px', borderBottom: `1px solid ${C.line}` }}>
-        <div>INCOME RANGE</div><div>RATE</div><div>YOUR DOLLARS ON THIS STEP</div><div style={{ textAlign: 'right' }}>TAX</div>
+        <div>INCOME RANGE</div><div>RATE</div><div>{anyIncome ? (p.barLabel ?? 'YOUR DOLLARS ON THIS STEP') : ''}</div><div style={{ textAlign: 'right' }}>TAX</div>
       </div>
       {rows.map((r, i) => {
-        const t = p.t + 0.3 + gap * i; const k = ramp(c.now, t, 0.45); if (r.part > 0) sum += r.tax * k;
+        const t = p.rowAt?.[Math.min(i, p.rowAt.length - 1)]?.t ?? p.t + 0.3 + gap * i; const k = ramp(c.now, t, 0.45); if (r.part > 0) sum += Math.round(r.tax) * k;
         const hl = i === top && c.now >= t;
         return (
           <div key={i} style={{ display: 'grid', gridTemplateColumns: '220px 90px 1fr 130px', alignItems: 'center', padding: '8px', borderRadius: 8, background: hl ? C.hl : 'transparent', opacity: 0.25 + 0.75 * k }}>
@@ -103,12 +104,12 @@ const Brackets: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
             <div style={{ height: 18, background: 'rgba(255,255,255,.06)', borderRadius: 4, overflow: 'hidden' }}>
               <div style={{ height: '100%', width: `${(r.part / maxPart) * 100 * k}%`, background: r.part ? `linear-gradient(90deg,${C.gold2},${C.gold})` : 'transparent' }} />
             </div>
-            <div style={{ textAlign: 'right', fontFamily: F.serif, fontWeight: 800, fontSize: 22, color: r.part ? C.white : C.faint }}>{r.part ? money(r.tax * k) : '—'}</div>
+            <div style={{ textAlign: 'right', fontFamily: F.serif, fontWeight: 800, fontSize: 22, color: r.part ? C.white : C.faint }}>{r.part ? money(Math.round(r.tax) * k) : '—'}</div>
           </div>);
       })}
-      <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8, padding: '10px 8px 0', borderTop: `1px solid ${C.line}`, fontSize: 20 }}>
+      {anyIncome && <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8, padding: '10px 8px 0', borderTop: `1px solid ${C.line}`, fontSize: 20 }}>
         <span style={{ color: C.dim }}>{p.sumLabel ?? 'Total before credits'}</span><span style={{ fontFamily: F.serif, fontWeight: 800, fontSize: 30, ...gold }}>{money(sum)}</span>
-      </div>
+      </div>}
     </div>
   );
 };
@@ -220,10 +221,10 @@ const Misconception: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
       <Head title={p.title} />
       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 24, padding: '8px 0', opacity: 1 - 0.55 * k2 }}>
         <span style={{ color: C.dim }}>{p.wrong.label}</span>
-        <span style={{ position: 'relative', fontFamily: F.serif, fontWeight: 800, fontSize: 34 }}>{p.wrong.text ?? pct(p.wrong.value, p.wrong.dec ?? 1)}<span style={{ position: 'absolute', left: 0, top: '52%', height: 3, width: `${k2 * 100}%`, background: C.red }} /></span>
+        <span style={{ position: 'relative', fontFamily: F.serif, fontWeight: 800, fontSize: 34 }}>{p.wrong.text ?? (p.wrong.fmt === 'money' ? money(p.wrong.value) : pct(p.wrong.value, p.wrong.dec ?? 1))}<span style={{ position: 'absolute', left: 0, top: '52%', height: 3, width: `${k2 * 100}%`, background: C.red }} /></span>
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 24, padding: '8px 0', borderTop: `1px solid ${C.line}`, opacity: k2 }}>
-        <span>{p.fix.label}</span><span style={{ fontFamily: F.serif, fontWeight: 800, fontSize: 40, ...gold }}>{p.fix.text ?? pct(p.fix.value, p.fix.dec ?? 1)}</span>
+        <span>{p.fix.label}</span><span style={{ fontFamily: F.serif, fontWeight: 800, fontSize: 40, ...gold }}>{p.fix.text ?? (p.fix.fmt === 'money' ? money(p.fix.value) : pct(p.fix.value, p.fix.dec ?? 1))}</span>
       </div>
     </div>
   );

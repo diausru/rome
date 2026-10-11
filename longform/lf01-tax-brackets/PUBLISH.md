@@ -50,7 +50,7 @@ Primary: canadian tax brackets explained. Secondary: how tax brackets work, tax 
 ## Shorts candidates (re-edited, each ends pointing to the full video)
 1. "Your bracket isn't your rate" — 0:33–1:18 + 5:16–5:58 (Daniel 29.65% vs 18.9%).
 2. "$90,000 up the federal stairs" — 1:18–2:49 ($8,193 + $6,453 = $14,646, not $18,450).
-3. "Same $150K, $6,661 apart" — 7:48–8:44 (AB vs ON vs MB).
+3. "Same $150K, $6,662 apart" — 7:48–8:44 (AB vs ON vs MB).
 4. "The $1,000 raise" — 8:44–9:20 (keeps ≈$703 before CPP/EI).
 5. "The zero step" — 3:41–4:29 (BPA $16,452 worth ≈$2,303).
 Note: candidate 1 overlaps the existing Short `raise/` angle — re-edit with Daniel's numbers or skip.

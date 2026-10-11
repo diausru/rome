@@ -68,9 +68,9 @@ L46 "Notice: Priya earns sixty thousand more than Daniel, and keeps about thirty
 
 ## 10 · Surprise: the province
 L47 "Now here's where the face-off gets interesting. Keep Priya's salary. Move her." [chapter 09 The surprise]
-L48 "In Alberta, her provincial step at a hundred and fifty thousand is ten percent. Bracket rate: thirty-six. She keeps about a hundred and seven thousand, four hundred and fifty-eight dollars." [bars AB ON MB]
+L48 "In Alberta, her provincial step at a hundred and fifty thousand is ten percent. Bracket rate: thirty-six. She keeps about a hundred and seven thousand, four hundred and fifty-nine dollars." [bars AB ON MB]
 L49 "In Manitoba, a hundred and fifty thousand is already on the top provincial step, seventeen point four percent. Bracket rate: forty-three point four. She keeps about a hundred thousand, seven hundred and ninety-seven."
-L50 "Same job, same salary. Six thousand, six hundred and sixty-one dollars a year apart, only because of the provincial staircase."
+L50 "Same job, same salary. Six thousand, six hundred and sixty-two dollars a year apart, only because of the provincial staircase."
 L51 "So when someone says the thirty percent bracket, the honest answer is: which province?"
 
 ## 11 · What the bracket rate is for

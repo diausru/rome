@@ -22,7 +22,7 @@
 | BPA credit worth up to 14 % × $16,452 ≈ $2,303 federally | arithmetic | 2026 | 2026-10-11 | arithmetic |
 
 Numbers from taxcalc (ON): $45K → fed $3,338, prov $1,905, CPP $2,469, EI $733, keep $36,555, income tax 11.7 % of gross, combined bracket rate 19.1 %. $90K → fed $11,252, prov $5,782, CPP $4,646, EI $1,123, keep $67,197, 18.9 %, bracket 29.65 %. $150K → fed $25,302, prov $14,608, CPP $4,646, EI $1,123, keep $104,321, 26.6 %, bracket 37.16 %.
-Province swap at $150K: AB keep $107,458 (bracket 36.0 %), MB keep $100,797 (bracket 43.4 %).
+Province swap at $150K: AB keep $107,459 (bracket 36.0 %), MB keep $100,797 (bracket 43.4 %).
 Dependencies stated on screen/VO: single, employment income only, no RRSP or other deductions; actual results vary with credits, deductions, other income and province. "Bracket rate" = statutory combined federal + provincial rate on the last dollar; true marginal can differ where surtaxes, premiums or benefit clawbacks apply (said in VO once).
 | Priya (ON, $150K) next-dollar rate incl. Ontario surtax: 26 % + 11.16 % × (1 + 20 % + 36 %) = 43.41 % | arithmetic on ON surtax (20 % over $5,818, 36 % over $7,446 of basic ON tax; her basic ON tax ≈ $13,858) | 2026 | 2026-10-11 | arithmetic |
 | Daniel (ON, $90K) +$1,000 raise: OHP already at its $750 cap, no surtax (basic ON tax ≈ $5,032 < $5,818) → 29.65 % → keeps ≈ $703 before CPP/EI | arithmetic | 2026 | 2026-10-11 | arithmetic |

@@ -40,7 +40,12 @@ def portions(x, br):
         out.append(dict(lo=a, hi=b, rate=r, part=round(part, 2), tax=round(part * r, 2)))
     return out
 DATA = {}
+DATA['facts'] = dict(fed_bpa=TC.FED_BPA, fed_low_rate=TC.FED[0][1], bpa_credit=round(TC.FED_BPA * TC.FED[0][1]))
 for name, spec in ep.get('data', {}).items():
+    if spec.get('type') == 'steps':   # bracket table on a given income (or 0 = just the table)
+        br = TC.FED if spec['table'] == 'FED' else TC.PROV[spec['table']][0]
+        rows = portions(spec.get('income', 0), br)
+        DATA[name] = dict(rows=rows, total=sum(round(r['tax']) for r in rows), income=spec.get('income', 0)); continue
     if spec.get('type') == 'curve':
         DATA[name] = {pv: [dict(gross=g, take_home=round(take_home(g, pv)['take_home'])) for g in range(spec['from'], spec['to'] + 1, spec['step'])] for pv in spec['provs']}
         continue
@@ -53,6 +58,12 @@ for name, spec in ep.get('data', {}).items():
     r['fed_before_credits'] = round(sum(b['tax'] for b in r['fed_brackets']))
     r['take_home'] = r['gross'] - r['deductions']
     r['real_rate'] = r['income_tax'] / r['gross']
+    u0, u1 = take_home(spec['gross'], spec['prov']), take_home(spec['gross'] + 100, spec['prov'])
+    r['next_dollar_rate'] = ((u1['federal'] + u1['provincial']) - (u0['federal'] + u0['provincial'])) / 100
+    r['fed_top_rate'] = [b['rate'] for b in r['fed_brackets'] if b['part'] > 0][-1]
+    r['prov_top_rate'] = [b['rate'] for b in r['prov_brackets'] if b['part'] > 0][-1]
+    if spec.get('raise'):
+        r['raise'] = spec['raise']; r['raise_tax'] = int(spec['raise'] * r['top_bracket_rate'] + 0.5); r['raise_keep'] = spec['raise'] - r['raise_tax']
     DATA[name] = r
 ep['data'] = DATA
 def ref(path):

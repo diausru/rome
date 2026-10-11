@@ -6,7 +6,7 @@
 - **Main question:** If you're "in the 30 % bracket", do you lose 30 % of your pay?
 - **Face-off:** three Canadians in Ontario — Maya $45,000 · Daniel $90,000 · Priya $150,000 (fictional examples, not CRA rules). Two scores per person: BRACKET RATE (what people quote) vs REAL RATE (income tax ÷ salary).
 - **Information gap / reveal:** the bracket number and the real number are never the same; at $90,000 the bracket says ≈30 %, the real income-tax rate is ≈19 %.
-- **Complication:** province changes the stairs (Priya in Alberta vs Manitoba: $6,661 a year apart).
+- **Complication:** province changes the stairs (Priya in Alberta vs Manitoba: $6,662 a year apart).
 - **Emotional arc:** confusion/fear of the "big bracket" → clarity → control (knowing which number to use when).
 - **Payoff:** a one-line rule: the real rate tells you what you pay; the bracket rate tells you what your next (or last) dollar does — that is the number that matters for raises, bonuses, and deductions like an RRSP.
 - **Why this video:** most top results are American or a list of rates; none walks real Canadian people through both staircases with 2026 numbers.
