@@ -1,0 +1,1057 @@
+{
+ "fps": 30,
+ "footer": "Source: CRA / canada.ca 2026 rates \u00b7 single employee example \u00b7 General info, not advice",
+ "lead": 0.8,
+ "tail": 2.0,
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "Tax brackets \u00b7 2026"
+  },
+  {
+   "at": "L4",
+   "title": "01 \u00b7 The rules"
+  },
+  {
+   "at": "L8",
+   "title": "02 \u00b7 The federal stairs"
+  },
+  {
+   "at": "L17",
+   "title": "03 \u00b7 Two staircases"
+  },
+  {
+   "at": "L21",
+   "title": "04 \u00b7 The zero step"
+  },
+  {
+   "at": "L25",
+   "title": "05 \u00b7 Round one \u00b7 Maya"
+  },
+  {
+   "at": "L31",
+   "title": "06 \u00b7 Round two \u00b7 Daniel"
+  },
+  {
+   "at": "L36",
+   "title": "07 \u00b7 Round three \u00b7 Priya"
+  },
+  {
+   "at": "L41",
+   "title": "08 \u00b7 The score"
+  },
+  {
+   "at": "L47",
+   "title": "09 \u00b7 The surprise"
+  },
+  {
+   "at": "L52",
+   "title": "10 \u00b7 Which number to use"
+  },
+  {
+   "at": "L57",
+   "title": "11 \u00b7 Verdict"
+  }
+ ],
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L54",
+   "file": "vo/L54.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L55",
+   "file": "vo/L55.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L56",
+   "file": "vo/L56.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L57",
+   "file": "vo/L57.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L58",
+   "file": "vo/L58.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L59",
+   "file": "vo/L59.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L60",
+   "file": "vo/L60.wav",
+   "gap": 0.4
+  },
+  {
+   "id": "L61",
+   "file": "vo/L61.wav",
+   "gap": 1.0
+  },
+  {
+   "id": "L62",
+   "file": "vo/L62.wav",
+   "gap": 0.4
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "hook",
+   "items": [
+    {
+     "name": "Maya",
+     "value": "$45,000"
+    },
+    {
+     "name": "Daniel",
+     "value": "$90,000"
+    },
+    {
+     "name": "Priya",
+     "value": "$150,000"
+    }
+   ]
+  },
+  {
+   "at": "L2",
+   "type": "statement",
+   "label": "The claim",
+   "text": "\u201cI'm in the 30% bracket.\u201d",
+   "sub": "So 30% of the pay cheque is gone?"
+  },
+  {
+   "at": "L3",
+   "type": "statement",
+   "label": "The question",
+   "text": "Which number is real?",
+   "gold": true,
+   "sub": "2026 numbers \u00b7 federal + Ontario"
+  },
+  {
+   "at": "L4",
+   "type": "chapter",
+   "num": "01",
+   "title": "The rules"
+  },
+  {
+   "at": "L5",
+   "type": "card",
+   "side": "center",
+   "label": "Number 1 \u00b7 Bracket rate",
+   "value": "Last-dollar rate",
+   "line": "Federal + provincial rate on the last dollar earned."
+  },
+  {
+   "at": "L6",
+   "type": "card",
+   "side": "center",
+   "label": "Number 2 \u00b7 Real rate",
+   "value": "Tax \u00f7 salary",
+   "line": "Total income tax divided by the salary."
+  },
+  {
+   "at": "L7",
+   "type": "contenders",
+   "title": "The test case",
+   "items": [
+    {
+     "name": "Single",
+     "tag": "No spouse or dependants claimed"
+    },
+    {
+     "name": "Employed",
+     "tag": "Employment income only"
+    },
+    {
+     "name": "No RRSP",
+     "tag": "No other deductions or credits"
+    }
+   ]
+  },
+  {
+   "at": "L8",
+   "type": "chapter",
+   "num": "02",
+   "title": "The federal stairs"
+  },
+  {
+   "at": "L9",
+   "type": "flow",
+   "title": "Federal brackets 2026",
+   "gap": 1.6,
+   "steps": [
+    {
+     "label": "Up to $58,523",
+     "value": "14%"
+    },
+    {
+     "label": "$58,523 \u2013 $117,045",
+     "value": "20.5%"
+    },
+    {
+     "label": "$117,045 \u2013 $181,440",
+     "value": "26%"
+    },
+    {
+     "label": "$181,440 \u2013 $258,482",
+     "value": "29%"
+    },
+    {
+     "label": "Above $258,482",
+     "value": "33%"
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "type": "statement",
+   "label": "The key",
+   "text": "Each rate only taxes the dollars on its own step.",
+   "size": 64
+  },
+  {
+   "at": "L14",
+   "type": "flow",
+   "title": "$90,000 through the federal stairs \u00b7 before credits",
+   "gap": 5.5,
+   "steps": [
+    {
+     "label": "$58,523 \u00d7 14%",
+     "value": 8193
+    },
+    {
+     "label": "$31,477 \u00d7 20.5%",
+     "value": 6453
+    },
+    {
+     "label": "Federal tax before credits",
+     "value": 14646
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "off": 2.5,
+   "type": "caption",
+   "overlay": true,
+   "dur": 5,
+   "text": "Not 20.5% \u00d7 $90,000 = $18,450"
+  },
+  {
+   "at": "L17",
+   "type": "chapter",
+   "num": "03",
+   "title": "Two staircases"
+  },
+  {
+   "at": "L18",
+   "type": "bars",
+   "title": "Ontario brackets 2026",
+   "prefix": "",
+   "items": [
+    {
+     "label": "to $53,891",
+     "value": 5.05,
+     "text": "5.05%"
+    },
+    {
+     "label": "to $107,785",
+     "value": 9.15,
+     "text": "9.15%"
+    },
+    {
+     "label": "to $150,000",
+     "value": 11.16,
+     "text": "11.16%"
+    },
+    {
+     "label": "to $220,000",
+     "value": 12.16,
+     "text": "12.16%"
+    },
+    {
+     "label": "above",
+     "value": 13.16,
+     "text": "13.16%"
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "type": "card",
+   "side": "center",
+   "label": "Ontario extras",
+   "value": "Surtax + up to $900",
+   "line": "Surtax on higher provincial tax, plus the Ontario Health Premium."
+  },
+  {
+   "at": "L20",
+   "type": "card",
+   "side": "center",
+   "label": "Daniel's bracket rate",
+   "value": "29.65%",
+   "line": "20.5% federal + 9.15% Ontario on his last dollar."
+  },
+  {
+   "at": "L21",
+   "type": "chapter",
+   "num": "04",
+   "title": "The zero step"
+  },
+  {
+   "at": "L22",
+   "type": "card",
+   "side": "center",
+   "label": "Federal basic personal amount 2026",
+   "value": 16452,
+   "line": "Maximum amount; claimed as a credit."
+  },
+  {
+   "at": "L23",
+   "type": "card",
+   "side": "center",
+   "label": "Worth up to",
+   "value": 2303,
+   "prefix": "\u2248$",
+   "line": "$16,452 \u00d7 14% off federal tax."
+  },
+  {
+   "at": "L24",
+   "type": "statement",
+   "label": "Also",
+   "text": "CPP and EI earn credits. Part of CPP is a deduction.",
+   "size": 58,
+   "sub": "So the real bill is lower than the stairs alone."
+  },
+  {
+   "at": "L25",
+   "type": "chapter",
+   "num": "05",
+   "title": "Round one \u00b7 Maya"
+  },
+  {
+   "at": "L26",
+   "type": "contenders",
+   "items": [
+    {
+     "name": "Maya",
+     "tag": "$45,000 \u00b7 Ontario"
+    },
+    {
+     "name": "Daniel",
+     "tag": "$90,000 \u00b7 Ontario"
+    },
+    {
+     "name": "Priya",
+     "tag": "$150,000 \u00b7 Ontario"
+    }
+   ],
+   "focus": 0
+  },
+  {
+   "at": "L27",
+   "type": "card",
+   "side": "center",
+   "label": "Maya \u00b7 bracket rate",
+   "value": "19.05%",
+   "line": "14% federal + 5.05% Ontario."
+  },
+  {
+   "at": "L28",
+   "type": "flow",
+   "title": "Maya \u00b7 $45,000 \u00b7 Ontario 2026",
+   "gap": 3.5,
+   "steps": [
+    {
+     "label": "Federal tax",
+     "value": 3338
+    },
+    {
+     "label": "Ontario tax",
+     "value": 1905
+    },
+    {
+     "label": "Total income tax",
+     "value": 5243
+    }
+   ]
+  },
+  {
+   "at": "L29",
+   "off": 3,
+   "type": "caption",
+   "overlay": true,
+   "dur": 5,
+   "text": "$5,243 \u00f7 $45,000 = 11.7%"
+  },
+  {
+   "at": "L30",
+   "type": "bars",
+   "title": "Maya",
+   "prefix": "",
+   "items": [
+    {
+     "label": "Bracket rate",
+     "value": 19.05,
+     "text": "19.05%"
+    },
+    {
+     "label": "Real rate",
+     "value": 11.7,
+     "text": "11.7%",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "at": "L31",
+   "type": "chapter",
+   "num": "06",
+   "title": "Round two \u00b7 Daniel"
+  },
+  {
+   "at": "L32",
+   "type": "contenders",
+   "items": [
+    {
+     "name": "Maya",
+     "tag": "$45,000 \u00b7 Ontario"
+    },
+    {
+     "name": "Daniel",
+     "tag": "$90,000 \u00b7 Ontario"
+    },
+    {
+     "name": "Priya",
+     "tag": "$150,000 \u00b7 Ontario"
+    }
+   ],
+   "focus": 1
+  },
+  {
+   "at": "L33",
+   "type": "flow",
+   "title": "Daniel \u00b7 $90,000 \u00b7 Ontario 2026",
+   "gap": 3.5,
+   "steps": [
+    {
+     "label": "Federal tax",
+     "value": 11252
+    },
+    {
+     "label": "Ontario tax",
+     "value": 5782
+    },
+    {
+     "label": "Total income tax",
+     "value": 17034
+    }
+   ]
+  },
+  {
+   "at": "L34",
+   "off": 2.5,
+   "type": "caption",
+   "overlay": true,
+   "dur": 5,
+   "text": "$17,034 \u00f7 $90,000 = 18.9%"
+  },
+  {
+   "at": "L35",
+   "type": "bars",
+   "title": "Daniel",
+   "prefix": "",
+   "items": [
+    {
+     "label": "Bracket rate",
+     "value": 29.65,
+     "text": "29.65%"
+    },
+    {
+     "label": "Real rate",
+     "value": 18.9,
+     "text": "18.9%",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "at": "L36",
+   "type": "chapter",
+   "num": "07",
+   "title": "Round three \u00b7 Priya"
+  },
+  {
+   "at": "L37",
+   "type": "contenders",
+   "items": [
+    {
+     "name": "Maya",
+     "tag": "$45,000 \u00b7 Ontario"
+    },
+    {
+     "name": "Daniel",
+     "tag": "$90,000 \u00b7 Ontario"
+    },
+    {
+     "name": "Priya",
+     "tag": "$150,000 \u00b7 Ontario"
+    }
+   ],
+   "focus": 2
+  },
+  {
+   "at": "L38",
+   "type": "flow",
+   "title": "Priya \u00b7 $150,000 \u00b7 Ontario 2026",
+   "gap": 3.5,
+   "steps": [
+    {
+     "label": "Federal tax",
+     "value": 25302
+    },
+    {
+     "label": "Ontario tax (incl. surtax + health premium)",
+     "value": 14608
+    },
+    {
+     "label": "Total income tax",
+     "value": 39910
+    }
+   ]
+  },
+  {
+   "at": "L39",
+   "type": "bars",
+   "title": "Priya",
+   "prefix": "",
+   "items": [
+    {
+     "label": "Bracket rate",
+     "value": 37.16,
+     "text": "37.16%"
+    },
+    {
+     "label": "Real rate",
+     "value": 26.6,
+     "text": "26.6%",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "at": "L41",
+   "type": "chapter",
+   "num": "08",
+   "title": "The score"
+  },
+  {
+   "at": "L42",
+   "type": "bars",
+   "title": "Bracket rate",
+   "prefix": "",
+   "items": [
+    {
+     "label": "Maya",
+     "value": 19.05,
+     "text": "19.05%"
+    },
+    {
+     "label": "Daniel",
+     "value": 29.65,
+     "text": "29.65%"
+    },
+    {
+     "label": "Priya",
+     "value": 37.16,
+     "text": "37.16%"
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "type": "bars",
+   "title": "Real rate (income tax \u00f7 salary)",
+   "prefix": "",
+   "items": [
+    {
+     "label": "Maya",
+     "value": 11.7,
+     "text": "11.7%",
+     "hl": true
+    },
+    {
+     "label": "Daniel",
+     "value": 18.9,
+     "text": "18.9%",
+     "hl": true
+    },
+    {
+     "label": "Priya",
+     "value": 26.6,
+     "text": "26.6%",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "at": "L44",
+   "type": "statement",
+   "label": "The gap",
+   "text": "7 to 11 points",
+   "gold": true,
+   "sub": "The bracket rate always overstates what you pay."
+  },
+  {
+   "at": "L45",
+   "type": "bars",
+   "title": "Take-home after income tax, CPP and EI",
+   "items": [
+    {
+     "label": "Maya",
+     "value": 36554
+    },
+    {
+     "label": "Daniel",
+     "value": 67197
+    },
+    {
+     "label": "Priya",
+     "value": 104320,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "type": "card",
+   "side": "center",
+   "label": "Priya vs Daniel",
+   "value": "+$60,000 \u2192 +$37,123",
+   "line": "Earns $60,000 more, keeps about $37,000 more."
+  },
+  {
+   "at": "L47",
+   "type": "chapter",
+   "num": "09",
+   "title": "The surprise"
+  },
+  {
+   "at": "L48",
+   "type": "bars",
+   "title": "Priya \u00b7 $150,000 \u00b7 take-home by province",
+   "items": [
+    {
+     "label": "Alberta",
+     "value": 107458,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "at": "L49",
+   "type": "bars",
+   "title": "Priya \u00b7 $150,000 \u00b7 take-home by province",
+   "items": [
+    {
+     "label": "Alberta",
+     "value": 107458,
+     "hl": true
+    },
+    {
+     "label": "Ontario",
+     "value": 104320
+    },
+    {
+     "label": "Manitoba",
+     "value": 100797
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "type": "card",
+   "side": "center",
+   "label": "Same salary, two provinces",
+   "value": 6661,
+   "line": "Alberta vs Manitoba, per year."
+  },
+  {
+   "at": "L51",
+   "type": "statement",
+   "text": "\u201c30% bracket?\u201d \u2014 Which province?",
+   "size": 72
+  },
+  {
+   "at": "L52",
+   "type": "chapter",
+   "num": "10",
+   "title": "Which number to use"
+  },
+  {
+   "at": "L53",
+   "type": "contenders",
+   "items": [
+    {
+     "name": "Real rate",
+     "tag": "What you paid this year"
+    },
+    {
+     "name": "Bracket rate",
+     "tag": "What happens to your next (or last) dollar"
+    }
+   ]
+  },
+  {
+   "at": "L54",
+   "type": "flow",
+   "title": "Daniel gets a $1,000 raise",
+   "gap": 2.2,
+   "steps": [
+    {
+     "label": "Raise",
+     "value": 1000
+    },
+    {
+     "label": "Income tax at 29.65%",
+     "value": 297,
+     "sign": "-"
+    },
+    {
+     "label": "Kept (before CPP & EI)",
+     "value": 703
+    }
+   ]
+  },
+  {
+   "at": "L55",
+   "type": "card",
+   "side": "center",
+   "label": "Deductions (e.g. RRSP)",
+   "value": "\u2248 bracket rate",
+   "line": "Saved per deducted dollar, from the top step. General info, not advice."
+  },
+  {
+   "at": "L56",
+   "type": "card",
+   "side": "center",
+   "label": "Priya's next dollar in Ontario",
+   "value": "\u224843.4%",
+   "line": "26% + 11.16% \u00d7 1.56 (surtax). Statutory bracket: 37.16%."
+  },
+  {
+   "at": "L57",
+   "type": "chapter",
+   "num": "11",
+   "title": "Verdict"
+  },
+  {
+   "at": "L58",
+   "type": "verdict",
+   "title": "WHICH NUMBER IS REAL?",
+   "gap": 2.5,
+   "awards": [
+    {
+     "label": "What you pay",
+     "name": "Real rate",
+     "why": "11.7% \u00b7 18.9% \u00b7 26.6%"
+    },
+    {
+     "label": "Raises, bonuses, deductions",
+     "name": "Bracket rate",
+     "why": "Your next dollar"
+    },
+    {
+     "label": "Size of both",
+     "name": "Your province",
+     "why": "AB vs MB: $6,661 at $150K"
+    },
+    {
+     "label": "The myth",
+     "name": "Busted",
+     "why": "A higher step never taxes your whole salary"
+    }
+   ]
+  },
+  {
+   "at": "L62",
+   "type": "statement",
+   "label": "Next",
+   "text": "Best tax software in Canada 2026",
+   "gold": true,
+   "sub": "Independent comparison \u00b7 no sponsor picks the winner"
+  }
+ ]
+}

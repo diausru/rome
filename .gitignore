@@ -28,3 +28,7 @@ ny/vo/*.wav
 showreel/out/lf/
 showreel/public/lf/
 longform/engine-demo.mp4
+longform/*/raw/
+longform/*/vo.wav
+longform/*/props.json
+longform/*/episode.json
