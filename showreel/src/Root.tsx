@@ -47,6 +47,7 @@ Promise.all([
   new FontFace('Tape', `url(${staticFile('CourierPrime-700.woff2')})`, { weight: '700' }),
   new FontFace('Fraunces', `url(${staticFile('Fraunces-600.ttf')})`, { weight: '600' }),
   new FontFace('Fraunces', `url(${staticFile('Fraunces-800.ttf')})`, { weight: '800' }),
+  new FontFace('Oswald', `url(${staticFile('Oswald-var.ttf')})`, { weight: '200 700' }),
   new FontFace('Nunito', `url(${staticFile('Nunito-700.ttf')})`, { weight: '700' }),
   new FontFace('Nunito', `url(${staticFile('Nunito-900.ttf')})`, { weight: '900' }),
 ].map((f) => f.load().then((ff) => document.fonts.add(ff)))).then(() => continueRender(fontHandle));

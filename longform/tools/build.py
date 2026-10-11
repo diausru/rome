@@ -14,6 +14,7 @@ Output (next to src): vo.wav (mono 48 kHz, lines placed with gaps), episode.json
 import json, subprocess, sys, os
 src = sys.argv[1]; d = os.path.dirname(os.path.abspath(src)); ep = json.load(open(src))
 def dur(f): return float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]).decode())
+WORDS = json.load(open(os.path.join(d, 'words.json'))) if os.path.exists(os.path.join(d, 'words.json')) else {}
 t = ep.pop('lead', 0.6); starts = {}; parts = []; lines = {}
 for ln in ep.pop('vo', []):
     f = os.path.join(d, ln['file']); starts[ln['id']] = t; L = dur(f); parts.append((t, f))
@@ -23,10 +24,20 @@ def at(e):
     if 'at' not in e: return e.pop('t', 0) + e.pop('off', 0)
     lid = e.pop('at'); t0 = starts[lid]
     w = e.pop('word', None)
-    if w:   # place inside the line by character position of the word (spoken-rate approximation)
+    if w:   # place on the spoken word: whisper timestamps (words.json) when they match, else character position
         st, L, txt = lines[lid]; i = txt.lower().find(w.lower())
         if i < 0: sys.exit(f"WORD NOT FOUND: '{w}' in {lid}: {txt}")
         t0 = st + L * i / max(1, len(txt))
+        ws = WORDS.get(lid)
+        if ws:
+            import re as _re
+            nz = lambda x: _re.sub(r"[^a-z0-9]", "", x.lower())
+            target = nz(w.split()[0]); before = len(txt[:i].split())
+            cands = [j for j, x in enumerate(ws) if nz(x['w']).startswith(target[:4]) or target.startswith(nz(x['w'])[:4] or '#')]
+            if cands:
+                j = min(cands, key=lambda j: abs(j - before)); t0 = st + ws[j]['s']
+            elif len(ws) == len(txt.split()):
+                t0 = st + ws[before]['s']
     return t0 + e.pop('off', 0)
 
 # --- data: every number shown in panels comes from taxcalc (one source) ---
@@ -42,6 +53,7 @@ def portions(x, br):
 DATA = {}
 DATA['facts'] = dict(fed_bpa=TC.FED_BPA, fed_low_rate=TC.FED[0][1], bpa_credit=round(TC.FED_BPA * TC.FED[0][1]))
 for name, spec in ep.get('data', {}).items():
+    if spec.get('type') == 'file': DATA[name] = json.load(open(os.path.join(d, spec['file']))); continue
     if spec.get('type') == 'steps':   # bracket table on a given income (or 0 = just the table)
         br = TC.FED if spec['table'] == 'FED' else TC.PROV[spec['table']][0]
         rows = portions(spec.get('income', 0), br)
@@ -67,15 +79,16 @@ for name, spec in ep.get('data', {}).items():
     DATA[name] = r
 ep['data'] = DATA
 def ref(path):
-    if '.' not in path: return DATA[path]
-    n, k = path.split('.', 1); return DATA[n][k]
+    o = DATA
+    for k in path.split('.'): o = o[k]
+    return o
 def walk(o, base=None):
     if isinstance(o, dict):
         if 'ref' in o: o['value'] = ref(o['ref'])
         if 'refs' in o: o['value'] = sum(ref(x) for x in o['refs'])
         if 'expr' in o:   # e.g. "priya.take_home - daniel.take_home" ; only names.fields, numbers and + - * / ( )
             import re
-            ex = re.sub(r'[A-Za-z_][A-Za-z0-9_]*\.[A-Za-z_][A-Za-z0-9_]*', lambda m: repr(ref(m.group(0))), o['expr'])
+            ex = re.sub(r'[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)+', lambda m: repr(ref(m.group(0))), o['expr'])
             if re.search(r'[^0-9.+\-*/() eE]', ex): sys.exit(f"BAD EXPR: {o['expr']}")
             o['value'] = eval(ex)
         if 'at' in o or 'word' in o:
@@ -85,6 +98,8 @@ def walk(o, base=None):
     elif isinstance(o, list):
         for v in o: walk(v, base)
 for c in ep.get('chapters', []): c['t'] = round(at(c), 3)
+for sh in ep.get('shots', []): sh['t'] = round(at(sh), 3)
+for fx in ep.get('sfx', []): fx['t'] = round(at(fx), 3)
 evs = ep['events']
 for e in evs:
     base = e.get('at'); e['t'] = round(at(e), 3)
@@ -126,6 +141,15 @@ if parts:
         ins += ['-i', f]; flt.append(f'[{i}]aresample=48000,adelay={int(st*1000)}:all=1[a{i}]')
     flt.append(''.join(f'[a{i}]' for i in range(len(parts))) + f'amix=inputs={len(parts)}:normalize=0,apad,atrim=0:{total},loudnorm=I=-14:TP=-1.5[o]')
     subprocess.run(['ffmpeg','-v','error','-y',*ins,'-filter_complex',';'.join(flt),'-map','[o]','-ac','1',os.path.join(d,'vo.wav')], check=True)
+    if ep.get('sfx'):   # SFX bed under the VO (paper, clicks, whooshes), placed on the same timeline
+        sd = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sfx')
+        ins, flt = ['-i', os.path.join(d, 'vo.wav')], []
+        for i, fx in enumerate(ep['sfx'], 1):
+            ins += ['-i', os.path.join(sd, fx['name'] + '.wav')]
+            flt.append(f"[{i}]aresample=48000,volume={fx.get('vol', 0.18)},adelay={int(fx['t']*1000)}:all=1[s{i}]")
+        flt.append('[0]' + ''.join(f'[s{i}]' for i in range(1, len(ep['sfx']) + 1)) + f"amix=inputs={len(ep['sfx'])+1}:normalize=0,atrim=0:{total},alimiter=limit=0.89[o]")
+        subprocess.run(['ffmpeg','-v','error','-y',*ins,'-filter_complex',';'.join(flt),'-map','[o]','-ac','1',os.path.join(d,'mix.wav')], check=True)
+        print(f"sfx: {len(ep['sfx'])} cues mixed -> mix.wav")
     ep['audio'] = ep.get('audio') or 'VO_PLACEHOLDER'
 json.dump(ep, open(os.path.join(d, 'episode.json'), 'w'), indent=1)
 with open(os.path.join(d, 'timeline.txt'), 'w') as fo:

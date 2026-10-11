@@ -1,0 +1,284 @@
+{
+ "_note": "Single source for every price/feature on screen. Pages opened 2026-10-11 (sources/*.txt). Prices are 2025 tax year, per return unless stated, before sales tax.",
+ "programs": {
+  "ws": {
+   "name": "WEALTHSIMPLE TAX",
+   "tiers": [
+    [
+     "BASIC",
+     "PAY WHAT YOU WANT",
+     "$0+"
+    ],
+    [
+     "PLUS",
+     "AUDIT PROTECTION",
+     "$40"
+    ],
+    [
+     "PRO",
+     "TAX EXPERTS",
+     "$80"
+    ]
+   ],
+   "src": "ws_tax"
+  },
+  "tt": {
+   "name": "TURBOTAX",
+   "tiers": [
+    [
+     "FREE",
+     "SIMPLE ONLY",
+     "$0"
+    ],
+    [
+     "DELUXE",
+     "DONATIONS \u00b7 MEDICAL",
+     "$30"
+    ],
+    [
+     "PREMIER",
+     "INVESTMENTS",
+     "$50"
+    ],
+    [
+     "SELF-EMPLOYED",
+     "BUSINESS \u00b7 RENTAL",
+     "$70"
+    ]
+   ],
+   "src": "tt_online"
+  },
+  "hrb": {
+   "name": "H&R BLOCK",
+   "tiers": [
+    [
+     "FREE",
+     "T4 + STANDARD",
+     "$0"
+    ],
+    [
+     "DELUXE",
+     "DONATIONS \u00b7 MEDICAL",
+     "$29.99"
+    ],
+    [
+     "PREMIER",
+     "CAPITAL GAINS",
+     "$49.99"
+    ],
+    [
+     "SELF EMPLOYED",
+     "BUSINESS \u00b7 RENTAL",
+     "$69.99"
+    ]
+   ],
+   "src": "hrb_online"
+  },
+  "uf": {
+   "name": "UFILE",
+   "tiers": [
+    [
+     "ONLINE",
+     "STARTS AT",
+     "$20.95"
+    ],
+    [
+     "PREMIUM",
+     "STARTS AT",
+     "$32.95"
+    ]
+   ],
+   "src": "uf_prod"
+  },
+  "st": {
+   "name": "STUDIOTAX",
+   "tiers": [
+    [
+     "COMPUTER LICENCE",
+     "10 RETURNS",
+     "$17.50"
+    ],
+    [
+     "MOBILE APP",
+     "PER CRA LIST",
+     "FREE"
+    ]
+   ],
+   "src": "st_pay"
+  },
+  "ct": {
+   "name": "CLOUDTAX",
+   "tiers": [
+    [
+     "BASIC",
+     "PAY WHAT YOU WANT",
+     "$0+"
+    ],
+    [
+     "PLUS",
+     "PER ACCOUNT",
+     "$39"
+    ]
+   ],
+   "src": "ct_pricing"
+  },
+  "gt": {
+   "name": "GENUTAX",
+   "tiers": [
+    [
+     "STANDARD",
+     "WINDOWS \u00b7 DONATIONS",
+     "$0"
+    ]
+   ],
+   "src": "gt_home"
+  }
+ },
+ "order": [
+  "ws",
+  "tt",
+  "hrb",
+  "uf",
+  "st",
+  "ct",
+  "gt"
+ ],
+ "rounds": {
+  "ava": {
+   "name": "AVA",
+   "tag": "STUDENT \u00b7 AGE 22 \u00b7 $14,000",
+   "cells": {
+    "ws": [
+     "$0",
+     "BASIC"
+    ],
+    "tt": [
+     "\u2014",
+     "SIMPLE-RETURN RULES"
+    ],
+    "hrb": [
+     "$0",
+     "AGE 25 OR UNDER"
+    ],
+    "uf": [
+     "$0",
+     "STUDENT / UNDER $20K"
+    ],
+    "st": [
+     "$0",
+     "UNDER $20K"
+    ],
+    "ct": [
+     "$0",
+     "BASIC"
+    ],
+    "gt": [
+     "$0",
+     "ALWAYS FREE"
+    ]
+   }
+  },
+  "liam": {
+   "name": "LIAM",
+   "tag": "ONE T4 \u00b7 $68,000 \u00b7 DONATIONS + MEDICAL",
+   "cells": {
+    "ws": [
+     "$0",
+     "EVERY FORM, EVERY PLAN"
+    ],
+    "tt": [
+     "$30",
+     "DELUXE"
+    ],
+    "hrb": [
+     "$29.99",
+     "DELUXE"
+    ],
+    "uf": [
+     "$20.95",
+     "ONLINE, STARTS AT"
+    ],
+    "st": [
+     "$17.50",
+     "LICENCE"
+    ],
+    "ct": [
+     "\u2014",
+     "NOT VERIFIED"
+    ],
+    "gt": [
+     "$0",
+     "FREE"
+    ]
+   }
+  },
+  "priya": {
+   "name": "PRIYA",
+   "tag": "SALARY + CAPITAL GAINS + FOREIGN DIVIDENDS",
+   "cells": {
+    "ws": [
+     "$0",
+     "EVERY PLAN"
+    ],
+    "tt": [
+     "$50",
+     "PREMIER"
+    ],
+    "hrb": [
+     "$49.99",
+     "PREMIER"
+    ],
+    "uf": [
+     "$20.95",
+     "ONLINE, STARTS AT"
+    ],
+    "st": [
+     "$17.50",
+     "LICENCE"
+    ],
+    "ct": [
+     "\u2014",
+     "NOT VERIFIED"
+    ],
+    "gt": [
+     "$0",
+     "NO T1135 E-FILE"
+    ]
+   }
+  },
+  "marc": {
+   "name": "MARC",
+   "tag": "SELF-EMPLOYED + RENTAL SUITE",
+   "cells": {
+    "ws": [
+     "$0",
+     "RENTAL LISTED"
+    ],
+    "tt": [
+     "$70",
+     "SELF-EMPLOYED"
+    ],
+    "hrb": [
+     "$69.99",
+     "SELF EMPLOYED"
+    ],
+    "uf": [
+     "$20.95",
+     "ONLINE, STARTS AT"
+    ],
+    "st": [
+     "$17.50",
+     "LICENCE"
+    ],
+    "ct": [
+     "\u2014",
+     "NOT VERIFIED"
+    ],
+    "gt": [
+     "$0",
+     "RENTAL \u00b7 SMALL BUSINESS"
+    ]
+   }
+  }
+ }
+}

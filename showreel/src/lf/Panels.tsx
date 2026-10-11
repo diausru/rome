@@ -2,6 +2,8 @@
 // All numbers arrive from build.py (computed by taxcalc); nothing here invents a value.
 import React from 'react';
 import { AbsoluteFill, interpolate, spring, Easing } from 'remotion';
+import { fxStyle, FxName, IN_ROTATION, OUT_ROTATION, easeIn } from './Effects';
+import { PANELS2 } from './Panels2';
 
 const C = { gold: '#E8C27A', gold2: '#B88A3E', white: '#F4F1EA', dim: 'rgba(244,241,234,.62)', faint: 'rgba(244,241,234,.38)', red: '#E5806E', green: '#7FD3A0', line: 'rgba(255,255,255,.13)', glass: 'rgba(13,19,31,.70)', hl: 'rgba(232,194,122,.13)', canada: '#D52B1E' };
 const F = { sans: 'Mont, Montserrat, sans-serif', serif: 'Fraunces, serif' };
@@ -230,7 +232,7 @@ const Misconception: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-const PANELS: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { table: Table, formula: Formula, brackets: Brackets, provinces: Provinces, stack: Stack, donut: Donut, line: LineChart, source: Source, takeaway: Takeaway, misconception: Misconception };
+const PANELS: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { ...PANELS2, table: Table, formula: Formula, brackets: Brackets, provinces: Provinces, stack: Stack, donut: Donut, line: LineChart, source: Source, takeaway: Takeaway, misconception: Misconception };
 
 // ---------- scene: several panels, each with its own entry time; slight depth + parallax drift ----------
 export const Scene: React.FC<{ e: Pn; now: number; fps: number }> = ({ e, now, fps }) => {
@@ -240,14 +242,22 @@ export const Scene: React.FC<{ e: Pn; now: number; fps: number }> = ({ e, now, f
       {(e.panels as Pn[]).map((p, i) => {
         const P = PANELS[p.type]; if (!P || now < p.t) return null;
         const until = p.until !== undefined ? (typeof p.until === 'object' ? p.until.t : p.until) : end;
-        const k = sp(now, p.t, fps, 0.45);
-        const out = interpolate(now, [until - 0.35, until], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-        if (out <= 0) return null;
+        const seed = Math.floor(e.t * 7) + i;
+        const fin: FxName = p.fxIn ?? IN_ROTATION[seed % IN_ROTATION.length];
+        const fout: FxName = p.fxOut ?? OUT_ROTATION[seed % OUT_ROTATION.length];
+        const inD = p.inDur ?? 0.75, outD = p.outDur ?? 0.6;
+        const kIn = interpolate(now, [p.t, p.t + inD], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+        const kOut = interpolate(now, [until - outD, until], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+        if (kOut >= 1) return null;
+        const fx = kOut > 0 ? fxStyle(fout, 1 - easeIn(kOut), 'out', seed) : fxStyle(fin, kIn, 'in', seed);
         const drift = Math.sin((now + i * 3.1) * 0.35) * 3;
+        const glass = p.glass === false ? {} : { padding: p.pad ?? '26px 30px', background: p.bg ?? C.glass, border: `1px solid ${C.line}`, borderRadius: 20, boxShadow: '0 24px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.10)' };
         return (
-          <div key={p.id ?? i} style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, padding: p.pad ?? '22px 26px', background: p.bg ?? C.glass, border: `1px solid ${C.line}`, borderRadius: 18, boxShadow: '0 24px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.10)', opacity: k * out, transform: `translateY(${(1 - k) * 26 + drift}px) rotateY(${p.tilt ?? 0}deg) rotateX(${p.tiltX ?? 0}deg) scale(${0.97 + 0.03 * k})`, transformOrigin: p.origin ?? 'center' }}>
+          <div key={p.id ?? i} style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, transform: `translateY(${drift}px) rotateY(${p.tilt ?? 0}deg) rotateX(${p.tiltX ?? 0}deg)`, transformOrigin: p.origin ?? 'center' }}>
+          <div style={{ position: 'relative', ...glass, ...fx.style, transform: [fx.style.transform].filter(Boolean).join(' ') || undefined }}>
+            {fx.overlay}
             <P p={p} c={{ now, fps, end: until }} />
-          </div>);
+          </div></div>);
       })}
     </AbsoluteFill>
   );

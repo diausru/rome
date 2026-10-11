@@ -1,12 +1,14 @@
 // TAX SECRETS CANADA — long-form engine ("machine #1").
 // One reusable 16:9 composition driven by an episode JSON (see longform/ENGINE.md).
 // Per episode only data changes: events, numbers, contenders, scores, audio, plate.
+import { Parallax } from './Parallax';
 import React from 'react';
 import { Scene } from './Panels';
 import { AbsoluteFill, Audio, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
 
 export type Ev = { t: number; dur: number; type: string; [k: string]: any };
 export type Episode = {
+  shots?: any[]; plates?: any;
   fps: number; duration?: number; plate?: string; audio?: string; music?: string; musicVol?: number;
   footer?: string; chapters?: { t: number; title: string }[]; events: Ev[];
 };
@@ -65,7 +67,7 @@ const Chrome: React.FC<{ ep: Episode; t: number }> = ({ ep, t }) => {
       <div style={{ position: 'absolute', top: 40, right: 56, display: 'flex', alignItems: 'center', gap: 14, fontSize: 18, letterSpacing: 4, fontWeight: 700, opacity: 0.9 }}>
         TAX SECRETS CANADA <Flag />
       </div>
-      {ch && <div style={{ position: 'absolute', top: 44, left: 56, fontSize: 17, letterSpacing: 3, color: C.dim, fontWeight: 600 }}>{ch.title.toUpperCase()}</div>}
+      {ch && <div style={{ position: 'absolute', top: 44, left: 56, fontSize: ep.shots ? 22 : 17, letterSpacing: 3, color: C.dim, fontWeight: 600, fontFamily: ep.shots ? 'Oswald, Mont, sans-serif' : undefined }}>{ch.title.toUpperCase()}</div>}
       <div style={{ position: 'absolute', bottom: 34, left: 56, fontSize: 16, color: C.dim, letterSpacing: 1 }}>{ep.footer ?? 'Source: canada.ca · General info, not advice'}</div>
       <div style={{ position: 'absolute', bottom: 0, left: 0, height: 4, width: `${Math.min(1, t / total) * 100}%`, background: `linear-gradient(90deg,${C.gold2},${C.gold})` }} />
     </AbsoluteFill>
@@ -357,7 +359,7 @@ export const LongForm: React.FC<{ ep: Episode }> = ({ ep }) => {
   if (ep.plate && !plates.length) plates.push({ src: ep.plate, t0: 0 });
   return (
     <AbsoluteFill style={{ fontFamily: F.sans, color: C.white }}>
-      <Desk plates={plates} t={t} />
+      {ep.shots ? <Parallax shots={ep.shots} plates={ep.plates} t={t} total={ep.duration ?? 0} /> : <Desk plates={plates} t={t} />}
       {ep.events.filter((e) => t >= e.t && t < e.t + e.dur).map((e, i) => {
         if (e.type === 'scene') return <AbsoluteFill key={`${e.t}-${i}`}><Scene e={e} now={t} fps={fps} /></AbsoluteFill>;
         const Comp = REG[e.type]; if (!Comp) return null;
