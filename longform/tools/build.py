@@ -14,15 +14,89 @@ Output (next to src): vo.wav (mono 48 kHz, lines placed with gaps), episode.json
 import json, subprocess, sys, os
 src = sys.argv[1]; d = os.path.dirname(os.path.abspath(src)); ep = json.load(open(src))
 def dur(f): return float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]).decode())
-t = ep.pop('lead', 0.6); starts = {}; parts = []
+t = ep.pop('lead', 0.6); starts = {}; parts = []; lines = {}
 for ln in ep.pop('vo', []):
-    f = os.path.join(d, ln['file']); starts[ln['id']] = t; L = dur(f); parts.append((t, f)); t += L + ln.get('gap', 0.35)
+    f = os.path.join(d, ln['file']); starts[ln['id']] = t; L = dur(f); parts.append((t, f))
+    lines[ln['id']] = (t, L, ln.get('text', '')); t += L + ln.get('gap', 0.35)
 total = t + ep.pop('tail', 1.0)
 def at(e):
-    return (starts[e.pop('at')] if 'at' in e else e.pop('t', 0)) + e.pop('off', 0)
+    if 'at' not in e: return e.pop('t', 0) + e.pop('off', 0)
+    lid = e.pop('at'); t0 = starts[lid]
+    w = e.pop('word', None)
+    if w:   # place inside the line by character position of the word (spoken-rate approximation)
+        st, L, txt = lines[lid]; i = txt.lower().find(w.lower())
+        if i < 0: sys.exit(f"WORD NOT FOUND: '{w}' in {lid}: {txt}")
+        t0 = st + L * i / max(1, len(txt))
+    return t0 + e.pop('off', 0)
+
+# --- data: every number shown in panels comes from taxcalc (one source) ---
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from taxcalc import take_home, C as TC
+def portions(x, br):
+    out = []
+    for i, (a, r) in enumerate(br):
+        b = br[i + 1][0] if i + 1 < len(br) else None
+        part = max(0, min(x, b if b else x) - a) if x > a else 0
+        out.append(dict(lo=a, hi=b, rate=r, part=round(part, 2), tax=round(part * r, 2)))
+    return out
+DATA = {}
+for name, spec in ep.get('data', {}).items():
+    if spec.get('type') == 'curve':
+        DATA[name] = {pv: [dict(gross=g, take_home=round(take_home(g, pv)['take_home'])) for g in range(spec['from'], spec['to'] + 1, spec['step'])] for pv in spec['provs']}
+        continue
+    r = take_home(spec['gross'], spec['prov'])
+    r = {k: (round(v) if isinstance(v, float) and k not in ('avg_income_tax', 'top_bracket_rate') else v) for k, v in r.items()}
+    r['income_tax'] = r['federal'] + r['provincial']
+    r['deductions'] = r['income_tax'] + r['cpp'] + r['ei']
+    r['fed_brackets'] = portions(take_home(spec['gross'], spec['prov'])['taxable'], TC.FED)
+    r['prov_brackets'] = portions(take_home(spec['gross'], spec['prov'])['taxable'], TC.PROV[spec['prov']][0])
+    r['fed_before_credits'] = round(sum(b['tax'] for b in r['fed_brackets']))
+    r['take_home'] = r['gross'] - r['deductions']
+    r['real_rate'] = r['income_tax'] / r['gross']
+    DATA[name] = r
+ep['data'] = DATA
+def ref(path):
+    if '.' not in path: return DATA[path]
+    n, k = path.split('.', 1); return DATA[n][k]
+def walk(o, base=None):
+    if isinstance(o, dict):
+        if 'ref' in o: o['value'] = ref(o['ref'])
+        if 'refs' in o: o['value'] = sum(ref(x) for x in o['refs'])
+        if 'expr' in o:   # e.g. "priya.take_home - daniel.take_home" ; only names.fields, numbers and + - * / ( )
+            import re
+            ex = re.sub(r'[A-Za-z_][A-Za-z0-9_]*\.[A-Za-z_][A-Za-z0-9_]*', lambda m: repr(ref(m.group(0))), o['expr'])
+            if re.search(r'[^0-9.+\-*/() eE]', ex): sys.exit(f"BAD EXPR: {o['expr']}")
+            o['value'] = eval(ex)
+        if 'at' in o or 'word' in o:
+            if 'at' not in o and base: o['at'] = base
+            o['t'] = round(at(o), 3)
+        for k, v in list(o.items()): walk(v, base=o.get('at', base) if isinstance(o.get('at'), str) else base)
+    elif isinstance(o, list):
+        for v in o: walk(v, base)
 for c in ep.get('chapters', []): c['t'] = round(at(c), 3)
 evs = ep['events']
-for e in evs: e['t'] = round(at(e), 3)
+for e in evs:
+    base = e.get('at'); e['t'] = round(at(e), 3)
+    for k in ('panels',):
+        for pnl in e.get(k, []):
+            if 'at' not in pnl and 'word' in pnl: pnl['at'] = base
+            if 'at' not in pnl and 'word' not in pnl and 't' not in pnl: pnl['t'] = e['t']
+            pb = pnl.get('at') if isinstance(pnl.get('at'), str) else base
+            if 'at' in pnl or 'word' in pnl: pnl['t'] = round(at(pnl), 3)
+            for row in pnl.get('rows', []) + pnl.get('steps', []):
+                if 'word' in row and 'at' not in row: row['at'] = pb
+                if 'at' in row: row['t'] = round(at(row), 3)
+            walk(pnl)
+# consistency: a table that ends in 'take_home' must reconcile with its rows
+for e in evs:
+    for pnl in e.get('panels', []):
+        if pnl.get('type') == 'table' and pnl.get('check'):
+            vals = {r.get('key'): r.get('value') for r in pnl['rows']}
+            g, th = vals.get('gross'), vals.get('take_home')
+            ded = sum(r['value'] for r in pnl['rows'] if r.get('sign') == '-')
+            if g is not None and th is not None and abs(g - ded - th) > 1:
+                sys.exit(f"CHECK FAILED: table '{pnl.get('title')}' {g} - {ded} != {th}")
+            print(f"check ok: table '{pnl.get('title')}' {g:,} - {ded:,} = {th:,}")
 main = sorted([e for e in evs if not e.get('overlay')], key=lambda e: e['t'])
 for i, e in enumerate(main):
     if 'dur' not in e: e['dur'] = round((main[i+1]['t'] if i+1 < len(main) else total) - e['t'], 3)

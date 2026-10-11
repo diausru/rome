@@ -13,5 +13,5 @@ i=0; for ((s=0; s<TOTAL; s+=3000)); do
   echo "chunk $i ok frames $s-$e"; i=$((i+1))
 done
 ls "$C"/part*.mp4 | sed "s/.*/file '&'/" > "$C/list.txt"
-ffmpeg -v error -y -f concat -safe 0 -i "$C/list.txt" -c:v copy -c:a aac -b:a 192k "$R/out/lf/$N.mp4"
+ffmpeg -v error -y -f concat -safe 0 -i "$C/list.txt" -c:v copy -c:a aac -b:a 192k -movflags +faststart "$R/out/lf/$N.mp4"
 echo "joined: showreel/out/lf/$N.mp4"; "$T/qc.sh" "$R/out/lf/$N.mp4"

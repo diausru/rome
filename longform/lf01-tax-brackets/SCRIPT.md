@@ -63,7 +63,7 @@ L41 "Let's put all three side by side." [chapter 08 The score; score reveal]
 L42 "Bracket rates: nineteen, twenty-nine point six five, thirty-seven point one six."
 L43 "Real rates: eleven point seven, eighteen point nine, twenty-six point six."
 L44 "In every case, the gap is between about seven and eleven points. The bracket rate always overstates what you actually pay."
-L45 "And the pay cheque? After income tax, C P P and E I, Maya keeps about thirty-six thousand, five hundred and fifty-four dollars. Daniel keeps about sixty-seven thousand, one hundred and ninety-seven. Priya keeps about a hundred and four thousand, three hundred and twenty." [bars take-home]
+L45 "And the pay cheque? After income tax, C P P and E I, Maya keeps about thirty-six thousand, five hundred and fifty-five dollars. Daniel keeps about sixty-seven thousand, one hundred and ninety-seven. Priya keeps about a hundred and four thousand, three hundred and twenty-one." [bars take-home]
 L46 "Notice: Priya earns sixty thousand more than Daniel, and keeps about thirty-seven thousand more. That difference is the staircase."
 
 ## 10 · Surprise: the province

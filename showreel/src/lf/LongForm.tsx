@@ -2,6 +2,7 @@
 // One reusable 16:9 composition driven by an episode JSON (see longform/ENGINE.md).
 // Per episode only data changes: events, numbers, contenders, scores, audio, plate.
 import React from 'react';
+import { Scene } from './Panels';
 import { AbsoluteFill, Audio, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
 
 export type Ev = { t: number; dur: number; type: string; [k: string]: any };
@@ -358,6 +359,7 @@ export const LongForm: React.FC<{ ep: Episode }> = ({ ep }) => {
     <AbsoluteFill style={{ fontFamily: F.sans, color: C.white }}>
       <Desk plates={plates} t={t} />
       {ep.events.filter((e) => t >= e.t && t < e.t + e.dur).map((e, i) => {
+        if (e.type === 'scene') return <AbsoluteFill key={`${e.t}-${i}`}><Scene e={e} now={t} fps={fps} /></AbsoluteFill>;
         const Comp = REG[e.type]; if (!Comp) return null;
         const lf = f - Math.round(e.t * fps), durF = Math.round(e.dur * fps);
         const push = 1 + (lf / durF) * (e.push ?? 0.025); // motivated slow push per event

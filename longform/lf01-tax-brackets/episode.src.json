@@ -57,312 +57,374 @@
   {
    "id": "L1",
    "file": "vo/L1.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Three Canadians. Forty-five thousand dollars. Ninety thousand. A hundred and fifty thousand."
   },
   {
    "id": "L2",
    "file": "vo/L2.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "One of them says, I'm in the thirty percent bracket. So does that mean thirty percent of the pay cheque is gone?"
   },
   {
    "id": "L3",
    "file": "vo/L3.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "No. And by the end of this video, you'll know exactly what each of them really pays, using this year's actual numbers, and why the number people quote is almost never the number they pay."
   },
   {
    "id": "L4",
    "file": "vo/L4.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Here's the test. For each person we'll track two numbers."
   },
   {
    "id": "L5",
    "file": "vo/L5.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "The first is the bracket rate. That's the rate on their last dollar of income, federal and provincial combined. It's the number people brag or complain about."
   },
   {
    "id": "L6",
    "file": "vo/L6.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "The second is the real rate: total income tax, divided by the salary. That's what actually leaves their pocket."
   },
   {
    "id": "L7",
    "file": "vo/L7.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "Same people, same province, Ontario, same simple situation: single, employed, no other income, no R R S P. Real life adds credits and deductions, and we'll flag them as we go."
   },
   {
    "id": "L8",
    "file": "vo/L8.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Canada doesn't tax your income at one rate. It taxes it in steps, like a staircase."
   },
   {
    "id": "L9",
    "file": "vo/L9.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "For twenty twenty-six, the federal staircase has five steps."
   },
   {
    "id": "L10",
    "file": "vo/L10.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Fourteen percent on the first fifty-eight thousand, five hundred and twenty-three dollars."
   },
   {
    "id": "L11",
    "file": "vo/L11.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Twenty point five percent on the next part, up to a hundred and seventeen thousand and forty-five."
   },
   {
    "id": "L12",
    "file": "vo/L12.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Twenty-six percent up to a hundred and eighty-one thousand, four hundred and forty. Twenty-nine percent up to two hundred and fifty-eight thousand, four hundred and eighty-two. And thirty-three percent on everything above that."
   },
   {
    "id": "L13",
    "file": "vo/L13.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Here's the key. Each rate only applies to the dollars on its own step. Climbing to a higher step never changes the rate on the steps below."
   },
   {
    "id": "L14",
    "file": "vo/L14.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Watch ninety thousand dollars walk up the federal stairs, before any credits. The first fifty-eight thousand, five hundred and twenty-three dollars, at fourteen percent: eight thousand, one hundred and ninety-three."
   },
   {
    "id": "L15",
    "file": "vo/L15.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "The remaining thirty-one thousand, four hundred and seventy-seven, at twenty point five percent: six thousand, four hundred and fifty-three."
   },
   {
    "id": "L16",
    "file": "vo/L16.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "Total: fourteen thousand, six hundred and forty-six dollars. Not twenty point five percent of ninety thousand. Only the top slice pays the top rate."
   },
   {
    "id": "L17",
    "file": "vo/L17.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "But that's only half the picture. Every province runs its own staircase on top."
   },
   {
    "id": "L18",
    "file": "vo/L18.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Ontario starts at five point zero five percent, then nine point one five, then eleven point one six, twelve point one six, and thirteen point one six at the top."
   },
   {
    "id": "L19",
    "file": "vo/L19.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Ontario also adds a surtax at higher levels of provincial tax, and a health premium of up to nine hundred dollars. Other provinces have their own rules."
   },
   {
    "id": "L20",
    "file": "vo/L20.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "So the bracket rate you hear is two steps added together. At ninety thousand in Ontario: twenty point five federal, plus nine point one five provincial. Twenty-nine point six five percent. That's Daniel's thirty percent bracket."
   },
   {
    "id": "L21",
    "file": "vo/L21.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Before we run the people, one more piece that most explanations skip: credits."
   },
   {
    "id": "L22",
    "file": "vo/L22.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Everyone gets a basic personal amount. Federally in twenty twenty-six, it's up to sixteen thousand, four hundred and fifty-two dollars."
   },
   {
    "id": "L23",
    "file": "vo/L23.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "It doesn't shrink your income. It's a credit at the lowest rate, fourteen percent, so it's worth up to about two thousand, three hundred dollars off your federal tax. In practice, the first stretch of income ends up paying no federal tax at all."
   },
   {
    "id": "L24",
    "file": "vo/L24.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "C P P and E I contributions also earn credits, and part of C P P is a deduction. That's why the real tax bill is always lower than the staircase alone suggests."
   },
   {
    "id": "L25",
    "file": "vo/L25.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Round one. Maya earns forty-five thousand dollars a year."
   },
   {
    "id": "L26",
    "file": "vo/L26.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Her whole salary sits on the first federal step, fourteen percent, and the first Ontario step, five point zero five."
   },
   {
    "id": "L27",
    "file": "vo/L27.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Her bracket rate: about nineteen percent."
   },
   {
    "id": "L28",
    "file": "vo/L28.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Now the real numbers. Federal tax, three thousand, three hundred and thirty-eight dollars. Ontario tax, one thousand, nine hundred and five."
   },
   {
    "id": "L29",
    "file": "vo/L29.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Total income tax: about five thousand, two hundred and forty dollars. That's eleven point seven percent of her salary."
   },
   {
    "id": "L30",
    "file": "vo/L30.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "Bracket rate, nineteen. Real rate, under twelve. Same person. Very different number."
   },
   {
    "id": "L31",
    "file": "vo/L31.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Round two. Daniel, ninety thousand dollars. The one who says he's in the thirty percent bracket."
   },
   {
    "id": "L32",
    "file": "vo/L32.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "He's right about the bracket. His last dollar is taxed at twenty-nine point six five percent."
   },
   {
    "id": "L33",
    "file": "vo/L33.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "But his federal tax is eleven thousand, two hundred and fifty-two dollars, and his Ontario tax, five thousand, seven hundred and eighty-two."
   },
   {
    "id": "L34",
    "file": "vo/L34.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Seventeen thousand and thirty-four dollars of income tax. Divide by ninety thousand: eighteen point nine percent."
   },
   {
    "id": "L35",
    "file": "vo/L35.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "Not thirty. Under nineteen. The thirty percent only touches the dollars on his top step."
   },
   {
    "id": "L36",
    "file": "vo/L36.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Round three. Priya earns a hundred and fifty thousand."
   },
   {
    "id": "L37",
    "file": "vo/L37.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "She's climbed onto the third federal step, twenty-six percent, and Ontario's eleven point one six percent step. Bracket rate: thirty-seven point one six percent."
   },
   {
    "id": "L38",
    "file": "vo/L38.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Her federal tax: twenty-five thousand, three hundred and two. Ontario: fourteen thousand, six hundred and eight, which now includes the surtax and the health premium."
   },
   {
    "id": "L39",
    "file": "vo/L39.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Total, about thirty-nine thousand, nine hundred and ten dollars. Real rate: twenty-six point six percent."
   },
   {
    "id": "L40",
    "file": "vo/L40.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "Higher income does mean a higher real rate. That's the staircase working as designed. But even here, it's more than ten points below her bracket."
   },
   {
    "id": "L41",
    "file": "vo/L41.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Let's put all three side by side."
   },
   {
    "id": "L42",
    "file": "vo/L42.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Bracket rates: nineteen, twenty-nine point six five, thirty-seven point one six."
   },
   {
    "id": "L43",
    "file": "vo/L43.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Real rates: eleven point seven, eighteen point nine, twenty-six point six."
   },
   {
    "id": "L44",
    "file": "vo/L44.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "In every case, the gap is between about seven and eleven points. The bracket rate always overstates what you actually pay."
   },
   {
    "id": "L45",
    "file": "vo/L45.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "And the pay cheque? After income tax, C P P and E I, Maya keeps about thirty-six thousand, five hundred and fifty-five dollars. Daniel keeps about sixty-seven thousand, one hundred and ninety-seven. Priya keeps about a hundred and four thousand, three hundred and twenty-one."
   },
   {
    "id": "L46",
    "file": "vo/L46.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "Notice: Priya earns sixty thousand more than Daniel, and keeps about thirty-seven thousand more. That difference is the staircase."
   },
   {
    "id": "L47",
    "file": "vo/L47.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Now here's where the face-off gets interesting. Keep Priya's salary. Move her."
   },
   {
    "id": "L48",
    "file": "vo/L48.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "In Alberta, her provincial step at a hundred and fifty thousand is ten percent. Bracket rate: thirty-six. She keeps about a hundred and seven thousand, four hundred and fifty-eight dollars."
   },
   {
    "id": "L49",
    "file": "vo/L49.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "In Manitoba, a hundred and fifty thousand is already on the top provincial step, seventeen point four percent. Bracket rate: forty-three point four. She keeps about a hundred thousand, seven hundred and ninety-seven."
   },
   {
    "id": "L50",
    "file": "vo/L50.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Same job, same salary. Six thousand, six hundred and sixty-one dollars a year apart, only because of the provincial staircase."
   },
   {
    "id": "L51",
    "file": "vo/L51.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "So when someone says the thirty percent bracket, the honest answer is: which province?"
   },
   {
    "id": "L52",
    "file": "vo/L52.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "So is the bracket rate useless? No. It answers a different question."
   },
   {
    "id": "L53",
    "file": "vo/L53.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "The real rate tells you what you paid this year. The bracket rate tells you what happens to your next dollar, and your last one."
   },
   {
    "id": "L54",
    "file": "vo/L54.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Daniel gets a one-thousand-dollar raise. It's taxed at about twenty-nine point six five percent. He keeps roughly seven hundred dollars of it, before C P P and E I. The raise never makes him poorer."
   },
   {
    "id": "L55",
    "file": "vo/L55.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "It works the other way too. A deduction, like an R R S P contribution, removes dollars from your top step first. So for Daniel, each deducted dollar saves roughly his bracket rate in tax. The details depend on your situation, so treat this as general information, not advice."
   },
   {
    "id": "L56",
    "file": "vo/L56.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "One caution: the bracket rate is the statutory rate. Surtaxes, premiums and income-tested benefits can make the next dollar cost more. Priya is a real example: Ontario's surtax pushes her next dollar to about forty-three point four percent, not thirty-seven."
   },
   {
    "id": "L57",
    "file": "vo/L57.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "So, final face-off. Which number is real?"
   },
   {
    "id": "L58",
    "file": "vo/L58.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "For what you pay: the real rate. Eleven point seven, eighteen point nine, twenty-six point six."
   },
   {
    "id": "L59",
    "file": "vo/L59.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "For decisions about raises, bonuses and deductions: the bracket rate."
   },
   {
    "id": "L60",
    "file": "vo/L60.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "For the size of both: your province."
   },
   {
    "id": "L61",
    "file": "vo/L61.wav",
-   "gap": 1.0
+   "gap": 1.0,
+   "text": "And the myth? Moving into a higher bracket never taxes your whole salary at the higher rate. Only the dollars on the new step."
   },
   {
    "id": "L62",
    "file": "vo/L62.wav",
-   "gap": 0.4
+   "gap": 0.4,
+   "text": "Next: if all these numbers come from your tax return, which software should you actually use to file it in twenty twenty-six? We compare them, with no sponsor picking the winner. Subscribe so you don't miss it."
   }
  ],
  "events": [
@@ -689,85 +751,130 @@
   },
   {
    "at": "L31",
-   "type": "chapter",
-   "num": "06",
-   "title": "Round two \u00b7 Daniel",
-   "plate": "lf/lf01-tax-brackets/plates/daniel.png"
-  },
-  {
-   "at": "L32",
-   "type": "contenders",
-   "items": [
+   "type": "scene",
+   "plate": "lf/lf01-tax-brackets/plates/desk169.jpg",
+   "panels": [
     {
-     "name": "Maya",
-     "tag": "$45,000 \u00b7 Ontario"
+     "id": "d-table",
+     "type": "table",
+     "x": 70,
+     "y": 120,
+     "w": 780,
+     "title": "Daniel \u00b7 Ontario \u00b7 2026",
+     "flag": true,
+     "word": "Daniel",
+     "hold": 3.5,
+     "rows": [
+      {
+       "key": "gross",
+       "label": "Gross salary",
+       "ref": "daniel.gross",
+       "count": true,
+       "word": "ninety"
+      },
+      {
+       "key": "federal",
+       "label": "Federal income tax",
+       "ref": "daniel.federal",
+       "sign": "-",
+       "at": "L33",
+       "word": "federal"
+      },
+      {
+       "key": "provincial",
+       "label": "Ontario income tax",
+       "note": "incl. surtax & health premium",
+       "ref": "daniel.provincial",
+       "sign": "-",
+       "at": "L33",
+       "word": "Ontario"
+      },
+      {
+       "key": "total",
+       "label": "Total income tax",
+       "ref": "daniel.income_tax",
+       "total": true,
+       "at": "L34",
+       "word": "Seventeen"
+      }
+     ]
     },
     {
-     "name": "Daniel",
-     "tag": "$90,000 \u00b7 Ontario"
+     "id": "d-brackets",
+     "type": "brackets",
+     "x": 900,
+     "y": 110,
+     "w": 950,
+     "at": "L32",
+     "word": "last dollar",
+     "title": "Federal steps \u00b7 Daniel's taxable income",
+     "ref": "daniel.fed_brackets",
+     "gap": 0.55,
+     "sumLabel": "Federal tax before credits"
     },
     {
-     "name": "Priya",
-     "tag": "$150,000 \u00b7 Ontario"
-    }
-   ],
-   "focus": 1
-  },
-  {
-   "at": "L33",
-   "type": "waterfall",
-   "title": "Daniel \u00b7 $90,000 \u00b7 Ontario \u00b7 2026",
-   "start": 90000,
-   "gap": 1.2,
-   "rows": [
-    {
-     "label": "Federal income tax",
-     "value": 11252,
-     "source": "CRA T4127 2026"
+     "id": "d-formula",
+     "type": "formula",
+     "x": 900,
+     "y": 600,
+     "w": 950,
+     "at": "L34",
+     "word": "Seventeen",
+     "title": "Real rate = income tax \u00f7 salary",
+     "steps": [
+      {
+       "ref": "daniel.income_tax",
+       "at": "L34",
+       "word": "Seventeen"
+      },
+      {
+       "text": "\u00f7",
+       "op": true,
+       "at": "L34",
+       "word": "Divide"
+      },
+      {
+       "ref": "daniel.gross",
+       "at": "L34",
+       "word": "ninety"
+      },
+      {
+       "text": "=",
+       "op": true,
+       "at": "L34",
+       "word": "eighteen"
+      },
+      {
+       "result": true,
+       "ref": "daniel.real_rate",
+       "fmt": "pct",
+       "dec": 1,
+       "at": "L34",
+       "word": "eighteen"
+      }
+     ]
     },
     {
-     "label": "Ontario income tax",
-     "value": 5782,
-     "source": "ON 2026, incl. surtax + health premium"
-    },
-    {
-     "label": "CPP contributions",
-     "value": 4646,
-     "source": "CRA 2026"
-    },
-    {
-     "label": "EI premiums",
-     "value": 1123,
-     "source": "CRA 2026"
-    }
-   ],
-   "final": 67197,
-   "finalLabel": "Take-home pay"
-  },
-  {
-   "at": "L34",
-   "off": 2.5,
-   "type": "caption",
-   "overlay": true,
-   "dur": 5,
-   "text": "$17,034 \u00f7 $90,000 = 18.9%"
-  },
-  {
-   "at": "L35",
-   "type": "bars",
-   "title": "Daniel",
-   "prefix": "",
-   "items": [
-    {
-     "label": "Bracket rate",
-     "value": 29.65,
-     "text": "29.65%"
-    },
-    {
-     "label": "Real rate",
-     "value": 18.9,
-     "text": "18.9%",
-     "hl": true
+     "id": "d-myth",
+     "type": "misconception",
+     "x": 70,
+     "y": 600,
+     "w": 780,
+     "at": "L35",
+     "word": "Not",
+     "title": "The myth vs the math",
+     "wrong": {
+      "label": "Bracket rate on every dollar",
+      "ref": "daniel.top_bracket_rate",
+      "dec": 2
+     },
+     "fix": {
+      "label": "Real rate he pays",
+      "ref": "daniel.real_rate",
+      "dec": 1,
+      "at": "L35",
+      "word": "Under"
+     }
     }
    ]
   },
@@ -838,95 +945,238 @@
   },
   {
    "at": "L41",
-   "type": "chapter",
-   "num": "08",
-   "title": "The score",
-   "plate": "lf/lf01-tax-brackets/plates/paystub.png"
-  },
-  {
-   "at": "L42",
-   "type": "bars",
-   "title": "Bracket rate",
-   "prefix": "",
-   "items": [
+   "type": "scene",
+   "plate": "lf/lf01-tax-brackets/plates/desk169.jpg",
+   "panels": [
     {
-     "label": "Maya",
-     "value": 19.05,
-     "text": "19.05%"
+     "id": "s-bracket",
+     "type": "table",
+     "x": 70,
+     "y": 120,
+     "w": 560,
+     "at": "L42",
+     "word": "Bracket",
+     "title": "Bracket rate",
+     "cols": [
+      "Person",
+      "Last dollar"
+     ],
+     "until": {
+      "at": "L45",
+      "word": "pay cheque"
+     },
+     "rows": [
+      {
+       "label": "Maya \u00b7 $45K",
+       "ref": "maya.top_bracket_rate",
+       "fmt": "pct",
+       "dec": 2,
+       "at": "L42",
+       "word": "nineteen"
+      },
+      {
+       "label": "Daniel \u00b7 $90K",
+       "ref": "daniel.top_bracket_rate",
+       "fmt": "pct",
+       "dec": 2,
+       "at": "L42",
+       "word": "twenty-nine"
+      },
+      {
+       "label": "Priya \u00b7 $150K",
+       "ref": "priya.top_bracket_rate",
+       "fmt": "pct",
+       "dec": 2,
+       "at": "L42",
+       "word": "thirty-seven"
+      }
+     ]
     },
     {
-     "label": "Daniel",
-     "value": 29.65,
-     "text": "29.65%"
+     "id": "s-real",
+     "type": "table",
+     "x": 660,
+     "y": 120,
+     "w": 560,
+     "at": "L43",
+     "word": "Real",
+     "title": "Real rate",
+     "cols": [
+      "Person",
+      "Tax \u00f7 salary"
+     ],
+     "until": {
+      "at": "L45",
+      "word": "pay cheque"
+     },
+     "rows": [
+      {
+       "label": "Maya \u00b7 $45K",
+       "ref": "maya.real_rate",
+       "fmt": "pct",
+       "dec": 1,
+       "at": "L43",
+       "word": "eleven"
+      },
+      {
+       "label": "Daniel \u00b7 $90K",
+       "ref": "daniel.real_rate",
+       "fmt": "pct",
+       "dec": 1,
+       "at": "L43",
+       "word": "eighteen"
+      },
+      {
+       "label": "Priya \u00b7 $150K",
+       "ref": "priya.real_rate",
+       "fmt": "pct",
+       "dec": 1,
+       "at": "L43",
+       "word": "twenty-six"
+      }
+     ]
     },
     {
-     "label": "Priya",
-     "value": 37.16,
-     "text": "37.16%"
+     "id": "s-take",
+     "type": "takeaway",
+     "x": 1250,
+     "y": 120,
+     "w": 600,
+     "at": "L44",
+     "word": "gap",
+     "text": "In every case the bracket rate is higher than the rate actually paid.",
+     "until": {
+      "at": "L45",
+      "word": "pay cheque"
+     }
+    },
+    {
+     "id": "s-people",
+     "type": "provinces",
+     "x": 70,
+     "y": 470,
+     "w": 1120,
+     "at": "L45",
+     "word": "pay cheque",
+     "title": "After income tax, CPP and EI \u00b7 Ontario 2026",
+     "cols": [
+      {
+       "name": "Maya \u00b7 $45K",
+       "ref": "maya",
+       "at": "L45",
+       "word": "Maya"
+      },
+      {
+       "name": "Daniel \u00b7 $90K",
+       "ref": "daniel",
+       "at": "L45",
+       "word": "Daniel"
+      },
+      {
+       "name": "Priya \u00b7 $150K",
+       "ref": "priya",
+       "at": "L45",
+       "word": "Priya"
+      }
+     ]
+    },
+    {
+     "id": "s-donut",
+     "type": "donut",
+     "x": 1250,
+     "y": 470,
+     "w": 600,
+     "at": "L45",
+     "word": "Daniel",
+     "title": "Daniel's $90K",
+     "ref": "daniel"
+    },
+    {
+     "id": "s-gross",
+     "type": "formula",
+     "x": 70,
+     "y": 120,
+     "w": 760,
+     "at": "L46",
+     "word": "earns",
+     "title": "Priya earns more",
+     "steps": [
+      {
+       "ref": "priya.gross",
+       "at": "L46",
+       "word": "earns"
+      },
+      {
+       "text": "\u2212",
+       "op": true,
+       "at": "L46",
+       "word": "earns"
+      },
+      {
+       "ref": "daniel.gross",
+       "at": "L46",
+       "word": "than Daniel"
+      },
+      {
+       "text": "=",
+       "op": true,
+       "at": "L46",
+       "word": "sixty"
+      },
+      {
+       "result": true,
+       "expr": "priya.gross - daniel.gross",
+       "at": "L46",
+       "word": "sixty"
+      }
+     ]
+    },
+    {
+     "id": "s-keep",
+     "type": "formula",
+     "x": 870,
+     "y": 120,
+     "w": 980,
+     "at": "L46",
+     "word": "keeps",
+     "title": "\u2026and keeps more",
+     "steps": [
+      {
+       "ref": "priya.take_home",
+       "at": "L46",
+       "word": "keeps"
+      },
+      {
+       "text": "\u2212",
+       "op": true,
+       "at": "L46",
+       "word": "keeps"
+      },
+      {
+       "ref": "daniel.take_home",
+       "at": "L46",
+       "word": "keeps"
+      },
+      {
+       "text": "=",
+       "op": true,
+       "at": "L46",
+       "word": "thirty-seven"
+      },
+      {
+       "result": true,
+       "expr": "priya.take_home - daniel.take_home",
+       "at": "L46",
+       "word": "thirty-seven"
+      }
+     ],
+     "takeaway": {
+      "text": "That difference is the staircase: only the top dollars meet the higher steps.",
+      "at": "L46",
+      "word": "difference"
+     }
     }
    ]
-  },
-  {
-   "at": "L43",
-   "type": "bars",
-   "title": "Real rate (income tax \u00f7 salary)",
-   "prefix": "",
-   "items": [
-    {
-     "label": "Maya",
-     "value": 11.7,
-     "text": "11.7%",
-     "hl": true
-    },
-    {
-     "label": "Daniel",
-     "value": 18.9,
-     "text": "18.9%",
-     "hl": true
-    },
-    {
-     "label": "Priya",
-     "value": 26.6,
-     "text": "26.6%",
-     "hl": true
-    }
-   ]
-  },
-  {
-   "at": "L44",
-   "type": "statement",
-   "label": "The gap",
-   "text": "7 to 11 points",
-   "gold": true,
-   "sub": "The bracket rate always overstates what you pay."
-  },
-  {
-   "at": "L45",
-   "type": "bars",
-   "title": "Take-home after income tax, CPP and EI",
-   "items": [
-    {
-     "label": "Maya",
-     "value": 36554
-    },
-    {
-     "label": "Daniel",
-     "value": 67197
-    },
-    {
-     "label": "Priya",
-     "value": 104320,
-     "hl": true
-    }
-   ]
-  },
-  {
-   "at": "L46",
-   "type": "card",
-   "side": "center",
-   "label": "Priya vs Daniel",
-   "value": "+$60,000 \u2192 +$37,123",
-   "line": "Earns $60,000 more, keeps about $37,000 more."
   },
   {
    "at": "L47",
@@ -1071,5 +1321,19 @@
    "sub": "Independent comparison \u00b7 no sponsor picks the winner",
    "plate": "lf/lf01-tax-brackets/plates/outro.png"
   }
- ]
+ ],
+ "data": {
+  "maya": {
+   "gross": 45000,
+   "prov": "ON"
+  },
+  "daniel": {
+   "gross": 90000,
+   "prov": "ON"
+  },
+  "priya": {
+   "gross": 150000,
+   "prov": "ON"
+  }
+ }
 }

@@ -21,8 +21,12 @@
 | Illustration "$90,000 through the federal stairs before credits": 58,523×14 % = $8,193; 31,477×20.5 % = $6,453; total $14,646 | arithmetic on the federal brackets; labelled on screen as illustration, before credits and CPP/EI deductions | 2026 | 2026-10-11 | arithmetic |
 | BPA credit worth up to 14 % × $16,452 ≈ $2,303 federally | arithmetic | 2026 | 2026-10-11 | arithmetic |
 
-Numbers from taxcalc (ON): $45K → fed $3,338, prov $1,905, CPP $2,469, EI $733, keep $36,554, income tax 11.7 % of gross, combined bracket rate 19.1 %. $90K → fed $11,252, prov $5,782, CPP $4,646, EI $1,123, keep $67,197, 18.9 %, bracket 29.65 %. $150K → fed $25,302, prov $14,608, CPP $4,646, EI $1,123, keep $104,320, 26.6 %, bracket 37.16 %.
+Numbers from taxcalc (ON): $45K → fed $3,338, prov $1,905, CPP $2,469, EI $733, keep $36,555, income tax 11.7 % of gross, combined bracket rate 19.1 %. $90K → fed $11,252, prov $5,782, CPP $4,646, EI $1,123, keep $67,197, 18.9 %, bracket 29.65 %. $150K → fed $25,302, prov $14,608, CPP $4,646, EI $1,123, keep $104,321, 26.6 %, bracket 37.16 %.
 Province swap at $150K: AB keep $107,458 (bracket 36.0 %), MB keep $100,797 (bracket 43.4 %).
 Dependencies stated on screen/VO: single, employment income only, no RRSP or other deductions; actual results vary with credits, deductions, other income and province. "Bracket rate" = statutory combined federal + provincial rate on the last dollar; true marginal can differ where surtaxes, premiums or benefit clawbacks apply (said in VO once).
 | Priya (ON, $150K) next-dollar rate incl. Ontario surtax: 26 % + 11.16 % × (1 + 20 % + 36 %) = 43.41 % | arithmetic on ON surtax (20 % over $5,818, 36 % over $7,446 of basic ON tax; her basic ON tax ≈ $13,858) | 2026 | 2026-10-11 | arithmetic |
 | Daniel (ON, $90K) +$1,000 raise: OHP already at its $750 cap, no surtax (basic ON tax ≈ $5,032 < $5,818) → 29.65 % → keeps ≈ $703 before CPP/EI | arithmetic | 2026 | 2026-10-11 | arithmetic |
+
+
+## Rounding rule (2026-10-11)
+Panels show each component rounded to the dollar; take-home = gross − rounded components, so every table reconciles exactly. This moved Maya to $36,555 and Priya to $104,321 (+$1 vs the unrounded figure); VO line L45 was re-recorded to match.
