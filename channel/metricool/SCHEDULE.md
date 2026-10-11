@@ -69,3 +69,6 @@ Real videos from Google Drive (`xmas-share.mp4` 1vBsXWHr2Z2sNbr8wAvFx7u2zqEgRM25
 | Tue 2026-12-29 10:00 | ny · Tax-loss selling by Dec 30 | TikTok | 393439370 |
 | Tue 2026-12-29 11:00 | ny | Instagram Reel | 393439398 |
 | Tue 2026-12-29 16:00 | ny · "Down on a Stock? Sell Before December 30 (Canada Tax-Loss Selling)" | YouTube Short | 393439448 |
+
+## LF-01 long-form (2026-10-11): DRAFT placeholder, the user finishes it
+YouTube only · Wed 2026-10-14 16:00 America/Winnipeg · Metricool id 393445798 · draft with placeholder video `LF01-preview.mp4` (720p) + full content (title, description with chapters, tags, first comment, AI disclosure). The user will swap in the 1080p master and their own thumbnail and schedule it.
