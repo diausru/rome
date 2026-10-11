@@ -4,11 +4,12 @@
 import React from 'react';
 import { AbsoluteFill, Img, staticFile, interpolate } from 'remotion';
 import { easeOut } from './Effects';
+import { DepthPhoto } from './DepthPhoto';
 
 export type Layer = { src: string; depth: number; blur?: number };
 export type Light = { x: number; y: number; r: number; color: string; amp?: number; speed?: number }; // % of frame
 export type Shot = { t: number; plate: string; cam: { x: number; y: number; z: number; r?: number }[]; dur?: number }; // cam keys spread over the shot
-export type PlateDef = { layers: Layer[]; lights?: Light[]; dust?: boolean; steam?: { x: number; y: number }; screen?: { x: number; y: number; w: number; h: number } };
+export type PlateDef = { photo?: { src: string; depth: string; amt?: number; focus?: number }; layers?: Layer[]; lights?: Light[]; dust?: boolean; steam?: { x: number; y: number }; screen?: { x: number; y: number; w: number; h: number } };
 
 const noise = (t: number, s: number) => Math.sin(t * 0.37 + s) * 0.6 + Math.sin(t * 0.13 + s * 2.1) * 0.4;
 const rnd = (n: number) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
@@ -24,7 +25,8 @@ const camAt = (s: Shot, t: number, end: number) => {
 
 const PlateView: React.FC<{ def: PlateDef; cam: { x: number; y: number; z: number; r: number }; t: number; seed: number }> = ({ def, cam, t, seed }) => (
   <AbsoluteFill style={{ transform: `rotate(${cam.r}deg)` }}>
-    {def.layers.map((l, i) => (
+    {def.photo && <DepthPhoto src={def.photo.src} depth={def.photo.depth} amt={def.photo.amt} t={t} cam={{ x: cam.x / 60, y: cam.y / 60, z: cam.z * 2.2, r: 0, focus: def.photo.focus }} />}
+    {(def.layers ?? []).map((l, i) => (
       <Img key={i} src={staticFile(l.src)} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover',
         transform: `translate(${-cam.x * l.depth}px, ${-cam.y * l.depth}px) scale(${1.1 + cam.z * l.depth})`, filter: l.blur ? `blur(${l.blur}px)` : undefined }} />
     ))}
