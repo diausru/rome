@@ -27,6 +27,13 @@ main = sorted([e for e in evs if not e.get('overlay')], key=lambda e: e['t'])
 for i, e in enumerate(main):
     if 'dur' not in e: e['dur'] = round((main[i+1]['t'] if i+1 < len(main) else total) - e['t'], 3)
 for e in evs: e.setdefault('dur', 4)
+# calculation check: every waterfall must reconcile before anything renders
+for e in evs:
+    if e.get('type') == 'waterfall':
+        bal = e['start'] - sum(r['value'] for r in e['rows'])
+        if 'final' in e and abs(bal - e['final']) > 0.5:
+            sys.exit(f"CHECK FAILED: '{e['title']}' ends at {bal} but final says {e['final']}")
+        print(f"check ok: {e['title']} -> {bal:,.0f}")
 ep['duration'] = round(total, 3)
 if parts:
     ins, flt = [], []

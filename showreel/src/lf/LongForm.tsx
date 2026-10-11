@@ -312,7 +312,42 @@ const People: React.FC<P> = ({ e, lf, fps }) => {
   );
 };
 
-const REG: Record<string, React.FC<P>> = { hook: Hook, chapter: Chapter, card: Card, caption: Caption, contenders: Contenders, score: Score, bars: Bars, flow: Flow, verdict: Verdict, statement: Statement, stairs: Stairs, people: People };
+// waterfall: gross counts up, then each deduction appears in turn with the running balance; final = last balance
+const Waterfall: React.FC<P> = ({ e, lf, fps }) => {
+  const rows = e.rows as { label: string; value: number; source?: string }[];
+  const start = e.start as number;
+  const gap = e.gap ?? 1.1;
+  const countIn = interpolate(lf, [fps * 0.1, fps * 1.1], [0, start], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
+  let bal = start;
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Glass sweep={useIn(lf, fps)} style={{ padding: '34px 54px 30px', minWidth: 900 }}>
+        <Over text={e.title} />
+        <div style={{ fontFamily: F.serif, fontSize: 96, fontWeight: 800, marginTop: 14, ...goldText }}>{money(countIn)}</div>
+        <div style={{ height: 1, background: C.line, margin: '14px 0 6px' }} />
+        {rows.map((r, i) => {
+          const at = 1.1 + gap * i;
+          const s = useIn(lf, fps, at);
+          const prev = bal; bal = bal - r.value;
+          return (
+            <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '12px 0', opacity: s, transform: `translateX(${(1 - s) * -30}px)` }}>
+              <div style={{ fontSize: 30, fontWeight: 600 }}>{r.label}{r.source ? <span style={{ fontSize: 20, color: C.dim }}>{'  '}{r.source}</span> : null}</div>
+              <div style={{ textAlign: 'right' }}>
+                <div style={{ fontFamily: F.serif, fontSize: 40, fontWeight: 800, color: C.bad }}>−{money(r.value)}</div>
+                <div style={{ fontSize: 20, color: C.dim }}>{money(prev)} → {money(bal)}</div>
+              </div>
+            </div>);
+        })}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', borderTop: `2px solid ${C.gold}`, marginTop: 8, paddingTop: 14, opacity: useIn(lf, fps, 1.1 + gap * rows.length) }}>
+          <div style={{ fontSize: 34, fontWeight: 800 }}>{e.finalLabel ?? 'Take-home pay'}</div>
+          <div style={{ fontFamily: F.serif, fontSize: 72, fontWeight: 800, ...goldText }}>{money(bal)}</div>
+        </div>
+      </Glass>
+    </AbsoluteFill>
+  );
+};
+
+const REG: Record<string, React.FC<P>> = { hook: Hook, chapter: Chapter, card: Card, caption: Caption, contenders: Contenders, score: Score, bars: Bars, flow: Flow, verdict: Verdict, statement: Statement, stairs: Stairs, people: People, waterfall: Waterfall };
 
 // ---------- composition ----------
 export const LongForm: React.FC<{ ep: Episode }> = ({ ep }) => {

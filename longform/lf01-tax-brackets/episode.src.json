@@ -715,23 +715,34 @@
   },
   {
    "at": "L33",
-   "type": "flow",
-   "title": "Daniel \u00b7 $90,000 \u00b7 Ontario 2026",
-   "gap": 3.5,
-   "steps": [
+   "type": "waterfall",
+   "title": "Daniel \u00b7 $90,000 \u00b7 Ontario \u00b7 2026",
+   "start": 90000,
+   "gap": 1.2,
+   "rows": [
     {
-     "label": "Federal tax",
-     "value": 11252
+     "label": "Federal income tax",
+     "value": 11252,
+     "source": "CRA T4127 2026"
     },
     {
-     "label": "Ontario tax",
-     "value": 5782
+     "label": "Ontario income tax",
+     "value": 5782,
+     "source": "ON 2026, incl. surtax + health premium"
     },
     {
-     "label": "Total income tax",
-     "value": 17034
+     "label": "CPP contributions",
+     "value": 4646,
+     "source": "CRA 2026"
+    },
+    {
+     "label": "EI premiums",
+     "value": 1123,
+     "source": "CRA 2026"
     }
-   ]
+   ],
+   "final": 67197,
+   "finalLabel": "Take-home pay"
   },
   {
    "at": "L34",
