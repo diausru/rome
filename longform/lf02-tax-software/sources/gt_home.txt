@@ -1,0 +1,81 @@
+https://www.genutax.ca/
+2026-10-11T19:33:47.917Z
+HTTP 200
+
+Home
+Help
+About Us
+Donate
+Download
+
+
+NETFILE
+
+Use NETFILE to send your return directly to the Canada Revenue Agency (CRA) over the Internet.
+
+Income tax preparation software companies must seek NETFILE certification from the Canada Revenue Agency (the "CRA") for tax preparation software products to be used in conjunction with CRA's NETFILE electronic tax filing service. For the 2025 taxation year, NETFILE certification of GenuTax Standard from the CRA has been obtained.
+
+Restrictions
+More info
+Free to Use
+
+GenuTax Standard software is completely free, and annual tax updates for future years are free as well.
+
+However, donations toward the cost of providing the software are welcomed and appreciated. Your donations help to ensure that we can continue to provide updates to GenuTax Standard in future years.
+
+Donate
+Multiyear
+
+In addition to filing your tax return for 2025, you can also file tax returns for any year from 2003 through 2024.
+
+Supported Forms
+More info
+Step-by-step interview
+
+A simple, easy-to-understand interview that takes you through your tax situation for each year, assisting you in claiming every tax deduction and credit that you are entitled to.
+
+Up to 20 tax returns
+
+You may prepare tax returns for up to 20 different individuals for each tax return year, without any income level limitations.
+
+Tax situations
+
+Handles most tax situations, including capital gains, rental properties, and small business.
+
+Restrictions
+Auto-fill My Return
+
+Use Auto-fill My Return to automatically fill in parts of your tax return.
+
+Auto-fill My Return is available in GenuTax Standard when preparing a tax return for any year from 2017 through 2025.
+
+More info
+ReFILE
+
+If you need to change a tax return you have already filed, use ReFILE to send your changed tax return directly to the Canada Revenue Agency (CRA) over the Internet.
+
+ReFILE is available in GenuTax Standard when preparing a tax return for any year from 2022 through 2025.
+
+Restrictions
+More info
+GenuTax Standard
+NETFILE
+Supported Forms
+Restrictions
+System Requirements
+Download
+Help
+Contact Support
+Software Update
+Instruction Manual
+Operating System Survey
+About
+Make a Donation
+About Us
+Privacy Policy
+PO Box 626 Stn Main
+Stittsville, ON    K2S 1A7
+Email: support@genutax.ca
+
+© 2005-2026 GenuSource Consulting Inc. All rights reserved.
+GenuTax is a registered trademark of GenuSource Consulting Inc.

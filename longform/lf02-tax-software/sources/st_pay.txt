@@ -1,0 +1,74 @@
+https://www.studiotax.com/paymentpage.html
+2026-10-11T19:35:07.668Z
+HTTP 200
+
+ 
+Home
+Download
+Windows Mac Android iOS
+Support
+Payment
+Contact
+About Us
+Français
+License requirement
+
+In order to meet the ever-increasing maintenance costs and to support our employees, we are unfortunately no longer able to offer StudioTax as a free software. To keep the software around and improving for many years to come, we are asking for your help by paying $17.50 for a license before printing and/or filing your returns.
+The single license is good to file a maximum number of 10 returns: 10 returns of the same tax year/$17.50.
+If you need to file up to 10 additional returns, then you will need to purchase a second license and activate it after the software indicates that the first 10 returns are used. Note that you do not need to re-install the software again, you only need to replace the existing license and activate the new license.
+
+As per CRA requirements, you can only file 20 returns per computer. As a result, getting 3 licenses will not allow you to prepare and file 30 returns using the same computer.
+
+A new license is required for every new tax year. A 2024 license is not valid for the 2025 tax year and cannot be used to activate StudioTax 2025. Use the "Proceed to purchase your license" button below to purchase a 2025 license.
+
+We are still offering the software for free for users with total income(line 15000) less than 20K* and for our northern residents (NT, YT, NU). In this case you will not need a license or need to activate StudioTax 2025 in order to Netfile and print your returns.
+
+* When determining the eligibility, the amounts of lines 11600 and line 14700 are excluded from line 15000. Also, for linked returns, both returns are evaluated together and the combined total limit is 40K.
+
+** The license is granted on a per-computer basis.
+
+***Refer to the license info page if you need to file more than 20 returns.
+
+What if you need a license for a previous version?
+
+Please note that this section applies to those who need to file pre-2025 tax returns and require StudioTax 2024 and/or earlier versions to file those returns.
+
+You no longer need to purchase a license for StudioTax 2020 to 2024. The 2025 license can be used for 2025 as well the 2020 to 2024 versions of StudioTax.
+
+StudioTax 2019 and previous versions remain free for all and no license is required.
+
+Pay for your license online
+
+You will receive your license immediately after completing your order.
+
+Proceed to purchase your license
+StudioTax Remains Free For:
+Canada’s Northern Territories
+
+Individuals residing in Northwest Territories, Yukon, and Nunavut
+
+Income below 20,000$
+
+Individuals making $ 20,000/year or less.
+
+Refund policy
+
+We offer a 30 day money back guarantee as long as the purchased license was not activated. Activated licenses are not eligible for refund.
+
+BHOK IT Consulting - Suite 641
+136 - 2446 Bank Street
+Ottawa, ON K1V 1A4
+
+Contact Us
+
+support@studiotax.ca
+
+Connect With Us
+
+Follow us on Facebook
+
+PRIVACY POLICY
+
+Copyright © 2003-2026 BHOK IT Consulting Inc.
+
+All rights reserved. Tous droits réservés.

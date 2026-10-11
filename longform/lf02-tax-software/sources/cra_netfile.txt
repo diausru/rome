@@ -1,0 +1,123 @@
+https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/how-file/tax-software/send-return/netfile.html
+2026-10-11T19:32:53.803Z
+HTTP 200
+
+Skip to main content
+Skip to: Tax software for filing personal taxes
+Skip to "About government"
+Switch to basic HTML version
+Language selection
+Français
+/ Gouvernement du Canada
+Search
+Search CRA
+Search
+Menu
+MAIN
+MENU 
+Sign in
+CRA sign in
+You are here:
+Canada.ca Taxes Income tax Personal income tax How to file a tax return Tax software for filing personal taxes Sending a tax return
+Tax software for filing personal taxes
+
+Sections
+
+Find certified tax software
+Completing a tax return
+Sending a tax return
+NETFILE
+NOA in tax software
+
+Tax software for filing personal taxes
+
+NETFILE
+
+The NETFILE and ReFILE services are open for transmission from Monday, February 23, 2026 at 6:00 a.m. (Eastern time), until Friday, January 29, 2027. You can electronically file your 2018, 2019, 2020, 2021, 2022, 2023, 2024 and 2025 initial personal income tax and benefit return using NETFILE and you can file your amended T1 returns for 2022, 2023, 2024 and 2025 using ReFILE.
+
+You can use the NETFILE service in tax software to electronically send personal tax returns directly to the Canada Revenue Agency (CRA).
+
+NETFILE privacy notice
+Who can use the service
+
+To use the NETFILE service, you must have one of the following:
+
+A Social Insurance Number (SIN) starting with a number from 1 to 9
+You must be a newcomer to Canada to use NETFILE if your SIN starts with a 0
+A temporary tax number (TTN) starting with a 01 or 03
+Sending provincial or territorial returns
+
+All federal income tax returns are sent to the CRA using the NETFILE service. The electronic service used to send provincial or territorial tax returns is based on where you live as of December 31 of the tax year.
+
+All residents (except Quebec)
+
+Your provincial or territorial tax return is sent to the CRA using the NETFILE service.
+
+Quebec residents
+
+Your provincial tax return is sent to Revenu Québec using their electronic service.
+
+NETFILE restrictions
+
+The service is available daily with the following exceptions:
+
+3 am to 6 am ET for daily maintenance
+February 1 to 22, 2026 for tax year updates
+
+Applicable to the current calendar year or tax year being filed, you are not able to use this service if you are filing:
+
+A deceased taxpayer return
+A bankruptcy return
+Submitting a return for any taxation year other than 2018, 2019, 2020, 2021, 2022, 2023, 2024 or 2025
+Using ReFILE to request an amendment for a tax year that is not 2022, 2023, 2024 or 2025
+
+You are not able to use this service if you are:
+
+Considered a deemed resident (that is, you don’t have to pay provincial or territorial tax)
+Electing to defer tax on a distribution of spin-off shares by foreign corporations
+If you are filing multiple returns on behalf of family members or friends
+
+Depending on your situation, you may not be able to use the NETFILE service if any of the following restrictions apply:
+
+Reporting restrictions
+Claiming restrictions
+Document navigation
+Previous:
+Sending a tax return
+Page details
+Give feedback about this page
+Did you find what you were looking for?
+Yes No
+2026-02-23
+About this site
+Canada Revenue Agency (CRA)
+Contact the CRA
+Update your information
+About the CRA
+Government of Canada
+All contacts
+Departments and agencies
+About government
+Themes and topics
+Jobs
+Immigration and citizenship
+Travel and tourism
+Business
+Benefits
+Health
+Taxes
+Environment and natural resources
+National security and defence
+Culture, history and sport
+Policing, justice and emergencies
+Transport and infrastructure
+Canada and the world
+Money and finances
+Science and innovation
+Indigenous Peoples
+Veterans and military
+Youth
+Manage life events
+Government of Canada Corporate
+Social media Mobile applications About Canada.ca Terms and conditions Privacy
+ 

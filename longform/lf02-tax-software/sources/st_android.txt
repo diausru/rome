@@ -1,0 +1,105 @@
+https://www.studiotax.com/androiddownload.html
+2026-10-11T19:34:31.099Z
+HTTP 200
+
+ 
+Home
+Download
+Windows Mac Android iOS
+Support
+Payment
+Contact
+About Us
+Français
+
+
+StudioTax for Android is free and on Google Play.
+
+install StudioTax 2025 from: 
+
+install StudioTax 2024 from: 
+
+install StudioTax 2023 from: 
+
+Chromebook:
+
+StudioTax is not supported on the Chromebook and not advised to install it on a Chromebook device.
+
+StudioTax Mobile on YouTube
+
+
+Youtube	Description
+Introduction	Take a tour of the app
+New return	Create a new return
+File a return	File a return and create a PDF for your records
+ReFile a return	Use a ReFile to adjust/amend a filed return
+
+
+
+Introduction
+
+The StudioTax Android version uses the same application concepts as the Mac and Windows versions but designed for the mobile environment. The app is form based and has the same components as the desktop versions. If you are familiar with StudioTax, then it is straight forward to work with the Android version.
+
+The following picture shows the first screen you get when you open or create a new return. It presents the main StudioTax features and how you can access them. The Android version provide the same navigation and edit functions as the Mac or Windows versions. The access to those functions is enabled using a native Android user interface/interaction.
+
+
+
+
+
+StudioTax for Android Storage
+
+One important aspect of creating a return is saving the recorded information for future access and/or modification. You do not have to complete the return and file it in one session. You can create a return, enter a subset of your info, save the return, close the return and the app. At a later time you can open that return and continue making changes and/or file it.
+Use the Save menu to persist the information you entered on the storage of your device.
+
+After the first start, StudioTax for Android app will ask you to select a folder and grant the access permission to that folder. StudioTax app will use the selected folder to create a subfolder that it will use to save your tax files. It is recommended to use the Documents folder as show in the following steps:
+
+Step 1
+
+
+
+
+Step 2
+
+
+
+
+Step 3
+
+
+
+
+Step 4
+Copy the .24t, 2024 return file, to the newly created folder.
+
+
+Step 5
+It is important to restart the app before you can create your 2025 return using the 2024 return file copied in the previous step.
+
+
+The files created by StudioTax includes the return files and the PDF files that you can view and print. The StudioTax folder may also contain temporary files created by StudioTax. StudioTax can only save and access files from its storage area.
+
+Import a StudioTax 2024 return
+
+You can copy files from and to the StudioTax storage. For example if you have a .24t StudioTax 2024 file, then you can copy that file to the storage area and use it to create your 2025 return as shown above.
+
+Backup your returns
+
+Files under the StudioTax storage area can be copied for backup to a different storage location such as your Cloud folder.
+
+BHOK IT Consulting - Suite 641
+136 - 2446 Bank Street
+Ottawa, ON K1V 1A4
+
+Contact Us
+
+support@studiotax.ca
+
+Connect With Us
+
+Follow us on Facebook
+
+PRIVACY POLICY
+
+Copyright © 2003-2026 BHOK IT Consulting Inc.
+
+All rights reserved. Tous droits réservés.
