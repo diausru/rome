@@ -36,6 +36,8 @@ import { G5v2, G5DUR, G5FPS } from './G5v2';
 import { XmasV2, XMASDUR, XMASFPS } from './XmasV2';
 import { NyV2, NYDUR, NYFPS } from './NyV2';
 import { useCurrentFrame } from 'remotion';
+import { LongForm, lfDuration, Episode } from './lf/LongForm';
+import lfDemo from './lf/demo.json';
 const OfficeTest = () => <Office f={useCurrentFrame()} loop={LOOP} w={CW / 2} h={SH / 2} />;
 
 const fontHandle = delayRender('fonts');
@@ -84,6 +86,8 @@ export const RemotionRoot = () => (
     <Composition id="G5v2" component={G5v2} durationInFrames={G5DUR} fps={G5FPS} width={1080} height={1920} />
     <Composition id="XmasV2" component={XmasV2} durationInFrames={XMASDUR} fps={XMASFPS} width={1080} height={1920} />
     <Composition id="NyV2" component={NyV2} durationInFrames={NYDUR} fps={NYFPS} width={1080} height={1920} />
+    <Composition id="LongForm" component={LongForm as any} defaultProps={{ ep: lfDemo as Episode }} durationInFrames={300} fps={30} width={1920} height={1080}
+      calculateMetadata={({ props }: any) => ({ durationInFrames: lfDuration(props.ep), fps: props.ep.fps })} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />
   </>
 );

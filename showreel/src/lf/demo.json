@@ -1,0 +1,18 @@
+{
+  "fps": 30,
+  "footer": "ENGINE DEMO · placeholder values, not tax data",
+  "chapters": [{"t": 0, "title": "Engine demo"}, {"t": 9, "title": "01 · The rules"}, {"t": 23, "title": "02 · Score battle"}],
+  "events": [
+    {"t": 0, "dur": 5, "type": "hook", "items": [{"name": "Option A", "value": "$0"}, {"name": "Option B", "value": "$A"}, {"name": "Option C", "value": "$B"}], "question": "Which one actually wins?"},
+    {"t": 5, "dur": 4, "type": "statement", "label": "The question", "text": "Same return. Very different experience.", "sub": "Placeholder line typed like a film title."},
+    {"t": 9, "dur": 3, "type": "chapter", "num": "01", "title": "The rules"},
+    {"t": 12, "dur": 5, "type": "contenders", "title": "The contenders", "items": [{"name": "Option A", "tag": "One-line positioning"}, {"name": "Option B", "tag": "One-line positioning"}, {"name": "Option C", "tag": "One-line positioning"}]},
+    {"t": 17, "dur": 6, "type": "card", "label": "Demo number", "value": 12345, "line": "Counter rises out of a mask, then the supporting line types."},
+    {"t": 17, "dur": 4, "type": "caption", "text": "Captions top-left, typed."},
+    {"t": 23, "dur": 4, "type": "score", "criteria": ["Price", "Ease", "Features"], "reveal": 1, "rows": [{"name": "Option A", "scores": [5, 3, 2]}, {"name": "Option B", "scores": [3, 4, 4]}, {"name": "Option C", "scores": [2, 4, 5]}]},
+    {"t": 27, "dur": 4, "type": "score", "criteria": ["Price", "Ease", "Features"], "reveal": 2, "lead": true, "rows": [{"name": "Option A", "scores": [5, 3, 2]}, {"name": "Option B", "scores": [3, 4, 4]}, {"name": "Option C", "scores": [2, 4, 5]}]},
+    {"t": 31, "dur": 5, "type": "bars", "title": "Demo comparison", "items": [{"label": "Option A", "value": 30000}, {"label": "Option B", "value": 42000, "hl": true}, {"label": "Option C", "value": 36000}]},
+    {"t": 36, "dur": 6, "type": "flow", "title": "Demo flow", "gap": 0.6, "steps": [{"label": "Start", "value": 100000}, {"label": "Step one", "value": 10000, "sign": "-"}, {"label": "Step two", "value": 5000, "sign": "-"}, {"label": "Result", "value": 85000}]},
+    {"t": 42, "dur": 6, "type": "verdict", "gap": 0.8, "awards": [{"label": "Best overall", "name": "Option B"}, {"label": "Best value", "name": "Option A"}, {"label": "Best for complex", "name": "Option C"}, {"label": "Best for simple", "name": "Option A"}]}
+  ]
+}
