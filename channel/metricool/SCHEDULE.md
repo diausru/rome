@@ -72,3 +72,6 @@ Real videos from Google Drive (`xmas-share.mp4` 1vBsXWHr2Z2sNbr8wAvFx7u2zqEgRM25
 
 ## LF-01 long-form (2026-10-11): DRAFT placeholder, the user finishes it
 YouTube only · Wed 2026-10-14 16:00 America/Winnipeg · Metricool id 393445798 · draft with placeholder video `LF01-preview.mp4` (720p) + full content (title, description with chapters, tags, first comment, AI disclosure). The user will swap in the 1080p master and their own thumbnail and schedule it.
+
+## LF-02 (YouTube, scheduled 2026-10-11 on user command)
+- Post id 393575027 · Wed 2026-10-21 16:00 America/Winnipeg · public · EDUCATION · not for kids · AI-content flag on · title "Don't Pay for Tax Software Until You Watch This (Canada)" · media Drive 1mYgUWYQ4Rh2amEbNpYoDfiG5phxA_EPs (LF02-1080p.mp4, rehosted by Metricool) · thumbnail: user adds.
