@@ -31,9 +31,9 @@ CHAPTERS
 5:16 Round two: Daniel, $90K
 5:58 Round three: Priya, $150K
 6:48 The score
-7:48 The surprise: same salary, different province
-8:44 Which number to use (raises, RRSP)
-10:01 Verdict
+7:49 The surprise: same salary, different province
+8:43 Which number to use (raises, RRSP)
+10:00 Verdict
 
 ## Hashtags
 #CanadianTaxes #TaxBrackets #PersonalFinanceCanada
