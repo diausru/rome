@@ -21,27 +21,30 @@ export const lfDuration = (ep: Episode) =>
 // ---------- persistent world ----------
 const noise = (t: number, s: number) => Math.sin(t * 0.37 + s) * 0.6 + Math.sin(t * 0.13 + s * 2.1) * 0.4;
 
-const Desk: React.FC<{ plate?: string; t: number }> = ({ plate, t }) => {
-  const push = 1.06 + t * 0.0004;
-  const x = noise(t, 1) * 14, y = noise(t, 4) * 8;
+const PlateLayer: React.FC<{ src: string; t: number; seed: number; op: number }> = ({ src, t, seed, op }) => {
+  const x = noise(t, seed) * 16, y = noise(t, seed + 3) * 10, push = 1.07 + 0.00035 * t;
+  return (
+    <AbsoluteFill style={{ opacity: op, overflow: 'hidden' }}>
+      <Img src={staticFile(src)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: `translate(${x}px,${y}px) scale(${push})`, filter: 'blur(0.8px) brightness(.5) saturate(.92)' }} />
+    </AbsoluteFill>
+  );
+};
+
+const Desk: React.FC<{ plates: { src: string; t0: number }[]; t: number }> = ({ plates, t }) => {
+  const idx = plates.reduce((acc, p, i) => (p.t0 <= t ? i : acc), -1);
+  const cur = idx >= 0 ? plates[idx] : undefined;
+  const prev = idx > 0 ? plates[idx - 1] : undefined;
+  const k = cur ? Math.min(1, (t - cur.t0) / 0.9) : 1;
   return (
     <AbsoluteFill style={{ background: '#0B0C10', overflow: 'hidden' }}>
-      {plate ? (
-        <Img src={staticFile(plate)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: `translate(${x}px,${y}px) scale(${push})`, filter: 'blur(1.2px) brightness(.62)' }} />
-      ) : (
-        <AbsoluteFill style={{ transform: `translate(${x}px,${y}px) scale(${push})`,
-          background: `radial-gradient(60% 55% at ${38 + noise(t, 7) * 2}% 30%, rgba(255,196,120,.30), transparent 70%),
-                       radial-gradient(50% 40% at 80% 85%, rgba(213,43,30,.10), transparent 70%),
-                       linear-gradient(180deg,#14151B 0%,#0B0C10 60%,#1A140E 100%)` }} />
+      {!cur && (
+        <AbsoluteFill style={{ background: `radial-gradient(60% 55% at ${38 + noise(t, 7) * 2}% 30%, rgba(255,196,120,.30), transparent 70%), linear-gradient(180deg,#14151B 0%,#0B0C10 60%,#1A140E 100%)` }} />
       )}
-      {/* window light breathing */}
+      {prev && <PlateLayer src={prev.src} t={t} seed={2} op={1 - k} />}
+      {cur && <PlateLayer src={cur.src} t={t} seed={1} op={prev ? k : 1} />}
       <AbsoluteFill style={{ background: 'linear-gradient(115deg, rgba(255,230,190,.08) 0%, transparent 40%)', opacity: 0.6 + 0.4 * Math.sin(t * 0.21) }} />
-      {/* dust motes */}
-      {Array.from({ length: 26 }).map((_, i) => {
-        const px = ((i * 137.5) % 100) + Math.sin(t * 0.2 + i) * 2, py = (((i * 61.8) % 100) - t * (0.6 + (i % 5) * 0.15)) % 100;
-        return <div key={i} style={{ position: 'absolute', left: `${px}%`, top: `${(py + 100) % 100}%`, width: 3, height: 3, borderRadius: 9, background: 'rgba(255,225,170,.35)', filter: 'blur(1px)' }} />;
-      })}
-      <AbsoluteFill style={{ background: 'radial-gradient(120% 90% at 50% 45%, transparent 55%, rgba(0,0,0,.65) 100%)' }} />
+      <AbsoluteFill style={{ background: 'radial-gradient(120% 90% at 50% 45%, transparent 55%, rgba(0,0,0,.6) 100%)' }} />
+      <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(5,6,9,.35) 0%, rgba(5,6,9,.10) 40%, rgba(5,6,9,.55) 100%)' }} />
     </AbsoluteFill>
   );
 };
@@ -255,14 +258,70 @@ const Statement: React.FC<P> = ({ e, lf, fps }) => (
   </AbsoluteFill>
 );
 
-const REG: Record<string, React.FC<P>> = { hook: Hook, chapter: Chapter, card: Card, caption: Caption, contenders: Contenders, score: Score, bars: Bars, flow: Flow, verdict: Verdict, statement: Statement };
+
+// staircase: steps [{label, rate, value?}]; the figure climbs step by step; "amount" fills under each step
+const Stairs: React.FC<P> = ({ e, lf, fps }) => {
+  const n = e.steps.length, climb = interpolate(lf, [fps * 0.5, fps * (0.5 + 0.9 * n)], [0, n], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease });
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Glass sweep={useIn(lf, fps)} style={{ padding: '36px 56px 30px', minWidth: 880 }}>
+        <Over text={e.title} />
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 14, marginTop: 26, height: 360 }}>
+          {e.steps.map((st: any, i: number) => {
+            const s = Math.min(1, Math.max(0, climb - i));
+            return (
+              <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%' }}>
+                <div style={{ fontFamily: F.serif, fontSize: 40, fontWeight: 800, opacity: s, ...goldText }}>{st.rate}</div>
+                <div style={{ width: '100%', height: `${(st.h ?? 40 + i * 20) * s}%`, marginTop: 10, borderRadius: '10px 10px 0 0', background: `linear-gradient(180deg, rgba(232,194,122,${0.55 - i * 0.07}), rgba(184,138,62,.15))`, borderTop: `3px solid ${C.gold}` }} />
+                <div style={{ marginTop: 10, fontSize: 22, color: C.dim, textAlign: 'center', opacity: s }}>{st.label}</div>
+              </div>);
+          })}
+        </div>
+        {e.caption && <div style={{ marginTop: 18, fontSize: 28, color: C.dim }}>{e.caption}</div>}
+      </Glass>
+    </AbsoluteFill>
+  );
+};
+
+// pictogram people: each figure fills to its share of the salary (value / max); label + amount
+const Person: React.FC<{ fill: number; name: string; amount: string; hl?: boolean }> = ({ fill, name, amount, hl }) => (
+  <div style={{ width: 300, textAlign: 'center' }}>
+    <svg width="150" height="260" viewBox="0 0 150 260">
+      <defs><linearGradient id={`g${name}`} x1="0" y1="1" x2="0" y2="0"><stop offset={`${fill * 100}%`} stopColor={hl ? C.gold : '#E8E2D6'} /><stop offset={`${fill * 100}%`} stopColor="rgba(255,255,255,.12)" /></linearGradient></defs>
+      <circle cx="75" cy="44" r="34" fill={`url(#g${name})`} />
+      <path d="M22 250 V140 Q22 100 75 100 Q128 100 128 140 V250 Z" fill={`url(#g${name})`} />
+    </svg>
+    <div style={{ fontSize: 30, fontWeight: 800, marginTop: 10 }}>{name}</div>
+    <div style={{ fontFamily: F.serif, fontSize: 40, fontWeight: 800, ...(hl ? goldText : {}) }}>{amount}</div>
+  </div>
+);
+const People: React.FC<P> = ({ e, lf, fps }) => {
+  const max = Math.max(...e.items.map((i: any) => i.value));
+  return (
+    <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+      <Glass sweep={useIn(lf, fps)} style={{ padding: '34px 56px 28px' }}>
+        <Over text={e.title} />
+        <div style={{ display: 'flex', gap: 40, marginTop: 22, justifyContent: 'center' }}>
+          {e.items.map((it: any, i: number) => {
+            const s = useIn(lf, fps, 0.35 * i);
+            return <div key={i} style={{ opacity: s }}><Person name={it.name} amount={it.amount} hl={it.hl} fill={s * (it.value / max)} /></div>;
+          })}
+        </div>
+      </Glass>
+    </AbsoluteFill>
+  );
+};
+
+const REG: Record<string, React.FC<P>> = { hook: Hook, chapter: Chapter, card: Card, caption: Caption, contenders: Contenders, score: Score, bars: Bars, flow: Flow, verdict: Verdict, statement: Statement, stairs: Stairs, people: People };
 
 // ---------- composition ----------
 export const LongForm: React.FC<{ ep: Episode }> = ({ ep }) => {
   const f = useCurrentFrame(), { fps } = useVideoConfig(), t = f / fps;
+  const plates = [...ep.events].filter((e) => e.plate).sort((a, b) => a.t - b.t).map((e) => ({ src: e.plate as string, t0: e.t }));
+  if (ep.plate && !plates.length) plates.push({ src: ep.plate, t0: 0 });
   return (
     <AbsoluteFill style={{ fontFamily: F.sans, color: C.white }}>
-      <Desk plate={ep.plate} t={t} />
+      <Desk plates={plates} t={t} />
       {ep.events.filter((e) => t >= e.t && t < e.t + e.dur).map((e, i) => {
         const Comp = REG[e.type]; if (!Comp) return null;
         const lf = f - Math.round(e.t * fps), durF = Math.round(e.dur * fps);
