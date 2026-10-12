@@ -1,0 +1,25 @@
+{
+ "topic": "Three credits people miss: eligible educator school supply credit, Canada training credit, home accessibility tax credit (federal, tax year 2026)",
+ "tax_year": 2026,
+ "example": {"supplies": 1000, "edu_rate": 0.25, "edu_cap": 1000,
+   "course": 3000, "ctc_per_year": 250, "ctc_years": 7, "ctc_lifetime": 5000,
+   "reno": 20000, "hatc_cap": 20000, "rate": 0.14, "mom_age": 70, "her_age": 40,
+   "note": "example family; CTC room assumes she met the conditions (age 26–65, filed, resident, working income threshold, income limit) every year 2019–2025, so $250 accrued for each of 2020–2026; mom must owe at least $2,800 of federal tax to use the full non-refundable credit"},
+ "derive": {
+   "edu_credit": "min(supplies, edu_cap) * edu_rate",
+   "ctc_room": "min(ctc_per_year * ctc_years, ctc_lifetime)",
+   "ctc_claim": "min(min(ctc_per_year * ctc_years, ctc_lifetime), course * 0.5)",
+   "hatc_credit": "round(min(reno, hatc_cap) * rate)",
+   "total": "min(supplies, edu_cap) * edu_rate + min(min(ctc_per_year * ctc_years, ctc_lifetime), course * 0.5) + round(min(reno, hatc_cap) * rate)"
+ },
+ "spoken": {"supplies": "a thousand dollars", "edu_rate": "twenty-five percent", "edu_credit": "two hundred and fifty dollars",
+   "her_age": "forty", "course": "three-thousand", "ctc_per_year": "two hundred and fifty", "ctc_claim": "fifteen hundred dollars",
+   "mom_age": "seventy", "reno": "twenty thousand dollars", "rate": "fourteen percent", "hatc_credit": "two thousand eight hundred",
+   "total": "four thousand, five hundred and fifty dollars"},
+ "sources": {
+   "educator": "ITA 122.9(1)-(2): eligible educator (teacher or ECE employed at an elementary/secondary school or regulated child care facility, with a recognized certificate) is deemed to have paid 25% of the lesser of $1,000 and eligible supplies expenses (refundable); employer certificate on request (122.9(3))",
+   "ctc": "ITA 122.91(1)-(2): refundable credit = lesser of the training amount limit and 50% of eligible tuition; limit grows $250 a year after 2019 (age 26–65 at year end, return filed and resident in the prior year, working income threshold, income not above the 117(2)(c) amount), lifetime $5,000; ITA 118.5(1.2): tuition credit reduced by 14% × the CTC claimed; canada.ca line 45350: the limit is shown on the latest notice of (re)assessment and in My Account",
+   "hatc": "ITA 118.041: credit = appropriate percentage × lesser of $20,000 and qualifying expenditures; qualifying individual = 65+ at year end or DTC-eligible; renovation must be enduring and let the person gain access / be mobile / reduce risk of harm (non-refundable)",
+   "rate": "ITA 117(2)(a) 14% and 248(1) appropriate percentage (2026)"
+ }
+}

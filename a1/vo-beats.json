@@ -1,0 +1,46 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "One family. Three receipts. Four thousand, five hundred and fifty dollars they almost left with the CRA.",
+   0.3
+  ],
+  [
+   "promise",
+   "Which credits pay you, even with no tax owed?",
+   0.32
+  ],
+  [
+   "case1",
+   "Case one: she's a teacher, and spent a thousand dollars of her own on classroom supplies. Twenty-five percent comes back: two hundred and fifty dollars.",
+   0.3
+  ],
+  [
+   "case2",
+   "Case two: she's forty and took a three-thousand-dollar course. Her training credit grew two hundred and fifty a year since twenty twenty, and pays half the fee: fifteen hundred dollars.",
+   0.3
+  ],
+  [
+   "case3",
+   "Case three: her mom, seventy, adds a walk-in shower and grab bars for twenty thousand dollars. At fourteen percent: two thousand eight hundred off her tax.",
+   0.32
+  ],
+  [
+   "reveal",
+   "The twist: the first two are refundable. The third only cuts tax you owe.",
+   0.3
+  ],
+  [
+   "action",
+   "Check your notice of assessment for your training credit limit, and keep every receipt.",
+   0.32
+  ],
+  [
+   "cta",
+   "Next: a CRA letter says you owe. What to check first. Follow so you don't miss it.",
+   0.0
+  ]
+ ],
+ "tempo": 1.03
+}
