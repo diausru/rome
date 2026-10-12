@@ -1,0 +1,45 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Prices went up. Your pay went up. Manitoba's tax brackets haven't moved since twenty twenty-four.",
+   0.34
+  ],
+  [
+   "rates",
+   "Three rates: ten point eight percent to forty-seven thousand, twelve point seven five to a hundred thousand, seventeen point four above.",
+   0.3
+  ],
+  [
+   "freeze",
+   "Since twenty twenty-five, those lines and the fifteen thousand seven hundred and eighty dollar basic personal amount are frozen.",
+   0.3
+  ],
+  [
+   "example",
+   "A raise takes your taxable income from ninety-eight thousand to a hundred and two? Half is taxed at twelve point seven five, half at seventeen point four: six hundred and three dollars to Manitoba.",
+   0.3
+  ],
+  [
+   "creep",
+   "So a raise that only matches prices can push more of your pay into a higher rate.",
+   0.3
+  ],
+  [
+   "high",
+   "Over two hundred thousand, the basic amount shrinks. At four hundred thousand, it's gone.",
+   0.3
+  ],
+  [
+   "credits",
+   "On the other side, for twenty twenty-six: renters get up to six hundred and twenty-five dollars, homeowners up to sixteen hundred.",
+   0.34
+  ],
+  [
+   "cta",
+   "Next: the tax credits most Canadians never claim. Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}

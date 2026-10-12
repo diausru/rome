@@ -1,0 +1,303 @@
+{
+ "id": "h43",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "title": "MANITOBA TAX LINES",
+  "rows": [
+   "PRICES",
+   "YOUR PAY",
+   "MB BRACKETS"
+  ],
+  "stamp": "FROZEN SINCE 2024"
+ },
+ "hold_after_vo": 1.7,
+ "cues": [
+  {
+   "id": "p1",
+   "beat": "hook",
+   "word": "Prices",
+   "sfx": "tick"
+  },
+  {
+   "id": "p2",
+   "beat": "hook",
+   "word": "pay",
+   "sfx": "tick"
+  },
+  {
+   "id": "p3",
+   "beat": "hook",
+   "word": "brackets"
+  },
+  {
+   "id": "ice",
+   "beat": "hook",
+   "word": "moved",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.5,
+   "gain": 0.75
+  },
+  {
+   "id": "rates",
+   "beat": "rates",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "s1",
+   "beat": "rates",
+   "word": "ten",
+   "sfx": "tick"
+  },
+  {
+   "id": "s2",
+   "beat": "rates",
+   "word": "twelve",
+   "sfx": "tick"
+  },
+  {
+   "id": "s3",
+   "beat": "rates",
+   "word": "seventeen",
+   "sfx": "tick"
+  },
+  {
+   "id": "fz",
+   "beat": "freeze",
+   "word": "Since"
+  },
+  {
+   "id": "bpa",
+   "beat": "freeze",
+   "word": "fifteen",
+   "sfx": "pop"
+  },
+  {
+   "id": "lines",
+   "beat": "freeze",
+   "word": "lines",
+   "sfx": "impact",
+   "gain": 0.5
+  },
+  {
+   "id": "frozen",
+   "beat": "freeze",
+   "word": "frozen.",
+   "sfx": "pop"
+  },
+  {
+   "id": "ex",
+   "beat": "example",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "from",
+   "beat": "example",
+   "word": "ninety-eight"
+  },
+  {
+   "id": "to",
+   "beat": "example",
+   "word": "two?",
+   "sfx": "tick"
+  },
+  {
+   "id": "half1",
+   "beat": "example",
+   "word": "Half"
+  },
+  {
+   "id": "half2",
+   "beat": "example",
+   "word": "half",
+   "n": 2
+  },
+  {
+   "id": "total",
+   "beat": "example",
+   "word": "six",
+   "sfx": "chime"
+  },
+  {
+   "id": "creep",
+   "beat": "creep",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "push",
+   "beat": "creep",
+   "word": "push",
+   "sfx": "pop"
+  },
+  {
+   "id": "higher",
+   "beat": "creep",
+   "word": "higher"
+  },
+  {
+   "id": "high",
+   "beat": "high",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "ph1",
+   "beat": "high",
+   "word": "two"
+  },
+  {
+   "id": "ph2",
+   "beat": "high",
+   "word": "four",
+   "sfx": "impact",
+   "gain": 0.5
+  },
+  {
+   "id": "gone",
+   "beat": "high",
+   "word": "gone."
+  },
+  {
+   "id": "credits",
+   "beat": "credits",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "rent",
+   "beat": "credits",
+   "word": "renters",
+   "sfx": "pop"
+  },
+  {
+   "id": "home",
+   "beat": "credits",
+   "word": "homeowners",
+   "sfx": "chime"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "pop"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    560,
+    880,
+    600
+   ],
+   "from": "start",
+   "to": "rates"
+  },
+  "ladder": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "rates",
+   "to": "example"
+  },
+  "slider": {
+   "box": [
+    80,
+    820,
+    880,
+    440
+   ],
+   "from": "example",
+   "to": "creep"
+  },
+  "creep": {
+   "box": [
+    80,
+    800,
+    880,
+    360
+   ],
+   "from": "creep",
+   "to": "high"
+  },
+  "gauge": {
+   "box": [
+    80,
+    860,
+    880,
+    400
+   ],
+   "from": "high",
+   "to": "credits"
+  },
+  "credits": {
+   "box": [
+    80,
+    820,
+    880,
+    440
+   ],
+   "from": "credits",
+   "to": "cta"
+  },
+  "end_block": {
+   "box": [
+    80,
+    820,
+    880,
+    600
+   ],
+   "from": "cta",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "rates",
+   "to": "cta"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    130
+   ],
+   "from": "rates",
+   "to": "cta"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ }
+}

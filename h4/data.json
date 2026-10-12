@@ -1,0 +1,25 @@
+{
+ "topic": "Manitoba personal income tax landscape, tax year 2026: frozen brackets and BPA, BPA phase-out, renters and homeowners credits",
+ "tax_year": 2026,
+ "example": {"r1": 0.108, "r2": 0.1275, "r3": 0.174, "t1": 47000, "t2": 100000, "bpa": 15780,
+   "from_income": 98000, "to_income": 102000, "phase_start": 200000, "phase_end": 400000, "renters": 625, "homeowners": 1600,
+   "note": "example raise, not a CRA rule; Manitoba tax only (federal tax on the raise not shown); taxable income, single, no other credits changing"},
+ "derive": {
+   "to_k": "to_income / 1000",
+   "low_part": "min(to_income, t2) - from_income",
+   "high_part": "to_income - t2",
+   "mb_on_raise": "round((min(to_income, t2) - from_income) * r2 + (to_income - t2) * r3)"
+ },
+ "spoken": {"r1": "ten point eight percent", "t1": "forty-seven thousand", "r2": "twelve point seven five", "t2": "a hundred thousand", "r3": "seventeen point four",
+   "bpa": "fifteen thousand seven hundred and eighty", "from_income": "ninety-eight thousand", "to_k": "a hundred and two",
+   "mb_on_raise": "six hundred and three", "phase_start": "two hundred thousand", "phase_end": "four hundred thousand",
+   "renters": "six hundred and twenty-five", "homeowners": "sixteen hundred"},
+ "sources": {
+   "rates_thresholds": "Manitoba Budget 2025, Tax Measures p.140 (gov.mb.ca/asset_library/en/budget2025/budget2025.pdf): 2024 rates 10.8% $0–47,000; 12.75% $47,001–100,000; 17.4% over $100,000",
+   "freeze": "Manitoba Budget 2025 p.140: 'Beginning with the 2025 tax year, indexation of the BPA and tax bracket thresholds to inflation will be frozen'; 2026 values per CRA T4127 (Jan 2026) 47,000 / 100,000 / BPA 15,780 (recorded in salary/PRODUCTION-BIBLE.md)",
+   "bpa": "gov.mb.ca Personal Tax Credits: BPA $15,780 for 2024 and 2025; credits at 10.8%",
+   "phase_out": "gov.mb.ca Personal Tax Credits: effective 2025, the Manitoba BPA is phased out over net income $200,000 to $400,000",
+   "renters": "gov.mb.ca Personal Tax Credits: Renters Affordability Tax Credit up to $625 for the 2026 tax year (Budget 2025 p.140)",
+   "homeowners": "gov.mb.ca Personal Tax Credits: Homeowners Affordability Tax Credit up to $1,600 for the 2026 tax year (principal residence)"
+ }
+}
