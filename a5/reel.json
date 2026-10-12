@@ -1,0 +1,278 @@
+{
+ "id": "a53",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "title": "YOU OWE $5,000?",
+  "sub": "A NOTICE · EXAMPLE"
+ },
+ "hold_after_vo": 1.7,
+ "cues": [
+  {
+   "id": "amt",
+   "beat": "hook",
+   "word": "five",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.5,
+   "gain": 0.75
+  },
+  {
+   "id": "pay",
+   "beat": "hook",
+   "word": "pay,"
+  },
+  {
+   "id": "inv",
+   "beat": "hook",
+   "word": "investigate."
+  },
+  {
+   "id": "suspects",
+   "beat": "suspects",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "s1",
+   "beat": "s1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "t5",
+   "beat": "s1",
+   "word": "T5.",
+   "sfx": "tick"
+  },
+  {
+   "id": "f15",
+   "beat": "s1",
+   "word": "Fifteen"
+  },
+  {
+   "id": "rate",
+   "beat": "s1",
+   "word": "thirty-three",
+   "sfx": "tick"
+  },
+  {
+   "id": "bill",
+   "beat": "s1",
+   "word": "whole",
+   "sfx": "chime"
+  },
+  {
+   "id": "s2",
+   "beat": "s2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "wrong",
+   "beat": "s2",
+   "word": "another",
+   "sfx": "pop"
+  },
+  {
+   "id": "acct",
+   "beat": "s2",
+   "word": "account"
+  },
+  {
+   "id": "s3",
+   "beat": "s3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "t3k",
+   "beat": "s3",
+   "word": "three",
+   "n": 2,
+   "sfx": "tick"
+  },
+  {
+   "id": "last2",
+   "beat": "s3",
+   "word": "two?"
+  },
+  {
+   "id": "expected",
+   "beat": "s3",
+   "word": "expected",
+   "sfx": "pop"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "time",
+   "beat": "reveal",
+   "word": "time."
+  },
+  {
+   "id": "ninety",
+   "beat": "reveal",
+   "word": "ninety",
+   "sfx": "tick"
+  },
+  {
+   "id": "object",
+   "beat": "reveal",
+   "word": "object"
+  },
+  {
+   "id": "daily",
+   "beat": "reveal",
+   "word": "daily",
+   "sfx": "impact",
+   "gain": 0.5
+  },
+  {
+   "id": "april",
+   "beat": "reveal",
+   "word": "April"
+  },
+  {
+   "id": "open",
+   "beat": "action",
+   "word": "Open",
+   "sfx": "tick"
+  },
+  {
+   "id": "match",
+   "beat": "action",
+   "word": "match",
+   "sfx": "tick"
+  },
+  {
+   "id": "payobj",
+   "beat": "action",
+   "word": "pay"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "pop"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    520,
+    880,
+    700
+   ],
+   "from": "start",
+   "to": "suspects"
+  },
+  "lineup": {
+   "box": [
+    80,
+    700,
+    880,
+    110
+   ],
+   "from": "suspects",
+   "to": "reveal"
+  },
+  "s1": {
+   "box": [
+    80,
+    840,
+    880,
+    410
+   ],
+   "from": "s1",
+   "to": "s2"
+  },
+  "s2": {
+   "box": [
+    80,
+    840,
+    880,
+    410
+   ],
+   "from": "s2",
+   "to": "s3"
+  },
+  "s3": {
+   "box": [
+    80,
+    840,
+    880,
+    410
+   ],
+   "from": "s3",
+   "to": "reveal"
+  },
+  "timeline": {
+   "box": [
+    80,
+    780,
+    880,
+    470
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "steps": {
+   "box": [
+    80,
+    760,
+    880,
+    640
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "suspects",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    130
+   ],
+   "from": "suspects",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ }
+}

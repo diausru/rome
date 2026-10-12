@@ -1,0 +1,84 @@
+{
+ "video": {
+  "title": "CRA says you owe $5,000: three suspects, two deadlines (A5 = list-2 #6)",
+  "duration": "TBD",
+  "mp4": "showreel/out/a5/a5-final.mp4 (share copy: a5-share.mp4)"
+ },
+ "sources": [
+  "Income Tax Act s.152(3.1)(b), 152(4) (laws-lois.justice.gc.ca, current to 2026-09-21) · current · CRA may reassess an individual within 3 years after the original notice of assessment",
+  "Income Tax Act s.161(1), s.248(1) 'balance-due day', s.248(11) · current · interest at the prescribed rate on unpaid tax from April 30 of the following year, compounded daily",
+  "Income Tax Act s.156.1(1), s.161(2) · current · instalments required when net tax owing exceeds $3,000 ($1,800 in Quebec) this year and in either of the two preceding years; interest on late or missing instalments",
+  "Income Tax Act s.225.1(1), (1.1)(c), (2) · current · no legal collection actions until 90 days after the notice is sent; after an objection, until 90 days after CRA's decision",
+  "Income Tax Act s.165(1)(a) · current · an individual may object by the later of one year after the filing-due date and 90 days after the notice",
+  "Income Tax Act s.117(2); Manitoba Budget 2025 p.140 / CRA T4127 2026 · 2026 · example rates 20.5% federal + 12.75% Manitoba"
+ ],
+ "yt": {
+  "titles": [
+   "Got a CRA Bill? You Have 90 Days (But Interest Is Already Running)",
+   "CRA Says You Owe $5,000? Check These 3 Things First",
+   "Why Does CRA Say I Owe Money? 3 Usual Suspects (Canada)"
+  ],
+  "description": "A CRA notice says you owe $5,000. Before you pay, or panic, check three usual suspects.\n\nSuspect 1: a forgotten slip. CRA matches slips (T4, T5…). Example: $15,000 of T5 interest never reported, taxed at about 33.25% (20.5% federal + 12.75% Manitoba at an ~$80K income) = $4,988, nearly the whole bill. CRA can generally reassess within 3 years of the original notice.\nSuspect 2: a payment applied to another year. Your CRA My Account shows how each payment was applied.\nSuspect 3: instalments. If your net tax owing was over $3,000 this year and in one of the two previous years, CRA expected payments during the year, and charges interest on late ones.\n\nThe twist: you have time. CRA can't start legal collection for 90 days after the notice, and you can object until the later of 90 days after the notice or one year after the filing deadline. But interest compounds daily from April 30, even while you sort it out.\n\nAction: open the notice, read the explanation of changes, match every slip in My Account, then pay or object before the deadline.\n\nNext: the filing deadlines that cost you money.\n\nSources: Income Tax Act ss. 152(3.1), 156.1, 161, 165(1), 225.1, 248. The notice and amounts are an example. General information, not advice.\n\n#CRA #CanadaTax #TaxTips",
+  "hashtags": "#CRA #CanadaTax #TaxTips #NoticeOfAssessment #PersonalFinanceCanada",
+  "keywords": "cra says i owe money, cra notice of assessment balance owing, why do i owe cra, cra reassessment, cra interest owing, notice of objection cra, cra instalments, cra collections 90 days, canada revenue agency",
+  "pinned": "Quick check: you paid CRA $5,000 in March but the notice still says you owe. Which suspect is it most likely? General info, not advice.",
+  "cta": "Next: the filing deadlines that cost you money. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "CRA says you owe $5,000 😬 Before you pay or panic: 3 suspects, and why you have 90 days (but interest is already running).",
+  "keywords": "cra says i owe money · cra notice of assessment · cra interest · notice of objection",
+  "hashtags": "#cra #canadiantaxes #taxtok #personalfinancecanada #taxseason",
+  "pinned": "You can object by the later of 90 days after the notice or 1 year after the filing deadline. Interest still runs. (General info, not advice.)",
+  "cta": "Follow for the next one: deadlines that cost you money."
+ },
+ "ig": {
+  "caption": "CRA says you owe $5,000? 🔍 Three usual suspects:\n\n1️⃣ A forgotten slip (e.g. $15K of T5 interest × ~33% = $4,988)\n2️⃣ A payment applied to another year (check My Account)\n3️⃣ Instalments: over $3,000 owing this year and one of the last two\n⏳ No legal collection for 90 days after the notice; object by the later of 90 days or 1 year after the filing deadline\n⚠️ Interest compounds daily from April 30\n\nSend this to someone who just opened a CRA letter.\n\nSource: Income Tax Act. Example only. General info, not advice.",
+  "keywords": "cra notice, cra owe money, notice of assessment, cra interest",
+  "hashtags": "#cra #canadiantaxes #personalfinancecanada #canadatax #taxtips #money",
+  "pinned": "Save this for the day the envelope arrives 📌",
+  "cta": "Send this to someone who just opened a CRA letter."
+ },
+ "eng": {
+  "question": "Which suspect was it for you, if you ever got one of these?",
+  "save": "Three checks and two deadlines in one place.",
+  "share": "Anyone who just got a balance-owing notice.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "cra says i owe money",
+  "secondary": "cra (≈29,417/mo, +10.8%); canada revenue agency (≈5,334/mo); 'cra says i owe money' <750/mo",
+  "intent": "Someone holding a balance-owing notice wants to know why and what to do before paying.",
+  "audience": "Employees and retirees 30–65 who received a notice of assessment or reassessment.",
+  "angle": "A calm investigation (three causes, documents, deadlines) instead of fear-based 'CRA is coming after you' Shorts; the 90-day windows vs daily interest twist.",
+  "questions": "Why does CRA say I owe money? · How long do I have to pay CRA? · Can I dispute a CRA notice of assessment? · Does CRA charge interest while I object? · What are CRA instalments?"
+ },
+ "next": [
+  {
+   "topic": "Filing deadlines that cost money (A8)",
+   "why": "Bridge in this video; next card row in the plan",
+   "intent": "tax filing deadline canada 2027",
+   "hook": "What missing April 30 really costs. [VERIFY penalty rules at production]",
+   "angle": "Verified deadlines and penalties",
+   "payoff": "A dated checklist"
+  },
+  {
+   "topic": "Refund or owe? (list-2 #1, absorbs A2)",
+   "why": "Same arc",
+   "intent": "why do i owe taxes canada",
+   "hook": "Same salary, one refund, one bill.",
+   "angle": "Withholding vs actual tax",
+   "payoff": "Fix it on the TD1"
+  },
+  {
+   "topic": "CRA reassessed you: can you challenge it? (list-2 #24)",
+   "why": "Natural follow-up to the objection deadline",
+   "intent": "notice of objection cra",
+   "hook": "You can say no to CRA, with a deadline.",
+   "angle": "Objection steps and timing",
+   "payoff": "How to file it"
+  }
+ ],
+ "series": "Card series, row 12 of PUBLISHING-PLAN §4 (after A1, bridged from it). Second investigation-format reel (list-2 #6, absorbs A5). Playlist: 'CRA letters & deadlines'.",
+ "research": "- vidIQ (2026-10-12): keyword research CA (5): 'cra says i owe money' <750/mo; 'cra' ≈29,417/mo (+10.8%); 'canada revenue agency' ≈5,334/mo. Competitor search CA by views (5): 'How to pay income tax owing to CRA' 21 s Short 50K; Fix My Books 'CRA How to: Pay Taxes Owing' 29K; CRA's own NOA explainer 9.6K. Shorts outliers (5): Faris CPA 'CRA Audits, Collections, Tax Debt — What to Do First' 167K and 'When the CRA Comes After You…' 106K (fear framing); TurboTax 'Why would I owe federal taxes' 714K (US). Titles scored (10): 'Got a CRA Bill? You Have 90 Days (But Interest Starts Now)' 94 → primary reworded to 'Is Already Running' for accuracy (interest runs from April 30; the reworded title was not re-scored to stay within the cap); 'CRA Says You Owe $5,000? Check These 3 Things First' 83. Balance 1,265 → 1,245 at the last reading.",
+ "retention": "TBD"
+}
