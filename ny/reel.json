@@ -1,0 +1,322 @@
+{
+ "id": "ny3",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "lines": [
+   "DOWN ON A STOCK?",
+   "SELL BY"
+  ],
+  "hero": "DEC 30",
+  "tags": [
+   {
+    "text": "CAPITAL LOSS",
+    "cue": "tagLoss",
+    "from": "left",
+    "x": 80,
+    "y": 600
+   },
+   {
+    "text": "T+1 SETTLEMENT",
+    "cue": "tagT1",
+    "from": "right",
+    "x": 660,
+    "y": 660
+   },
+   {
+    "text": "30-DAY RULE",
+    "cue": "tag30",
+    "from": "down",
+    "x": 700,
+    "y": 770
+   }
+  ]
+ },
+ "hold_after_vo": 1.7,
+ "cues": [
+  {
+   "id": "tagLoss",
+   "beat": "hook",
+   "word": "stock",
+   "sfx": "swish"
+  },
+  {
+   "id": "sell",
+   "beat": "hook",
+   "word": "Sell",
+   "sfx": "pop"
+  },
+  {
+   "id": "tagT1",
+   "beat": "hook",
+   "word": "Sell",
+   "offset": 0.25
+  },
+  {
+   "id": "dec30",
+   "beat": "hook",
+   "word": "December",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.7,
+   "gain": 0.8
+  },
+  {
+   "id": "tag30",
+   "beat": "hook",
+   "word": "loss"
+  },
+  {
+   "id": "rule",
+   "beat": "rule",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "gainsOk",
+   "beat": "rule",
+   "word": "gains."
+  },
+  {
+   "id": "salaryNo",
+   "beat": "rule",
+   "word": "salary."
+  },
+  {
+   "id": "ex",
+   "beat": "example",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "gain",
+   "beat": "example",
+   "word": "Twelve",
+   "offset": 0.0
+  },
+  {
+   "id": "loss",
+   "beat": "example",
+   "word": "eight",
+   "sfx": "tick"
+  },
+  {
+   "id": "net",
+   "beat": "example",
+   "word": "four",
+   "sfx": "tick"
+  },
+  {
+   "id": "taxable",
+   "beat": "example",
+   "word": "two",
+   "sfx": "chime"
+  },
+  {
+   "id": "six",
+   "beat": "example",
+   "word": "six."
+  },
+  {
+   "id": "date",
+   "beat": "date",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "settle",
+   "beat": "date",
+   "word": "settle",
+   "sfx": "tick"
+  },
+  {
+   "id": "taxyear",
+   "beat": "date",
+   "word": "tax"
+  },
+  {
+   "id": "trap",
+   "beat": "trap",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "window",
+   "beat": "trap",
+   "word": "thirty"
+  },
+  {
+   "id": "spouse",
+   "beat": "trap",
+   "word": "spouse",
+   "sfx": "pop"
+  },
+  {
+   "id": "denied",
+   "beat": "trap",
+   "word": "denied",
+   "sfx": "impact",
+   "gain": 0.55
+  },
+  {
+   "id": "acb",
+   "beat": "acb",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "cost",
+   "beat": "acb",
+   "word": "cost",
+   "sfx": "chime"
+  },
+  {
+   "id": "tfsa",
+   "beat": "tfsa",
+   "at": 0
+  },
+  {
+   "id": "cant",
+   "beat": "tfsa",
+   "word": "can't",
+   "sfx": "tick"
+  },
+  {
+   "id": "payoff",
+   "beat": "payoff",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "before30",
+   "beat": "payoff",
+   "word": "thirtieth.",
+   "sfx": "chime"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "pop"
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    880,
+    920,
+    350
+   ],
+   "from": "start",
+   "to": "rule"
+  },
+  "rule": {
+   "box": [
+    80,
+    360,
+    920,
+    400
+   ],
+   "from": "rule",
+   "to": "example"
+  },
+  "ledger": {
+   "box": [
+    80,
+    360,
+    920,
+    560
+   ],
+   "from": "example",
+   "to": "date"
+  },
+  "date": {
+   "box": [
+    80,
+    360,
+    920,
+    470
+   ],
+   "from": "date",
+   "to": "trap"
+  },
+  "trap": {
+   "box": [
+    80,
+    860,
+    880,
+    390
+   ],
+   "from": "trap",
+   "to": "acb"
+  },
+  "acb": {
+   "box": [
+    80,
+    860,
+    880,
+    330
+   ],
+   "from": "acb",
+   "to": "tfsa"
+  },
+  "tfsa": {
+   "box": [
+    80,
+    860,
+    880,
+    330
+   ],
+   "from": "tfsa",
+   "to": "payoff"
+  },
+  "end_block": {
+   "box": [
+    80,
+    1000,
+    880,
+    440
+   ],
+   "from": "payoff",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "hook",
+   "to": "payoff"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    130
+   ],
+   "from": "rule",
+   "to": "payoff"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ }
+}
