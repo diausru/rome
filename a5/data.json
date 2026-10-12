@@ -1,0 +1,46 @@
+{
+ "topic": "A CRA balance-owing notice: three usual causes to check, the 90-day windows and daily interest (federal rules; Manitoba rate used only in the example)",
+ "tax_year": 2026,
+ "example": {
+  "balance": 5000,
+  "t5": 15000,
+  "fed_rate": 0.205,
+  "mb_rate": 0.1275,
+  "instal_threshold": 3000,
+  "collection_days": 90,
+  "objection_days": 90,
+  "note": "example: Manitoba resident with taxable income about $80,000 before the missed slip (federal 20.5% band $57,375–$114,750, Manitoba 12.75% band $47,000–$100,000 for 2026); nothing withheld on interest income; credits unchanged; instalment bars are illustrative net tax owing amounts (example)",
+  "instal_years": [
+   {
+    "label": "2 YEARS AGO",
+    "owing": 2400
+   },
+   {
+    "label": "LAST YEAR",
+    "owing": 4200
+   },
+   {
+    "label": "THIS YEAR",
+    "owing": 5000
+   }
+  ]
+ },
+ "derive": {
+  "combined": "fed_rate + mb_rate",
+  "extra_tax": "t5 * (fed_rate + mb_rate)"
+ },
+ "spoken": {
+  "balance": "five thousand dollars",
+  "t5": "fifteen thousand dollars",
+  "instal_threshold": "three thousand dollars",
+  "collection_days": "ninety days"
+ },
+ "sources": {
+  "reassess": "ITA 152(3.1)(b), 152(4): CRA may reassess an individual within the normal reassessment period, 3 years after the original notice of assessment",
+  "interest": "ITA 161(1): interest at the prescribed rate on tax unpaid after the balance-due day; 248(1) balance-due day of an individual = April 30 of the following year; 248(11): compounded daily",
+  "instalments": "ITA 156.1(1): instalments required when net tax owing exceeds the instalment threshold ($3,000; $1,800 in Quebec) for the year and for either of the two preceding years; 161(2): instalment interest",
+  "collection": "ITA 225.1(1), (1.1)(c): no legal collection actions until 90 days after the day the notice of assessment was sent; 225.1(2): after an objection, none until 90 days after CRA confirms or varies",
+  "objection": "ITA 165(1)(a): an individual may object by the later of one year after the filing-due date and 90 days after the notice was sent",
+  "rates": "ITA 117(2) (federal 2026) and Manitoba Budget 2025 p.140 / CRA T4127 2026 (Manitoba brackets), as verified for H4"
+ }
+}

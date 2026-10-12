@@ -1,0 +1,45 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "A CRA notice says you owe five thousand dollars. Before you pay, or panic, let's investigate.",
+   0.32
+  ],
+  [
+   "suspects",
+   "Three usual suspects.",
+   0.3
+  ],
+  [
+   "s1",
+   "Suspect one: a forgotten T5. Fifteen thousand dollars of interest you never reported. At about thirty-three percent, that's nearly the whole bill.",
+   0.3
+  ],
+  [
+   "s2",
+   "Suspect two: a payment that went to another year. Your CRA account shows where each payment landed.",
+   0.3
+  ],
+  [
+   "s3",
+   "Suspect three: instalments. Owe over three thousand dollars this year and in one of the last two? CRA expected payments during the year.",
+   0.32
+  ],
+  [
+   "reveal",
+   "The twist: you have time. No legal collection for ninety days, and you can object at least that long. But interest compounds daily from April thirtieth.",
+   0.32
+  ],
+  [
+   "action",
+   "Open the notice, read the explanation of changes, match every slip, then pay or object.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: the filing deadlines that cost you money. Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}

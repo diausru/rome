@@ -1,0 +1,53 @@
+{
+ "total": 67.259,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "A CRA notice says you owe five thousand dollars. Before you pay, or panic, let's investigate.",
+   "start": 0.25,
+   "end": 7.53
+  },
+  {
+   "id": "suspects",
+   "text": "Three usual suspects.",
+   "start": 7.85,
+   "end": 9.69
+  },
+  {
+   "id": "s1",
+   "text": "Suspect one: a forgotten T5. Fifteen thousand dollars of interest you never reported. At about thirty-three percent, that's nearly the whole bill.",
+   "start": 9.99,
+   "end": 20.783
+  },
+  {
+   "id": "s2",
+   "text": "Suspect two: a payment that went to another year. Your CRA account shows where each payment landed.",
+   "start": 21.083,
+   "end": 29.505
+  },
+  {
+   "id": "s3",
+   "text": "Suspect three: instalments. Owe over three thousand dollars this year and in one of the last two? CRA expected payments during the year.",
+   "start": 29.805,
+   "end": 40.765
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: you have time. No legal collection for ninety days, and you can object at least that long. But interest compounds daily from April thirtieth.",
+   "start": 41.085,
+   "end": 53.424
+  },
+  {
+   "id": "action",
+   "text": "Open the notice, read the explanation of changes, match every slip, then pay or object.",
+   "start": 53.744,
+   "end": 61.473
+  },
+  {
+   "id": "cta",
+   "text": "Next: the filing deadlines that cost you money. Follow so you don't miss it.",
+   "start": 61.773,
+   "end": 67.259
+  }
+ ]
+}
