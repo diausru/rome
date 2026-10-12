@@ -57,38 +57,61 @@
      "fxOut": "fade",
      "inDur": 0.01,
      "off": -1.0,
+     "bg": {
+      "src": "lf/lf05/plates/s1.jpg",
+      "depth": "lf/lf05/plates/s1_d.png",
+      "dim": 0.7
+     },
      "tiles": [
       {
        "src": "lf/lf05/plates/s1.jpg",
+       "depth": "lf/lf05/plates/s1_d.png",
        "x": 40,
        "y": 70,
        "w": 700,
        "h": 400,
-       "rot": -4
+       "rot": -4,
+       "enter": "drop",
+       "delay": 0.12,
+       "enterDur": 1.0,
+       "move": "dolly"
       },
       {
        "src": "lf/lf05/plates/c1.jpg",
+       "depth": "lf/lf05/plates/c1_d.png",
        "x": 1330,
        "y": 50,
        "w": 520,
        "h": 400,
-       "rot": 5
+       "rot": 5,
+       "enter": "drop",
+       "delay": 0.38,
+       "enterDur": 1.0,
+       "move": "truck"
       },
       {
        "src": "lf/lf05/plates/c2.jpg",
+       "depth": "lf/lf05/plates/c2_d.png",
        "x": 1300,
-       "y": 600,
-       "w": 560,
-       "h": 420,
-       "rot": -4
+       "y": 755,
+       "w": 540,
+       "h": 310,
+       "rot": -4,
+       "enter": "slideR",
+       "delay": 0.7,
+       "move": "orbit"
       },
       {
        "src": "lf/lf05/plates/c3.jpg",
+       "depth": "lf/lf05/plates/c3_d.png",
        "x": 60,
-       "y": 600,
-       "w": 560,
-       "h": 420,
-       "rot": 4
+       "y": 755,
+       "w": 540,
+       "h": 310,
+       "rot": 4,
+       "enter": "pop",
+       "delay": 0.95,
+       "move": "rise"
       }
      ],
      "kicker": "DISABILITY TAX CREDIT \u00b7 CANADA",
@@ -98,8 +121,8 @@
      "cy": 255,
      "stamp": {
       "text": "UP TO 10 YEARS BACK",
-      "x": 735,
-      "y": 850,
+      "x": 700,
+      "y": 870,
       "rot": -6,
       "size": 52
      },
