@@ -1,0 +1,84 @@
+{
+ "video": {
+  "title": "Your tuition slip is worth money: whose? (D1, tuition credits)",
+  "duration": "70.21 s (1685 frames)",
+  "mp4": "showreel/out/d1/d1-final.mp4 (share copy: d1-share.mp4)"
+ },
+ "sources": [
+  "Income Tax Act s.118.5(1)(a), (1.1) (laws-lois.justice.gc.ca, current to 2026-09-21) · 2026 · tuition credit = appropriate percentage × eligible tuition paid to a post-secondary institution in Canada; no credit for an institution unless fees paid to it in the year exceed $100",
+  "Income Tax Act s.117(2)(a) and s.248(1) 'appropriate percentage' · 2026 · lowest federal rate 14% = the tuition credit rate (2026)",
+  "Income Tax Act ss.118.81, 118.9, 118.8; CRA canada.ca 'Transferring and carrying forward amounts' and 'Completing Schedule 11' (line 32300) · 2025–2026 · the student claims first; up to $5,000 of the year's tuition (minus what the student used) can be transferred to one person: a parent or grandparent (claimed on line 32400) or a spouse/common-law partner",
+  "Income Tax Act s.118.61 · current · unused tuition amounts carry forward to later years and can be claimed only by the student; carried-forward amounts cannot be transferred",
+  "Income Tax Act s.118(1)(c), (1.1) · 2023+ (indexed) · basic personal amount $15,000 for 2023 and later at incomes up to the 29% bracket, indexed: a student with $12,000 of income owes no federal tax before tuition",
+  "Income Tax Act s.118.6(2.1) [Repealed, 2016, c. 7, s. 16]; CRA Income Tax Folio S1-F2-C1 (canada.ca) · 2017 → · federal education and textbook credits eliminated starting 2017"
+ ],
+ "yt": {
+  "titles": [
+   "Tuition Tax Credit Canada: Can Your Parents Claim It?",
+   "Your Tuition Slip Is Worth Money. But Whose? (T2202, Canada)",
+   "Unused Tuition Credits in Canada: Transfer or Carry Forward?"
+  ],
+  "description": "Your T2202 tuition slip is worth real money at tax time. The question is: whose money?\n\nThe rule (federal, 2026): the tuition credit is 14% of eligible tuition shown on your T2202, if you paid that school more than $100 in the year.\nExample: $8,000 of tuition = a $1,120 federal credit.\n\nStep 1: the student claims it first. It must bring the student's own tax to zero. With $12,000 from a summer job, a student already owes no federal tax, so none of the credit is needed that year.\nStep 2: transfer. Up to $5,000 of this year's tuition can go to ONE person: a parent, a grandparent, or a spouse/common-law partner. That's $700 off their tax (5,000 × 14%), and only if they owe tax.\nStep 3: carry forward. The other $3,000 stays with the student, with no expiry: a $420 credit, but only on the student's own future return. Carried-forward amounts can't be transferred later.\n\nAnd the federal education and textbook amounts ended after 2016. Tuition is what's left.\n\nNext: Manitoba's tax brackets on a real paycheque.\n\nSources: Income Tax Act ss. 117(2), 118.5, 118.61, 118.81, 118.9; CRA line 32300 and Schedule 11 (canada.ca); CRA Folio S1-F2-C1. Federal amounts only; provincial credits differ. The numbers are an example. General information, not advice.\n\n#TuitionTaxCredit #StudentTaxes #CanadaTax",
+  "hashtags": "#TuitionTaxCredit #StudentTaxes #CanadaTax #CRA #T2202",
+  "keywords": "tuition tax credit canada, t2202, transfer tuition to parent, unused tuition credits carry forward, student tax return canada, education tax credits, schedule 11, line 32300, tuition credit how does it work, student tax credits canada",
+  "pinned": "Quick check: your T2202 shows $8,000 and you earned $12,000. How much can your mom or dad use this year: $1,120, $700, or $0? Answer below. General info, not advice.",
+  "cta": "Next: Manitoba's tax brackets on a real paycheque. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Your T2202 is worth money 🎓 But it's yours first. Up to $5,000 can go to a parent; the rest waits for you, no expiry.",
+  "keywords": "tuition tax credit canada · t2202 · transfer tuition to parent · unused tuition credits",
+  "hashtags": "#studenttaxes #tuition #canadiantaxes #cra #studentlife",
+  "pinned": "Education and textbook amounts? Federally they ended after 2016. Tuition is what's left. (General info, not advice.)",
+  "cta": "Follow for the next one: Manitoba tax brackets on a real paycheque."
+ },
+ "ig": {
+  "caption": "Your tuition slip is worth money 🎓🇨🇦 But whose?\n\n1️⃣ Federal credit = 14% of eligible tuition on your T2202 (more than $100 per school)\n   e.g. $8,000 tuition → $1,120\n2️⃣ It's yours first: it must bring your own tax to zero\n3️⃣ Then up to $5,000 of this year's tuition → ONE parent, grandparent or spouse ($700 off their tax, if they owe tax)\n4️⃣ The rest carries forward for you, no expiry ($3,000 → $420 later)\n❌ Federal education & textbook amounts: ended after 2016\n\nSend this to a student (or their parents) before tax season.\n\nSource: Income Tax Act; CRA (canada.ca). Federal, example only. General info, not advice.",
+  "keywords": "tuition tax credit, t2202, student tax return canada, transfer tuition to parents",
+  "hashtags": "#studenttaxes #tuition #canadiantaxes #personalfinancecanada #canadatax #university",
+  "pinned": "Save this for tax season 📌",
+  "cta": "Send this to a student (or their parents) before tax season."
+ },
+ "eng": {
+  "question": "Did your parents ever claim your tuition, or did you carry it forward?",
+  "save": "The three steps (claim, transfer, carry forward) in one place for tax season.",
+  "share": "Post-secondary students and their parents.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "tuition tax credit canada",
+  "secondary": "education tax credits (≈5,177/mo, competition 18.6); tax tips canada (≈5,298/mo, competition 8.3); student tax credits canada, unused tuition credits carry forward, how to claim tuition credits (<750 each)",
+  "intent": "A student or parent with a T2202 wants to know who can use the tuition amount and how much it is worth.",
+  "audience": "Post-secondary students 18–25 and their parents 45–60.",
+  "angle": "One worked example that follows the money: claim first, transfer up to $5,000, carry the rest; plus what no longer exists. Competitors are long-form (8–15 min) or older Shorts that still mention the education and textbook amounts eliminated after 2016.",
+  "questions": "Can my parents claim my tuition? · How much tuition can I transfer to my parents? · Do unused tuition credits expire? · Can I transfer carried-forward tuition later? · Is the textbook credit still available?"
+ },
+ "next": [
+  {
+   "topic": "Manitoba tax landscape (H4)",
+   "why": "Bridge in this video; next card-format row in the plan",
+   "intent": "manitoba tax brackets 2026",
+   "hook": "Manitoba's brackets didn't move. Your pay did.",
+   "angle": "Verified 2026 Manitoba brackets and credits on a real paycheque",
+   "payoff": "What it means on a real salary"
+  },
+  {
+   "topic": "Credits people miss (A1)",
+   "why": "Next row (January) in the plan",
+   "intent": "tax credits canada missed",
+   "hook": "Three credits most people never claim.",
+   "angle": "Verified credits with eligibility",
+   "payoff": "A checklist before filing"
+  },
+  {
+   "topic": "Student loan interest credit",
+   "why": "Natural follow-up for the same audience",
+   "intent": "student loan interest tax credit canada",
+   "hook": "Paying back student loans? The interest can cut your tax.",
+   "angle": "ITA 118.62: credit at the lowest federal rate (14% for 2026), interest carried forward up to five years",
+   "payoff": "When to claim it"
+  }
+ ],
+ "series": "Card series, row 11 of PUBLISHING-PLAN §4 (after G5, bridged from it); first card reel on motion engine v1. Playlist: 'Students & families'.",
+ "research": "- vidIQ (2026-10-12): keyword research CA (5): 'tuition tax credit canada' <750/mo; 'education tax credits' ≈5,177/mo (competition 18.6); 'tax tips canada' ≈5,298/mo. Competitor search CA by views (5): long-form explainers (Dr. Steph 'Tuition tax credits explained' 65K, Nick's Taxes 33K, CloudTax 2019 Short 21K still citing the education/textbook amounts). Shorts outliers (5): no relevant results (Indian 'tuition' comedy skits). Titles scored (10): 'Tuition Tax Credit Canada: Can Your Parents Claim It?' 91 (primary), 'Your Tuition Slip Is Worth Money. But Whose? (T2202, Canada)' 73. Balance 1,395 → 1,370 (25 credits).",
+ "retention": "Hook (0–6.5 s): topic on frame 0 ('YOUR TUITION SLIP'), tags from three sides, gold 'WHOSE?' on the open-loop word ✅. Rule and 14% by 12 s, '$1,120' counts up exactly on 'one thousand' at 19 s ✅. Scene change into the kitchen with the parent at 22 s when 'yours first' is spoken; '$0 tax' at 31.5 s ✅. Transfer bar fills to $5,000 and '$700' lands on 'seven' at 40.8 s ✅. Third scene (first job) at 44.8 s for the carry-forward: the payoff of 'whose?' ✅. Weakest point: 32–44 s (the longest line, the transfer), carried by the bar, the chips and the count-up."
+}
