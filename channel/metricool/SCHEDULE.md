@@ -75,3 +75,11 @@ YouTube only · Wed 2026-10-14 16:00 America/Winnipeg · Metricool id 393445798 
 
 ## LF-02 (YouTube, scheduled 2026-10-11 on user command)
 - Post id 393575027 · Wed 2026-10-21 16:00 America/Winnipeg · public · EDUCATION · not for kids · AI-content flag on · title "Don't Pay for Tax Software Until You Watch This (Canada)" · media Drive 1mYgUWYQ4Rh2amEbNpYoDfiG5phxA_EPs (LF02-1080p.mp4, rehosted by Metricool) · thumbnail: user adds.
+
+## Long-form schedule update (2026-10-12, user command; verified with getScheduledPosts)
+Slot from Metricool best-time data for YouTube: Wednesday 16:00 America/Winnipeg (highest weekly value 12,033).
+- LF-01 · Wed 2026-10-14 16:00 · post 393450438 (user-finished, thumbnail set) · Pending
+- LF-02 · Wed 2026-10-21 16:00 · post 394483705 (was 393576546; media replaced with clean-audio LF02-1080p.mp4, 94,429,006 bytes, verified) · thumbnail kept · Pending
+- LF-03 · Wed 2026-10-28 16:00 · post 394482856 · "You Make $100,000 in Canada — Here's Where Every Dollar Actually Goes (2026)" (vidIQ 97) · media from GitHub (clean audio, size verified) · thumbnail: user adds
+- LF-04 · Wed 2026-11-04 16:00 · post 394483313 · "Moving From Manitoba to Alberta on $100K…" (vidIQ 93) · media verified · thumbnail: user adds
+- LF-05 · Wed 2026-11-11 16:00 · post 394483485 · "Disability Tax Credit Canada: Who Qualifies, Who Signs…" (vidIQ 88) · media from Drive (size verified) · thumbnail: user adds
