@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Credits people miss: one family, three cases (A1)",
-  "duration": "TBD",
+  "duration": "69.83 s (1676 frames)",
   "mp4": "showreel/out/a1/a1-final.mp4 (share copy: a1-share.mp4)"
  },
  "sources": [
@@ -79,5 +79,5 @@
  ],
  "series": "Card series, row 12 of PUBLISHING-PLAN §4 (after H4, bridged from it). First reel in the list-2 investigation format; Retention Blueprint + 25 s test render. Playlist: 'Credits & refunds'.",
  "research": "- vidIQ (2026-10-12): keyword research CA (5): 'tax credits canada' <750/mo; 'tax tips canada' ≈5,298; 'tax return canada' ≈4,573; 'tax planning canada' ≈4,950. Competitor search CA by views (5): Ramsey 'Do You Not Know How Tax Deductions Work?' 38 s Short 2.36M (US); Michael Kim CPA 'Pay less taxes in Canada 2026' 323K (12 min); TVO Knowledge Gap refundable vs non-refundable 3.8K. Shorts outliers 'tax credits most people miss' (5): mostly US; 'Don't miss these new tax incentives' breakout 166. Titles scored (10): '3 Tax Credits Canadians Miss (One Family Almost Lost $4,550)' 82 (primary), 'Tax Credits That Pay You Even If You Owe $0 (Canada 2026)' 76. Calls made: 25 credits; balance measured 1,300 → 1,285 (the meter showed 15 at the time of measuring).",
- "retention": "TBD"
+ "retention": "Hook (0–7.5 s): topic on frame 0 ('CREDITS PEOPLE MISS'), three case folders drop on 'Three', $4,550 counts up on 'Four' ✅ (the promised result is on screen by 4 s). Promise at 7.7 s poses the open question '$0 TAX?' ✅. Each case lands its number within ~8 s of its start (case 1 $250 at 20.8 s; case 2 $1,500 at 34.7 s; case 3 $2,800 at 46.9 s), and the 'found' stack grows after each ✅. Reveal at 49.6 s answers the $0 question (split screen + stamps) ✅. Weakest point: case 2 (22–36 s) carries the most conditions; the year scrub keeps it moving."
 }
