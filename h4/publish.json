@@ -1,0 +1,83 @@
+{
+ "video": {
+  "title": "Manitoba's tax lines are frozen (H4, Manitoba tax landscape 2026)",
+  "duration": "70.58 s (1694 frames)",
+  "mp4": "showreel/out/h4/h4-final.mp4 (share copy: h4-share.mp4)"
+ },
+ "sources": [
+  "Manitoba Budget 2025, Tax Measures, p.140 (gov.mb.ca/asset_library/en/budget2025/budget2025.pdf) · 2024 → · rates 10.8% to $47,000, 12.75% to $100,000, 17.4% over $100,000; 'Beginning with the 2025 tax year, indexation of the BPA and tax bracket thresholds to inflation will be frozen'",
+  "CRA T4127 Payroll Deductions Formulas, January 2026 (Manitoba table) · 2026 · thresholds $47,000 / $100,000 and BPA $15,780 unchanged for 2026 (recorded in salary/PRODUCTION-BIBLE.md)",
+  "gov.mb.ca Personal Income Taxes – Personal Tax Credits · 2024–2026 · BPA $15,780 for 2024 and 2025; from 2025 the BPA is phased out over net income $200,000 to $400,000",
+  "gov.mb.ca Personal Tax Credits; Manitoba Budget 2025 p.140 · 2026 · Renters Affordability Tax Credit up to $625 (2026)",
+  "gov.mb.ca Personal Tax Credits · 2026 · Homeowners Affordability Tax Credit up to $1,600 (2026), principal residence"
+ ],
+ "yt": {
+  "titles": [
+   "Got a Raise in Manitoba? Here's the Tax on It (2026)",
+   "Manitoba's Tax Brackets Are Frozen. What That Costs You (2026)",
+   "Manitoba Income Tax 2026: The Lines That Didn't Move"
+  ],
+  "description": "Prices went up. Your pay went up. Manitoba's tax brackets haven't moved since 2024.\n\nManitoba 2026 rates on taxable income: 10.8% up to $47,000 · 12.75% up to $100,000 · 17.4% above $100,000.\nSince the 2025 tax year, Manitoba has frozen the indexation of those thresholds and of the basic personal amount ($15,780). No inflation increase.\n\nExample: a raise takes taxable income from $98,000 to $102,000. $2,000 is taxed at 12.75% and $2,000 at 17.4%: $603 of Manitoba tax on that raise (federal tax not included).\nWith frozen lines, a raise that only matches prices can push more of your pay into a higher rate.\n\nHigh incomes: from 2025 the Manitoba basic personal amount is phased out between $200,000 and $400,000 of net income.\nThe other side, for 2026: the Renters Affordability Tax Credit goes up to $625, and the Homeowners Affordability Tax Credit up to $1,600.\n\nNext: the tax credits most Canadians never claim.\n\nSources: Manitoba Budget 2025 (Tax Measures); gov.mb.ca Personal Tax Credits; CRA T4127 (January 2026). Manitoba tax only; the numbers are an example. General information, not advice.\n\n#ManitobaTax #Winnipeg #CanadaTax",
+  "hashtags": "#ManitobaTax #Winnipeg #CanadaTax #TaxBrackets #Manitoba",
+  "keywords": "manitoba tax brackets 2026, manitoba income tax, manitoba tax rates, bracket creep, manitoba basic personal amount, winnipeg taxes, manitoba renters tax credit, homeowners affordability tax credit, raise tax canada",
+  "pinned": "Quick check: your taxable income goes from $95,000 to $99,000 in Manitoba. Which rate applies to the raise: 10.8%, 12.75% or 17.4%? General info, not advice.",
+  "cta": "Next: the tax credits most Canadians never claim. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Manitoba froze its tax brackets 🧊 Your raise still moves. Here's what $4,000 more costs at the $100K line.",
+  "keywords": "manitoba tax brackets · manitoba income tax 2026 · bracket creep · winnipeg taxes",
+  "hashtags": "#manitoba #winnipeg #canadiantaxes #taxtok #personalfinancecanada",
+  "pinned": "Renting in Manitoba? The Renters Affordability Tax Credit is up to $625 for 2026. (General info, not advice.)",
+  "cta": "Follow for the next one: tax credits most Canadians never claim."
+ },
+ "ig": {
+  "caption": "Manitoba's tax lines are frozen 🧊🇨🇦\n\n1️⃣ 2026 rates: 10.8% to $47K · 12.75% to $100K · 17.4% above\n2️⃣ Since 2025: no inflation increase for those lines or the $15,780 basic amount\n3️⃣ Raise from $98K to $102K → $603 of Manitoba tax on it ($2K × 12.75% + $2K × 17.4%)\n4️⃣ Net income $200K–$400K: the basic amount phases out\n✅ 2026 credits: renters up to $625, homeowners up to $1,600\n\nSend this to someone in Manitoba who just got a raise.\n\nSource: Manitoba Budget 2025; gov.mb.ca; CRA T4127. Example only. General info, not advice.",
+  "keywords": "manitoba tax brackets, manitoba income tax, winnipeg, bracket creep",
+  "hashtags": "#manitoba #winnipeg #canadiantaxes #personalfinancecanada #canadatax #taxseason",
+  "pinned": "Save this for tax season 📌",
+  "cta": "Send this to someone in Manitoba who just got a raise."
+ },
+ "eng": {
+  "question": "Did your last raise keep up with prices?",
+  "save": "Manitoba's 2026 rates, thresholds and credits in one place.",
+  "share": "Manitobans who just got a raise, renters and homeowners.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "manitoba tax brackets",
+  "secondary": "winnipeg (≈19,230/mo, +23% vs baseline); manitoba (≈9,423/mo); 'manitoba tax brackets' <750/mo",
+  "intent": "A Manitoba employee wants to know the 2026 rates and why a raise feels smaller.",
+  "audience": "Manitoba employees 25–60, renters and homeowners; Winnipeg.",
+  "angle": "The one Manitoba-specific change national videos skip: indexation frozen from 2025, shown on a raise across the $100,000 line, plus the BPA phase-out and the 2026 credits. Different from LF-04 (Manitoba vs Alberta move) and LF-01 (federal brackets).",
+  "questions": "What are Manitoba's tax brackets for 2026? · Did Manitoba freeze tax brackets? · What is bracket creep? · How much tax on a raise in Manitoba? · What is the Manitoba renters tax credit for 2026?"
+ },
+ "next": [
+  {
+   "topic": "Tax credits most Canadians never claim (A1)",
+   "why": "Bridge in this video; next card row (January) in the plan",
+   "intent": "tax credits canada missed",
+   "hook": "Credits most people never claim.",
+   "angle": "Verified federal credits with eligibility",
+   "payoff": "A checklist before filing"
+  },
+  {
+   "topic": "Got a CRA letter? (A5)",
+   "why": "Next row in the plan",
+   "intent": "cra letter what to do",
+   "hook": "Opened a CRA letter? Do this first.",
+   "angle": "Verified CRA steps",
+   "payoff": "A calm action plan"
+  },
+  {
+   "topic": "Manitoba renters and homeowners credits, in detail",
+   "why": "Strong local interest (Winnipeg +23%)",
+   "intent": "manitoba renters tax credit 2026",
+   "hook": "Renting in Manitoba? $625 is on the table.",
+   "angle": "gov.mb.ca rules: who qualifies, how to claim",
+   "payoff": "Claim it right"
+  }
+ ],
+ "series": "Card series, row 11 of PUBLISHING-PLAN §4 (after D1, bridged from it). Second reel on motion engine v1, built with a different hook and visual set (Variety rule). Playlist: 'Provinces'.",
+ "research": "- vidIQ (2026-10-12): keyword research CA (5): 'manitoba tax brackets' <750/mo; 'winnipeg' ≈19,230/mo (+23%); 'manitoba' ≈9,423/mo. Competitor search CA by views (5): national 2026 explainers (BNN Bloomberg 'Understanding tax brackets for 2026' 27K; CPP/TD1 guides); no Manitoba-specific Short. Shorts outliers 'bracket creep' (5): 'Bracket Creep Explained' (AU, 39 s, 31K, breakout 21.9) shows the concept works as a Short. Titles scored (10): 'Got a Raise in Manitoba? Here's the Tax on It (2026)' 94 (primary), 'Manitoba's Tax Brackets Are Frozen. What That Costs You (2026)' 82. Balance 1,370 → 1,345 (25 credits).",
+ "retention": "Hook (0–7 s): topic on frame 0 ('MANITOBA TAX LINES'), ticker rows on 'Prices' / 'pay', ice stamp on 'moved' ✅. Ladder rises rate by rate as spoken (9–16 s); frost and locks from 'lines' (20 s), FROZEN on 'frozen' (25.6 s) ✅. Scene change into the apartment at 26.4 s; slider crosses the frozen $100K line, $603 lands on 'six' at 37.5 s ✅. Full-frame 'HIGHER RATE' at 43 s answers the hook's 'your pay went up' ✅. Bridge at 46 s; receipts at 57 / 60 s. Weakest point: 46–53 s (high incomes, a minority of viewers), kept short with the melting bar and GONE stamp."
+}

@@ -1,0 +1,53 @@
+{
+ "total": 68.843,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Prices went up. Your pay went up. Manitoba's tax brackets haven't moved since twenty twenty-four.",
+   "start": 0.25,
+   "end": 7.284
+  },
+  {
+   "id": "rates",
+   "text": "Three rates: ten point eight percent to forty-seven thousand, twelve point seven five to a hundred thousand, seventeen point four above.",
+   "start": 7.624,
+   "end": 18.273
+  },
+  {
+   "id": "freeze",
+   "text": "Since twenty twenty-five, those lines and the fifteen thousand seven hundred and eighty dollar basic personal amount are frozen.",
+   "start": 18.573,
+   "end": 26.048
+  },
+  {
+   "id": "example",
+   "text": "A raise takes your taxable income from ninety-eight thousand to a hundred and two? Half is taxed at twelve point seven five, half at seventeen point four: six hundred and three dollars to Manitoba.",
+   "start": 26.348,
+   "end": 40.053
+  },
+  {
+   "id": "creep",
+   "text": "So a raise that only matches prices can push more of your pay into a higher rate.",
+   "start": 40.353,
+   "end": 45.953
+  },
+  {
+   "id": "high",
+   "text": "Over two hundred thousand, the basic amount shrinks. At four hundred thousand, it's gone.",
+   "start": 46.253,
+   "end": 53.506
+  },
+  {
+   "id": "credits",
+   "text": "On the other side, for twenty twenty-six: renters get up to six hundred and twenty-five dollars, homeowners up to sixteen hundred.",
+   "start": 53.806,
+   "end": 62.568
+  },
+  {
+   "id": "cta",
+   "text": "Next: the tax credits most Canadians never claim. Follow so you don't miss it.",
+   "start": 62.908,
+   "end": 68.843
+  }
+ ]
+}

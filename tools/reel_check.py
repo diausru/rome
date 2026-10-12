@@ -129,14 +129,21 @@ def main():
     if 'derive' in data:
         # generic: values = example inputs + data.json "derive" formulas; every "spoken" phrase must be in the VO and,
         # for plain amounts, equal the value read aloud ("and" and commas ignored; rates checked as "N percent")
-        env = dict(ex); env.update({k: round(eval(e, {'__builtins__': {}}, dict(env, min=min, max=max)), 6) for k, e in data['derive'].items()})
+        env = dict(ex); env.update({k: round(eval(e, {'__builtins__': {}}, dict(env, min=min, max=max, round=round)), 6) for k, e in data['derive'].items()})
         norm = lambda s: re.sub(r'\s+', ' ', s.lower().replace('-', ' ').replace(',', '').replace(' and ', ' ')).strip()
         for k, spoken in data['spoken'].items():
             val = env[k]
-            if spoken.replace(',', '') not in vo: fx.append(f'"{spoken}" not in the VO')
-            if 0 < val < 1: ok = norm(spoken) == norm(words(round(val * 100)) + ' percent')
-            elif spoken.startswith('a '): ok = norm(spoken).endswith(norm(words(int(val)).split(' ', 1)[-1]) + ' dollars') or norm(spoken) == 'a ' + norm(words(int(val)).split(' ', 1)[-1]) + ' dollars'
-            else: ok = norm(spoken) == norm(words(int(round(val))))
+            if spoken.replace(',', '').replace('-', ' ') not in vo: fx.append(f'"{spoken}" not in the VO')
+            def pct_words(v):
+                ip, dp = f'{v * 100:.4f}'.rstrip('0').rstrip('.').partition('.')[::2]
+                return words(int(ip)) + ((' point ' + ' '.join(ONES[int(c)] for c in dp)) if dp else '')
+            cands = []
+            if 0 < val < 1: cands += [pct_words(val), pct_words(val) + ' percent']
+            else:
+                w = words(int(round(val))); cands += [w, w + ' dollars']
+                if w.startswith('one '): cands += ['a ' + w[4:], 'a ' + w[4:] + ' dollars']
+                if val % 100 == 0 and 1000 < val < 10000: cands += [words(int(val // 100)) + ' hundred']
+            ok = norm(spoken) in {norm(c) for c in cands}
             if not ok: fx.append(f'{k}: data {val} ≠ spoken "{spoken}"')
         summary = ', '.join(f'{k} {env[k]:g}' for k in data['spoken'])
     else:
