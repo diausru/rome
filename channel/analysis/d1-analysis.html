@@ -1,0 +1,151 @@
+<title>Tuition Credit Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column like an accountant's working paper — verdict first, then the evidence ledger (demand → competitors → audience → titles), each a ruled section with tabular figures. */
+:root {
+  --bg: #f6f8fa;
+  --paper: #ffffff;
+  --ink: #18212b;
+  --muted: #5b6672;
+  --rule: #d9e0e7;
+  --accent: #a3283b;      /* cranberry: the key point */
+  --gold: #a87412;        /* ledger figures */
+  --good: #2f7a52;
+  --bar: #c9d3dd;
+  --bar-hi: #a3283b;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+    --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+  --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--muted); margin: 0; }
+.verdict { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; padding: 20px 22px; display: grid; gap: 10px; }
+.verdict h2 { margin: 0; font: 600 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.verdict ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+section { display: grid; gap: 16px; border-top: 1px solid var(--rule); padding-top: 24px; }
+section h2 { font: 700 24px/1.15 var(--display); margin: 0; text-wrap: balance; }
+section > p { margin: 0; max-width: 64ch; color: var(--muted); }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.kv div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 4px; }
+.kv b { font: 600 28px/1.1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.kv span { font-size: 13px; color: var(--muted); }
+.bars { display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: minmax(150px, 230px) 1fr auto; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 12px; background: transparent; border-radius: 3px; position: relative; }
+.bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 3px; }
+.bar.hi .fill { background: var(--bar-hi); }
+.bar .num { font: 500 13px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 92px; text-align: right; }
+.bar .num small { color: var(--good); }
+.note { font-size: 13px; color: var(--muted); }
+.table { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+.tag.us { color: var(--accent); border-color: var(--accent); }
+.titles { display: grid; gap: 10px; }
+.t { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; }
+.t.win { border-color: var(--accent); }
+.t q { quotes: none; font-weight: 600; min-width: 0; }
+.t .score { font: 600 30px/1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.t .meter { grid-column: 1 / -1; height: 6px; background: var(--bar); border-radius: 3px; overflow: hidden; }
+.t .meter i { display: block; height: 100%; background: var(--gold); }
+.t.win .meter i { background: var(--accent); }
+.gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.gap div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; }
+.gap h3 { margin: 0; font: 600 15px/1.3 var(--body); }
+.gap p { margin: 0; font-size: 14px; color: var(--muted); }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; }
+@media (max-width: 520px) { .bar { grid-template-columns: 1fr auto; } .bar .track { grid-column: 1 / -1; order: 3; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Tax Secrets Canada · Short D1 · анализ vidIQ · 12 октября 2026</div>
+    <h1>Справка T2202: <em>чьи это деньги?</em></h1>
+    <p class="lede">Короткий разбор перед сценарием: спрос, конкуренты, вирусные Shorts, наш угол и оценка заголовков.</p>
+  </header>
+
+  <div class="verdict">
+    <h2>Вывод</h2>
+    <ul>
+      <li>Точные запросы про tuition credit в Канаде дают меньше 750 поисков в месяц каждый. Объём есть у «education tax credits» (около 5 177) и «tax tips canada» (около 5 298). Поэтому в заголовке стоит поисковая фраза «Tuition Tax Credit Canada», а за ней вопрос, который задают родители.</li>
+      <li>Конкуренты — длинные разборы на 8–15 минут и старые Shorts. CloudTax (2019, 21 тыс. просмотров) до сих пор упоминает суммы на образование и учебники, отменённые после 2016 года. Порядок «сначала студент → до $5 000 одному человеку → остаток только себе» на одном примере за минуту никто не показывает.</li>
+      <li>Заголовки набрали 91 и 73. Основной: «Tuition Tax Credit Canada: Can Your Parents Claim It?»</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Спрос</h2>
+    <p>Ежемесячные запросы на YouTube по оценке vidIQ (общая оценка, не только Канада: разбивку по стране vidIQ для этих фраз не вернул). Красным отмечен запрос, под который написан заголовок.</p>
+    <div class="bars" aria-label="Search volume per month">
+      <div class="bar"><span>tax tips canada</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">5 298</span></div>
+      <div class="bar"><span>education tax credits</span><span class="track"><span class="fill" style="width:97.7%"></span></span><span class="num">5 177</span></div>
+      <div class="bar"><span>canada tax</span><span class="track"><span class="fill" style="width:76.6%"></span></span><span class="num">4 060</span></div>
+      <div class="bar hi"><span>tuition tax credit canada</span><span class="track"><span class="fill" style="width:14%"></span></span><span class="num">&lt;750</span></div>
+    </div>
+    <p class="note">Шкала от 0 до 5 298 запросов в месяц. Полоса для «&lt;750» условная: vidIQ не даёт точного числа ниже порога. Конкуренция: «tax tips canada» 8,3 из 100, «education tax credits» 18,6, «tuition tax credit canada» 16,6. Ниже 750 в месяц также «student tax credits canada», «unused tuition credits carry forward», «how to claim tuition credits».</p>
+  </section>
+
+  <section>
+    <h2>Конкуренты на YouTube</h2>
+    <p>Самые просматриваемые видео по запросу «tuition tax credit canada T2202», регион CA.</p>
+    <div class="table">
+      <table>
+        <thead><tr><th>Видео</th><th>Канал</th><th>Просмотры</th><th>Длина</th></tr></thead>
+        <tbody>
+          <tr><td>TUITION TAX CREDITS Explained for Canadian Students (T2202, TD1 &amp; T1213 forms)</td><td>Breaking Bad Debt – Dr. Steph</td><td class="n">65 544</td><td class="n">8:23</td></tr>
+          <tr><td>How to claim the Canada Training Credit (CTC)</td><td>UFile / ImpôtExpert</td><td class="n">39 640</td><td class="n">2:48</td></tr>
+          <tr><td>Canadian Tuition Credits 101</td><td>Nick’s Taxes</td><td class="n">32 711</td><td class="n">10:05</td></tr>
+          <tr><td>Transfer Tuition Fees &amp; Reduce Financial Stress! (2019)</td><td>CloudTax</td><td class="n">21 012</td><td class="n">2:23</td></tr>
+          <tr><td>How to Access Unused Tuition – CRA MyAccount</td><td>GW Tax Services</td><td class="n">17 170</td><td class="n">0:37</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Выше по просмотрам — общие инструкции по подаче декларации (Wealthsimple, TurboTax), где обучение лишь один из пунктов. Поиск вирусных Shorts по теме выдал нерелевантные ролики (индийские скетчи про «tuition»), так что ниша в Shorts пустая.</p>
+  </section>
+
+  <section>
+    <h2>Наш угол</h2>
+    <div class="gap">
+      <div><h3>Правило и пример</h3><p>Федеральный кредит 14% (2026) от обучения по справке T2202, если одному учебному заведению за год заплачено больше $100. $8 000 обучения → кредит $1 120.</p></div>
+      <div><h3>Порядок</h3><p>Сначала кредит обнуляет налог самого студента. С доходом $12 000 налога у него и так нет, поэтому до $5 000 обучения этого года можно передать одному человеку (родителю, дедушке или бабушке, супругу): $700 с его налога, если налог есть.</p></div>
+      <div><h3>Остаток и что отменено</h3><p>$3 000 остаются у студента без срока: в будущем это $420, но только в его собственной декларации. Федеральные суммы на образование и учебники отменены после 2016 года.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Оценка заголовков</h2>
+    <p>vidIQ score_title, формат Short. Оценены два сильнейших варианта.</p>
+    <div class="titles">
+      <div class="t win"><q>Tuition Tax Credit Canada: Can Your Parents Claim It?</q><span class="score">91</span><span class="meter"><i style="width:91%"></i></span></div>
+      <div class="t"><q>Your Tuition Slip Is Worth Money. But Whose? (T2202, Canada)</q><span class="score">73</span><span class="meter"><i style="width:73%"></i></span></div>
+    </div>
+    <p class="note">Основной заголовок начинается с поисковой фразы и отвечает на частый вопрос родителей. Второй вариант совпадает с хуком ролика, но набрал меньше.</p>
+  </section>
+
+  <footer>
+    <span>Мои вызовы vidIQ: 25 кредитов (исследование запросов, поиск конкурентов, вирусные Shorts, оценка двух заголовков). Баланс 1 395 → 1 370.</span>
+    <span>Налоговые факты проверены по Income Tax Act (ст. 117(2), 118, 118.5, 118.6, 118.61, 118.81, 118.9, 248(1); laws-lois.justice.gc.ca, редакция на 2026-09-21) и страницам CRA о переносе сумм и Schedule 11. Записаны в d1/PRODUCTION-BIBLE.md. Только федеральные суммы, пример условный. Общая информация, не консультация.</span>
+  </footer>
+</div>
