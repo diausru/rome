@@ -33,6 +33,7 @@ import { G1v2, G1DUR, G1FPS } from './G1v2';
 import { G4v2, G4DUR, G4FPS } from './G4v2';
 import { G2v2, G2DUR, G2FPS } from './G2v2';
 import { G5v2, G5DUR, G5FPS } from './G5v2';
+import { B9v3, B9V3DUR, B9V3FPS } from './B9v3';
 import { XmasV2, XMASDUR, XMASFPS } from './XmasV2';
 import { NyV2, NYDUR, NYFPS } from './NyV2';
 import { useCurrentFrame } from 'remotion';
@@ -54,6 +55,7 @@ Promise.all([
 
 export const RemotionRoot = () => (
   <>
+    <Composition id="B9v3" component={B9v3} durationInFrames={B9V3DUR} fps={B9V3FPS} width={1080} height={1920} />
     <Composition id="Showreel" component={Showreel} durationInFrames={SHOWREEL_FRAMES} fps={60} width={1080} height={1920} />
     <Composition id="Carousel" component={Carousel} durationInFrames={LOOP} fps={30} width={CW} height={SH} />
     <Composition id="Carousel2" component={Carousel2} durationInFrames={LOOP} fps={30} width={CW} height={SH} />

@@ -1,0 +1,7 @@
+plates/*.png
+stills/
+build/
+music.wav
+mix.wav
+__pycache__/
+*.jpg

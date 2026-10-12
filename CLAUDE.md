@@ -113,6 +113,13 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 
 - Before every new card-format topic, check what the parallel handwritten "Real Tax Math" session has made or promised (its project folders, `<project>/PUBLISH.md` "NEXT 3 TOPICS", the bridge CTA in its `publish.json`, the Publishing Kit labels "(handwritten)"). Never make the same topic or the same angle. The handwritten session owns the self-employed B-series (B1–B8, B4P, RRSP-SE, INST); the card series skips those and takes the next non-overlapping topic in PUBLISHING-PLAN §4. Record the check in the bible.
 
+## Motion Engine v3 for card-format Reels (user, 2026-10-12; full text and decisions in `channel/MOTION-ENGINE-V3.md`)
+
+- From the next card-format Reel on, build with `showreel/src/motion/Engine.tsx` + `tools/words.py` (word-level captions from the VO) + `tools/sfx_mix.py` (brand SFX, ducked bed, −14 LUFS / ≤ −1 dBTP) + `tools/check_v3.py` (automated QC, then a visual pass). Techniques adapted from github.com/marcosmodly/marketing-skill; its templates and look are NOT used.
+- Keep the identity: dark navy / charcoal / blue-gray scenes, white type, restrained gold, purposeful Canadian red, dark-glass panels, large figures, ALL-CAPS headlines and labels, realistic financial-documentary imagery, flag, sources footer.
+- Opening hook: topic readable on frame 0, then staged reveals (floating tags from different sides, mask headline, emphasized number/question, transition). Panels and rows light up gold as the narration reaches them; numbers count up to the verified value; one shared timeline drives visuals, captions and SFX.
+- Verified numbers live in `<project>/data.json` generated from the calculation; presentation code never computes or edits them. No Kling / video-generation model; simulated motion is never described as live-action footage. Nothing is published or scheduled without explicit approval.
+
 ## Metricool: only on command (user, 2026-10-07)
 
 - Never create, update or schedule anything in Metricool unless the user explicitly says so for that video. Per video: make the video, run the analysis and the publishing package, then STOP and wait. Prepared payloads may sit in `channel/metricool/schedule.json`, but nothing is sent.
