@@ -2,7 +2,7 @@
 // Reusable, deterministic components: FloatingTag, KineticHeadline, ActiveIcon(+row), ProgressiveTable, OpeningScene.
 // Easing set follows the studied reference: expo-out for entrances, back-out for settles/pops, in-out for moves.
 import React from 'react';
-import { Easing } from 'remotion';
+import { Easing, Img, staticFile } from 'remotion';
 import { RollNumber } from './Kinetic';
 
 export const EX = Easing.bezier(0.16, 1, 0.3, 1);      // expo-out
@@ -136,4 +136,46 @@ const OpeningScene: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable };
+
+// ---------- CollageHook: frame-0 hook — photo collage + giant stat + stamp + intrigue question, all readable on the first frame ----------
+// Everything is composed at t0 (no fade from black); motion after that is ambient (drift, sweep, stamp pulse) until p.out, when tiles fly apart.
+const CollageHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const t0 = p.t; const el = now - t0; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const tiles = p.tiles as Pn[];
+  const sweep = ((el * 0.45) % 1.6) - 0.3; // light sweep across the number, repeats slowly
+  const stampK = 1 + 0.04 * Math.max(0, Math.sin(el * 2.2));
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', left: '55%', top: '-25%', width: 1200, height: 1200, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(232,160,80,.28), transparent)' }} />
+      <div style={{ position: 'absolute', left: '-20%', top: '35%', width: 1200, height: 1200, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(80,130,230,.24), transparent)' }} />
+      {tiles.map((g, i) => {
+        const fly = out * (g.fly ?? [i % 2 ? 900 : -900, i < 2 ? -300 : 300]);
+        const drift = Math.sin(el * 0.5 + i * 1.7) * 6; const kb = 1.06 + 0.05 * cl(el / 12);
+        return (
+          <div key={i} style={{ position: 'absolute', left: g.x, top: g.y, width: g.w, height: g.h, padding: 10, background: '#F4F1EA', borderRadius: 6, boxShadow: '0 30px 80px rgba(0,0,0,.65)',
+            transform: `translate(${fly[0] ?? 0}px, ${(fly[1] ?? 0) + drift}px) rotate(${g.rot + Math.sin(el * 0.3 + i) * 0.6}deg)`, opacity: 1 - out * 0.8 }}>
+            <div style={{ width: '100%', height: '100%', overflow: 'hidden', borderRadius: 2 }}>
+              <Img src={staticFile(g.src)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${kb}) translate(${Math.sin(el * 0.2 + i) * 10}px, 0)` }} />
+            </div>
+          </div>);
+      })}
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 46% 52% at 50% 50%, rgba(7,11,20,.92) 35%, rgba(7,11,20,.25) 75%, transparent)', opacity: 1 - out }} />
+      <div style={{ position: 'absolute', left: 0, right: 0, top: p.cy ?? 250, textAlign: 'center', fontFamily: COND, textTransform: 'uppercase', opacity: 1 - out, transform: `scale(${1 + out * 0.15})` }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        {(() => { const fs = p.statSize ?? 260; const w = fs * 0.5 * String(p.stat).length + 40; const gid = `cg-${Math.round(t0 * 100)}`; return (
+          <svg width={w} height={fs * 1.05} style={{ display: 'block', margin: '8px auto 0', overflow: 'visible' }}>
+            <defs><linearGradient id={gid} x1="0" y1="0" x2="1" y2="0.25">
+              <stop offset="0" stopColor="#B88A3E" /><stop offset={cl(sweep - 0.12)} stopColor="#E8C27A" /><stop offset={cl(sweep)} stopColor="#FFF4D6" /><stop offset={cl(sweep + 0.12)} stopColor="#E8C27A" /><stop offset="1" stopColor="#B88A3E" />
+            </linearGradient></defs>
+            <text x="50%" y={fs * 0.86} textAnchor="middle" fontFamily={COND} fontWeight={700} fontSize={fs} fill={`url(#${gid})`} style={{ filter: 'drop-shadow(0 10px 30px rgba(0,0,0,.6))' }}>{p.stat}</text>
+          </svg>); })()}
+        <div style={{ fontSize: 40, letterSpacing: 3, color: C.white, marginTop: 6 }}>{p.statLabel}</div>
+        <div style={{ fontSize: 50, fontWeight: 600, color: C.white, marginTop: 34, textShadow: '0 4px 30px rgba(0,0,0,.8)' }}>{p.question}</div>
+      </div>
+      {p.stamp && <div style={{ position: 'absolute', left: p.stamp.x, top: p.stamp.y, transform: `rotate(${p.stamp.rot ?? -8}deg) scale(${stampK * (1 - out)})`, padding: '14px 28px', border: '6px solid #D52B1E', borderRadius: 10,
+        fontFamily: COND, fontWeight: 700, fontSize: p.stamp.size ?? 54, letterSpacing: 4, color: '#FF5A4A', background: 'rgba(30,6,6,.55)', boxShadow: '0 0 40px rgba(213,43,30,.45)' }}>{p.stamp.text}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook };

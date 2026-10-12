@@ -47,7 +47,7 @@
    "type": "scene",
    "panels": [
     {
-     "type": "opening",
+     "type": "collage",
      "x": 0,
      "y": 0,
      "w": 1920,
@@ -56,92 +56,61 @@
      "fxIn": "fade",
      "fxOut": "fade",
      "inDur": 0.01,
-     "off": -0.6,
-     "tags": [
+     "off": -1.0,
+     "tiles": [
       {
-       "text": "FORM T2201",
-       "color": "#8FB3E8",
-       "x": 150,
-       "y": 150,
-       "dir": [
-        -80,
-        0
-       ],
-       "rot": -5,
-       "at": "T1",
-       "off": 0.1
+       "src": "lf/lf05/plates/s1.jpg",
+       "x": 40,
+       "y": 70,
+       "w": 700,
+       "h": 400,
+       "rot": -4
       },
       {
-       "text": "NON-REFUNDABLE",
-       "color": "#E5806E",
-       "x": 1420,
-       "y": 140,
-       "dir": [
-        80,
-        -20
-       ],
-       "rot": 5,
-       "at": "T1",
-       "off": 0.3
+       "src": "lf/lf05/plates/c1.jpg",
+       "x": 1330,
+       "y": 50,
+       "w": 520,
+       "h": 400,
+       "rot": 5
       },
       {
-       "text": "MEDICAL PRACTITIONER",
-       "color": "#7FD3A0",
-       "x": 120,
-       "y": 830,
-       "dir": [
-        -60,
-        50
-       ],
-       "rot": 4,
-       "at": "T1",
-       "off": 0.5
+       "src": "lf/lf05/plates/c2.jpg",
+       "x": 1300,
+       "y": 600,
+       "w": 560,
+       "h": 420,
+       "rot": -4
       },
       {
-       "text": "UP TO 10 YEARS BACK",
-       "color": "#E8C27A",
-       "x": 1380,
-       "y": 820,
-       "dir": [
-        60,
-        60
-       ],
-       "rot": -4,
-       "at": "T1",
-       "off": 0.7
+       "src": "lf/lf05/plates/c3.jpg",
+       "x": 60,
+       "y": 600,
+       "w": 560,
+       "h": 420,
+       "rot": 4
       }
      ],
-     "head": [
-      {
-       "text": "DISABILITY TAX CREDIT",
-       "size": 110,
-       "at": "T1"
-      },
-      {
-       "text": "NOT A CHEQUE \u2014 A TAX CUT",
-       "size": 80,
-       "emph": [
-        "TAX",
-        "CUT"
-       ],
-       "at": "T1",
-       "word": "amount"
-      }
-     ],
-     "headY": 380,
-     "tagsOut": {
-      "at": "T2"
+     "kicker": "DISABILITY TAX CREDIT \u00b7 CANADA",
+     "stat": "$16,052",
+     "statLabel": "2025 DISABILITY AMOUNT \u00b7 CHILD UNDER 18",
+     "question": "WHO QUALIFIES \u2014 AND WHY DO SOME CLAIMS GET DENIED?",
+     "cy": 255,
+     "stamp": {
+      "text": "UP TO 10 YEARS BACK",
+      "x": 735,
+      "y": 850,
+      "rot": -6,
+      "size": 52
      },
-     "headOut": {
-      "at": "T2"
+     "out": {
+      "at": "T2",
+      "off": -0.5
      },
-     "bgOut": {
-      "at": "T1",
-      "word": "cuts"
-     }
+     "statSize": 225
     }
    ],
-   "off": -0.6
+   "off": -1.0
   },
   {
    "at": "T2",
