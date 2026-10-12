@@ -80,7 +80,7 @@ const Split: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
           </div>);
       })}
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 10, paddingTop: 10, borderTop: `1px solid ${C.line}`, fontFamily: T.cond, fontSize: 22, letterSpacing: 2, color: C.faint }}>
-        <span>{p.note ?? 'ILLUSTRATION: TAXES ARE NOT EARMARKED'}</span><span>TOTAL {money(total)}</span>
+        <span>{p.note ?? 'ILLUSTRATION: TAXES ARE NOT EARMARKED'}</span>{!p.noTotal && <span>TOTAL {money(total)}</span>}
       </div>
     </div>
   );
