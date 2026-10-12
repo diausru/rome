@@ -1,0 +1,17 @@
+{
+ "assumptions": "Manitoba \u00b7 single \u00b7 2026 \u00b7 $10,000 net self-employment income \u00b7 basic credits only",
+ "case1": {
+  "label": "ONLY INCOME",
+  "income_tax": 0.0,
+  "cpp": 773.5,
+  "total": 773.5
+ },
+ "case2": {
+  "label": "+ $60K SALARY",
+  "income_tax": 2971.15,
+  "cpp": 1190.0,
+  "total": 4161.15
+ },
+ "ratio": 5.38,
+ "sources": "CRA T4127 (Jan 2026) \u00b7 CPP 2026 \u00b7 Schedule 8"
+}

@@ -57,3 +57,21 @@ Payloads: `channel/metricool/new_block_2026-11-30.json`; post ids: `channel/metr
 | 2027-01-04 Mon | B10 · $100K + $10K side hustle (handwritten) | Why a Bigger Salary Means Less Tax on Your Side Hustle (Canada) |
 | 2027-01-06 Wed | #24 · Departure Tax | Leaving Canada? The Departure Tax Explained in 60 Seconds |
 | 2027-01-08 Fri | B2 · 4 forgotten expenses (handwritten) | How Tax Write-Offs Actually Work for Self-Employed Canadians |
+
+## Holiday extras (scheduled 2026-10-11 on the user's command) — LIVE scheduled posts, not drafts
+Real videos from Google Drive (`xmas-share.mp4` 1vBsXWHr2Z2sNbr8wAvFx7u2zqEgRM25U, `ny-share.mp4` 1EcwOO51IXUZr2d7Yc5K-zsmfNSG9lr_y), auto-publish, AI disclosure on. Payloads: `channel/metricool/holiday_2026-12.json`.
+
+| Date (America/Winnipeg) | Video | Network | Metricool id |
+|---|---|---|---|
+| Tue 2026-12-22 10:00 | xmas · Gifts & tax | TikTok | 393439182 |
+| Tue 2026-12-22 11:00 | xmas | Instagram Reel | 393439283 |
+| Tue 2026-12-22 16:00 | xmas · "Giving Money for Christmas in Canada? Know This Tax Rule First" | YouTube Short | 393439334 |
+| Tue 2026-12-29 10:00 | ny · Tax-loss selling by Dec 30 | TikTok | 393439370 |
+| Tue 2026-12-29 11:00 | ny | Instagram Reel | 393439398 |
+| Tue 2026-12-29 16:00 | ny · "Down on a Stock? Sell Before December 30 (Canada Tax-Loss Selling)" | YouTube Short | 393439448 |
+
+## LF-01 long-form (2026-10-11): DRAFT placeholder, the user finishes it
+YouTube only · Wed 2026-10-14 16:00 America/Winnipeg · Metricool id 393445798 · draft with placeholder video `LF01-preview.mp4` (720p) + full content (title, description with chapters, tags, first comment, AI disclosure). The user will swap in the 1080p master and their own thumbnail and schedule it.
+
+## LF-02 (YouTube, scheduled 2026-10-11 on user command)
+- Post id 393575027 · Wed 2026-10-21 16:00 America/Winnipeg · public · EDUCATION · not for kids · AI-content flag on · title "Don't Pay for Tax Software Until You Watch This (Canada)" · media Drive 1mYgUWYQ4Rh2amEbNpYoDfiG5phxA_EPs (LF02-1080p.mp4, rehosted by Metricool) · thumbnail: user adds.

@@ -1,211 +1,194 @@
-// Tax Secrets Canada motion engine v1 (2026-10-12). Reusable, frame-driven building blocks for the card-format reels:
-// progressive hook openings, kinetic ALL-CAPS headlines, floating topic tags, dark-glass panels with entrance / exit
-// variants, narration-driven highlights, count-ups, word-synced captions, depth layers over photo plates, particle
-// dissolves. Techniques studied from marketing-skill (MIT): hook text on screen from frame 0, captions chunked and
-// highlighted word by word from measured word timings, one anchor driving a visual event and its sound. Look and
-// layout stay ours (brand.ts). Everything is deterministic (no Math.random), so renders are repeatable.
+// TAX SECRETS CANADA motion engine v3 (2026-10-12). Reusable, frame-driven building blocks for card-format Reels.
+// Techniques adapted from the marketing-skill video pipeline (studied: easing curves, staggered "--in" reveals,
+// chunked word-highlight captions, count-ups, scene cross-moves, safe areas) and re-built in Remotion in OUR look:
+// dark navy / charcoal glass, white type, restrained gold, purposeful Canadian red, ALL-CAPS headings (Mont).
+// Every animation is a pure function of the frame. Numbers are passed in from verified data files; components only
+// format them, and a count-up always lands exactly on the value it was given.
 import React from 'react';
-import { AbsoluteFill } from 'remotion';
-import { T, ZONE, goldFill, textShadow } from './brand';
+import { Easing, interpolate } from 'remotion';
 
-export const clamp = (x: number, a = 0, b = 1) => Math.min(b, Math.max(a, x));
-const sstep = (t: number) => { t = clamp(t); return t * t * t * (t * (t * 6 - 15) + 10); };
-export const ease = (f: number, a: number, b: number) => sstep((f - a) / (b - a));
-export const outExpo = (t: number) => (t <= 0 ? 0 : t >= 1 ? 1 : 1 - Math.pow(2, -10 * t));
-export const outBack = (t: number) => { t = clamp(t); const c = 1.4; return 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); };
-export const rnd = (i: number, k = 0) => { const s = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453; return s - Math.floor(s); };
-export const money = (n: number) => '$' + Math.round(Math.abs(n)).toLocaleString('en-US');
+// ---------- brand tokens ----------
+export const BR = {
+  navy: '#0a1220', ink: '#f4f6fa', soft: 'rgba(226,233,244,.80)', dim: 'rgba(226,233,244,.55)', gray: '#9fb0c8',
+  gold: '#f1c75b', amber: '#ffb648', red: '#d52b1e',
+  glass: 'linear-gradient(160deg, rgba(18,28,48,.72), rgba(8,14,26,.56))',
+  line: 'rgba(190,210,240,.20)', font: 'Mont',
+};
+export const goldText: React.CSSProperties = {
+  background: 'linear-gradient(180deg,#fff3c9 0%,#f1c75b 48%,#c88f1f 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text',
+  color: 'transparent', filter: 'drop-shadow(0 6px 18px rgba(0,0,0,.5))',
+};
+export const shadow = '0 2px 16px rgba(0,0,0,.6)';
+// Instagram / TikTok / Shorts UI: ≈150 px top, ≈470 px bottom, ≈120 px right are covered (reference lint zone)
+export const SAFE = { x0: 60, x1: 960, y0: 150, y1: 1450 };
 
-type Dir = 'up' | 'down' | 'left' | 'right';
-const offset = (d: Dir, k: number) => ({ up: [0, k], down: [0, -k], left: [-k, 0], right: [k, 0] }[d]);
+// ---------- timing ----------
+export const EZ = {
+  rise: Easing.bezier(0.2, 0.8, 0.2, 1),      // entrances, count-ups
+  wipe: Easing.bezier(0.7, 0, 0.25, 1),       // mask wipes, scene moves
+  settle: Easing.bezier(0.16, 1, 0.3, 1),     // calm landing, no overshoot (brand: no bouncy pops)
+  out: Easing.bezier(0.4, 0, 1, 1),           // exits
+};
+export const tw = (f: number, a: number, b: number, ez = EZ.rise) =>
+  interpolate(f, [a, b], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ez });
+export const sec = (fps: number) => (s: number) => Math.round(s * fps);
 
-// ---------- kinetic typography ----------
-// Words rise out of a mask one after another (stagger in frames); `out` lifts and blurs them away.
-export const Kinetic = ({ f, at, text, x, y, size = 72, from = 'up', stagger = 2, gold = false, out, weight = 900, now = false, color = T.white, nowrap = false }: {
-  f: number; at: number; text: string; x: number; y: number; size?: number; from?: Dir; stagger?: number; gold?: boolean; out?: number; weight?: number; now?: boolean; color?: string; nowrap?: boolean;
+// ---------- money formatting (never rounds silently: callers choose cents) ----------
+export const money = (n: number, cents = false) =>
+  '$' + n.toLocaleString('en-US', { minimumFractionDigits: cents ? 2 : 0, maximumFractionDigits: cents ? 2 : 0 });
+
+// ---------- count-up: eases 0 → value, lands exactly on value ----------
+export const CountUp = ({ f, a, dur = 24, value, cents = false, from = 0 }: { f: number; a: number; dur?: number; value: number; cents?: boolean; from?: number }) => {
+  const t = tw(f, a, a + dur);
+  const v = t >= 1 ? value : from + (value - from) * t;
+  return <span style={{ fontVariantNumeric: 'tabular-nums' }}>{money(cents ? Math.round(v * 100) / 100 : Math.round(v), cents)}</span>;
+};
+
+// ---------- floating topic tag: drifts in from a side, blur → clear, then floats ----------
+export const FloatTag = ({ f, a, from, x, y, children, out }: { f: number; a: number; from: 'left' | 'right' | 'top' | 'bottom'; x: number; y: number; children: React.ReactNode; out?: number }) => {
+  const e = tw(f, a, a + 18, EZ.settle), o = out !== undefined ? 1 - tw(f, out, out + 10, EZ.out) : 1;
+  if (e <= 0 || o <= 0) return null;
+  const d = (1 - e) * 120, dx = from === 'left' ? -d : from === 'right' ? d : 0, dy = from === 'top' ? -d : from === 'bottom' ? d : 0;
+  const fl = Math.sin((f + a * 3) * 0.045) * 6;
+  return (
+    <div style={{ position: 'absolute', left: x, top: y, transform: `translate(${dx}px, ${dy + fl}px)`, opacity: e * o, filter: `blur(${(1 - e) * 10}px)`,
+      padding: '12px 22px', borderRadius: 999, background: 'rgba(12,20,36,.62)', backdropFilter: 'blur(14px)', border: `1px solid ${BR.line}`,
+      fontFamily: BR.font, fontSize: 24, fontWeight: 800, letterSpacing: 4, color: BR.ink, whiteSpace: 'nowrap', boxShadow: '0 12px 30px rgba(0,0,0,.35)' }}>{children}</div>
+  );
+};
+
+// ---------- mask headline: ALL-CAPS lines rise out of a mask one after another; *word* = gold ----------
+const spans = (s: string) => s.toUpperCase().split(/(\*[^*]+\*)/).map((p, i) =>
+  p.startsWith('*') ? <span key={i} style={goldText}>{p.slice(1, -1)}</span> : <span key={i}>{p}</span>);
+export const MaskHeadline = ({ f, a, lines, size = 92, stagger = 7, x = 80, y, now = false, out, color = BR.ink }: {
+  f: number; a: number; lines: string[]; size?: number; stagger?: number; x?: number; y: number; now?: boolean; out?: number; color?: string;
 }) => {
-  const words = text.toUpperCase().split(' ');
-  const o = out !== undefined ? ease(f, out, out + 10) : 0;
+  const o = out !== undefined ? tw(f, out, out + 12, EZ.out) : 0;
   if (o >= 1) return null;
   return (
-    <div style={{ position: 'absolute', left: x, top: y, display: 'flex', flexWrap: nowrap ? 'nowrap' : 'wrap', whiteSpace: 'nowrap', gap: `0 ${size * 0.28}px`, opacity: 1 - o, transform: `translateY(${-o * 30}px)`, filter: o > 0 ? `blur(${o * 8}px)` : undefined }}>
-      {words.map((w, i) => {
-        // "now": already on screen at the first frame (the cover), settling in, as the reference requires of a hook
-        const p = now ? 0.65 + 0.35 * outExpo((f - at) / 12) : outExpo((f - at - i * stagger) / 12);
-        // a "now" word never moves inside its mask (the first frame must show it whole); it only settles in blur and scale
-        const [dx, dy] = now ? [0, 0] : from === 'up' ? [0, 105] : from === 'down' ? [0, -105] : from === 'left' ? [-60, 0] : [60, 0];
+    <div style={{ position: 'absolute', left: x, top: y - o * 40, opacity: 1 - o, filter: `blur(${o * 8}px)` }}>
+      {lines.map((l, i) => {
+        // `now`: every line is already on screen at frame 0 (the cover frame), only settling
+        const e = now ? 0.84 + 0.16 * tw(f, i * 2, i * 2 + 14, EZ.settle) : tw(f, a + i * stagger, a + i * stagger + 16);
         return (
-          <span key={i} style={{ display: 'inline-block', overflow: 'hidden', paddingBottom: size * 0.08, lineHeight: 1.05 }}>
-            <span style={{ display: 'inline-block', fontFamily: T.font, fontSize: size, fontWeight: weight, letterSpacing: -size * 0.02, color, textShadow: gold ? undefined : textShadow,
-              transform: `translate(${(1 - p) * dx}%, ${(1 - p) * dy}%)${now ? ` scale(${1.04 - 0.04 * p})` : ''}`, opacity: clamp(p * 1.4), filter: p < 1 ? `blur(${(1 - p) * 6}px)` : undefined, ...(gold ? goldFill : {}) }}>{w}</span>
-          </span>
+          <div key={i} style={{ overflow: 'hidden', height: size * 1.14, paddingRight: 20 }}>
+            <div style={{ fontFamily: BR.font, fontSize: size, fontWeight: 900, letterSpacing: -size * 0.02, lineHeight: 1.12, color, textShadow: shadow,
+              transform: `translateY(${(1 - e) * 105}%)`, filter: `blur(${(1 - e) * 6}px)`, whiteSpace: 'nowrap' }}>{spans(l)}</div>
+          </div>
         );
       })}
     </div>
   );
 };
 
-// ---------- floating topic tag ----------
-export const Tag = ({ f, at, text, x, y, from = 'left', out, seed = 1 }: { f: number; at: number; text: string; x: number; y: number; from?: Dir; out?: number; seed?: number }) => {
-  const p = outExpo((f - at) / 16);
-  if (p <= 0) return null;
-  const o = out !== undefined ? clamp((f - out) / 14) : 0;
-  if (o >= 1) return null;
-  const [dx, dy] = offset(from, 160);
-  const fx = Math.sin(f * 0.031 + seed * 2.1) * 7, fy = Math.cos(f * 0.024 + seed * 1.3) * 6; // slow float, so the label lives
-  return (
-    <>
-      <div style={{ position: 'absolute', left: x + (1 - p) * dx + fx, top: y + (1 - p) * dy + fy, opacity: p * (1 - o), filter: o > 0 ? `blur(${o * 6}px)` : undefined,
-        display: 'flex', alignItems: 'center', gap: 12, padding: '12px 22px 12px 18px', borderRadius: 999, background: 'rgba(12,18,30,.62)', backdropFilter: 'blur(12px)',
-        border: `1px solid ${T.glassEdge}`, fontFamily: T.font, fontSize: 24, fontWeight: 800, letterSpacing: 3 + o * 6, color: T.white, boxShadow: '0 10px 30px rgba(0,0,0,.35)' }}>
-        <div style={{ width: 8, height: 8, borderRadius: 4, background: T.gold, boxShadow: `0 0 12px ${T.gold}` }} />{text.toUpperCase()}
-      </div>
-      {out !== undefined && <Vapor f={f} a={out} x={x} y={y} w={text.length * 18 + 60} h={52} n={22} seed={seed} />}
-    </>
-  );
-};
+// ---------- underline sweep under a phrase ----------
+export const Sweep = ({ f, a, x, y, w, color = BR.gold, dur = 14 }: { f: number; a: number; x: number; y: number; w: number; color?: string; dur?: number }) => (
+  <div style={{ position: 'absolute', left: x, top: y, width: w * tw(f, a, a + dur, EZ.wipe), height: 5, borderRadius: 3, background: `linear-gradient(90deg, ${color}, rgba(241,199,91,.2))`, boxShadow: `0 0 18px ${color}88` }} />
+);
 
-// ---------- particle dissolve ----------
-export const Vapor = ({ f, a, x, y, w, h, n = 36, seed = 0, color = 'rgba(246,240,224,.9)', dur = 26 }: { f: number; a: number; x: number; y: number; w: number; h: number; n?: number; seed?: number; color?: string; dur?: number }) => {
-  const t = (f - a) / dur;
-  if (t <= 0 || t >= 1) return null;
-  return (
-    <>
-      {Array.from({ length: n }, (_, i) => {
-        const r1 = rnd(i, seed + 1), r2 = rnd(i, seed + 2), r3 = rnd(i, seed + 3);
-        const size = 2 + r3 * 5;
-        return <div key={i} style={{ position: 'absolute', left: x + r1 * w + (r3 - 0.5) * 90 * t, top: y + r2 * h - t * (50 + 130 * r3), width: size, height: size, borderRadius: '50%',
-          background: color, opacity: (1 - t) * (0.35 + 0.65 * r2) * clamp(t / 0.12), filter: 'blur(1px)' }} />;
-      })}
-    </>
-  );
-};
-
-// ---------- dark-glass panel with entrances and exits ----------
-export type Enter = 'glass' | 'slideL' | 'slideR' | 'wipe' | 'focus';
+// ---------- glass panel with entrance / exit variants, light sweep and narration-driven highlight ----------
+export type Enter = 'glass' | 'slide-left' | 'slide-right' | 'wipe' | 'focus';
 export type Exit = 'fade' | 'vapor' | 'collapse';
-const tone = (t: 'gold' | 'red' | 'green') => (t === 'gold' ? T.gold : t === 'red' ? T.redSoft : T.green);
-export const Glass = ({ f, a, b, y, h, x = 80, w = 920, enter = 'glass', exit = 'fade', lit = 0, label, toneOf = 'gold', collapseTo = '50% 50%', children }: {
-  f: number; a: number; b: number; y: number; h: number; x?: number; w?: number; enter?: Enter; exit?: Exit; lit?: number; label?: string; toneOf?: 'gold' | 'red' | 'green'; collapseTo?: string; children?: React.ReactNode;
+export const GlassPanel = ({ f, a, b, enter = 'glass', exit = 'fade', active = 0, x, y, w, h, label, accent = BR.gold, children }: {
+  f: number; a: number; b: number; enter?: Enter; exit?: Exit; active?: number; x: number; y: number; w: number; h: number; label?: string; accent?: string; children?: React.ReactNode;
 }) => {
-  const exitLen = exit === 'vapor' ? 22 : 12;
-  if (f < a - 1 || f > b + exitLen + 26) return null;
-  const pi = outExpo((f - a) / 16), po = clamp((f - b) / exitLen);
-  let transform = '', clip: string | undefined, blur = 0, op = pi;
-  if (enter === 'glass') { transform = `scale(${0.96 + 0.04 * pi})`; blur = (1 - pi) * 14; }
-  if (enter === 'slideL') transform = `translateX(${-(1 - pi) * 140}px)`;
-  if (enter === 'slideR') transform = `translateX(${(1 - pi) * 140}px)`;
-  if (enter === 'wipe') { clip = `inset(0 ${(1 - pi) * 100}% 0 0 round 34px)`; op = 1; }
-  if (enter === 'focus') blur = (1 - pi) * 24;
-  if (exit === 'fade') { op *= 1 - po; transform += ` translateY(${-po * 20}px)`; }
-  if (exit === 'vapor') { op *= 1 - po; blur += po * 10; transform += ` translateY(${-po * 30}px)`; }
-  if (exit === 'collapse') { op *= 1 - po; transform += ` scale(${1 - 0.88 * outExpo(po)})`; }
-  const sweep = clamp((f - a - 6) / 24);
-  const col = tone(toneOf);
+  if (f < a - 1 || f > b + 22) return null;
+  const e = tw(f, a, a + 18, enter === 'wipe' ? EZ.wipe : EZ.settle);
+  const xo = tw(f, b, b + (exit === 'vapor' ? 20 : 12), EZ.out);
+  let tf = '', clip = 'none', blur = 0, op = 1;
+  if (enter === 'glass') { tf = `scale(${0.95 + 0.05 * e})`; blur = (1 - e) * 14; op = e; }
+  if (enter === 'slide-left' || enter === 'slide-right') { tf = `translateX(${(enter === 'slide-left' ? -1 : 1) * (1 - e) * 160}px)`; op = e; blur = (1 - e) * 6; }
+  if (enter === 'wipe') { clip = `inset(0 ${(1 - e) * 100}% 0 0 round 34px)`; }
+  if (enter === 'focus') { blur = (1 - e) * 22; op = e; tf = `scale(${1.04 - 0.04 * e})`; }
+  if (exit === 'fade') op *= 1 - xo;
+  if (exit === 'vapor') { op *= 1 - xo; blur += xo * 16; tf += ` translateY(${-xo * 50}px)`; }
+  if (exit === 'collapse') { tf += ` scaleY(${1 - 0.92 * xo})`; op *= 1 - tw(f, b + 6, b + 12); }
+  const sweep = tw(f, a + 6, a + 32, EZ.wipe);
+  const glow = active;
+  const border = `rgba(${Math.round(190 + 51 * glow)},${Math.round(210 - 11 * glow)},${Math.round(240 - 149 * glow)},${0.2 + 0.55 * glow})`;
   return (
-    <>
-      <div style={{ position: 'absolute', left: x, top: y, width: w, height: h, borderRadius: 34, overflow: 'hidden', opacity: op, transform, transformOrigin: exit === 'collapse' ? collapseTo : '50% 50%', clipPath: clip,
-        background: T.glass, backdropFilter: 'blur(18px) saturate(130%)', border: `1px solid ${lit > 0 ? `rgba(241,199,91,${0.2 + 0.5 * lit})` : T.glassEdge}`,
-        boxShadow: `inset 0 1px 0 rgba(255,255,255,.18), 0 30px 70px rgba(0,0,0,.45), 0 0 ${40 * lit}px rgba(241,199,91,${0.28 * lit})` }}>
-        {/* restrained light sweep, once, after the entrance */}
-        <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(105deg, rgba(255,255,255,0) ${sweep * 140 - 40}%, rgba(225,235,255,.13) ${sweep * 140 - 25}%, rgba(255,255,255,0) ${sweep * 140 - 10}%)` }} />
-        <div style={{ position: 'absolute', inset: 0, filter: blur > 0.2 ? `blur(${blur}px)` : undefined }}>
-          {label && <div style={{ position: 'absolute', left: 52, top: 40, display: 'flex', alignItems: 'center', gap: 16, fontFamily: T.font, fontSize: 21, fontWeight: 800, letterSpacing: 5, color: col }}>
-            <div style={{ width: 34 * ease(f, a + 4, a + 16), height: 2, background: col }} />{label.toUpperCase()}</div>}
-          {children}
-        </div>
+    <div style={{ position: 'absolute', left: x, top: y, width: w, height: h, transform: tf, transformOrigin: 'center top', opacity: op, filter: blur ? `blur(${blur}px)` : undefined, clipPath: clip }}>
+      <div style={{ position: 'absolute', inset: 0, borderRadius: 34, overflow: 'hidden', background: BR.glass, backdropFilter: 'blur(18px) saturate(125%)',
+        border: `1.5px solid ${border}`, boxShadow: `inset 0 1px 0 rgba(255,255,255,.16), 0 30px 70px rgba(0,0,0,.45), 0 0 ${40 * glow}px rgba(255,182,72,${0.28 * glow})` }}>
+        <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(105deg, rgba(255,255,255,0) ${sweep * 140 - 40}%, rgba(230,240,255,.14) ${sweep * 140 - 25}%, rgba(255,255,255,0) ${sweep * 140 - 10}%)` }} />
+        {label && (
+          <div style={{ position: 'absolute', left: 44, top: 34, display: 'flex', alignItems: 'center', gap: 14, fontFamily: BR.font, fontSize: 22, fontWeight: 800, letterSpacing: 5,
+            color: glow > 0.5 ? accent : BR.gray, textTransform: 'uppercase' }}>
+            <div style={{ width: 34 * tw(f, a + 4, a + 18), height: 2, background: glow > 0.5 ? accent : BR.gray }} />{label}
+          </div>
+        )}
+        {children}
       </div>
-      {exit === 'vapor' && <Vapor f={f} a={b} x={x} y={y} w={w} h={h} n={44} seed={a} />}
-    </>
-  );
-};
-
-// ---------- narration-driven highlight tile ----------
-// Appears at `at`; lights up (border, gold glow, value reveal, mark stamp) at `lit`; dims when focus moves on (`off`).
-export const Tile = ({ f, at, lit, off, x, y, w, h, title, value, mark, toneOf = 'gold', valueSize = 48 }: {
-  f: number; at: number; lit: number; off?: number; x: number; y: number; w: number; h: number; title: string; value?: React.ReactNode; mark?: 'ok' | 'no'; toneOf?: 'gold' | 'red' | 'green'; valueSize?: number;
-}) => {
-  const p = outExpo((f - at) / 14);
-  if (p <= 0) return null;
-  const L = ease(f, lit, lit + 8) * (off !== undefined ? 1 - 0.55 * ease(f, off, off + 10) : 1);
-  const col = tone(toneOf);
-  const v = outExpo((f - lit) / 12);
-  const s = f >= lit ? outBack((f - lit) / 10) : 0;
-  return (
-    <div style={{ position: 'absolute', left: x, top: y + (1 - p) * 30, width: w, height: h, opacity: p * (0.62 + 0.38 * Math.max(L, f < lit ? 0.6 : 0)), borderRadius: 22,
-      background: `linear-gradient(160deg, rgba(24,34,52,${0.55 + 0.2 * L}), rgba(12,16,26,.5))`, border: `1.5px solid ${L > 0.05 ? col : T.glassEdge}`,
-      boxShadow: `0 0 ${34 * L}px ${toneOf === 'red' ? 'rgba(224,57,43,.35)' : 'rgba(241,199,91,.32)'}` }}>
-      <div style={{ position: 'absolute', left: 26, top: 22, fontFamily: T.font, fontSize: 20, fontWeight: 800, letterSpacing: 3, color: L > 0.05 ? col : T.mute }}>{title.toUpperCase()}</div>
-      {value !== undefined && <div style={{ position: 'absolute', left: 24, top: 52, overflow: 'hidden', height: valueSize * 1.2 }}>
-        <div style={{ fontFamily: T.font, fontSize: valueSize, fontWeight: 900, letterSpacing: -1, color: T.white, transform: `translateY(${(1 - v) * 100}%)`, fontVariantNumeric: 'tabular-nums' }}>{value}</div></div>}
-      {mark && f >= lit && <div style={{ position: 'absolute', right: 22, top: h / 2 - 30, width: 60, height: 60, borderRadius: 30, display: 'grid', placeItems: 'center',
-        background: mark === 'ok' ? 'rgba(127,224,168,.16)' : 'rgba(224,57,43,.2)', border: `2px solid ${mark === 'ok' ? T.green : T.red}`, color: mark === 'ok' ? T.green : T.redSoft,
-        fontFamily: T.font, fontSize: 34, fontWeight: 900, transform: `scale(${s})` }}>{mark === 'ok' ? '✓' : '✕'}</div>}
+      {exit === 'vapor' && xo > 0 && xo < 1 && <Vapor f={f} t={xo} w={w} h={h} />}
     </div>
   );
 };
 
-// ---------- count-up (the final frame always shows the exact verified value) ----------
-export const Count = ({ f, a, value, dur = 18, sign = '', size = 96, gold = true }: { f: number; a: number; value: number; dur?: number; sign?: string; size?: number; gold?: boolean }) => {
-  if (f < a) return null;
-  const p = outExpo((f - a) / dur);
-  const shown = f >= a + dur ? value : Math.round((value * p) / 10) * 10;
-  return <span style={{ fontFamily: T.font, fontSize: size, fontWeight: 900, letterSpacing: -size * 0.03, fontVariantNumeric: 'tabular-nums', ...(gold ? goldFill : { color: T.white }) }}>{sign}{money(shown)}</span>;
+// particle dissolve used by the vapor exit: specks rise off the panel and fade
+const rnd = (i: number, n: number) => { const s = Math.sin(i * 127.1 + n * 311.7) * 43758.5453; return s - Math.floor(s); };
+const Vapor = ({ f, t, w, h }: { f: number; t: number; w: number; h: number }) => (
+  <>{Array.from({ length: 60 }, (_, i) => (
+    <div key={i} style={{ position: 'absolute', left: rnd(i, 1) * w, top: rnd(i, 2) * h - t * (60 + 140 * rnd(i, 3)), width: 3 + 4 * rnd(i, 4), height: 3 + 4 * rnd(i, 4),
+      borderRadius: '50%', background: rnd(i, 5) > 0.7 ? BR.gold : '#dfe8f6', opacity: Math.sin(Math.PI * t) * 0.7, filter: 'blur(1px)' }} />
+  ))}</>
+);
+
+// ---------- table row: slides in, divider draws, value lands; active row gets a gold bar and brighter type ----------
+export const Row = ({ f, a, top, label, value, note, active = 0, color = BR.ink }: {
+  f: number; a: number; top: number; label: string; value: React.ReactNode; note?: string; active?: number; color?: string;
+}) => {
+  const e = tw(f, a, a + 14);
+  if (e <= 0) return null;
+  return (
+    <div style={{ position: 'absolute', left: 44, right: 44, top, opacity: e, transform: `translateX(${(1 - e) * 40}px)` }}>
+      <div style={{ position: 'absolute', left: -20, top: 6, width: 5, height: 62, borderRadius: 3, background: BR.gold, opacity: active, boxShadow: `0 0 16px ${BR.amber}` }} />
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <div style={{ fontFamily: BR.font, fontSize: 30, fontWeight: 800, letterSpacing: 3, color: active > 0.5 ? BR.ink : BR.soft }}>{label}</div>
+        <div style={{ fontFamily: BR.font, fontSize: 64, fontWeight: 900, letterSpacing: -1, color, ...(active > 0.5 ? goldText : {}) }}>{value}</div>
+      </div>
+      {note && <div style={{ fontFamily: BR.font, fontSize: 21, fontWeight: 600, color: BR.dim, marginTop: -4, opacity: tw(f, a + 10, a + 24) }}>{note}</div>}
+      <div style={{ marginTop: 10, width: `${100 * tw(f, a + 4, a + 22, EZ.wipe)}%`, height: 1.5, background: BR.line }} />
+    </div>
+  );
 };
 
-// ---------- stamp ----------
-export const Stamp = ({ f, at, text, x, y, color = T.red, rotate = -8, size = 44 }: { f: number; at: number; text: string; x: number; y: number; color?: string; rotate?: number; size?: number }) => {
-  if (f < at) return null;
-  const s = outBack((f - at) / 9);
-  return <div style={{ position: 'absolute', left: x, top: y, transform: `rotate(${rotate}deg) scale(${1.6 - 0.6 * s})`, opacity: clamp((f - at) / 4), padding: '10px 22px', border: `4px solid ${color}`, borderRadius: 12,
-    fontFamily: T.font, fontSize: size, fontWeight: 900, letterSpacing: 4, color, whiteSpace: 'nowrap', textShadow: '0 2px 10px rgba(0,0,0,.4)', background: 'rgba(10,12,18,.35)' }}>{text.toUpperCase()}</div>;
-};
+// ---------- horizontal value bar ----------
+export const Bar = ({ f, a, frac, color = BR.gold, h = 22, dur = 26 }: { f: number; a: number; frac: number; color?: string; h?: number; dur?: number }) => (
+  <div style={{ height: h, borderRadius: h / 2, background: 'rgba(190,210,240,.10)', overflow: 'hidden' }}>
+    <div style={{ height: '100%', width: `${100 * frac * tw(f, a, a + dur, EZ.rise)}%`, borderRadius: h / 2, background: `linear-gradient(90deg, ${color}aa, ${color})`, boxShadow: `0 0 18px ${color}66` }} />
+  </div>
+);
 
-// ---------- word-synced captions (from tools/words.py) ----------
-type W = { i: number; text: string; start: number; end: number };
-type Beat = { id: string; words: W[]; chunks: { start: number; end: number; words: number[] }[] };
-export const Captions = ({ f, fps, beats, from = 0, until = 1e9, y = ZONE.captionTop }: { f: number; fps: number; beats: Beat[]; from?: number; until?: number; y?: number }) => {
-  if (f < from || f >= until) return null;
+// ---------- depth: two parallax layers of drifting dust in the plate's light ----------
+export const Dust = ({ f, n = 34, seed = 1 }: { f: number; n?: number; seed?: number }) => (
+  <>{Array.from({ length: n }, (_, i) => {
+    const near = rnd(i + seed, 9) > 0.7, sp = near ? 0.55 : 0.18, size = near ? 6 + 8 * rnd(i, 3) : 2 + 3 * rnd(i, 3);
+    const x = ((rnd(i + seed, 1) * 1080 + f * sp * (rnd(i, 6) - 0.4) * 1.4) % 1180 + 1180) % 1180 - 50;
+    const y = ((rnd(i + seed, 2) * 1920 - f * sp * 0.8) % 2000 + 2000) % 2000 - 40;
+    return <div key={i} style={{ position: 'absolute', left: x, top: y, width: size, height: size, borderRadius: '50%', background: rnd(i, 7) > 0.6 ? '#ffd9a0' : '#cfe0ff',
+      opacity: (near ? 0.18 : 0.32) * (0.6 + 0.4 * Math.sin(f * 0.05 + i)), filter: `blur(${near ? 4 : 1}px)` }} />;
+  })}</>
+);
+
+// ---------- word-level captions: whole chunk cuts in, the spoken word turns gold; kept inside the safe area ----------
+export type Chunk = { text: string; t0: number; t1: number; words: number[] };
+export type Word = { w: string; t0: number; t1: number };
+export const Captions = ({ f, fps, chunks, words, display = (s) => s, y = 1312, until }: {
+  f: number; fps: number; chunks: Chunk[]; words: Word[]; display?: (s: string) => string; y?: number; until?: number;
+}) => {
   const t = f / fps;
-  for (const b of beats) {
-    const cs = b.chunks;
-    for (let k = 0; k < cs.length; k++) {
-      const c = cs[k], next = cs[k + 1];
-      const outT = next ? next.start : c.end + 0.45;
-      if (t < c.start || t >= outT) continue;
-      const pin = clamp((t - c.start) / 0.08);
-      return (
-        <div style={{ position: 'absolute', left: 80, right: 120, top: y, height: ZONE.captionH, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-          <div style={{ padding: '14px 26px', borderRadius: 20, background: 'rgba(8,12,22,.5)', backdropFilter: 'blur(8px)', transform: `scale(${0.92 + 0.08 * pin})`, opacity: pin,
-            fontFamily: T.font, fontSize: 50, fontWeight: 800, lineHeight: 1.12, letterSpacing: -0.5, color: T.white, textShadow }}>
-            {c.words.map((wi, j) => {
-              const w = b.words[wi];
-              const on = t >= w.start && t < w.end + 0.04;
-              return <span key={j} style={{ color: on ? T.gold : T.white }}>{w.text.replace(/[,.;:]$/, '')}{j < c.words.length - 1 ? ' ' : ''}</span>;
-            })}
-          </div>
-        </div>
-      );
-    }
-  }
-  return null;
+  if (until !== undefined && t > until) return null;
+  const c = chunks.find((c, i) => t >= c.t0 - 0.05 && t < (chunks[i + 1] ? Math.min(chunks[i + 1].t0 - 0.05, c.t1 + 0.6) : c.t1 + 0.6));
+  if (!c) return null;
+  const e = tw(f, Math.round((c.t0 - 0.05) * fps), Math.round((c.t0 - 0.05) * fps) + 3, EZ.settle);
+  return (
+    <div style={{ position: 'absolute', left: SAFE.x0, width: SAFE.x1 - SAFE.x0, top: y, display: 'flex', justifyContent: 'center', opacity: e, transform: `scale(${0.94 + 0.06 * e})` }}>
+      <div style={{ padding: '12px 26px', borderRadius: 18, background: 'rgba(6,10,20,.55)', backdropFilter: 'blur(10px)', fontFamily: BR.font, fontSize: 50, fontWeight: 800, color: BR.ink, textShadow: shadow, whiteSpace: 'nowrap', maxWidth: 900 }}>
+        {c.words.map((wi, k) => {
+          const w = words[wi], on = t >= w.t0 - 0.03;
+          return <span key={wi} style={{ color: on && t < (c.words[k + 1] !== undefined ? words[c.words[k + 1]].t0 : c.t1 + 0.6) ? BR.gold : on ? BR.ink : 'rgba(244,246,250,.55)' }}>{display(w.w)}{k < c.words.length - 1 ? ' ' : ''}</span>;
+        })}
+      </div>
+    </div>
+  );
 };
-
-// ---------- depth over a photo plate (simulated, on a still: not live footage) ----------
-// Foreground bokeh drifting faster than the plate's own camera (parallax), a slow light leak, and our navy grade.
-export const Depth = ({ f, seed = 1, warm = 0.7, leak = 1 }: { f: number; seed?: number; warm?: number; leak?: number }) => (
-  <AbsoluteFill style={{ pointerEvents: 'none' }}>
-    {Array.from({ length: 12 }, (_, i) => {
-      const r1 = rnd(i, seed), r2 = rnd(i, seed + 7), r3 = rnd(i, seed + 13);
-      const near = 0.4 + r3 * 0.6, size = 26 + 70 * near;
-      const x = ((r1 * 1300 + f * (0.25 + 0.9 * near)) % 1400) - 160, y = 120 + r2 * 1650 + Math.sin(f * 0.02 + i) * 14 * near;
-      const c = r2 < warm ? '255,214,150' : '200,220,255';
-      return <div key={i} style={{ position: 'absolute', left: x, top: y, width: size, height: size, borderRadius: '50%', background: `radial-gradient(circle, rgba(${c},${0.1 + 0.08 * near}) 0%, rgba(${c},0) 70%)`, filter: `blur(${4 + 10 * near}px)` }} />;
-    })}
-    <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(60% 40% at ${30 + 40 * Math.sin(f * 0.004 + seed)}% ${20 + 10 * Math.cos(f * 0.003)}%, rgba(255,226,180,${0.07 * leak}) 0%, rgba(255,226,180,0) 70%)`, mixBlendMode: 'screen' }} />
-  </AbsoluteFill>
-);
-
-export const NavyGrade = ({ low = 1 }: { low?: number }) => (
-  <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(8,12,22,.86) 0%, rgba(8,12,22,.52) 14%, rgba(8,12,22,0) 30%, rgba(8,12,22,0) 50%, rgba(8,12,22,${0.5 * low}) 66%, rgba(8,12,22,${0.86 * low}) 100%)` }} />
-);

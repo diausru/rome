@@ -1,0 +1,4 @@
+{"fps":30,"footer":"ENGINE TEST · placeholder, not tax data",
+ "vo":[{"id":"L1","file":"vo/L1.mp3"},{"id":"L2","file":"vo/L2.mp3"},{"id":"L3","file":"vo/L3.mp3"}],
+ "chapters":[{"at":"L1","title":"Test"},{"at":"L3","title":"01 · Part two"}],
+ "events":[{"at":"L1","type":"statement","text":"Line one"},{"at":"L2","type":"card","label":"Number","value":4200},{"at":"L2","off":0.5,"type":"caption","text":"overlay caption","overlay":true,"dur":2},{"at":"L3","type":"chapter","num":"01","title":"Part two"}]}

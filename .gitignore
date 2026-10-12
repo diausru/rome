@@ -26,3 +26,15 @@ xmas/vo/*.wav
 /out/
 ny/vo/*.wav
 ny/vo3/*.wav
+showreel/out/lf/
+showreel/public/lf/
+longform/engine-demo.mp4
+longform/*/raw/
+longform/*/vo.wav
+longform/*/props.json
+longform/*/episode.json
+longform/*/*.mp4
+showreel/public/lf/*/plates/
+longform/*/mix.wav
+longform/*/plates/*_4k.png
+longform/*/plates/*_4k.png

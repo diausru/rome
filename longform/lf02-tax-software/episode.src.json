@@ -1,0 +1,2712 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: canada.ca \u00b7 vendor sites, checked 2026-10-11 \u00b7 2025 tax year \u00b7 General info, not advice \u00b7 Not sponsored",
+ "data": {
+  "sw": {
+   "type": "file",
+   "file": "software.json"
+  }
+ },
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Seven tax programs. Do-it-yourself prices from zero to eighty dollars. And every one of them is certified by the Canada Revenue Agency."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "So why would anyone pay eighty dollars, when the same return can be filed for nothing?"
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "That's the real question. Not which app is best. Which app is best for you. And by the end of this video you'll know exactly which one to open, and what it costs, for your situation."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 1.1,
+   "text": "Quick disclosure before we start. Nobody sponsored this video. There are no affiliate links. Every price you'll see was checked on each company's own website, and on canada.ca, on October eleventh, twenty twenty-six."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "First, the rules of the game. The CRA certifies tax software every single year. For the twenty twenty-five tax year, the one Canadians filed this spring, seventeen products made the list."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 0.35,
+   "text": "You have to use software certified for the year you're filing. And the CRA loads that list in random order, on purpose. It doesn't rank them, and neither should a sales page."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "Here's the part most reviews skip. The tax law inside every certified program is the same law. Enter the same slips correctly, and the tax owed doesn't change because you paid more for the app."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "So what are you actually paying for? Three things. Which forms you can use. How much help you get. And what happens if the CRA comes back with questions."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "Two more facts that matter for everyone. Auto-fill My Return pulls your slips straight from the CRA into the software. But it only works through a CRA account. If you sign in with an Alberta dot ca account or a B C Services Card, it won't connect."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 1.1,
+   "text": "And the slips usually aren't all there until mid-March. The CRA says most third-party information arrives by the end of February, and is processed by mid-March. File in the first week, and you may be missing a slip."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "Now, the contenders. Seven well-known programs, and every one of them is on the CRA's certified list."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "Wealthsimple Tax. The Basic plan is pay what you want, and that includes zero. Plus is forty dollars, with audit protection. Pro is eighty, with access to tax experts."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "TurboTax. Free for simple returns only. Then thirty, fifty and seventy dollars per return, depending on what's in your tax year."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "H and R Block. Almost the same ladder. Free for simple returns, then twenty-nine ninety-nine, forty-nine ninety-nine and sixty-nine ninety-nine."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "UFile. Online starts at twenty dollars and ninety-five cents. You can prepare everything for free, and you pay only when you're ready to file."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 0.35,
+   "text": "StudioTax. An app you install on a computer or a phone, not a website. On a computer, it's seventeen dollars and fifty cents for a licence that covers ten returns."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "CloudTax. Basic is zero, pay what you want. Plus is thirty-nine dollars per account."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 1.1,
+   "text": "And GenuTax. Completely free. Windows only. The developer asks for donations, and that's it."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "So let's run the face-off. Four Canadians, four very different tax years. Same rules for everyone."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "Round one. Ava. She's twenty-two, a university student, with one part-time job. Her total income for the year is fourteen thousand dollars."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "And Ava is the easiest case in this whole video, because almost everybody wants to give her a free return."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "H and R Block is free for anyone twenty-five or younger. Every package. No income limit."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "UFile is free for post-secondary students, and also free when total family income is under twenty thousand dollars."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "StudioTax is free when total income is under twenty thousand. Wealthsimple Basic can be zero. CloudTax Basic covers employment income, for zero. And GenuTax is always zero."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "So Ava's real cost is zero dollars, six different ways. If any app asks her to upgrade, the honest answer is no."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 1.1,
+   "text": "One more option for Ava. If her income is modest and her return is simple, a free tax clinic, run by volunteers through a CRA program, can file it for her. And the CRA's own SimpleFile service is free for eligible people with a lower income."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 0.35,
+   "text": "Round two. Liam. One job, one T4, sixty-eight thousand dollars. He gave to a charity, and he has some medical receipts."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "This is where the free tiers start to split."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 0.35,
+   "text": "At TurboTax and H and R Block, donations and medical expenses sit in the Deluxe tier. That's thirty dollars, or twenty-nine ninety-nine."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "At UFile, the free option is for a single T4 with only the standard credits. Donations and medical expenses take Liam past that. So UFile Online starts at twenty dollars ninety-five."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "StudioTax is seventeen fifty, because his income is over twenty thousand. Wealthsimple says every form is in every plan, including donations and medical. So Basic can still be zero. Same with GenuTax."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 1.1,
+   "text": "Same return, same tax law. A price range from zero to thirty dollars. The difference is the interface, and the help, not the result."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "Round three. Priya. Salary plus a brokerage account. This year she sold shares, so she has capital gains to report, and some foreign dividends."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "At TurboTax, capital gains and foreign income are in Premier, fifty dollars. At H and R Block, Premier is forty-nine ninety-nine."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "Wealthsimple lists capital gains reporting and foreign income as part of the platform, in every plan. So Basic can still be zero."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "GenuTax handles capital gains, for free. StudioTax is seventeen fifty. UFile Online starts at twenty ninety-five."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 1.1,
+   "text": "But here's Priya's catch. If she ever has to file the foreign property form, T eleven thirty-five, GenuTax can't send it electronically. The CRA lists it as a limitation. So the free option isn't always the right one."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "Round four. Marc. He's self-employed, he does freelance design, and he rents out a basement suite."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "Marc's deadlines are different. As a self-employed person, he can file until June fifteenth. But any tax he owes is still due by April thirtieth. Interest starts on the money, not on the paperwork."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "At TurboTax, self-employment and rental income are in the Self-Employed tier. Seventy dollars. H and R Block, sixty-nine ninety-nine."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "StudioTax says it covers self-employed returns and rental income. Seventeen fifty. GenuTax lists rental properties and small business, for free."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 0.35,
+   "text": "Wealthsimple Basic still claims rental income and every form, at any price, including zero."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 1.1,
+   "text": "So on price alone, Marc could pay anywhere from zero to seventy dollars for the same two forms."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "Let's put the scoreboard together. Four people. Seven programs. What each one would actually pay, based on the published prices."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 1.1,
+   "text": "Two programs come out at zero in every round. Wealthsimple Basic, and GenuTax. The big brands climb from zero to seventy, as the return gets more complex."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "And now the surprise. If the cheapest option works for everyone, why do the paid tiers exist at all?"
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 0.35,
+   "text": "Because price isn't the only score. Look at what the money buys."
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "Wealthsimple Plus at forty dollars adds audit protection and priority support. CloudTax Plus at thirty-nine adds audit protection for the main account holder. H and R Block sells expert help on top of its software."
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 0.35,
+   "text": "GenuTax gives you no expert at all. It's a free Windows program, and you're on your own. StudioTax keeps your files on your own device, not in the cloud, which some people want, and some people don't."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 1.1,
+   "text": "So the real trade isn't cheap versus expensive. It's money versus help. If a CRA letter would ruin your week, protection may be worth forty dollars. If you're comfortable reading forms, it probably isn't."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "Final face-off. The three questions that decide your pick."
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.mp3",
+   "gap": 0.35,
+   "text": "Question one. How complex is your year? One T4 and the standard credits, almost anything free will do. Investments, rental, or self-employment, check which tier unlocks those forms before you start."
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.mp3",
+   "gap": 0.35,
+   "text": "Question two. How much help do you want? None, take the free option. Some reassurance, look at audit protection. A real person to review it, that's the expert tiers, and they cost more."
+  },
+  {
+   "id": "L54",
+   "file": "vo/L54.mp3",
+   "gap": 1.1,
+   "text": "Question three. What device, and where do you live? GenuTax is Windows only. StudioTax runs on Windows, Mac, iPhone and Android. And if you file in Quebec, check each program's limits, because Wealthsimple's Pro plan, for example, isn't offered in Quebec."
+  },
+  {
+   "id": "L55",
+   "file": "vo/L55.mp3",
+   "gap": 0.35,
+   "text": "So here's the verdict. There's no single winner. The right program depends on your tax year, and on how much help you want."
+  },
+  {
+   "id": "L56",
+   "file": "vo/L56.mp3",
+   "gap": 0.35,
+   "text": "Student or low income: file free. H and R Block if you're twenty-five or under, UFile or StudioTax under twenty thousand, or a free tax clinic."
+  },
+  {
+   "id": "L57",
+   "file": "vo/L57.mp3",
+   "gap": 0.35,
+   "text": "Simple T4 with a few credits: a free tier that includes donations and medical, like Wealthsimple Basic or GenuTax, does the same job as a thirty-dollar tier."
+  },
+  {
+   "id": "L58",
+   "file": "vo/L58.mp3",
+   "gap": 1.1,
+   "text": "Investors and self-employed: free options exist, but read the limits. And if you want a safety net, that's what you're paying for."
+  },
+  {
+   "id": "L59",
+   "file": "vo/L59.mp3",
+   "gap": 0.35,
+   "text": "One last thing. Everything you saw today is for the twenty twenty-five tax year. The CRA hasn't published next year's certified list yet, and prices can change. Check again before you file in twenty twenty-seven."
+  },
+  {
+   "id": "L60",
+   "file": "vo/L60.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: you make a hundred thousand dollars in Canada. Where does every dollar actually go? Subscribe, so you're here when we break it down."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "The question"
+  },
+  {
+   "at": "L5",
+   "title": "01 \u00b7 The rules"
+  },
+  {
+   "at": "L11",
+   "title": "02 \u00b7 The contenders"
+  },
+  {
+   "at": "L19",
+   "title": "03 \u00b7 Round 1 \u00b7 Ava"
+  },
+  {
+   "at": "L27",
+   "title": "04 \u00b7 Round 2 \u00b7 Liam"
+  },
+  {
+   "at": "L33",
+   "title": "05 \u00b7 Round 3 \u00b7 Priya"
+  },
+  {
+   "at": "L38",
+   "title": "06 \u00b7 Round 4 \u00b7 Marc"
+  },
+  {
+   "at": "L44",
+   "title": "07 \u00b7 Scoreboard"
+  },
+  {
+   "at": "L46",
+   "title": "08 \u00b7 The surprise"
+  },
+  {
+   "at": "L51",
+   "title": "09 \u00b7 Final face-off"
+  },
+  {
+   "at": "L55",
+   "title": "10 \u00b7 Verdict"
+  },
+  {
+   "at": "L59",
+   "title": "Next"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 250,
+     "w": 1600,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "focus",
+     "text": [
+      "SEVEN TAX PROGRAMS.",
+      "FROM *$0* TO *$80*."
+     ],
+     "lineAt": [
+      {
+       "at": "L1"
+      },
+      {
+       "at": "L1",
+       "word": "zero"
+      }
+     ],
+     "sub": "EVERY ONE CERTIFIED BY THE CRA",
+     "subAt": {
+      "at": "L1",
+      "word": "certified"
+     },
+     "size": 112
+    }
+   ]
+  },
+  {
+   "at": "L2",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 200,
+     "w": 1600,
+     "at": "L2",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "text": [
+      "WHY PAY *$80*",
+      "WHEN YOU CAN FILE FOR *$0*?"
+     ],
+     "lineAt": [
+      {
+       "at": "L2"
+      },
+      {
+       "at": "L2",
+       "word": "when"
+      }
+     ],
+     "size": 104
+    }
+   ]
+  },
+  {
+   "at": "L3",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 230,
+     "w": 1600,
+     "at": "L3",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "particles",
+     "text": [
+      "NOT \u201cWHICH APP IS BEST?\u201d",
+      "\u201cWHICH APP IS BEST *FOR YOU*?\u201d"
+     ],
+     "lineAt": [
+      {
+       "at": "L3"
+      },
+      {
+       "at": "L3",
+       "word": "Which app is best for"
+      }
+     ],
+     "size": 92
+    }
+   ]
+  },
+  {
+   "at": "L4",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 360,
+     "y": 200,
+     "w": 1200,
+     "at": "L4",
+     "fxIn": "sweep",
+     "fxOut": "defocus",
+     "title": "DISCLOSURE",
+     "sub": "CHECKED 2026-10-11",
+     "items": [
+      {
+       "head": "NOT SPONSORED",
+       "at": "L4",
+       "word": "Nobody"
+      },
+      {
+       "head": "NO AFFILIATE LINKS",
+       "at": "L4",
+       "word": "There are no"
+      },
+      {
+       "head": "EVERY PRICE FROM THE COMPANY\u2019S OWN SITE + CANADA.CA",
+       "at": "L4",
+       "word": "Every price"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 150,
+     "w": 1600,
+     "at": "L5",
+     "glass": false,
+     "fxIn": "slideL",
+     "kicker": "RULE 1",
+     "text": [
+      "THE CRA CERTIFIES TAX SOFTWARE",
+      "*EVERY YEAR*"
+     ],
+     "lineAt": [
+      {
+       "at": "L5",
+       "word": "The CRA"
+      },
+      {
+       "at": "L5",
+       "word": "every single"
+      }
+     ],
+     "size": 84,
+     "until": {
+      "at": "L5",
+      "word": "For the"
+     }
+    },
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L5",
+     "word": "For the",
+     "glass": false,
+     "fxIn": "focus",
+     "kicker": "2025 TAX YEAR \u00b7 FILED SPRING 2026",
+     "text": [
+      "*17* PRODUCTS MADE THE LIST"
+     ],
+     "size": 120
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 190,
+     "w": 1400,
+     "at": "L6",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "HOW THE CRA LIST WORKS",
+     "sub": "CANADA.CA \u00b7 FIND CERTIFIED TAX SOFTWARE",
+     "items": [
+      {
+       "head": "USE SOFTWARE CERTIFIED FOR THE YEAR YOU FILE",
+       "at": "L6"
+      },
+      {
+       "head": "THE LIST LOADS IN RANDOM ORDER",
+       "text": "The CRA does not rank the products.",
+       "at": "L6",
+       "word": "random"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 240,
+     "w": 1600,
+     "at": "L7",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "fade",
+     "kicker": "WHAT MOST REVIEWS SKIP",
+     "text": [
+      "SAME SLIPS + SAME TAX LAW",
+      "= *SAME TAX OWED*"
+     ],
+     "lineAt": [
+      {
+       "at": "L7",
+       "word": "The tax law"
+      },
+      {
+       "at": "L7",
+       "word": "Enter the same"
+      }
+     ],
+     "size": 100
+    }
+   ]
+  },
+  {
+   "at": "L8",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 360,
+     "y": 170,
+     "w": 1200,
+     "at": "L8",
+     "fxIn": "morph",
+     "fxOut": "particles",
+     "title": "WHAT YOU ACTUALLY PAY FOR",
+     "items": [
+      {
+       "head": "WHICH FORMS YOU CAN USE",
+       "at": "L8",
+       "word": "Which forms"
+      },
+      {
+       "head": "HOW MUCH HELP YOU GET",
+       "at": "L8",
+       "word": "How much help"
+      },
+      {
+       "head": "WHAT HAPPENS IF THE CRA ASKS QUESTIONS",
+       "at": "L8",
+       "word": "And what happens"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L9",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 190,
+     "w": 1400,
+     "at": "L9",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "AUTO-FILL MY RETURN",
+     "sub": "CANADA.CA",
+     "items": [
+      {
+       "n": "\u2713",
+       "head": "PULLS YOUR SLIPS FROM THE CRA",
+       "at": "L9",
+       "word": "pulls"
+      },
+      {
+       "n": "!",
+       "head": "NEEDS A CRA ACCOUNT",
+       "at": "L9",
+       "word": "But it only"
+      },
+      {
+       "n": "\u2715",
+       "head": "NOT VIA ALBERTA.CA OR BC SERVICES CARD SIGN-IN",
+       "at": "L9",
+       "word": "If you sign"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L10",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "timeline",
+     "x": 200,
+     "y": 230,
+     "w": 1520,
+     "at": "L10",
+     "fxIn": "wipe",
+     "fxOut": "defocus",
+     "title": "WHEN YOUR SLIPS ARRIVE",
+     "sub": "CANADA.CA",
+     "points": [
+      {
+       "date": "FEB 23",
+       "label": "NETFILE OPENS",
+       "at": "L10"
+      },
+      {
+       "date": "END OF FEB",
+       "label": "MOST THIRD-PARTY SLIPS RECEIVED",
+       "at": "L10",
+       "word": "end of February"
+      },
+      {
+       "date": "MID-MARCH",
+       "label": "PROCESSED, READY FOR AUTO-FILL",
+       "at": "L10",
+       "word": "processed"
+      },
+      {
+       "date": "APR 30",
+       "label": "FILING DEADLINE",
+       "at": "L10",
+       "word": "File in",
+       "red": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "lineup",
+     "x": 110,
+     "y": 300,
+     "w": 1700,
+     "at": "L11",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "THE CONTENDERS",
+     "sub": "ALL ON THE CRA CERTIFIED LIST \u00b7 2025",
+     "value": {
+      "ref": "sw"
+     },
+     "focus": [
+      {
+       "id": "ws",
+       "at": "L12"
+      },
+      {
+       "id": "tt",
+       "at": "L13"
+      },
+      {
+       "id": "hrb",
+       "at": "L14"
+      },
+      {
+       "id": "uf",
+       "at": "L15"
+      },
+      {
+       "id": "st",
+       "at": "L16"
+      },
+      {
+       "id": "ct",
+       "at": "L17"
+      },
+      {
+       "id": "gt",
+       "at": "L18"
+      }
+     ],
+     "until": {
+      "at": "L12"
+     }
+    }
+   ]
+  },
+  {
+   "at": "L12",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "tiers",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L12",
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "value": {
+      "ref": "sw.programs.ws"
+     },
+     "rowAt": [
+      {
+       "at": "L12",
+       "word": "Basic"
+      },
+      {
+       "at": "L12",
+       "word": "Plus"
+      },
+      {
+       "at": "L12",
+       "word": "Pro"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "tiers",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L13",
+     "fxIn": "slideR",
+     "fxOut": "defocus",
+     "value": {
+      "ref": "sw.programs.tt"
+     },
+     "rowAt": [
+      {
+       "at": "L13",
+       "word": "Free"
+      },
+      {
+       "at": "L13",
+       "word": "thirty"
+      },
+      {
+       "at": "L13",
+       "word": "fifty"
+      },
+      {
+       "at": "L13",
+       "word": "seventy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "tiers",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L14",
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "value": {
+      "ref": "sw.programs.hrb"
+     },
+     "rowAt": [
+      {
+       "at": "L14",
+       "word": "Free"
+      },
+      {
+       "at": "L14",
+       "word": "twenty-nine"
+      },
+      {
+       "at": "L14",
+       "word": "forty-nine"
+      },
+      {
+       "at": "L14",
+       "word": "sixty-nine"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "tiers",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L15",
+     "fxIn": "focus",
+     "fxOut": "particles",
+     "value": {
+      "ref": "sw.programs.uf"
+     },
+     "rowAt": [
+      {
+       "at": "L15",
+       "word": "Online"
+      },
+      {
+       "at": "L15",
+       "word": "pay only"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "tiers",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L16",
+     "fxIn": "slideL",
+     "fxOut": "collapse",
+     "value": {
+      "ref": "sw.programs.st"
+     },
+     "rowAt": [
+      {
+       "at": "L16",
+       "word": "On a computer"
+      },
+      {
+       "at": "L16",
+       "word": "phone"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L17",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "tiers",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L17",
+     "fxIn": "sweep",
+     "fxOut": "fade",
+     "value": {
+      "ref": "sw.programs.ct"
+     },
+     "rowAt": [
+      {
+       "at": "L17",
+       "word": "Basic"
+      },
+      {
+       "at": "L17",
+       "word": "Plus"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L18",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "tiers",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L18",
+     "fxIn": "morph",
+     "fxOut": "vapor",
+     "value": {
+      "ref": "sw.programs.gt"
+     },
+     "rowAt": [
+      {
+       "at": "L18",
+       "word": "Completely"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 280,
+     "w": 1600,
+     "at": "L19",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "vapor",
+     "kicker": "THE FACE-OFF",
+     "text": [
+      "4 CANADIANS \u00b7 4 TAX YEARS",
+      "*SAME RULES*"
+     ],
+     "lineAt": [
+      {
+       "at": "L19",
+       "word": "Four"
+      },
+      {
+       "at": "L19",
+       "word": "Same rules"
+      }
+     ],
+     "size": 100
+    }
+   ]
+  },
+  {
+   "at": "L20",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "persona",
+     "x": 110,
+     "y": 250,
+     "w": 620,
+     "at": "L20",
+     "glass": false,
+     "fxIn": "slideL",
+     "round": "ROUND 1",
+     "value": {
+      "ref": "sw.rounds.ava"
+     },
+     "chips": [
+      {
+       "text": "AGE 22 \u00b7 STUDENT",
+       "at": "L20",
+       "word": "twenty-two"
+      },
+      {
+       "text": "ONE PART-TIME JOB",
+       "at": "L20",
+       "word": "one part-time"
+      },
+      {
+       "text": "INCOME $14,000",
+       "at": "L20",
+       "word": "fourteen"
+      }
+     ]
+    },
+    {
+     "type": "round",
+     "x": 760,
+     "y": 170,
+     "w": 1050,
+     "at": "L21",
+     "fxIn": "glass",
+     "value": {
+      "ref": "sw.rounds.ava"
+     },
+     "programs": {
+      "ref": "sw.programs"
+     },
+     "order": {
+      "ref": "sw.order"
+     },
+     "rowAt": [
+      {
+       "id": "hrb",
+       "at": "L22"
+      },
+      {
+       "id": "uf",
+       "at": "L23"
+      },
+      {
+       "id": "st",
+       "at": "L24"
+      },
+      {
+       "id": "ws",
+       "at": "L24",
+       "word": "Wealthsimple"
+      },
+      {
+       "id": "ct",
+       "at": "L24",
+       "word": "CloudTax"
+      },
+      {
+       "id": "gt",
+       "at": "L24",
+       "word": "And GenuTax"
+      },
+      {
+       "id": "tt",
+       "at": "L25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 260,
+     "w": 1600,
+     "at": "L25",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "particles",
+     "kicker": "AVA\u2019S REAL COST",
+     "text": [
+      "*$0*",
+      "SIX DIFFERENT WAYS"
+     ],
+     "lineAt": [
+      {
+       "at": "L25"
+      },
+      {
+       "at": "L25",
+       "word": "six"
+      }
+     ],
+     "size": 150
+    }
+   ]
+  },
+  {
+   "at": "L26",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L26",
+     "fxIn": "glass",
+     "fxOut": "defocus",
+     "title": "FREE OPTIONS FROM THE CRA",
+     "sub": "CANADA.CA \u00b7 IF ELIGIBLE",
+     "items": [
+      {
+       "head": "FREE TAX CLINICS (CVITP)",
+       "text": "Volunteers file for people with a modest income and a simple tax situation.",
+       "at": "L26",
+       "word": "a free tax clinic"
+      },
+      {
+       "head": "SIMPLEFILE BY THE CRA",
+       "text": "Free for eligible people with a lower income and a simple return.",
+       "at": "L26",
+       "word": "SimpleFile"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "persona",
+     "x": 110,
+     "y": 250,
+     "w": 620,
+     "at": "L27",
+     "glass": false,
+     "fxIn": "slideL",
+     "round": "ROUND 2",
+     "value": {
+      "ref": "sw.rounds.liam"
+     },
+     "chips": [
+      {
+       "text": "ONE T4 \u00b7 $68,000",
+       "at": "L27",
+       "word": "One job"
+      },
+      {
+       "text": "CHARITY DONATIONS",
+       "at": "L27",
+       "word": "charity"
+      },
+      {
+       "text": "MEDICAL RECEIPTS",
+       "at": "L27",
+       "word": "medical"
+      }
+     ]
+    },
+    {
+     "type": "round",
+     "x": 760,
+     "y": 170,
+     "w": 1050,
+     "at": "L28",
+     "fxIn": "glass",
+     "value": {
+      "ref": "sw.rounds.liam"
+     },
+     "programs": {
+      "ref": "sw.programs"
+     },
+     "order": {
+      "ref": "sw.order"
+     },
+     "rowAt": [
+      {
+       "id": "tt",
+       "at": "L29"
+      },
+      {
+       "id": "hrb",
+       "at": "L29",
+       "word": "twenty-nine"
+      },
+      {
+       "id": "uf",
+       "at": "L30"
+      },
+      {
+       "id": "st",
+       "at": "L31"
+      },
+      {
+       "id": "ws",
+       "at": "L31",
+       "word": "Wealthsimple"
+      },
+      {
+       "id": "gt",
+       "at": "L31",
+       "word": "Same with"
+      },
+      {
+       "id": "ct",
+       "at": "L32"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L32",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 260,
+     "w": 1600,
+     "at": "L32",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "kicker": "SAME RETURN \u00b7 SAME TAX LAW",
+     "text": [
+      "*$0* \u2192 *$30*",
+      "YOU PAY FOR THE INTERFACE + HELP"
+     ],
+     "lineAt": [
+      {
+       "at": "L32",
+       "word": "A price"
+      },
+      {
+       "at": "L32",
+       "word": "The difference"
+      }
+     ],
+     "size": 110
+    }
+   ]
+  },
+  {
+   "at": "L33",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "persona",
+     "x": 110,
+     "y": 250,
+     "w": 620,
+     "at": "L33",
+     "glass": false,
+     "fxIn": "slideL",
+     "round": "ROUND 3",
+     "value": {
+      "ref": "sw.rounds.priya"
+     },
+     "chips": [
+      {
+       "text": "SALARY",
+       "at": "L33",
+       "word": "Salary"
+      },
+      {
+       "text": "CAPITAL GAINS (SOLD SHARES)",
+       "at": "L33",
+       "word": "capital gains"
+      },
+      {
+       "text": "FOREIGN DIVIDENDS",
+       "at": "L33",
+       "word": "foreign"
+      }
+     ]
+    },
+    {
+     "type": "round",
+     "x": 760,
+     "y": 170,
+     "w": 1050,
+     "at": "L34",
+     "fxIn": "glass",
+     "value": {
+      "ref": "sw.rounds.priya"
+     },
+     "programs": {
+      "ref": "sw.programs"
+     },
+     "order": {
+      "ref": "sw.order"
+     },
+     "rowAt": [
+      {
+       "id": "tt",
+       "at": "L34"
+      },
+      {
+       "id": "hrb",
+       "at": "L34",
+       "word": "At H and R"
+      },
+      {
+       "id": "ws",
+       "at": "L35"
+      },
+      {
+       "id": "gt",
+       "at": "L36"
+      },
+      {
+       "id": "st",
+       "at": "L36",
+       "word": "StudioTax"
+      },
+      {
+       "id": "uf",
+       "at": "L36",
+       "word": "UFile"
+      },
+      {
+       "id": "ct",
+       "at": "L37"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 300,
+     "y": 230,
+     "w": 1320,
+     "at": "L37",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "PRIYA\u2019S CATCH",
+     "sub": "CRA \u00b7 GENUTAX DETAILS, 2025",
+     "items": [
+      {
+       "n": "!",
+       "head": "FORM T1135 \u00b7 FOREIGN PROPERTY",
+       "text": "GenuTax cannot send it electronically (a CRA-listed limitation).",
+       "at": "L37",
+       "word": "T eleven"
+      },
+      {
+       "n": "\u2192",
+       "head": "FREE ISN\u2019T ALWAYS THE RIGHT ONE",
+       "at": "L37",
+       "word": "So the free"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L38",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "persona",
+     "x": 110,
+     "y": 250,
+     "w": 620,
+     "at": "L38",
+     "glass": false,
+     "fxIn": "slideL",
+     "round": "ROUND 4",
+     "value": {
+      "ref": "sw.rounds.marc"
+     },
+     "chips": [
+      {
+       "text": "SELF-EMPLOYED DESIGNER",
+       "at": "L38",
+       "word": "self-employed"
+      },
+      {
+       "text": "RENTS A BASEMENT SUITE",
+       "at": "L38",
+       "word": "rents"
+      }
+     ],
+     "until": {
+      "at": "L40"
+     }
+    },
+    {
+     "type": "timeline",
+     "x": 760,
+     "y": 250,
+     "w": 1050,
+     "at": "L39",
+     "word": "June",
+     "fxIn": "wipe",
+     "fxOut": "defocus",
+     "title": "MARC\u2019S DATES \u00b7 2025 RETURN",
+     "sub": "CANADA.CA",
+     "points": [
+      {
+       "date": "APR 30",
+       "label": "TAX OWING DUE",
+       "at": "L39",
+       "word": "But any tax",
+       "red": true
+      },
+      {
+       "date": "JUN 15",
+       "label": "SELF-EMPLOYED FILING DEADLINE",
+       "at": "L39",
+       "word": "June"
+      }
+     ],
+     "until": {
+      "at": "L40"
+     }
+    }
+   ]
+  },
+  {
+   "at": "L40",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "persona",
+     "x": 110,
+     "y": 250,
+     "w": 620,
+     "at": "L40",
+     "glass": false,
+     "fxIn": "fade",
+     "round": "ROUND 4",
+     "value": {
+      "ref": "sw.rounds.marc"
+     },
+     "chips": [
+      {
+       "text": "SELF-EMPLOYED",
+       "at": "L40"
+      },
+      {
+       "text": "RENTAL INCOME",
+       "at": "L40"
+      }
+     ]
+    },
+    {
+     "type": "round",
+     "x": 760,
+     "y": 170,
+     "w": 1050,
+     "at": "L40",
+     "fxIn": "glass",
+     "value": {
+      "ref": "sw.rounds.marc"
+     },
+     "programs": {
+      "ref": "sw.programs"
+     },
+     "order": {
+      "ref": "sw.order"
+     },
+     "rowAt": [
+      {
+       "id": "tt",
+       "at": "L40"
+      },
+      {
+       "id": "hrb",
+       "at": "L40",
+       "word": "H and R"
+      },
+      {
+       "id": "st",
+       "at": "L41"
+      },
+      {
+       "id": "gt",
+       "at": "L41",
+       "word": "GenuTax"
+      },
+      {
+       "id": "ws",
+       "at": "L42"
+      },
+      {
+       "id": "uf",
+       "at": "L43"
+      },
+      {
+       "id": "ct",
+       "at": "L43",
+       "word": "seventy"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L44",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "matrix",
+     "x": 210,
+     "y": 170,
+     "w": 1500,
+     "at": "L44",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "THE SCOREBOARD",
+     "sub": "WHAT EACH PERSON PAYS \u00b7 PUBLISHED PRICES",
+     "value": {
+      "ref": "sw"
+     },
+     "people": [
+      "ava",
+      "liam",
+      "priya",
+      "marc"
+     ],
+     "colAt": [
+      {
+       "at": "L44",
+       "word": "Four"
+      },
+      {
+       "at": "L44",
+       "word": "Seven"
+      },
+      {
+       "at": "L44",
+       "word": "What each"
+      },
+      {
+       "at": "L44",
+       "word": "published"
+      }
+     ],
+     "zeroAt": {
+      "at": "L45"
+     }
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 260,
+     "w": 1600,
+     "at": "L46",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "particles",
+     "kicker": "THE SURPRISE",
+     "text": [
+      "IF $0 WORKS FOR EVERYONE\u2026",
+      "WHY DO *PAID TIERS* EXIST?"
+     ],
+     "lineAt": [
+      {
+       "at": "L46",
+       "word": "If the"
+      },
+      {
+       "at": "L46",
+       "word": "why"
+      }
+     ],
+     "size": 100
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "buys",
+     "x": 210,
+     "y": 160,
+     "w": 1500,
+     "at": "L47",
+     "fxIn": "sweep",
+     "fxOut": "vapor",
+     "title": "WHAT THE MONEY BUYS",
+     "sub": "VENDOR SITES \u00b7 2025 TAX YEAR",
+     "rows": [
+      {
+       "name": "WEALTHSIMPLE PLUS",
+       "price": "$40",
+       "gets": "AUDIT PROTECTION \u00b7 PRIORITY SUPPORT",
+       "at": "L48"
+      },
+      {
+       "name": "CLOUDTAX PLUS",
+       "price": "$39",
+       "gets": "AUDIT PROTECTION (MAIN ACCOUNT HOLDER)",
+       "at": "L48",
+       "word": "CloudTax"
+      },
+      {
+       "name": "H&R BLOCK",
+       "price": "PAID",
+       "gets": "EXPERT HELP SOLD SEPARATELY",
+       "at": "L48",
+       "word": "H and R"
+      },
+      {
+       "name": "GENUTAX",
+       "price": "$0",
+       "gets": "NO EXPERT \u00b7 YOU\u2019RE ON YOUR OWN",
+       "neg": true,
+       "at": "L49"
+      },
+      {
+       "name": "STUDIOTAX",
+       "price": "$17.50",
+       "gets": "FILES STAY ON YOUR DEVICE",
+       "at": "L49",
+       "word": "StudioTax"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 260,
+     "w": 1600,
+     "at": "L50",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "defocus",
+     "kicker": "THE REAL TRADE",
+     "text": [
+      "NOT CHEAP VS EXPENSIVE",
+      "*MONEY VS HELP*"
+     ],
+     "lineAt": [
+      {
+       "at": "L50"
+      },
+      {
+       "at": "L50",
+       "word": "money versus"
+      }
+     ],
+     "size": 112
+    }
+   ]
+  },
+  {
+   "at": "L51",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 150,
+     "w": 1400,
+     "at": "L51",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "FINAL FACE-OFF \u00b7 3 QUESTIONS",
+     "dimOthers": true,
+     "items": [
+      {
+       "head": "HOW COMPLEX IS YOUR YEAR?",
+       "text": "One T4 + standard credits: free works. Investments, rental, self-employment: check which tier unlocks those forms.",
+       "at": "L52"
+      },
+      {
+       "head": "HOW MUCH HELP DO YOU WANT?",
+       "text": "None: free. Reassurance: audit protection. A person reviewing it: expert tiers, which cost more.",
+       "at": "L53"
+      },
+      {
+       "head": "WHAT DEVICE \u00b7 WHERE DO YOU LIVE?",
+       "text": "GenuTax: Windows only. StudioTax: Windows, Mac, iPhone, Android. Quebec: check each program\u2019s limits.",
+       "at": "L54"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L55",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 120,
+     "w": 1600,
+     "at": "L55",
+     "glass": false,
+     "fxIn": "focus",
+     "kicker": "THE VERDICT",
+     "text": [
+      "NO SINGLE WINNER"
+     ],
+     "size": 96,
+     "until": {
+      "at": "L56"
+     }
+    },
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 330,
+     "w": 1400,
+     "at": "L56",
+     "fxIn": "slideUp",
+     "fxOut": "particles",
+     "items": [
+      {
+       "n": "A",
+       "head": "STUDENT OR LOW INCOME \u2192 FILE FREE",
+       "text": "H&R Block (25 or under) \u00b7 UFile or StudioTax (under $20K) \u00b7 a free tax clinic",
+       "at": "L56"
+      },
+      {
+       "n": "B",
+       "head": "SIMPLE T4 + A FEW CREDITS \u2192 FREE TIER",
+       "text": "Wealthsimple Basic or GenuTax do the job of a $30 tier",
+       "at": "L57"
+      },
+      {
+       "n": "C",
+       "head": "INVESTORS \u00b7 SELF-EMPLOYED \u2192 READ THE LIMITS",
+       "text": "Pay only if you want the safety net",
+       "at": "L58"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L59",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 240,
+     "w": 1600,
+     "at": "L59",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "kicker": "BEFORE YOU FILE IN 2027",
+     "text": [
+      "THIS IS THE *2025* TAX YEAR",
+      "CHECK THE NEW CRA LIST"
+     ],
+     "lineAt": [
+      {
+       "at": "L59",
+       "word": "Everything"
+      },
+      {
+       "at": "L59",
+       "word": "The CRA"
+      }
+     ],
+     "sub": "PRICES CAN CHANGE",
+     "subAt": {
+      "at": "L59",
+      "word": "prices"
+     },
+     "size": 96
+    }
+   ]
+  },
+  {
+   "at": "L60",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hero",
+     "x": 160,
+     "y": 260,
+     "w": 1600,
+     "at": "L60",
+     "glass": false,
+     "fxIn": "morph",
+     "kicker": "NEXT ON TAX SECRETS CANADA",
+     "text": [
+      "YOU MAKE *$100,000*",
+      "WHERE DOES EVERY DOLLAR GO?"
+     ],
+     "lineAt": [
+      {
+       "at": "L60",
+       "word": "you make"
+      },
+      {
+       "at": "L60",
+       "word": "Where"
+      }
+     ],
+     "size": 104
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "desk",
+   "cam": [
+    {
+     "x": 0.0,
+     "y": -18.0,
+     "z": 0.15000000000000002
+    },
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "at": "L5",
+   "plate": "desk",
+   "cam": [
+    {
+     "x": -72.0,
+     "y": 0.0,
+     "z": 0.03
+    },
+    {
+     "x": 72.0,
+     "y": -10.8,
+     "z": 0.09
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "plate": "desk",
+   "cam": [
+    {
+     "x": 54.0,
+     "y": 18.0,
+     "z": 0.12
+    },
+    {
+     "x": -54.0,
+     "y": 0.0,
+     "z": 0.045
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "plate": "close",
+   "cam": [
+    {
+     "x": -54.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    {
+     "x": 18.0,
+     "y": -14.4,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "plate": "close",
+   "cam": [
+    {
+     "x": 72.0,
+     "y": -18.0,
+     "z": 0.12
+    },
+    {
+     "x": -36.0,
+     "y": 0.0,
+     "z": 0.03
+    }
+   ]
+  },
+  {
+   "at": "L33",
+   "plate": "close",
+   "cam": [
+    {
+     "x": -36.0,
+     "y": 21.6,
+     "z": 0.045
+    },
+    {
+     "x": 54.0,
+     "y": 0.0,
+     "z": 0.135
+    }
+   ]
+  },
+  {
+   "at": "L38",
+   "plate": "close",
+   "cam": [
+    {
+     "x": 36.0,
+     "y": 0.0,
+     "z": 0.15000000000000002
+    },
+    {
+     "x": -54.0,
+     "y": -14.4,
+     "z": 0.06
+    }
+   ]
+  },
+  {
+   "at": "L44",
+   "plate": "desk",
+   "cam": [
+    {
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.18
+    },
+    {
+     "x": 0.0,
+     "y": 10.8,
+     "z": 0.03
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "plate": "desk",
+   "cam": [
+    {
+     "x": -72.0,
+     "y": -21.6,
+     "z": 0.06
+    },
+    {
+     "x": 54.0,
+     "y": 0.0,
+     "z": 0.15000000000000002
+    }
+   ]
+  },
+  {
+   "at": "L51",
+   "plate": "dawn",
+   "cam": [
+    {
+     "x": -54.0,
+     "y": 10.8,
+     "z": 0.0
+    },
+    {
+     "x": 36.0,
+     "y": 0.0,
+     "z": 0.10500000000000001
+    }
+   ]
+  },
+  {
+   "at": "L55",
+   "plate": "dawn",
+   "cam": [
+    {
+     "x": 36.0,
+     "y": 0.0,
+     "z": 0.12
+    },
+    {
+     "x": -18.0,
+     "y": -10.8,
+     "z": 0.0
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "desk": {
+   "layers": [
+    {
+     "src": "lf/lf02/plates/p1_bg.jpg",
+     "depth": 1.0
+    },
+    {
+     "src": "lf/lf02/plates/p1_fg.png",
+     "depth": 1.45
+    }
+   ],
+   "lights": [
+    {
+     "x": 16,
+     "y": 40,
+     "r": 9,
+     "color": "rgba(255,190,110,.9)",
+     "amp": 0.09
+    },
+    {
+     "x": 60,
+     "y": 30,
+     "r": 26,
+     "color": "rgba(120,160,230,.6)",
+     "amp": 0.05,
+     "speed": 0.3
+    }
+   ]
+  },
+  "close": {
+   "layers": [
+    {
+     "src": "lf/lf02/plates/p2_bg.jpg",
+     "depth": 1.0
+    },
+    {
+     "src": "lf/lf02/plates/p2_fg.png",
+     "depth": 1.5
+    }
+   ],
+   "lights": [
+    {
+     "x": 6,
+     "y": 20,
+     "r": 10,
+     "color": "rgba(255,190,110,.9)",
+     "amp": 0.1
+    }
+   ],
+   "steam": {
+    "x": 13.5,
+    "y": 44
+   }
+  },
+  "dawn": {
+   "layers": [
+    {
+     "src": "lf/lf02/plates/p3_bg.jpg",
+     "depth": 1.0
+    },
+    {
+     "src": "lf/lf02/plates/p3_fg.png",
+     "depth": 1.4
+    }
+   ],
+   "lights": [
+    {
+     "x": 80,
+     "y": 29,
+     "r": 14,
+     "color": "rgba(255,210,150,.9)",
+     "amp": 0.12,
+     "speed": 0.5
+    }
+   ]
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L2"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L3"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L4"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L5"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L5",
+   "word": "For the"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L8"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L9"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L10"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L12"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L12",
+   "word": "Basic"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L12",
+   "word": "Plus"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L12",
+   "word": "Pro"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L13"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "Free"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "thirty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "fifty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "seventy"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L14"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "Free"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "twenty-nine"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "forty-nine"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "sixty-nine"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L15"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "Online"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "pay only"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L16"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "On a computer"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "phone"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L17"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "Basic"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "Plus"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L18"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "Completely"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L19"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L20"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L21"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L22"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "Wealthsimple"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "CloudTax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "And GenuTax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L25"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L26"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L28"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "twenty-nine"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L30"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "Wealthsimple"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "Same with"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L32"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L33"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L34"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "At H and R"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "StudioTax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "UFile"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L37"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L37"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L38"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L39",
+   "word": "June"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L40"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L40"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "H and R"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "GenuTax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L42"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "seventy"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L44"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L46"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L47"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L50"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L51"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L55"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L56"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L59"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "at": "L60"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.08,
+   "at": "L5"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.08,
+   "at": "L11"
+  },
+  {
+   "name": "paper",
+   "vol": 0.08,
+   "at": "L19"
+  },
+  {
+   "name": "paper",
+   "vol": 0.08,
+   "at": "L27"
+  },
+  {
+   "name": "paper",
+   "vol": 0.08,
+   "at": "L33"
+  },
+  {
+   "name": "paper",
+   "vol": 0.08,
+   "at": "L38"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.08,
+   "at": "L44"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.08,
+   "at": "L46"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.08,
+   "at": "L51"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.08,
+   "at": "L55"
+  },
+  {
+   "name": "chime",
+   "vol": 0.1,
+   "at": "L45"
+  }
+ ],
+ "audio": "lf/lf02/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

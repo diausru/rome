@@ -1,6 +1,6 @@
 # Third-party code
 
-`tools/words.py` (word timing), `tools/sfx.py` (sound-effect syntheses) and the safe-area / QC rules in `tools/reel_check.py` and `showreel/src/motion/brand.ts` are adapted from **marketing-skill** (https://github.com/marcosmodly/marketing-skill), `scripts/video/captions.js`, `soundtrack.js`, `render.js`, `check.js`, under the MIT License below. Studied at commit fed7a2a (2026-10-07), on 2026-10-12.
+`tools/beat_words.py` (word timing), `tools/sfx.py` (sound-effect syntheses) and the safe-area / QC rules in `tools/reel_check.py` and `showreel/src/motion/brand.ts` are adapted from **marketing-skill** (https://github.com/marcosmodly/marketing-skill), `scripts/video/captions.js`, `soundtrack.js`, `render.js`, `check.js`, under the MIT License below. Studied at commit fed7a2a (2026-10-07), on 2026-10-12.
 
 ```
 MIT License

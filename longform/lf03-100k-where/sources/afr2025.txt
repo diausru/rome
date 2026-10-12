@@ -1,0 +1,1117 @@
+https://www.canada.ca/en/department-finance/services/publications/annual-financial-report/2025.html
+2026-10-11T23:05:22.773Z
+HTTP 200
+
+Skip to main content
+Skip to "About government"
+Switch to basic HTML version
+Language selection
+Français
+/ Gouvernement du Canada
+Search
+Search FIN
+Search
+Menu
+MAIN
+MENU 
+You are here:
+Canada.ca Department of Finance Canada Publications and Reports Annual Financial Report of the Government of Canada
+Annual Financial Report of the Government of Canada Fiscal Year 2024-2025
+
+Annual Financial Report of the Government of Canada Fiscal Year 2024-2025
+[PDF - 630 KB]
+
+The Annual Financial Report of the Government of Canada is published in PDF and HTML formats. Should there be any discrepancies between the two, the PDF version prevails.
+
+Table of Contents
+Note to Readers
+Report Highlights
+Revenues
+Expenses
+Federal Debt
+Financial Source/Requirement
+Report of the Independent Auditor on the Condensed Consolidated Financial Statements
+Condensed Consolidated Financial Statements of the Government of Canada
+Note to Readers
+
+The financial results in this report are based on the audited consolidated financial statements of the Government of Canada for the fiscal year ended March 31, 2025, the condensed form of which is included in this report.
+
+For the 27th consecutive year, the government has received an unmodified audit opinion from the Auditor General of Canada on the consolidated financial statements. The complete consolidated financial statements are available on the Public Services and Procurement Canada website.
+
+The Fiscal Reference Tables have been updated to incorporate the results for 2024-25 as well as historical revisions to the National Economic and Financial Accounts published by Statistics Canada.
+
+Report Highlights
+The government posted an annual operating deficit of $36.3 billion for the fiscal year ended March 31, 2025, compared to a deficit of $61.9 billion in the previous fiscal year. The year-over-year improvement in the budgetary balance was attributable to higher revenues, particularly income tax revenues and other revenues, offset in part by higher expenses, reflecting higher transfer payments and public debt charges.
+The annual operating deficit before net actuarial losses stood at $32.3 billion in 2024-25, compared to $54.4 billion in 2023-24. This measure is intended to supplement the traditional budgetary balance by isolating the impact of the recognition of net actuarial losses arising from the government's public sector pensions and other employee and veteran future benefits.
+The annual operating deficit was $12.0 billion lower than the $48.3-billion deficit projected in the 2024 Fall Economic Statement (FES), reflecting stronger-than-expected tax revenues, particularly personal and corporate income tax revenues, offset in part by higher-than-expected program expenses excluding net actuarial losses.
+Total revenues increased by $51.4 billion, or 11.2 per cent, from 2023-24, reflecting increases in all categories of revenue, primarily personal income tax, corporate income tax, and other revenues.
+Program expenses excluding net actuarial losses increased by $23.2 billion, or 5.0 per cent, from 2023-24, largely reflecting increases in transfers to individuals, legislated growth in transfers to provinces, territories and municipalities, and growth in pollution pricing proceeds returned and other transfer payments. These increases were offset in part by lower operating expenses.
+Net actuarial losses, which reflect changes in the value of the government's obligations and assets for public sector pensions and other employee and veteran future benefits recorded in previous fiscal years, decreased $3.5 billion, or 46.3 per cent, reflecting both the amortization of gains arising from actuarial valuations of the government's pension and other employee future benefit plans as at March 31, 2024, which began in 2024-25, and the end of the amortization of certain prior years' net actuarial losses.
+Public debt charges were up $6.1 billion, or 13.0 per cent, primarily reflecting higher average effective rates on the outstanding stock of marketable bonds, as well as an increase in the stock of marketable bonds.
+The accumulated deficit (the difference between total liabilities and total assets), or federal debt, stood at $1,266.5 billion at March 31, 2025. The accumulated deficit-to-gross domestic product (GDP) ratio was 41.2 per cent, down from 42.1 per cent in the previous year.
+The government is moving toward a new capital budgeting approach that distinguishes its day-to-day operational spending from expenditure that stimulates public and private sector capital formation. The capital budgeting framework will improve transparency around the government's budgeting process, helping to clarify how fiscal choices support future economic capacity. This new lens will be applied to the federal budget, while preserving the ability for users to compare information included in the Annual Financial Report and the Public Accounts of Canada.
+Economic Context
+Footnote
+1
+
+The Canadian economy demonstrated resilience in 2024, with growth picking up over the course of the year, supported by robust domestic demand, lower interest rates and continued population gains. Inflation returned to the Bank of Canada's target of 2 per cent in August 2024 and has remained within the 1 to 3 per cent target range since. Overall, real GDP rose 1.6 per cent in 2024, with the economy achieving a soft landing following the period of higher interest rates. Nominal GDP, the broadest measure of the tax base, grew by 4.7 per cent in 2024, marking a return to a more typical pre-pandemic growth rate. However, early in 2025, successive measures by the United States (U.S.) to restrict trade and rising uncertainty caused a material slowdown in Canadian economic activity, leading to a downwardly revised outlook.
+
+Labour market conditions eased throughout 2024, largely due to softer hiring demand coinciding with continued population growth. The economy added 382,000 jobs over the year, compared to 593,000 in 2023. The unemployment rate increased from 5.4 per cent in 2023 to 6.4 per cent on average in 2024. Job vacancies declined from their post-pandemic highs, returning closer to historical norms. While nominal wage growth began to moderate, falling inflation allowed real wages to increase by 2.4 per cent on average in 2024.
+
+Headline inflation averaged 2.4 per cent in 2024, down from 3.9 per cent in 2023. The disinflation process was largely driven by easing goods prices, although shelter costs remained elevated. The share of Consumer Price Index components growing above 3 per cent returned to near normal levels. The temporary Goods and Services Tax/Harmonized Sales Tax (GST/HST) holiday and the elimination of the consumer carbon tax on fuel products further contributed to lower inflation in early 2025.
+
+Successive rounds of U.S. trade-restrictive measures and the associated uncertainty began to materially affect the Canadian economy in early 2025. In the first quarter, real GDP grew at a solid 2.2 per cent annualized rate, as exports were pulled forward in anticipation of new tariffs. However, domestic demand softened, with consumers delaying large purchases, a cooling housing market, and growing uncertainty weighing on business investment. Employment growth slowed, and the unemployment rate increased to 6.9 per cent as of June 2025.
+
+Looking ahead, the Canadian economic outlook has been revised downward, reflecting the adverse effects of U.S. tariffs and weaker global growth prospects. Real GDP growth is expected to moderate in 2025 before gradually improving in 2026 and reaching around 2 per cent in 2027. Inflation is projected to remain near the 2 per cent target, though the outlook is subject to considerable uncertainty. While new tariffs and elevated input costs could place upward pressure on inflation, these effects are expected to be counterbalanced by a slowing economy and rising unemployment, which should help ease underlying price pressures.
+
+This outlook is based on the most recent Department of Finance survey of private sector economists, which informs the government's economic and fiscal planning. The survey process—used since 1994—introduces a degree of independence and transparency into the federal forecasting framework and helps ensure that budgetary projections are based on a balanced and credible view of the economic environment.
+
+Table 1
+Average Private Sector Forecasts
+per cent
+ 	2023	2024	2025	2026
+Real GDP growth
+
+Budget 2024
+	1.1	0.7	1.9	2.2
+
+Fall Economic Statement 2024
+	1.5	1.3	1.7	2.1
+
+Actual
+	1.5	1.6	-	-
+Nominal GDP growth
+
+Budget 2024
+	2.7	3.8	3.9	4.2
+
+Fall Economic Statement 2024
+	2.9	4.3	3.7	4.2
+
+Actual
+	2.9	4.7	-	-
+3-month treasury bill rate
+
+Budget 2024
+	4.8	4.5	3.1	2.7
+
+Fall Economic Statement 2024
+	4.8	4.4	2.9	2.6
+
+Actual
+	4.8	4.4	-	-
+10-year government bond rate
+
+Budget 2024
+	3.3	3.3	3.2	3.3
+
+Fall Economic Statement 2024
+	3.3	3.3	3.1	3.2
+
+Actual
+	3.3	3.4	-	-
+Unemployment rate
+
+Budget 2024
+	5.4	6.3	6.3	6.0
+
+Fall Economic Statement 2024
+	5.4	6.4	6.7	6.2
+
+Actual
+	5.4	6.4	-	-
+Consumer Price Index inflation
+
+Budget 2024
+	3.9	2.5	2.1	2.1
+
+Fall Economic Statement 2024
+	3.9	2.5	2.0	2.0
+
+Actual
+	3.9	2.4	-	-
+
+
+Note: Figures have been restated to reflect the historical revisions in the Provincial and Territorial Economic Accounts as of November 7, 2024.
+
+Canada's response to U.S. tariffs on Canadian goods
+
+In March 2025, the U.S. began applying tariffs on certain Canadian goods. In response, Canada applied its own tariffs to certain U.S. products such as automobiles, aluminum and steel. The government also announced certain programs in response to these trade developments to mitigate the impact on Canadian workers and businesses, including:
+
+making it easier for affected workers to access Employment Insurance and introducing special measures to the Employment Insurance Work-Sharing Program to prevent layoffs,
+broadening access to liquidity through financial Crown corporations, including the Business Development Bank of Canada, Export Development Canada and Farm Credit Canada, and the Large Enterprise Tariff Loan facility,
+supporting businesses through the regional development agencies, and
+deferring corporate income tax payments and GST/HST remittances.
+
+Tariff revenues collected by the government are recorded as part of other taxes and duties on the Condensed Consolidated Statement of Operations and Accumulated Operating Deficit. Tariff revenues and programs introduced by the government have not had a significant impact on the 2024-25 results.
+
+The Budgetary Balance
+
+The government posted a budgetary deficit, or annual operating deficit, of $36.3 billion in 2024-25, compared to a deficit of $61.9 billion in 2023-24.
+
+The final results for 2024-25 reflect transactions recorded by government departments and agencies up to March 31, 2025, plus post-March end-of-year adjustments to reflect the most up-to-date information available regarding the valuation of assets, such as loans and accounts receivable, and liabilities, including provisions for claims. The final results also incorporate accrued tax revenues based on assessments of tax returns completed after year-end and final results reported by Crown corporations, other government business enterprises, and other consolidated entities.
+
+The budgetary balance before net actuarial losses represents the difference between the government's revenues and expenses excluding net actuarial losses. By excluding the impact of changes in the estimated value of the government's obligations and assets for public sector pensions and other employee and veteran future benefits recorded in previous fiscal years, this measure is intended to present a clearer picture of the results of government operations during the current fiscal year. The budgetary deficit before net actuarial losses stood at $32.3 billion for 2024-25, compared to $54.4 billion in 2023-24.
+
+The following graph shows the government's budgetary balance since 1983-84, as well as the budgetary balance before net actuarial losses since 2008-09 (earliest data available). To enhance the comparability of results over time and across jurisdictions, the budgetary balance and its components are presented as a percentage of GDP. In 2024-25, the budgetary deficit was 1.2 per cent of GDP, compared to a deficit of 2.1 per cent of GDP in 2023-24. The budgetary deficit before net actuarial losses was 1.0 per cent of GDP, compared to a deficit of 1.9 per cent of GDP a year earlier.
+
+Chart 1
+Budgetary Balance
+
+Sources: Public Accounts of Canada and Statistics Canada.
+
+1 In 2017-18, the government implemented, on a retroactive basis, a change in its methodology for the determination of the discount rate for unfunded pension benefits. Fiscal results for 2008-09 to 2016-17 were restated to reflect this change. Restated data for years prior to 2008-09 is not available.
+
+Text version
+
+Revenues were up $51.4 billion, or 11.2 per cent, from the prior year to $511.0 billion, primarily reflecting an increase in personal income tax, corporate income tax, and other revenues. Stronger employment and wage growth as well as timing and likely behavioural impacts, such as a pull-forward impact in reaction to the announced increase in the capital gains inclusion rate, which was subsequently announced to be deferred and annulled, supported revenue gains in personal and corporate income tax streams.
+
+Total expenses were up $25.9 billion, or 5.0 per cent, from the prior year to $547.3 billion. Program expenses excluding net actuarial losses increased by $23.2 billion, or 5.0 per cent, to $489.9 billion, reflecting increases in all major categories of transfer payments, offset in part by a decrease in other expenses.
+
+Net actuarial losses decreased by $3.5 billion, or 46.3 per cent, from the prior year to $4.0 billion, reflecting both the amortization of gains arising from actuarial valuations of the government's pension and other employee future benefit plans as at March 31, 2024, which began in 2024-25, and the end of the amortization of certain prior years' net actuarial losses in 2023-24.
+
+Public debt charges increased by $6.1 billion, or 13.0 per cent, from the prior year to $53.4 billion, due to higher average effective rates on the outstanding stock of marketable bonds and an increase in the stock of marketable bonds.
+
+Table 2
+Financial Highlights
+$ billions
+	2024-25	2023-24
+Budgetary transactions
+Revenues	511.0	459.5
+Expenses
+
+Program expenses, excluding net actuarial losses
+	489.9	466.7
+
+Public debt charges
+	53.4	47.3
+
+Total expenses, excluding net actuarial losses
+	543.3	513.9
+Budgetary balance, excluding net actuarial losses	(32.3)	(54.4)
+
+Net actuarial losses
+	4.0	7.5
+Budgetary balance	(36.3)	(61.9)
+Non-budgetary transactions	(93.7)	(23.9)
+Financial source/requirement	(130.0)	(85.7)
+Net change in financing activities	109.1	111.8
+Net change in cash balances	(21.0)	26.1
+Cash balance at end of period	54.1	75.1
+Financial position
+
+Total liabilities
+	2,182.3	2,057.8
+
+Total financial assets
+	788.8	705.0
+
+Net debt
+	(1,393.6)	(1,352.8)
+
+Non-financial assets
+	127.1	116.6
+Federal debt (accumulated deficit)	(1,266.5)	(1,236.2)
+Financial results (per cent of GDP)
+
+Revenues
+	16.6	15.7
+
+Total program expenses
+	16.1	16.2
+
+Public debt charges
+	1.7	1.6
+
+Budgetary balance
+	(1.2)	(2.1)
+
+Federal debt (accumulated deficit)
+	41.2	42.1
+
+
+Note: Numbers may not add due to rounding.
+
+Understanding actuarial gains and losses in the government's finances
+
+Each year, the government remeasures its existing obligations for public sector pensions and other employee and veteran future benefits to reflect updated estimates of benefits earned by employees to date. These remeasurements result in decreases or increases in the estimated obligations, referred to as actuarial gains and losses. Actuarial gains and losses also result from actual experience that differs from previous estimates, including differences between actual and expected returns on pension assets.
+
+The measurement of benefit obligations and expected returns on pension assets involves the extensive use of estimates and assumptions about future events and circumstances, such as interest rates (both short- and long-term), inflation, investment returns, wage growth, workforce demographics, retirement patterns, and life expectancy.
+
+One key factor is the interest rate used to calculate the present-day value of future payments. The government's unfunded benefit obligations are valued based on Government of Canada bond yields at the end of each fiscal year (March 31). Because bond rates can change significantly from year to year, the value of these obligations can also shift, leading to actuarial gains or losses.
+
+Under Canadian public sector accounting standards, actuarial gains and losses are not immediately added to the government's reported liabilities. Instead, they are gradually recognized over time—this process is called amortization. The length of time is based on the expected average remaining service life of employees, which represents periods ranging from 4 to 23 years according to the plan in question, or the average remaining life expectancy of benefit recipients under wartime veteran plans, which represents periods ranging from 5 to 7 years.
+
+In 2024-25, the government recognized actuarial losses that were carried forward from previous years. New gains and losses from the March 31, 2025, remeasurements will begin to be recognized starting in 2025-26, and will continue over future years. The amount recognized each year varies, depending on when older gains and losses finish their amortization and new ones begin.
+
+The annual operating deficit before net actuarial losses isolates these gains and losses from the government's other operating results, providing a clearer view of their impact on the annual budgetary balance.
+
+Comparison of Actual Budgetary Outcomes to Projected Results
+
+The $36.3-billion deficit recorded in 2024-25 was $12.0 billion lower than the $48.3-billion deficit projected in the December 2024 FES.
+
+Overall, revenues were $15.7 billion, or 3.2 per cent, higher than forecast. This variance from forecast was due mainly to stronger-than-expected tax revenues, particularly personal and corporate income tax revenues, reflecting strong labour market performance and wage growth, and a likely pull-forward impact from the announced increase to the capital gains inclusion rate, which was subsequently announced to be deferred and annulled. Other taxes were zero relative to a forecast of $2.3 billion, reflecting the June 29, 2025, announcement by the government that it would rescind the Digital Services Tax.
+
+Program expenses, excluding net actuarial losses, were $4.1 billion, or 0.9 per cent, higher than projected, largely a result of higher-than-anticipated provisions for claims, and revised allowances for doubtful accounts for receivables and loans, including those related to redeterminations of benefits delivered during the COVID-19 pandemic and Canada Emergency Business Account (CEBA) loans. Such valuations typically occur after the end of the fiscal year and often incorporate information available subsequent to March 31.
+
+Public debt charges were $0.3 billion, or 0.6 per cent, lower than projected, while net actuarial losses were $26 million lower than projected.
+
+Canada's Capital Budgeting Framework
+
+A central factor explaining Canada's weak productivity performance is chronic underinvestment in business capital. To address this issue and help identify and prioritize investments that enhance Canada's long-term economic potential, the government is moving toward a new capital budgeting approach that distinguishes its day-to-day operational spending from expenditure that stimulates public and private sector capital formation.
+
+This new lens will be applied to the federal budget, while preserving the ability for users to compare information across different financial publications, including the Annual Financial Report of the Government of Canada. It is designed to augment—not replace—existing reporting. The capital budgeting framework will improve transparency around the government's budgeting process, helping to clarify how fiscal choices support future economic capacity.
+
+The overarching objective is to reorient spending toward new investments that catalyze private sector activity, by increasing funding for capital formation and spending less on day-to-day operations. Over time, this approach is expected to play an important role in fiscal policy.
+
+Table 3
+Comparison of Actual Outcomes to December 2024 Fall Economic Statement
+	Actual
+($ billions)	FES 2024
+($ billions)	Difference
+($ billions)	(per cent)
+Revenues
+
+Income tax
+
+
+Personal
+	234.3	232.6	1.7	0.7
+
+Corporate
+	97.0	86.8	10.2	11.7
+
+Non-resident
+	13.5	13.5	0.0	0.0
+
+Total
+	344.8	333.0	11.9	3.6
+
+Other taxes and duties
+
+
+Goods and Services Tax
+	52.5	51.9	0.6	1.1
+
+Energy taxes
+	5.7	5.8	(0.1)	(2.0)
+
+Customs import duties
+	6.3	5.6	0.7	12.0
+
+Other excise taxes and duties
+	7.5	7.2	0.3	4.7
+
+Total
+	71.9	70.4	1.5	2.1
+
+Other taxes
+	-	2.3	(2.3)	(100.0)
+
+Employment Insurance premiums
+	31.5	30.9	0.6	2.0
+
+Pollution pricing proceeds
+	13.6	12.8	0.8	6.0
+
+Other revenues
+	49.2	45.8	3.4	7.4
+
+Total revenues
+	511.0	495.2	15.7	3.2
+Program expenses
+
+Major transfers to persons
+
+
+Elderly benefits
+	80.3	80.9	(0.6)	(0.7)
+
+Employment Insurance and support measures
+	24.9	27.8	(3.0)	(10.6)
+
+Children's benefits
+	28.6	28.2	0.4	1.5
+
+COVID-19 income support for workers
+	(2.2)	(0.3)	(1.8)	(567.4)
+
+Total
+	131.6	136.6	(5.0)	(3.7)
+
+Major transfers to other levels of government
+
+
+Support for health and other social programs
+	69.0	69.0	(0.0)	(0.0)
+
+Fiscal arrangements
+	22.9	22.8	0.1	0.5
+
+Canada-wide early learning and child care
+	6.6	6.6	(0.0)	(0.0)
+
+Canada Community-Building Fund
+	2.4	2.4	0.0	0.0
+
+Heath agreements with provinces and territories
+	4.3	4.3	0.0	0.0
+
+Other
+	(0.1)	0.1	(0.2)	(214.9)
+
+Total
+	105.1	105.2	(0.1)	(0.1)
+
+Pollution pricing proceeds returned
+	15.6	14.7	0.9	6.1
+
+Direct program expenses
+	237.6	229.3	8.3	3.6
+
+Total program expenses, excluding net actuarial losses
+	489.9	485.7	4.1	0.9
+Public debt charges	53.4	53.7	(0.3)	(0.6)
+Budgetary outcome/estimate before net actuarial losses	(32.3)	(44.3)	11.9	 
+
+Net actuarial losses
+	4.0	4.0	(0.0)	(0.6)
+Budgetary outcome/estimate	(36.3)	(48.3)	12.0	 
+
+
+Note: Numbers may not add due to rounding.
+
+Revenues
+
+Federal revenues can be broken down into five main categories: income tax revenues, other taxes and duties, Employment Insurance (EI) premium revenues, pollution pricing proceeds, and other revenues.
+
+Within the income tax category, personal income tax revenues at $234.3 billion are the largest source of federal revenues and accounted for 45.9 per cent of total revenues in 2024-25 (down from 47.4 per cent in 2023-24). Corporate income tax revenues, at $97.0 billion, are the second largest source of revenues and accounted for 19.0 per cent of total revenues in 2024-25 (up from 17.9 per cent in 2023-24). Non-resident income tax revenues, at $13.5 billion, are a comparatively smaller source of revenues, accounting for only 2.6 per cent of total revenues in 2024-25 (down from 2.7 per cent in 2023-24).
+
+Other taxes and duties consist of revenues from the GST, energy taxes, customs import duties, and other excise taxes and duties. The largest component of this category—GST revenues—stood at $52.5 billion, or 10.3 per cent of all federal revenues in 2024-25 (down from 11.2 per cent in 2023-24). The remaining components of other taxes and duties stood at $19.4 billion, or 3.8 per cent of total federal revenues (down from 3.9 per cent in 2023-24).
+
+EI premium revenues, at $31.5 billion, accounted for 6.2 per cent of total federal revenues in 2024-25 (down from 6.4 per cent in 2023-24).
+
+Pollution pricing proceeds from the federal carbon pollution pricing framework, at $13.6 billion, accounted for 2.7 per cent of total federal revenues in 2024-25 (up from 2.3 per cent in 2023-24). The government ceased the application of the federal fuel charge effective April 1, 2025.
+
+Other revenues are made up of three broad components: net income from enterprise Crown corporations and other government business enterprises; other program revenues from the sales of goods and services, and other miscellaneous revenues; and foreign exchange revenues and return on investments. Other revenues, at $49.2 billion, accounted for 9.6 per cent of total federal revenues in 2024-25 (up from 8.1 per cent in 2023-24).
+
+Chart 2
+Composition of Revenues for 2024-25 (Total: $511.0 billion)
+
+Note: Numbers may not add to 100 per cent due to rounding.
+
+Source: Public Accounts of Canada.
+
+Text version
+The pollution pricing framework and removal of the fuel charge effective April 1, 2025
+
+Before April 1, 2025, the federal carbon pollution pricing system had two parts set out in the Greenhouse Gas Pollution Pricing Act:
+
+a regulatory charge on fossil fuels like gasoline and natural gas, known as the fuel charge, and
+a performance-based system for industries, known as the Output-Based Pricing System.
+
+One or both parts could have applied in jurisdictions that requested it or decided not to implement a system meeting the minimum national stringency standards.
+
+In provinces where the federal fuel charge applied—Alberta, Saskatchewan, Manitoba, Ontario, New Brunswick, Nova Scotia, Prince Edward Island, and Newfoundland and Labrador—over 90 per cent of fuel charge proceeds in these provinces were used to directly support families through the quarterly Canada Carbon Rebate for individuals (formerly known as the Climate Action Incentive payment). The governments of Yukon and Nunavut received proceeds from the federal fuel charge directly to use as they see fit.
+
+For 2024-25, the fuel charge represents $13.5 billion of $13.6 billion in total pollution pricing proceeds and $15.5 billion of $15.6 billion in total pollution pricing proceeds returned reported in the Condensed Consolidated Statement of Operations and Accumulated Operating Deficit. The remainder relates to the Output-Based Pricing System.
+
+The Government of Canada removed the fuel charge effective April 1, 2025. The fuel charge no longer needs to be reported or paid on all types of fuel and combustible waste in participating jurisdictions in respect of activities after March 31, 2025.
+
+Fuel charge payers are still required to pay amounts owed, continue to be able to claim certain fuel charge rebates, and are subject to assessments and reassessments in respect of past reporting periods. The Output-Based Pricing System under Part 2 of the Greenhouse Gas Pollution Pricing Act will continue to apply in listed provinces where it currently applies.
+
+All direct proceeds from the federal system are returned over time in the province or territory where they were collected. Given the cessation of the fuel charge, the final Canada Carbon Rebate payments were made beginning in April 2025 and proceeds return mechanisms are also being wound down. However, as part of this process, proceeds in respect of fuel charge obligations up to March 31, 2025, will still be returned in the coming fiscal years, including to small- and medium-sized enterprises, and Indigenous governments.
+
+Revenues Compared to 2023-24
+
+Total revenues amounted to $511.0 billion in 2024-25, up $51.4 billion, or 11.2 per cent, from 2023-24. The following table compares revenues for 2024-25 to 2023-24.
+
+Table 4
+Revenues
+	2024-25
+($ millions)	2023-24
+($ millions)	Net change
+($ millions)	(per cent)
+Tax revenues
+
+Income tax
+
+
+Personal
+	234,319	217,696	16,623	7.6
+
+Corporate
+	96,954	82,468	14,486	17.6
+
+Non-resident
+	13,528	12,541	987	7.9
+
+Total
+	344,801	312,705	32,096	10.3
+
+Other taxes and duties
+
+
+Goods and Services Tax
+	52,503	51,416	1,087	2.1
+
+Energy taxes
+	5,650	5,599	51	0.9
+
+Customs import duties
+	6,264	5,571	693	12.4
+
+Other excise taxes and duties
+	7,487	6,829	658	9.6
+
+Total
+	71,904	69,415	2,489	3.6
+Total tax revenues	416,705	382,120	34,585	9.1
+Employment Insurance premiums	31,530	29,560	1,970	6.7
+Pollution pricing proceeds	13,552	10,503	3,049	29.0
+Other revenues	49,164	37,366	11,798	31.6
+Total revenues	510,951	459,549	51,402	11.2
+Personal income tax revenues increased by $16.6 billion in 2024-25, or 7.6 per cent, driven predominantly by growth in employment and wages, while gains in investment income also provided support.
+Corporate income tax revenues increased by $14.5 billion, or 17.6 per cent, likely reflecting tax filers' reaction to the Budget 2024 proposal to increase the capital gains inclusion rate (pull-forward effect), particularly in the financial sector.
+Non-resident income tax revenues are paid by non-residents on Canadian-sourced income, which can include dividends and interest income. These revenues increased by $1.0 billion, or 7.9 per cent, reflecting strong investment income gains.
+Other taxes and duties increased by $2.5 billion, or 3.6 per cent, due mainly to growth in GST revenues, which increased by $1.1 billion in 2024-25, or 2.1 per cent, reflecting growth in retail sales that offset the impact of temporary GST relief. Energy taxes grew by $0.1 billion, or 0.9 per cent, reflecting weak growth in motive fuel consumption. Customs import duties increased by $0.7 billion, or 12.4 per cent, due in part to the application of Canada's countermeasures in response to U.S. tariffs. Other excise taxes and duties increased by $0.7 billion, or 9.6 per cent, driven by increased revenue from excise taxes on tobacco sales and a higher Air Travellers Security Charge.
+EI premium revenues increased by $2.0 billion, or 6.7 per cent, reflecting a higher premium rate and a higher number of persons employed.
+Proceeds from the federal carbon pollution pricing framework increased by $3.0 billion, or 29.0 per cent, reflecting a higher carbon pollution price of $80 per tonne in 2024-25 versus $65 per tonne in the year prior. As of April 1, 2025, the government ceased the application of the federal fuel charge in all jurisdictions where it was applied, with applicable fuel charge rates set to zero.
+Other revenues increased by $11.8 billion, or 31.6 per cent, largely reflecting higher net profits from enterprise Crown corporations, higher interest and penalty revenues, growth in returns on investments, and higher revenues from the sales of goods and services.
+
+The revenue ratio—revenues as a percentage of GDP—compares the total of all federal revenues to the size of the economy. This ratio is influenced by changes in statutory tax rates and by economic developments. The ratio stood at 16.6 per cent in 2024-25 (up from 15.7 per cent in 2023-24), reflecting transitory factors such as tax filers' likely reaction to the Budget 2024 proposal to increase the capital gains inclusion rate and the application of Canada's countermeasures in response to U.S. tariffs.
+
+Chart 3
+Revenue Ratio
+
+Sources: Public Accounts of Canada and Statistics Canada.
+
+Text version
+Expenses
+
+Federal expenses can be broken down into four main categories: transfer payments, which account for the majority of all federal spending, other direct program expenses, public debt charges, and net actuarial losses.
+
+Transfer payments are likewise classified under four categories:
+
+Major transfers to persons, at $131.6 billion, made up 24.0 per cent of total expenses in 2024-25 (up from 23.1 per cent in 2023-24) and are statutory. This category consists of elderly benefits, EI benefits and support measures, children's benefits, and COVID-19 income support for workers (the Canada Emergency Response Benefit, the Canada Recovery Benefit, the Canada Recovery Sickness Benefit, the Canada Recovery Caregiving Benefit, and the Canada Worker Lockdown Benefit) introduced under Canada's COVID-19 Economic Response Plan. Of this, COVID-19 income support for workers accounted for a $2.2‑billion, or 0.4 per cent, decrease in total expenses in 2024-25 due to redeterminations of benefit overpayments, which are accounted for as a reduction in expenses (whereas it contributed a 0.9 per cent reduction of total expenses in 2023-24).
+Major transfers to other levels of government—which include the Canada Health Transfer, the Canada Social Transfer, Canada-wide early learning and child care transfers, health agreements with provinces and territories, fiscal arrangements (Equalization, transfers to the territories, a number of smaller transfer programs, and the Quebec Abatement), and the Canada Community—Building Fund transfers-made up $105.1 billion, or 19.2 per cent, of total expenses in 2024-25 (unchanged from 2023-24).
+Pollution pricing proceeds returned, at $15.6 billion, made up 2.8 per cent of expenses (up from 1.9 per cent in 2023-24). These transfers consist of payments that return direct proceeds from the federal carbon pollution pricing system to the jurisdictions where they were collected, as required under the Greenhouse Gas Pollution Pricing Act.
+Other transfer payments, which include transfers to Indigenous Peoples, assistance to farmers, students and businesses, support for research and development, and international assistance, made up $107.1 billion, or 19.6 per cent, of expenses (up from 18.4 per cent in 2023-24).
+
+Other direct program expenses, which represent the operating expenses of the government's 137 departments, agencies, and consolidated Crown corporations and other entities, accounted for $130.5 billion, or 23.8 per cent, of total expenses in 2024-25 (down from 26.9 per cent in 2023-24).
+
+Public debt charges, at $53.4 billion, made up 9.8 per cent of total expenses in 2024-25 (up from 9.1 per cent in 2023-24).
+
+Net actuarial losses, at $4.0 billion, made up the remaining 0.7 per cent of total expenses in 2024-25 (down from 1.4 per cent in 2023-24).
+
+Chart 4
+Composition of Expenses for 2024–25 (Total: $547.3 billion)
+
+Note: Numbers may not add to 100 per cent due to rounding.
+
+Source: Public Accounts of Canada.
+
+Text version
+Expenses Compared to 2023-24
+
+Total expenses amounted to $547.3 billion in 2024-25, up $25.9 billion, or 5.0 per cent, from 2023-24. The following table compares total expenses for 2024-25 to 2023-24.
+
+Table 5
+Expenses
+	2024–25
+($ millions)	2023–24
+($ millions)	Net change
+($ millions)	(per cent)
+Major transfers to persons
+Elderly benefits	80,294	76,036	4,258	5.6
+Employment Insurance and support measures	24,880	23,130	1,750	7.6
+Children's benefits	28,574	26,339	2,235	8.5
+COVID-19 income support for workers	(2,169)	(4,838)	2,669	(55.2)
+Total	131,579	120,667	10,912	9.0
+Major transfers to other levels of government
+Federal transfer support for health and other social programs	68,979	65,848	3,131	4.8
+Fiscal arrangements and other transfers	36,122	34,325	1,797	5.2
+Total	105,101	100,173	4,928	4.9
+Pollution pricing proceeds returned	15,595	9,858	5,737	58.2
+Direct program expenses
+Other transfer payments	107,140	95,951	11,189	11.7
+Operating expenses	130,454	140,014	(9,560)	(6.8)
+Total direct program expenses	237,594	235,965	1,629	0.7
+Total program expenses, excluding net actuarial losses	489,869	466,663	23,206	5.0
+Public debt charges	53,410	47,273	6,137	13.0
+Total expenses, excluding net actuarial losses	543,279	513,936	29,343	5.7
+Net actuarial losses	4,020	7,489	(3,469)	(46.3)
+Total expenses	547,299	521,425	25,874	5.0
+Major transfers to persons increased by $10.9 billion, or 9.0 per cent, in 2024-25. Elderly benefits increased by $4.3 billion, or 5.6 per cent, reflecting growth in the number of recipients and changes in consumer prices, to which benefits are fully indexed. EI benefits and support measures increased by $1.8 billion or 7.6 per cent, largely reflecting a higher unemployment rate. Children's benefits increased by $2.2 billion, or 8.5 per cent, mainly reflecting the indexation of benefits to consumer prices and an increase in the number of eligible children. COVID-19 income support for workers resulted in a $2.7-billion year-over-year increase in expenses, reflecting a decrease in redeterminations of benefits.
+Major transfers to other levels of government increased by $4.9 billion in 2024-25, or 4.9 per cent, primarily reflecting $4.7 billion in legislated growth under the Canada Health Transfer, the Canada Social Transfer, Equalization transfers, and Territorial Formula Financing and a $1.1-billion increase to Canada-wide early learning and child care transfers, offset in part by higher recoveries under the Quebec Abatement, and a decrease under other fiscal arrangements.
+Proceeds returned from the federal carbon pollution pricing framework increased by $5.7 billion, or 58.2 per cent, largely reflecting the introduction of the Canada Carbon Rebate for Small Businesses and an increase in the rate of the Canada Carbon Rebate for individuals.
+Direct program expenses increased by $1.6 billion in 2024-25, or 0.7 per cent:
+Other transfer payments increased by $11.2 billion, or 11.7 per cent, in 2024-25. This increase primarily reflects higher transfers with respect to Indigenous Peoples, as well as a number of other factors including the rollout of transfers under the Canadian Dental Care Plan, an increase in Canada Workers Benefit payments, growth in transfers under the Canada Greener Homes Grant, and an increase in transfers in support of immigration. These increases were offset in part by decreases in agricultural supports and disaster assistance.
+Operating expenses of departments, agencies, and consolidated Crown corporations and other entities, excluding net actuarial losses, decreased by $9.6 billion, or 6.8 per cent. This decrease was due mainly to lower claims expenses and public health expenses in 2024-25, offset in part by higher personnel costs and Crown corporation expenses.
+Public debt charges increased by $6.1 billion, or 13.0 per cent, primarily reflecting higher average effective rates on the outstanding stock of marketable bonds, as well as an increase in the stock of marketable bonds.
+Net actuarial losses, which reflect changes in the value of the government's obligations and assets for public sector pensions and other employee and veteran future benefits recorded in previous fiscal years, decreased $3.5 billion, or 46.3 per cent, reflecting both the amortization of gains arising from updated actuarial valuations of the government's pension and other employee future benefit plans as at March 31, 2024, and the end of the amortization of certain prior years' net actuarial losses.
+
+The interest ratio (public debt charges as a percentage of revenues) shows the proportion of every dollar of revenue that is needed to pay interest and is therefore not available to pay for program initiatives. The interest ratio had been decreasing in recent years, falling from a peak of 37.6 per cent in 1990-91 to 5.9 per cent in 2021-22. The ratio has since increased to 10.5 per cent in 2024-25, reflecting growth in the stock of debt and an increase in interest rates. This means that, in 2024-25, the government spent just over 10 cents of every revenue dollar on servicing the public debt, which is still relatively low by historical standards.
+
+Chart 5
+Interest Ratio
+
+Source: Public Accounts of Canada.
+
+Text version
+
+The expense ratio—expenses as a percentage of GDP—compares the total of all federal expenses to the size of the economy. This ratio is influenced by policy actions, economic developments, and changes in interest rates. The ratio stood at 17.8 per cent in 2024-25, unchanged from 2023-24.
+
+Chart 6
+Expense Ratio
+
+Sources: Public Accounts of Canada and Statistics Canada.
+
+Text version
+Federal Debt
+
+The federal debt (accumulated deficit) is the difference between the government's total liabilities and its total assets. With total liabilities of $2.2 trillion, financial assets of $788.8 billion and non-financial assets of $127.1 billion, the federal debt stood at $1,266.5 billion at March 31, 2025, up $30.3 billion from March 31, 2024.
+
+The $30.3-billion increase in the federal debt reflects the 2024-25 budgetary deficit of $36.3 billion offset in part by $6.0 billion in net remeasurement gains.
+
+Table 6
+Federal Debt (Accumulated Deficit)
+$ millions
+	2024-25	2023-24	Net change
+Federal debt at beginning of year	(1,236,151)	(1,173,013)	(63,138)
+Annual operating deficit	(36,348)	(61,876)	25,528
+Net remeasurement gains (losses) for the year	6,015	(1,262)	7,277
+Federal debt at end of year	(1,266,484)	(1,236,151)	(30,333)
+
+The following chart shows the federal debt as a share of the economy since 1999-2000. The federal debt stood at 41.2 per cent of GDP in 2024-25, down from 42.1 per cent in 2023-24.
+
+Chart 7
+Federal Debt (Accumulated Deficit)
+
+Sources: Public Accounts of Canada and Statistics Canada.
+
+Text version
+Table 7
+Outstanding Debt at Year-End
+$ billions
+	2024-25	2023-24
+Liabilities
+Accounts payable and accrued liabilities	259.7	264.1
+Interest-bearing debt
+
+Unmatured debt
+	1,485.9	1,376.8
+
+Pensions and other employee future benefits
+	376.4	361.7
+
+Other liabilities
+	7.0	7.0
+
+Total interest-bearing debt
+	1,869.3	1,745.5
+Foreign exchange accounts liabilities	47.7	44.1
+Derivatives	5.6	4.1
+Total liabilities	2,182.3	2,057.8
+Financial assets
+Cash and other accounts receivable	67.7	89.1
+Taxes receivable	213.7	203.0
+Foreign exchange accounts assets	201.4	180.1
+Derivatives	1.8	2.9
+Loans, investments and advances	278.5	209.8
+Public sector pension assets	25.7	20.1
+Total financial assets	788.8	705.0
+Net debt	(1,393.6)	(1,352.8)
+Non-financial assets
+Tangible capital assets	115.1	104.6
+Inventories	7.9	8.2
+Prepaid expenses and other	4.1	3.8
+Total non-financial assets	127.1	116.6
+Federal debt (accumulated deficit)	(1,266.5)	(1,236.2)
+Note: Numbers may not add due to rounding.
+Assets
+
+The government's assets consist of financial assets (cash and other accounts receivable, taxes receivable, foreign exchange accounts assets, derivatives, loans, investments and advances, and public sector pension assets) and non-financial assets (tangible capital assets, inventories, and prepaid expenses and other).
+
+At March 31, 2025, financial assets amounted to $788.8 billion, up $83.7 billion from March 31, 2024. The increase reflects growth in loans, investments and advances, foreign exchange accounts assets, and public sector pension assets, offset in part by decreases in cash and accounts receivable and derivatives.
+
+At March 31, 2025, cash and accounts receivable totalled $281.4 billion, down $10.7 billion from March 31, 2024. Within this component, cash and cash equivalents decreased by $21.0 billion, reflecting higher cash balances held at March 31, 2024, in preparation for a large debt maturity that occurred on April 1, 2024. The balance of cash and cash equivalents at March 31, 2025, includes $20.0 billion that has been designated as a deposit held with respect to prudential liquidity management, as well as $15.9 billion in term deposits from morning auctions of Receiver General cash balances. The morning auctions are conducted by the Bank of Canada in its role as fiscal agent for the Government of Canada and allow the government to invest excess cash balances in a prudent and cost-effective manner. Other accounts receivable decreased by $0.4 billion, reflecting a decrease in net COVID-19 benefit overpayments receivable from individuals and businesses, offset in part by net increases in cash collateral pledged to counterparties and other receivables.
+Taxes receivable increased by $10.6 billion during 2024-25 to $213.7 billion. This increase reflects a number of factors, including growth in tax revenues and an increase in corporations' arrears, due in part to the interest-free deferral of corporate income tax and GST/HST remittances from April 2, 2025, to June 30, 2025, as part of the government's support for businesses in response to tariffs.
+Loans, investments and advances increased by $68.7 billion in 2024-25.
+Loans, investments and advances in enterprise Crown corporations and other government business enterprises increased by $62.0 billion in 2024-25.
+Investments in enterprise Crown corporations and other government business enterprises increased $3.3 billion, largely reflecting $3.2 billion in net profits and $0.9 billion in other comprehensive income recorded by these entities during 2024-25, plus $0.4 billion in capital contributions made by the government. These increases were offset in part by $1.2 billion in dividends paid by these corporations and entities to the government. Additionally, other investments in enterprise Crown corporations and other government business enterprises rose $29.0 billion during the year due to the government's purchases of Canada Mortgage Bonds (CMBs) from Canada Mortgage and Housing Corporation (CMHC). Canada's mortgage bond market plays a critical role in housing finance, providing lenders with a reliable source of funding. To support the market, the government committed in the 2023 Fall Economic Statement to purchasing up to $30 billion annually in CMBs from 2023-24 onward, adjusting volumes based on market conditions. Purchases began in February 2024, and the government's holdings stood at $36.6 billion as of March 31, 2025.
+Net loans and advances to enterprise Crown corporations and other government business enterprises were up $29.7 billion. This growth primarily reflects an $11.0-billion increase in loans to Crown corporations under the consolidated borrowing framework to finance the operational needs of the Business Development Bank of Canada, CMHC and Farm Credit Canada, as well as an $18.7-billion increase in loans to Trans Mountain Corporation (TMC), a subsidiary of the Canada Development Investment Corporation, to replace TMC's more expensive third-party debt.
+Other loans, investments and advances increased by $6.7 billion, from $44.5 billion to $51.2 billion, primarily reflecting new loans to national governments, net issuances of Canada Student Loans, and increased lending by the Canada Infrastructure Bank. These increases were offset in part by a decrease in loans under the CEBA program, reflecting write-offs and repayments during the year, as well as an increase in the estimated allowance for loss at March 31, 2025.
+Trans Mountain Corporation
+
+On April 25, 2022, Trans Mountain Corporation, a wholly owned subsidiary of Canada TMP Finance Ltd. (TMP Finance), which is in turn a wholly owned subsidiary of the Canada Development Investment Corporation, was declared to be a non-agent Crown corporation, allowing it to borrow otherwise than from the Crown. On April 29, 2022, TMC began borrowing from a syndicate of lenders using a senior unsecured revolving facility (Syndicated Facility) backed by a loan guarantee from the Canada Account.
+
+On May 1, 2024, the expanded Trans Mountain Pipeline System commenced operations, tripling the capacity of the pipeline from 300,000 barrels per day to 890,000 barrels per day, providing a unique outlet for Canadian oil products to global markets and supporting the price earned on Canadian oil. Following several increases to the Canada Account loan guarantee in 2023, on May 17, 2024, the Government of Canada increased the guarantee amount to $20.5 billion.
+
+Subsequent to the commencement of operations, on December 13, 2024, the Government of Canada, via Export Development Canada, refinanced TMC's third-party debt through a non-revolving Canada Account loan to TMP Finance at an interest rate of 3.01 per cent. This refinancing allowed TMP Finance to acquire additional equity and lend incremental funds to TMC which in turn used these proceeds to fully repay the Syndicated Facility on December 20, 2024. The third-party facility was then cancelled. TMC will utilize operating cash flows to repay TMP Finance the principal and interest on its outstanding loans. Furthermore, TMC will provide regular dividend payments to TMP Finance as a return on the equity invested. These payments will enable TMP Finance to fulfill its obligations in repaying the loan from the Canada Account.
+
+This transaction substantially reduced the interest on the debt for the pipeline expansion, which will help pay off the debt more quickly. The refinancing did not represent incremental debt and only entailed replacing more expensive third-party debt with government debt.
+
+As part of the same transaction, TMP Finance also entered into an agreement with the Government of Canada, via the Canada Account, for a revolving working capital facility to TMC for working capital and general-purpose needs.
+
+Public sector pension assets increased by $5.7 billion, largely reflecting increases in the net assets under the Public Service Pension Fund and Canadian Forces Pension Fund, which pertain to service accrued on or after April 1, 2000, that falls within the Income Tax Act limits under the Public Service Superannuation Act and the Canadian Forces Superannuation Act, respectively.
+Foreign exchange accounts assets increased by $21.2 billion in 2024-25, totalling $201.4 billion at March 31, 2025, due mainly to growth in the Exchange Fund Account (EFA). International reserves held in the EFA increased by $18.2 billion in 2024-25, reflecting $10.4 billion in foreign exchange gains due to appreciation in the Canadian dollar value of foreign currency denominated assets held in the Account, as well as $4.1 billion in income earned by the Account during the year. The remaining increase was due to growth in advances to the EFA, net of repayments and the transfer of the EFA's net income for the previous fiscal year to the Consolidated Revenue Fund. The remaining growth in foreign exchange accounts assets, which include Canada's subscriptions in the International Monetary Fund (IMF) and loans under the IMF's Poverty Reduction and Growth Trust and Resilience and Sustainability Trust, was due mainly to issuances and foreign exchange revaluation adjustments.
+Derivatives represent financial contracts whose value is derived by reference to a rate, index, or underlying asset. The government uses derivatives for hedging purposes to manage various types of financial risk. With the adoption of new financial instruments standards in 2022-23, derivatives are measured at fair value and presented separately in the government's financial statements. Derivatives estimated to result in a net inflow of resources if terminated at March 31 are presented as assets, while derivatives estimated to require a net outflow of resources if terminated at March 31 are presented as liabilities. Derivative assets decreased $1.2 billion to $1.8 billion at March 31, 2025.
+
+At March 31, 2025, non-financial assets stood at $127.1 billion, up $10.5 billion from a year earlier. This growth primarily relates to an increase in tangible capital assets, in large part reflecting an increase in assets under construction. Prepaid expenses and other increased $0.2 billion, while inventories decreased $0.3 billion.
+
+Liabilities
+
+The government's liabilities consist of accounts payable and accrued liabilities, interest-bearing debt, foreign exchange accounts liabilities, and derivatives.
+
+At March 31, 2025, accounts payable and accrued liabilities totalled $259.7 billion, down $4.3 billion from March 31, 2024. This decline reflects decreases in other accounts payable and accrued liabilities and provisions for contingent liabilities, offset in part by increases in amounts payable related to tax, environmental liabilities and asset retirement obligations, and deferred revenues.
+
+Other accounts payable and accrued liabilities decreased by $11.5 billion in 2024-25. Within this category, accounts payable decreased by $6.1 billion, reflecting several factors, including payments made in 2024-25 for transfers accrued at the end of 2023-24 under a number of programs, including the Dairy Direct Payment Program, and funding under the $2.5-billion tailored bilateral health agreements and early learning and child care agreements, which were signed with provinces and territories late in 2023-24. The decrease also reflects the payment of settled claims, the payment of contractor holdbacks for projects under construction, adjustments to estimated amounts owing for disaster assistance, and year-over-year differences in the timing and payment of invoices for goods and services. Liabilities under provincial, territorial and Indigenous tax agreements decreased by $5.5 billion, largely reflecting the difference between estimated HST owing to provinces and actual payments made to provinces. These decreases were offset in part by a $0.2-billion increase in notes payable to international organizations, reflecting the issuance of notes payable to the European Bank for Reconstruction and Development.
+Provisions for contingent liabilities decreased by $1.9 billion, reflecting settlements during the year, offset in part by the addition of new claims and revaluations of existing claims.
+Amounts payable related to tax increased by $7.1 billion in 2024-25, from $87.7 billion at March 31, 2024, to $94.8 billion at March 31, 2025. This increase largely reflects higher accrued payables related to individual and corporate income tax.
+Environmental liabilities increased by $0.3 billion in 2024-25, reflecting a $1.4-billion increase in liabilities due to revised estimates of remediation costs, offset in large part by a $1.2-billion decrease in the liabilities for remediation work undertaken during the year. Asset retirement obligations increased by $1.0 billion in 2024-25, largely reflecting year-over-year changes in estimated costs and the timing of expenditures.
+Deferred revenues increased by $0.7 billion in 2024-25, largely reflecting the addition of proceeds received from the auction of spectrum licenses in the 3800 MHz band.
+
+Interest-bearing debt includes unmatured debt, or debt issued on the credit markets, pension and other future benefit liabilities, and other liabilities. At March 31, 2025, interest-bearing debt totalled $1,869.3 billion, up $123.8 billion from March 31, 2024. Within interest-bearing debt, unmatured debt increased by $109.1 billion, liabilities for other employee and veteran future benefits increased by $17.3 billion, and other liabilities increased by $0.1 billion. Liabilities for public sector pensions decreased by $2.6 billion.
+
+The $109.1-billion increase in unmatured debt is largely attributable to a $101.0-billion increase in market debt and related unamortized discounts and premiums, reflecting increased borrowings to meet the government's financial requirements associated with its investing activities and operations.
+
+Foreign exchange accounts liabilities include Special Drawing Rights allocations and notes payable to the IMF. The government's foreign exchange accounts liabilities at March 31, 2025, stood at $47.7 billion, up $3.6 billion from a year earlier. This increase was primarily due to foreign exchange rate movements, which resulted in the liabilities increasing in terms of Canadian dollars, and the issuance of additional notes payable to the IMF.
+
+Derivative liabilities increased by $1.5 billion to $5.6 billion at March 31, 2025, reflecting changes in fair value, foreign exchange rates, and contracts that matured during 2024-25.
+
+International Comparisons of Government Debt
+
+Jurisdictional responsibility (between central, state, and local governments) for government programs differs among countries. As a result, international comparisons of government fiscal positions are made on a total government, National Accounts basis. For Canada, total government net debt includes that of the federal, provincial/territorial, and local and Indigenous governments, as well as the net assets held in the Canada Pension Plan (CPP) and Quebec Pension Plan (QPP).
+
+Chart 8
+Canada Has the Lowest Total Government Net Debt Burden Among G7 Countries
+
+
+G7 Total Government Net Debt, 2024
+
+Source: IMF April 2025 Fiscal Monitor
+
+Text version
+
+Canada's total government net debt-to-GDP ratio stood at 11.9 per cent in 2024, according to the IMF. This is the lowest level among G7 countries, which the IMF estimates will record an average net debt of 92.9 per cent of GDP for that same year.
+
+International organizations such as the IMF and the Organisation for Economic Co-operation and Development publish figures for both gross debt (equivalent to total liabilities) and net debt (total liabilities less financial assets). When assessing the overall government fiscal situation, net debt is the preferred measure as it better reflects a country's financial position by accounting for both what it owes and what it has set aside. In particular, the net debt measure recognizes that public investments in financial assets generate future revenues or have been specifically accumulated to offset current or future liabilities. This is particularly relevant in Canada's case given its sizable financial asset holdings. In particular, Canada has taken significant steps to fund its public pensions, mitigating future fiscal risks. The CPP alone held over $710 billion in assets as of March 31, 2025, ensuring the plan is actuarially sound for Canadians for at least the next 75 years. These and other financial assets should be taken into account when assessing the country's financial situation, especially when making comparisons to peer countries that have not accumulated as many financial assets, including those to meet future public pension liabilities.
+
+The following table provides a reconciliation between the Government of Canada's accumulated deficit-to-GDP ratio and Canada's total government net debt-to-GDP ratio used for international net debt comparison purposes. Importantly, the latter includes the net debt of the federal, provincial, territorial, and local and Indigenous governments, as well as the net assets held by the CPP and QPP and excludes liabilities for public sector pensions and other employee future benefits. Given significant inconsistencies across countries in the accounting treatment of unfunded liabilities for public sector pensions and other employee future benefits, international organizations remove them from debt estimates for countries that proactively include them (such as Canada) to facilitate international comparability.
+
+Table 8
+Reconciliation of 2024-25 Federal Debt-to-GDP Ratio to Calendar 2024 Total Government
+Net Debt-to-GDP Ratio
+ 	(per cent of GDP)
+Federal debt	41.2
+Add:	Non-financial assets	4.1
+Net debt (Public Accounts basis)	45.4
+Less:	Liabilities for public sector pensions	(5.3)
+ 	Liabilities for other future benefits	(7.0)
+ 	National Accounts/Public Accounts methodological differences and timing adjustments1	(4.4)
+Total federal net debt (National Accounts basis)	28.7
+Add:	Net debt of provincial/territorial and local and Indigenous governments	11.3
+Less:	Net assets of the CPP/QPP	(27.5)
+Total government net debt2	12.5
+
+
+Note: Numbers may not add due to rounding.
+
+Sources: Statistics Canada and Public Accounts of Canada.
+
+1 Includes timing differences (National Accounts data are as of December 31), differences in the universe covered by each accounting system, and differences in accounting treatments of various transactions such as capital gains.
+
+2 The net debt figure has been revised by Statistics Canada since the publication of the IMF's April 2025 Fiscal Monitor, which is the source for the chart "G7 Total Government Net Debt, 2024". Net debt has been revised from 11.9 per cent to 12.5 per cent.
+
+Financial Source/Requirement
+
+The budgetary balance is the most comprehensive measure of the federal government's fiscal results. It is presented on an accrual basis of accounting, recording government expenses when they are incurred, regardless of when the cash payment is made, and recording tax revenues when earned, regardless of when the cash is received.
+
+In contrast, the financial source/requirement measures the difference between cash coming in to the government and cash going out. It differs from the budgetary balance in that it includes cash transactions in loans, investments and advances, public sector pensions and other employee future benefits, other specified purpose accounts, foreign exchange activities, and changes in other financial assets, liabilities, and non-financial assets. These activities are included as part of non-budgetary transactions.
+
+Non-budgetary transactions also include adjustments for the effects of non-cash items included in the budgetary balance and for any accruals of past or future cash receipts or payments. Examples of non-cash items include amortization of tangible capital assets, pension and other employee future benefit expenses not funded in the period, and the recognition of previously deferred revenue.
+
+Non-budgetary transactions resulted in a net requirement for funds of $93.7 billion in 2024-25, compared to a net requirement of $23.9 billion in 2023-24.
+
+With a budgetary deficit of $36.3 billion and a financial requirement from non-budgetary transactions of $93.7 billion, there was a total financial requirement of $130.0 billion in 2024-25, compared to a financial requirement of $85.7 billion in 2023-24 (Table 9).
+
+The government financed this financial requirement of $130.0 billion by decreasing its cash balances by $21.0 billion and increasing unmatured debt by $109.1 billion. Cash balances at the end of March 2025 stood at $54.1 billion.
+
+Table 9
+Budgetary Balance, Financial Source/Requirement and Net Financing Activities
+$ billions
+	2024-25	2023-24
+Deficit for the year	(36.3)	(61.9)
+Non-budgetary transactions
+Pensions and other accounts
+
+Public sector pension liabilities
+	(2.6)	(1.1)
+
+Other employee and veteran future benefit liabilities
+	17.3	18.4
+
+Other liabilities
+	0.1	(0.4)
+
+Public sector pension assets
+	(5.7)	(7.1)
+
+Total
+	9.1	9.9
+Non-financial assets	(10.5)	(6.9)
+Loans, investments and advances	(67.7)	3.1
+Other transactions
+
+Accounts payable, receivable, accruals and allowances
+	(14.6)	(17.9)
+
+Foreign exchange activities and derivatives
+	(10.0)	(12.1)
+
+Total
+	(24.6)	(30.0)
+Total non-budgetary transactions	(93.7)	(23.9)
+Financial requirement	(130.0)	(85.7)
+Net change in financing activities
+
+Marketable bonds (Canadian currency)
+	81.7	42.7
+
+Treasury bills
+	19.3	64.1
+
+Other
+	8.1	5.0
+
+Total
+	109.1	111.8
+Change in cash balances	(21.0)	26.1
+Cash at end of year	54.1	75.1
+Note: Numbers may not add due to rounding.
+Report of the Independent Auditor on the Condensed Consolidated Financial Statements
+
+To the Minister of Finance and National Revenue
+
+Opinion
+
+The condensed consolidated financial statements, which comprise the condensed consolidated statement of financial position as at 31 March 2025, the condensed consolidated statement of operations and accumulated operating deficit, condensed consolidated statement of remeasurement gains and losses, condensed consolidated statement of change in net debt and condensed consolidated statement of cash flow for the year then ended, and related notes, are derived from the audited consolidated financial statements of the Government of Canada for the year ended 31 March 2025.
+
+In our opinion, the accompanying condensed consolidated financial statements are a fair summary of the audited consolidated financial statements of the Government of Canada, on the basis described in Note 1.
+
+Condensed Consolidated Financial Statements
+
+The condensed consolidated financial statements do not contain all the disclosures required by Canadian public sector accounting standards. Reading the condensed consolidated financial statements and the auditor's report thereon, therefore, is not a substitute for reading the audited consolidated financial statements of the Government of Canada and the auditor's report thereon.
+
+The Audited Consolidated Financial Statements of the Government of Canada and Our Report Thereon
+
+We expressed an unmodified audit opinion on the audited consolidated financial statements of the Government of Canada in our report dated 9 September 2025. That report also includes the communication of key audit matters. Key audit matters are those matters that, in our professional judgment, were of most significance in our audit of the consolidated financial statements of the current period.
+
+Management's Responsibility for the Condensed Consolidated Financial Statements
+
+Management is responsible for the preparation of the condensed consolidated financial statements on the basis described in Note 1.
+
+Auditor's Responsibility
+
+Our responsibility is to express an opinion on whether the condensed consolidated financial statements are a fair summary of the audited consolidated financial statements of the Government of Canada based on our procedures, which were conducted in accordance with Canadian Auditing Standard (CAS) 810, Engagements to Report on Summary Financial Statements.
+
+Original signed by
+
+Karen Hogan, FCPA
+Auditor General of Canada
+
+Ottawa, Canada
+9 September 2025
+
+Condensed Consolidated Financial Statements of the Government of Canada
+
+The fundamental purpose of these condensed consolidated financial statements is to provide an overview of the financial affairs and resources for which the Government is responsible under authority granted by Parliament. Responsibility for the integrity and objectivity of these statements rests with the Government.
+
+Government of Canada
+Condensed Consolidated Statement of Operations and Accumulated Operating Deficit
+for the Year Ended March 31, 2025
+$ millions
+ 	2024-25
+Budget
+(Note 4)	2024-25
+Actual	2023-24
+Actual
+Revenues
+Income tax revenues	336,410	344,801	312,705
+Other taxes and duties	75,774	71,904	69,415
+Employment insurance premiums	30,055	31,530	29,560
+Pollution pricing proceeds	12,746	13,552	10,503
+Other revenues	42,833	49,164	37,366
+Total revenues	497,818	510,951	459,549
+Expenses
+Transfer payments
+
+Old age security benefits and related payments
+	80,544	80,294	76,036
+
+Major transfer payments to other levels of government
+	105,492	105,101	100,173
+
+Employment insurance and support measures
+	26,640	24,880	23,130
+
+Children's benefits
+	28,121	28,574	26,339
+
+COVID-19 income support for workers
+	-	(2,169)	(4,838)
+
+Pollution pricing proceeds returned
+	14,901	15,595	9,858
+
+Other transfer payments
+	103,538	107,140	95,951
+
+Total transfer payments
+	359,246	359,415	326,649
+Other expenses, excluding net actuarial losses	121,208	130,454	140,014
+Total program expenses, excluding net actuarial losses	480,454	489,869	466,663
+Public debt charges	54,130	53,410	47,273
+Total expenses, excluding net actuarial losses	534,584	543,279	513,936
+Annual operating deficit before net actuarial losses	(36,766)	(32,328)	(54,387)
+
+Net actuarial losses
+	(3,065)	(4,020)	(7,489)
+Annual operating deficit	(39,831)	(36,348)	(61,876)
+Accumulated operating deficit at beginning of year	(1,245,494)	(1,245,494)	(1,183,618)
+Accumulated operating deficit at end of year	(1,285,325)	(1,281,842)	(1,245,494)
+
+
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+
+Certain comparative figures have been reclassified to conform to the current year's presentation (Note 3).
+
+Government of Canada
+Condensed Consolidated Statement of Financial Position
+as at March 31, 2025
+$ millions
+	2024-25	2023-24
+Liabilities
+Accounts payable and accrued liabilities	259,725	264,056
+Interest-bearing debt
+
+Unmatured debt
+	1,485,887	1,376,822
+
+Pensions and other future benefits
+	376,413	361,704
+
+Other liabilities
+	7,031	6,963
+
+Total interest-bearing debt
+	1,869,331	1,745,489
+Foreign exchange accounts liabilities	47,697	44,106
+Derivatives	5,583	4,131
+Total liabilities	2,182,336	2,057,782
+Financial assets
+Cash and accounts receivable	281,394	292,103
+Foreign exchange accounts assets	201,362	180,140
+Derivatives	1,752	2,928
+Loans, investments and advances	278,520	209,802
+Public sector pension assets	25,722	20,055
+Total financial assets	788,750	705,028
+Net debt	(1,393,586)	(1,352,754)
+Non-financial assets
+Tangible capital assets	115,091	104,552
+Other	12,011	12,051
+
+Total non-financial assets
+	127,102	116,603
+Accumulated deficit	(1,266,484)	(1,236,151)
+Accumulated deficit is comprised of:
+Accumulated operating deficit	(1,281,842)	(1,245,494)
+Accumulated remeasurement gains	15,358	9,343
+ 	(1,266,484)	(1,236,151)
+Contingent liabilities (Note 5)
+Contractual obligations and contractual rights (Note 6)
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+Government of Canada
+Condensed Consolidated Statement of Remeasurement Gains and Losses
+for the Year Ended March 31, 2025
+$ millions
+	2024-25	2023-24
+Accumulated remeasurement gains at beginning of year	9,343	10,605
+
+Net unrealized gains (losses)
+	5,144	(1,035)
+
+Amounts reclassified during the year to the Condensed Consolidated Statement of Operations and Accumulated Operating Deficit
+	(49)	(6)
+
+Other comprehensive income (loss) of enterprise Crown corporations
+	920	(221)
+Net remeasurement gains (losses) for the year	6,015	(1,262)
+Accumulated remeasurement gains at end of year	15,358	9,343
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+Government of Canada
+Condensed Consolidated Statement of Change in Net Debt
+for the Year Ended March 31, 2025
+$ millions
+	2024-25
+Budget
+(Note 4)	2024-25
+Actual	2023-24
+Actual
+Net debt at beginning of year	(1,352,754)	(1,352,754)	(1,282,757)
+Change in net debt during the year
+
+Annual operating deficit
+	(39,831)	(36,348)	(61,876)
+
+Acquisition of tangible capital assets
+	(13,467)	(16,808)	(13,585)
+
+Amortization of tangible capital assets
+	8,311	6,044	5,633
+
+Other
+	634	265	1,093
+
+Increase in net debt excluding remeasurement gains (losses)
+	(44,353)	(46,847)	(68,735)
+
+Net remeasurement gains (losses) for the year
+	-	6,015	(1,262)
+
+Net increase in net debt
+	(44,353)	(40,832)	(69,997)
+Net debt at end of year	(1,397,107)	(1,393,586)	(1,352,754)
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+Government of Canada
+Condensed Consolidated Statement of Cash Flow
+for the Year Ended March 31, 2025
+$ millions
+	2024-25	2023-24
+Cash used by operating activities
+
+Annual operating deficit
+	(36,348)	(61,876)
+
+Adjustments to reconcile annual operating deficit to cash used by operating activities
+	13,390	14,926
+(22,958)	(46,950)
+Cash used by capital investment activities	(17,157)	(13,498)
+Cash used by investing activities	(74,070)	(10,478)
+Cash provided by financing activities	93,235	96,979
+Net (decrease) increase in cash and cash equivalents	(20,950)	26,053
+Cash and cash equivalents at beginning of year	75,059	49,006
+Cash and cash equivalents at end of year	54,109	75,059
+Supplementary information
+Cash used for interest	43,194	31,090
+The accompanying notes are an integral part of these condensed consolidated financial statements.
+Notes to the Condensed Consolidated Financial Statements of the Government of Canada
+1. Applied Criteria in the Preparation of the Condensed Consolidated Financial Statements
+
+The criteria applied by the Government in the preparation of these condensed consolidated financial statements are as follows:
+
+These condensed consolidated financial statements are extracted from the audited consolidated financial statements included in Section 2 of Volume I of the Public Accounts of Canada 2025, which are to be tabled in Parliament.
+The condensed consolidated financial statements are in agreement with the related information in the audited consolidated financial statements and contain the information necessary to avoid distorting or obscuring matters disclosed in the related complete audited consolidated financial statements, including the notes thereto.
+As these condensed consolidated financial statements are, by their nature, summarized, they do not include all disclosures required by Canadian public sector accounting standards.
+Readers interested in the disclosure of more detailed data should refer to the audited consolidated financial statements in the Public Accounts of Canada.
+2. Summary of Significant Accounting Policies
+
+The reporting entity of the Government of Canada includes all of the government organizations that comprise the legal entity of the government as well as other government organizations, including Crown corporations, which are separate legal entities but are controlled by the government. The financial activities of all of these entities, except for enterprise Crown corporations and other government business enterprises, are consolidated in these financial statements on a line-by-line and uniform basis of accounting after eliminating significant inter-governmental balances and transactions. Enterprise Crown corporations and other government business enterprises, which are not dependent on the government for financing their activities, are recorded under the modified equity method. The Canada Pension Plan (CPP), which includes the assets of the CPP under the administration of the Canada Pension Plan Investment Board, is excluded from the reporting entity because changes to the CPP require the agreement of two thirds of participating provinces and it is therefore not controlled by the government.
+
+The government accounts for transactions on an accrual basis, using the government's accounting policies that are described in Note 1 to its audited consolidated financial statements, which are based on Canadian public sector accounting standards. The presentation and results using the stated accounting policies do not result in any significant differences from Canadian public sector accounting standards.
+
+Financial assets presented on the Condensed Consolidated Statement of Financial Position can provide resources to discharge liabilities or finance future operations and are generally recorded at the lower of cost or net realizable value. Certain of the government's financial instruments, including derivative assets and derivative liabilities, are measured at fair value. Non-financial assets cannot normally be converted into cash to finance future operations without disrupting government operations; they are recorded at cost less accumulated amortization. Liabilities are recorded at the estimated amount ultimately payable, adjusted for the passage of time, as required. Obligations for pensions and other future benefits are measured on an actuarial basis. Allowances for valuation are established for loans, investments and advances, as well as for loan guarantees and other obligations.
+
+Transactions involving foreign currencies are translated into Canadian dollar equivalents using rates in effect at the time of the transactions. Monetary assets and liabilities denominated in foreign currencies are translated using rates at March 31.
+
+Some amounts in these condensed consolidated financial statements are based on estimates and assumptions made by the government. They are based on facts and circumstances, historical experience, and general economic conditions, and reflect the government's best estimates of the related amounts at the end of the reporting period. Estimates and underlying assumptions are reviewed annually at March 31. Revisions to accounting estimates are recognized in the period in which estimates are revised if revisions affect only that period or in the period of revision and future periods if revisions affect both current and future periods.
+
+Measurement uncertainty that is material exists when it is reasonably possible that a material variance could occur in the reported or disclosed amount in the near term. Near term is defined as a period of time not to exceed one year from March 31. The government has determined that measurement uncertainty exists with respect to the reported amounts for:
+
+the accrual of tax revenues and the related amounts receivable, other accounts receivable, and the allowance for doubtful accounts,
+non-tax revenues,
+expenses,
+the provision for contingent liabilities (Note 5),
+environmental liabilities and asset retirement obligations,
+public sector pensions and other employee and veteran future benefits,
+enterprise Crown corporations and other government business enterprises,
+other loans, investments and advances,
+the expected useful life of tangible capital assets,
+inventories, and
+contractual obligations and contractual rights (Note 6).
+
+It is reasonably possible that the government's reassessments of these estimates and assumptions could require a material change in reported amounts or disclosures in the condensed consolidated financial statements.
+
+Measurement uncertainties exist at March 31, 2025, in light of continued global uncertainty and heightened geopolitical tensions. The condensed consolidated financial statements reflect the impacts to the extent known and estimable at the reporting date. The government continues to assess and monitor the effects of these measurement uncertainties on its financial position, including related estimates and assumptions used in the preparation of its statements. The full potential impact on the assumptions used for the year is unknown as it will depend on future developments that are uncertain.
+
+3. Comparative information
+
+Certain comparative figures have been reclassified to conform to the current year's presentation. In particular, the Government has changed the presentation of the Condensed Consolidated Statement of Operations and Accumulated Operating Deficit to group the Canada Emergency Wage Subsidy with other transfer payments. This reflects the continued wind-down of the temporary COVID-19 support measures that have ended.
+
+4. Source of Budget Amounts
+
+The budget amounts included in the Condensed Consolidated Statement of Operations and Accumulated Operating Deficit and the Condensed Consolidated Statement of Change in Net Debt are derived from the amounts that were budgeted for 2024-25 in the April 2024 Budget Plan (Budget 2024). To enhance comparability with actual 2024-25 results, Budget 2024 amounts have been reclassified to conform to the current year's presentation in the condensed consolidated financial statements, with no overall impact on the budgeted 2024-25 annual deficit.
+
+Since actual opening balances of the accumulated operating deficit and net debt were not available at the time of preparation of Budget 2024, the corresponding amounts in the budget column have been adjusted to the actual opening balances.
+
+5. Contingent Liabilities
+
+Contingent liabilities arise in the normal course of operations and their ultimate disposition is unknown. Contingent liabilities are potential liabilities that may become actual liabilities when one or more future events not wholly within the government's control occur or fail to occur. A provision is recorded when a potential liability is assessed as likely to become an actual liability and a reasonable estimate of the loss can be made. The government's contingent liabilities include claims comprising pending and threatened litigation, specific claims, and comprehensive land claims; guarantees provided by the government; assessed taxes under appeal; callable share capital in international organizations; and insurance programs of agent enterprise Crown corporations.
+
+There are thousands of pending and threatened litigation cases as well as claims outstanding against the government. While the total amount claimed in these actions is significant, their outcomes are not determinable in all cases. The government has recorded a provision for claims where it is likely that there will be a future payment and a reasonable estimate of the loss can be made. Significant exposure to a liability could exist in excess of what has been accrued. In situations where a loss is likely, but management cannot reasonably estimate a liability, no amount is accrued. Claims for which the outcome is not determinable and for which an amount has not been accrued are estimated at $3,652 million ($3,314 million in 2023-24).
+Guarantees provided by the government include guarantees on the borrowings of enterprise Crown corporations and other government business enterprises, loan guarantees, insurance programs managed by the government or agent enterprise Crown corporations, and other explicit guarantees. At March 31, 2025, the principal amount outstanding for guarantees provided by the government amounts to $605,198 million ($619,001 million in 2023-24) for which an allowance of $450 million ($570 million in 2023-24) has been recorded. Of the total amount guaranteed, $311,934 million ($319,212 million in 2023-24) relates to guarantees on the borrowings of agent enterprise Crown corporations.
+Contingent liabilities include previously assessed federal taxes where amounts are being appealed to the Tax Court of Canada, the Federal Court of Appeal, or the Supreme Court of Canada. As of March 31, 2025, an amount of $7,796 million ($7,354 million in 2023-24) was being appealed to the courts, for which the likelihood of an adverse outcome was not determinable or for which an amount could not be reasonably estimated. The government has recorded, in accounts payable and accrued liabilities or in reduction of cash and accounts receivable, as applicable, the estimated amount of appeals that are considered likely to be lost and that can be reasonably estimated.
+The government has callable share capital in certain international organizations that could require payments to those agencies. At March 31, 2025, callable share capital amounts to $43,557 million ($40,949 million in 2023-24).
+At March 31, 2025, insurance in force relating to self-sustaining insurance programs operated by four agent enterprise Crown corporations amounts to $2,288,032 million ($2,165,120 million in 2023-24). The government expects that all four corporations will cover the cost of both current claims and possible future claims.
+6. Contractual Obligations and Contractual Rights
+
+The nature of government activities results in large multi-year contracts and agreements, including international treaties, protocols and agreements of various size and importance. Financial obligations resulting from these contracts and agreements are recorded as a liability when the terms for the acquisition of goods and services or the provision of transfer payments are met.
+
+Contractual obligations that will materially affect the level of future expenditures include transfer payment agreements, agreements for the acquisition of goods and services, operating leases, and funding of international organizations. At March 31, 2025, contractual obligations amount to $340,619 million, of which $98,793 million pertains to 2025-26.
+
+The activities of government sometimes involve the negotiation of contracts or agreements with outside parties that result in the government having rights to both assets and revenues in the future. They principally involve sales of goods and services, leases of property, and royalties and revenue/profit-sharing arrangements. The terms of these contracts and agreements may not allow for a reasonable estimate of future revenues. For contracts and agreements that do allow for a reasonable estimate, total revenues to be received in the future under major contractual rights are estimated at $44,969 million at March 31, 2025, of which $4,818 million pertains to 2025-26.
+
+Footnotes
+Footnote 1
+
+This section incorporates data available up to and including August 7, 2025. The annual results are on a calendar year basis.
+
+Return to footnote
+1
+referrer
+
+Page details
+ 2025-11-07
+About this site
+Department of Finance Canada
+Contact us
+Job opportunities
+Consultations
+Government of Canada
+All contacts
+Departments and agencies
+About government
+Themes and topics
+Jobs
+Immigration and citizenship
+Travel and tourism
+Business
+Benefits
+Health
+Taxes
+Environment and natural resources
+National security and defence
+Culture, history and sport
+Policing, justice and emergencies
+Transport and infrastructure
+Canada and the world
+Money and finances
+Science and innovation
+Indigenous Peoples
+Veterans and military
+Youth
+Manage life events
+Government of Canada Corporate
+Social media Mobile applications About Canada.ca Terms and conditions Privacy
+ 

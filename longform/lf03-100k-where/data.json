@@ -1,0 +1,112 @@
+{
+ "p": {
+  "gross": 100000,
+  "taxable": 98873,
+  "federal": 13302,
+  "provincial": 9484,
+  "cpp": 4646,
+  "ei": 1123,
+  "take_home": 71445,
+  "avg_income_tax": 0,
+  "top_bracket_rate": 0,
+  "income_tax": 22786
+ },
+ "fed_split": [
+  {
+   "name": "SENIORS (OAS, GIS)",
+   "value": 1952,
+   "share": 0.1467
+  },
+  {
+   "name": "TRANSFERS TO PROVINCES: HEALTH + SOCIAL",
+   "value": 1676,
+   "share": 0.126
+  },
+  {
+   "name": "EQUALIZATION + FISCAL ARRANGEMENTS",
+   "value": 878,
+   "share": 0.066
+  },
+  {
+   "name": "CHILDREN (CANADA CHILD BENEFIT)",
+   "value": 694,
+   "share": 0.0522
+  },
+  {
+   "name": "EI BENEFITS",
+   "value": 605,
+   "share": 0.0455
+  },
+  {
+   "name": "OTHER TRANSFERS (INDIGENOUS, STUDENTS, R&D, AID\u2026)",
+   "value": 2604,
+   "share": 0.1958
+  },
+  {
+   "name": "RUNNING 137 DEPARTMENTS + AGENCIES",
+   "value": 3171,
+   "share": 0.2384
+  },
+  {
+   "name": "INTEREST ON FEDERAL DEBT",
+   "value": 1298,
+   "share": 0.0976
+  },
+  {
+   "name": "OTHER",
+   "value": 424,
+   "share": 0.0319
+  }
+ ],
+ "mb_split": [
+  {
+   "name": "HEALTH",
+   "value": 3656,
+   "share": 0.3855
+  },
+  {
+   "name": "EDUCATION + ECONOMIC DEVELOPMENT",
+   "value": 2326,
+   "share": 0.2453
+  },
+  {
+   "name": "SOCIAL SERVICES",
+   "value": 1003,
+   "share": 0.1058
+  },
+  {
+   "name": "JUSTICE + OTHER",
+   "value": 890,
+   "share": 0.0938
+  },
+  {
+   "name": "GENERAL GOVERNMENT",
+   "value": 822,
+   "share": 0.0867
+  },
+  {
+   "name": "COMMUNITY + RESOURCES",
+   "value": 787,
+   "share": 0.083
+  }
+ ],
+ "per_pay": {
+  "federal": 512,
+  "provincial": 365,
+  "cpp": 179,
+  "ei": 43,
+  "take_home": 2747
+ },
+ "gross_pay": 3846,
+ "per100": {
+  "federal": 13.3,
+  "provincial": 9.48,
+  "cpp": 4.65,
+  "ei": 1.12,
+  "take_home": 71.44
+ },
+ "fed_total_b": 547.3,
+ "fed_pit_share": 0.459,
+ "fed_deficit_b": 36.3,
+ "mb_total_m": 25915
+}

@@ -1,153 +1,127 @@
 #!/usr/bin/env python3
-"""Word-level timing for each voiceover beat, measured from the actual audio.
-usage: tools/words.py <beats.json> <vo dir> <timeline.json> <out words.json>
+"""Word-level caption timing from the actual voiceover audio (motion engine v3, 2026-10-12).
+Port of the offline aligner in marketing-skill scripts/video/captions.js (studied, not copied verbatim):
+a 10 ms dB envelope → speech runs split at pauses ≥ 0.15 s → words distributed over runs by dynamic programming on a
+letter-count weight (digits ×3, +0.7 per word, bonus for cutting after punctuation) → words spaced inside each run by
+weight. Then words are grouped into caption chunks (≤ 4 words, ≤ 22 characters, ≤ 1.8 s; break at punctuation or a
+gap ≥ 0.25 s; no orphan word). No speech-recognition model is used, so timing is an estimate from pauses
+(the reference reports ≈50 ms mean error with the same method).
 
-Port of the alignment in marketing-skill's scripts/video/captions.js (MIT, github.com/marcosmodly/marketing-skill),
-adapted to our pipeline (one trimmed Grady clip per beat, seg-<id>.wav, placed at the beat's start by tools/vo_hf.py):
-- loudness every 10 ms; quiet stretches of 0.15 s or more split the clip into spoken runs;
-- the beat's words are shared across those runs by dynamic programming so each run's words take about as long to say
-  as the run lasts (letters per word, digits counted as longer words), preferring cuts after punctuation;
-- inside a run, time is shared by word weight.
-The reference reports word starts about 50 ms from the truth on average on synthesized speech; that figure is theirs,
-not re-measured here. Chunks for on-screen captions: at most 4 words / 22 characters / 1.8 s, a new chunk at
-punctuation or a pause. Output times are in video seconds (beat start + time inside the clip)."""
-import json, re, subprocess, sys, unicodedata
+usage: tools/words.py <lines.json> <proc_dir with lineNN.wav> <vo_place.json> <out_words.json> [--srt out.srt]
+  lines.json   : ["spoken line 0", "spoken line 1", ...]
+  vo_place.json: [[name, place_s, text, speech_start_s, speech_end_s], ...]   (as written by b*/vo pipeline)
+Output: {"words": [{"w", "t0", "t1", "line"}], "chunks": [{"text", "t0", "t1", "words": [i...]}]} (absolute seconds).
+"""
+import json, re, subprocess, sys, pathlib
 import numpy as np
 
-SR, HOP = 16000, 160
-FRAME = HOP / SR
-MIN_PAUSE, MIN_RUN = 0.15, 0.04
+SR, HOP = 16000, 0.01
 
 
-def decode(path):
-    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True, check=True).stdout
-    return np.frombuffer(raw, dtype=np.float32)
+def envelope(wav):
+    raw = subprocess.run(['ffmpeg', '-v', 'error', '-i', str(wav), '-f', 's16le', '-ac', '1', '-ar', str(SR), '-'],
+                         capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, np.int16).astype(np.float32) / 32768
+    n = int(len(x) / (SR * HOP))
+    fr = x[:n * int(SR * HOP)].reshape(n, -1)
+    return 20 * np.log10(np.sqrt((fr ** 2).mean(1)) + 1e-9)
 
 
-def envelope(x):
-    n = len(x) // HOP
-    fr = x[:n * HOP].reshape(n, HOP).astype(np.float64)
-    return np.maximum(-100, 10 * np.log10((fr ** 2).mean(axis=1) + 1e-12))
-
-
-def spoken_runs(db):
-    if not len(db):
-        return []
-    floor, peak = np.percentile(db, 10), np.percentile(db, 95)
-    thr = max(floor + 6, peak - 32)
-    runs, start = [], -1
-    for f in range(len(db) + 1):
-        v = f < len(db) and db[f] > thr
-        if v and start < 0:
-            start = f
-        if not v and start >= 0:
-            runs.append([start * FRAME, f * FRAME]); start = -1
-    merged = []
-    for r in runs:
-        if merged and r[0] - merged[-1][1] < MIN_PAUSE:
-            merged[-1][1] = r[1]
-        else:
-            merged.append(r)
-    return [r for r in merged if r[1] - r[0] >= MIN_RUN]
-
-
-def norm(w):
-    return re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFKD', w.lower()))
+def runs(db, min_pause=0.15):
+    thr = max(np.percentile(db, 10) + 6, np.percentile(db, 95) - 32)
+    on = db > thr
+    out, i, n, gap = [], 0, len(on), int(min_pause / HOP)
+    while i < n:
+        if not on[i]:
+            i += 1; continue
+        j = i
+        while j < n:
+            if on[j]:
+                j += 1; continue
+            k = j
+            while k < n and not on[k]: k += 1
+            if k - j >= gap or k == n: break
+            j = k
+        out.append([i * HOP, j * HOP]); i = j
+    return out or [[0.0, len(db) * HOP]]
 
 
 def weight(w):
-    s = norm(w); d = sum(c.isdigit() for c in s)
-    return len(s) - d + d * 3 + 0.7
+    letters = sum(3 if c.isdigit() else 1 for c in w if c.isalnum())
+    return letters + 0.7
 
 
-ends_phrase = lambda w: bool(re.search(r'[.,!?;:…—–)"”\']$', w))
-
-
-def assign(words, runs):
-    N, K = len(words), len(runs)
-    if K == 1 or N == 0:
-        return [list(range(N))]
-    ws = np.concatenate([[0], np.cumsum([w['weight'] for w in words])])
-    total = sum(r[1] - r[0] for r in runs)
-    pace = ws[N] / total
-
-    def fit(j, a, b):
-        d = runs[j][1] - runs[j][0]
-        if b == a:
-            return 0.3 if d < 0.25 else 3
-        return np.log((ws[b] - ws[a]) / (pace * d)) ** 2
-
-    cut = lambda b: 0.5 if 0 < b < N and ends_phrase(words[b - 1]['text']) else 0
-    INF = float('inf')
-    best = [[INF] * (N + 1) for _ in range(K)]; frm = [[0] * (N + 1) for _ in range(K)]
-    for b in range(N + 1):
-        best[0][b] = fit(0, 0, b) - cut(b)
-    for j in range(1, K):
-        for b in range(N + 1):
-            if j == K - 1 and b != N:
-                continue
-            for a in range(b + 1):
-                c = best[j - 1][a] + fit(j, a, b) - (cut(b) if j < K - 1 else 0)
-                if c < best[j][b]:
-                    best[j][b], frm[j][b] = c, a
-    cuts = [N]
-    for j in range(K - 1, 0, -1):
-        cuts.insert(0, frm[j][cuts[0]])
-    groups, s = [], 0
-    for c in cuts:
-        groups.append(list(range(s, c))); s = c
-    return groups
-
-
-def align(text, clip):
-    words = [{'text': t, 'weight': weight(t)} for t in text.split()]
-    x = decode(clip)
-    dur = len(x) / SR
-    runs = spoken_runs(envelope(x)) or [[0, dur]]
-    for idx, run in zip(assign(words, runs), runs):
-        wsum = sum(words[i]['weight'] for i in idx) or 1
-        t = run[0]
-        for i in idx:
-            words[i]['start'] = t
-            t += (run[1] - run[0]) * words[i]['weight'] / wsum
-            words[i]['end'] = t
-    return words, dur, len(runs)
-
-
-def chunk(words, max_words=4, max_chars=22, pause=0.25, max_dur=1.8):
-    phrases, cur = [], []
-    for i, w in enumerate(words):
-        cur.append(w)
-        nxt = words[i + 1] if i + 1 < len(words) else None
-        if not nxt or ends_phrase(w['text']) or nxt['start'] - w['end'] >= pause:
-            phrases.append(cur); cur = []
-    fits = lambda p: len(p) <= max_words and len(' '.join(x['text'] for x in p)) <= max_chars and p[-1]['end'] - p[0]['start'] <= max_dur
+def distribute(words, rs):
+    """DP: assign consecutive word groups to runs so each run's share of weight matches its share of time."""
+    W = [weight(w) for w in words]; nw, nr = len(words), len(rs)
+    if nr == 1 or nw <= nr:
+        nr = min(nr, nw); rs = rs[:nr] if nw < len(rs) else rs
+    tot_w, durs = sum(W), [r[1] - r[0] for r in rs]; tot_d = sum(durs)
+    cum = np.concatenate([[0], np.cumsum(W)])
+    INF = 1e18
+    cost = np.full((nr + 1, nw + 1), INF); back = np.zeros((nr + 1, nw + 1), int); cost[0, 0] = 0
+    for r in range(1, nr + 1):
+        for j in range(r, nw - (nr - r) + 1):
+            for i in range(r - 1, j):
+                share_w = (cum[j] - cum[i]) / tot_w; share_d = durs[r - 1] / tot_d
+                c = cost[r - 1, i] + (share_w - share_d) ** 2 * 100
+                if r < nr and not re.search(r'[.,?!:;]$', words[j - 1]): c += 0.6   # prefer cuts after punctuation
+                if c < cost[r, j]: cost[r, j], back[r, j] = c, i
+    cuts, j = [], nw
+    for r in range(nr, 0, -1):
+        i = back[r, j]; cuts.append((i, j)); j = i
+    cuts.reverse()
     out = []
-    for ph in phrases:
-        for k in range(-(-len(ph) // max_words), len(ph) + 1):
-            parts = [ph[round(i * len(ph) / k):round((i + 1) * len(ph) / k)] for i in range(k)]
-            if all(len(p) == 1 or fits(p) for p in parts):
-                break
-        out += [{'start': p[0]['start'], 'end': p[-1]['end'], 'words': [w['i'] for w in p]} for p in parts]
+    for (i, j), (a, b) in zip(cuts, rs):
+        ws = W[i:j]; s = sum(ws); t = a
+        for k in range(i, j):
+            d = (b - a) * W[k] / s; out.append((words[k], t, t + d)); t += d
     return out
 
 
+def chunk(words):
+    chunks, cur = [], []
+    def flush():
+        if cur: chunks.append(list(cur)); cur.clear()
+    for i, w in enumerate(words):
+        if cur:
+            text = ' '.join(words[k]['w'] for k in cur + [i])
+            gap = w['t0'] - words[cur[-1]]['t1']
+            if len(cur) >= 4 or len(text) > 22 or w['t1'] - words[cur[0]]['t0'] > 1.8 or gap >= 0.25 \
+                    or re.search(r'[.?!:;]$', words[cur[-1]]['w']) or words[cur[-1]]['line'] != w['line']:
+                flush()
+        cur.append(i)
+    flush()
+    # no orphan word: merge a lone word into its neighbour when the line allows it
+    fixed = []
+    for c in chunks:
+        if len(c) == 1 and fixed and words[fixed[-1][-1]]['line'] == words[c[0]]['line'] and len(fixed[-1]) < 4 \
+                and not re.search(r'[.?!:;]$', words[fixed[-1][-1]]['w']):
+            fixed[-1] += c
+        else:
+            fixed.append(c)
+    return [dict(text=' '.join(words[k]['w'] for k in c), t0=words[c[0]]['t0'], t1=words[c[-1]]['t1'], words=c) for c in fixed]
+
+
+def srt(chunks):
+    f = lambda t: f"{int(t // 3600):02d}:{int(t % 3600 // 60):02d}:{int(t % 60):02d},{int(round(t % 1 * 1000)):03d}"
+    return '\n'.join(f"{i + 1}\n{f(c['t0'])} --> {f(c['t1'])}\n{c['text']}\n" for i, c in enumerate(chunks))
+
+
 def main():
-    beats_path, vo_dir, tl_path, out_path = sys.argv[1:5]
-    beats = json.load(open(beats_path))['beats']
-    tl = {b['id']: b for b in json.load(open(tl_path))['beats']}
-    result = {'method': 'pauses + word length (port of marketing-skill captions.js)', 'beats': []}
-    for bid, text, _ in beats:
-        words, dur, nruns = align(text, f'{vo_dir}/seg-{bid}.wav')
-        t0, t1 = tl[bid]['start'], tl[bid]['end']
-        k = (t1 - t0) / dur if dur else 1  # the timeline's measured length of the placed clip (should be ≈1)
-        flat = []
-        for i, w in enumerate(words):
-            flat.append({'i': i, 'text': w['text'], 'start': round(t0 + w['start'] * k, 3), 'end': round(t0 + w['end'] * k, 3)})
-        result['beats'].append({'id': bid, 'start': t0, 'end': t1, 'runs': nruns, 'clip': round(dur, 3), 'words': flat, 'chunks': chunk(flat)})
-        print(f'{bid:9s} {len(flat):3d} words  {nruns} runs  clip {dur:.2f}s vs timeline {t1 - t0:.2f}s')
-    json.dump(result, open(out_path, 'w'), indent=1)
-    print('written', out_path)
+    lines = json.load(open(sys.argv[1])); proc = pathlib.Path(sys.argv[2]); place = json.load(open(sys.argv[3]))
+    allw = []
+    for li, (text, (name, p, _t, s, e)) in enumerate(zip(lines, place)):
+        db = envelope(proc / f'{name}.wav')
+        rs = [r for r in runs(db) if r[1] > s - 0.05 and r[0] < e + 0.05]
+        for w, a, b in distribute(text.split(), rs):
+            allw.append(dict(w=w, t0=round(p + a, 3), t1=round(p + b, 3), line=li))
+    out = dict(words=allw, chunks=chunk(allw))
+    json.dump(out, open(sys.argv[4], 'w'), indent=1)
+    if '--srt' in sys.argv:
+        open(sys.argv[sys.argv.index('--srt') + 1], 'w').write(srt(out['chunks']))
+    print(f"{len(allw)} words, {len(out['chunks'])} chunks")
+    for c in out['chunks'][:6]: print(f"  [{c['t0']:6.2f}–{c['t1']:6.2f}] {c['text']}")
 
 
 if __name__ == '__main__':

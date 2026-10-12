@@ -13,7 +13,7 @@ import CUE from './ny3-cues.json';
 import DATA from '../../ny/data.json';
 import REEL from '../../ny/reel.json';
 import { T, textShadow } from './motion/brand';
-import { Captions, Count, Depth, Glass, Kinetic, NavyGrade, Stamp, Tag, Tile, Vapor, clamp, ease, money, outExpo } from './motion/Engine';
+import { Captions, Count, Depth, Glass, Kinetic, NavyGrade, Stamp, Tag, Tile, Vapor, clamp, ease, money, outExpo } from './motion/Reel';
 
 export const NY3FPS = 24;
 const B = beatsFrom(TL, NY3FPS);
