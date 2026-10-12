@@ -1,0 +1,2296 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: CRA T4127 (2026) \u00b7 Manitoba 2026 rates \u00b7 Federal Annual Financial Report 2024-25 \u00b7 Manitoba Public Accounts 2025-26 \u00b7 General info, not advice",
+ "data": {
+  "d": {
+   "type": "file",
+   "file": "data.json"
+  }
+ },
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "One hundred thousand dollars. That's Jordan's salary. Thirty-four years old, living in Winnipeg, working in IT."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "On paper, Jordan earns a hundred thousand dollars a year. But Jordan will never actually see a hundred thousand dollars."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "Twenty-eight thousand, five hundred and fifty-five dollars leaves before the money ever reaches the bank. So where does it actually go? Today we follow every dollar."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 1.1,
+   "text": "The numbers are for twenty twenty-six, using the CRA's payroll tables and Manitoba's tax rates. And the spending numbers come straight from the government's own audited reports."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "Step one. The paycheque. Jordan is paid every two weeks. Twenty-six pays a year, so the gross pay is about three thousand, eight hundred and forty-six dollars."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 0.35,
+   "text": "Then four things come off. Federal income tax, about five hundred and twelve dollars. Manitoba income tax, about three hundred and sixty-five."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "The Canada Pension Plan, about one hundred and seventy-nine. And Employment Insurance, about forty-three."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 1.1,
+   "text": "What lands in the bank, on average: about two thousand, seven hundred and forty-seven dollars."
+  },
+  {
+   "id": "L8b",
+   "file": "vo/L8b.mp3",
+   "gap": 0.35,
+   "text": "But that average hides a twist. CPP and EI have yearly maximums. Jordan's EI premiums are charged only on the first sixty-eight thousand, nine hundred dollars of earnings."
+  },
+  {
+   "id": "L8c",
+   "file": "vo/L8c.mp3",
+   "gap": 0.35,
+   "text": "At about three thousand, eight hundred and forty-six dollars a pay, Jordan crosses that line around the eighteenth pay. After that, EI stops coming off."
+  },
+  {
+   "id": "L8d",
+   "file": "vo/L8d.mp3",
+   "gap": 0.35,
+   "text": "The basic CPP stops at seventy-four thousand, six hundred dollars of earnings, around the twentieth pay. The second tier, CPP two, runs up to eighty-five thousand, around the twenty-third pay."
+  },
+  {
+   "id": "L8e",
+   "file": "vo/L8e.mp3",
+   "gap": 1.1,
+   "text": "So Jordan's last paycheques of the year are bigger than the first ones. Nothing changed at work. The contributions simply hit their maximum."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "Now the full year. Federal income tax: thirteen thousand, three hundred and two dollars."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 0.35,
+   "text": "Manitoba income tax: nine thousand, four hundred and eighty-four."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "CPP: four thousand, six hundred and forty-six. EI: one thousand, one hundred and twenty-three."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "Take-home pay: seventy-one thousand, four hundred and forty-five dollars."
+  },
+  {
+   "id": "L12b",
+   "file": "vo/L12b.mp3",
+   "gap": 0.35,
+   "text": "Where do those tax numbers come from? First, Jordan's taxable income isn't a hundred thousand. The enhanced part of CPP is deductible, one thousand, one hundred and twenty-seven dollars. So taxable income is ninety-eight thousand, eight hundred and seventy-three."
+  },
+  {
+   "id": "L12c",
+   "file": "vo/L12c.mp3",
+   "gap": 0.35,
+   "text": "Federal tax: fourteen percent on the first fifty-eight thousand, five hundred and twenty-three dollars, and twenty point five percent on the rest. That's sixteen thousand, four hundred and sixty-five dollars before credits."
+  },
+  {
+   "id": "L12d",
+   "file": "vo/L12d.mp3",
+   "gap": 0.35,
+   "text": "Then the credits: the basic personal amount, CPP, EI and the Canada employment amount. Together they cut three thousand, one hundred and sixty-three dollars. Result: thirteen thousand, three hundred and two."
+  },
+  {
+   "id": "L12e",
+   "file": "vo/L12e.mp3",
+   "gap": 1.1,
+   "text": "Manitoba works the same way. Ten point eight percent on the first forty-seven thousand, twelve point seven five percent above that. Eleven thousand, six hundred and ninety before credits, minus two thousand, two hundred and six in credits. Nine thousand, four hundred and eighty-four."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "Here's the first surprise. Jordan's tax bracket on the next dollar is thirty-three point two percent. But Jordan's income tax on the whole salary is twenty-two point eight percent. The bracket is not what you pay on everything."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "Let's shrink it. Out of every hundred dollars Jordan earns, thirteen dollars and thirty cents goes to Ottawa."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "Nine forty-eight goes to Manitoba. Four sixty-five goes to the Canada Pension Plan. One twelve goes to Employment Insurance."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 1.1,
+   "text": "And seventy-one forty-four stays with Jordan."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "So, where does the federal money go? Here's the honest version first."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "Taxes aren't earmarked. Jordan's dollars don't go into a jar labelled hospitals. They go into one big account, and the government spends from it."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "So what we'll do is this: split Jordan's thirteen thousand, three hundred and two dollars the same way Ottawa actually spent its money in the last audited year, twenty twenty-four to twenty-five."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "Total federal spending that year: five hundred and forty-seven point three billion dollars."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "The biggest single benefit line goes to seniors. Old Age Security and the Guaranteed Income Supplement. Jordan's share: about one thousand, nine hundred and fifty-two dollars."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "Transfers to the provinces for health care and social programs: about one thousand, six hundred and seventy-six."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "Equalization and other fiscal arrangements with the provinces: about eight hundred and seventy-eight."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "The Canada Child Benefit and other children's benefits: about six hundred and ninety-four."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "Employment Insurance benefits: about six hundred and five."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 0.35,
+   "text": "Other transfer payments, things like support for Indigenous peoples, students, research and international aid: about two thousand, six hundred and four."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 0.35,
+   "text": "Running the government itself, one hundred and thirty-seven departments and agencies: about three thousand, one hundred and seventy-one."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "And here's the line people don't expect. Interest on the federal debt: about one thousand, two hundred and ninety-eight dollars. Nearly ten cents of every federal dollar spent."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 1.1,
+   "text": "And one more honest detail. Ottawa spent more than it collected that year. The deficit was thirty-six point three billion dollars. So part of that spending was paid for with borrowed money."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "Now the provincial money. Nine thousand, four hundred and eighty-four dollars. Same method, using Manitoba's audited public accounts for twenty twenty-five to twenty-six."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "Health is the giant. Hospitals, doctors, seniors' care. Jordan's share: about three thousand, six hundred and fifty-six dollars."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 0.35,
+   "text": "Education and economic development, from kindergarten to colleges: about two thousand, three hundred and twenty-six."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "Social services: about one thousand and three. Justice and other services: about eight hundred and ninety."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "General government: about eight hundred and twenty-two. Community and resource development: about seven hundred and eighty-seven."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 1.1,
+   "text": "Notice the pattern. In Manitoba, almost four of every ten dollars goes to health."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "Now the two deductions that are not really taxes in the usual sense."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 0.35,
+   "text": "CPP. Four thousand, six hundred and forty-six dollars. This money does not go into the federal government's general budget. The federal financial statements leave the Canada Pension Plan out, because Ottawa can't change it alone. Two thirds of the participating provinces have to agree."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "Jordan's employer matches those CPP contributions too. And they build Jordan's own future pension."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 1.1,
+   "text": "EI. One thousand, one hundred and twenty-three dollars. This one is federal revenue. It's the insurance that pays benefits if Jordan loses the job, or takes parental leave."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "So let's put the whole hundred thousand on one screen."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "Seventy-one thousand, four hundred and forty-five stays with Jordan. Twenty-two thousand, seven hundred and eighty-six is income tax, split between Ottawa and Manitoba. And five thousand, seven hundred and sixty-nine goes into CPP and EI."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 0.35,
+   "text": "That's the real answer to where does the money go. About seventy-one percent stays. About twenty-three percent funds governments. About six percent goes into social insurance, including Jordan's own pension."
+  },
+  {
+   "id": "L42b",
+   "file": "vo/L42b.mp3",
+   "gap": 0.35,
+   "text": "Here's another way to feel it. If Jordan paid the year's income tax first, before keeping a single dollar, Jordan would be working for the two governments until the twenty-fifth of March."
+  },
+  {
+   "id": "L42c",
+   "file": "vo/L42c.mp3",
+   "gap": 0.35,
+   "text": "That's twenty-two point eight percent of the year. About eighty-three days."
+  },
+  {
+   "id": "L42d",
+   "file": "vo/L42d.mp3",
+   "gap": 0.35,
+   "text": "Or think of one eight-hour workday. The first hour and forty-nine minutes of every day covers income tax. Federal and provincial together."
+  },
+  {
+   "id": "L42e",
+   "file": "vo/L42e.mp3",
+   "gap": 1.1,
+   "text": "And Jordan is not unusual. Personal income tax is the single biggest source of federal revenue. Forty-five point nine percent of everything Ottawa collected in twenty twenty-four to twenty-five."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "So what can Jordan actually do with this?"
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "First, stop fearing the bracket. A raise is taxed at the rate on the new dollars, not on the whole salary."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "Second, look at what lowers taxable income, like RRSP contributions. Every dollar that qualifies comes off the top, at Jordan's highest rate."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 1.1,
+   "text": "And third, file every year, even when it feels pointless. Benefits and credits are calculated from your tax return."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: what if Jordan moved from Manitoba to Alberta? Same salary, same job. Different province. How much more, or less, would Jordan keep? Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "The question"
+  },
+  {
+   "at": "L5",
+   "title": "01 \u00b7 The paycheque"
+  },
+  {
+   "at": "L9",
+   "title": "02 \u00b7 The year"
+  },
+  {
+   "at": "L14",
+   "title": "03 \u00b7 Every $100"
+  },
+  {
+   "at": "L17",
+   "title": "04 \u00b7 Where Ottawa spends"
+  },
+  {
+   "at": "L30",
+   "title": "05 \u00b7 Where Manitoba spends"
+  },
+  {
+   "at": "L36",
+   "title": "06 \u00b7 CPP + EI"
+  },
+  {
+   "at": "L40",
+   "title": "07 \u00b7 The whole picture"
+  },
+  {
+   "at": "L43",
+   "title": "08 \u00b7 What to do"
+  },
+  {
+   "at": "L47",
+   "title": "Next"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "vapor",
+     "kicker": "JORDAN \u00b7 34 \u00b7 WINNIPEG",
+     "lines": [
+      {
+       "anim": "roll",
+       "value": {
+        "ref": "d.p.gross"
+       },
+       "size": 170,
+       "at": "L1"
+      },
+      {
+       "text": "A YEAR \u00b7 BEFORE TAX",
+       "size": 56,
+       "at": "L1",
+       "word": "salary"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L2",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L2",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "text": "ON PAPER: $100,000",
+       "size": 90,
+       "at": "L2"
+      },
+      {
+       "anim": "decode",
+       "text": "IN THE BANK: NEVER",
+       "gold": true,
+       "size": 90,
+       "at": "L2",
+       "word": "But Jordan"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L3",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L3",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "defocus",
+     "kicker": "LEAVES BEFORE PAYDAY",
+     "lines": [
+      {
+       "anim": "roll",
+       "value": {
+        "expr": "d.p.income_tax + d.p.cpp + d.p.ei"
+       },
+       "size": 160,
+       "at": "L3"
+      },
+      {
+       "text": "WHERE DOES IT GO?",
+       "size": 70,
+       "at": "L3",
+       "word": "So where"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L4",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 330,
+     "y": 230,
+     "w": 1260,
+     "at": "L4",
+     "fxIn": "sweep",
+     "fxOut": "collapse",
+     "title": "THE NUMBERS",
+     "items": [
+      {
+       "n": "01",
+       "head": "2026 CRA PAYROLL TABLES + MANITOBA RATES",
+       "at": "L4"
+      },
+      {
+       "n": "02",
+       "head": "SPENDING: AUDITED GOVERNMENT REPORTS",
+       "text": "Federal Annual Financial Report 2024-25 \u00b7 Manitoba Public Accounts 2025-26",
+       "at": "L4",
+       "word": "And the spending"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "pay",
+     "x": 250,
+     "y": 120,
+     "w": 1000,
+     "at": "L5",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "ONE PAYCHEQUE",
+     "sub": "26 PAYS A YEAR \u00b7 AVERAGE",
+     "grossLabel": "GROSS PAY",
+     "gross": {
+      "ref": "d.gross_pay"
+     },
+     "rows": [
+      {
+       "label": "FEDERAL TAX",
+       "value": {
+        "ref": "d.per_pay.federal"
+       },
+       "color": "#E5806E",
+       "at": "L6",
+       "word": "Federal"
+      },
+      {
+       "label": "MANITOBA TAX",
+       "value": {
+        "ref": "d.per_pay.provincial"
+       },
+       "color": "#E8A86A",
+       "at": "L6",
+       "word": "Manitoba"
+      },
+      {
+       "label": "CPP",
+       "value": {
+        "ref": "d.per_pay.cpp"
+       },
+       "color": "#8FB3E8",
+       "at": "L7"
+      },
+      {
+       "label": "EI",
+       "value": {
+        "ref": "d.per_pay.ei"
+       },
+       "color": "#E8C27A",
+       "at": "L7",
+       "word": "Employment"
+      }
+     ],
+     "finalAt": {
+      "at": "L8"
+     },
+     "finalLabel": "IN THE BANK",
+     "barW": 940
+    }
+   ]
+  },
+  {
+   "at": "L8b",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "pays",
+     "x": 160,
+     "y": 160,
+     "w": 1600,
+     "at": "L8b",
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "title": "26 PAYS \u00b7 THE MAXIMUMS",
+     "sub": "CPP + EI STOP ONCE THE YEARLY MAXIMUM IS REACHED",
+     "stops": [
+      {
+       "pay": 17,
+       "bump": 0.05,
+       "label": "EI STOPS ($68,900)",
+       "at": "L8c",
+       "word": "After that"
+      },
+      {
+       "pay": 19,
+       "bump": 0.1,
+       "label": "BASE CPP STOPS ($74,600)",
+       "at": "L8d"
+      },
+      {
+       "pay": 22,
+       "bump": 0.07,
+       "label": "CPP2 STOPS ($85,000)",
+       "at": "L8d",
+       "word": "The second"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L8e",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L8e",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 96,
+       "seq": [
+        {
+         "text": "SAME JOB.",
+         "t": 0
+        },
+        {
+         "text": "BIGGER PAYCHEQUE.",
+         "at": "L8e",
+         "word": "Nothing changed"
+        }
+       ],
+       "at": "L8e"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L9",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "pay",
+     "x": 250,
+     "y": 120,
+     "w": 1000,
+     "at": "L9",
+     "fxIn": "slideL",
+     "fxOut": "defocus",
+     "title": "THE FULL YEAR",
+     "sub": "2026 \u00b7 MANITOBA",
+     "grossLabel": "SALARY",
+     "gross": {
+      "ref": "d.p.gross"
+     },
+     "rows": [
+      {
+       "label": "FEDERAL INCOME TAX",
+       "value": {
+        "ref": "d.p.federal"
+       },
+       "color": "#E5806E",
+       "at": "L9",
+       "word": "Federal"
+      },
+      {
+       "label": "MANITOBA INCOME TAX",
+       "value": {
+        "ref": "d.p.provincial"
+       },
+       "color": "#E8A86A",
+       "at": "L10"
+      },
+      {
+       "label": "CPP + CPP2",
+       "value": {
+        "ref": "d.p.cpp"
+       },
+       "color": "#8FB3E8",
+       "at": "L11"
+      },
+      {
+       "label": "EI",
+       "value": {
+        "ref": "d.p.ei"
+       },
+       "color": "#E8C27A",
+       "at": "L11",
+       "word": "EI"
+      }
+     ],
+     "finalAt": {
+      "at": "L12"
+     },
+     "finalLabel": "TAKE-HOME",
+     "barW": 940,
+     "check": true
+    }
+   ]
+  },
+  {
+   "at": "L12b",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 210,
+     "y": 140,
+     "w": 1500,
+     "at": "L12b",
+     "fxIn": "focus",
+     "fxOut": "collapse",
+     "title": "HOW THE TAX IS CALCULATED",
+     "sub": "2026 RATES",
+     "items": [
+      {
+       "n": "A",
+       "head": "TAXABLE INCOME $98,873",
+       "text": "$100,000 \u2212 $1,127 enhanced CPP deduction",
+       "at": "L12b",
+       "word": "So taxable"
+      },
+      {
+       "n": "B",
+       "head": "FEDERAL: 14% + 20.5% = $16,465 \u2212 $3,163 CREDITS = $13,302",
+       "text": "14% to $58,523 \u00b7 20.5% above \u00b7 credits: basic personal amount, CPP, EI, Canada employment amount",
+       "at": "L12c"
+      },
+      {
+       "n": "C",
+       "head": "MANITOBA: 10.8% + 12.75% = $11,690 \u2212 $2,206 = $9,484",
+       "text": "10.8% to $47,000 \u00b7 12.75% above",
+       "at": "L12e"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 280,
+     "w": 1600,
+     "at": "L13",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "kicker": "THE FIRST SURPRISE",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 120,
+       "gold": true,
+       "seq": [
+        {
+         "text": "BRACKET 33.2%",
+         "t": 0
+        },
+        {
+         "text": "REAL RATE 22.8%",
+         "at": "L13",
+         "word": "But Jordan"
+        }
+       ],
+       "at": "L13"
+      },
+      {
+       "text": "THE BRACKET IS NOT WHAT YOU PAY ON EVERYTHING",
+       "size": 46,
+       "at": "L13",
+       "word": "The bracket"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hundred",
+     "x": 160,
+     "y": 220,
+     "w": 1600,
+     "at": "L14",
+     "fxIn": "morph",
+     "fxOut": "particles",
+     "title": "EVERY $100 JORDAN EARNS",
+     "sub": "2026 \u00b7 MANITOBA",
+     "segs": [
+      {
+       "label": "OTTAWA",
+       "value": {
+        "ref": "d.per100.federal"
+       },
+       "color": "#E5806E",
+       "at": "L14",
+       "word": "thirteen"
+      },
+      {
+       "label": "MANITOBA",
+       "value": {
+        "ref": "d.per100.provincial"
+       },
+       "color": "#E8A86A",
+       "at": "L15"
+      },
+      {
+       "label": "CPP",
+       "value": {
+        "ref": "d.per100.cpp"
+       },
+       "color": "#8FB3E8",
+       "at": "L15",
+       "word": "Four sixty"
+      },
+      {
+       "label": "EI",
+       "value": {
+        "ref": "d.per100.ei"
+       },
+       "color": "#E8C27A",
+       "at": "L15",
+       "word": "One twelve"
+      },
+      {
+       "label": "JORDAN KEEPS",
+       "value": {
+        "ref": "d.per100.take_home"
+       },
+       "color": "#7FD3A0",
+       "at": "L16"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L17",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L17",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "kicker": "WHERE THE FEDERAL MONEY GOES",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "TAXES ARE NOT EARMARKED",
+       "size": 100,
+       "at": "L18"
+      },
+      {
+       "text": "ONE ACCOUNT \u00b7 ONE BUDGET",
+       "size": 54,
+       "at": "L18",
+       "word": "They go"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L19",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "kicker": "ILLUSTRATION \u00b7 FEDERAL SPENDING 2024-25",
+     "lines": [
+      {
+       "text": "JORDAN'S $13,302 \u00d7 OTTAWA'S SPENDING MIX",
+       "size": 70,
+       "at": "L19"
+      },
+      {
+       "anim": "decode",
+       "text": "TOTAL SPENT: $547.3 BILLION",
+       "gold": true,
+       "size": 92,
+       "at": "L20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 130,
+     "y": 120,
+     "w": 1660,
+     "at": "L21",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "JORDAN'S $13,302 \u00b7 SPLIT LIKE FEDERAL SPENDING",
+     "sub": "ANNUAL FINANCIAL REPORT 2024-25",
+     "items": {
+      "ref": "d.fed_split"
+     },
+     "order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "labelW": 620,
+     "fs": 24,
+     "vs": 32,
+     "rowAt": [
+      {
+       "at": "L21",
+       "word": "Jordan"
+      },
+      {
+       "at": "L22"
+      },
+      {
+       "at": "L23"
+      },
+      {
+       "at": "L24"
+      },
+      {
+       "at": "L25"
+      },
+      {
+       "at": "L26",
+       "word": "about"
+      },
+      {
+       "at": "L27",
+       "word": "about"
+      },
+      {
+       "at": "L28",
+       "word": "Interest"
+      },
+      {
+       "at": "L28",
+       "word": "Nearly"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L29",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L29",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "particles",
+     "kicker": "ONE MORE HONEST DETAIL",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "DEFICIT: $36.3 BILLION",
+       "gold": true,
+       "size": 110,
+       "at": "L29",
+       "word": "The deficit"
+      },
+      {
+       "text": "PART OF THE SPENDING WAS BORROWED",
+       "size": 50,
+       "at": "L29",
+       "word": "So part"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 130,
+     "y": 160,
+     "w": 1660,
+     "at": "L30",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "JORDAN'S $9,484 \u00b7 SPLIT LIKE MANITOBA SPENDING",
+     "sub": "PUBLIC ACCOUNTS 2025-26 \u00b7 BY SEGMENT",
+     "items": {
+      "ref": "d.mb_split"
+     },
+     "labelW": 560,
+     "fs": 26,
+     "vs": 36,
+     "note": "ILLUSTRATION: TAXES ARE NOT EARMARKED \u00b7 SHARES BEFORE CONSOLIDATION ADJUSTMENTS",
+     "rowAt": [
+      {
+       "at": "L31",
+       "word": "Jordan"
+      },
+      {
+       "at": "L32",
+       "word": "about"
+      },
+      {
+       "at": "L33"
+      },
+      {
+       "at": "L33",
+       "word": "Justice"
+      },
+      {
+       "at": "L34"
+      },
+      {
+       "at": "L34",
+       "word": "Community"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L35",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 320,
+     "w": 1600,
+     "at": "L35",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "defocus",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 110,
+       "seq": [
+        {
+         "text": "MANITOBA",
+         "t": 0
+        },
+        {
+         "text": "~4 IN 10 DOLLARS \u2192 HEALTH",
+         "at": "L35",
+         "word": "almost"
+        }
+       ],
+       "at": "L35"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L36",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L36",
+     "fxIn": "sweep",
+     "fxOut": "collapse",
+     "title": "NOT TAXES IN THE USUAL SENSE",
+     "items": [
+      {
+       "n": "CPP",
+       "head": "$4,646 \u00b7 OUTSIDE OTTAWA\u2019S GENERAL BUDGET",
+       "text": "Excluded from the federal financial statements: changes need 2/3 of participating provinces. Employer pays the same rate. Builds Jordan\u2019s pension.",
+       "at": "L37"
+      },
+      {
+       "n": "EI",
+       "head": "$1,123 \u00b7 FEDERAL REVENUE",
+       "text": "Insurance: benefits if Jordan loses the job or takes parental leave.",
+       "at": "L39"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L40",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "hundred",
+     "x": 160,
+     "y": 230,
+     "w": 1600,
+     "at": "L40",
+     "fxIn": "glass",
+     "fxOut": "particles",
+     "title": "THE WHOLE $100,000",
+     "sub": "PER $100",
+     "segs": [
+      {
+       "label": "STAYS WITH JORDAN",
+       "value": {
+        "ref": "d.per100.take_home"
+       },
+       "color": "#7FD3A0",
+       "at": "L41"
+      },
+      {
+       "label": "INCOME TAX",
+       "value": {
+        "expr": "d.per100.federal + d.per100.provincial"
+       },
+       "color": "#E5806E",
+       "at": "L41",
+       "word": "Twenty-two"
+      },
+      {
+       "label": "CPP + EI",
+       "value": {
+        "expr": "d.per100.cpp + d.per100.ei"
+       },
+       "color": "#8FB3E8",
+       "at": "L41",
+       "word": "And five"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L42b",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 230,
+     "w": 1600,
+     "at": "L42b",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "kicker": "IF INCOME TAX CAME FIRST",
+     "lines": [
+      {
+       "text": "JORDAN WORKS FOR GOVERNMENTS UNTIL",
+       "size": 54,
+       "at": "L42b"
+      },
+      {
+       "anim": "decode",
+       "text": "MARCH 25",
+       "gold": true,
+       "size": 170,
+       "at": "L42b",
+       "word": "until"
+      },
+      {
+       "text": "22.8% OF THE YEAR \u00b7 ~83 DAYS",
+       "size": 48,
+       "at": "L42c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L42d",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "clock",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L42d",
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "title": "ONE 8-HOUR WORKDAY",
+     "sub": "INCOME TAX FIRST",
+     "minutes": 109,
+     "caption": "OF EVERY DAY = INCOME TAX"
+    }
+   ]
+  },
+  {
+   "at": "L42e",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L42e",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "particles",
+     "kicker": "FEDERAL REVENUE 2024-25",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "45.9%",
+       "gold": true,
+       "size": 180,
+       "at": "L42e",
+       "word": "Forty-five"
+      },
+      {
+       "text": "CAME FROM PERSONAL INCOME TAX",
+       "size": 56,
+       "at": "L42e",
+       "word": "Forty-five",
+       "off": 1.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L43",
+     "fxIn": "slideUp",
+     "fxOut": "collapse",
+     "title": "WHAT JORDAN CAN DO",
+     "dimOthers": true,
+     "items": [
+      {
+       "head": "STOP FEARING THE BRACKET",
+       "text": "A raise is taxed at the rate on the new dollars only.",
+       "at": "L44"
+      },
+      {
+       "head": "LOWER TAXABLE INCOME",
+       "text": "Qualifying RRSP contributions come off the top, at the highest rate.",
+       "at": "L45"
+      },
+      {
+       "head": "FILE EVERY YEAR",
+       "text": "Benefits and credits are calculated from your return.",
+       "at": "L46"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 280,
+     "w": 1600,
+     "at": "L47",
+     "glass": false,
+     "fxIn": "morph",
+     "kicker": "NEXT ON TAX SECRETS CANADA",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 120,
+       "seq": [
+        {
+         "text": "MANITOBA",
+         "t": 0
+        },
+        {
+         "text": "\u2192 ALBERTA?",
+         "at": "L47",
+         "word": "to Alberta"
+        }
+       ],
+       "at": "L47"
+      },
+      {
+       "text": "SAME SALARY \u00b7 DIFFERENT PROVINCE",
+       "size": 50,
+       "at": "L47",
+       "word": "Same salary"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -50,
+     "y": 10,
+     "z": 0.15
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "at": "L4",
+   "plate": "s13",
+   "cam": [
+    {
+     "x": 60,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": -40,
+     "y": -10,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L5",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 0,
+     "y": 30,
+     "z": 0.2
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L8b",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -60,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 50,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L9",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 40,
+     "y": 20,
+     "z": 0.0
+    },
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L12b",
+   "plate": "s14",
+   "cam": [
+    {
+     "x": -30,
+     "y": -10,
+     "z": 0.1
+    },
+    {
+     "x": 30,
+     "y": 10,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "plate": "s11",
+   "cam": [
+    {
+     "x": 50,
+     "y": 10,
+     "z": 0.25
+    },
+    {
+     "x": -40,
+     "y": -10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L17",
+   "plate": "s9",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.22
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L22",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L24",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "plate": "s7",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.15
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L26",
+   "plate": "s9",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L28",
+   "plate": "s11",
+   "cam": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.3
+    },
+    {
+     "x": 0,
+     "y": 10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "plate": "s10",
+   "cam": [
+    {
+     "x": -50,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L31",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 10,
+     "y": 0,
+     "z": 0.3
+    },
+    {
+     "x": -10,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L32",
+   "plate": "s8",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L33",
+   "plate": "s10",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.18
+    },
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L36",
+   "plate": "s12",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L39",
+   "plate": "s7",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L40",
+   "plate": "s13",
+   "cam": [
+    {
+     "x": -60,
+     "y": 10,
+     "z": 0.2
+    },
+    {
+     "x": 60,
+     "y": -10,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "at": "L42b",
+   "plate": "s14",
+   "cam": [
+    {
+     "x": 0,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -10,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L42e",
+   "plate": "s9",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.05
+    },
+    {
+     "x": -40,
+     "y": -10,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.2
+    },
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "plate": "s13",
+   "cam": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -10,
+     "z": 0.25
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf03/plates/s1.jpg",
+    "depth": "lf/lf03/plates/s1_d.png",
+    "amt": 0.05
+   },
+   "lights": [
+    {
+     "x": 13,
+     "y": 4,
+     "r": 8,
+     "color": "rgba(255,200,130,.9)",
+     "amp": 0.08
+    }
+   ]
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf03/plates/s2.jpg",
+    "depth": "lf/lf03/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf03/plates/s3.jpg",
+    "depth": "lf/lf03/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf03/plates/s4.jpg",
+    "depth": "lf/lf03/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf03/plates/s5.jpg",
+    "depth": "lf/lf03/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf03/plates/s6.jpg",
+    "depth": "lf/lf03/plates/s6_d.png",
+    "amt": 0.05
+   }
+  },
+  "s7": {
+   "photo": {
+    "src": "lf/lf03/plates/s7.jpg",
+    "depth": "lf/lf03/plates/s7_d.png",
+    "amt": 0.05
+   }
+  },
+  "s8": {
+   "photo": {
+    "src": "lf/lf03/plates/s8.jpg",
+    "depth": "lf/lf03/plates/s8_d.png",
+    "amt": 0.05
+   }
+  },
+  "s9": {
+   "photo": {
+    "src": "lf/lf03/plates/s9.jpg",
+    "depth": "lf/lf03/plates/s9_d.png",
+    "amt": 0.05
+   }
+  },
+  "s10": {
+   "photo": {
+    "src": "lf/lf03/plates/s10.jpg",
+    "depth": "lf/lf03/plates/s10_d.png",
+    "amt": 0.05
+   }
+  },
+  "s11": {
+   "photo": {
+    "src": "lf/lf03/plates/s11.jpg",
+    "depth": "lf/lf03/plates/s11_d.png",
+    "amt": 0.05
+   }
+  },
+  "s12": {
+   "photo": {
+    "src": "lf/lf03/plates/s12.jpg",
+    "depth": "lf/lf03/plates/s12_d.png",
+    "amt": 0.05
+   }
+  },
+  "s13": {
+   "photo": {
+    "src": "lf/lf03/plates/s13.jpg",
+    "depth": "lf/lf03/plates/s13_d.png",
+    "amt": 0.05
+   }
+  },
+  "s14": {
+   "photo": {
+    "src": "lf/lf03/plates/s14.jpg",
+    "depth": "lf/lf03/plates/s14_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L2"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L3"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L4"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L5"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L6",
+   "word": "Federal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L6",
+   "word": "Manitoba"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L7"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L7",
+   "word": "Employment"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L8b"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L8e"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L9"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "Federal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L11"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L11",
+   "word": "EI"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L12b"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L13"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L14"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "thirteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "Four sixty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "One twelve"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L17"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L19"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L21"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L21",
+   "word": "Jordan"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L22"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L26",
+   "word": "about"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L27",
+   "word": "about"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "Interest"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "Nearly"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L29"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L30"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "Jordan"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "about"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "Justice"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "Community"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L35"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L36"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L40"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "Twenty-two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "And five"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42b"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42d"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42e"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L47"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L4"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L5"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L8b"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L9"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L12b"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L14"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L17"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L21"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L22"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L24"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L25"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L26"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L28"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L30"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L31"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L32"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L33"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L36"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L39"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L40"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L42b"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L42e"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L47"
+  }
+ ],
+ "audio": "lf/lf03/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

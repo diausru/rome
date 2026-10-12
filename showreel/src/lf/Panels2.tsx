@@ -9,7 +9,7 @@ const gold: React.CSSProperties = { background: `linear-gradient(180deg,#FFE7B0 
 type Ctx = { now: number; fps: number; end: number };
 type Pn = { [k: string]: any };
 const k01 = (now: number, t: number, d = 0.4) => easeOut(Math.max(0, Math.min(1, (now - t) / d)));
-const R = (x: any) => (x && typeof x === 'object' && 'ref' in x ? x.value : x);
+const R = (x: any) => (x && typeof x === 'object' && ('ref' in x || 'expr' in x) ? x.value : x);
 const isFree = (v: string) => /^\$0|FREE/.test(v);
 
 export const Title: React.FC<{ text: string; sub?: string; size?: number }> = ({ text, sub, size = 30 }) => (

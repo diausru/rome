@@ -4,6 +4,7 @@ import React from 'react';
 import { AbsoluteFill, interpolate, spring, Easing } from 'remotion';
 import { fxStyle, FxName, IN_ROTATION, OUT_ROTATION, easeIn } from './Effects';
 import { PANELS2 } from './Panels2';
+import { PANELS3 } from './Panels3';
 
 const C = { gold: '#E8C27A', gold2: '#B88A3E', white: '#F4F1EA', dim: 'rgba(244,241,234,.62)', faint: 'rgba(244,241,234,.38)', red: '#E5806E', green: '#7FD3A0', line: 'rgba(255,255,255,.13)', glass: 'rgba(13,19,31,.70)', hl: 'rgba(232,194,122,.13)', canada: '#D52B1E' };
 const F = { sans: 'Mont, Montserrat, sans-serif', serif: 'Fraunces, serif' };
@@ -232,7 +233,7 @@ const Misconception: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-const PANELS: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { ...PANELS2, table: Table, formula: Formula, brackets: Brackets, provinces: Provinces, stack: Stack, donut: Donut, line: LineChart, source: Source, takeaway: Takeaway, misconception: Misconception };
+const PANELS: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { ...PANELS2, ...PANELS3, table: Table, formula: Formula, brackets: Brackets, provinces: Provinces, stack: Stack, donut: Donut, line: LineChart, source: Source, takeaway: Takeaway, misconception: Misconception };
 
 // ---------- scene: several panels, each with its own entry time; slight depth + parallax drift ----------
 export const Scene: React.FC<{ e: Pn; now: number; fps: number }> = ({ e, now, fps }) => {
