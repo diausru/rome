@@ -1,0 +1,46 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Your tuition slip is worth real money at tax time. The question is: whose money?",
+   0.32
+  ],
+  [
+   "rule",
+   "Your school's T2202 shows your eligible tuition. Federally, it's a fourteen percent credit, if you paid that school more than a hundred dollars.",
+   0.28
+  ],
+  [
+   "example",
+   "Eight thousand in tuition? That's a credit worth one thousand, one hundred and twenty dollars.",
+   0.3
+  ],
+  [
+   "first",
+   "But it's yours first: it must bring your own tax to zero. Earned twelve thousand at a summer job? You already owe nothing federally.",
+   0.3
+  ],
+  [
+   "transfer",
+   "So you can pass up to five thousand of this year's tuition to one parent, grandparent or spouse. That's seven hundred off their tax, if they owe tax.",
+   0.3
+  ],
+  [
+   "carry",
+   "The other three thousand stays with you, with no expiry. Worth four hundred and twenty dollars, but only on your own future return.",
+   0.3
+  ],
+  [
+   "gone",
+   "And the education and textbook amounts? Federally, they ended after twenty sixteen. Tuition is what's left.",
+   0.34
+  ],
+  [
+   "cta",
+   "Next: Manitoba's tax brackets on a real paycheque. Follow so you don't miss it.",
+   0.0
+  ]
+ ],
+ "tempo": 1.05
+}

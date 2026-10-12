@@ -1,0 +1,333 @@
+{
+ "id": "d13",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "lines": [
+   "YOUR TUITION SLIP",
+   "IS REAL MONEY"
+  ],
+  "hero": "WHOSE?",
+  "tags": [
+   {
+    "text": "T2202",
+    "cue": "tagSlip",
+    "from": "left",
+    "x": 80,
+    "y": 470
+   },
+   {
+    "text": "TUITION CREDIT",
+    "cue": "tagCredit",
+    "from": "right",
+    "x": 680,
+    "y": 560
+   },
+   {
+    "text": "TRANSFER · CARRY FORWARD",
+    "cue": "tagMove",
+    "from": "down",
+    "x": 80,
+    "y": 790
+   }
+  ]
+ },
+ "hold_after_vo": 1.7,
+ "cues": [
+  {
+   "id": "tagSlip",
+   "beat": "hook",
+   "word": "tuition",
+   "sfx": "swish"
+  },
+  {
+   "id": "real",
+   "beat": "hook",
+   "word": "real",
+   "sfx": "pop"
+  },
+  {
+   "id": "tagCredit",
+   "beat": "hook",
+   "word": "tax",
+   "offset": 0.1
+  },
+  {
+   "id": "whose",
+   "beat": "hook",
+   "word": "whose",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.6,
+   "gain": 0.8
+  },
+  {
+   "id": "tagMove",
+   "beat": "hook",
+   "word": "question"
+  },
+  {
+   "id": "rule",
+   "beat": "rule",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "slip",
+   "beat": "rule",
+   "word": "T2202"
+  },
+  {
+   "id": "pct",
+   "beat": "rule",
+   "word": "fourteen",
+   "sfx": "tick"
+  },
+  {
+   "id": "hundred",
+   "beat": "rule",
+   "word": "hundred"
+  },
+  {
+   "id": "ex",
+   "beat": "example",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "tuition",
+   "beat": "example",
+   "word": "Eight"
+  },
+  {
+   "id": "credit",
+   "beat": "example",
+   "word": "one",
+   "sfx": "chime"
+  },
+  {
+   "id": "first",
+   "beat": "first",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "zero",
+   "beat": "first",
+   "word": "zero.",
+   "sfx": "tick"
+  },
+  {
+   "id": "income",
+   "beat": "first",
+   "word": "twelve"
+  },
+  {
+   "id": "nothing",
+   "beat": "first",
+   "word": "nothing",
+   "sfx": "impact",
+   "gain": 0.5
+  },
+  {
+   "id": "transfer",
+   "beat": "transfer",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "five",
+   "beat": "transfer",
+   "word": "five",
+   "sfx": "tick"
+  },
+  {
+   "id": "parent",
+   "beat": "transfer",
+   "word": "parent,",
+   "sfx": "pop"
+  },
+  {
+   "id": "seven",
+   "beat": "transfer",
+   "word": "seven",
+   "sfx": "chime"
+  },
+  {
+   "id": "owe",
+   "beat": "transfer",
+   "word": "owe"
+  },
+  {
+   "id": "carry",
+   "beat": "carry",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "three",
+   "beat": "carry",
+   "word": "three"
+  },
+  {
+   "id": "expiry",
+   "beat": "carry",
+   "word": "expiry."
+  },
+  {
+   "id": "four",
+   "beat": "carry",
+   "word": "four",
+   "sfx": "chime"
+  },
+  {
+   "id": "only",
+   "beat": "carry",
+   "word": "only"
+  },
+  {
+   "id": "gone",
+   "beat": "gone",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "ended",
+   "beat": "gone",
+   "word": "ended",
+   "sfx": "impact",
+   "gain": 0.55
+  },
+  {
+   "id": "left",
+   "beat": "gone",
+   "word": "Tuition",
+   "sfx": "chime"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "pop"
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    880,
+    920,
+    350
+   ],
+   "from": "start",
+   "to": "rule"
+  },
+  "rule": {
+   "box": [
+    80,
+    860,
+    880,
+    400
+   ],
+   "from": "rule",
+   "to": "example"
+  },
+  "example": {
+   "box": [
+    80,
+    860,
+    880,
+    400
+   ],
+   "from": "example",
+   "to": "first"
+  },
+  "first": {
+   "box": [
+    80,
+    860,
+    880,
+    400
+   ],
+   "from": "first",
+   "to": "transfer"
+  },
+  "transfer": {
+   "box": [
+    80,
+    820,
+    880,
+    440
+   ],
+   "from": "transfer",
+   "to": "carry"
+  },
+  "carry": {
+   "box": [
+    80,
+    860,
+    880,
+    400
+   ],
+   "from": "carry",
+   "to": "gone"
+  },
+  "gone": {
+   "box": [
+    80,
+    860,
+    880,
+    400
+   ],
+   "from": "gone",
+   "to": "cta"
+  },
+  "end_block": {
+   "box": [
+    80,
+    1000,
+    880,
+    440
+   ],
+   "from": "cta",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "hook",
+   "to": "cta"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    130
+   ],
+   "from": "rule",
+   "to": "cta"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ }
+}

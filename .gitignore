@@ -38,3 +38,7 @@ showreel/public/lf/*/plates/
 longform/*/mix.wav
 longform/*/plates/*_4k.png
 longform/*/plates/*_4k.png
+d1/vo/*.wav
+d1/vo3/
+d1/plates/*.png
+d1/sources/*.html

@@ -125,15 +125,30 @@ def main():
     report('PASS' if dens <= 1.0 else 'ADVICE', 'sound density under the voice', f'{dens:.2f} per 3 s; within 1 s: {close or "none"}')
 
     # 9. facts
-    ex = data['example']; net = ex['gain'] - ex['loss']; taxable = net * ex['inclusion_rate']; without = ex['gain'] * ex['inclusion_rate']
-    fx = []
-    vo = ' '.join(beats_txt.values()).lower().replace('-', ' ')
-    for k, val in [('gain', ex['gain']), ('loss', ex['loss']), ('net', net), ('taxable', taxable), ('without_sale', without)]:
-        spoken = data['spoken'][k]
-        if spoken not in vo: fx.append(f'"{spoken}" not in the VO')
-        if k != 'without_sale' and words(int(val)).replace('-', ' ') != spoken: fx.append(f'{k}: data {val} ≠ spoken "{spoken}"')
-        if k == 'without_sale' and not words(int(val)).startswith(spoken): fx.append(f'without_sale: {val} vs "{spoken}"')
-    report('PASS' if not fx else 'FAIL', 'facts: numbers from data.json match the narration', '; '.join(fx) or f'gain {ex["gain"]}, loss {ex["loss"]}, net {net}, taxable {taxable:.0f}, without the sale {without:.0f}')
+    ex = data['example']; fx = []
+    vo = re.sub(r'\s+', ' ', ' '.join(beats_txt.values()).lower().replace('-', ' ').replace(',', ''))
+    if 'derive' in data:
+        # generic: values = example inputs + data.json "derive" formulas; every "spoken" phrase must be in the VO and,
+        # for plain amounts, equal the value read aloud ("and" and commas ignored; rates checked as "N percent")
+        env = dict(ex); env.update({k: round(eval(e, {'__builtins__': {}}, dict(env, min=min, max=max)), 6) for k, e in data['derive'].items()})
+        norm = lambda s: re.sub(r'\s+', ' ', s.lower().replace('-', ' ').replace(',', '').replace(' and ', ' ')).strip()
+        for k, spoken in data['spoken'].items():
+            val = env[k]
+            if spoken.replace(',', '') not in vo: fx.append(f'"{spoken}" not in the VO')
+            if 0 < val < 1: ok = norm(spoken) == norm(words(round(val * 100)) + ' percent')
+            elif spoken.startswith('a '): ok = norm(spoken).endswith(norm(words(int(val)).split(' ', 1)[-1]) + ' dollars') or norm(spoken) == 'a ' + norm(words(int(val)).split(' ', 1)[-1]) + ' dollars'
+            else: ok = norm(spoken) == norm(words(int(round(val))))
+            if not ok: fx.append(f'{k}: data {val} ≠ spoken "{spoken}"')
+        summary = ', '.join(f'{k} {env[k]:g}' for k in data['spoken'])
+    else:
+        net = ex['gain'] - ex['loss']; taxable = net * ex['inclusion_rate']; without = ex['gain'] * ex['inclusion_rate']
+        for k, val in [('gain', ex['gain']), ('loss', ex['loss']), ('net', net), ('taxable', taxable), ('without_sale', without)]:
+            spoken = data['spoken'][k]
+            if spoken not in vo: fx.append(f'"{spoken}" not in the VO')
+            if k != 'without_sale' and words(int(val)).replace('-', ' ') != spoken: fx.append(f'{k}: data {val} ≠ spoken "{spoken}"')
+            if k == 'without_sale' and not words(int(val)).startswith(spoken): fx.append(f'without_sale: {val} vs "{spoken}"')
+        summary = f'gain {ex["gain"]}, loss {ex["loss"]}, net {net}, taxable {taxable:.0f}, without the sale {without:.0f}'
+    report('PASS' if not fx else 'FAIL', 'facts: numbers from data.json match the narration', '; '.join(fx) or summary)
 
     fails = [r for r in res if r[0] == 'FAIL']
     out = proj / 'QC-REPORT.md'

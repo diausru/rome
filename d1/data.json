@@ -1,0 +1,24 @@
+{
+ "topic": "Tuition tax credit: claim, transfer, carry forward (federal, tax year 2026)",
+ "tax_year": 2026,
+ "example": {"tuition": 8000, "rate": 0.14, "student_income": 12000, "transfer_cap": 5000, "min_fees": 100,
+   "note": "example, not a CRA rule; a student with $12,000 of income owes no federal tax before tuition because the basic personal amount (at least $15,000 for 2023+, indexed) covers it; provincial credits differ and are not computed"},
+ "derive": {
+   "credit": "tuition * rate",
+   "transfer": "min(transfer_cap, tuition) * rate",
+   "carry": "tuition - min(transfer_cap, tuition)",
+   "carry_credit": "(tuition - min(transfer_cap, tuition)) * rate"
+ },
+ "spoken": {"tuition": "eight thousand", "rate": "fourteen percent", "student_income": "twelve thousand", "transfer_cap": "five thousand", "min_fees": "a hundred dollars",
+   "credit": "one thousand one hundred and twenty", "transfer": "seven hundred", "carry": "three thousand", "carry_credit": "four hundred and twenty"},
+ "sources": {
+   "credit": "Income Tax Act s.118.5(1)(a): tuition credit = appropriate percentage × eligible tuition paid to a post-secondary institution in Canada (laws-lois.justice.gc.ca, current to 2026-09-21)",
+   "min_fees": "ITA s.118.5(1.1): no credit for a particular institution unless the fees paid to it in the year exceed $100",
+   "rate": "ITA s.117(2)(a): 14% lowest federal rate; s.248(1) 'appropriate percentage' = the lowest percentage in 117(2) for the year (2026)",
+   "transfer": "ITA s.118.81: tuition tax credit transferred = (lesser of the year's 118.5 credit and appropriate percentage × $5,000) − the student's own tax; s.118.9 parent or grandparent; s.118.8 spouse or common-law partner; CRA canada.ca 'Transferring and carrying forward amounts' (line 32300 / Schedule 11)",
+   "carry": "ITA s.118.61: unused tuition credits carried forward to later years, deductible by the student only; carried-forward amounts are not part of the 118.81 transfer (which uses the year's 118.5 amount)",
+   "student_tax_zero": "ITA s.118(1)(c), (1.1): basic personal amount, $15,000 for 2023 and later for incomes up to the 29% bracket threshold, indexed; 14% × $12,000 < 14% × BPA",
+   "education_textbook": "ITA s.118.6(2.1) [Repealed, 2016, c. 7, s. 16]; CRA Income Tax Folio S1-F2-C1: federal education and textbook credits eliminated starting 2017",
+   "t2202": "CRA canada.ca line 32300 / Schedule 11: the T2202 (Tuition and Enrolment Certificate) from the institution shows eligible tuition"
+ }
+}
