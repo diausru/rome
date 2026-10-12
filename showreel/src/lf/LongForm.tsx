@@ -2,9 +2,9 @@
 // One reusable 16:9 composition driven by an episode JSON (see longform/ENGINE.md).
 // Per episode only data changes: events, numbers, contenders, scores, audio, plate.
 import { Parallax } from './Parallax';
-import React from 'react';
+import React, { useLayoutEffect, useRef, useState } from 'react';
 import { Scene } from './Panels';
-import { AbsoluteFill, Audio, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
+import { AbsoluteFill, Audio, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing, delayRender, continueRender } from 'remotion';
 
 export type Ev = { t: number; dur: number; type: string; [k: string]: any };
 export type Episode = {
@@ -59,6 +59,18 @@ const Flag: React.FC<{ h?: number }> = ({ h = 22 }) => (
   </svg>
 );
 
+
+// Ticker: running line of verified facts; the loop width is measured in the browser (exact, seamless).
+const Ticker: React.FC<{ items: string[]; t: number }> = ({ items, t }) => {
+  const ref = useRef<HTMLSpanElement>(null); const [W, setW] = useState(0); const [h] = useState(() => delayRender('ticker-measure'));
+  useLayoutEffect(() => { (document as any).fonts.ready.then(() => { if (ref.current) setW(ref.current.getBoundingClientRect().width); continueRender(h); }); }, []);
+  const txt = items.join('   ◆   ') + '   ◆   ';
+  const seg = (k: number) => <span key={k} ref={k === 0 ? ref : undefined} style={{ whiteSpace: 'pre' }}>{txt.split(/(\$[\d,]+|\d+(?:\.\d+)?%|\d+ (?:YEARS|DAYS|MONTHS|HOURS|BUSINESS DAYS))/).map((s, j) => j % 2 ? <span key={j} style={{ color: C.gold, fontWeight: 700 }}>{s}</span> : s)}</span>;
+  const x = W ? -((t * 80) % W) : 0;
+  return <div style={{ position: 'absolute', left: 0, right: 0, bottom: 64, height: 46, overflow: 'hidden', background: 'linear-gradient(90deg, rgba(7,11,20,0), rgba(7,11,20,.72) 8%, rgba(7,11,20,.72) 92%, rgba(7,11,20,0))', borderTop: '1px solid rgba(232,194,122,.35)', borderBottom: '1px solid rgba(232,194,122,.18)' }}>
+    <div style={{ position: 'absolute', top: 8, left: x, whiteSpace: 'pre', fontFamily: 'Oswald, Mont, sans-serif', fontSize: 26, letterSpacing: 2, color: C.white }}>{[0, 1, 2].map(seg)}</div></div>;
+};
+
 const Chrome: React.FC<{ ep: Episode; t: number }> = ({ ep, t }) => {
   const total = (ep.duration ?? Math.max(...ep.events.map((e) => e.t + e.dur)));
   const ch = [...(ep.chapters ?? [])].reverse().find((c) => c.t <= t);
@@ -68,11 +80,7 @@ const Chrome: React.FC<{ ep: Episode; t: number }> = ({ ep, t }) => {
         TAX SECRETS CANADA <Flag />
       </div>
       {ch && <div style={{ position: 'absolute', top: 44, left: 56, fontSize: ep.shots ? 22 : 17, letterSpacing: 3, color: C.dim, fontWeight: 600, fontFamily: ep.shots ? 'Oswald, Mont, sans-serif' : undefined }}>{ch.title.toUpperCase()}</div>}
-      {(ep as any).ticker && (() => { const items: string[] = (ep as any).ticker; const txt = items.join('   ◆   ') + '   ◆   '; const W = Math.ceil(txt.length * 17); const x = -((t * 80) % W);
-        return <div style={{ position: 'absolute', left: 0, right: 0, bottom: 64, height: 46, overflow: 'hidden', background: 'linear-gradient(90deg, rgba(7,11,20,.0), rgba(7,11,20,.72) 8%, rgba(7,11,20,.72) 92%, rgba(7,11,20,0))', borderTop: '1px solid rgba(232,194,122,.35)', borderBottom: '1px solid rgba(232,194,122,.18)' }}>
-          <div style={{ position: 'absolute', top: 8, left: x, whiteSpace: 'nowrap', fontFamily: 'Oswald, Mont, sans-serif', fontSize: 26, letterSpacing: 2, color: C.white }}>
-            {[0, 1, 2].map((k) => <span key={k} style={{ display: 'inline-block', width: W, overflow: 'hidden', verticalAlign: 'top' }}>{txt.split(/(\$[\d,]+|\d+(?:\.\d+)?%|\d+ (?:YEARS|DAYS|MONTHS|HOURS|BUSINESS DAYS))/).map((seg, j) => j % 2 ? <span key={j} style={{ color: C.gold, fontWeight: 700 }}>{seg}</span> : seg)}</span>)}
-          </div></div>; })()}
+      {(ep as any).ticker && <Ticker items={(ep as any).ticker} t={t} />}
       <div style={{ position: 'absolute', bottom: 34, left: 56, fontSize: 16, color: C.dim, letterSpacing: 1 }}>{ep.footer ?? 'Source: canada.ca · General info, not advice'}</div>
       <div style={{ position: 'absolute', bottom: 0, left: 0, height: 4, width: `${Math.min(1, t / total) * 100}%`, background: `linear-gradient(90deg,${C.gold2},${C.gold})` }} />
     </AbsoluteFill>
