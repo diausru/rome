@@ -56,7 +56,7 @@ const Hook = ({ f }: { f: number }) => {
           {money(f >= Q.amt + 16 ? X.balance : Math.round((X.balance * outExpo((f - Q.amt + 2) / 18)) / 10) * 10)}</div>}
       </div>
       {lensP > 0 && (
-        <div style={{ position: 'absolute', left: 560 - (1 - lensP) * 300, top: 960 - (1 - lensP) * 200, width: 300, height: 300, opacity: lensP }}>
+        <div style={{ position: 'absolute', left: 590 - (1 - lensP) * 300, top: 905 - (1 - lensP) * 200, width: 300, height: 300, opacity: lensP }}>
           <div style={{ position: 'absolute', inset: 0, borderRadius: '50%', border: `10px solid ${T.gold}`, boxShadow: `0 0 40px rgba(241,199,91,.45), inset 0 0 40px rgba(255,255,255,.25)`, background: 'radial-gradient(circle at 35% 30%, rgba(255,255,255,.22), rgba(255,255,255,0) 60%)' }} />
           <div style={{ position: 'absolute', left: 250, top: 250, width: 120, height: 26, borderRadius: 13, background: T.goldDeep, transform: 'rotate(45deg)', transformOrigin: '0 50%' }} />
         </div>
