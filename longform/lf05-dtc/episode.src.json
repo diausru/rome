@@ -1,0 +1,375 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 1.5,
+ "footer": "Sources: CRA \u2014 Disability tax credit (claiming the credit, 2025 amounts) \u00b7 CRA What's new for 2025 \u00b7 General info, not advice",
+ "data": {
+  "d": {
+   "type": "file",
+   "file": "data.json"
+  }
+ },
+ "vo": [
+  {
+   "id": "T1",
+   "file": "vo/T1.mp3",
+   "gap": 0.4,
+   "text": "The disability tax credit isn't a cheque. It's an amount that cuts the tax you owe."
+  },
+  {
+   "id": "T2",
+   "file": "vo/T2.mp3",
+   "gap": 0.4,
+   "text": "For twenty twenty-five, it's ten thousand, one hundred and thirty-eight dollars. At the federal rate of fourteen and a half percent, that's about one thousand, four hundred and seventy dollars off federal tax."
+  },
+  {
+   "id": "T3",
+   "file": "vo/T3.mp3",
+   "gap": 0.4,
+   "text": "For a child under eighteen, a supplement adds five thousand, nine hundred and fourteen. Sixteen thousand and fifty-two in total."
+  },
+  {
+   "id": "T4",
+   "file": "vo/T4.mp3",
+   "gap": 0.4,
+   "text": "And if you qualified in past years, the CRA can go back up to ten years."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "T1",
+   "title": "Disability tax credit \u00b7 test"
+  }
+ ],
+ "events": [
+  {
+   "at": "T1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "opening",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "T1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -0.6,
+     "tags": [
+      {
+       "text": "FORM T2201",
+       "color": "#8FB3E8",
+       "x": 150,
+       "y": 150,
+       "dir": [
+        -80,
+        0
+       ],
+       "rot": -5,
+       "at": "T1",
+       "off": 0.1
+      },
+      {
+       "text": "NON-REFUNDABLE",
+       "color": "#E5806E",
+       "x": 1420,
+       "y": 140,
+       "dir": [
+        80,
+        -20
+       ],
+       "rot": 5,
+       "at": "T1",
+       "off": 0.3
+      },
+      {
+       "text": "MEDICAL PRACTITIONER",
+       "color": "#7FD3A0",
+       "x": 120,
+       "y": 830,
+       "dir": [
+        -60,
+        50
+       ],
+       "rot": 4,
+       "at": "T1",
+       "off": 0.5
+      },
+      {
+       "text": "UP TO 10 YEARS BACK",
+       "color": "#E8C27A",
+       "x": 1380,
+       "y": 820,
+       "dir": [
+        60,
+        60
+       ],
+       "rot": -4,
+       "at": "T1",
+       "off": 0.7
+      }
+     ],
+     "head": [
+      {
+       "text": "DISABILITY TAX CREDIT",
+       "size": 110,
+       "at": "T1"
+      },
+      {
+       "text": "NOT A CHEQUE \u2014 A TAX CUT",
+       "size": 80,
+       "emph": [
+        "TAX",
+        "CUT"
+       ],
+       "at": "T1",
+       "word": "amount"
+      }
+     ],
+     "headY": 380,
+     "tagsOut": {
+      "at": "T2"
+     },
+     "headOut": {
+      "at": "T2"
+     },
+     "bgOut": {
+      "at": "T1",
+      "word": "cuts"
+     }
+    }
+   ],
+   "off": -0.6
+  },
+  {
+   "at": "T2",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 330,
+     "y": 200,
+     "w": 1260,
+     "at": "T2",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "THE CALCULATION \u00b7 2025",
+     "sub": "FEDERAL PART ONLY \u00b7 PROVINCES ADD THEIR OWN",
+     "dimOthers": false,
+     "items": [
+      {
+       "n": "1",
+       "head": "DISABILITY AMOUNT: $10,138",
+       "at": "T2",
+       "word": "ten"
+      },
+      {
+       "n": "\u00d7",
+       "head": "FEDERAL CREDIT RATE: 14.5%",
+       "text": "Lowest rate for 2025 (14% from 2026)",
+       "at": "T2",
+       "word": "fourteen"
+      },
+      {
+       "n": "=",
+       "head": "\u2248 $1,470 LESS FEDERAL TAX",
+       "at": "T2",
+       "word": "one thousand, four"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "T3",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "T3",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "DISABILITY AMOUNT \u00b7 2025",
+     "sub": "CRA \u00b7 CLAIMING THE CREDIT",
+     "items": {
+      "ref": "d.items"
+     },
+     "labelW": 560,
+     "fs": 34,
+     "vs": 46,
+     "noTotal": true,
+     "note": "AMOUNT THAT REDUCES TAX \u00b7 NOT A PAYMENT",
+     "rowAt": [
+      {
+       "at": "T3"
+      },
+      {
+       "at": "T3",
+       "word": "Sixteen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "T4",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "T4",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "kicker": "APPROVED FOR PAST YEARS?",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "UP TO 10 YEARS BACK",
+       "gold": true,
+       "size": 150,
+       "at": "T4",
+       "word": "past"
+      },
+      {
+       "text": "ASK THE CRA TO ADJUST YOUR RETURNS",
+       "size": 50,
+       "at": "T4",
+       "word": "ten"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "T1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.12
+    },
+    {
+     "x": 30,
+     "y": -10,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "at": "T2",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "T3",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.2
+    },
+    {
+     "x": 0,
+     "y": -10,
+     "z": 0.08
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf05/plates/s1.jpg",
+    "depth": "lf/lf05/plates/s1_d.png",
+    "amt": 0.05
+   },
+   "lights": [
+    {
+     "x": 83,
+     "y": 14,
+     "r": 8,
+     "color": "rgba(255,200,130,.9)",
+     "amp": 0.08
+    }
+   ]
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "T1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "T2"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "T2",
+   "word": "ten"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "T2",
+   "word": "fourteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "T2",
+   "word": "one thousand, four"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "T3"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "T3"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "T3",
+   "word": "Sixteen"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "T4"
+  }
+ ],
+ "audio": "lf/lf05/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}
