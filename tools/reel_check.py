@@ -133,7 +133,7 @@ def main():
         norm = lambda s: re.sub(r'\s+', ' ', s.lower().replace('-', ' ').replace(',', '').replace(' and ', ' ')).strip()
         for k, spoken in data['spoken'].items():
             val = env[k]
-            if spoken.replace(',', '') not in vo: fx.append(f'"{spoken}" not in the VO')
+            if spoken.replace(',', '').replace('-', ' ') not in vo: fx.append(f'"{spoken}" not in the VO')
             def pct_words(v):
                 ip, dp = f'{v * 100:.4f}'.rstrip('0').rstrip('.').partition('.')[::2]
                 return words(int(ip)) + ((' point ' + ' '.join(ONES[int(c)] for c in dp)) if dp else '')

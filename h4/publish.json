@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Manitoba's tax lines are frozen (H4, Manitoba tax landscape 2026)",
-  "duration": "TBD",
+  "duration": "70.58 s (1694 frames)",
   "mp4": "showreel/out/h4/h4-final.mp4 (share copy: h4-share.mp4)"
  },
  "sources": [
@@ -79,5 +79,5 @@
  ],
  "series": "Card series, row 11 of PUBLISHING-PLAN §4 (after D1, bridged from it). Second reel on motion engine v1, built with a different hook and visual set (Variety rule). Playlist: 'Provinces'.",
  "research": "- vidIQ (2026-10-12): keyword research CA (5): 'manitoba tax brackets' <750/mo; 'winnipeg' ≈19,230/mo (+23%); 'manitoba' ≈9,423/mo. Competitor search CA by views (5): national 2026 explainers (BNN Bloomberg 'Understanding tax brackets for 2026' 27K; CPP/TD1 guides); no Manitoba-specific Short. Shorts outliers 'bracket creep' (5): 'Bracket Creep Explained' (AU, 39 s, 31K, breakout 21.9) shows the concept works as a Short. Titles scored (10): 'Got a Raise in Manitoba? Here's the Tax on It (2026)' 94 (primary), 'Manitoba's Tax Brackets Are Frozen. What That Costs You (2026)' 82. Balance 1,370 → 1,345 (25 credits).",
- "retention": "TBD"
+ "retention": "Hook (0–7 s): topic on frame 0 ('MANITOBA TAX LINES'), ticker rows on 'Prices' / 'pay', ice stamp on 'moved' ✅. Ladder rises rate by rate as spoken (9–16 s); frost and locks from 'lines' (20 s), FROZEN on 'frozen' (25.6 s) ✅. Scene change into the apartment at 26.4 s; slider crosses the frozen $100K line, $603 lands on 'six' at 37.5 s ✅. Full-frame 'HIGHER RATE' at 43 s answers the hook's 'your pay went up' ✅. Bridge at 46 s; receipts at 57 / 60 s. Weakest point: 46–53 s (high incomes, a minority of viewers), kept short with the melting bar and GONE stamp."
 }

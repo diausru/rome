@@ -40,3 +40,11 @@ Example (not a CRA rule): taxable income $98,000 → $102,000: $2,000 × 12.75% 
 | SCENES | Same man (late 30s, navy parka, grey toque; image reference = scene 1) in Winnipeg, 4K: 1) `h4-s1-4k.jpg` Exchange District, sunny winter morning, walking with coffee (hook → freeze); 2) `h4-s2-4k.jpg` rented apartment in the evening with his partner at a laptop (example, creep); 3) `h4-s3-4k.jpg` blue hour on a cable-stayed footbridge with a lit museum behind (high, credits, end). Cuts at `example` and `high`. Text check at 4K: clean (no signage, the laptop is lid-only) |
 | VOICE | Grady; 8 beats; 155 words; 68.84 s VO + 1.7 s hold |
 | COST | Higgsfield: 8 VO lines, 4 stills (2 variants scene 1 + scenes 2, 3), 3 × 4K upscale. vidIQ: 25 credits (1,370 → 1,345) |
+
+## Delivery (2026-10-12)
+
+- Final: `showreel/out/h4/h4-final.mp4` (share copy `h4-share.mp4`): 1694 frames, 70.58 s, h264 1080×1920 24 fps + AAC 48 kHz, −14.1 LUFS, true peak −2.0 dBTP.
+- Automated QC `tools/reel_check.py`: 12/12 PASS (`h4/QC-REPORT.md`). Checker extended for this reel: decimal rates ("twelve point seven five"), "sixteen hundred", "a hundred and two" (thousands), and hyphens normalised on both sides; D1 re-checked: still 12/12.
+- Visual QC (`showreel/out/h4/qc.jpg`, 16 frames from the final): fixes made before the full render: the freeze moved from "frozen" (25.6 s, only 0.7 s on screen before the cut) to "lines" (20.3 s); locks lowered under the BPA chip; FROZEN stamp moved off "17.4%"; the receipts now leave before the end card arrives.
+- vidIQ titles: 94 "Got a Raise in Manitoba? Here's the Tax on It (2026)" (primary) / 82. Analysis page: https://claude.ai/artifact/EZdyr8ZK8ynqpzkyZJehuM (`channel/analysis/h4-analysis.html`). Kit card "#28 · Manitoba Frozen Brackets" (Kit v36).
+- Metricool: not sent (only on command).
