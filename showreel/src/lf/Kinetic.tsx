@@ -17,8 +17,8 @@ export const MorphText: React.FC<{ seq: { text: string; t: number }[]; now: numb
     <div style={{ position: 'relative', height: size * 1.15, ...style }}>
       <svg width="0" height="0" style={{ position: 'absolute' }}><filter id={fid}><feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -11" /></filter></svg>
       <div style={{ position: 'absolute', inset: 0, filter: k > 0.001 && k < 0.999 ? `url(#${fid})` : undefined }}>
-        <div style={{ position: 'absolute', inset: 0, fontSize: size, color, opacity: 1 - k * k, filter: `blur(${blurA}px)`, whiteSpace: 'nowrap', textAlign: 'inherit' }}>{seq[i].text}</div>
-        {next && k > 0 && <div style={{ position: 'absolute', inset: 0, fontSize: size, color, opacity: Math.sqrt(k), filter: `blur(${blurB}px)`, whiteSpace: 'nowrap', textAlign: 'inherit' }}>{next.text}</div>}
+        <div style={{ position: 'absolute', inset: 0, fontSize: size, color, opacity: 1 - k * k, filter: `blur(${blurA}px)`, whiteSpace: 'nowrap', lineHeight: 1.1, textAlign: 'inherit' }}>{seq[i].text}</div>
+        {next && k > 0 && <div style={{ position: 'absolute', inset: 0, fontSize: size, color, opacity: Math.sqrt(k), filter: `blur(${blurB}px)`, whiteSpace: 'nowrap', lineHeight: 1.1, textAlign: 'inherit' }}>{next.text}</div>}
       </div>
     </div>
   );
@@ -54,8 +54,8 @@ export const RollNumber: React.FC<{ value: number; t: number; now: number; prefi
         if (!/\d/.test(ch)) return <span key={i}>{ch}</span>;
         const d = +ch; const order = di++; const k = easeOut(cl((now - t - order * (dur * 0.35) / nd) / (dur * 0.65)));
         const pos = (d + 10 * (2 - order % 2)) * k; // spins through 1–2 extra turns
-        return <span key={i} style={{ display: 'inline-block', height: '1em', overflow: 'hidden', position: 'relative', width: '0.62em' }}>
-          <span style={{ position: 'absolute', left: 0, top: 0, transform: `translateY(${-(pos % 10) * 1}em)`, filter: k < 1 ? `blur(${(1 - k) * 2.5}px)` : undefined }}>
+        return <span key={i} style={{ display: 'inline-block', height: '1em', overflow: 'hidden', position: 'relative', width: '0.54em', fontVariantNumeric: 'tabular-nums' }}>
+          <span style={{ position: 'absolute', left: 0, right: 0, top: 0, textAlign: 'center', transform: `translateY(${-(pos % 10) * 1}em)`, filter: k < 1 ? `blur(${(1 - k) * 2.5}px)` : undefined }}>
             {Array.from({ length: 11 }, (_, n) => <div key={n} style={{ height: '1em' }}>{n % 10}</div>)}
           </span>
         </span>;

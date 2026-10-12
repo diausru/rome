@@ -1,0 +1,68 @@
+L = [
+# HOOK
+("L1", "Jordan just got a job offer in Calgary. Same job. Same salary. One hundred thousand dollars."),
+("L2", "Everybody says the same thing: move to Alberta, you'll pay less tax. And that's true. But is it enough?"),
+("L3", "Today we put Manitoba and Alberta in the ring. Taxes, the move itself, sales tax, and rent. Round by round, with real numbers."),
+("L4", "Tax numbers are for twenty twenty-six, from the CRA's payroll tables and both provinces' rates. Rents come from the federal housing agency's latest survey."),
+("L4b", "Jordan is the same person from our last video. Thirty-four, single, working in IT, no other income."),
+# R1 TAX
+("L5", "Round one. Income tax. And the first surprise: most of Jordan's deductions don't change at all."),
+("L6", "Federal tax is the same in both provinces: thirteen thousand, three hundred and two dollars."),
+("L7", "CPP and EI are national programs too. Four thousand, six hundred and forty-six, and one thousand, one hundred and twenty-three. Identical."),
+("L8", "Only one line moves. Provincial tax. In Manitoba, nine thousand, four hundred and eighty-four dollars."),
+("L9", "In Alberta, six thousand, four hundred and seventy."),
+("L10", "So Jordan keeps seventy-one thousand, four hundred and forty-five in Manitoba. And seventy-four thousand, four hundred and fifty-nine in Alberta."),
+("L11", "That's three thousand and fourteen dollars a year. About two hundred and fifty-one dollars a month."),
+("L12", "Why so big? Three reasons. Alberta's first rate is eight percent, on income up to sixty-one thousand, two hundred dollars. Manitoba starts at ten point eight."),
+("L13", "Alberta's next rate is ten percent. Manitoba's is twelve point seven five."),
+("L14", "And Alberta's basic personal amount, roughly the income you can earn before provincial tax kicks in, is twenty-two thousand, seven hundred and sixty-nine dollars. Manitoba's is fifteen thousand, seven hundred and eighty."),
+("L15", "And the gap grows with income. At sixty thousand, Alberta saves about one thousand, nine hundred dollars. At a hundred and fifty thousand, about six thousand, six hundred and sixty-one."),
+("L16", "Round one goes to Alberta. Clearly."),
+("L16b", "But there's a hidden round inside round one. Say Jordan's career goes well, and next year brings a ten thousand dollar raise."),
+("L16c", "Manitoba has a trap here. Its third rate, seventeen point four percent, starts at a hundred thousand dollars of taxable income. Jordan's raise lands right on top of it."),
+("L16d", "So in Manitoba, out of that ten thousand dollar raise, Jordan keeps six thousand, two hundred and sixty-two."),
+("L16e", "In Alberta, the next rate doesn't start until a hundred and fifty-four thousand, two hundred and fifty-nine. Jordan keeps six thousand, nine hundred and fifty."),
+("L16f", "Six hundred and eighty-eight dollars more, from the same raise. And the yearly gap grows to three thousand, seven hundred and two."),
+# R2 TIMING
+("L17", "Round two. Timing. When should Jordan move?"),
+("L18", "Here's a rule a lot of people miss. For your tax return, your province is where you lived on December thirty-first."),
+("L19", "So if Jordan moves in November, Alberta's rates apply to the provincial tax for the whole year. Even the months worked in Winnipeg."),
+("L19b", "For Jordan, that's the full three thousand and fourteen dollar difference for that year, just from moving before New Year's. All else equal."),
+("L20", "The paycheques before the move still had Manitoba tax taken off. The difference gets settled when Jordan files."),
+("L21", "Move on January second instead, and the whole year before is Manitoba's. Same move. Different calendar."),
+# R3 THE MOVE
+("L22", "Round three. The move itself. Movers, a truck, a few nights in a hotel. It's not cheap."),
+("L23", "But moving for a new job can be deductible. The rule: Jordan's new home has to be at least forty kilometres closer to the new work location. Winnipeg to Calgary clears that easily."),
+("L24", "What counts? Movers, packing and storage. Travel, including meals and lodging on the way. Up to fifteen days of temporary living. Even the cost of breaking the old lease, and a new driver's licence."),
+("L25", "Two catches. The deduction only comes off income earned at the new job. And if the employer paid for the move, Jordan can't claim the same costs twice."),
+("L26", "Say Jordan spends five thousand dollars. At Jordan's rate in Alberta, that deduction is worth about one thousand, five hundred and twenty-five dollars. Keep every receipt."),
+# R4 SALES TAX
+("L27", "Round four. Sales tax. Both provinces charge the five percent GST."),
+("L28", "But Manitoba adds its own retail sales tax: seven percent on most goods and some services. Alberta has no provincial sales tax at all."),
+("L29", "How much that saves depends on what Jordan buys. Not everything is taxed. So think of it this way: every thousand dollars of taxable shopping costs seventy dollars more in Manitoba."),
+("L30", "A new laptop, furniture, appliances. It adds up. Round four, Alberta again."),
+("L30b", "Fifteen thousand dollars of taxable purchases in a year? That's one thousand and fifty dollars of Manitoba sales tax that Alberta doesn't charge."),
+# R5 RENT
+("L31", "Alberta is up three rounds to none. And this is where most videos stop. But Jordan still needs somewhere to live."),
+("L32", "Round five. Rent. The federal housing agency surveys rents every October."),
+("L33", "The average two-bedroom apartment in Winnipeg: one thousand, five hundred and seventy-one dollars a month."),
+("L34", "In Calgary: one thousand, nine hundred and fourteen."),
+("L35", "That's three hundred and forty-three dollars more every month. Four thousand, one hundred and sixteen a year."),
+("L36", "Wait. That's bigger than the whole tax saving."),
+("L37", "But Jordan is a new tenant, and new tenants pay whatever the market asks. For units that just turned over, the survey shows one thousand, five hundred and ninety-five in Winnipeg, and one thousand, eight hundred and thirty-six in Calgary."),
+("L38", "That's a gap of two hundred and forty-one a month. Two thousand, eight hundred and ninety-two a year. Round five goes to Manitoba."),
+("L38b", "One honest note. These are city-wide averages for purpose-built apartments. Condos, houses, utilities, car insurance and the commute are not in this number. Price them for yourself."),
+# SCORE
+("L39", "So let's add it up. The tax saving: plus three thousand and fourteen."),
+("L40", "Against the average rent gap, Jordan ends up one thousand, one hundred and two dollars behind."),
+("L41", "Against new-tenant rents, Jordan is ahead by just one hundred and twenty-two dollars. That's basically a tie."),
+("L42", "Then the sales tax can tip it. To win back eleven hundred and two dollars at seven percent, Jordan would need about fifteen thousand, seven hundred dollars a year of taxable purchases."),
+# VERDICT
+("L43", "So, the verdict. Alberta's lower tax is real. Three thousand dollars a year at this salary. But on its own, it doesn't make the move a win."),
+("L44", "The real decision is everything around the tax: the job, the rent you actually get quoted, and how you spend."),
+("L45", "So before you move, run three numbers. Your provincial tax in both places. A real rent quote. And your yearly taxable shopping. Then time the move, and keep the receipts."),
+# CTA
+("L46", "Next on this channel: eighty thousand, a hundred thousand, or a hundred and fifty thousand dollars. How much do you actually keep at each step? Subscribe, so you don't miss it."),
+]
+import json; json.dump([list(x) for x in L], open('lines.json', 'w'), indent=0)
+w = sum(len(t.split()) for _, t in L); print(len(L), 'lines', w, 'words ≈', round(w / 150, 1), 'min at Grady pace')

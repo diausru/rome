@@ -1,0 +1,51 @@
+{
+ "mb": {
+  "gross": 100000,
+  "prov": "MB",
+  "taxable": 98873,
+  "federal": 13302,
+  "provincial": 9484,
+  "cpp": 4646,
+  "ei": 1123,
+  "take_home": 71445,
+  "avg_income_tax": 0.2279,
+  "top_bracket_rate": 0.3325
+ },
+ "ab": {
+  "gross": 100000,
+  "prov": "AB",
+  "taxable": 98873,
+  "federal": 13302,
+  "provincial": 6470,
+  "cpp": 4646,
+  "ei": 1123,
+  "take_home": 74459,
+  "avg_income_tax": 0.1977,
+  "top_bracket_rate": 0.305
+ },
+ "gap": 3014,
+ "gap_month": 251,
+ "inc_gap": {
+  "60000": 1919,
+  "100000": 3014,
+  "150000": 6661
+ },
+ "rent": {
+  "mb_avg": 1571,
+  "ab_avg": 1914,
+  "mb_new": 1595,
+  "ab_new": 1836
+ },
+ "rent_gap_avg_m": 343,
+ "rent_gap_new_m": 241,
+ "rent_gap_avg": 4116,
+ "rent_gap_new": 2892,
+ "net_avg": -1102,
+ "net_new": 122,
+ "rst_breakeven": 15743,
+ "raise_mb": 6262,
+ "raise_ab": 6950,
+ "raise_diff": 688,
+ "gap_110k": 3702,
+ "move_5000_saves": 1525
+}

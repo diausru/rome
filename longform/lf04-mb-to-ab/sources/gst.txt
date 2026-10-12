@@ -1,0 +1,151 @@
+https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html
+2026-10-12T02:02:36.892Z
+HTTP 200
+
+Skip to main content
+Skip to "About this site"
+Switch to basic HTML version
+Language selection
+Français
+/ Gouvernement du Canada
+Search
+Search Canada.ca
+Search
+Menu
+MAIN
+MENU 
+Sign in
+CRA sign in
+You are here:
+Canada.ca Taxes GST/HST Charge and collect the tax – Which rate to charge
+GST/HST calculator (and rates)
+On this page
+GST/HST calculators
+GST/HST rates by province
+GST/HST calculators
+Sales tax calculator
+: Option 1
+
+Use this calculator to find out the amount of tax that applies to sales in Canada.
+
+Enter the amount charged for a purchase before all applicable sales taxes, including the Goods and Services Tax/Harmonized Sales Tax (GST/HST) and any Provincial Sales Tax (PST), are applied.
+
+Attention:
+Results are estimates only. Due to rounding, calculated amounts may differ from final totals by a cent or two.
+
+Province or territory (required)
+Select
+Alberta
+British Columbia
+Manitoba
+New Brunswick
+Newfoundland and Labrador
+Northwest Territories
+Nova Scotia
+Nunavut
+Ontario
+Prince Edward Island
+Quebec
+Saskatchewan
+Yukon
+Amount before taxes (required)
+Calculate
+Reverse sales tax calculator
+: Option 2
+
+Use this calculator to find out the amount you will need to charge before sales tax are applied.
+
+Enter the total amount payable for a purchase after all applicable sales taxes are applied.
+
+Attention:
+Results are estimates only. Due to rounding, calculated amounts may differ from final totals by a cent or two.
+
+Province or territory (required)
+Select
+Alberta
+British Columbia
+Manitoba
+New Brunswick
+Newfoundland and Labrador
+Northwest Territories
+Nova Scotia
+Nunavut
+Ontario
+Prince Edward Island
+Quebec
+Saskatchewan
+Yukon
+Total after taxes (required)
+Calculate
+GST/HST rates by province
+Changes to HST in Nova Scotia
+
+As of April 1, 2025, the HST rate has decreased to 14% in Nova Scotia.
+
+More information about the transition rules
+
+The following table provides the GST/HST rates by province. It also provides the PST for provinces that don't participate in the HST.
+
+The rate you will charge depends on the following factors:
+
+Type of supply – learn about what supplies are taxable or not
+Where the supply is made – learn about the place-of-supply rules
+Who the supply is made to – learn about who may not pay the GST/HST
+GST/HST and PST rates
+Province	GST and HST	PST
+ Alberta	5%	0%
+ British Columbia	5%	7%
+ Manitoba	5%	7%
+ New Brunswick	15%	N/A
+ Newfoundland and Labrador	15%	N/A
+ Northwest Territories	5%	0%
+ Nova Scotia	14%	N/A
+ Nunavut	5%	0%
+ Ontario	13%	N/A
+ Quebec	5%	9.975%
+ Prince Edward Island	15%	N/A
+ Saskatchewan	5%	6%
+ Yukon	5%	0%
+
+For more information on the PST, go to the respective province's website.
+
+GST/HST rates for previous years
+Other information you might be looking for
+Page details
+Give feedback about this page
+Did you find what you were looking for?
+Yes No
+Share this page
+Date modified: 2025-04-01
+About this site
+Canada Revenue Agency (CRA)
+Contact the CRA
+Update your information
+About the CRA
+Government of Canada
+All contacts
+Departments and agencies
+About government
+Themes and topics
+Jobs
+Immigration and citizenship
+Travel and tourism
+Business
+Benefits
+Health
+Taxes
+Environment and natural resources
+National security and defence
+Culture, history and sport
+Policing, justice and emergencies
+Transport and infrastructure
+Canada and the world
+Money and finance
+Science and innovation
+Indigenous peoples
+Veterans and military
+Youth
+Manage life events
+Government of Canada Corporate
+Social media Mobile applications About Canada.ca Terms and conditions Privacy
+ 

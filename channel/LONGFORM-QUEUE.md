@@ -29,7 +29,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 ## Series 3 — What If?
 | # | Topic | Status |
 |---|---|---|
-| 17 | What If You Move From Manitoba to Alberta? | queued |
+| 17 | What If You Move From Manitoba to Alberta? | LF-04 rendered 2026-10-12, not published |
 | 18 | What If You Work Two Jobs in Canada? | queued |
 | 19 | What If You Work Remotely? | queued |
 | 20 | What If You Have a Side Hustle? | queued |

@@ -1,0 +1,200 @@
+https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-21900-moving-expenses.html
+2026-10-12T02:02:25.396Z
+HTTP 200
+
+Skip to main content
+Skip to "About government"
+Switch to basic HTML version
+Language selection
+Français
+/ Gouvernement du Canada
+Search
+Search CRA
+Search
+Menu
+MAIN
+MENU 
+Sign in
+CRA sign in
+You are here:
+Canada.ca Taxes Income tax Personal income tax Claiming deductions, credits, and expenses All deductions, credits, and expenses
+
+Personal income tax
+
+Moving expenses
+– Personal income tax
+Federal: Line 21900
+Tax year: 2025| Prior tax years: 2024 and earlier
+
+Generally, you can claim moving expenses you paid in the year if both of the following apply:
+
+You moved to a new home to work or to run a business out of a new location, or you moved to be a student in full-time attendance in a post-secondary program at a university, college, or other educational institution
+Your new home must be at least 40 kilometres closer (by the shortest public route) to your new work location or school
+On this page
+Who can claim moving expenses
+Expenses you can claim
+How to claim
+Who can claim moving expenses
+
+Choose the section that applies to your situation:
+
+You are an employed or self-employed
+You are a full-time student
+
+If you have moved to a new home to work or to run a business out of a new location, you can deduct eligible moving expenses from the employment or self-employment income you earned at your new work location, including amounts you received under the Wage Earner Protection Program for your employment at the new work location.
+
+To qualify, your new home must be at least 40 kilometres closer (by the shortest public route) to your new work location. You must establish your new home as the place where you normally live. For example, you have established a new home if you have sold or rented (or advertised for sale or rent) your old home. Generally, your move must be from one place in Canada to another place in Canada.
+
+You cannot deduct moving expenses from any other type of income, such as investment income or employment insurance benefits, even if you received this income at the new location.
+
+If you received a reimbursement or an allowance from your employer for your eligible moving expenses, you can only claim your moving expenses if you include the amount you received in your income or if you reduce your moving expenses by the amount received.
+
+Note: The CRA may ask you to send a letter from your employer saying that you were not reimbursed for the moving expenses you are claiming.
+
+Unused moving expenses available to carry forward to a future year
+
+If your net moving expenses (line 26 of Form T1-M, Moving Expenses Deduction) paid in the year of the move are more than your net eligible income (line 28 of Form T1-M) earned at the new work location in that same year, you can carry forward and deduct the unused part of those expenses from the employment or self-employment income you earn at the new work location and report on your return in a future year.
+
+Your net eligible income
+
+If you are an employee, your net eligible income is calculated by taking the amounts reported on your T4 or T4A slips (relating to the new work location) included on lines 10100 or 10400 minus any amounts relating to the new work location claimed on lines 20700, 21200, 22215, 22900, 23100, and 23200 of your return.
+
+If you are self-employed, your net eligible income is usually calculated by taking the net amounts earned at the new work location that are included on lines 13499 to 14300, minus any related amounts claimed on lines 21200 and 22200 of your return.
+
+Expenses you paid in a year after you moved
+
+If your moving expenses were paid in a year after the year of your move, you can claim the expenses against your employment or self-employment income earned at the new work location on your return for the year that you paid them.
+
+This may happen if your old home did not sell until after the year of your move. If this is the case, the CRA may ask you to send Form T1-M with the receipts and explain the delay in selling your home.
+
+You cannot carry back moving expenses to a prior year. For example, if you paid moving expenses in the current year for a move that occurred in a prior year, you cannot claim the expenses paid in the current year on your prior year return. This is the case even if you earned employment income or self-employment income at the new location in the prior year.
+
+ Answer a few questions to help you determine if you can claim moving expenses.
+
+If you are an employee or self-employed, select one of the following:
+
+You moved from one place to another in Canada
+You moved from outside of Canada to a new work location in Canada
+You moved from Canada to a new work location outside of Canada
+You moved between two locations outside of Canada
+
+Note: If you move to Canada, from Canada, or between two locations outside of Canada, you must be a factual or deemed resident of Canada and the move has to be from the place where you normally lived to live in another place where you normally lived.
+
+Where did you move?
+
+Generally, your move must be from one place in Canada to another place in Canada.
+
+If you move to or from Canada
+If you move between two locations outside Canada
+Expenses you can claim
+
+You must first determine if you qualify to deduct moving expenses either as an individual who is employed or self-employed or as a full-time student.
+
+If you qualify, you can claim most amounts that you paid for moving yourself, your family, and your household items. Not all household members have to travel together or at the same time.
+
+Eligible moving expenses
+Transportation and storage costs (such as packing, hauling, movers, in-transit storage, and insurance) for household items, including boats and trailers
+Travel expenses including vehicle expenses, meals, and accommodation, to move you and your household members to your new home. You can choose to claim vehicle and meal expenses using the detailed or simplified method
+Calculation detailed method
+Calculation simplified method
+Temporary living expenses for a maximum of 15 days for meals and temporary lodging near the old or new home for you and your household members. You can choose to claim meal expenses using the detailed or simplified method. If you choose to use the simplified method, the CRA may still ask you to send documents showing how long you stayed at the temporary lodging.
+Cost of cancelling your lease for your old home, except any rental payments before the cancellation of your lease
+Incidental costs related to your move which include the following:
+changing your address on legal documents
+replacing driving licences and non-commercial vehicle permits (not including insurance)
+utility hook-ups and disconnections
+Cost to maintain your old home when vacant (maximum of $5,000) after you moved, and during a period when reasonable efforts were made to sell the home. It includes the following:
+interest
+property taxes
+insurance premiums
+cost of heating and utilities expenses
+Note: You cannot claim these costs during a period when the old home was rented. The costs must have been incurred when your old home was not occupied by you or any other person who lived with you at the old home just before the move.
+Cost of selling your old home includes the following:
+advertising
+notary or legal fees
+real estate commission
+mortgage penalty when the mortgage is paid off before maturity
+Cost of buying the new home if you or your spouse or common-law partner sold your old home because of your move
+Note: The cost of buying your new home includes legal or notary fees you paid to buy your new home, as well as any taxes paid (other than GST/HST) for the transfer or registration of title to the new home.
+Ineligible moving expenses
+
+You cannot claim any of the following expenses:
+
+expenses for work done to make your old home more saleable
+any loss from the sale of your home
+travel expenses for house-hunting trips before you move
+travel expenses for job hunting in another city
+the value of items movers refused to take, such as plants, frozen food, ammunition, paint, and cleaning products
+expenses to clean or repair a rented home to meet the landlord's standards
+expenses to replace personal-use items such as tool sheds, firewood, drapes, and carpets
+mail-forwarding costs (such as with Canada Post)
+costs of transformers or adaptors for household appliances
+costs incurred in the sale of your old home if you delayed selling for investment purposes or until the real estate market improved
+mortgage default insurance
+
+Generally, you cannot deduct the cost of moving a mobile home. However, if you have personal items in a mobile home when it is moved, you can deduct the cost of moving the home as long as it is not more than the estimated cost of moving those personal items separately.
+
+Situations where your moving expenses are not allowable:
+
+Your new home is not at least 40 kilometres closer (by the shortest public route) to your new work location or school
+Your employer reimbursed you for the expenses and they are not included in your income
+You do not have the required supporting documentation for
+How to claim
+
+Complete Form T1-M, Moving Expenses Deduction, to calculate your moving expenses deduction that you are eligible to claim on line 21900 of your income tax and benefit return.
+
+You must complete a separate Form T1-M for each eligible move.
+
+Enter the amount from line 29 of your Form T1-M on line 21900 of your income tax and benefit return.
+
+Note: If the amount from line 27 is more than line 28, you can carry forward your unused moving expenses and deduct them from the same type of eligible income for the years after you move.
+
+Keep your supporting documents
+
+Do not send any supporting documents when you file your tax return.
+Keep them in case the CRA asks to see them later.
+
+If you are using EFILE, show your documents to your EFILE service provider.
+
+Forms and publications
+Form T1-M, Moving Expenses Deduction
+Income Tax Folio S1-F3-C4, Moving Expenses
+Guide P105, Students and Income Tax
+Income Tax Folio S5-F1-C1, Determining an Individual's Residence Status
+Page details
+Give feedback about this page
+Did you find what you were looking for?
+Yes No
+ 2026-01-20
+About this site
+Canada Revenue Agency (CRA)
+Contact the CRA
+Update your information
+About the CRA
+Government of Canada
+All contacts
+Departments and agencies
+About government
+Themes and topics
+Jobs
+Immigration and citizenship
+Travel and tourism
+Business
+Benefits
+Health
+Taxes
+Environment and natural resources
+National security and defence
+Culture, history and sport
+Policing, justice and emergencies
+Transport and infrastructure
+Canada and the world
+Money and finances
+Science and innovation
+Indigenous Peoples
+Veterans and military
+Youth
+Manage life events
+Government of Canada Corporate
+Social media Mobile applications About Canada.ca Terms and conditions Privacy
+ 
