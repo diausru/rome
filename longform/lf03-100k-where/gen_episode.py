@@ -12,29 +12,34 @@ def P(type, x, y, w, at, word=None, **kw):
     d = {'type': type, 'x': x, 'y': y, 'w': w, 'at': at}
     if word: d['word'] = word
     d.update(kw); return d
-def scene(at, *panels): return {'at': at, 'type': 'scene', 'panels': list(panels)}
+def scene(at, *panels, **kw): return {'at': at, 'type': 'scene', 'panels': list(panels), **kw}
 D = lambda path: {'ref': f'd.{path}'}
 RED, ORG, BLU, YEL, GRN = '#E5806E', '#E8A86A', '#8FB3E8', '#E8C27A', '#7FD3A0'
 
 events = [
  # ---------- HOOK ----------
- scene('L1', P('khero', 160, 300, 1600, 'L1', glass=False, fxIn='focus', fxOut='vapor', kicker='JORDAN · 34 · WINNIPEG',
-       lines=[{'anim': 'roll', 'value': D('p.gross'), 'size': 170, **W('L1')}, {'text': 'A YEAR · BEFORE TAX', 'size': 56, **W('L1', 'salary')}])),
- scene('L2', P('khero', 160, 330, 1600, 'L2', glass=False, fxIn='wipe', fxOut='particles',
-       lines=[{'text': 'ON PAPER: $100,000', 'size': 90, **W('L2')}, {'anim': 'decode', 'text': 'IN THE BANK: NEVER', 'gold': True, 'size': 90, **W('L2', 'But Jordan')}])),
- scene('L3', P('khero', 160, 300, 1600, 'L3', glass=False, fxIn='glass', fxOut='defocus', kicker='LEAVES BEFORE PAYDAY',
-       lines=[{'anim': 'roll', 'value': {'expr': 'd.p.income_tax + d.p.cpp + d.p.ei'}, 'size': 160, **W('L3')}, {'text': 'WHERE DOES IT GO?', 'size': 70, **W('L3', 'So where')}])),
- scene('L4', P('steps', 330, 230, 1260, 'L4', fxIn='sweep', fxOut='collapse', title='THE NUMBERS', items=[
+scene('L1', P('opening', 0, 0, 1920, 'L1', glass=False, fxIn='fade', fxOut='fade', inDur=0.01, off=-0.8,
+       tags=[{'text': 'GROSS INCOME', 'color': GRN, 'x': 150, 'y': 150, 'dir': [-80, 0], 'rot': -5, **W('L1', 'One', 0.1)},
+             {'text': 'FEDERAL TAX', 'color': RED, 'x': 1380, 'y': 130, 'dir': [80, -20], 'rot': 5, **W('L1', 'One', 0.3)},
+             {'text': 'PROVINCIAL TAX', 'color': ORG, 'x': 1420, 'y': 820, 'dir': [60, 60], 'rot': -4, **W('L1', 'One', 0.5)},
+             {'text': 'CPP CONTRIBUTIONS', 'color': BLU, 'x': 120, 'y': 840, 'dir': [-60, 50], 'rot': 4, **W('L1', 'One', 0.7)},
+             {'text': 'EI PREMIUMS', 'color': YEL, 'x': 230, 'y': 470, 'dir': [-90, 0], 'rot': -3, **W('L1', 'One', 0.9)},
+             {'text': 'TAKE-HOME PAY', 'color': GRN, 'x': 1450, 'y': 480, 'dir': [90, 0], 'rot': 3, **W('L1', 'One', 1.1)}],
+       head=[{'text': '$100,000 A YEAR', 'size': 120, **W('L1', 'salary')}, {'text': 'WHERE DOES IT GO?', 'size': 92, 'emph': ['GO'], **W('L2', 'But Jordan')}],
+       headY=300, tagsOut=W('L3'), headOut=W('L3'), bgOut=W('L3', 'So where'),
+       object={'title': 'JORDAN · 2026 · MANITOBA', 'y': 470, 'rows': [{'label': 'GROSS SALARY', 'value': D('p.gross'), **W('L3')}, {'label': 'TAX + CPP + EI', 'value': {'expr': 'd.p.income_tax + d.p.cpp + d.p.ei'}, 'red': True, **W('L3', 'leaves')}], **W('L3')}), off=-0.8),
+  scene('L4', P('steps', 330, 230, 1260, 'L4', fxIn='sweep', fxOut='collapse', title='THE NUMBERS', items=[
        {'n': '01', 'head': '2026 CRA PAYROLL TABLES + MANITOBA RATES', 'at': 'L4'},
        {'n': '02', 'head': 'SPENDING: AUDITED GOVERNMENT REPORTS', 'text': 'Federal Annual Financial Report 2024-25 · Manitoba Public Accounts 2025-26', 'at': 'L4', 'word': 'And the spending'}])),
  # ---------- 01 PAYCHEQUE ----------
- scene('L5', P('pay', 250, 120, 1000, 'L5', fxIn='glass', fxOut='collapse', title='ONE PAYCHEQUE', sub='26 PAYS A YEAR · AVERAGE', grossLabel='GROSS PAY',
-       gross=D('gross_pay'), rows=[{'label': 'FEDERAL TAX', 'value': D('per_pay.federal'), 'color': RED, **W('L6', 'Federal')},
-                                   {'label': 'MANITOBA TAX', 'value': D('per_pay.provincial'), 'color': ORG, **W('L6', 'Manitoba')},
-                                   {'label': 'CPP', 'value': D('per_pay.cpp'), 'color': BLU, **W('L7')},
-                                   {'label': 'EI', 'value': D('per_pay.ei'), 'color': YEL, **W('L7', 'Employment')}],
-       finalAt=W('L8'), finalLabel='IN THE BANK', barW=940)),
- scene('L8b', P('pays', 160, 160, 1600, 'L8b', fxIn='wipe', fxOut='vapor', title='26 PAYS · THE MAXIMUMS', sub='CPP + EI STOP ONCE THE YEARLY MAXIMUM IS REACHED',
+scene('L5', P('ptable', 140, 150, 1640, 'L5', fxIn='glass', fxOut='collapse', title='ONE PAYCHEQUE', sub='26 PAYS A YEAR · AVERAGE', gross=D('gross_pay'), barMax=600,
+       steps=[{'icon': 'gross', 'label': 'GROSS PAY', 'kind': 'gross', 'value': D('gross_pay'), 'color': GRN, **W('L5')},
+              {'icon': 'federal', 'label': 'FEDERAL TAX', 'kind': 'ded', 'value': D('per_pay.federal'), 'color': RED, **W('L6', 'Federal')},
+              {'icon': 'provincial', 'label': 'MANITOBA TAX', 'kind': 'ded', 'value': D('per_pay.provincial'), 'color': ORG, **W('L6', 'Manitoba')},
+              {'icon': 'cpp', 'label': 'CPP', 'kind': 'ded', 'value': D('per_pay.cpp'), 'color': BLU, **W('L7')},
+              {'icon': 'ei', 'label': 'EI', 'kind': 'ded', 'value': D('per_pay.ei'), 'color': YEL, **W('L7', 'Employment')},
+              {'icon': 'take', 'label': 'IN THE BANK', 'kind': 'take', 'value': D('per_pay.take_home'), 'color': GRN, **W('L8', 'about')}], totalAt=W('L8'))),
+  scene('L8b', P('pays', 160, 160, 1600, 'L8b', fxIn='wipe', fxOut='vapor', title='26 PAYS · THE MAXIMUMS', sub='CPP + EI STOP ONCE THE YEARLY MAXIMUM IS REACHED',
        stops=[{'pay': 17, 'bump': 0.05, 'label': 'EI STOPS ($68,900)', **W('L8c', 'After that')}, {'pay': 19, 'bump': 0.1, 'label': 'BASE CPP STOPS ($74,600)', **W('L8d')}, {'pay': 22, 'bump': 0.07, 'label': 'CPP2 STOPS ($85,000)', **W('L8d', 'The second')}])),
  scene('L8e', P('khero', 160, 330, 1600, 'L8e', glass=False, fxIn='morph', fxOut='particles', lines=[{'anim': 'morph', 'size': 96, 'seq': [{'text': 'SAME JOB.', 't': 0}, {'text': 'BIGGER PAYCHEQUE.', **W('L8e', 'Nothing changed')}], **W('L8e')}])),
  # ---------- 02 THE YEAR ----------

@@ -413,97 +413,156 @@
    "type": "scene",
    "panels": [
     {
-     "type": "khero",
-     "x": 160,
-     "y": 300,
-     "w": 1600,
+     "type": "opening",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
      "at": "L1",
      "glass": false,
-     "fxIn": "focus",
-     "fxOut": "vapor",
-     "kicker": "JORDAN \u00b7 34 \u00b7 WINNIPEG",
-     "lines": [
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -0.8,
+     "tags": [
       {
-       "anim": "roll",
-       "value": {
-        "ref": "d.p.gross"
-       },
-       "size": 170,
-       "at": "L1"
+       "text": "GROSS INCOME",
+       "color": "#7FD3A0",
+       "x": 150,
+       "y": 150,
+       "dir": [
+        -80,
+        0
+       ],
+       "rot": -5,
+       "at": "L1",
+       "word": "One",
+       "off": 0.1
       },
       {
-       "text": "A YEAR \u00b7 BEFORE TAX",
-       "size": 56,
+       "text": "FEDERAL TAX",
+       "color": "#E5806E",
+       "x": 1380,
+       "y": 130,
+       "dir": [
+        80,
+        -20
+       ],
+       "rot": 5,
+       "at": "L1",
+       "word": "One",
+       "off": 0.3
+      },
+      {
+       "text": "PROVINCIAL TAX",
+       "color": "#E8A86A",
+       "x": 1420,
+       "y": 820,
+       "dir": [
+        60,
+        60
+       ],
+       "rot": -4,
+       "at": "L1",
+       "word": "One",
+       "off": 0.5
+      },
+      {
+       "text": "CPP CONTRIBUTIONS",
+       "color": "#8FB3E8",
+       "x": 120,
+       "y": 840,
+       "dir": [
+        -60,
+        50
+       ],
+       "rot": 4,
+       "at": "L1",
+       "word": "One",
+       "off": 0.7
+      },
+      {
+       "text": "EI PREMIUMS",
+       "color": "#E8C27A",
+       "x": 230,
+       "y": 470,
+       "dir": [
+        -90,
+        0
+       ],
+       "rot": -3,
+       "at": "L1",
+       "word": "One",
+       "off": 0.9
+      },
+      {
+       "text": "TAKE-HOME PAY",
+       "color": "#7FD3A0",
+       "x": 1450,
+       "y": 480,
+       "dir": [
+        90,
+        0
+       ],
+       "rot": 3,
+       "at": "L1",
+       "word": "One",
+       "off": 1.1
+      }
+     ],
+     "head": [
+      {
+       "text": "$100,000 A YEAR",
+       "size": 120,
        "at": "L1",
        "word": "salary"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "at": "L2",
-   "type": "scene",
-   "panels": [
-    {
-     "type": "khero",
-     "x": 160,
-     "y": 330,
-     "w": 1600,
-     "at": "L2",
-     "glass": false,
-     "fxIn": "wipe",
-     "fxOut": "particles",
-     "lines": [
-      {
-       "text": "ON PAPER: $100,000",
-       "size": 90,
-       "at": "L2"
-      },
-      {
-       "anim": "decode",
-       "text": "IN THE BANK: NEVER",
-       "gold": true,
-       "size": 90,
-       "at": "L2",
-       "word": "But Jordan"
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "at": "L3",
-   "type": "scene",
-   "panels": [
-    {
-     "type": "khero",
-     "x": 160,
-     "y": 300,
-     "w": 1600,
-     "at": "L3",
-     "glass": false,
-     "fxIn": "glass",
-     "fxOut": "defocus",
-     "kicker": "LEAVES BEFORE PAYDAY",
-     "lines": [
-      {
-       "anim": "roll",
-       "value": {
-        "expr": "d.p.income_tax + d.p.cpp + d.p.ei"
-       },
-       "size": 160,
-       "at": "L3"
       },
       {
        "text": "WHERE DOES IT GO?",
-       "size": 70,
-       "at": "L3",
-       "word": "So where"
+       "size": 92,
+       "emph": [
+        "GO"
+       ],
+       "at": "L2",
+       "word": "But Jordan"
       }
-     ]
+     ],
+     "headY": 300,
+     "tagsOut": {
+      "at": "L3"
+     },
+     "headOut": {
+      "at": "L3"
+     },
+     "bgOut": {
+      "at": "L3",
+      "word": "So where"
+     },
+     "object": {
+      "title": "JORDAN \u00b7 2026 \u00b7 MANITOBA",
+      "y": 470,
+      "rows": [
+       {
+        "label": "GROSS SALARY",
+        "value": {
+         "ref": "d.p.gross"
+        },
+        "at": "L3"
+       },
+       {
+        "label": "TAX + CPP + EI",
+        "value": {
+         "expr": "d.p.income_tax + d.p.cpp + d.p.ei"
+        },
+        "red": true,
+        "at": "L3",
+        "word": "leaves"
+       }
+      ],
+      "at": "L3"
+     }
     }
-   ]
+   ],
+   "off": -0.8
   },
   {
    "at": "L4",
@@ -540,22 +599,34 @@
    "type": "scene",
    "panels": [
     {
-     "type": "pay",
-     "x": 250,
-     "y": 120,
-     "w": 1000,
+     "type": "ptable",
+     "x": 140,
+     "y": 150,
+     "w": 1640,
      "at": "L5",
      "fxIn": "glass",
      "fxOut": "collapse",
      "title": "ONE PAYCHEQUE",
      "sub": "26 PAYS A YEAR \u00b7 AVERAGE",
-     "grossLabel": "GROSS PAY",
      "gross": {
       "ref": "d.gross_pay"
      },
-     "rows": [
+     "barMax": 600,
+     "steps": [
       {
+       "icon": "gross",
+       "label": "GROSS PAY",
+       "kind": "gross",
+       "value": {
+        "ref": "d.gross_pay"
+       },
+       "color": "#7FD3A0",
+       "at": "L5"
+      },
+      {
+       "icon": "federal",
        "label": "FEDERAL TAX",
+       "kind": "ded",
        "value": {
         "ref": "d.per_pay.federal"
        },
@@ -564,7 +635,9 @@
        "word": "Federal"
       },
       {
+       "icon": "provincial",
        "label": "MANITOBA TAX",
+       "kind": "ded",
        "value": {
         "ref": "d.per_pay.provincial"
        },
@@ -573,7 +646,9 @@
        "word": "Manitoba"
       },
       {
+       "icon": "cpp",
        "label": "CPP",
+       "kind": "ded",
        "value": {
         "ref": "d.per_pay.cpp"
        },
@@ -581,20 +656,31 @@
        "at": "L7"
       },
       {
+       "icon": "ei",
        "label": "EI",
+       "kind": "ded",
        "value": {
         "ref": "d.per_pay.ei"
        },
        "color": "#E8C27A",
        "at": "L7",
        "word": "Employment"
+      },
+      {
+       "icon": "take",
+       "label": "IN THE BANK",
+       "kind": "take",
+       "value": {
+        "ref": "d.per_pay.take_home"
+       },
+       "color": "#7FD3A0",
+       "at": "L8",
+       "word": "about"
       }
      ],
-     "finalAt": {
+     "totalAt": {
       "at": "L8"
-     },
-     "finalLabel": "IN THE BANK",
-     "barW": 940
+     }
     }
    ]
   },
@@ -1883,45 +1969,12 @@
   {
    "name": "whoosh",
    "vol": 0.09,
-   "at": "L2"
-  },
-  {
-   "name": "whoosh",
-   "vol": 0.09,
-   "at": "L3"
-  },
-  {
-   "name": "whoosh",
-   "vol": 0.09,
    "at": "L4"
   },
   {
    "name": "whoosh",
    "vol": 0.09,
    "at": "L5"
-  },
-  {
-   "name": "tick",
-   "vol": 0.12,
-   "at": "L6",
-   "word": "Federal"
-  },
-  {
-   "name": "tick",
-   "vol": 0.12,
-   "at": "L6",
-   "word": "Manitoba"
-  },
-  {
-   "name": "tick",
-   "vol": 0.12,
-   "at": "L7"
-  },
-  {
-   "name": "tick",
-   "vol": 0.12,
-   "at": "L7",
-   "word": "Employment"
   },
   {
    "name": "whoosh",
