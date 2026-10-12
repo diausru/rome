@@ -32,3 +32,11 @@ Example (not a CRA rule): $15,000 of unreported T5 interest × 33.25% = $4,987.5
 | End | checklist | centred card | **vertical three-step path on a dark glass backing + pill** |
 | Music | kids (C, 104) | pension2 (F, 76) | **pension (D, 72): calm, to de-escalate** |
 | Scenes | classroom / college / bathroom | street / apartment / bridge | **kitchen with the letter (grey afternoon) → home office at night → bright next morning with coffee and a checklist (same man; reference = scene 1)** |
+
+## Delivery (2026-10-12)
+
+- Final: `showreel/out/a5/a5-final.mp4` (1080×1920, 24 fps, 69.00 s, −14.4 LUFS, −2.4 dBTP); share copy `a5-share.mp4` (x264 crf 20).
+- Composition `A5V3` (`showreel/src/A5V3.tsx`); 25 s test render before the full render (`out/a53/test25-av.mp4`), defects fixed (lineup overflow, threshold label overlap, stamp, steps legibility, lens centring).
+- QC: `tools/reel_check.py` 12/12 (`a5/QC-REPORT.md`; checker now accepts "N days"); contact sheet `showreel/out/a5/qc.jpg`; Whisper transcript of the final confirms $5,000, $15,000, ~33%, $3,000, 90 days, April 30.
+- Publishing: `a5/PUBLISH.md`, Kit card "#30 · CRA Says You Owe" (Kit v38); analysis page https://claude.ai/artifact/BbN6W45Se9MdKZeA2NqA3q. Nothing scheduled (Metricool only on command).
+- Next (bridge CTA): A8 filing deadlines that cost money.
