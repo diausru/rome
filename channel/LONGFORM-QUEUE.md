@@ -70,7 +70,7 @@ Tier A = measured search demand ≥ ~3.5K/mo and low/medium competition; B = cle
 | # | Topic | Tier | Overlap / merge note | Status |
 |---|---|---|---|---|
 | 37 | Your Parents Are Getting Older — What Financial Benefits Could Your Family Be Missing? | B |  | queued |
-| 38 | Disability Tax Credit Canada: How to Apply, What Doctors Must Prove, and What Happens Next | A |  | queued |
+| 38 | Disability Tax Credit Canada: How to Apply, What Doctors Must Prove, and What Happens Next | A |  | LF-05 rendered 2026-10-12, not published |
 | 39 | You Care for an Elderly Parent — Can You Claim Them on Your Taxes? | B | merge with #21 What If You Support Your Parents? | queued |
 | 40 | Canada Caregiver Credit Explained: Who Qualifies, How Much Can You Claim, and Why Claims Fail | B | pair with 3 | queued |
 | 41 | CRA Approved Your Disability Tax Credit — Can You Get Money Back for Previous Years? | A |  | queued |
