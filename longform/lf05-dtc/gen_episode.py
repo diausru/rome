@@ -13,13 +13,14 @@ D = lambda path: {'ref': f'd.{path}'}
 GRN, RED, BLU, YEL = '#7FD3A0', '#E5806E', '#8FB3E8', '#E8C27A'
 events = [
  scene('T1', P('collage', 0, 0, 1920, 'T1', glass=False, fxIn='fade', fxOut='fade', inDur=0.01, off=-1.0,
-   tiles=[{'src': 'lf/lf05/plates/s1.jpg', 'x': 40, 'y': 70, 'w': 700, 'h': 400, 'rot': -4},
-          {'src': 'lf/lf05/plates/c1.jpg', 'x': 1330, 'y': 50, 'w': 520, 'h': 400, 'rot': 5},
-          {'src': 'lf/lf05/plates/c2.jpg', 'x': 1300, 'y': 600, 'w': 560, 'h': 420, 'rot': -4},
-          {'src': 'lf/lf05/plates/c3.jpg', 'x': 60, 'y': 600, 'w': 560, 'h': 420, 'rot': 4}],
+   bg={'src': 'lf/lf05/plates/s1.jpg', 'depth': 'lf/lf05/plates/s1_d.png', 'dim': 0.7},
+   tiles=[{'src': 'lf/lf05/plates/s1.jpg', 'depth': 'lf/lf05/plates/s1_d.png', 'x': 40, 'y': 70, 'w': 700, 'h': 400, 'rot': -4, 'enter': 'drop', 'delay': 0.12, 'enterDur': 1.0, 'move': 'dolly'},
+          {'src': 'lf/lf05/plates/c1.jpg', 'depth': 'lf/lf05/plates/c1_d.png', 'x': 1330, 'y': 50, 'w': 520, 'h': 400, 'rot': 5, 'enter': 'drop', 'delay': 0.38, 'enterDur': 1.0, 'move': 'truck'},
+          {'src': 'lf/lf05/plates/c2.jpg', 'depth': 'lf/lf05/plates/c2_d.png', 'x': 1300, 'y': 755, 'w': 540, 'h': 310, 'rot': -4, 'enter': 'slideR', 'delay': 0.7, 'move': 'orbit'},
+          {'src': 'lf/lf05/plates/c3.jpg', 'depth': 'lf/lf05/plates/c3_d.png', 'x': 60, 'y': 755, 'w': 540, 'h': 310, 'rot': 4, 'enter': 'pop', 'delay': 0.95, 'move': 'rise'}],
    kicker='DISABILITY TAX CREDIT · CANADA', stat='$16,052', statLabel='2025 DISABILITY AMOUNT · CHILD UNDER 18',
    question='WHO QUALIFIES — AND WHY DO SOME CLAIMS GET DENIED?', cy=255,
-   stamp={'text': 'UP TO 10 YEARS BACK', 'x': 735, 'y': 850, 'rot': -6, 'size': 52}, out=W('T2', None, -0.5), statSize=225), off=-1.0),
+   stamp={'text': 'UP TO 10 YEARS BACK', 'x': 700, 'y': 870, 'rot': -6, 'size': 52}, out=W('T2', None, -0.5), statSize=225), off=-1.0),
  scene('T2', P('steps', 330, 200, 1260, 'T2', fxIn='glass', fxOut='collapse', title='THE CALCULATION · 2025', sub='FEDERAL PART ONLY · PROVINCES ADD THEIR OWN', dimOthers=False, items=[
    {'n': '1', 'head': 'DISABILITY AMOUNT: $10,138', 'at': 'T2', 'word': 'ten'},
    {'n': '×', 'head': 'FEDERAL CREDIT RATE: 14.5%', 'text': 'Lowest rate for 2025 (14% from 2026)', 'at': 'T2', 'word': 'fourteen'},

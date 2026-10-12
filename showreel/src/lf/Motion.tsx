@@ -4,6 +4,7 @@
 import React from 'react';
 import { Easing, Img, staticFile } from 'remotion';
 import { RollNumber } from './Kinetic';
+import { DepthPhoto } from './DepthPhoto';
 
 export const EX = Easing.bezier(0.16, 1, 0.3, 1);      // expo-out
 export const BACK = Easing.bezier(0.34, 1.56, 0.64, 1); // back-out (overshoot settle)
@@ -146,16 +147,31 @@ const CollageHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   const stampK = 1 + 0.04 * Math.max(0, Math.sin(el * 2.2));
   return (
     <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        {p.bg.depth ? <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={p.bg.amt ?? 0.05} cam={{ x: Math.sin(el * 0.25) * 0.8, y: Math.cos(el * 0.2) * 0.3, z: 0.12 + 0.18 * cl(el / 10) }} />
+          : <Img src={staticFile(p.bg.src)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${1.08 + 0.06 * cl(el / 10)})` }} />}
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.68})` }} /></div>}
       <div style={{ position: 'absolute', left: '55%', top: '-25%', width: 1200, height: 1200, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(232,160,80,.28), transparent)' }} />
       <div style={{ position: 'absolute', left: '-20%', top: '35%', width: 1200, height: 1200, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(80,130,230,.24), transparent)' }} />
       {tiles.map((g, i) => {
-        const fly = out * (g.fly ?? [i % 2 ? 900 : -900, i < 2 ? -300 : 300]);
-        const drift = Math.sin(el * 0.5 + i * 1.7) * 6; const kb = 1.06 + 0.05 * cl(el / 12);
+        const fly = (g.fly ?? [i % 2 ? 900 : -900, i < 2 ? -300 : 300]).map((v: number) => v * out);
+        // entrance per tile: drop (falls from above, settles with overshoot) · slideL / slideR · pop (scale up) · none
+        const te = el - (g.delay ?? i * 0.18); const ke = g.enter === 'none' ? 1 : prog(te + (g.enter ? 0 : 0), 0, g.enterDur ?? 0.85, BACK); const ka = cl(te / 0.25);
+        const en = g.enter ?? 'drop';
+        const ex = en === 'slideL' ? (1 - ke) * -1100 : en === 'slideR' ? (1 - ke) * 1100 : 0;
+        const ey = en === 'drop' ? (1 - ke) * -(g.y + g.h + 120) : 0;
+        const es = en === 'pop' ? 0.3 + 0.7 * ke : 1; const er = en === 'drop' ? (1 - ke) * (i % 2 ? 18 : -18) : 0;
+        const drift = Math.sin(el * 0.5 + i * 1.7) * 6;
+        // per-tile "alive" camera move on the depth photo: dolly · truck · orbit · rise
+        const mv = g.move ?? ['dolly', 'truck', 'orbit', 'rise'][i % 4]; const u = el / 8;
+        const cam = mv === 'dolly' ? { x: 0, y: 0, z: 0.05 + 0.35 * cl(u) } : mv === 'truck' ? { x: -1 + 2 * cl(u), y: 0, z: 0.15 } : mv === 'orbit' ? { x: Math.sin(el * 0.7), y: Math.cos(el * 0.7) * 0.5, z: 0.18 } : { x: 0, y: 1 - 2 * cl(u), z: 0.12 + 0.1 * cl(u) };
         return (
-          <div key={i} style={{ position: 'absolute', left: g.x, top: g.y, width: g.w, height: g.h, padding: 10, background: '#F4F1EA', borderRadius: 6, boxShadow: '0 30px 80px rgba(0,0,0,.65)',
-            transform: `translate(${fly[0] ?? 0}px, ${(fly[1] ?? 0) + drift}px) rotate(${g.rot + Math.sin(el * 0.3 + i) * 0.6}deg)`, opacity: 1 - out * 0.8 }}>
-            <div style={{ width: '100%', height: '100%', overflow: 'hidden', borderRadius: 2 }}>
-              <Img src={staticFile(g.src)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${kb}) translate(${Math.sin(el * 0.2 + i) * 10}px, 0)` }} />
+          <div key={i} style={{ position: 'absolute', left: g.x, top: g.y, width: g.w, height: g.h, padding: 10, background: '#F4F1EA', borderRadius: 6, boxShadow: `0 ${30 + (1 - ke) * 40}px ${80 + (1 - ke) * 60}px rgba(0,0,0,.65)`,
+            transform: `translate(${ex + (fly[0] ?? 0)}px, ${ey + (fly[1] ?? 0) + drift}px) rotate(${g.rot + er + Math.sin(el * 0.3 + i) * 0.6}deg) scale(${es})`, opacity: ka * (1 - out * 0.8) }}>
+            <div style={{ width: '100%', height: '100%', overflow: 'hidden', borderRadius: 2, position: 'relative' }}>
+              {g.depth ? <DepthPhoto src={g.src} depth={g.depth} t={el} amt={g.amt ?? 0.06} w={g.w - 20} h={g.h - 20} cam={cam} />
+                : <Img src={staticFile(g.src)} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${1.06 + 0.08 * cl(u)}) translate(${Math.sin(el * 0.2 + i) * 10}px, 0)` }} />}
+              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(115deg, transparent ${30 + ((el * 12 + i * 25) % 100)}%, rgba(255,255,255,.10) ${40 + ((el * 12 + i * 25) % 100)}%, transparent ${50 + ((el * 12 + i * 25) % 100)}%)` }} />
             </div>
           </div>);
       })}

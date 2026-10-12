@@ -21,3 +21,12 @@ Observed motion principles (re-expressed in our own visual language, colours/lay
 - Scene changes are hard but motivated (colour-block wipe) and snapped to music beats.
 - Easing set in the source: expo-out cubic-bezier(.16,1,.3,1) for entrances, back-out (.34,1.56,.64,1) for pops, in-out (.65,0,.35,1) for moves, ease-in (.55,0,1,.45) for exits; stagger 0.1 s.
 - Readability rule from its README: nothing on screen under 40 px.
+
+## Effect library: COLLAGE HOOK (`collage` panel, showreel/src/lf/Motion.tsx; user 2026-10-12 — a reusable effect, applied when it fits, not in every video)
+Frame-0 hook: kicker + giant gold stat (SVG gradient text with light sweep) + label + intrigue question + red stamp are readable on the first frame; around them a 4-photo collage builds in.
+- `bg`: {src, depth, dim} — living photo background (2.5D depth parallax, slow orbit/dolly) under a navy scrim instead of flat black.
+- `tiles[]`: {src, depth, x, y, w, h, rot, enter, delay, enterDur, move}
+  - `enter`: `drop` (falls from above, rotates, settles with overshoot) · `slideL` / `slideR` · `pop` (scale-up) · `none`; staggered with `delay` (s).
+  - `move` (each photo alive on its own): `dolly` (push in) · `truck` (sideways) · `orbit` · `rise`; plus a soft light sweep and idle drift. With `depth` the move is a 2.5D parallax camera; without it a Ken Burns move.
+- `out`: tiles fly apart and the centre scales out at the next beat. Text overlap is checked on stills before the full render.
+Simulated camera motion on stills — never described as live-action footage.
