@@ -1,0 +1,53 @@
+{
+ "total": 68.092,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "One family. Three receipts. Four thousand, five hundred and fifty dollars they almost left with the CRA.",
+   "start": 0.25,
+   "end": 7.391
+  },
+  {
+   "id": "promise",
+   "text": "Which credits pay you, even with no tax owed?",
+   "start": 7.691,
+   "end": 10.714
+  },
+  {
+   "id": "case1",
+   "text": "Case one: she's a teacher, and spent a thousand dollars of her own on classroom supplies. Twenty-five percent comes back: two hundred and fifty dollars.",
+   "start": 11.034,
+   "end": 22.228
+  },
+  {
+   "id": "case2",
+   "text": "Case two: she's forty and took a three-thousand-dollar course. Her training credit grew two hundred and fifty a year since twenty twenty, and pays half the fee: fifteen hundred dollars.",
+   "start": 22.528,
+   "end": 36.229
+  },
+  {
+   "id": "case3",
+   "text": "Case three: her mom, seventy, adds a walk-in shower and grab bars for twenty thousand dollars. At fourteen percent: two thousand eight hundred off her tax.",
+   "start": 36.529,
+   "end": 49.326
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: the first two are refundable. The third only cuts tax you owe.",
+   "start": 49.646,
+   "end": 55.918
+  },
+  {
+   "id": "action",
+   "text": "Check your notice of assessment for your training credit limit, and keep every receipt.",
+   "start": 56.218,
+   "end": 60.883
+  },
+  {
+   "id": "cta",
+   "text": "Next: a CRA letter says you owe. What to check first. Follow so you don't miss it.",
+   "start": 61.203,
+   "end": 68.092
+  }
+ ]
+}

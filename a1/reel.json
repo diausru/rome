@@ -1,0 +1,298 @@
+{
+ "id": "a13",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "title": "CREDITS PEOPLE MISS",
+  "sub": "ONE FAMILY · 3 CASES"
+ },
+ "hold_after_vo": 1.7,
+ "cues": [
+  {
+   "id": "f1",
+   "beat": "hook",
+   "word": "Three",
+   "sfx": "swish"
+  },
+  {
+   "id": "f2",
+   "beat": "hook",
+   "word": "receipts."
+  },
+  {
+   "id": "count",
+   "beat": "hook",
+   "word": "Four",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.6,
+   "gain": 0.75
+  },
+  {
+   "id": "promise",
+   "beat": "promise",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "zero",
+   "beat": "promise",
+   "word": "no",
+   "sfx": "tick"
+  },
+  {
+   "id": "c1",
+   "beat": "case1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "teacher",
+   "beat": "case1",
+   "word": "teacher,"
+  },
+  {
+   "id": "t1000",
+   "beat": "case1",
+   "word": "thousand",
+   "sfx": "tick"
+  },
+  {
+   "id": "p25",
+   "beat": "case1",
+   "word": "Twenty-five"
+  },
+  {
+   "id": "v250",
+   "beat": "case1",
+   "word": "two",
+   "sfx": "chime"
+  },
+  {
+   "id": "c2",
+   "beat": "case2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "forty",
+   "beat": "case2",
+   "word": "forty"
+  },
+  {
+   "id": "course",
+   "beat": "case2",
+   "word": "three-thousand-dollar",
+   "sfx": "tick"
+  },
+  {
+   "id": "grew",
+   "beat": "case2",
+   "word": "grew"
+  },
+  {
+   "id": "half",
+   "beat": "case2",
+   "word": "half"
+  },
+  {
+   "id": "v1500",
+   "beat": "case2",
+   "word": "fifteen",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "case3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "mom",
+   "beat": "case3",
+   "word": "seventy,"
+  },
+  {
+   "id": "reno",
+   "beat": "case3",
+   "word": "twenty",
+   "sfx": "tick"
+  },
+  {
+   "id": "p14",
+   "beat": "case3",
+   "word": "fourteen"
+  },
+  {
+   "id": "v2800",
+   "beat": "case3",
+   "word": "two",
+   "sfx": "chime"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "refund",
+   "beat": "reveal",
+   "word": "refundable.",
+   "sfx": "impact",
+   "gain": 0.5
+  },
+  {
+   "id": "third",
+   "beat": "reveal",
+   "word": "third",
+   "sfx": "pop"
+  },
+  {
+   "id": "check",
+   "beat": "action",
+   "word": "Check"
+  },
+  {
+   "id": "tick1",
+   "beat": "action",
+   "word": "limit,",
+   "sfx": "tick"
+  },
+  {
+   "id": "tick2",
+   "beat": "action",
+   "word": "receipt."
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "pop"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    560,
+    880,
+    640
+   ],
+   "from": "start",
+   "to": "promise"
+  },
+  "promise": {
+   "box": [
+    80,
+    860,
+    880,
+    300
+   ],
+   "from": "promise",
+   "to": "case1"
+  },
+  "case1": {
+   "box": [
+    80,
+    840,
+    880,
+    420
+   ],
+   "from": "case1",
+   "to": "case2"
+  },
+  "case2": {
+   "box": [
+    80,
+    840,
+    880,
+    420
+   ],
+   "from": "case2",
+   "to": "case3"
+  },
+  "case3": {
+   "box": [
+    80,
+    840,
+    880,
+    420
+   ],
+   "from": "case3",
+   "to": "reveal"
+  },
+  "tally": {
+   "box": [
+    800,
+    360,
+    200,
+    420
+   ],
+   "from": "case1",
+   "to": "reveal"
+  },
+  "reveal": {
+   "box": [
+    80,
+    800,
+    880,
+    460
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "checklist": {
+   "box": [
+    80,
+    840,
+    880,
+    400
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "promise",
+   "to": "cta"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    130
+   ],
+   "from": "promise",
+   "to": "cta"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ }
+}
