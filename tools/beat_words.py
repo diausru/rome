@@ -128,8 +128,18 @@ def chunk(words, max_words=4, max_chars=22, pause=0.25, max_dur=1.8):
             parts = [ph[round(i * len(ph) / k):round((i + 1) * len(ph) / k)] for i in range(k)]
             if all(len(p) == 1 or fits(p) for p in parts):
                 break
-        out += [{'start': p[0]['start'], 'end': p[-1]['end'], 'words': [w['i'] for w in p]} for p in parts]
-    return out
+        out += [list(p) for p in parts]
+    # a chunk that would flash for under 0.3 s joins its neighbour (the previous one if it still fits, else the next)
+    i = 0
+    while i < len(out):
+        p = out[i]
+        if len(out) > 1 and p[-1]['end'] - p[0]['start'] < 0.3:
+            if i > 0 and fits(out[i - 1] + p):
+                out[i - 1] += p; out.pop(i); continue
+            if i + 1 < len(out) and (fits(p + out[i + 1]) or len(out[i + 1]) == 1):
+                out[i + 1] = p + out[i + 1]; out.pop(i); continue
+        i += 1
+    return [{'start': p[0]['start'], 'end': p[-1]['end'], 'words': [w['i'] for w in p]} for p in out]
 
 
 def main():
