@@ -109,9 +109,21 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
 - Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): none left (D2, D5 delivered 2026-10-06; C3, F1, F5 delivered 2026-10-07; F4, C5, A4, G1 delivered 2026-10-08; G4, G2, G5 delivered 2026-10-09; holiday extras added by the user: `xmas` gifts & tax for Tue Dec 22 delivered 2026-10-10, up to 1:30 for that video only; the New Year extra `ny` for Tue Dec 29: the user declined TFSA room, and "before Dec 31" duplicated C5, so it is tax-loss selling by Dec 30 + the superficial loss rule, made 2026-10-10, and the `xmas` CTA was re-bridged to it); next new topic per PUBLISHING-PLAN §4 that is not a handwritten B-topic and not C4 (claimed by the handwritten session): D1 tuition, bridged from G5.
 
+## MOTION ENGINE v1 for card reels (user, 2026-10-12; details in `channel/MOTION-ENGINE.md`; built in the card-series session in parallel with "Motion Engine v3" below from the same request: both exist side by side, `motion/Reel.tsx` vs `motion/Engine.tsx`, until the user picks one standard)
+
+- Upgrade of the existing look, not a redesign: our brand (navy / charcoal / blue-gray scenes, white type, restrained gold, purposeful Canadian red, dark-glass panels, ALL-CAPS principal headings, Mont, flag, sources footer) stays.
+- From the next card reel on, build on `showreel/src/motion/` (template `showreel/src/NyV3.tsx`): progressive hook with the topic on screen from frame 0, floating tags, kinetic headlines, narration-driven highlights and count-ups, word-synced captions (`tools/beat_words.py`), depth layers, glass entrances/exits, one cue anchor per event driving both the visual and its sound (`<p>/reel.json` → `tools/reel_cues.py`), the sonic identity and logo (`tools/sfx.py`, D major), the mix (`tools/mix_reel.py`), verified numbers in `<p>/data.json`, and the automated QC `tools/reel_check.py` before delivery. No Kling, no video-generation model.
+
 ## Coordination with the handwritten session (user, 2026-10-08)
 
 - Before every new card-format topic, check what the parallel handwritten "Real Tax Math" session has made or promised (its project folders, `<project>/PUBLISH.md` "NEXT 3 TOPICS", the bridge CTA in its `publish.json`, the Publishing Kit labels "(handwritten)"). Never make the same topic or the same angle. The handwritten session owns the self-employed B-series (B1–B8, B4P, RRSP-SE, INST); the card series skips those and takes the next non-overlapping topic in PUBLISHING-PLAN §4. Record the check in the bible.
+
+## Motion Engine v3 for card-format Reels (user, 2026-10-12; full text and decisions in `channel/MOTION-ENGINE-V3.md`)
+
+- From the next card-format Reel on, build with `showreel/src/motion/Engine.tsx` + `tools/words.py` (word-level captions from the VO) + `tools/sfx_mix.py` (brand SFX, ducked bed, −14 LUFS / ≤ −1 dBTP) + `tools/check_v3.py` (automated QC, then a visual pass). Techniques adapted from github.com/marcosmodly/marketing-skill; its templates and look are NOT used.
+- Keep the identity: dark navy / charcoal / blue-gray scenes, white type, restrained gold, purposeful Canadian red, dark-glass panels, large figures, ALL-CAPS headlines and labels, realistic financial-documentary imagery, flag, sources footer.
+- Opening hook: topic readable on frame 0, then staged reveals (floating tags from different sides, mask headline, emphasized number/question, transition). Panels and rows light up gold as the narration reaches them; numbers count up to the verified value; one shared timeline drives visuals, captions and SFX.
+- Verified numbers live in `<project>/data.json` generated from the calculation; presentation code never computes or edits them. No Kling / video-generation model; simulated motion is never described as live-action footage. Nothing is published or scheduled without explicit approval.
 
 ## Metricool: only on command (user, 2026-10-07)
 

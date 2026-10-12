@@ -1,0 +1,16 @@
+{
+ "topic": "Tax-loss selling before December 30 (tax year 2026)",
+ "example": {"gain": 12000, "loss": 8000, "inclusion_rate": 0.5, "note": "example, not a CRA rule; tax owed depends on province and other income (not computed)"},
+ "dates": {"cycle": "T+1", "last_trade": "WED DEC 30", "settles": "THU DEC 31", "late_trade": "DEC 31", "late_settles_year": 2027},
+ "superficial": {"days_before": 30, "days_after": 30},
+ "spoken": {"gain": "twelve thousand", "loss": "eight thousand", "net": "four thousand", "taxable": "two thousand", "without_sale": "six"},
+ "sources": {
+  "rule": "CRA Capital losses; T4037 2025 (canada.ca): allowable capital losses offset taxable capital gains only",
+  "inclusion": "Finance Canada 2026 backgrounder; CRA What's new: inclusion rate one-half",
+  "settlement_date": "CRA technical interpretation 2012-0468931C6: settlement date = date of disposition for exchange-traded shares",
+  "t_plus_1": "Canadian Securities Administrators, news release 2024-05-27: T+1 settlement",
+  "last_trade_2026": "CIBC 2026 Year-End Tax Roadmap; TMX tax-loss selling primer: last trade Wed Dec 30, 2026",
+  "superficial": "CRA What is a superficial loss / Capital losses (canada.ca): 30 days before or after, affiliated person incl. spouse, still held 30 days after; usually added to the ACB of the substituted property",
+  "registered": "CRA Before you contribute to a TFSA; T4040: losses inside a TFSA or RRSP cannot be claimed"
+ }
+}
