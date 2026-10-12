@@ -17,3 +17,7 @@
 | DTC eligibility may help access RDSP, CWB disability supplement, child disability benefit, Canada disability benefit; other programs' eligibility does not affect DTC | about-dtc | current |
 | Federal value 2025: lowest rate 14.5% for 2025 (14% from 2026) → $10,138 × 14.5% = $1,470 (calc) | CRA "What's new for 2025"; Finance report on lowest rate | 2025 |
 Dependencies: provincial disability amounts differ by province (not shown as a fixed number); whether a person qualifies depends on the practitioner's certification and CRA's review — never implied.
+| Marked restriction (e.g. walking, mental functions): unable, or takes 3× longer than someone of similar age without the impairment, even with therapy/medication/devices; all or almost all of the time (generally 90%+); lasted / expected to last ≥ 12 continuous months | eligible-dtc/walking, mental-functions | current |
+| Life-sustaining therapy: needed ≥ 2 times per week AND an average ≥ 14 hours per week; ≥ 12 months | eligible-dtc/life-sustaining-therapy | current |
+| Cumulative effect: significant limitations in 2+ categories together equivalent to one marked restriction; 90%+ of the time; ≥ 12 months; excludes life-sustaining therapy | eligible-dtc/cumulative-effect | current |
+Persona Maria (mother) and Liam (15) is ILLUSTRATIVE, not a real case; CRA decides eligibility.

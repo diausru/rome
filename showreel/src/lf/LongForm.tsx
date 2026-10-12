@@ -68,6 +68,11 @@ const Chrome: React.FC<{ ep: Episode; t: number }> = ({ ep, t }) => {
         TAX SECRETS CANADA <Flag />
       </div>
       {ch && <div style={{ position: 'absolute', top: 44, left: 56, fontSize: ep.shots ? 22 : 17, letterSpacing: 3, color: C.dim, fontWeight: 600, fontFamily: ep.shots ? 'Oswald, Mont, sans-serif' : undefined }}>{ch.title.toUpperCase()}</div>}
+      {(ep as any).ticker && (() => { const items: string[] = (ep as any).ticker; const txt = items.join('   ◆   ') + '   ◆   '; const W = Math.ceil(txt.length * 17); const x = -((t * 80) % W);
+        return <div style={{ position: 'absolute', left: 0, right: 0, bottom: 64, height: 46, overflow: 'hidden', background: 'linear-gradient(90deg, rgba(7,11,20,.0), rgba(7,11,20,.72) 8%, rgba(7,11,20,.72) 92%, rgba(7,11,20,0))', borderTop: '1px solid rgba(232,194,122,.35)', borderBottom: '1px solid rgba(232,194,122,.18)' }}>
+          <div style={{ position: 'absolute', top: 8, left: x, whiteSpace: 'nowrap', fontFamily: 'Oswald, Mont, sans-serif', fontSize: 26, letterSpacing: 2, color: C.white }}>
+            {[0, 1, 2].map((k) => <span key={k} style={{ display: 'inline-block', width: W, overflow: 'hidden', verticalAlign: 'top' }}>{txt.split(/(\$[\d,]+|\d+(?:\.\d+)?%|\d+ (?:YEARS|DAYS|MONTHS|HOURS|BUSINESS DAYS))/).map((seg, j) => j % 2 ? <span key={j} style={{ color: C.gold, fontWeight: 700 }}>{seg}</span> : seg)}</span>)}
+          </div></div>; })()}
       <div style={{ position: 'absolute', bottom: 34, left: 56, fontSize: 16, color: C.dim, letterSpacing: 1 }}>{ep.footer ?? 'Source: canada.ca · General info, not advice'}</div>
       <div style={{ position: 'absolute', bottom: 0, left: 0, height: 4, width: `${Math.min(1, t / total) * 100}%`, background: `linear-gradient(90deg,${C.gold2},${C.gold})` }} />
     </AbsoluteFill>

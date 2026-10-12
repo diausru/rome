@@ -258,6 +258,10 @@ export const Scene: React.FC<{ e: Pn; now: number; fps: number }> = ({ e, now, f
           <div key={p.id ?? i} style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, transform: `translateY(${drift}px) rotateY(${p.tilt ?? 0}deg) rotateX(${p.tiltX ?? 0}deg)`, transformOrigin: p.origin ?? 'center' }}>
           <div style={{ position: 'relative', ...glass, ...fx.style, transform: [fx.style.transform].filter(Boolean).join(' ') || undefined }}>
             {fx.overlay}
+            {p.glass !== false && p.runBorder !== false && <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible', pointerEvents: 'none' }}>
+              <rect x="1" y="1" width="99.7%" height="99.5%" rx="20" pathLength={100} fill="none" stroke="rgba(232,194,122,.95)" strokeWidth={2.5} strokeDasharray="12 88" strokeDashoffset={-((now - p.t) * 9 + i * 37) % 100} style={{ filter: 'drop-shadow(0 0 6px rgba(232,194,122,.9))' }} />
+              <rect x="1" y="1" width="99.7%" height="99.5%" rx="20" pathLength={100} fill="none" stroke="rgba(143,179,232,.7)" strokeWidth={1.5} strokeDasharray="6 94" strokeDashoffset={-((now - p.t) * 9 + i * 37 + 50) % 100} />
+            </svg>}
             <P p={p} c={{ now, fps, end: until }} />
           </div></div>);
       })}

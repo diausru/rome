@@ -195,7 +195,8 @@ const Steps: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => (
         <div key={i} style={{ display: 'flex', gap: 24, alignItems: 'flex-start', padding: '14px 16px', borderRadius: 12, background: cur ? C.hl : 'transparent', opacity: Math.max(0.12, k) * (cur || !p.dimOthers ? 1 : 0.55), transform: `translateY(${(1 - k) * 20}px)` }}>
           <div style={{ fontFamily: T.cond, fontWeight: 700, fontSize: 54, lineHeight: 1, minWidth: 70, ...gold }}>{it.n ?? ('0' + (i + 1)).slice(-2)}</div>
           <div>
-            <div style={{ fontFamily: T.cond, fontSize: 38, fontWeight: 600, letterSpacing: 1.5, textTransform: 'uppercase' }}>{it.head}</div>
+            <div style={{ fontFamily: T.cond, fontSize: 38, fontWeight: 600, letterSpacing: 1.5, textTransform: 'uppercase' }}>{String(it.head).split(/([$≈+−]?\$?[\d][\d,.]*%?)/).map((seg: string, j: number) => j % 2
+              ? <span key={j} style={{ display: 'inline-block', color: C.gold, transform: cur ? `scale(${1 + 0.05 * Math.max(0, Math.sin((c.now - (it.t ?? 0)) * 4))})` : undefined, textShadow: cur ? `0 0 ${10 + 12 * Math.max(0, Math.sin((c.now - (it.t ?? 0)) * 4))}px rgba(232,194,122,.7)` : undefined }}>{seg}</span> : seg)}</div>
             {it.text && <div style={{ fontFamily: T.sans, fontSize: 25, color: C.dim, marginTop: 4, lineHeight: 1.35 }}>{it.text}</div>}
           </div>
         </div>);
