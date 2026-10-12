@@ -35,3 +35,11 @@ Example (not a CRA rule): one family. Teacher, $1,000 of supplies → $250. Same
 | End | left block | centred card | **ticking checklist + pill** |
 | Music | work (G) | pension2 (F, 76) | **kids (C, 104, curious)** |
 | Scenes | library / kitchen / office | street / apartment / bridge | **classroom at golden hour → evening college class → mom's new accessible bathroom (same woman; image reference = scene 1)** |
+
+## Delivery (2026-10-12)
+
+- Retention Blueprint `a1/BLUEPRINT.md` written before visuals; 25 s test (`out/a13/test25-av.mp4`, frames 0–599 + mix) rendered and inspected: 25.00 s, decodes, −14.3 LUFS, A/V in sync, no clipping (the suspected subtitle overlap was a downscale artefact, checked at full resolution).
+- Final: `showreel/out/a1/a1-final.mp4` (share copy `a1-share.mp4`): 1676 frames, 69.83 s, h264 1080×1920 24 fps + AAC 48 kHz, −14.1 LUFS, TP −2.5 dBTP.
+- Automated QC: first pass failed one check (a one-word caption chunk "a" on screen 0.11 s in case 2). Fixed in `tools/beat_words.py` (chunks under 0.3 s join a neighbour), frames 528–887 re-rendered and spliced; second pass 12/12 PASS (`a1/QC-REPORT.md`).
+- Visual QC `showreel/out/a1/qc.jpg` (16 frames incl. both splice points): clean.
+- vidIQ titles: 82 "3 Tax Credits Canadians Miss (One Family Almost Lost $4,550)" (primary) / 76. Analysis: https://claude.ai/artifact/SDFrXgUrD11YE5HqXXPJd3. Kit card "#29 · Credits People Miss" (Kit v37). Metricool: not sent.
