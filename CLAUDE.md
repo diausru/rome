@@ -119,6 +119,11 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Use the motion engine (marketing-skill techniques) to the maximum, but never as a fixed template: each reel gets its own hook type (e.g. kinetic question, big number count-up, split before/after, a ticker or a document close-up, a myth stamped FALSE, a timeline scrub), its own main data visual (bars, ladder, gauge, timeline, split screen, receipt, stacked blocks…), different entrance/exit mixes, a different music mood/tempo where the topic allows, and a different end composition.
 - Before building, compare with the previous 2–3 card reels (their bible "Format" rows) and record in the bible what is new: hook type, main visual, transitions, end. Do not repeat the previous reel's hook type or main visual.
 
+## Topic list 2 and the investigation format (user, 2026-10-12; analysis in `channel/TOPICS-2.md`)
+
+- After the current 48-topic plan, the series continues with the 30 topics in `channel/TOPICS-2.md` (after the overlap check: 22 kept/refocused, 3 merged, 5 replaced with new gap topics R1–R5; suggested order by arcs there).
+- Every topic in that list is a small investigation, not an explanation of the law: **Hook** (a concrete problem or money difference) → **Promise** (what the viewer will understand by the end) → **Investigation** (2–3 scenarios with numbers, documents and rules) → **Reveal** (why the result is unexpected) → **Action** (what to check in your own situation). A1 (= list-2 #23) is the first topic made this way.
+
 ## Coordination with the handwritten session (user, 2026-10-08)
 
 - Before every new card-format topic, check what the parallel handwritten "Real Tax Math" session has made or promised (its project folders, `<project>/PUBLISH.md` "NEXT 3 TOPICS", the bridge CTA in its `publish.json`, the Publishing Kit labels "(handwritten)"). Never make the same topic or the same angle. The handwritten session owns the self-employed B-series (B1–B8, B4P, RRSP-SE, INST); the card series skips those and takes the next non-overlapping topic in PUBLISHING-PLAN §4. Record the check in the bible.
