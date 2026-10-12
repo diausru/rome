@@ -34,3 +34,11 @@ Example (not a CRA rule): tuition $8,000 → credit $1,120; transfer up to $5,00
 | CTA | Spoken bridge "Next: Manitoba's tax brackets on a real paycheque. Follow so you don't miss it." + pill "NEXT: MANITOBA TAX BRACKETS →" (H4, next card row) |
 | VOICE | Grady; 8 beats; 158 words; raw read 71.7 s → tempo ×1.05 → 68.47 s VO + 1.7 s hold |
 | COST | Higgsfield: 8 VO lines (≈2.4 cr), 4 stills (2 variants scene 1 + scenes 2, 3), 3 × 4K upscale. vidIQ: 25 credits (1,395 → 1,370) |
+
+## Delivery (2026-10-12)
+
+- Final: `showreel/out/d1/d1-final.mp4` (share copy `d1-share.mp4`, 17 MB): 1685 frames, 70.21 s, h264 1080×1920 24 fps + AAC 48 kHz, −14.1 LUFS, true peak −2.8 dBTP. Render ≈30 min (CLI, concurrency 4).
+- Automated QC `tools/reel_check.py`: 12/12 PASS (`d1/QC-REPORT.md`). Two checker fixes made on the way: the first-frame pixel read now runs in binary mode (it crashed decoding raw bytes as text); the facts check is driven by `data.json` "derive" + "spoken" (was hard-coded to the ny example). The hook box was declared 920 wide; measured text spans x 81–867, so the declaration was corrected to 800.
+- Visual QC (`showreel/out/d1/qc.jpg`, 16 frames from the final MP4): hook on frame 0, tags clear of the face, every count-up lands on its word, both scene cuts (22.1 s, 44.8 s), end block with flag, pill and footer. Faces stay above the lower-third panels in all three scenes.
+- vidIQ titles: 91 "Tuition Tax Credit Canada: Can Your Parents Claim It?" (primary) / 73. Analysis page: https://claude.ai/artifact/2m3hZPFRGYtE31rwDJNkhF (`channel/analysis/d1-analysis.html`). Kit card "#27 · Tuition Credits" (Kit v35).
+- Metricool: not sent (only on command).

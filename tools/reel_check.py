@@ -71,8 +71,7 @@ def main():
 
     # 3. first frame text: bright pixels inside the hook box at frame 0
     x, y, w, h = reel['layout']['hook_text']['box']
-    raw = run(['ffmpeg', '-v', 'error', '-i', mp4, '-vf', f'select=eq(n\\,0),crop={w}:{min(h, 110)}:{x}:{y},format=gray', '-frames:v', '1', '-f', 'rawvideo', '-']).stdout
-    px = raw.encode('latin-1') if isinstance(raw, str) else raw
+    px = subprocess.run(['ffmpeg', '-v', 'error', '-i', mp4, '-vf', f'select=eq(n\\,0),crop={w}:{min(h, 110)}:{x}:{y},format=gray', '-frames:v', '1', '-f', 'rawvideo', '-'], capture_output=True).stdout
     bright = sum(1 for b in px if b > 215) / max(1, len(px))
     report('PASS' if bright > 0.02 else 'FAIL', 'first frame carries the hook text', f'{bright * 100:.1f}% bright pixels in the hook line box')
 
