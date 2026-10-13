@@ -1,0 +1,151 @@
+<title>Fix A Return Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column like an accountant's working paper — verdict first, then the evidence ledger (demand → competitors → audience → titles), each a ruled section with tabular figures. */
+:root {
+  --bg: #f6f8fa;
+  --paper: #ffffff;
+  --ink: #18212b;
+  --muted: #5b6672;
+  --rule: #d9e0e7;
+  --accent: #a3283b;      /* cranberry: the key point */
+  --gold: #a87412;        /* ledger figures */
+  --good: #2f7a52;
+  --bar: #c9d3dd;
+  --bar-hi: #a3283b;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+    --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+  --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--muted); margin: 0; }
+.verdict { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; padding: 20px 22px; display: grid; gap: 10px; }
+.verdict h2 { margin: 0; font: 600 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.verdict ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+section { display: grid; gap: 16px; border-top: 1px solid var(--rule); padding-top: 24px; }
+section h2 { font: 700 24px/1.15 var(--display); margin: 0; text-wrap: balance; }
+section > p { margin: 0; max-width: 64ch; color: var(--muted); }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.kv div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 4px; }
+.kv b { font: 600 28px/1.1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.kv span { font-size: 13px; color: var(--muted); }
+.bars { display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: minmax(150px, 230px) 1fr auto; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 12px; background: transparent; border-radius: 3px; position: relative; }
+.bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 3px; }
+.bar.hi .fill { background: var(--bar-hi); }
+.bar .num { font: 500 13px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 92px; text-align: right; }
+.bar .num small { color: var(--good); }
+.note { font-size: 13px; color: var(--muted); }
+.table { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+.tag.us { color: var(--accent); border-color: var(--accent); }
+.titles { display: grid; gap: 10px; }
+.t { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; }
+.t.win { border-color: var(--accent); }
+.t q { quotes: none; font-weight: 600; min-width: 0; }
+.t .score { font: 600 30px/1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.t .meter { grid-column: 1 / -1; height: 6px; background: var(--bar); border-radius: 3px; overflow: hidden; }
+.t .meter i { display: block; height: 100%; background: var(--gold); }
+.t.win .meter i { background: var(--accent); }
+.gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.gap div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; }
+.gap h3 { margin: 0; font: 600 15px/1.3 var(--body); }
+.gap p { margin: 0; font-size: 14px; color: var(--muted); }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; }
+@media (max-width: 520px) { .bar { grid-template-columns: 1fr auto; } .bar .track { grid-column: 1 / -1; order: 3; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Tax Secrets Canada · Short A9 · анализ vidIQ + NexLev · 13 октября 2026</div>
+    <h1>Ошиблись в декларации? <em>Не подавайте заново</em></h1>
+    <p class="lede">Пятый ролик в формате расследования: три случая и правило, в котором путаются чаще всего. Это первый анализ с проверкой ниши и конкурентов через NexLev.</p>
+  </header>
+
+  <div class="verdict">
+    <h2>Вывод</h2>
+    <ul>
+      <li>Точные фразы («how to change tax return canada», «amend tax return canada», «cra change my return») дают меньше 750 поисков в месяц каждая. Широкий спрос большой: «tax return» около 23 841 (+141%), «how to maximize tax refund canada» около 4 854 при низкой конкуренции (17,8).</li>
+      <li>NexLev: в его базе нет устойчивых канадских налоговых Shorts-каналов. Ближайшие совпадения не по теме (скупка золота, американская налоговая публицистика). Ниша свободна.</li>
+      <li>Shorts по теме в Канаде маленькие: у лидеров 1,8 тыс. и 1,4 тыс. просмотров. Рядом есть интерес побольше: «как войти в CRA My Account» — 145 тыс., «Notice of Assessment» — 38 тыс.</li>
+      <li>Заголовки набрали 92 и 89. Основной: «Made a Mistake on Your Tax Return? Don't File Again (Canada)».</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Спрос</h2>
+    <p>Ежемесячные запросы на YouTube по оценке vidIQ (общая оценка). Красным отмечен запрос под ролик.</p>
+    <div class="bars" aria-label="Search volume per month">
+      <div class="bar"><span>tax return</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">23 841 <small>+141%</small></span></div>
+      <div class="bar"><span>how to file taxes in canada</span><span class="track"><span class="fill" style="width:20.8%"></span></span><span class="num">4 957</span></div>
+      <div class="bar"><span>how to maximize tax refund canada</span><span class="track"><span class="fill" style="width:20.4%"></span></span><span class="num">4 854</span></div>
+      <div class="bar hi"><span>how to change tax return canada</span><span class="track"><span class="fill" style="width:3%"></span></span><span class="num">&lt;750</span></div>
+    </div>
+    <p class="note">Шкала от 0 до 23 841 запроса в месяц. Полоса для «&lt;750» условная.</p>
+  </section>
+
+  <section>
+    <h2>Конкуренты: Shorts в Канаде (NexLev, поиск YouTube)</h2>
+    <div class="table">
+      <table>
+        <thead><tr><th>Short</th><th>Просмотры</th></tr></thead>
+        <tbody>
+          <tr><td>Steps to sign into CRA my account (смежная тема)</td><td class="n">145 000</td></tr>
+          <tr><td>Canada Income tax Notice of Assessment (смежная тема)</td><td class="n">38 000</td></tr>
+          <tr><td>Refile vs Adjust: How to Fix Old Tax Returns in Canada</td><td class="n">1 800</td></tr>
+          <tr><td>How to Refile Your Taxes in Canada (Fix CRA Mistakes &amp; Get a Refund in 2025)</td><td class="n">1 400</td></tr>
+          <tr><td>Yes You Can Fix Old Tax Returns; I'm Getting $30,000 back</td><td class="n">152</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Поиск NexLev по видео (search_videos) дал нерелевантную выдачу и не использовался.</p>
+  </section>
+
+  <section>
+    <h2>Наш угол: три случая</h2>
+    <div class="gap">
+      <div><h3>Забытый вычет</h3><p>Профсоюзные взносы $1 500 × 33,25% = $499 назад (пример: Манитоба, налогооблагаемый доход около $70 000).</p></div>
+      <div><h3>Поздняя справка</h3><p>T4A на $3 000 дохода: около $998 к доплате плюс проценты с 1 мая (ITA 161, 248(1)).</p></div>
+      <div><h3>Пропуск давних лет</h3><p>Возврат можно запросить в пределах 10 календарных лет после конца налогового года. Запрос 2026 года достаёт до 2016-го. Решение остаётся за CRA (ITA 152(4.2)).</p></div>
+    </div>
+    <p class="note">Неожиданный вывод: вторую декларацию не подают. Ждут уведомления о налоговой оценке и меняют поданную. Онлайн (Change my return, ReFILE) — около 2 недель, по почте форма T1-ADJ — около 8 недель (оценки CRA).</p>
+  </section>
+
+  <section>
+    <h2>Оценка заголовков</h2>
+    <p>vidIQ score_title, формат Short.</p>
+    <div class="titles">
+      <div class="t win"><q>Made a Mistake on Your Tax Return? Don't File Again (Canada)</q><span class="score">92</span><span class="meter"><i style="width:92%"></i></span></div>
+      <div class="t"><q>How to Fix a Tax Return You Already Filed (CRA)</q><span class="score">89</span><span class="meter"><i style="width:89%"></i></span></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>vidIQ: исследование ключевых слов и 2 оценки заголовков, 15 кредитов (1 165 → 1 150). NexLev: 3 вызова (поиск ниши Shorts, поиск видео, поиск YouTube).</span>
+    <span>Факты: canada.ca «Change your return», советы CRA и инфографика; ITA 152(4.2), 161(1), 248(1), 8(1)(i); ставки 2026 года. Записаны в a9/PRODUCTION-BIBLE.md. Суммы условные. Общая информация, не консультация.</span>
+  </footer>
+</div>
