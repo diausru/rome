@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Filing late vs paying late: the late-filing penalty and the 2026-return deadlines (A8)",
-  "duration": "TBD",
+  "duration": "1:10 (70.12 s), 1080×1920, 24 fps, VO 69.04 s + 1.0 s hold",
   "mp4": "showreel/out/a8/a8-final.mp4 (share copy: a8-share.mp4)"
  },
  "sources": [
@@ -59,24 +59,27 @@
    "why": "Bridge in this video; next card row in the plan",
    "intent": "why is my tax refund smaller this year canada",
    "hook": "Same job, same pay, smaller refund. Three reasons.",
-   "angle": "refund = withholding minus tax, not a bonus; changes in credits, second job, benefits"
+   "angle": "refund = withholding minus tax, not a bonus; changes in credits, second job, benefits",
+   "payoff": "the viewer can read their own notice: refund = tax withheld/paid minus tax owed"
   },
   {
    "topic": "Filed wrong? How to fix a return (A9)",
    "why": "Row 13 of the plan; follows naturally from filing on time",
    "intent": "how to change my tax return canada",
    "hook": "You filed. Then you found a slip.",
-   "angle": "ReFILE / change my return; when to wait for the assessment"
+   "angle": "ReFILE / change my return; when to wait for the assessment",
+   "payoff": "a step-by-step fix without waiting for CRA to find the error"
   },
   {
    "topic": "CRA reassessed: can you challenge it? (list-2 #24)",
    "why": "Objection deadlines continue A5/A8",
    "intent": "how to object to cra reassessment",
    "hook": "CRA changed your return. You have time to push back.",
-   "angle": "notice of objection: what to send, deadlines, what happens to the balance"
+   "angle": "notice of objection: what to send, deadlines, what happens to the balance",
+   "payoff": "what to send, by when, and what happens to the balance meanwhile"
   }
  ],
  "series": "Card series, row 13 of PUBLISHING-PLAN §4 (A8), bridged from A5; investigation format. Playlist: 'CRA letters & deadlines'. Best publish window: January to April (tax season), evergreen.",
  "research": "- vidIQ (2026-10-13, balance 1,235 before): keyword research CA (5): 'late tax filing penalty canada' <750/mo; 'late filing penalty' <750/mo (competition 22.5); 'canadian taxes' ≈4,226/mo; 'personal finance canada' ≈6,710/mo (+10.5% vs baseline). YouTube search CA by views (5): long-form only on this angle: Blueprint Financial 'What Happens If You Just Stop Paying Taxes to the CRA?' (9:44, 40K views, 289 comments: penalties, lost benefits, demand to file); CTV 'what happens if you don't file for years' (2016, 15K); Hudson Bay Finance 'How the CRA catches tax mistakes' (15:30, 8.5K, mentions 5% + 1%/month); Boughton Law 'Owe money to the CRA?' (2015). Shorts outliers (5), 1 year, 'file taxes late canada penalty': no Canadian Short on the topic (results were sports 'penalty' clips and a US IRS joke). Gap: nobody shows filing-late vs paying-late side by side with numbers in under a minute.\n- vidIQ title scores (short-form, 2026-10-13): 'Can't Pay Your Taxes? File Anyway (Here's the Math)' 88 (primary); 'Filing Taxes Late in Canada: What It Actually Costs' 81. Third title not scored (cap).\n- vidIQ credits for A8: 25 (balance 1,235 → 1,210, measured).",
- "retention": "TBD"
+ "retention": "Topic on frame 0 (the myth question in large type); COSTS EXTRA stamp at 4 s; open loop \"three returns, same deadline\" by 7 s; a new return/result every ~10 s with a running scoreboard ($360 / $0 / $0); mid-video twist at ~39 s (NOT FILING vs NOT PAYING, gauge to 17%); actionable dates on two tickets + bridge to the next topic. Automated QC: no static stretch over 3 s (79 visual events)."
 }

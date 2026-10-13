@@ -40,3 +40,12 @@ Example (not a CRA rule): $4,000 unpaid at April 30, 2027; return 1 filed 4 comp
 - Plates: Higgsfield `gpt_image_2_5` (9:16, prompts say no text/numbers/logos; checked: none visible), 4K upscale (bytedance) → `showreel/public/plates/a8-s{1,2,3}-4k.jpg` (2294×4096); base images in `a8/plates/`.
 - VO: 7 Grady lines + 5 regenerated (shortened) = 12 generations.
 - Cuts: scene 2 at RETURN 2 ("files on time"), scene 3 at the action beat.
+
+## Delivery (2026-10-13)
+
+- Final: `showreel/out/a8/a8-final.mp4` (1080×1920, 24 fps, 70.12 s, −14.0 LUFS, −2.6 dBTP); share copy `a8-share.mp4` (x264 crf 20).
+- 25 s test render before the full render (`out/a83/test25-av.mp4`, −13.8 LUFS, decodes); fixes after stills: split panels without backdrop blur (it blurred the whole plate), the ON HOLD stamp kept inside the panel, the repeat note wrapped clear of the × 2 stamp.
+- QC: `tools/reel_check.py` 0 failed, 1 advice (sound density 1.04 per 3 s; the only sub-1 s pair is the riser + impact of one stamp) → `a8/QC-REPORT.md`; contact sheet `showreel/out/a8/qc.jpg`; Whisper transcript confirms $4,000, 5%, 1%, $360, May 1, 17%, April 30, June 15.
+- vidIQ: 25 credits (1,235 → 1,210). Titles: 88 (primary) / 81. Analysis page https://claude.ai/artifact/1xWE8LC74KTJbEnRKtCcjW. Kit card "#31 · File Anyway" (Kit v39). Nothing scheduled (Metricool only on command).
+- Higgsfield: 12 VO generations, 3 plates + 3 4K upscales.
+- Next (bridge CTA): A2 why your refund got smaller.
