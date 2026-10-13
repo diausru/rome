@@ -1,0 +1,165 @@
+========================================
+TAX SECRETS CANADA — FINAL DELIVERY
+
+VIDEO
+Title: Why your refund got smaller: same salary, three years (A2 = list-2 #1)
+Duration: 1:08 (68.38 s), 1080×1920, 24 fps, VO 67.55 s + 0.8 s hold
+Resolution: 1080×1920 (9:16)
+FPS: 24
+MP4: showreel/out/a2/a2-final.mp4 (share copy: a2-share.mp4)
+
+VOICEOVER
+Same seventy thousand dollar salary. Last year a refund, this year you owe. Why? Year one: one job, plus a six thousand dollar RRSP. At about thirty-three percent, that's a refund of about two thousand dollars. Year two: same job, no RRSP. Payroll is built to land close to your actual tax. Refund: almost zero. Year three: two jobs, thirty-five thousand each. Both payrolls give you the basic personal amount. Under-withheld: about fifty-three hundred dollars. The twist: your tax barely moved. What changed was what got withheld. A refund isn't a bonus. It's your own money coming back. Compare box twenty-two on your T4 with the total payable on your notice. Two jobs? On the second TD1, claim zero. Next: filed wrong? How to fix your return. Follow so you don't miss it.
+
+VOICEOVER TIMECODES
+[00:00.25–00:07.12] Same seventy thousand dollar salary. Last year a refund, this year you owe. Why?
+[00:07.44–00:17.74] Year one: one job, plus a six thousand dollar RRSP. At about thirty-three percent, that's a refund of about two thousand dollars.
+[00:18.04–00:28.02] Year two: same job, no RRSP. Payroll is built to land close to your actual tax. Refund: almost zero.
+[00:28.32–00:40.07] Year three: two jobs, thirty-five thousand each. Both payrolls give you the basic personal amount. Under-withheld: about fifty-three hundred dollars.
+[00:40.39–00:50.51] The twist: your tax barely moved. What changed was what got withheld. A refund isn't a bonus. It's your own money coming back.
+[00:50.83–01:01.25] Compare box twenty-two on your T4 with the total payable on your notice. Two jobs? On the second TD1, claim zero.
+[01:01.55–01:07.55] Next: filed wrong? How to fix your return. Follow so you don't miss it.
+
+FACT SOURCES
+- CRA general income tax guide / CVITP (canada.ca, via search results 2026-10-13) · current · line 43700 = income tax deducted from slips (T4 box 22); refund line 48400 = line 48200 − line 43500; else 48500 balance owing
+- CRA 'Get the completed TD1 forms' + Form TD1 2026 (canada.ca, via search results) · 2026 · second employer: credits can't be claimed twice; tick the box, enter 0 on line 13; additional tax can be requested; BPA $16,452
+- 2026 federal brackets (14% to $58,523; 20.5% to $117,045) · 2026 · CRA indexation / T4127 2026 (salary/calc.py)
+- Manitoba 2026 brackets (10.8% to $47,000; 12.75% to $100,000; BPA $15,780) · 2026 · frozen brackets, verified for H4
+- Income Tax Act s.146(5) (laws-lois.justice.gc.ca) · current · RRSP premiums deductible within the deduction limit
+
+⸻
+YOUTUBE SHORTS
+
+Primary Title: Same Salary, Smaller Refund? Here's Why (Canada)
+Alternative Title A: Why Do I Owe Taxes This Year? (Same Pay, Two Jobs)
+Alternative Title B: Two Jobs in Canada? Why You Might Owe $5,300 at Tax Time
+
+Description:
+Same $70,000 salary. Last year a refund, this year you owe. Why?
+
+Year 1: one job + a $6,000 RRSP. At about 33% (20.5% federal + 12.75% Manitoba), that's a refund of about $2,000 ($1,995).
+Year 2: same job, no RRSP. Payroll is built to land close to your actual tax. Refund: about $0.
+Year 3: two jobs, $35,000 each. Both payrolls give you the basic personal amount. Under-withheld: about $5,300 (estimate).
+
+The twist: your tax barely moved. What changed was what got withheld. A refund = tax withheld − tax payable. It isn't a bonus; it's your own money coming back.
+
+What to check: compare box 22 on your T4 with the total payable on your notice (line 43500). Two jobs? On the second TD1, tick 'more than one employer' and claim $0, or ask for extra tax off each cheque.
+
+Next: filed wrong? How to fix your return.
+
+Sources: CRA Form TD1 (2026); T1 lines 43500, 43700, 48400; ITA 146(5); 2026 federal and Manitoba rates. Example: Manitoba, employment income only. General information, not tax advice.
+
+#CRA #CanadaTax #TaxRefund
+
+Hashtags:
+#CRA #CanadaTax #TaxRefund #TaxTips #PersonalFinanceCanada
+
+Keywords:
+why is my tax refund smaller canada, why do i owe taxes this year canada, two jobs taxes canada, td1 two jobs, tax refund canada, rrsp tax refund, tax withheld t4 box 22, taxes in canada, tax return canada
+
+Pinned Comment:
+Quick check: two jobs at the same time and both TD1s claim the basic personal amount. What happens at tax time? (Usually a balance owing, as in our example.) General info, not advice.
+
+CTA:
+Next: filed wrong? How to fix your return. Follow so you don't miss it.
+
+⸻
+TIKTOK
+
+Caption:
+Same $70K salary. Refund one year, owing the next? 🤔 Your tax barely moved. What changed was what got withheld. Two jobs = basic personal amount claimed twice.
+
+Search Keywords:
+tax refund canada · why do i owe taxes · two jobs taxes · td1 form
+
+Hashtags:
+#cra #canadiantaxes #taxtok #personalfinancecanada #taxrefund
+
+Pinned Comment:
+Two jobs at once? On the second TD1, tick 'more than one employer' and claim $0. (General info, not advice.)
+
+CTA:
+Follow for the next one: how to fix a return you filed wrong.
+
+⸻
+INSTAGRAM REELS
+
+Caption:
+Same salary, smaller refund? 🇨🇦
+
+Same $70,000, three years:
+1️⃣ One job + $6,000 RRSP → refund ≈ $1,995
+2️⃣ Same job, no RRSP → ≈ $0
+3️⃣ Two jobs × $35,000, basic personal amount claimed twice → ≈ $5,309 owing (estimate)
+
+A refund = withheld − tax. Not a bonus: your own money back.
+
+Check: T4 box 22 vs total payable on your notice. Two jobs: second TD1 → claim $0.
+
+Sources: CRA Form TD1 (2026); T1 lines 43500/43700/48400; 2026 federal + Manitoba rates. Example. General info, not advice.
+
+Search Keywords:
+tax refund canada, two jobs tax canada, td1 form, cra
+
+Hashtags:
+#cra #canadiantaxes #personalfinancecanada #taxrefund #taxtips #canadatax
+
+Pinned Comment:
+Save this before your next job change 📌
+
+CTA:
+Send this to a friend who works two jobs.
+
+⸻
+ENGAGEMENT STRATEGY
+
+Primary Discussion Question: Did your refund shrink this year? Was it a second job, an RRSP, or something else?
+Save Trigger: The one subtraction behind every refund, and the two checks.
+Share Trigger: Anyone working two jobs at once.
+Follow Reason: Canadian tax rules with real numbers, verified by a Winnipeg accountant.
+
+⸻
+SEO ANALYSIS
+
+Primary Keyword: why is my tax refund smaller canada
+Secondary Keywords: 'tax refund' ≈5,323/mo; 'tax return' ≈23,841/mo (+141% vs baseline); 'how taxes work in canada' ≈4,908/mo; 'tax return canada' ≈4,573/mo (competition 10.6); the exact phrase <750/mo
+Search Intent: An employee whose refund shrank or turned into a balance owing wants the reason and the fix.
+Search Questions: Why is my tax refund smaller this year? · Why do I owe taxes with two jobs? · How do I fill out a TD1 for a second job? · Does an RRSP increase my refund?
+Pain / Curiosity: 
+Target Audience: Employees 20–45, people with two jobs or a new second job, RRSP contributors.
+Curiosity Angle: One person, three years, a balance scale: the result is withholding minus tax, not a bonus; the same tax gives opposite results.
+
+⸻
+NEXT CONTENT OPPORTUNITIES
+
+Next Topic #1: Filed wrong? How to fix your return (A9)
+  Why it matters: Bridge in this video; row 13 of the plan
+  Search intent: how to change my tax return canada
+  Hook: You filed. Then a slip showed up.
+  Curiosity angle: ReFILE / Change my return; when to wait for the notice of assessment
+  Payoff: the exact route to correct a return without waiting for CRA to find it
+
+Next Topic #2: CRA reassessed: can you challenge it? (list-2 #24)
+  Why it matters: Continues the A5/A8/A2 notice arc
+  Search intent: how to object to cra reassessment
+  Hook: CRA changed your return. You can push back.
+  Curiosity angle: notice of objection: deadlines, what to send, the balance meanwhile
+  Payoff: what to send and by when
+
+Next Topic #3: Wife got a bigger refund? (list-2 #10)
+  Why it matters: Same refund theme, couples angle
+  Search intent: why did my wife get a bigger tax refund
+  Hook: Same household, different refunds.
+  Curiosity angle: who claims shared credits (medical, donations, childcare)
+  Payoff: how to split shared credits so the household keeps more
+
+Series: Card series, row 13 of PUBLISHING-PLAN §4 (A2) folded into list-2 #1; bridged from A8; investigation format. Playlist: 'Refunds & notices'. Best window: February to April.
+========================================
+
+## Research notes (how this package was built)
+- vidIQ (2026-10-13, balance 1,210 before): keyword research CA (5): 'why is my tax refund smaller this year canada' <750/mo; 'tax refund' ≈5,323/mo; 'tax return' ≈23,841/mo (+140.6% vs baseline); 'how taxes work in canada' ≈4,908/mo; 'tax return canada' ≈4,573/mo (competition 10.6). YouTube search CA by views (5): Michael Kim CPA 'pay less taxes in Canada 2026' (11:54, 323K); Lucas Ghosn CPA 'How to fill out TD1 form if you have two jobs' (2:20, 9.7K, outlier 124, 46 comments). Shorts outliers (5), 1 year: TurboTax (US) 'Why Would I Owe Federal Taxes on My Tax Return?' 714K views, breakout 522; no Canadian Short with the same question. Gap: the Canadian version of 'why do I owe', with numbers, in under a minute.
+- vidIQ title scores (short-form, 2026-10-13): 'Same Salary, Smaller Refund? Here's Why (Canada)' 89 (primary); 'Why Do I Owe Taxes This Year? (Same Job, Same Pay)' 93, but not used as scored: in year 3 the job is not the same (two jobs), so it was reworded to '(Same Pay, Two Jobs)' and not re-scored.
+- vidIQ credits for A2: balance 1,210 → 1,165 = 45 credits by measurement, although only 5 calls were made (keyword research, YouTube search, Shorts outliers, 2 title scores; A8's identical set measured 25). Over the 25-credit cap; the cause of the extra 20 is not known.
+
+## Retention analysis
+Topic + the money gap on frame 0 (SAME $70,000 SALARY, BEFORE refund ≈ $2,000); NOW · YOU OWE ≈ $5,300 at 4 s; open loop "Why?" at 7 s; one year per ~10 s with a tipping scale and a running three-year strip (+$1,995 / $0 / −$5,309); twist at ~40 s (receipt: tax moved ≤ $1,995, result swung $7,304); two concrete checks + bridge to the next topic. Automated QC: no static stretch over 3 s (84 visual events).

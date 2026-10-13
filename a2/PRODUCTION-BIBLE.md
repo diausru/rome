@@ -35,3 +35,12 @@ Example (not a CRA rule): Manitoba, employment income only, $70,000 salary. Year
 - Plates: Higgsfield `gpt_image_2_5` (prompts: no text/numbers/logos; checked: none visible), 4K upscale → `showreel/public/plates/a2-s{1,2,3}-4k.jpg`; base images in `a2/plates/`.
 - VO: 7 Grady lines + 3 regenerated = 10 generations. Higgsfield was topped up by the user on 2026-10-13 (balance 0.01 → 1,000.01) before this video.
 - Cuts: scene 2 at year 3 (two jobs), scene 3 at the twist.
+
+## Delivery (2026-10-13)
+
+- Final: `showreel/out/a2/a2-final.mp4` (1080×1920, 24 fps, 68.38 s, −13.9 LUFS, −3.0 dBTP); share copy `a2-share.mp4` (x264 crf 20).
+- 25 s test render before the full render (`out/a23/test25-av.mp4`, −14.1 LUFS); fixes after stills: strip pills stacked (label over value), the "?" moved below the split cards, the BPA CLAIMED TWICE and NOT A BONUS stamps kept inside their panels.
+- QC: `tools/reel_check.py` 12/12 (`a2/QC-REPORT.md`); contact sheet `showreel/out/a2/qc.jpg`; Whisper transcript confirms $70,000, $6,000, 33%, $2,000, $35,000, $5,300, box 22.
+- vidIQ: 1,210 → 1,165 = 45 credits by measurement for 5 calls (over the 25 cap; cause unknown, recorded). Titles: 89 (primary) / 93 (rejected as inaccurate: "Same Job"). Analysis page https://claude.ai/artifact/CyoCdkr7VjM2R1p89SGNfe. Kit card "#32 · Smaller Refund" (Kit v40). Nothing scheduled.
+- Higgsfield: 10 VO generations, 3 plates + 3 4K upscales.
+- Next (bridge CTA): A9 filed wrong? fix your return.

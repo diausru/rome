@@ -1,0 +1,47 @@
+{
+ "total": 66.273,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "You filed in March. In June, a slip shows up. File again? No. Here's how fixing a return works.",
+   "start": 0.25,
+   "end": 8.994
+  },
+  {
+   "id": "c1",
+   "text": "Case one: you forgot fifteen hundred dollars of union dues. Change the return you filed, and about five hundred dollars comes back.",
+   "start": 9.314,
+   "end": 18.554
+  },
+  {
+   "id": "c2",
+   "text": "Case two: a late T4A adds three thousand dollars of income. You'll owe about a thousand dollars, plus interest from May first.",
+   "start": 18.854,
+   "end": 29.957
+  },
+  {
+   "id": "c3",
+   "text": "Case three: a credit you missed years ago. For a refund, you can ask CRA to go back ten calendar years. It's CRA's call.",
+   "start": 30.257,
+   "end": 40.675
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: you never file a second return. You wait for your notice of assessment, then change the one you filed.",
+   "start": 40.995,
+   "end": 49.082
+  },
+  {
+   "id": "action",
+   "text": "Online, through My Account or ReFILE, takes about two weeks. On paper, form T1-ADJ, about eight.",
+   "start": 49.402,
+   "end": 58.289
+  },
+  {
+   "id": "cta",
+   "text": "Next: the Manitoba credits people miss on form MB479. Follow so you don't miss it.",
+   "start": 58.589,
+   "end": 66.273
+  }
+ ]
+}

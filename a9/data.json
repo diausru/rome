@@ -1,0 +1,34 @@
+{
+ "topic": "Fixing a filed return: wait for the notice of assessment, then change the return you filed (Change my return / ReFILE / T1-ADJ); refunds back 10 calendar years at CRA's discretion; interest on extra tax from May 1",
+ "tax_year": 2026,
+ "example": {
+  "union": 1500,
+  "t4a": 3000,
+  "fed_rate": 0.205,
+  "mb_rate": 0.1275,
+  "years_back": 10,
+  "online_weeks": 2,
+  "paper_weeks": 8,
+  "note": "example (not a CRA rule): Manitoba employee with taxable income about $70,000 (federal 20.5% band $58,523\u2013$117,045, Manitoba 12.75% band $47,000\u2013$100,000, 2026); case 1: $1,500 of union dues not claimed (deduction); case 2: a late T4A adds $3,000 of income with no tax withheld; both changes stay inside the same bands."
+ },
+ "derive": {
+  "combined": "fed_rate + mb_rate",
+  "refund_union": "union * (fed_rate + mb_rate)",
+  "refund_union_round": "round(union * (fed_rate + mb_rate), -2)",
+  "owe_t4a": "t4a * (fed_rate + mb_rate)",
+  "owe_t4a_round": "round(t4a * (fed_rate + mb_rate), -3)"
+ },
+ "spoken": {
+  "union": "fifteen hundred dollars",
+  "refund_union_round": "five hundred dollars",
+  "t4a": "three thousand dollars",
+  "owe_t4a_round": "a thousand dollars"
+ },
+ "sources": {
+  "wait_noa": "canada.ca 'Change your return' (via search results 2026-10-13): wait until you receive your notice of assessment before requesting a change; wait for a response before requesting more changes; Change my return can't be used for 2014 or earlier",
+  "routes": "canada.ca tax tips (2021\u20132023) and 'How to fix a mistake on your tax return' infographic: Change my return (My Account), ReFILE, or Form T1-ADJ by mail; about 2 weeks online, about 8 weeks by mail",
+  "ten_years": "ITA 152(4.2): for a refund or reduction, an individual may apply on or before the day that is 10 calendar years after the end of the taxation year; the Minister MAY reassess (discretionary); CRA tip example: a 2022 request can cover 2012 or later",
+  "interest": "ITA 161(1) and 248(1): interest at the prescribed rate on unpaid tax after April 30 (balance-due day)",
+  "union_dues": "ITA 8(1)(i)(iv): annual union dues deductible from employment income"
+ }
+}
