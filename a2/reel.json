@@ -1,0 +1,268 @@
+{
+ "id": "a23",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "title": "SAME $70,000 SALARY"
+ },
+ "hold_after_vo": 0.8,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    470,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "y1"
+  },
+  "strip": {
+   "box": [
+    80,
+    640,
+    880,
+    96
+   ],
+   "from": "y1",
+   "to": "reveal"
+  },
+  "scale": {
+   "box": [
+    80,
+    760,
+    880,
+    500
+   ],
+   "from": "y1",
+   "to": "reveal"
+  },
+  "receipt": {
+   "box": [
+    150,
+    640,
+    740,
+    640
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "tiles": {
+   "box": [
+    80,
+    720,
+    880,
+    680
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "y1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "y1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "sal",
+   "beat": "hook",
+   "word": "salary.",
+   "sfx": "tick"
+  },
+  {
+   "id": "last",
+   "beat": "hook",
+   "word": "refund,",
+   "sfx": "pop"
+  },
+  {
+   "id": "owe",
+   "beat": "hook",
+   "word": "owe.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.5,
+   "gain": 0.75
+  },
+  {
+   "id": "why",
+   "beat": "hook",
+   "word": "Why?"
+  },
+  {
+   "id": "y1",
+   "beat": "y1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "rrsp",
+   "beat": "y1",
+   "word": "RRSP.",
+   "sfx": "tick"
+  },
+  {
+   "id": "rate",
+   "beat": "y1",
+   "word": "thirty-three"
+  },
+  {
+   "id": "ref1",
+   "beat": "y1",
+   "word": "two",
+   "sfx": "chime"
+  },
+  {
+   "id": "y2",
+   "beat": "y2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "norrsp",
+   "beat": "y2",
+   "word": "RRSP."
+  },
+  {
+   "id": "close",
+   "beat": "y2",
+   "word": "close",
+   "sfx": "tick"
+  },
+  {
+   "id": "zero",
+   "beat": "y2",
+   "word": "zero.",
+   "sfx": "pop"
+  },
+  {
+   "id": "y3",
+   "beat": "y3",
+   "at": 0
+  },
+  {
+   "id": "jobs",
+   "beat": "y3",
+   "word": "jobs,",
+   "sfx": "tick"
+  },
+  {
+   "id": "both",
+   "beat": "y3",
+   "word": "Both"
+  },
+  {
+   "id": "bpa",
+   "beat": "y3",
+   "word": "amount.",
+   "sfx": "pop"
+  },
+  {
+   "id": "short",
+   "beat": "y3",
+   "word": "fifty-three",
+   "sfx": "impact",
+   "gain": 0.8
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "tax",
+   "beat": "reveal",
+   "word": "tax",
+   "sfx": "tick"
+  },
+  {
+   "id": "withheld",
+   "beat": "reveal",
+   "word": "withheld.",
+   "sfx": "tick"
+  },
+  {
+   "id": "bonus",
+   "beat": "reveal",
+   "word": "bonus.",
+   "sfx": "pop"
+  },
+  {
+   "id": "own",
+   "beat": "reveal",
+   "word": "own"
+  },
+  {
+   "id": "box",
+   "beat": "action",
+   "word": "box",
+   "sfx": "tick"
+  },
+  {
+   "id": "payable",
+   "beat": "action",
+   "word": "payable"
+  },
+  {
+   "id": "twojobs",
+   "beat": "action",
+   "word": "jobs?",
+   "sfx": "tick"
+  },
+  {
+   "id": "td1",
+   "beat": "action",
+   "word": "TD1,"
+  },
+  {
+   "id": "claim0",
+   "beat": "action",
+   "word": "zero."
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "pop"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ]
+}
