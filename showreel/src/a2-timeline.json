@@ -1,0 +1,47 @@
+{
+ "total": 67.554,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Same seventy thousand dollar salary. Last year a refund, this year you owe. Why?",
+   "start": 0.25,
+   "end": 7.117
+  },
+  {
+   "id": "y1",
+   "text": "Year one: one job, plus a six thousand dollar RRSP. At about thirty-three percent, that's a refund of about two thousand dollars.",
+   "start": 7.437,
+   "end": 17.737
+  },
+  {
+   "id": "y2",
+   "text": "Year two: same job, no RRSP. Payroll is built to land close to your actual tax. Refund: almost zero.",
+   "start": 18.037,
+   "end": 28.022
+  },
+  {
+   "id": "y3",
+   "text": "Year three: two jobs, thirty-five thousand each. Both payrolls give you the basic personal amount. Under-withheld: about fifty-three hundred dollars.",
+   "start": 28.322,
+   "end": 40.073
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: your tax barely moved. What changed was what got withheld. A refund isn't a bonus. It's your own money coming back.",
+   "start": 40.393,
+   "end": 50.513
+  },
+  {
+   "id": "action",
+   "text": "Compare box twenty-two on your T4 with the total payable on your notice. Two jobs? On the second TD1, claim zero.",
+   "start": 50.833,
+   "end": 61.252
+  },
+  {
+   "id": "cta",
+   "text": "Next: filed wrong? How to fix your return. Follow so you don't miss it.",
+   "start": 61.552,
+   "end": 67.554
+  }
+ ]
+}

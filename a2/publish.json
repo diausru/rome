@@ -1,0 +1,83 @@
+{
+ "video": {
+  "title": "Why your refund got smaller: same salary, three years (A2 = list-2 #1)",
+  "duration": "TBD",
+  "mp4": "showreel/out/a2/a2-final.mp4 (share copy: a2-share.mp4)"
+ },
+ "sources": [
+  "CRA general income tax guide / CVITP (canada.ca, via search results 2026-10-13) · current · line 43700 = income tax deducted from slips (T4 box 22); refund line 48400 = line 48200 − line 43500; else 48500 balance owing",
+  "CRA 'Get the completed TD1 forms' + Form TD1 2026 (canada.ca, via search results) · 2026 · second employer: credits can't be claimed twice; tick the box, enter 0 on line 13; additional tax can be requested; BPA $16,452",
+  "2026 federal brackets (14% to $58,523; 20.5% to $117,045) · 2026 · CRA indexation / T4127 2026 (salary/calc.py)",
+  "Manitoba 2026 brackets (10.8% to $47,000; 12.75% to $100,000; BPA $15,780) · 2026 · frozen brackets, verified for H4",
+  "Income Tax Act s.146(5) (laws-lois.justice.gc.ca) · current · RRSP premiums deductible within the deduction limit"
+ ],
+ "yt": {
+  "titles": [
+   "Same Salary, Smaller Refund? Here's Why (Canada)",
+   "Why Do I Owe Taxes This Year? (Same Job, Same Pay)",
+   "Two Jobs in Canada? Why You Might Owe $5,300 at Tax Time"
+  ],
+  "description": "Same $70,000 salary. Last year a refund, this year you owe. Why?\n\nYear 1: one job + a $6,000 RRSP. At about 33% (20.5% federal + 12.75% Manitoba), that's a refund of about $2,000 ($1,995).\nYear 2: same job, no RRSP. Payroll is built to land close to your actual tax. Refund: about $0.\nYear 3: two jobs, $35,000 each. Both payrolls give you the basic personal amount. Under-withheld: about $5,300 (estimate).\n\nThe twist: your tax barely moved. What changed was what got withheld. A refund = tax withheld − tax payable. It isn't a bonus; it's your own money coming back.\n\nWhat to check: compare box 22 on your T4 with the total payable on your notice (line 43500). Two jobs? On the second TD1, tick 'more than one employer' and claim $0, or ask for extra tax off each cheque.\n\nNext: filed wrong? How to fix your return.\n\nSources: CRA Form TD1 (2026); T1 lines 43500, 43700, 48400; ITA 146(5); 2026 federal and Manitoba rates. Example: Manitoba, employment income only. General information, not tax advice.\n\n#CRA #CanadaTax #TaxRefund",
+  "hashtags": "#CRA #CanadaTax #TaxRefund #TaxTips #PersonalFinanceCanada",
+  "keywords": "why is my tax refund smaller canada, why do i owe taxes this year canada, two jobs taxes canada, td1 two jobs, tax refund canada, rrsp tax refund, tax withheld t4 box 22, taxes in canada, tax return canada",
+  "pinned": "Quick check: two jobs at the same time and both TD1s claim the basic personal amount. What happens at tax time? (Usually a balance owing, as in our example.) General info, not advice.",
+  "cta": "Next: filed wrong? How to fix your return. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Same $70K salary. Refund one year, owing the next? 🤔 Your tax barely moved. What changed was what got withheld. Two jobs = basic personal amount claimed twice.",
+  "keywords": "tax refund canada · why do i owe taxes · two jobs taxes · td1 form",
+  "hashtags": "#cra #canadiantaxes #taxtok #personalfinancecanada #taxrefund",
+  "pinned": "Two jobs at once? On the second TD1, tick 'more than one employer' and claim $0. (General info, not advice.)",
+  "cta": "Follow for the next one: how to fix a return you filed wrong."
+ },
+ "ig": {
+  "caption": "Same salary, smaller refund? 🇨🇦\n\nSame $70,000, three years:\n1️⃣ One job + $6,000 RRSP → refund ≈ $1,995\n2️⃣ Same job, no RRSP → ≈ $0\n3️⃣ Two jobs × $35,000, basic personal amount claimed twice → ≈ $5,309 owing (estimate)\n\nA refund = withheld − tax. Not a bonus: your own money back.\n\nCheck: T4 box 22 vs total payable on your notice. Two jobs: second TD1 → claim $0.\n\nSources: CRA Form TD1 (2026); T1 lines 43500/43700/48400; 2026 federal + Manitoba rates. Example. General info, not advice.",
+  "keywords": "tax refund canada, two jobs tax canada, td1 form, cra",
+  "hashtags": "#cra #canadiantaxes #personalfinancecanada #taxrefund #taxtips #canadatax",
+  "pinned": "Save this before your next job change 📌",
+  "cta": "Send this to a friend who works two jobs."
+ },
+ "eng": {
+  "question": "Did your refund shrink this year? Was it a second job, an RRSP, or something else?",
+  "save": "The one subtraction behind every refund, and the two checks.",
+  "share": "Anyone working two jobs at once.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "why is my tax refund smaller canada",
+  "secondary": "'tax refund' ≈5,323/mo; 'tax return' ≈23,841/mo (+141% vs baseline); 'how taxes work in canada' ≈4,908/mo; 'tax return canada' ≈4,573/mo (competition 10.6); the exact phrase <750/mo",
+  "intent": "An employee whose refund shrank or turned into a balance owing wants the reason and the fix.",
+  "audience": "Employees 20–45, people with two jobs or a new second job, RRSP contributors.",
+  "angle": "One person, three years, a balance scale: the result is withholding minus tax, not a bonus; the same tax gives opposite results.",
+  "questions": "Why is my tax refund smaller this year? · Why do I owe taxes with two jobs? · How do I fill out a TD1 for a second job? · Does an RRSP increase my refund?"
+ },
+ "next": [
+  {
+   "topic": "Filed wrong? How to fix your return (A9)",
+   "why": "Bridge in this video; row 13 of the plan",
+   "intent": "how to change my tax return canada",
+   "hook": "You filed. Then a slip showed up.",
+   "angle": "ReFILE / Change my return; when to wait for the notice of assessment",
+   "payoff": "the exact route to correct a return without waiting for CRA to find it"
+  },
+  {
+   "topic": "CRA reassessed: can you challenge it? (list-2 #24)",
+   "why": "Continues the A5/A8/A2 notice arc",
+   "intent": "how to object to cra reassessment",
+   "hook": "CRA changed your return. You can push back.",
+   "angle": "notice of objection: deadlines, what to send, the balance meanwhile",
+   "payoff": "what to send and by when"
+  },
+  {
+   "topic": "Wife got a bigger refund? (list-2 #10)",
+   "why": "Same refund theme, couples angle",
+   "intent": "why did my wife get a bigger tax refund",
+   "hook": "Same household, different refunds.",
+   "angle": "who claims shared credits (medical, donations, childcare)",
+   "payoff": "how to split shared credits so the household keeps more"
+  }
+ ],
+ "series": "Card series, row 13 of PUBLISHING-PLAN §4 (A2) folded into list-2 #1; bridged from A8; investigation format. Playlist: 'Refunds & notices'. Best window: February to April.",
+ "research": "- vidIQ (2026-10-13, balance 1,210 before): keyword research CA (5): 'why is my tax refund smaller this year canada' <750/mo; 'tax refund' ≈5,323/mo; 'tax return' ≈23,841/mo (+140.6% vs baseline); 'how taxes work in canada' ≈4,908/mo; 'tax return canada' ≈4,573/mo (competition 10.6). YouTube search CA by views (5): Michael Kim CPA 'pay less taxes in Canada 2026' (11:54, 323K); Lucas Ghosn CPA 'How to fill out TD1 form if you have two jobs' (2:20, 9.7K, outlier 124, 46 comments). Shorts outliers (5), 1 year: TurboTax (US) 'Why Would I Owe Federal Taxes on My Tax Return?' 714K views, breakout 522; no Canadian Short with the same question. Gap: the Canadian version of 'why do I owe', with numbers, in under a minute.\n- Titles scored after render: see below.",
+ "retention": "TBD"
+}
