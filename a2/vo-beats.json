@@ -1,0 +1,13 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.05,
+ "beats": [
+  ["hook", "Same seventy thousand dollar salary. Last year, a refund. This year, you owe? Let's investigate three years.", 0.32],
+  ["y1", "Year one: one job, plus a six thousand dollar RRSP. At about thirty-three percent, that's a refund of about two thousand dollars.", 0.3],
+  ["y2", "Year two: same job, no RRSP. Payroll is built to land close to your actual tax. Refund: almost zero.", 0.3],
+  ["y3", "Year three: two jobs, thirty-five thousand each. Each payroll thinks it's your only job, so each gives you the basic personal amount. Under-withheld: about fifty-three hundred dollars.", 0.32],
+  ["reveal", "The twist: your tax barely moved. What changed was what got withheld. A refund isn't a bonus. It's your own money coming back.", 0.32],
+  ["action", "Check box twenty-two on your T4 against the total payable on your notice. Two jobs? On the second TD1, claim zero, or ask for extra tax off each cheque.", 0.3],
+  ["cta", "Next: filed wrong? How to fix your return. Follow so you don't miss it.", 0.0]
+ ]
+}
