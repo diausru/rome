@@ -45,3 +45,12 @@ Example (not a CRA rule): Manitoba employee, taxable income about $70,000 (20.5%
 - Plates: Higgsfield `gpt_image_2_5` (prompts: no text/numbers/logos; checked, incl. the bookshelf in scene 2: blank spines), 4K upscale → `showreel/public/plates/a9-s{1,2,3}-4k.jpg`; base images in `a9/plates/`.
 - VO: 7 Grady lines, none regenerated.
 - Cuts: scene 2 at case 3 (old years, archive box), scene 3 at the twist.
+
+## Delivery (2026-10-13)
+
+- Final: `showreel/out/a9/a9-final.mp4` (1080×1920, 24 fps, 67.08 s, −13.9 LUFS, −2.9 dBTP); share copy `a9-share.mp4` (x264 crf 20).
+- 25 s test render before the full render (`out/a93/test25-av.mp4`, −14.0 LUFS); fixes after stills: NO stamp moved off the struck line, fork card text resized so the headline and the note don't overlap, "Adjust, don't refile" stamp raised.
+- QC: `tools/reel_check.py` 12/12 (`a9/QC-REPORT.md`); contact sheet `showreel/out/a9/qc.jpg`; Whisper transcript confirms $1,500, about $500, $3,000, about $1,000, May 1, 10 calendar years, two weeks, eight.
+- vidIQ 15 credits (1,165 → 1,150); NexLev 3 calls. Analysis page https://claude.ai/artifact/P3iynrN9hDki6TdbEPQzPZ. Kit card "#33 · Fix Your Return" (Kit v41). Nothing scheduled.
+- Higgsfield: 7 VO generations, 3 plates + 3 4K upscales.
+- Next (bridge CTA): H1 Manitoba MB479 credits (row 14 of the plan; 🔴 needs a fact pass).
