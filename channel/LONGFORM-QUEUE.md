@@ -19,7 +19,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 | # | Topic | Status |
 |---|---|---|
 | 10 | You Make $100,000 in Canada — Where Does Your Money Actually Go? | LF-03 done 2026-10-11, not published |
-| 11 | $80K vs $100K vs $150K — How Much Do You Actually Keep? | queued |
+| 11 | $80K vs $100K vs $150K — How Much Do You Actually Keep? | LF-06 rendered 2026-10-13, not published |
 | 12 | What Happens to Your Paycheque When You Get a $20,000 Bonus? | queued |
 | 13 | Why Your $100K Salary Does NOT Mean You Have $100K of Taxable Income | queued |
 | 14 | You Have a Side Hustle in Canada — What Actually Gets Taxed? | queued |
