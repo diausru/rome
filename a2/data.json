@@ -1,0 +1,40 @@
+{
+ "topic": "Why a refund shrinks or turns into a balance owing with the same salary: refund = tax withheld \u2212 tax payable; RRSP deduction, single job, two jobs each claiming the basic personal amount (2026, Manitoba example)",
+ "tax_year": 2026,
+ "example": {
+  "salary": 70000,
+  "rrsp": 6000,
+  "fed_rate": 0.205,
+  "mb_rate": 0.1275,
+  "half": 35000,
+  "tax70_fed": 7278.19,
+  "tax70_mb": 5742.67,
+  "tax35_fed": 2044.32,
+  "tax35_mb": 1811.73,
+  "fed_bpa": 16452,
+  "mb_bpa": 15780,
+  "note": "example (not a CRA rule): Manitoba resident, employment income only, 2026 tables (CRA T4127 Jan/Jul 2026 via longform/tools/taxcalc.py: federal 14% to $58,523, 20.5% to $117,045; Manitoba 10.8% to $47,000, 12.75% to $100,000; BPA $16,452 / $15,780; CPP/EI credits). Year 1: payroll withholding assumed equal to the tax on $70,000; the $6,000 RRSP deduction falls entirely in the 20.5% + 12.75% bands (taxable $69,335 \u2192 $63,335). Year 3: under-withholding estimated as tax on $70,000 minus twice the tax on $35,000 (each payroll treating its job as the only one, full credits on both TD1s); real payroll formulas differ slightly."
+ },
+ "derive": {
+  "combined": "fed_rate + mb_rate",
+  "refund_rrsp": "rrsp * (fed_rate + mb_rate)",
+  "refund_rrsp_round": "round(rrsp * (fed_rate + mb_rate), -3)",
+  "tax_total": "tax70_fed + tax70_mb",
+  "withheld_two_jobs": "2 * (tax35_fed + tax35_mb)",
+  "shortfall": "tax70_fed + tax70_mb - 2 * (tax35_fed + tax35_mb)",
+  "shortfall_round": "round(tax70_fed + tax70_mb - 2 * (tax35_fed + tax35_mb), -2)"
+ },
+ "spoken": {
+  "salary": "seventy thousand",
+  "rrsp": "six thousand",
+  "refund_rrsp_round": "two thousand dollars",
+  "half": "thirty-five thousand",
+  "shortfall_round": "fifty-three hundred dollars"
+ },
+ "sources": {
+  "refund": "CRA T1 return: line 43700 = total income tax deducted from all slips (T4 box 22); line 48400 refund = line 48200 total credits \u2212 line 43500 total payable; otherwise 48500 balance owing (CRA general guide / CVITP material, via search results 2026-10-13)",
+  "td1": "CRA 'Get the completed TD1 forms' (canada.ca) and Form TD1 2026: with more than one employer or payer at the same time, personal credits already claimed can't be claimed again; if total income will exceed them, tick the box, enter 0 on line 13; BPA $16,452 (2026); the form also lets you ask for additional tax to be deducted",
+  "rates": "2026 federal brackets 14% / 20.5% (from $58,523) (CRA indexation, news reports Dec 2025; T4127 2026) and Manitoba 2026 (frozen brackets, verified for H4): via longform/tools/taxcalc.py",
+  "rrsp": "ITA 146(5): RRSP premiums deductible within the deduction limit"
+ }
+}

@@ -9,7 +9,7 @@
   "instal_threshold": 3000,
   "collection_days": 90,
   "objection_days": 90,
-  "note": "example: Manitoba resident with taxable income about $80,000 before the missed slip (federal 20.5% band $57,375–$114,750, Manitoba 12.75% band $47,000–$100,000 for 2026); nothing withheld on interest income; credits unchanged; instalment bars are illustrative net tax owing amounts (example)",
+  "note": "example: Manitoba resident with taxable income about $80,000 before the missed slip (federal 20.5% band $58,523–$117,045, Manitoba 12.75% band $47,000–$100,000 for 2026); nothing withheld on interest income; credits unchanged; instalment bars are illustrative net tax owing amounts (example)",
   "instal_years": [
    {
     "label": "2 YEARS AGO",
