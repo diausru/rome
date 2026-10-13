@@ -1,0 +1,43 @@
+{
+ "topic": "Filing late vs paying late: the late-filing penalty (ITA 162), what it does not apply to, benefit payments that need a filed return, and the 2026-return deadlines",
+ "tax_year": 2026,
+ "example": {
+  "balance": 4000,
+  "months_late": 4,
+  "base_rate": 0.05,
+  "monthly_rate": 0.01,
+  "max_months": 12,
+  "refund": 1200,
+  "repeat_base_rate": 0.10,
+  "repeat_monthly_rate": 0.02,
+  "repeat_max_months": 20,
+  "note": "example (not a CRA rule): $4,000 of tax unpaid at the filing due date; return 1 filed 4 complete months after April 30, 2027; return 2 filed on time and not paid; return 3 has a refund and is filed late. Interest at the prescribed rate (not stated: it changes quarterly) is not included."
+ },
+ "derive": {
+  "late_rate": "base_rate + monthly_rate * months_late",
+  "penalty": "balance * (base_rate + monthly_rate * months_late)",
+  "max_rate": "base_rate + monthly_rate * max_months",
+  "max_penalty": "balance * (base_rate + monthly_rate * max_months)",
+  "ontime_penalty": "0"
+ },
+ "spoken": {
+  "balance": "four thousand dollars",
+  "base_rate": "five percent",
+  "monthly_rate": "one percent",
+  "penalty": "three hundred and sixty dollars",
+  "max_rate": "seventeen percent"
+ },
+ "dates": {
+  "file_most": "April 30, 2027 (Friday) for 2026 returns",
+  "file_business": "June 15, 2027 (Tuesday) if you or your cohabiting spouse/common-law partner carried on a business in 2026",
+  "balance_due": "April 30, 2027 for every individual; interest from May 1"
+ },
+ "sources": {
+  "penalty": "ITA 162(1): 5% of tax unpaid when the return was required to be filed + 1% of it per complete month late, max 12 months",
+  "repeat": "ITA 162(2): 10% + 2% per complete month, max 20 months, if a demand to file was sent under 150(2) and a 162(1)/(2) penalty was payable for any of the 3 preceding years",
+  "deadlines": "ITA 150(1)(d)(i) April 30; 150(1)(d)(ii) June 15 for an individual who carried on a business in the year and their cohabiting spouse/common-law partner",
+  "balance_due": "ITA 248(1) balance-due day (individual): April 30 of the following year; 161(1) interest at the prescribed rate after it",
+  "gst_credit": "ITA 122.5(3): the GST/HST credit is deemed paid to an eligible individual who files a return of income for the year",
+  "cra": "canada.ca late-filing penalty page and CRA tax tips (via search results, 2026-10-13): file on time even if you can't pay; payment arrangements; late filing can interrupt CCB / GST/HST credit payments"
+ }
+}

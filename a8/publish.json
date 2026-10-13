@@ -1,0 +1,82 @@
+{
+ "video": {
+  "title": "Filing late vs paying late: the late-filing penalty and the 2026-return deadlines (A8)",
+  "duration": "TBD",
+  "mp4": "showreel/out/a8/a8-final.mp4 (share copy: a8-share.mp4)"
+ },
+ "sources": [
+  "Income Tax Act s.162(1) (laws-lois.justice.gc.ca, current to 2026-09-21) · current · late-filing penalty 5% of tax unpaid at the due date + 1% per complete month, max 12 months",
+  "Income Tax Act s.162(2) · current · repeat penalty 10% + 2% per complete month, max 20 months, after a demand to file and a penalty in any of the 3 preceding years",
+  "Income Tax Act s.150(1)(d)(i)–(ii) · current · filing due date April 30; June 15 for individuals who carried on a business and their cohabiting spouse/common-law partner",
+  "Income Tax Act s.248(1) 'balance-due day' and s.161(1) · current · individuals pay by April 30; interest at the prescribed rate after it",
+  "Income Tax Act s.122.5(3) · current · the GST/HST credit is paid to an eligible individual who files a return",
+  "canada.ca — Late-filing penalty page and CRA tax tips (checked 2026-10-13 via search results) · current · file on time even if you can't pay; payment arrangements; late filing can interrupt benefit and credit payments",
+  "Calendar · 2027 · April 30, 2027 is a Friday; June 15, 2027 is a Tuesday (2026 returns)"
+ ],
+ "yt": {
+  "titles": [
+   "Can't Pay Your Taxes? File Anyway (Here's the Math)",
+   "Filing Taxes Late in Canada: What It Actually Costs",
+   "CRA Late-Filing Penalty: Same $4,000 Bill, 3 Different Results"
+  ],
+  "description": "Can't pay your tax bill, so you don't file? That's the move that costs extra. Three returns, same deadline:\n\n• Return 1 owes $4,000 and files 4 months late: 5% + 1% per full month = 9% = $360 late-filing penalty, plus interest.\n• Return 2 owes the same $4,000, files on time, can't pay: $0 late-filing penalty. Interest still runs from May 1.\n• Return 3 is due a refund and files late: $0 penalty (nothing was owed), but GST/HST credit payments can stop until the return is filed.\n\nThe twist: the penalty is for not filing, not for not paying. After 12 months it reaches 17% of the unpaid tax. Late again within three years, after a CRA demand to file, and the rates double (10% + 2% a month, up to 20 months).\n\nFor 2026 returns: file by April 30, 2027. Self-employed (and your spouse or common-law partner): file by June 15, 2027, but pay by April 30. Can't pay in full? Ask CRA about a payment arrangement.\n\nNext: why your refund got smaller.\n\nSources: Income Tax Act ss. 150(1)(d), 162(1)–(2), 122.5(3), 161(1), 248(1); CRA late-filing penalty page. Example amounts; interest at CRA's prescribed rate. General information, not tax advice.\n\n#CRA #CanadaTax #TaxTips",
+  "hashtags": "#CRA #CanadaTax #TaxTips #TaxDeadline #PersonalFinanceCanada",
+  "keywords": "late filing penalty cra, file taxes late canada, can't pay taxes canada, cra tax deadline 2027, april 30 tax deadline, june 15 self employed deadline, cra payment arrangement, canadian taxes, personal finance canada",
+  "pinned": "Quick check: you owe $2,000 and file 3 full months late. What's the late-filing penalty? (Answer: 5% + 3 × 1% = 8% = $160, plus interest.) General info, not advice.",
+  "cta": "Next: why your refund got smaller. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Can't pay your taxes, so you don't file? 😬 Same $4,000 bill, 3 returns: filed 4 months late = $360 penalty; filed on time, not paid = $0 penalty (interest only). File by April 30 anyway.",
+  "keywords": "late filing penalty cra · file taxes late canada · can't pay taxes · tax deadline canada",
+  "hashtags": "#cra #canadiantaxes #taxtok #personalfinancecanada #taxseason",
+  "pinned": "Self-employed? You file by June 15, but any balance is still due April 30. (General info, not advice.)",
+  "cta": "Follow for the next one: why your refund got smaller."
+ },
+ "ig": {
+  "caption": "Can't pay your taxes? File anyway. 🇨🇦\n\nSame $4,000 bill, three returns:\n1️⃣ Filed 4 months late: 5% + 4 × 1% = $360 penalty + interest\n2️⃣ Filed on time, not paid: $0 penalty, interest from May 1\n3️⃣ Refund, filed late: $0 penalty, but GST/HST credit payments can stop\n\nThe penalty is for not filing, not for not paying (max 17% after 12 months; repeat cases: 10% + 2%/month).\n\n2026 returns: file by Apr 30, 2027 · self-employed: Jun 15, 2027, pay by Apr 30.\n\nSources: Income Tax Act ss. 150, 162, 122.5, 161, 248; canada.ca. Example amounts. General info, not advice.",
+  "keywords": "cra late filing penalty, tax deadline canada, file taxes late, cra payment arrangement",
+  "hashtags": "#cra #canadiantaxes #personalfinancecanada #canadatax #taxtips #taxdeadline",
+  "pinned": "Save this for April 📌",
+  "cta": "Send this to the friend who says 'I'll file when I can pay'."
+ },
+ "eng": {
+  "question": "Did you know the late-filing penalty is $0 when you file on time, even if you can't pay?",
+  "save": "The three cases and both 2027 dates in one place.",
+  "share": "Anyone who skips filing because they can't pay.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "late filing penalty cra",
+  "secondary": "'canadian taxes' ≈4,226/mo; 'personal finance canada' ≈6,710/mo (+10.5%); 'late tax filing penalty canada' and 'late filing penalty' <750/mo",
+  "intent": "Someone who owes and can't pay wants to know whether to file anyway and what being late costs.",
+  "audience": "Employees, retirees and gig workers who owe at tax time or have unfiled years.",
+  "angle": "An investigation (three returns, one deadline) that separates the late-filing penalty from interest; no fear framing.",
+  "questions": "What happens if you file taxes late in Canada? · Is there a penalty if I file late but get a refund? · What if I can't pay my taxes by April 30? · When is the tax deadline for self-employed in Canada?"
+ },
+ "next": [
+  {
+   "topic": "Why your refund got smaller (A2)",
+   "why": "Bridge in this video; next card row in the plan",
+   "intent": "why is my tax refund smaller this year canada",
+   "hook": "Same job, same pay, smaller refund. Three reasons.",
+   "angle": "refund = withholding minus tax, not a bonus; changes in credits, second job, benefits"
+  },
+  {
+   "topic": "Filed wrong? How to fix a return (A9)",
+   "why": "Row 13 of the plan; follows naturally from filing on time",
+   "intent": "how to change my tax return canada",
+   "hook": "You filed. Then you found a slip.",
+   "angle": "ReFILE / change my return; when to wait for the assessment"
+  },
+  {
+   "topic": "CRA reassessed: can you challenge it? (list-2 #24)",
+   "why": "Objection deadlines continue A5/A8",
+   "intent": "how to object to cra reassessment",
+   "hook": "CRA changed your return. You have time to push back.",
+   "angle": "notice of objection: what to send, deadlines, what happens to the balance"
+  }
+ ],
+ "series": "Card series, row 13 of PUBLISHING-PLAN §4 (A8), bridged from A5; investigation format. Playlist: 'CRA letters & deadlines'. Best publish window: January to April (tax season), evergreen.",
+ "research": "- vidIQ (2026-10-13, balance 1,235 before): keyword research CA (5): 'late tax filing penalty canada' <750/mo; 'late filing penalty' <750/mo (competition 22.5); 'canadian taxes' ≈4,226/mo; 'personal finance canada' ≈6,710/mo (+10.5% vs baseline). YouTube search CA by views (5): long-form only on this angle: Blueprint Financial 'What Happens If You Just Stop Paying Taxes to the CRA?' (9:44, 40K views, 289 comments: penalties, lost benefits, demand to file); CTV 'what happens if you don't file for years' (2016, 15K); Hudson Bay Finance 'How the CRA catches tax mistakes' (15:30, 8.5K, mentions 5% + 1%/month); Boughton Law 'Owe money to the CRA?' (2015). Shorts outliers (5), 1 year, 'file taxes late canada penalty': no Canadian Short on the topic (results were sports 'penalty' clips and a US IRS joke). Gap: nobody shows filing-late vs paying-late side by side with numbers in under a minute.\n- Titles scored after render: see below.",
+ "retention": "TBD"
+}

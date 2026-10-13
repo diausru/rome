@@ -1,0 +1,41 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "beats": [
+  [
+   "hook",
+   "Can't pay your tax bill, so you don't file? That's the move that costs extra. Three returns. Same deadline.",
+   0.32
+  ],
+  [
+   "r1",
+   "Return one owes four thousand dollars and files four months late. Five percent, plus one percent per full month: three hundred and sixty dollars, before interest.",
+   0.3
+  ],
+  [
+   "r2",
+   "Return two owes the same, files on time, can't pay. Late-filing penalty: zero. Interest still runs from May first.",
+   0.3
+  ],
+  [
+   "r3",
+   "Return three is due a refund and files late. No penalty. But GST credit payments can stop until it's filed.",
+   0.32
+  ],
+  [
+   "reveal",
+   "The twist: the penalty is for not filing, not for not paying. After a year, it hits seventeen percent. Repeat it within three years, after a CRA demand, and the rates double.",
+   0.32
+  ],
+  [
+   "action",
+   "File by April thirtieth, even if you can't pay. Self-employed? File by June fifteenth, but still pay by April thirtieth.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: why your refund got smaller. Follow so you don't miss it.",
+   0.0
+  ]
+ ],
+ "tempo": 1.065
+}

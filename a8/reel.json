@@ -1,0 +1,357 @@
+{
+ "id": "a83",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "CAN'T PAY?",
+  "l2": "DON'T FILE?",
+  "stamp": "COSTS EXTRA"
+ },
+ "hold_after_vo": 1.0,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    470,
+    880,
+    740
+   ],
+   "from": "start",
+   "to": "r1"
+  },
+  "board": {
+   "box": [
+    80,
+    690,
+    880,
+    120
+   ],
+   "from": "r1",
+   "to": "reveal"
+  },
+  "r1": {
+   "box": [
+    80,
+    840,
+    880,
+    420
+   ],
+   "from": "r1",
+   "to": "r2"
+  },
+  "r2": {
+   "box": [
+    80,
+    840,
+    880,
+    420
+   ],
+   "from": "r2",
+   "to": "r3"
+  },
+  "r3": {
+   "box": [
+    80,
+    840,
+    880,
+    420
+   ],
+   "from": "r3",
+   "to": "reveal"
+  },
+  "split": {
+   "box": [
+    80,
+    760,
+    880,
+    380
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "tickets": {
+   "box": [
+    80,
+    700,
+    880,
+    700
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "r1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    130
+   ],
+   "from": "r1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "repeat": {
+   "box": [
+    80,
+    1160,
+    880,
+    116
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "pay",
+   "beat": "hook",
+   "word": "pay"
+  },
+  {
+   "id": "file",
+   "beat": "hook",
+   "word": "file?",
+   "sfx": "tick"
+  },
+  {
+   "id": "move",
+   "beat": "hook",
+   "word": "costs",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.5,
+   "gain": 0.75
+  },
+  {
+   "id": "three",
+   "beat": "hook",
+   "word": "Three",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "same",
+   "beat": "hook",
+   "word": "Same",
+   "sfx": "tick"
+  },
+  {
+   "id": "r1",
+   "beat": "r1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "k4",
+   "beat": "r1",
+   "word": "four",
+   "n": 1
+  },
+  {
+   "id": "months",
+   "beat": "r1",
+   "word": "months",
+   "sfx": "tick"
+  },
+  {
+   "id": "five",
+   "beat": "r1",
+   "word": "Five",
+   "sfx": "tick"
+  },
+  {
+   "id": "plus",
+   "beat": "r1",
+   "word": "plus"
+  },
+  {
+   "id": "full",
+   "beat": "r1",
+   "word": "full"
+  },
+  {
+   "id": "pen",
+   "beat": "r1",
+   "word": "three",
+   "sfx": "chime"
+  },
+  {
+   "id": "before",
+   "beat": "r1",
+   "word": "before"
+  },
+  {
+   "id": "r2",
+   "beat": "r2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "ontime",
+   "beat": "r2",
+   "word": "time,",
+   "sfx": "pop"
+  },
+  {
+   "id": "cantpay",
+   "beat": "r2",
+   "word": "can't"
+  },
+  {
+   "id": "zero",
+   "beat": "r2",
+   "word": "zero.",
+   "sfx": "tick"
+  },
+  {
+   "id": "int",
+   "beat": "r2",
+   "word": "Interest"
+  },
+  {
+   "id": "may",
+   "beat": "r2",
+   "word": "May"
+  },
+  {
+   "id": "r3",
+   "beat": "r3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "refund",
+   "beat": "r3",
+   "word": "refund",
+   "sfx": "pop"
+  },
+  {
+   "id": "nopen",
+   "beat": "r3",
+   "word": "No",
+   "sfx": "tick"
+  },
+  {
+   "id": "gst",
+   "beat": "r3",
+   "word": "GST"
+  },
+  {
+   "id": "stop",
+   "beat": "r3",
+   "word": "stop",
+   "sfx": "pop"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "notfile",
+   "beat": "reveal",
+   "word": "filing,",
+   "sfx": "tick"
+  },
+  {
+   "id": "notpay",
+   "beat": "reveal",
+   "word": "paying.",
+   "sfx": "tick"
+  },
+  {
+   "id": "year",
+   "beat": "reveal",
+   "word": "year,"
+  },
+  {
+   "id": "s17",
+   "beat": "reveal",
+   "word": "seventeen",
+   "sfx": "impact",
+   "gain": 0.8
+  },
+  {
+   "id": "repeat",
+   "beat": "reveal",
+   "word": "Repeat"
+  },
+  {
+   "id": "demand",
+   "beat": "reveal",
+   "word": "demand,"
+  },
+  {
+   "id": "double",
+   "beat": "reveal",
+   "word": "double.",
+   "sfx": "pop"
+  },
+  {
+   "id": "apr",
+   "beat": "action",
+   "word": "April",
+   "n": 1,
+   "sfx": "tick"
+  },
+  {
+   "id": "even",
+   "beat": "action",
+   "word": "even"
+  },
+  {
+   "id": "se",
+   "beat": "action",
+   "word": "Self-employed?"
+  },
+  {
+   "id": "jun",
+   "beat": "action",
+   "word": "June",
+   "sfx": "tick"
+  },
+  {
+   "id": "payapr",
+   "beat": "action",
+   "word": "April",
+   "n": 2
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "pop"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ]
+}
