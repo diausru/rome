@@ -1,0 +1,3108 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: CRA 2026 federal rates \u00b7 Ontario 2026 rates & surtax \u00b7 CPP/EI 2026 maximums \u00b7 Example calculation, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Alex's salary goes from eighty thousand to a hundred and fifty thousand dollars. Seventy thousand more a year. Only forty-four thousand of it reaches the bank account. Where did the rest go?"
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "Today we follow one paycheque up three steps: eighty, one hundred, and one hundred and fifty thousand. What you keep at each step, where every extra dollar goes, and the one place where a raise is actually worth more than the last one."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 1.0,
+   "text": "All numbers are twenty twenty-six federal and Ontario rates, calculated for one example person. General information, not advice for your situation."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "Meet Alex. Single, lives in Ontario, an employee, no other income, no deductions. Our example, not a real person."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 1.0,
+   "text": "From every paycheque, four things come off: federal income tax, Ontario income tax, the Canada Pension Plan, and Employment Insurance."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 0.35,
+   "text": "Step one. Eighty thousand dollars."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "Federal tax: nine thousand, two hundred and forty-three. Ontario tax, including the health premium: four thousand, eight hundred and eighty-five."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "C P P: four thousand, four hundred and forty-six. E I: one thousand, one hundred and twenty-three."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "Alex keeps sixty thousand, three hundred and three dollars. About five thousand and twenty-five a month."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 1.0,
+   "text": "And the income-tax share of the whole salary? Seventeen point seven percent. Not thirty. Not forty. Remember that number."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "Step two. A promotion to one hundred thousand. Twenty thousand more."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "Alex now keeps seventy-four thousand, two hundred and six. That's thirteen thousand, nine hundred and three more. Almost seventy cents of every new dollar."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "Where did the other six thousand go? Federal tax took about four thousand and sixty. Ontario, about eighteen hundred and forty. C P P, just two hundred. And E I took nothing at all."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 1.0,
+   "text": "Why so little? Because E I stops at sixty-eight thousand, nine hundred dollars of earnings. And C P P stops at eighty-five thousand. Above those caps, every extra dollar is only taxed, not also deducted for C P P and E I."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "Step three. One hundred and fifty thousand. Fifty thousand more."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 0.35,
+   "text": "Take-home: one hundred and four thousand, three hundred and twenty. Thirty thousand, one hundred and fourteen more."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "This time, about sixty cents of each new dollar stays. Twelve thousand went to federal tax, close to seventy-nine hundred to Ontario. C P P and E I: zero. Both already maxed out."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "Per month, that looks like this: about five thousand and twenty-five at eighty thousand. Sixty-one hundred and eighty-four at one hundred. Eighty-six hundred and ninety-three at one hundred and fifty."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 1.0,
+   "text": "Seventy thousand more salary turned into about thirty-six hundred and seventy dollars more a month. Not fifty-eight hundred."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 1.0,
+   "text": "So the raise was bigger, and the share Alex keeps got smaller. Why?"
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "Here's the fear a lot of people have. Crossing into a higher bracket means the whole salary gets taxed at the higher rate. So a raise could leave you with less."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "That's not how it works. Canada uses marginal brackets. Each rate applies only to the slice of income inside its bracket."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "In twenty twenty-six, the federal rate is fourteen percent up to fifty-eight thousand, five hundred and twenty-three. Twenty point five percent up to one hundred and seventeen thousand and forty-five. And twenty-six percent above that, up to one hundred and eighty-one thousand, four hundred and forty."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "When Alex passes one hundred and seventeen thousand, only the dollars above that line pay twenty-six percent. Everything below keeps its old rate."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "Ontario works the same way: five point oh five, nine point one five, eleven point one six, and twelve point one six percent from one hundred and fifty thousand."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 1.0,
+   "text": "So the brackets alone never make your take-home smaller. You always keep part of every extra dollar. The question is how big that part is."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 0.35,
+   "text": "And that's where two different numbers come in."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "The average rate: total income tax divided by salary. For Alex: seventeen point seven, then twenty, then twenty-six point six percent."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 1.0,
+   "text": "The marginal rate: what happens to the next dollar you earn. That's the one that matters for a raise, overtime, or a bonus."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "So let's give Alex one more thousand dollars at each step, and see what stays."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "At eighty thousand: six hundred and seventy-five dollars."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 0.35,
+   "text": "At one hundred thousand: six hundred and eighty-five. More than at eighty, even though the salary is higher."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "Why? At eighty thousand, Alex is still paying the second C P P contribution, four percent, up to eighty-five thousand. At one hundred thousand, that's finished. The tax rate actually went up a little. A payroll deduction ended."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 1.0,
+   "text": "And at one hundred and fifty thousand: five hundred and sixty-six dollars. More than forty-three cents of the next dollar is gone."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "Forty-three percent. Federal is twenty-six. Ontario's bracket is eleven point one six. That adds up to about thirty-seven. So where do the extra six points come from?"
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "The Ontario surtax. Once your basic Ontario tax goes over five thousand, eight hundred and eighteen dollars, you pay an extra twenty percent of the excess. Over seven thousand, four hundred and forty-six, another thirty-six percent."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 0.35,
+   "text": "At one hundred thousand, Alex's surtax is about twenty-six dollars. At one hundred and fifty thousand, about two thousand, five hundred."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 1.0,
+   "text": "That's the hidden step in Ontario. It doesn't show up in the bracket table, but it shows up in the paycheque."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "So is it the same everywhere? Same three salaries, same assumptions, nine provinces. Quebec has its own system, so it's not in this comparison."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "At eighty thousand, the spread from the top to the bottom is about forty-seven hundred dollars. British Columbia keeps the most, Nova Scotia the least."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "At one hundred and fifty thousand, the spread grows to more than nine thousand. Alberta and B C are on top, Nova Scotia at the bottom. Ontario is third."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 1.0,
+   "text": "And look at Ontario versus Alberta. At eighty thousand, the gap is under four hundred dollars. At one hundred and fifty thousand, over three thousand. The higher the salary, the more the province matters."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "Is there anything Alex can do about it? One common lever is the R R S P."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "A deduction lowers taxable income, so it saves tax at your top rates. Let's say ten thousand dollars, assuming Alex has the contribution room."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "At eighty thousand, the tax saved is about three thousand, one hundred. At one hundred thousand, about three thousand. At one hundred and fifty thousand, about four thousand, three hundred and forty."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "Same ten thousand dollars, much bigger saving at the top. That's the marginal rate working in your favour. It's a deferral, though: you pay tax when the money comes out later."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 1.0,
+   "text": "Whether it's the right move depends on your room, your other goals, and your tax rate in retirement. That's a conversation for a professional."
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "So, eighty, one hundred, one hundred and fifty. What did we learn?"
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 0.35,
+   "text": "One. Moving into a higher bracket never shrinks your take-home. Brackets only tax the slice above the line."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 0.35,
+   "text": "Two. Between eighty and one hundred thousand, Alex kept almost seventy cents per dollar. Above one hundred, about sixty. C P P and E I caps make the middle step surprisingly good."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "Three. In Ontario, the surtax pushes the rate on the next dollar above forty-three percent at one hundred and fifty thousand."
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.mp3",
+   "gap": 1.0,
+   "text": "And four. Know your marginal rate before you decide on overtime, a bonus, or an R R S P contribution."
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: what happens when you work two jobs, and why the tax can surprise you in April. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "The question"
+  },
+  {
+   "at": "L4",
+   "title": "01 \u00b7 The person"
+  },
+  {
+   "at": "L6",
+   "title": "02 \u00b7 $80,000"
+  },
+  {
+   "at": "L11",
+   "title": "03 \u00b7 Step to $100,000"
+  },
+  {
+   "at": "L15",
+   "title": "04 \u00b7 Step to $150,000"
+  },
+  {
+   "at": "L21",
+   "title": "05 \u00b7 The bracket myth"
+  },
+  {
+   "at": "L27",
+   "title": "06 \u00b7 Average vs marginal"
+  },
+  {
+   "at": "L30",
+   "title": "07 \u00b7 The next $1,000"
+  },
+  {
+   "at": "L35",
+   "title": "08 \u00b7 Ontario surtax"
+  },
+  {
+   "at": "L39",
+   "title": "09 \u00b7 Nine provinces"
+  },
+  {
+   "at": "L43",
+   "title": "10 \u00b7 The RRSP lever"
+  },
+  {
+   "at": "L48",
+   "title": "What we learned"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "collage",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf06/plates/s8.jpg",
+      "depth": "lf/lf06/plates/s8_d.png",
+      "dim": 0.7
+     },
+     "tiles": [
+      {
+       "src": "lf/lf06/plates/s2.jpg",
+       "depth": "lf/lf06/plates/s2_d.png",
+       "x": 40,
+       "y": 70,
+       "w": 700,
+       "h": 400,
+       "rot": -4,
+       "enter": "drop",
+       "delay": 0.12,
+       "enterDur": 1.0,
+       "move": "dolly"
+      },
+      {
+       "src": "lf/lf06/plates/c1.jpg",
+       "depth": "lf/lf06/plates/c1_d.png",
+       "x": 1330,
+       "y": 50,
+       "w": 520,
+       "h": 400,
+       "rot": 5,
+       "enter": "drop",
+       "delay": 0.38,
+       "enterDur": 1.0,
+       "move": "truck"
+      },
+      {
+       "src": "lf/lf06/plates/c2.jpg",
+       "depth": "lf/lf06/plates/c2_d.png",
+       "x": 1300,
+       "y": 755,
+       "w": 540,
+       "h": 310,
+       "rot": -4,
+       "enter": "slideR",
+       "delay": 0.7,
+       "move": "orbit"
+      },
+      {
+       "src": "lf/lf06/plates/c3.jpg",
+       "depth": "lf/lf06/plates/c3_d.png",
+       "x": 60,
+       "y": 755,
+       "w": 540,
+       "h": 310,
+       "rot": 4,
+       "enter": "pop",
+       "delay": 0.95,
+       "move": "rise"
+      }
+     ],
+     "kicker": "$80K \u2192 $150K \u00b7 ONTARIO \u00b7 2026",
+     "stat": "$44,017",
+     "statLabel": "KEPT FROM A $70,000 RAISE",
+     "statSize": 225,
+     "question": "WHERE DID THE OTHER $25,983 GO?",
+     "cy": 255,
+     "stamp": {
+      "text": "EVERY DOLLAR TRACED",
+      "x": 700,
+      "y": 870,
+      "rot": -6,
+      "size": 52
+     },
+     "out": {
+      "at": "L2",
+      "off": -0.5
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L2",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L2",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "IN THIS VIDEO",
+     "items": [
+      {
+       "n": "1",
+       "head": "$80,000 \u2192 WHAT YOU KEEP",
+       "at": "L2",
+       "word": "eighty"
+      },
+      {
+       "n": "2",
+       "head": "$100,000 \u2192 WHAT THE RAISE ADDS",
+       "at": "L2",
+       "word": "keep"
+      },
+      {
+       "n": "3",
+       "head": "$150,000 \u2192 WHERE EVERY EXTRA DOLLAR GOES",
+       "at": "L2",
+       "word": "every"
+      },
+      {
+       "n": "\u2605",
+       "head": "THE STEP WORTH MORE THAN THE LAST",
+       "at": "L2",
+       "word": "actually"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L3",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L3",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "2026 FEDERAL + ONTARIO RATES",
+       "size": 74,
+       "at": "L3"
+      },
+      {
+       "anim": "decode",
+       "text": "ONE EXAMPLE PERSON",
+       "size": 110,
+       "gold": true,
+       "at": "L3",
+       "word": "example"
+      },
+      {
+       "text": "GENERAL INFO \u00b7 NOT ADVICE",
+       "size": 50,
+       "at": "L3",
+       "word": "General"
+      }
+     ],
+     "kicker": "THE SETUP"
+    }
+   ]
+  },
+  {
+   "at": "L4",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L4",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 140,
+       "gold": true,
+       "seq": [
+        {
+         "text": "MEET ALEX",
+         "t": 0
+        },
+        {
+         "text": "ONTARIO \u00b7 EMPLOYEE",
+         "at": "L4",
+         "word": "Ontario"
+        }
+       ],
+       "at": "L4"
+      },
+      {
+       "text": "SINGLE \u00b7 NO OTHER INCOME \u00b7 NO DEDUCTIONS \u00b7 NOT A REAL PERSON",
+       "size": 46,
+       "at": "L4",
+       "word": "example"
+      }
+     ],
+     "kicker": "CHAPTER 1 \u00b7 THE PERSON"
+    }
+   ]
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 170,
+     "w": 1400,
+     "at": "L5",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "4 THINGS COME OFF EVERY PAYCHEQUE",
+     "items": [
+      {
+       "n": "1",
+       "head": "FEDERAL INCOME TAX",
+       "at": "L5",
+       "word": "federal"
+      },
+      {
+       "n": "2",
+       "head": "ONTARIO INCOME TAX",
+       "at": "L5",
+       "word": "Ontario"
+      },
+      {
+       "n": "3",
+       "head": "CANADA PENSION PLAN (CPP)",
+       "at": "L5",
+       "word": "Pension"
+      },
+      {
+       "n": "4",
+       "head": "EMPLOYMENT INSURANCE (EI)",
+       "at": "L5",
+       "word": "Employment"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L6",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "$80,000",
+       "size": 210,
+       "gold": true,
+       "at": "L6",
+       "word": "Eighty"
+      }
+     ],
+     "kicker": "STEP 1"
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "pay",
+     "x": 250,
+     "y": 120,
+     "w": 1000,
+     "at": "L7",
+     "fxIn": "slideL",
+     "fxOut": "defocus",
+     "title": "$80,000 \u00b7 THE FULL YEAR",
+     "sub": "2026 \u00b7 ONTARIO \u00b7 EXAMPLE",
+     "grossLabel": "SALARY",
+     "gross": 80000,
+     "rows": [
+      {
+       "label": "FEDERAL INCOME TAX",
+       "value": 9243,
+       "color": "#E5806E",
+       "at": "L7",
+       "word": "Federal"
+      },
+      {
+       "label": "ONTARIO TAX + HEALTH PREMIUM",
+       "value": 4885,
+       "color": "#E8A86A",
+       "at": "L7",
+       "word": "Ontario"
+      },
+      {
+       "label": "CPP + CPP2",
+       "value": 4446,
+       "color": "#8FB3E8",
+       "at": "L8"
+      },
+      {
+       "label": "EI",
+       "value": 1123,
+       "color": "#E8C27A",
+       "at": "L8",
+       "word": "E I"
+      }
+     ],
+     "finalAt": {
+      "at": "L9",
+      "word": "keeps"
+     },
+     "finalLabel": "TAKE-HOME",
+     "barW": 940
+    }
+   ]
+  },
+  {
+   "at": "L10",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L10",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 140,
+       "gold": true,
+       "seq": [
+        {
+         "text": "TAX = 30%?",
+         "t": 0
+        },
+        {
+         "text": "17.7% OF SALARY",
+         "at": "L10",
+         "word": "Seventeen"
+        }
+       ],
+       "at": "L10"
+      },
+      {
+       "text": "INCOME TAX \u00f7 SALARY \u00b7 AT $80,000",
+       "size": 50,
+       "at": "L10",
+       "word": "Remember"
+      }
+     ],
+     "kicker": "THE AVERAGE RATE"
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 320,
+     "w": 1600,
+     "at": "L11",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "+$20,000",
+       "size": 190,
+       "gold": true,
+       "at": "L11",
+       "word": "promotion"
+      },
+      {
+       "text": "$80,000 \u2192 $100,000",
+       "size": 64,
+       "at": "L11",
+       "word": "Twenty"
+      }
+     ],
+     "kicker": "STEP 2"
+    }
+   ]
+  },
+  {
+   "at": "L12",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L12",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "+$20,000 RAISE \u00b7 WHERE IT WENT",
+     "sub": "2026 \u00b7 ONTARIO",
+     "labelW": 520,
+     "fs": 34,
+     "vs": 46,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "ALEX KEEPS",
+       "value": 13903
+      },
+      {
+       "name": "FEDERAL TAX",
+       "value": 4059
+      },
+      {
+       "name": "ONTARIO TAX",
+       "value": 1838
+      },
+      {
+       "name": "CPP",
+       "value": 200
+      },
+      {
+       "name": "EI",
+       "value": 0
+      }
+     ],
+     "note": "69.5% OF THE RAISE STAYS",
+     "rowAt": [
+      {
+       "at": "L12",
+       "word": "thirteen"
+      },
+      {
+       "at": "L13",
+       "word": "Federal"
+      },
+      {
+       "at": "L13",
+       "word": "Ontario"
+      },
+      {
+       "at": "L13",
+       "word": "C P P"
+      },
+      {
+       "at": "L13",
+       "word": "nothing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L14",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "WHY CPP + EI TOOK ALMOST NOTHING",
+     "items": [
+      {
+       "n": "EI",
+       "head": "STOPS AT $68,900 OF EARNINGS",
+       "at": "L14",
+       "word": "stops",
+       "text": "1.63% \u00b7 max $1,123.07 in 2026"
+      },
+      {
+       "n": "CPP",
+       "head": "STOPS AT $85,000 (CPP2 CEILING)",
+       "at": "L14",
+       "word": "C P P stops",
+       "text": "Base CPP to $74,600 \u00b7 CPP2 to $85,000"
+      },
+      {
+       "n": "\u2192",
+       "head": "ABOVE THE CAPS: ONLY INCOME TAX",
+       "at": "L14",
+       "word": "Above"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 320,
+     "w": 1600,
+     "at": "L15",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "+$50,000",
+       "size": 190,
+       "gold": true,
+       "at": "L15",
+       "word": "Fifty"
+      },
+      {
+       "text": "$100,000 \u2192 $150,000",
+       "size": 64,
+       "at": "L15",
+       "word": "One hundred"
+      }
+     ],
+     "kicker": "STEP 3"
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L16",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "+$50,000 RAISE \u00b7 WHERE IT WENT",
+     "sub": "2026 \u00b7 ONTARIO",
+     "labelW": 520,
+     "fs": 34,
+     "vs": 46,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "ALEX KEEPS",
+       "value": 30114
+      },
+      {
+       "name": "FEDERAL TAX",
+       "value": 12000
+      },
+      {
+       "name": "ONTARIO TAX (INCL. SURTAX)",
+       "value": 7885
+      },
+      {
+       "name": "CPP + EI",
+       "value": 0
+      }
+     ],
+     "note": "60.2% OF THE RAISE STAYS",
+     "rowAt": [
+      {
+       "at": "L16",
+       "word": "Thirty"
+      },
+      {
+       "at": "L17",
+       "word": "Twelve"
+      },
+      {
+       "at": "L17",
+       "word": "Ontario"
+      },
+      {
+       "at": "L17",
+       "word": "zero"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L18",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L18",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "TAKE-HOME PER MONTH",
+     "sub": "2026 \u00b7 ONTARIO \u00b7 BEFORE ANY OTHER DEDUCTIONS",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "AT $80,000",
+       "value": 5025
+      },
+      {
+       "name": "AT $100,000",
+       "value": 6184
+      },
+      {
+       "name": "AT $150,000",
+       "value": 8693
+      }
+     ],
+     "note": "YEARLY TAKE-HOME \u00f7 12",
+     "rowAt": [
+      {
+       "at": "L18",
+       "word": "eighty"
+      },
+      {
+       "at": "L18",
+       "word": "Sixty-one"
+      },
+      {
+       "at": "L18",
+       "word": "Eighty-six"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L19",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 130,
+       "gold": true,
+       "seq": [
+        {
+         "text": "+$5,833 A MONTH?",
+         "t": 0
+        },
+        {
+         "text": "+$3,668 A MONTH",
+         "at": "L19",
+         "word": "Not"
+        }
+       ],
+       "at": "L19"
+      },
+      {
+       "text": "$70,000 MORE SALARY \u00f7 12 vs WHAT ARRIVES",
+       "size": 48,
+       "at": "L19",
+       "word": "salary"
+      }
+     ],
+     "kicker": "THE REALITY"
+    }
+   ]
+  },
+  {
+   "at": "L20",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L20",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 130,
+       "gold": true,
+       "seq": [
+        {
+         "text": "BIGGER RAISE",
+         "t": 0
+        },
+        {
+         "text": "SMALLER SHARE KEPT",
+         "at": "L20",
+         "word": "smaller"
+        }
+       ],
+       "at": "L20"
+      },
+      {
+       "text": "69.5% \u2192 60.2%",
+       "size": 64,
+       "at": "L20",
+       "word": "Why"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "misconception",
+     "x": 360,
+     "y": 300,
+     "w": 1200,
+     "at": "L21",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "THE BRACKET MYTH",
+     "wrong": {
+      "label": "HIGHER BRACKET = WHOLE SALARY TAXED MORE",
+      "text": "MYTH"
+     },
+     "fix": {
+      "label": "EACH RATE TAXES ONLY ITS OWN SLICE",
+      "text": "MARGINAL",
+      "at": "L22",
+      "word": "marginal"
+     }
+    }
+   ]
+  },
+  {
+   "at": "L23",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "brackets",
+     "x": 260,
+     "y": 150,
+     "w": 1400,
+     "at": "L23",
+     "fxIn": "slideR",
+     "fxOut": "defocus",
+     "title": "FEDERAL BRACKETS 2026 \u00b7 ALEX AT $150,000",
+     "sub": "TAXABLE INCOME $148,873 (AFTER ENHANCED CPP DEDUCTION)",
+     "value": [
+      {
+       "lo": 0,
+       "hi": 58523,
+       "rate": 0.14,
+       "part": 58523,
+       "tax": 8193
+      },
+      {
+       "lo": 58523,
+       "hi": 117045,
+       "rate": 0.205,
+       "part": 58522,
+       "tax": 11997
+      },
+      {
+       "lo": 117045,
+       "hi": 181440,
+       "rate": 0.26,
+       "part": 31828,
+       "tax": 8275
+      },
+      {
+       "lo": 181440,
+       "hi": 258482,
+       "rate": 0.29,
+       "part": 0,
+       "tax": 0
+      },
+      {
+       "lo": 258482,
+       "hi": null,
+       "rate": 0.33,
+       "part": 0,
+       "tax": 0
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L23",
+       "word": "fourteen"
+      },
+      {
+       "at": "L23",
+       "word": "Twenty point"
+      },
+      {
+       "at": "L23",
+       "word": "twenty-six"
+      },
+      {
+       "at": "L23",
+       "word": "one hundred and eighty-one"
+      },
+      {
+       "at": "L24",
+       "word": "Everything"
+      }
+     ],
+     "sumLabel": "Federal tax before credits"
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 170,
+     "w": 1400,
+     "at": "L25",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "ONTARIO BRACKETS 2026 \u00b7 SAME IDEA",
+     "items": [
+      {
+       "n": "5.05%",
+       "head": "UP TO $53,891",
+       "at": "L25",
+       "word": "five"
+      },
+      {
+       "n": "9.15%",
+       "head": "$53,891 \u2013 $107,785",
+       "at": "L25",
+       "word": "nine"
+      },
+      {
+       "n": "11.16%",
+       "head": "$107,785 \u2013 $150,000",
+       "at": "L25",
+       "word": "eleven"
+      },
+      {
+       "n": "12.16%",
+       "head": "$150,000 \u2013 $220,000",
+       "at": "L25",
+       "word": "twelve"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L26",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L26",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "text": "BRACKETS ALONE NEVER SHRINK TAKE-HOME",
+       "size": 70,
+       "at": "L26"
+      },
+      {
+       "anim": "decode",
+       "text": "YOU KEEP PART OF EVERY DOLLAR",
+       "size": 100,
+       "gold": true,
+       "at": "L26",
+       "word": "always"
+      }
+     ],
+     "kicker": "THE RULE"
+    }
+   ]
+  },
+  {
+   "at": "L28",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L28",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "AVERAGE INCOME-TAX RATE \u00b7 TAX \u00f7 SALARY",
+     "items": [
+      {
+       "n": "17.7%",
+       "head": "AT $80,000",
+       "at": "L28",
+       "word": "seventeen"
+      },
+      {
+       "n": "20.0%",
+       "head": "AT $100,000",
+       "at": "L28",
+       "word": "then twenty"
+      },
+      {
+       "n": "26.6%",
+       "head": "AT $150,000",
+       "at": "L28",
+       "word": "twenty-six"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L29",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L29",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 140,
+       "gold": true,
+       "seq": [
+        {
+         "text": "AVERAGE RATE",
+         "t": 0
+        },
+        {
+         "text": "MARGINAL RATE",
+         "at": "L29",
+         "word": "marginal"
+        }
+       ],
+       "at": "L29"
+      },
+      {
+       "text": "= WHAT HAPPENS TO THE NEXT DOLLAR",
+       "size": 54,
+       "at": "L29",
+       "word": "next"
+      }
+     ],
+     "kicker": "THE ONE THAT MATTERS"
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L30",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "+$1,000 MORE \u00b7 HOW MUCH STAYS?",
+     "sub": "2026 \u00b7 ONTARIO \u00b7 AFTER TAX, CPP AND EI",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 56,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "AT $80,000",
+       "value": 675
+      },
+      {
+       "name": "AT $100,000",
+       "value": 685
+      },
+      {
+       "name": "AT $150,000",
+       "value": 566
+      }
+     ],
+     "note": "\u2605 MORE STAYS AT $100K THAN AT $80K",
+     "rowAt": [
+      {
+       "at": "L31",
+       "word": "six"
+      },
+      {
+       "at": "L32",
+       "word": "six"
+      },
+      {
+       "at": "L34",
+       "word": "five"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L33",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L33",
+     "fxIn": "wipe",
+     "fxOut": "collapse",
+     "title": "WHY $100K BEATS $80K HERE",
+     "items": [
+      {
+       "n": "4%",
+       "head": "CPP2 STILL DEDUCTED AT $80,000",
+       "at": "L33",
+       "word": "second",
+       "text": "Between $74,600 and $85,000"
+      },
+      {
+       "n": "\u2713",
+       "head": "FINISHED BEFORE $100,000",
+       "at": "L33",
+       "word": "finished"
+      },
+      {
+       "n": "!",
+       "head": "TAX RATE WENT UP \u00b7 A DEDUCTION ENDED",
+       "at": "L33",
+       "word": "payroll"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L35",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L35",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "43.4%",
+       "size": 220,
+       "gold": true,
+       "at": "L35",
+       "word": "Forty-three"
+      },
+      {
+       "text": "26% FEDERAL + 11.16% ONTARIO = 37.16% \u2026 + ?",
+       "size": 52,
+       "at": "L35",
+       "word": "adds"
+      }
+     ],
+     "kicker": "AT $150,000 \u00b7 THE NEXT DOLLAR"
+    }
+   ]
+  },
+  {
+   "at": "L36",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 170,
+     "w": 1400,
+     "at": "L36",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "THE ONTARIO SURTAX",
+     "items": [
+      {
+       "n": "20%",
+       "head": "OF BASIC ONTARIO TAX OVER $5,818",
+       "at": "L36",
+       "word": "twenty"
+      },
+      {
+       "n": "+36%",
+       "head": "OF BASIC ONTARIO TAX OVER $7,446",
+       "at": "L36",
+       "word": "thirty-six"
+      },
+      {
+       "n": "$26",
+       "head": "ALEX AT $100,000",
+       "at": "L37",
+       "word": "twenty-six"
+      },
+      {
+       "n": "$2,511",
+       "head": "ALEX AT $150,000",
+       "at": "L37",
+       "word": "two thousand"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L38",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L38",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "text": "NOT IN THE BRACKET TABLE",
+       "size": 74,
+       "at": "L38"
+      },
+      {
+       "anim": "decode",
+       "text": "BUT IN THE PAYCHEQUE",
+       "size": 120,
+       "gold": true,
+       "at": "L38",
+       "word": "paycheque"
+      }
+     ],
+     "kicker": "THE HIDDEN STEP"
+    }
+   ]
+  },
+  {
+   "at": "L39",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 200,
+     "y": 120,
+     "w": 1520,
+     "at": "L39",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "TAKE-HOME AT $80,000 \u00b7 9 PROVINCES",
+     "sub": "2026 \u00b7 SAME ASSUMPTIONS \u00b7 QU\u00c9BEC NOT INCLUDED",
+     "labelW": 420,
+     "fs": 30,
+     "vs": 40,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "BC",
+       "value": 61157
+      },
+      {
+       "name": "AB",
+       "value": 60698
+      },
+      {
+       "name": "ON",
+       "value": 60303
+      },
+      {
+       "name": "SK",
+       "value": 59022
+      },
+      {
+       "name": "NB",
+       "value": 58246
+      },
+      {
+       "name": "MB",
+       "value": 58228
+      },
+      {
+       "name": "NL",
+       "value": 57857
+      },
+      {
+       "name": "PE",
+       "value": 57335
+      },
+      {
+       "name": "NS",
+       "value": 56439
+      }
+     ],
+     "note": "SPREAD $4,718",
+     "rowAt": [
+      {
+       "at": "L40",
+       "word": "British"
+      },
+      {
+       "at": "L40",
+       "word": "spread"
+      },
+      {
+       "at": "L40",
+       "word": "spread"
+      },
+      {
+       "at": "L40",
+       "word": "spread"
+      },
+      {
+       "at": "L40",
+       "word": "spread"
+      },
+      {
+       "at": "L40",
+       "word": "spread"
+      },
+      {
+       "at": "L40",
+       "word": "spread"
+      },
+      {
+       "at": "L40",
+       "word": "spread"
+      },
+      {
+       "at": "L40",
+       "word": "Nova"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L41",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 200,
+     "y": 120,
+     "w": 1520,
+     "at": "L41",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "TAKE-HOME AT $150,000 \u00b7 9 PROVINCES",
+     "sub": "2026 \u00b7 SAME ASSUMPTIONS \u00b7 QU\u00c9BEC NOT INCLUDED",
+     "labelW": 420,
+     "fs": 30,
+     "vs": 40,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "AB",
+       "value": 107458
+      },
+      {
+       "name": "BC",
+       "value": 107377
+      },
+      {
+       "name": "ON",
+       "value": 104320
+      },
+      {
+       "name": "SK",
+       "value": 104037
+      },
+      {
+       "name": "NB",
+       "value": 101330
+      },
+      {
+       "name": "MB",
+       "value": 100797
+      },
+      {
+       "name": "NL",
+       "value": 100702
+      },
+      {
+       "name": "PE",
+       "value": 98969
+      },
+      {
+       "name": "NS",
+       "value": 98117
+      }
+     ],
+     "note": "SPREAD $9,341",
+     "rowAt": [
+      {
+       "at": "L41",
+       "word": "Alberta"
+      },
+      {
+       "at": "L41",
+       "word": "Alberta"
+      },
+      {
+       "at": "L41",
+       "word": "third"
+      },
+      {
+       "at": "L41",
+       "word": "spread"
+      },
+      {
+       "at": "L41",
+       "word": "spread"
+      },
+      {
+       "at": "L41",
+       "word": "spread"
+      },
+      {
+       "at": "L41",
+       "word": "spread"
+      },
+      {
+       "at": "L41",
+       "word": "spread"
+      },
+      {
+       "at": "L41",
+       "word": "Nova"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L42",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 320,
+     "w": 1400,
+     "at": "L42",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "ALBERTA vs ONTARIO \u00b7 TAKE-HOME GAP",
+     "sub": "2026 \u00b7 SAME ASSUMPTIONS",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 56,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "AT $80,000",
+       "value": 395
+      },
+      {
+       "name": "AT $150,000",
+       "value": 3138
+      }
+     ],
+     "note": "THE HIGHER THE SALARY, THE MORE THE PROVINCE MATTERS",
+     "rowAt": [
+      {
+       "at": "L42",
+       "word": "under"
+      },
+      {
+       "at": "L42",
+       "word": "over"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L43",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE RRSP LEVER",
+       "size": 150,
+       "gold": true,
+       "at": "L43",
+       "word": "R R S P"
+      }
+     ],
+     "kicker": "CHAPTER 10"
+    }
+   ]
+  },
+  {
+   "at": "L44",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L44",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "TAX SAVED BY A $10,000 DEDUCTION",
+     "sub": "2026 \u00b7 ONTARIO \u00b7 ASSUMES CONTRIBUTION ROOM",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 56,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "AT $80,000",
+       "value": 3115
+      },
+      {
+       "name": "AT $100,000",
+       "value": 2991
+      },
+      {
+       "name": "AT $150,000",
+       "value": 4341
+      }
+     ],
+     "note": "A DEFERRAL: TAXED WHEN WITHDRAWN",
+     "rowAt": [
+      {
+       "at": "L45",
+       "word": "eighty"
+      },
+      {
+       "at": "L45",
+       "word": "one hundred thousand"
+      },
+      {
+       "at": "L45",
+       "word": "fifty"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L46",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 120,
+       "gold": true,
+       "seq": [
+        {
+         "text": "SAME $10,000",
+         "t": 0
+        },
+        {
+         "text": "BIGGER SAVING AT THE TOP",
+         "at": "L46",
+         "word": "bigger"
+        }
+       ],
+       "at": "L46"
+      },
+      {
+       "text": "DEFERRAL \u00b7 TAXED WHEN IT COMES OUT",
+       "size": 50,
+       "at": "L46",
+       "word": "deferral"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L47",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "text": "ROOM \u00b7 GOALS \u00b7 RETIREMENT TAX RATE",
+       "size": 70,
+       "at": "L47"
+      },
+      {
+       "anim": "decode",
+       "text": "ASK A PROFESSIONAL",
+       "size": 120,
+       "gold": true,
+       "at": "L47",
+       "word": "professional"
+      }
+     ],
+     "kicker": "IT DEPENDS"
+    }
+   ]
+  },
+  {
+   "at": "L48",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L48",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "WHAT WE LEARNED",
+     "items": [
+      {
+       "n": "1",
+       "head": "BRACKETS NEVER SHRINK TAKE-HOME",
+       "at": "L49",
+       "word": "One"
+      },
+      {
+       "n": "2",
+       "head": "$80K\u2192$100K: ~70\u00a2 KEPT \u00b7 ABOVE: ~60\u00a2",
+       "at": "L50",
+       "word": "Two"
+      },
+      {
+       "n": "3",
+       "head": "ONTARIO SURTAX: 43%+ ON THE NEXT DOLLAR AT $150K",
+       "at": "L51",
+       "word": "Three"
+      },
+      {
+       "n": "4",
+       "head": "KNOW YOUR MARGINAL RATE",
+       "at": "L52",
+       "word": "four"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L53",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L53",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 120,
+       "gold": true,
+       "seq": [
+        {
+         "text": "TWO JOBS?",
+         "t": 0
+        },
+        {
+         "text": "WHY APRIL CAN SURPRISE YOU",
+         "at": "L53",
+         "word": "surprise"
+        }
+       ],
+       "at": "L53"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L53",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s8",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.12
+    },
+    {
+     "x": 30,
+     "y": -10,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "at": "L4",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -50,
+     "y": 10,
+     "z": 0.2
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L10",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.22
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "plate": "c2",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "plate": "s8",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.15
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L18",
+   "plate": "c1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "plate": "c2",
+   "cam": [
+    {
+     "x": -60,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": 10,
+     "y": 0,
+     "z": 0.3
+    },
+    {
+     "x": -10,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L35",
+   "plate": "c3",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.18
+    },
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L39",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "plate": "s7",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L48",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -60,
+     "y": 10,
+     "z": 0.2
+    },
+    {
+     "x": 60,
+     "y": -10,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "at": "L53",
+   "plate": "c3",
+   "cam": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -10,
+     "z": 0.25
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf06/plates/s1.jpg",
+    "depth": "lf/lf06/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf06/plates/s2.jpg",
+    "depth": "lf/lf06/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf06/plates/s3.jpg",
+    "depth": "lf/lf06/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf06/plates/s4.jpg",
+    "depth": "lf/lf06/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf06/plates/s5.jpg",
+    "depth": "lf/lf06/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf06/plates/s6.jpg",
+    "depth": "lf/lf06/plates/s6_d.png",
+    "amt": 0.05
+   }
+  },
+  "s7": {
+   "photo": {
+    "src": "lf/lf06/plates/s7.jpg",
+    "depth": "lf/lf06/plates/s7_d.png",
+    "amt": 0.05
+   }
+  },
+  "s8": {
+   "photo": {
+    "src": "lf/lf06/plates/s8.jpg",
+    "depth": "lf/lf06/plates/s8_d.png",
+    "amt": 0.05
+   }
+  },
+  "c1": {
+   "photo": {
+    "src": "lf/lf06/plates/c1.jpg",
+    "depth": "lf/lf06/plates/c1_d.png",
+    "amt": 0.05
+   }
+  },
+  "c2": {
+   "photo": {
+    "src": "lf/lf06/plates/c2.jpg",
+    "depth": "lf/lf06/plates/c2_d.png",
+    "amt": 0.05
+   }
+  },
+  "c3": {
+   "photo": {
+    "src": "lf/lf06/plates/c3.jpg",
+    "depth": "lf/lf06/plates/c3_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L2"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L2",
+   "word": "eighty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L2",
+   "word": "keep"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L2",
+   "word": "every"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L2",
+   "word": "actually"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L3"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L4"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L5"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L5",
+   "word": "federal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L5",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L5",
+   "word": "Pension"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L5",
+   "word": "Employment"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L10"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L12"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L12",
+   "word": "thirteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "Federal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "C P P"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "nothing"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L14"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "stops"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "C P P stops"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "Above"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L16"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "Thirty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "Twelve"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "zero"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L18"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "eighty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "Sixty-one"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "Eighty-six"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L19"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L20"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L21"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L23"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "fourteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "Twenty point"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "twenty-six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "one hundred and eighty-one"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "Everything"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L25"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25",
+   "word": "five"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25",
+   "word": "nine"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25",
+   "word": "eleven"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25",
+   "word": "twelve"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L26"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L28"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "seventeen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "then twenty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "twenty-six"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L29"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L30"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "five"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L33"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "second"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "finished"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "payroll"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L35"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L36"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "twenty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "thirty-six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L37",
+   "word": "twenty-six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L37",
+   "word": "two thousand"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L38"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L39"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "British"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "Nova"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L41"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "third"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "spread"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "Nova"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L42",
+   "word": "under"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L42",
+   "word": "over"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L44"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "eighty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "one hundred thousand"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "fifty"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L46"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L47"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L48"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L49",
+   "word": "One"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L50",
+   "word": "Two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L51",
+   "word": "Three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "four"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L53"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L4"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L10"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L14"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L18"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L21"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L25"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L30"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L35"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L39"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L48"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L53"
+  }
+ ],
+ "ticker": [
+  "$80K \u2192 $60,303 TAKE-HOME",
+  "$100K \u2192 $74,206",
+  "$150K \u2192 $104,320",
+  "NEXT $1,000 AT $100K: $685 STAYS",
+  "ONTARIO SURTAX AT $150K: $2,511",
+  "EI STOPS AT $68,900",
+  "CPP2 STOPS AT $85,000",
+  "FEDERAL 26% FROM $117,045",
+  "2026 RATES \u00b7 ONTARIO EXAMPLE"
+ ],
+ "audio": "lf/lf06/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

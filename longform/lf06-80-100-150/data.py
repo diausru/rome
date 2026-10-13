@@ -37,4 +37,7 @@ rrsp = {str(g): r(th(g, 'ON')['keep'] * 0 + (th(g, 'ON', 10000)['keep'] - th(g, 
 D = dict(on=on, step1=step1, step2=step2, whole=whole, split1=split1, split2=split2, prov=prov, rank150=rank150,
          gap150_on_ab=prov['AB']['150000'] - prov['ON']['150000'], gap80_on_ab=prov['AB']['80000'] - prov['ON']['80000'],
          rrsp10k=rrsp, fed_bracket2=117045, on_bracket3=107785, on_bracket4=150000)
+ti150 = th(150000, 'ON')['ti']; fb = C.FED + [(10**9, 0)]
+D['fedbr150'] = [dict(lo=fb[i][0], hi=fb[i+1][0] if i+1 < len(C.FED) else None, rate=fb[i][1], part=r(max(0, min(ti150, fb[i+1][0]) - fb[i][0])), tax=r(max(0, min(ti150, fb[i+1][0]) - fb[i][0]) * fb[i][1])) for i in range(len(C.FED))]
+D['ti150'] = r(ti150)
 json.dump(D, open('data.json', 'w'), indent=1); print(json.dumps(D, indent=0))
