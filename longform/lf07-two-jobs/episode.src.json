@@ -1,0 +1,2595 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: CRA \u2014 TD1 2026 \u00b7 Line 44800 \u00b7 Required tax instalments \u00b7 2026 federal & Ontario rates \u00b7 Example estimate, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Maya worked two jobs last year. Both employers took tax off every single paycheque."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "Both did exactly what they were told to do."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "And in April, Maya's income tax bill was six thousand, five hundred and twenty-three dollars."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "So how can two employers both get it right, and still get it wrong? The answer is one box, on one form."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "And there's a second trap, one that can follow Maya into next year. Stay with me, we'll get to both."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 1.0,
+   "text": "Every number here uses twenty twenty-six federal and Ontario rates, for one example person. General information, not advice."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "Meet Maya. Ontario. Single. A day job that pays fifty-five thousand dollars a year."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "And an evening job that pays thirty-five thousand more. Ninety thousand in total. Our example, not a real person."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "On the first day at each job, Maya filled out the same form. The T D one, the personal tax credits return."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 1.0,
+   "text": "And on both forms, Maya claimed the basic personal amount. On a new job, that feels completely normal."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "Here's the thing about payroll. Each employer only sees its own job."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "The day job sees fifty-five thousand dollars. It has no idea the evening job exists."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "The evening job sees thirty-five thousand. It has no idea about the day job."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "So each one withholds tax as if its job were Maya's whole life."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "Our estimate: the day job withholds about seven thousand, one hundred and seventy-eight dollars of income tax. The evening job, about three thousand, three hundred and thirty-two."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 1.0,
+   "text": "Ten thousand, five hundred and ten dollars in total. Every paycheque looked fine."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "But the tax return doesn't look at jobs. It looks at Maya."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "Ninety thousand dollars of income, on one return. The tax on that: seventeen thousand and thirty-four dollars."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "Seventeen thousand and thirty-four owed, ten thousand, five hundred and ten withheld. The difference is the bill. Six thousand, five hundred and twenty-three."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "About five hundred and forty-four dollars for every month of the year that nobody set aside."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 1.0,
+   "text": "So where exactly did it come from? Two places."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "Leak number one: the personal amounts were counted twice."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "The basic personal amount is meant to be used once per person. Federally, sixteen thousand, four hundred and fifty-two dollars, at fourteen percent. In Ontario, twelve thousand, nine hundred and eighty-nine, at five point oh five percent."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "Claimed at both jobs, those credits reduced Maya's withholding twice. Together, about two thousand, nine hundred and fifty-nine dollars of tax that was never taken off."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "Leak number two is quieter, and it's bigger."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 0.35,
+   "text": "The evening job thinks thirty-five thousand dollars is Maya's entire income. So it withholds at the lowest rates: fourteen percent federal, five point oh five percent Ontario."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 0.35,
+   "text": "But on the return, those thirty-five thousand dollars sit on top of the day job. They land in higher brackets: twenty point five percent federal, and nine point one five in Ontario."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "About nineteen percent withheld on those dollars, up to almost thirty percent owed. That gap: about three thousand, five hundred and sixty-four dollars."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 1.0,
+   "text": "Two thousand, nine hundred and fifty-nine, plus three thousand, five hundred and sixty-four. That's the six thousand, five hundred and twenty-three."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "So here's the question people always ask. Does it matter how big the second job is?"
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "Let's run two more versions of Maya. Same day job, but the evening job pays only ten thousand dollars."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 0.35,
+   "text": "On its own, ten thousand dollars is below the basic personal amount. So the evening job withholds nothing. Zero income tax, all year."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "But on the return, those ten thousand dollars still sit on top of fifty-five thousand. The bill: about two thousand, five hundred and forty-eight dollars. From a job that never took a cent of tax."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "Version three: two equal jobs. Forty-five thousand dollars each. Same ninety thousand in total."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "Each employer withholds as if forty-five thousand were everything. Together, about ten thousand, four hundred and eighty-six dollars."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "The tax on ninety thousand is still seventeen thousand and thirty-four. The bill: about six thousand, five hundred and forty-eight. Almost exactly the same as before."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 1.0,
+   "text": "So it's not the size of the second job that creates the bill. It's the fact that each payroll only sees part of the picture."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "Now, one piece of good news on the return."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "E I premiums stop at sixty-eight thousand, nine hundred dollars of earnings for the year. But each employer deducts E I on its own pay."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "Maya paid one thousand, four hundred and sixty-seven dollars of E I. The yearly maximum is one thousand, one hundred and twenty-three. About three hundred and forty-four dollars comes back."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "C P P works the same way: when more than one employer deducts it, the return checks what you actually had to contribute, and an overpayment is refunded."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 1.0,
+   "text": "So a little comes back. But not six thousand dollars."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "So, the one box on one form."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "The T D one has a box on page two: more than one employer or payer at the same time."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "The C R A's rule: if you've already claimed your personal amounts with one employer, you can't claim them again with another. You tick that box, and enter zero as your total claim."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "Do that at the evening job, and leak number one is closed. That's about two thousand, nine hundred and fifty-nine dollars handled through payroll."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 0.35,
+   "text": "But leak number two is still open. The evening job still doesn't know it's sitting on top of fifty-five thousand dollars."
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "For that, the T D one has a second tool: additional tax to be deducted. You choose an extra amount to come off every pay."
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 1.0,
+   "text": "In Maya's case, about three thousand, five hundred dollars a year. Spread over twenty-six pay periods, roughly a hundred and thirty-seven dollars a cheque. That's our estimate. Your own number depends on your pay."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 0.35,
+   "text": "Now, the second trap. The one that follows you into next year."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "The C R A asks for tax instalments when your net tax owing is more than three thousand dollars this year, and also in either of the two previous years."
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.mp3",
+   "gap": 0.35,
+   "text": "Maya's balance was over three thousand. If the next year looks the same, instalments can be required, with payments due March fifteenth, June fifteenth, September fifteenth and December fifteenth."
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.mp3",
+   "gap": 1.0,
+   "text": "So fixing the forms now doesn't just avoid one bill. It keeps one bad year from turning into a schedule."
+  },
+  {
+   "id": "L54",
+   "file": "vo/L54.mp3",
+   "gap": 0.35,
+   "text": "And this isn't only about two jobs."
+  },
+  {
+   "id": "L55",
+   "file": "vo/L55.mp3",
+   "gap": 0.35,
+   "text": "The T D one rule is for anyone with more than one employer or payer at the same time. Each payer only sees its own payments."
+  },
+  {
+   "id": "L56",
+   "file": "vo/L56.mp3",
+   "gap": 1.0,
+   "text": "If a balance owing shows up every April, check how many payers you had, and what each one thinks your income is."
+  },
+  {
+   "id": "L57",
+   "file": "vo/L57.mp3",
+   "gap": 0.35,
+   "text": "So, what happened to Maya?"
+  },
+  {
+   "id": "L58",
+   "file": "vo/L58.mp3",
+   "gap": 0.35,
+   "text": "Both employers followed the rules they were given. The forms told each one that Maya had a single job."
+  },
+  {
+   "id": "L59",
+   "file": "vo/L59.mp3",
+   "gap": 0.35,
+   "text": "Fix one: claim your personal amounts with one employer only. Tick the box at the other job, and enter zero."
+  },
+  {
+   "id": "L60",
+   "file": "vo/L60.mp3",
+   "gap": 0.35,
+   "text": "Fix two: ask for additional tax to be deducted, so the second job withholds at your real rate."
+  },
+  {
+   "id": "L61",
+   "file": "vo/L61.mp3",
+   "gap": 1.0,
+   "text": "Fix three: if you already owe, look at whether instalment reminders could follow."
+  },
+  {
+   "id": "L62",
+   "file": "vo/L62.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: the same one hundred thousand dollar salary in Alberta, Manitoba and Ontario. One of them keeps thousands more. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "The bill"
+  },
+  {
+   "at": "L7",
+   "title": "01 \u00b7 Meet Maya"
+  },
+  {
+   "at": "L11",
+   "title": "02 \u00b7 The blind spot"
+  },
+  {
+   "at": "L17",
+   "title": "03 \u00b7 The return"
+  },
+  {
+   "at": "L22",
+   "title": "04 \u00b7 Leak #1"
+  },
+  {
+   "at": "L25",
+   "title": "05 \u00b7 Leak #2"
+  },
+  {
+   "at": "L30",
+   "title": "06 \u00b7 Does size matter?"
+  },
+  {
+   "at": "L38",
+   "title": "07 \u00b7 What comes back"
+  },
+  {
+   "at": "L43",
+   "title": "08 \u00b7 The one box"
+  },
+  {
+   "at": "L50",
+   "title": "09 \u00b7 The second trap"
+  },
+  {
+   "at": "L54",
+   "title": "10 \u00b7 Who else"
+  },
+  {
+   "at": "L57",
+   "title": "The fixes"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "stubs",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf07/plates/s1.jpg",
+      "depth": "lf/lf07/plates/s1_d.png",
+      "dim": 0.55
+     },
+     "kicker": "TWO JOBS \u00b7 ONE PERSON \u00b7 ONTARIO 2026",
+     "stubs": [
+      {
+       "head": "EMPLOYER A",
+       "tag": "DAY JOB",
+       "title": "MAYA \u00b7 $55,000",
+       "rows": [
+        {
+         "label": "INCOME TAX WITHHELD",
+         "value": "$7,178"
+        },
+        {
+         "label": "CPP \u00b7 EI",
+         "value": "\u2713"
+        },
+        {
+         "label": "TD1 \u00b7 PERSONAL AMOUNTS",
+         "value": "CLAIMED"
+        }
+       ]
+      },
+      {
+       "head": "EMPLOYER B",
+       "tag": "EVENINGS",
+       "title": "MAYA \u00b7 $35,000",
+       "rows": [
+        {
+         "label": "INCOME TAX WITHHELD",
+         "value": "$3,332"
+        },
+        {
+         "label": "CPP \u00b7 EI",
+         "value": "\u2713"
+        },
+        {
+         "label": "TD1 \u00b7 PERSONAL AMOUNTS",
+         "value": "CLAIMED"
+        }
+       ]
+      }
+     ],
+     "checkAt": [
+      {
+       "at": "L1",
+       "word": "Both"
+      },
+      {
+       "at": "L1",
+       "word": "single"
+      }
+     ],
+     "mergeAt": {
+      "at": "L2",
+      "word": "exactly"
+     },
+     "billAt": {
+      "at": "L3",
+      "word": "six"
+     },
+     "bill": {
+      "head": "TAX RETURN \u00b7 APRIL",
+      "label": "INCOME TAX STILL OWING",
+      "value": 6523,
+      "note": "EXAMPLE CALCULATION \u00b7 2026 RATES"
+     },
+     "qAt": {
+      "at": "L4",
+      "word": "how"
+     },
+     "question": "BOTH EMPLOYERS GOT IT RIGHT. SO WHY THE BILL?",
+     "out": {
+      "at": "L5",
+      "off": -0.9
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L5",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "TWO OPEN QUESTIONS",
+     "items": [
+      {
+       "n": "?",
+       "head": "THE ONE BOX ON ONE FORM",
+       "at": "L4",
+       "word": "answer"
+      },
+      {
+       "n": "?",
+       "head": "THE TRAP THAT FOLLOWS INTO NEXT YEAR",
+       "at": "L5",
+       "word": "second"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L6",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "2026 FEDERAL + ONTARIO RATES",
+       "size": 74,
+       "at": "L6"
+      },
+      {
+       "anim": "decode",
+       "text": "ONE EXAMPLE PERSON",
+       "size": 110,
+       "gold": true,
+       "at": "L6",
+       "word": "example"
+      },
+      {
+       "text": "GENERAL INFO \u00b7 NOT ADVICE",
+       "size": 50,
+       "at": "L6",
+       "word": "General"
+      }
+     ],
+     "kicker": "THE SETUP"
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L7",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "MEET MAYA \u00b7 ONTARIO \u00b7 SINGLE",
+     "sub": "EXAMPLE PERSON \u00b7 NOT A REAL CASE",
+     "labelW": 560,
+     "fs": 34,
+     "vs": 50,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "DAY JOB",
+       "value": 55000
+      },
+      {
+       "name": "EVENING JOB",
+       "value": 35000
+      },
+      {
+       "name": "TOTAL INCOME",
+       "value": 90000
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L7",
+       "word": "fifty-five"
+      },
+      {
+       "at": "L8",
+       "word": "thirty-five"
+      },
+      {
+       "at": "L8",
+       "word": "Ninety"
+      }
+     ],
+     "note": "TWO EMPLOYERS AT THE SAME TIME"
+    }
+   ]
+  },
+  {
+   "at": "L9",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L9",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 140,
+       "gold": true,
+       "seq": [
+        {
+         "text": "DAY 1 \u00b7 JOB A",
+         "t": 0
+        },
+        {
+         "text": "FORM TD1",
+         "at": "L9",
+         "word": "T D"
+        }
+       ],
+       "at": "L9"
+      },
+      {
+       "text": "PERSONAL TAX CREDITS RETURN",
+       "size": 54,
+       "at": "L9",
+       "word": "personal"
+      }
+     ],
+     "kicker": "THE FORM"
+    }
+   ]
+  },
+  {
+   "at": "L10",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 250,
+     "w": 1400,
+     "at": "L10",
+     "fxIn": "slideL",
+     "fxOut": "collapse",
+     "title": "WHAT MAYA CLAIMED",
+     "items": [
+      {
+       "n": "A",
+       "head": "JOB A: BASIC PERSONAL AMOUNT \u2713",
+       "at": "L10",
+       "word": "both"
+      },
+      {
+       "n": "B",
+       "head": "JOB B: BASIC PERSONAL AMOUNT \u2713",
+       "at": "L10",
+       "word": "basic"
+      },
+      {
+       "n": "!",
+       "head": "FEELS NORMAL ON A NEW JOB",
+       "at": "L10",
+       "word": "normal"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 340,
+     "w": 1600,
+     "at": "L11",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "EACH PAYROLL SEES ONE JOB",
+       "size": 110,
+       "gold": true,
+       "at": "L11",
+       "word": "Each"
+      }
+     ],
+     "kicker": "THE BLIND SPOT"
+    }
+   ]
+  },
+  {
+   "at": "L12",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L12",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "WHAT EACH EMPLOYER KNOWS",
+     "items": [
+      {
+       "n": "A",
+       "head": "SEES $55,000 \u00b7 NOTHING ELSE",
+       "at": "L12",
+       "word": "sees"
+      },
+      {
+       "n": "B",
+       "head": "SEES $35,000 \u00b7 NOTHING ELSE",
+       "at": "L13",
+       "word": "sees"
+      },
+      {
+       "n": "=",
+       "head": "EACH JOB TREATED AS THE WHOLE INCOME",
+       "at": "L14",
+       "word": "whole"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L15",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "INCOME TAX WITHHELD IN 2026 (ESTIMATE)",
+     "sub": "EACH JOB ALONE \u00b7 BOTH TD1s CLAIM PERSONAL AMOUNTS",
+     "labelW": 560,
+     "fs": 34,
+     "vs": 50,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "DAY JOB",
+       "value": 7178
+      },
+      {
+       "name": "EVENING JOB",
+       "value": 3332
+      },
+      {
+       "name": "TOTAL WITHHELD",
+       "value": 10510
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L15",
+       "word": "seven"
+      },
+      {
+       "at": "L15",
+       "word": "evening"
+      },
+      {
+       "at": "L16",
+       "word": "Ten"
+      }
+     ],
+     "note": "EVERY PAYCHEQUE LOOKED FINE"
+    }
+   ]
+  },
+  {
+   "at": "L17",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L17",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 130,
+       "gold": true,
+       "seq": [
+        {
+         "text": "THE RETURN \u2260 THE JOBS",
+         "t": 0
+        },
+        {
+         "text": "THE RETURN = MAYA",
+         "at": "L17",
+         "word": "Maya"
+        }
+       ],
+       "at": "L17"
+      }
+     ],
+     "kicker": "APRIL"
+    }
+   ]
+  },
+  {
+   "at": "L18",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "formula",
+     "x": 300,
+     "y": 330,
+     "w": 1320,
+     "at": "L18",
+     "fxIn": "slideR",
+     "fxOut": "defocus",
+     "title": "ONE RETURN \u00b7 $90,000",
+     "sub": "2026 \u00b7 ONTARIO",
+     "steps": [
+      {
+       "text": "OWED",
+       "at": "L18",
+       "word": "tax"
+      },
+      {
+       "value": 17034,
+       "at": "L18",
+       "word": "seventeen"
+      },
+      {
+       "text": "\u2212",
+       "op": true,
+       "at": "L19",
+       "word": "ten"
+      },
+      {
+       "value": 10510,
+       "at": "L19",
+       "word": "withheld"
+      },
+      {
+       "text": "=",
+       "op": true,
+       "at": "L19",
+       "word": "difference"
+      },
+      {
+       "result": true,
+       "value": 6523,
+       "at": "L19",
+       "word": "Six"
+      }
+     ],
+     "takeaway": {
+      "text": "\u2248 $544 A MONTH THAT NOBODY SET ASIDE",
+      "at": "L20"
+     }
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L21",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "2 LEAKS",
+       "size": 200,
+       "gold": true,
+       "at": "L21",
+       "word": "Two"
+      }
+     ],
+     "kicker": "WHERE DID IT COME FROM?"
+    }
+   ]
+  },
+  {
+   "at": "L22",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 170,
+     "w": 1400,
+     "at": "L22",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "LEAK #1 \u00b7 PERSONAL AMOUNTS COUNTED TWICE",
+     "items": [
+      {
+       "n": "FED",
+       "head": "$16,452 \u00d7 14% = $2,303",
+       "at": "L23",
+       "word": "Federally"
+      },
+      {
+       "n": "ON",
+       "head": "$12,989 \u00d7 5.05% = $656",
+       "at": "L23",
+       "word": "Ontario"
+      },
+      {
+       "n": "2\u00d7",
+       "head": "CLAIMED AT BOTH JOBS",
+       "at": "L24",
+       "word": "both"
+      },
+      {
+       "n": "=",
+       "head": "\u2248 $2,959 NEVER WITHHELD",
+       "at": "L24",
+       "word": "Together"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L25",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 140,
+       "gold": true,
+       "seq": [
+        {
+         "text": "LEAK #2",
+         "t": 0
+        },
+        {
+         "text": "QUIETER \u00b7 BIGGER",
+         "at": "L25",
+         "word": "quieter"
+        }
+       ],
+       "at": "L25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L26",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L26",
+     "fxIn": "slideL",
+     "fxOut": "collapse",
+     "title": "THE EVENING JOB\u2019S $35,000 \u00b7 RATE ON THOSE DOLLARS",
+     "items": [
+      {
+       "n": "19%",
+       "head": "WITHHELD AT: 14% FED + 5.05% ON (JOB ALONE)",
+       "at": "L26",
+       "word": "fourteen"
+      },
+      {
+       "n": "30%",
+       "head": "OWED AT: UP TO 20.5% FED + 9.15% ON (ON TOP OF $55K)",
+       "at": "L27",
+       "word": "twenty"
+      },
+      {
+       "n": "=",
+       "head": "\u2248 $3,564 GAP",
+       "at": "L28",
+       "word": "gap"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L28",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "formula",
+     "x": 300,
+     "y": 330,
+     "w": 1320,
+     "at": "L28",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "THE BILL, TAKEN APART",
+     "sub": "ESTIMATE",
+     "steps": [
+      {
+       "value": 2959,
+       "at": "L29",
+       "word": "Two"
+      },
+      {
+       "text": "+",
+       "op": true,
+       "at": "L29",
+       "word": "plus"
+      },
+      {
+       "value": 3564,
+       "at": "L28",
+       "word": "gap"
+      },
+      {
+       "text": "=",
+       "op": true,
+       "at": "L29",
+       "word": "That"
+      },
+      {
+       "result": true,
+       "value": 6523,
+       "at": "L29",
+       "word": "six"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L30",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 130,
+       "gold": true,
+       "seq": [
+        {
+         "text": "DOES SIZE MATTER?",
+         "t": 0
+        },
+        {
+         "text": "3 VERSIONS OF MAYA",
+         "at": "L31",
+         "word": "two more"
+        }
+       ],
+       "at": "L30"
+      }
+     ],
+     "kicker": "THE TEST"
+    }
+   ]
+  },
+  {
+   "at": "L31",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L31",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "EVENING JOB ONLY $10,000",
+     "sub": "DAY JOB $55,000 \u00b7 ESTIMATE",
+     "labelW": 560,
+     "fs": 34,
+     "vs": 50,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "WITHHELD BY THE $10K JOB",
+       "value": 0
+      },
+      {
+       "name": "BILL ON THE RETURN",
+       "value": 2548
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L32",
+       "word": "nothing"
+      },
+      {
+       "at": "L33",
+       "word": "bill"
+      }
+     ],
+     "note": "BELOW THE BASIC PERSONAL AMOUNT ON ITS OWN \u2192 NO TAX WITHHELD"
+    }
+   ]
+  },
+  {
+   "at": "L34",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L34",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "THREE VERSIONS \u00b7 SAME $90,000?",
+     "sub": "BILL ON THE RETURN \u00b7 ESTIMATE",
+     "labelW": 560,
+     "fs": 34,
+     "vs": 50,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "$55K + $10K",
+       "value": 2548
+      },
+      {
+       "name": "$55K + $35K",
+       "value": 6523
+      },
+      {
+       "name": "$45K + $45K",
+       "value": 6548
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L34",
+       "word": "Version"
+      },
+      {
+       "at": "L35",
+       "word": "Each"
+      },
+      {
+       "at": "L36",
+       "word": "bill"
+      }
+     ],
+     "note": "IT\u2019S NOT THE SIZE \u00b7 IT\u2019S THAT EACH PAYROLL SEES PART"
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L37",
+     "glass": false,
+     "fxIn": "wipe",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "text": "NOT THE SIZE OF THE SECOND JOB",
+       "size": 74,
+       "at": "L37"
+      },
+      {
+       "anim": "decode",
+       "text": "EACH PAYROLL SEES PART",
+       "size": 110,
+       "gold": true,
+       "at": "L37",
+       "word": "payroll"
+      }
+     ],
+     "kicker": "THE PATTERN"
+    }
+   ]
+  },
+  {
+   "at": "L38",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 170,
+     "w": 1400,
+     "at": "L38",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "A LITTLE COMES BACK",
+     "items": [
+      {
+       "n": "EI",
+       "head": "PAID $1,467 \u00b7 MAX $1,123.07",
+       "at": "L40",
+       "word": "paid",
+       "text": "1.63% up to $68,900 of earnings per year, deducted by each employer"
+      },
+      {
+       "n": "+",
+       "head": "\u2248 $343.93 REFUNDED ON THE RETURN",
+       "at": "L40",
+       "word": "comes back"
+      },
+      {
+       "n": "CPP",
+       "head": "OVERPAYMENT CHECKED ON THE RETURN",
+       "at": "L41",
+       "word": "C P P",
+       "text": "Schedule 8 \u00b7 line 44800"
+      },
+      {
+       "n": "\u2260",
+       "head": "NOT $6,000",
+       "at": "L42",
+       "word": "not"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L43",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE ONE BOX",
+       "size": 170,
+       "gold": true,
+       "at": "L43",
+       "word": "box"
+      }
+     ],
+     "kicker": "OPEN QUESTION #1"
+    }
+   ]
+  },
+  {
+   "at": "L44",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L44",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "FORM TD1 \u00b7 PAGE 2",
+     "items": [
+      {
+       "n": "\u2611",
+       "head": "MORE THAN ONE EMPLOYER OR PAYER AT THE SAME TIME",
+       "at": "L44",
+       "word": "more"
+      },
+      {
+       "n": "0",
+       "head": "TOTAL CLAIM AMOUNT = 0 AT THE SECOND JOB",
+       "at": "L45",
+       "word": "zero",
+       "text": "Personal amounts already claimed with another employer"
+      },
+      {
+       "n": "\u2713",
+       "head": "LEAK #1 CLOSED \u00b7 \u2248 $2,959",
+       "at": "L46",
+       "word": "closed"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L47",
+     "fxIn": "slideL",
+     "fxOut": "collapse",
+     "title": "LEAK #2 \u00b7 STILL OPEN",
+     "items": [
+      {
+       "n": "!",
+       "head": "THE EVENING JOB STILL SEES ONLY $35,000",
+       "at": "L47",
+       "word": "still"
+      },
+      {
+       "n": "+",
+       "head": "TD1: ADDITIONAL TAX TO BE DEDUCTED",
+       "at": "L48",
+       "word": "additional"
+      },
+      {
+       "n": "\u2248",
+       "head": "\u2248 $137 PER BIWEEKLY PAY (ESTIMATE)",
+       "at": "L49",
+       "word": "twenty-six"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L50",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE SECOND TRAP",
+       "size": 150,
+       "gold": true,
+       "at": "L50",
+       "word": "second"
+      }
+     ],
+     "kicker": "OPEN QUESTION #2"
+    }
+   ]
+  },
+  {
+   "at": "L51",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L51",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "TAX INSTALMENTS \u00b7 THE TEST",
+     "items": [
+      {
+       "n": "1",
+       "head": "NET TAX OWING > $3,000 THIS YEAR",
+       "at": "L51",
+       "word": "three"
+      },
+      {
+       "n": "2",
+       "head": "AND > $3,000 IN EITHER OF THE 2 PREVIOUS YEARS",
+       "at": "L51",
+       "word": "either"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L52",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "timeline",
+     "x": 200,
+     "y": 330,
+     "w": 1520,
+     "at": "L52",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "IF REQUIRED \u00b7 INSTALMENT DUE DATES",
+     "sub": "CRA",
+     "points": [
+      {
+       "date": "MAR 15",
+       "label": "PAYMENT 1",
+       "at": "L52",
+       "word": "March"
+      },
+      {
+       "date": "JUN 15",
+       "label": "PAYMENT 2",
+       "at": "L52",
+       "word": "June"
+      },
+      {
+       "date": "SEP 15",
+       "label": "PAYMENT 3",
+       "at": "L52",
+       "word": "September"
+      },
+      {
+       "date": "DEC 15",
+       "label": "PAYMENT 4",
+       "at": "L52",
+       "word": "December"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L53",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L53",
+     "glass": false,
+     "fxIn": "morph",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "text": "ONE BAD YEAR",
+       "size": 90,
+       "at": "L53"
+      },
+      {
+       "anim": "decode",
+       "text": "\u2260 A SCHEDULE",
+       "size": 130,
+       "gold": true,
+       "at": "L53",
+       "word": "schedule"
+      }
+     ],
+     "kicker": "WHY FIX IT NOW"
+    }
+   ]
+  },
+  {
+   "at": "L54",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L54",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "NOT ONLY TWO JOBS",
+     "items": [
+      {
+       "n": "1",
+       "head": "ANY 2+ EMPLOYERS OR PAYERS AT THE SAME TIME",
+       "at": "L55",
+       "word": "anyone"
+      },
+      {
+       "n": "2",
+       "head": "EACH PAYER SEES ONLY ITS OWN PAYMENTS",
+       "at": "L55",
+       "word": "Each"
+      },
+      {
+       "n": "?",
+       "head": "BALANCE OWING EVERY APRIL? COUNT YOUR PAYERS",
+       "at": "L56",
+       "word": "check"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L57",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L57",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 120,
+       "gold": true,
+       "seq": [
+        {
+         "text": "SO WHAT HAPPENED?",
+         "t": 0
+        },
+        {
+         "text": "THE FORMS SAID: ONE JOB",
+         "at": "L58",
+         "word": "forms"
+        }
+       ],
+       "at": "L57"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L59",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 230,
+     "w": 1400,
+     "at": "L59",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "MAYA'S 3 FIXES",
+     "items": [
+      {
+       "n": "1",
+       "head": "PERSONAL AMOUNTS AT ONE EMPLOYER ONLY",
+       "at": "L59",
+       "word": "one"
+      },
+      {
+       "n": "2",
+       "head": "ADDITIONAL TAX AT THE SECOND JOB",
+       "at": "L60",
+       "word": "additional"
+      },
+      {
+       "n": "3",
+       "head": "OWED > $3,000? WATCH FOR INSTALMENT REMINDERS",
+       "at": "L61",
+       "word": "instalment"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L62",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L62",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 130,
+       "gold": true,
+       "seq": [
+        {
+         "text": "SAME $100,000",
+         "t": 0
+        },
+        {
+         "text": "AB \u00b7 MB \u00b7 ON",
+         "at": "L62",
+         "word": "Alberta"
+        }
+       ],
+       "at": "L62"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L62",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.1
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.0
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L8",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -50,
+     "y": 10,
+     "z": 0.2
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.22
+    }
+   ]
+  },
+  {
+   "at": "L17",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L22",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.15
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": 0,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L38",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": -60,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "plate": "s7",
+   "cam": [
+    {
+     "x": 10,
+     "y": 0,
+     "z": 0.3
+    },
+    {
+     "x": -10,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L54",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L57",
+   "plate": "s8",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.18
+    },
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf07/plates/s1.jpg",
+    "depth": "lf/lf07/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf07/plates/s2.jpg",
+    "depth": "lf/lf07/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf07/plates/s3.jpg",
+    "depth": "lf/lf07/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf07/plates/s4.jpg",
+    "depth": "lf/lf07/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf07/plates/s5.jpg",
+    "depth": "lf/lf07/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf07/plates/s6.jpg",
+    "depth": "lf/lf07/plates/s6_d.png",
+    "amt": 0.05
+   }
+  },
+  "s7": {
+   "photo": {
+    "src": "lf/lf07/plates/s7.jpg",
+    "depth": "lf/lf07/plates/s7_d.png",
+    "amt": 0.05
+   }
+  },
+  "s8": {
+   "photo": {
+    "src": "lf/lf07/plates/s8.jpg",
+    "depth": "lf/lf07/plates/s8_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L5"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L4",
+   "word": "answer"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L5",
+   "word": "second"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L7",
+   "word": "fifty-five"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "thirty-five"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "Ninety"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L9"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L10"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10",
+   "word": "both"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10",
+   "word": "basic"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10",
+   "word": "normal"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L12"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L12",
+   "word": "sees"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "sees"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "whole"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L15"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "seven"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "evening"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "Ten"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L17"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L18"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "tax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "seventeen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "ten"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "withheld"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "difference"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "Six"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L21"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L22"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "Federally"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "both"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "Together"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L25"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L26"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L26",
+   "word": "fourteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L27",
+   "word": "twenty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "gap"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L28"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "Two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "plus"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "gap"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "That"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "six"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L30"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L31"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "nothing"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "bill"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L34"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "Version"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "Each"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "bill"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L37"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L38"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "paid"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "comes back"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "C P P"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L42",
+   "word": "not"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L44"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L44",
+   "word": "more"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "zero"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L46",
+   "word": "closed"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L47"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L47",
+   "word": "still"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L48",
+   "word": "additional"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L49",
+   "word": "twenty-six"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L50"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L51"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L51",
+   "word": "three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L51",
+   "word": "either"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L52"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "March"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "June"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "September"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "December"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L53"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L54"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L55",
+   "word": "anyone"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L55",
+   "word": "Each"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L56",
+   "word": "check"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L57"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L59"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L59",
+   "word": "one"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L60",
+   "word": "additional"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L61",
+   "word": "instalment"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L62"
+  },
+  {
+   "name": "tick",
+   "vol": 0.16,
+   "at": "L1",
+   "word": "Both"
+  },
+  {
+   "name": "tick",
+   "vol": 0.16,
+   "at": "L1",
+   "word": "single"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.14,
+   "at": "L2",
+   "word": "exactly"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.2,
+   "at": "L3",
+   "word": "six"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L8"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L17"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L22"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L25"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L30"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L38"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L50"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L54"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L57"
+  }
+ ],
+ "ticker": [
+  "JOB A $55,000 \u2192 WITHHELD \u2248 $7,178",
+  "JOB B $35,000 \u2192 WITHHELD \u2248 $3,332",
+  "TAX ON $90,000: $17,034",
+  "BILL \u2248 $6,523",
+  "TD1: ONE SET OF PERSONAL AMOUNTS",
+  "TD1: ADDITIONAL TAX TO BE DEDUCTED",
+  "INSTALMENTS: > $3,000 TEST",
+  "EI MAX 2026: $1,123.07",
+  "2026 RATES \u00b7 ONTARIO EXAMPLE"
+ ],
+ "audio": "lf/lf07/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

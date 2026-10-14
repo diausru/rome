@@ -194,4 +194,49 @@ const CollageHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook };
+
+// ---------- StubsHook: frame-0 hook — two pay stubs that both look "correct" collide; a bill drops with the surprise amount ----------
+// Beats (resolved times): checkAt (green ✓ on each stub) → mergeAt (stubs slide together and shrink) → billAt (bill drops, amount rolls) → qAt (question) → out.
+const StubsHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const ck = (i: number) => (p.checkAt ? prog(now, p.checkAt[i]?.t ?? p.checkAt[0].t, 0.5, BACK) : 1);
+  const mg = p.mergeAt ? prog(now, p.mergeAt.t, 0.9, INOUT) : 0;
+  const bk = p.billAt ? prog(now, p.billAt.t, 0.8, BACK) : 0; const ba = p.billAt ? cl((now - p.billAt.t) / 0.2) : 0;
+  const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const shake = p.billAt && now > p.billAt.t && now < p.billAt.t + 0.35 ? Math.sin((now - p.billAt.t) * 90) * 8 * (1 - (now - p.billAt.t) / 0.35) : 0;
+  const stubs = p.stubs as Pn[];
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden', transform: `translate(${shake}px, ${shake * 0.4}px)` }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.05} cam={{ x: Math.sin(el * 0.2) * 0.6, y: 0, z: 0.1 + 0.2 * cl(el / 12) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.72})` }} /></div>}
+      <div style={{ position: 'absolute', left: '50%', top: '30%', width: 1400, height: 1000, marginLeft: -700, borderRadius: '50%', background: `radial-gradient(closest-side, rgba(213,43,30,${0.35 * bk}), transparent)` }} />
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 46, textAlign: 'center', fontFamily: COND, fontSize: 36, letterSpacing: 10, color: C.gold, opacity: 1 - out }}>{p.kicker}</div>
+      {stubs.map((s, i) => {
+        const side = i === 0 ? -1 : 1; const bx = 960 + side * 430 - 300; const tx = -side * 300 * mg; const sc = 1 - 0.28 * mg; const ry = side * -8 * (1 - mg);
+        const k = ck(i);
+        return (
+          <div key={i} style={{ position: 'absolute', left: bx, top: 150, width: 600, padding: '30px 36px 34px', borderRadius: 14, background: '#F4F1EA', color: '#1a1d24', fontFamily: COND,
+            boxShadow: '0 40px 100px rgba(0,0,0,.6)', transform: `translate(${tx + (out * side * 900)}px, ${mg * 40 + Math.sin(el * 0.6 + i) * 5}px) rotate(${side * 3 * (1 - mg) + Math.sin(el * 0.4 + i) * 0.5}deg) scale(${sc}) perspective(1200px) rotateY(${ry}deg)`, opacity: (1 - out) * (1 - 0.55 * bk) }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 24, letterSpacing: 4, color: '#6b6f78' }}><span>{s.head}</span><span>{s.tag}</span></div>
+            <div style={{ fontSize: 54, fontWeight: 700, margin: '6px 0 14px' }}>{s.title}</div>
+            {(s.rows as Pn[]).map((r, j) => (
+              <div key={j} style={{ display: 'flex', justifyContent: 'space-between', fontSize: 32, padding: '8px 0', borderTop: '1px solid rgba(0,0,0,.10)' }}>
+                <span>{r.label}</span><span style={{ fontWeight: 700, color: r.red ? '#B8432F' : '#1a1d24' }}>{r.value}</span></div>))}
+            <div style={{ position: 'absolute', right: 26, bottom: -30, transform: `scale(${k}) rotate(-8deg)`, padding: '10px 22px', borderRadius: 10, background: '#2E8B57', color: '#fff', fontSize: 34, fontWeight: 700, letterSpacing: 3, boxShadow: '0 10px 30px rgba(46,139,87,.5)' }}>✓ {s.ok ?? 'TAX DEDUCTED'}</div>
+          </div>);
+      })}
+      {p.billAt && now >= p.billAt.t && (
+        <div style={{ position: 'absolute', left: 960 - 420, top: 300, width: 840, padding: '34px 44px', borderRadius: 16, background: '#FFFDF7', color: '#1a1d24', fontFamily: COND, textAlign: 'center',
+          boxShadow: '0 60px 140px rgba(0,0,0,.75), 0 0 0 4px rgba(213,43,30,.85)', transform: `translateY(${(1 - bk) * -900 + out * 1100}px) rotate(${(1 - bk) * 12 - 1.5}deg)`, opacity: ba }}>
+          <div style={{ fontSize: 28, letterSpacing: 6, color: '#6b6f78' }}>{p.bill.head}</div>
+          <div style={{ fontSize: 40, fontWeight: 700, letterSpacing: 3, marginTop: 6 }}>{p.bill.label}</div>
+          <div style={{ color: '#C0392B', fontWeight: 700, marginTop: 8 }}><RollNumber value={p.bill.value} t={p.billAt.t + 0.25} now={now} size={170} dur={1.6} /></div>
+          <div style={{ fontSize: 26, letterSpacing: 3, color: '#6b6f78', marginTop: 4 }}>{p.bill.note}</div>
+        </div>)}
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 860, textAlign: 'center', fontFamily: COND, fontSize: 56, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out), transform: `translateY(${(1 - qk) * 30}px)` }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook };

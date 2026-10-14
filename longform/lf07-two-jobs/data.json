@@ -1,0 +1,45 @@
+{
+ "A": 55000,
+ "B": 35000,
+ "total": 90000,
+ "tax_A": 7178,
+ "tax_B": 3332,
+ "withheld": 10510,
+ "owed": 17034,
+ "gap": 6523,
+ "fed_A": 4632,
+ "fed_B": 2044,
+ "fed_tot": 11252,
+ "prov_A": 2546,
+ "prov_B": 1288,
+ "prov_tot": 5782,
+ "ei_deducted": 1467.0,
+ "ei_max": 1123.07,
+ "ei_over": 343.93,
+ "marg_B_alone": 19.05,
+ "marg_tot": 29.65,
+ "gap_month": 544,
+ "per_pay26": 251,
+ "bpa_double": 2959,
+ "bracket_part": 3564,
+ "after_td1_gap": 3564,
+ "after_td1_per_pay26": 137,
+ "scen": {
+  "55000_10000": {
+   "A": 55000,
+   "B": 10000,
+   "withheld": 7178,
+   "owed": 9725,
+   "gap": 2548,
+   "tax_B_alone": 0
+  },
+  "45000_45000": {
+   "A": 45000,
+   "B": 45000,
+   "withheld": 10486,
+   "owed": 17034,
+   "gap": 6548,
+   "tax_B_alone": 5243
+  }
+ }
+}
