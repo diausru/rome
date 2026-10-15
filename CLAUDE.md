@@ -147,6 +147,12 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Opening hook: topic readable on frame 0, then staged reveals (floating tags from different sides, mask headline, emphasized number/question, transition). Panels and rows light up gold as the narration reaches them; numbers count up to the verified value; one shared timeline drives visuals, captions and SFX.
 - Verified numbers live in `<project>/data.json` generated from the calculation; presentation code never computes or edits them. No Kling / video-generation model; simulated motion is never described as live-action footage. Nothing is published or scheduled without explicit approval.
 
+## Cover frame strategy (user, 2026-10-15; full text `channel/COVER-FRAME-STRATEGY.md`)
+
+- Every Short/Reel/TikTok is designed with a deliberate cover moment: a stable, fully rendered, scroll-stopping frame (key figure/question + subject visible, no transition/blur), chosen per video (not a fixed timestamp), natural in the edit. Record timestamp + why + frame description, extract and check that exact frame in the render.
+- IG Reels / TikTok via Metricool: `info.videoCoverMilliseconds` (verified in the schema 2026-10-15; TikTok only for Business-connected accounts). Never report a cover as configured unless read back and verified; otherwise mark manual/unsupported with the timestamp.
+- YouTube Shorts: document the recommended timestamp only; the user selects the cover manually (never via Metricool).
+
 ## Metricool: only on command (user, 2026-10-07)
 
 - Never create, update or schedule anything in Metricool unless the user explicitly says so for that video. Per video: make the video, run the analysis and the publishing package, then STOP and wait. Prepared payloads may sit in `channel/metricool/schedule.json`, but nothing is sent.
