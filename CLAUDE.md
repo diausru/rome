@@ -147,12 +147,14 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Opening hook: topic readable on frame 0, then staged reveals (floating tags from different sides, mask headline, emphasized number/question, transition). Panels and rows light up gold as the narration reaches them; numbers count up to the verified value; one shared timeline drives visuals, captions and SFX.
 - Verified numbers live in `<project>/data.json` generated from the calculation; presentation code never computes or edits them. No Kling / video-generation model; simulated motion is never described as live-action footage. Nothing is published or scheduled without explicit approval.
 
-## Cover frame strategy (user, 2026-10-15; full text verbatim + implementation notes in `channel/COVER-FRAME.md`; from the next video, all Shorts/Reels, card and handwritten)
+## Cover frame strategy (user, 2026-10-15; full text `channel/COVER-FRAME-STRATEGY.md`)
 
-- Plan the cover with the concept: choose a per-video timestamp (never a fixed default) where a fully rendered, stable, sharp frame states the topic with a clear hook (hero number / question / circled result), no misleading promise, no artificial pause; mark it in the timeline as `cover {t, why, visual, text}`.
-- QC: extract the frame at `t` from the final MP4 → `<project>/cover.jpg`, check it visually (and stability at t ± 0.25 s).
-- PUBLISH.md / publish.json get a COVER section: per-platform strategy, timestamp, visual + text, "checked in render", Metricool status (configured / verified / manual action required / unsupported), and for YouTube Shorts "cover selected manually by the user".
-- Metricool `videoCoverMilliseconds` exists per the tool schema (IG Reel; TikTok Business accounts only) but is not yet verified on a real post; use it for IG/TikTok only, never for YouTube Shorts (separate post without a cover field), and only when the user orders publishing. Never call a cover "configured" unless read back, nor "verified" unless seen on the platform.
+- Every Short/Reel/TikTok is designed with a deliberate cover moment: a stable, fully rendered, scroll-stopping frame (key figure/question + subject visible, no transition/blur), chosen per video (not a fixed timestamp), natural in the edit. Record timestamp + why + frame description, extract and check that exact frame in the render.
+- IG Reels / TikTok via Metricool: `info.videoCoverMilliseconds` (verified in the schema 2026-10-15; TikTok only for Business-connected accounts). Never report a cover as configured unless read back and verified; otherwise mark manual/unsupported with the timestamp.
+- YouTube Shorts: document the recommended timestamp only; the user selects the cover manually (never via Metricool).
+- Card series: the cover is a `cover` cue in `<project>/reel.json` on a settled frame (hook text + key figure + person, no transition), different per video; extract and check that exact frame from the final MP4 and record it in `<project>/publish.json` → `cover` and in PUBLISH.md (procedure in the strategy file).
+- Handwritten "Real Tax Math" series: the cover is a `cover` mark in `film.py` on a settled frame (circled/underlined result or the hook question fully written, pen clear of the key figure, no camera move), extracted and checked the same way (section "Handwritten series" in the strategy file).
+
 
 ## Metricool: only on command (user, 2026-10-07)
 
