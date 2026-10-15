@@ -12,3 +12,63 @@
 - If conditions are not met the request is rejected (VIDEO_THUMBNAIL_NOT_APPLICABLE) → omit the field rather than sending it speculatively.
 - Whether our TikTok account is Business-connected: not yet verified → check before the first TikTok post; after scheduling, read the post back (getScheduledPosts) to confirm the field was stored.
 - Long-form YouTube videos: thumbnail made by the user (unchanged).
+
+## Card series (motion engine v1) — how the rule is applied (2026-10-15)
+
+- The cover moment is planned in `<project>/reel.json` as a cue (`"id": "cover"`) placed on a beat where the hook text, the key figure and the person in the plate are all fully settled (not inside a SceneCuts whip, not during an entrance/exit, captions not covering the figure). It must arise naturally from the edit; no extra pause is added only for the cover.
+- Different per video (hook type differs per the Variety rule, so the cover moment differs too).
+- QC: extract that exact frame from the final MP4 (`ffmpeg -ss <t> -frames:v 1 <p>/cover.jpg`), look at it, and record in `<project>/publish.json` → `cover`: {timestamp_s, ms, frame, why, visual_text, checked_in_render, metricool_ig, metricool_tiktok, youtube: "manual — the user selects the cover"}.
+- Metricool status stays "manual action required" until a post is actually scheduled on the user's command with `info.videoCoverMilliseconds` and read back.
+
+## Full text of the rule (user, 2026-10-15, verbatim)
+
+COVER FRAME STRATEGY — INSTAGRAM REELS, TIKTOK AND YOUTUBE SHORTS
+This rule applies to every video generation, editing, animation, and publishing workflow.
+1. Instagram Reels and TikTok — automatic cover selection through Metricool
+
+* Design every video with a deliberate cover-frame strategy from the beginning.
+* Choose a specific timestamp in the video that will work best as the cover when Metricool publishes the post.
+* At that exact moment, create a visually strong, attention-grabbing frame that works as a standalone thumbnail.
+* The cover frame must have a clear visual hook, strong composition, readable on-screen text when appropriate, and an immediate reason to stop scrolling.
+* For real estate videos, prioritize a compelling property reveal, a striking interior or exterior, a visually interesting architectural detail, or a strong property-related question.
+* Do not choose a frame that is blurry, transitional, visually incomplete, obscured by animation, or missing essential text.
+* Make the selected frame consistent with the video's opening hook and the overall content strategy.
+* Keep the property visible and avoid placing text over important architectural features.
+* When planning the animation timeline, deliberately schedule the cover-worthy moment at the timestamp that Metricool will use.
+* Record the chosen cover timestamp and explain briefly why it was selected in the production metadata or timeline notes.
+
+2. Cover timing and retention strategy
+
+* Do not use the same fixed timestamp for every video without evaluating the content.
+* Select the optimal cover timestamp for each video based on its hook, visual sequence, pacing, and the available cover-selection options in Metricool.
+* The cover frame should create curiosity and communicate the video's subject immediately, without misleading viewers or promising something the video does not deliver.
+* Where appropriate, combine a strong visual reveal with a short hook, question, surprising detail, or key property feature.
+* The cover-worthy moment must also work naturally within the video. Do not insert an awkward pause or an artificial scene solely to create a thumbnail.
+* Ensure the selected frame is fully rendered and stable at the exact timestamp, including any text, graphics, labels, and visual effects intended to appear in the cover.
+
+3. YouTube Shorts — manual cover selection
+
+* Apply the same cover-frame planning and visual-quality principles to YouTube Shorts.
+* Identify and document the recommended cover timestamp for every Short.
+* Do not attempt to select or publish the YouTube Shorts cover automatically through Metricool. I will select the cover manually.
+* Make sure the recommended frame is easy to locate in the exported video and visually suitable for the platform.
+
+4. Metricool publishing workflow
+
+* For Instagram Reels and TikTok, configure the publishing workflow to use the selected cover timestamp, provided the current Metricool integration and platform publishing options support it.
+* Verify the actual available cover-selection controls before implementation. Do not assume that Metricool supports automatic timestamp selection through its API or integration if that capability has not been confirmed.
+* If automatic cover selection is unavailable, document the limitation and provide the exact recommended timestamp for manual selection.
+* Never report a cover as configured unless the setting has actually been applied and verified.
+* Keep Instagram/TikTok cover selection separate from YouTube Shorts, where cover selection remains manual.
+
+5. Required production checklist
+For every video, include:
+
+* Platform-specific cover strategy.
+* Recommended cover timestamp.
+* Description of the visual and text displayed at that moment.
+* Confirmation that the frame has been checked in the rendered video.
+* Metricool cover-setting status: configured, verified, manual action required, or unsupported.
+* For YouTube Shorts: a clear note that I must select the cover manually.
+
+Treat cover selection as a required part of the video concept, animation timeline, quality control, and publishing workflow — not as an afterthought.

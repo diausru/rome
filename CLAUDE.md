@@ -152,6 +152,7 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Every Short/Reel/TikTok is designed with a deliberate cover moment: a stable, fully rendered, scroll-stopping frame (key figure/question + subject visible, no transition/blur), chosen per video (not a fixed timestamp), natural in the edit. Record timestamp + why + frame description, extract and check that exact frame in the render.
 - IG Reels / TikTok via Metricool: `info.videoCoverMilliseconds` (verified in the schema 2026-10-15; TikTok only for Business-connected accounts). Never report a cover as configured unless read back and verified; otherwise mark manual/unsupported with the timestamp.
 - YouTube Shorts: document the recommended timestamp only; the user selects the cover manually (never via Metricool).
+- Card series: the cover is a `cover` cue in `<project>/reel.json` on a settled frame (hook text + key figure + person, no transition), different per video; extract and check that exact frame from the final MP4 and record it in `<project>/publish.json` → `cover` and in PUBLISH.md (procedure in the strategy file).
 
 ## Metricool: only on command (user, 2026-10-07)
 
