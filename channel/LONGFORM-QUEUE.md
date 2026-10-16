@@ -42,7 +42,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 ## Series 4 — Province vs Province
 | # | Topic | Status |
 |---|---|---|
-| 26 | Alberta vs Manitoba vs Ontario — Same $100K Salary, Completely Different Take-Home | queued |
+| 26 | Alberta vs Manitoba vs Ontario — Same $100K Salary, Completely Different Take-Home | LF-08 rendered 2026-10-16, not published |
 | 27 | Alberta vs BC — Which Province Really Wins at $100K? | queued |
 | 28 | Manitoba vs Saskatchewan — How Much Does the Same Salary Really Cost You? | queued |
 
