@@ -1,0 +1,13 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.11,
+ "beats": [
+  ["hook", "Your company made a hundred thousand dollars. Salary or dividends? One puts about fifty-eight hundred more in your pocket.", 0.32],
+  ["c1", "Salary: the company pays you about ninety-five thousand four hundred, plus its half of CPP. After your CPP and income tax, you keep about sixty-nine thousand two hundred.", 0.3],
+  ["c2", "Dividends: nine percent corporate tax, ninety-one thousand paid out, about sixteen thousand of personal tax. You keep about seventy-five thousand.", 0.3],
+  ["c3", "So dividends win? That fifty-eight hundred bought something. Salary put about ninety-three hundred into CPP, and it creates about seventeen thousand of RRSP room.", 0.32],
+  ["reveal", "The twist: you don't have to pick one. You can mix both, and the right mix depends on what you need now and later.", 0.32],
+  ["action", "Own more than forty percent of the voting shares? Your salary isn't insurable for EI. Plan the mix with an accountant.", 0.3],
+  ["cta", "Next: spousal RRSPs. How couples split retirement income. Follow so you don't miss it.", 0.0]
+ ]
+}
