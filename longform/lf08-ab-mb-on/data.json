@@ -1,0 +1,153 @@
+{
+ "k": {
+  "AB": {
+   "60000": {
+    "gross": 60000,
+    "taxable": 59435,
+    "federal": 5338,
+    "provincial": 2631,
+    "cpp": 3362,
+    "ei": 978,
+    "take_home": 47691,
+    "marg": 34.3
+   },
+   "100000": {
+    "gross": 100000,
+    "taxable": 98873,
+    "federal": 13302,
+    "provincial": 6470,
+    "cpp": 4646,
+    "ei": 1123,
+    "take_home": 74459,
+    "marg": 30.5
+   },
+   "150000": {
+    "gross": 150000,
+    "taxable": 148873,
+    "federal": 25302,
+    "provincial": 11470,
+    "cpp": 4646,
+    "ei": 1123,
+    "take_home": 107458,
+    "marg": 36.0
+   }
+  },
+  "ON": {
+   "60000": {
+    "gross": 60000,
+    "taxable": 59435,
+    "federal": 5338,
+    "provincial": 2982,
+    "cpp": 3362,
+    "ei": 978,
+    "take_home": 47340,
+    "marg": 35.7
+   },
+   "100000": {
+    "gross": 100000,
+    "taxable": 98873,
+    "federal": 13302,
+    "provincial": 6723,
+    "cpp": 4646,
+    "ei": 1123,
+    "take_home": 74206,
+    "marg": 31.5
+   },
+   "150000": {
+    "gross": 150000,
+    "taxable": 148873,
+    "federal": 25302,
+    "provincial": 14608,
+    "cpp": 4646,
+    "ei": 1123,
+    "take_home": 104320,
+    "marg": 43.4
+   }
+  },
+  "MB": {
+   "60000": {
+    "gross": 60000,
+    "taxable": 59435,
+    "federal": 5338,
+    "provincial": 4550,
+    "cpp": 3362,
+    "ei": 978,
+    "take_home": 45772,
+    "marg": 38.9
+   },
+   "100000": {
+    "gross": 100000,
+    "taxable": 98873,
+    "federal": 13302,
+    "provincial": 9484,
+    "cpp": 4646,
+    "ei": 1123,
+    "take_home": 71445,
+    "marg": 33.2
+   },
+   "150000": {
+    "gross": 150000,
+    "taxable": 148873,
+    "federal": 25302,
+    "provincial": 18132,
+    "cpp": 4646,
+    "ei": 1123,
+    "take_home": 100797,
+    "marg": 43.4
+   }
+  }
+ },
+ "sales": {
+  "AB": 5,
+  "MB": 12,
+  "ON": 13
+ },
+ "spend": 20000,
+ "sales_tax": {
+  "AB": 1000,
+  "ON": 2600,
+  "MB": 2400
+ },
+ "per1000": {
+  "AB": 50,
+  "ON": 130,
+  "MB": 120
+ },
+ "gap100": {
+  "AB_ON": 253,
+  "AB_MB": 3014
+ },
+ "gap60": {
+  "AB_ON": 351,
+  "AB_MB": 1919
+ },
+ "gap150": {
+  "AB_ON": 3138,
+  "AB_MB": 6661
+ },
+ "after_spend": {
+  "AB": 73459,
+  "ON": 71606,
+  "MB": 69045
+ },
+ "rrsp10k": {
+  "AB": 3050,
+  "ON": 2991,
+  "MB": 3325
+ },
+ "rrsp10k_150": {
+  "AB": 3600,
+  "ON": 4341,
+  "MB": 4340
+ },
+ "month100": {
+  "AB": 6205,
+  "ON": 6184,
+  "MB": 5954
+ },
+ "keep1000": {
+  "AB": 695,
+  "ON": 685,
+  "MB": 668
+ }
+}

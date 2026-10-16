@@ -239,4 +239,54 @@ const StubsHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook };
+// ---------- RaceHook: frame-0 hook — three lanes start at the same gross; deductions peel off on cue; photo-finish flash + gap tags ----------
+// p.lanes[{name, sub, prov, take}] · p.common[{label, value, color}] (same in every lane) · p.provColor · p.drainAt[] (one per common item + one for provincial) · p.finishAt · p.gaps[{lane, text, red}] · p.qAt · p.out
+const RaceHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const lanes = p.lanes as Pn[]; const common = p.common as Pn[]; const gross = p.gross as number; const W = 1180; const X = 520;
+  const steps = [...common.map((x) => ({ ...x, prov: false })), { label: 'PROVINCIAL TAX', color: p.provColor ?? '#E8A86A', prov: true }];
+  const fin = p.finishAt ? prog(now, p.finishAt.t, 0.6, BACK) : 0; const flash = p.finishAt ? Math.max(0, 1 - Math.abs(now - p.finishAt.t - 0.1) / 0.25) : 0;
+  const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0, y: -0.3 + 0.6 * cl(el / 14), z: 0.08 + 0.3 * cl(el / 14) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.6})` }} /></div>}
+      <div style={{ position: 'absolute', inset: 0, background: '#fff', opacity: flash * 0.35 }} />
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 70, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 88, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 6, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{fin > 0.05 ? p.finishTitle : p.title}</div>
+      </div>
+      {lanes.map((ln, i) => {
+        const y = 330 + i * 190; let done = 0; const segs: React.ReactNode[] = [];
+        steps.forEach((s, j) => {
+          const v = s.prov ? ln.prov : s.value; const t = p.drainAt?.[j]?.t ?? Infinity; const k = prog(now, t + i * 0.12, 0.9, INOUT);
+          const right = X + W * (1 - done / gross); const wv = (W * v) / gross;
+          if (k > 0) segs.push(<div key={j} style={{ position: 'absolute', left: right - wv, top: y, width: wv, height: 96, background: s.color, opacity: 0.85 * (1 - 0.6 * k), transform: `translateY(${k * 40}px)`, borderLeft: '2px solid rgba(0,0,0,.35)' }} />);
+          done += v * k;
+        });
+        const cur = gross - done; const lead = fin > 0 && ln.take === Math.max(...lanes.map((q) => q.take));
+        const li = p.laneAt?.[i]?.t !== undefined ? prog(now, p.laneAt[i].t, 0.7, BACK) : 1; const la = p.laneAt?.[i]?.t !== undefined ? cl((now - p.laneAt[i].t) / 0.25) : 1;
+        return (
+          <div key={i} style={{ opacity: (1 - out) * (0.45 + 0.55 * la), transform: `translateX(${out * (i % 2 ? 900 : -900) + (1 - li) * -40}px)` }}>
+            <div style={{ position: 'absolute', left: 90, top: y + 6, width: 400, fontFamily: COND }}>
+              <div style={{ fontSize: 50, fontWeight: 700, color: C.white, letterSpacing: 2 }}>{ln.name}</div>
+              <div style={{ fontSize: 24, letterSpacing: 4, color: C.dim }}>{ln.sub}</div>
+            </div>
+            <div style={{ position: 'absolute', left: X, top: y, width: W, height: 96, borderRadius: 10, background: 'rgba(255,255,255,.06)', border: `2px solid ${lead ? C.gold : 'rgba(255,255,255,.14)'}`, boxShadow: lead ? `0 0 ${30 * fin}px rgba(232,194,122,.6)` : undefined }} />
+            <div style={{ position: 'absolute', left: X, top: y, width: (W * cur) / gross, height: 96, borderRadius: 10, background: `linear-gradient(90deg, rgba(127,211,160,.85), rgba(95,181,133,.85))` }} />
+            {segs}
+            <div style={{ position: 'absolute', left: X + 24, top: y + 14, fontFamily: COND, fontWeight: 700, color: '#0b1a12' }}><RollNumber value={Math.round(cur)} t={-99} now={now} size={64} dur={0.01} /></div>
+            {p.gaps && fin > 0 && p.gaps.filter((g: Pn) => g.lane === i).map((g: Pn, gi: number) => (
+              <div key={gi} style={{ position: 'absolute', left: X + (W * cur) / gross + 20, top: y + 22, fontFamily: COND, fontWeight: 700, fontSize: 46, color: g.red ? C.red : C.gold, transform: `scale(${fin})`, transformOrigin: 'left center' }}>{g.text}</div>))}
+          </div>);
+      })}
+      <div style={{ position: 'absolute', left: X, top: 935, display: 'flex', gap: 26, fontFamily: COND, fontSize: 24, letterSpacing: 2, opacity: (1 - out) * (1 - qk) }}>
+        {steps.map((s, j) => <span key={j} style={{ color: now >= (p.drainAt?.[j]?.t ?? Infinity) ? C.white : C.faint }}><span style={{ display: 'inline-block', width: 14, height: 14, background: s.color, borderRadius: 3, marginRight: 8 }} />{s.label}</span>)}
+      </div>
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 920, textAlign: 'center', fontFamily: COND, fontSize: 54, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook };

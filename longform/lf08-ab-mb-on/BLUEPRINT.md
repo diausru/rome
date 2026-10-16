@@ -1,0 +1,4 @@
+# LF-08 Retention Blueprint — "Same $100K in Calgary, Toronto, Winnipeg"
+Queue #26, bridged from LF-07. Intro type (NEW, ≠ LF-07 StubsHook, ≠ LF-05/06 collage): **RaceHook** — three lanes of $100,000 on a running track; lanes enter as the cities are named, deductions peel off on cue, PHOTO FINISH flash with gap tags (−$253 Toronto, −$3,014 Winnipeg).
+Open loops: "the paycheque isn't the finish line" → race 2 (checkout, 4:27) and race 3 (different salary, 6:11).
+Developments: identical part ($19K) → provincial round → two designs → bracket steps → photo-finish table → per month → sales tax rates → per $1,000 → $20K illustration → after checkout → $60K → $150K → why the gap opens → +$1,000 raise → $10K deduction (MB rewards most at $100K) → what tax can't show → verdict. Bridge: side hustle (#20).
