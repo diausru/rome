@@ -1,0 +1,91 @@
+{
+ "video": {
+  "title": "Sole proprietor vs corporation: the real trade-off (C1)",
+  "duration": "1:10 (70.25 s), 1080×1920, 24 fps, VO 69.41 s + 0.8 s hold",
+  "mp4": "showreel/out/c1/c1-final.mp4 (share copy: c1-share.mp4)"
+ },
+ "cover": {
+  "t": 34.59,
+  "ms": 34590,
+  "frame": "Option 2 settled: both $100,000 bars (sole: tax $21,729 / keep $68,978; corp: dividend tax $16,014 / keep $74,986), stamp '+$3,285 MORE INCOME TAX', tile $21,729 → $25,014, the designer visible",
+  "why": "the twist in one stable frame: the corporation keeps more yet pays more income tax",
+  "file": "showreel/out/c1/cover.jpg (extracted from the final MP4 at 34.588 s)"
+ },
+ "sources": [
+  "Income Tax Act s.82(1)(b)(i) and s.121 (laws.justice.gc.ca, current to 2026-09-30) · 2026 · non-eligible dividend gross-up 15%, federal dividend tax credit 9/13 of the gross-up",
+  "Manitoba Income Tax Act C.C.S.M. c. I10 s.4.7(1)(b)(i.2) (web2.gov.mb.ca, current from 2026-07-01) · 2026 · Manitoba dividend tax credit 0.7835% of the grossed-up non-eligible dividend",
+  "CRA corporation tax rates; Manitoba small business rate 0% (as sourced for C3) · 2026 · 9% combined on small business income",
+  "CPP 2026 (YMPE $74,600, YAMPE $85,000, exemption $3,500; self-employed 11.9% + 8%); CPP Act ss.12–13 · contributions only on salary/wages and self-employed earnings",
+  "Income Tax Act s.146(1) 'earned income' · current · dividends do not create RRSP room",
+  "CRA T4127 (2026) federal and Manitoba brackets/BPAs · example calculation c1/calc.py; cross-check: implied MB non-eligible top rate 46.67% = KPMG/EY 2026 tables"
+ ],
+ "yt": {
+  "titles": [
+   "Incorporate and Keep $6,000 More? It's Not Lower Tax (Canada)",
+   "Sole Proprietor vs Corporation: Same $100K, Real Numbers (Canada)",
+   "Should You Incorporate? The $6,000 Nobody Explains (Canada 2026)"
+  ],
+  "description": "Same $100,000 of profit. Incorporate, and you keep about $6,000 more. But not from lower tax.\n\nOption 1, sole proprietor (Manitoba 2026, single): income tax $21,729 + CPP $9,293 → you keep $68,978.\nOption 2, a corporation paying it all out as dividends: 9% corporate tax ($9,000) + personal tax on $91,000 of dividends ($16,014) = $25,014 of income tax, $3,285 MORE than the sole proprietor. You keep $74,986.\n\nWhere does the $6,008 come from? Dividends skip CPP: no contributions, but no CPP pension built, and dividends create no RRSP room.\n\nThe real edge: money you leave inside. Leave $40,000 in the company and so far it has only been taxed at 9%; personal tax comes when you take it out (a deferral, not a discount).\n\nA corporation also files its own tax return (T2) every year. Run your own numbers with an accountant first.\n\nNext: salary or dividends. What should an owner pay themselves?\n\nSources: Income Tax Act ss. 82(1)(b), 121, 146(1); Manitoba Income Tax Act s. 4.7; CPP Act ss. 12–13; CRA 2026 rates. Example only; corporation costs not included. General information, not tax advice.\n\n#Incorporation #CanadaTax #SmallBusiness",
+  "hashtags": "#Incorporation #CanadaTax #SmallBusiness #SelfEmployedCanada #PersonalFinanceCanada",
+  "keywords": "should i incorporate canada, sole proprietor vs corporation canada, incorporation in canada, corporate tax canada, dividends vs salary, cpp self employed, small business tax manitoba, when to incorporate canada",
+  "pinned": "Would you rather build CPP, or keep the $6,000 and save it yourself? Example only, general info, not advice.",
+  "cta": "Next: salary or dividends. What should an owner pay themselves? Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Incorporate and keep $6,000 more on $100K? 🇨🇦 Here's the catch: it's not lower tax. It's CPP you skip.",
+  "keywords": "should i incorporate canada · sole proprietor vs corporation · dividends cpp · small business tax",
+  "hashtags": "#smallbusinesscanada #canadiantaxes #selfemployed #incorporation #personalfinancecanada",
+  "pinned": "The real advantage is money you leave inside the company (taxed 9% until you take it out). General info, not advice.",
+  "cta": "Follow for the next one: salary or dividends?"
+ },
+ "ig": {
+  "caption": "Same $100K profit. Incorporate and you keep ~$6,000 more. 🇨🇦 But not from lower tax.\n\nSole prop (MB 2026): tax $21,729 + CPP $9,293 → keep $68,978\nCorp, all paid as dividends: tax $25,014 (+$3,285!) + CPP $0 → keep $74,986\n\nThe gap = CPP you didn't pay → no CPP pension, no RRSP room.\nThe real edge: money left inside the company is taxed 9% until you take it out.\n\nSend this to a freelancer thinking about incorporating.\n\nSources: Income Tax Act, Manitoba Income Tax Act, CPP Act, CRA. Example only. General info, not advice.\n\n#smallbusinesscanada #canadiantaxes #incorporation #selfemployedcanada #personalfinancecanada #canadatax",
+  "keywords": "incorporate canada, sole proprietor, corporation, dividends, CPP",
+  "hashtags": "#smallbusinesscanada #canadiantaxes #incorporation #selfemployedcanada #personalfinancecanada #canadatax",
+  "pinned": "Save this before you call your accountant 📌",
+  "cta": "Send this to a freelancer thinking about incorporating."
+ },
+ "eng": {
+  "question": "Would you rather pay into CPP or keep the cash and invest it yourself?",
+  "save": "The side-by-side numbers to bring to an accountant.",
+  "share": "Freelancers and contractors at $80K–$150K of profit.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "should i incorporate canada",
+  "secondary": "'incorporation in canada' ≈5,317/mo; 'start a business canada' ≈5,399/mo (competition 18.8); 'corporate tax canada' ≈3,695/mo; 'sole proprietorship' ≈3,205/mo; exact 'should i incorporate canada' <750/mo",
+  "intent": "A self-employed person deciding whether incorporating saves money.",
+  "audience": "Freelancers, contractors and trades with $80K+ profit.",
+  "angle": "Same profit, both ways, real numbers: the corporation's 'win' is skipped CPP and deferral, not lower tax.",
+  "questions": "Should I incorporate my business in Canada? · Does incorporating save tax? · Do I pay CPP on dividends? · When does incorporating make sense?"
+ },
+ "next": [
+  {
+   "topic": "Salary vs dividends (C2)",
+   "why": "Bridge in this video; continues the owner-pay decision",
+   "intent": "salary vs dividends canada",
+   "hook": "Pay yourself $80K: salary or dividends?",
+   "angle": "tax + CPP + RRSP room side by side",
+   "payoff": "what each choice buys"
+  },
+  {
+   "topic": "Couples: spousal RRSP and attribution (D4)",
+   "why": "Next 🔴 row in the plan",
+   "intent": "spousal rrsp canada",
+   "hook": "Same savings, lower tax in retirement",
+   "angle": "spousal RRSP + the 3-year rule",
+   "payoff": "when it helps"
+  },
+  {
+   "topic": "Passive income inside a corporation (C3 follow-up)",
+   "why": "The money left inside earns income; the $50K passive rule",
+   "intent": "passive income corporation canada",
+   "hook": "Your company's savings can shrink its 9% rate",
+   "angle": "the $50,000 passive income grind",
+   "payoff": "when retained money starts costing"
+  }
+ ],
+ "series": "Card series, row 14 of PUBLISHING-PLAN §4 (C1), bridged from H1; investigation format; follows C3 (small business rate). Playlist: 'Self-employed & business'. Best window: January to April and September.",
+ "research": "vidIQ: keyword research CA 'should i incorporate canada' (<750; 'incorporation in canada' 5,317; 'start a business canada' 5,399; 'corporate tax canada' 3,695); titles 79 / 72. Balance 914 → 904 = 10 credits. NexLev: Shorts search CA 'sole proprietor vs corporation canada': 'When should you incorporate your business?' 40K, 'Register a Business in Canada' 79K, 'Sole Proprietorship vs Corporation (Canada Guide)' 16K, '4 Reasons to Incorporate in Canada' 11K, 'The costs of forming and running a corporation' 4.7K; all list pros/cons, none runs the same profit both ways with the CPP effect.",
+ "retention": "Topic on frame 0 (SAME $100K PROFIT. / INCORPORATE = MORE? + a counter rising to +$6,008); LOWER TAX? struck at 7 s (open loop); a bar split per option with a stamp '+$3,285 more income tax' at 33 s; the gap explained at 39–46 s; vault reveal; note card + bridge. Automated QC: 77 visual events."
+}

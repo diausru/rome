@@ -1,0 +1,52 @@
+{
+ "topic": "A Manitoba CCPC earns $100,000 before paying its owner (2026): all salary vs all non-eligible dividends; what the cash difference buys (CPP, RRSP room); mixing; EI exclusion for >40% shareholders",
+ "tax_year": 2026,
+ "example": {
+  "profit": 100000,
+  "salary": 95353.55,
+  "employer_cpp": 4646.45,
+  "employee_cpp": 4646.45,
+  "sal_tax": 21519.35,
+  "sal_keep": 69187.75,
+  "cpp_total": 9292.9,
+  "rrsp_room": 17163.64,
+  "corp_tax": 9000.0,
+  "div": 91000.0,
+  "div_tax": 16014.4,
+  "div_keep": 74985.6,
+  "corp_rate": 0.09,
+  "ei_share": 0.4,
+  "note": "example (not a CRA rule): single Manitoba owner, no other income, CCPC eligible for the small business deduction; salary set so salary + employer CPP = $100,000; EI premiums not included (owner controls more than 40% of voting shares); RRSP room = 18% of 2026 earned income, usable from 2027, subject to the annual dollar limit. Computed by c2/calc.py."
+ },
+ "derive": {
+  "gap_round": "round(div_keep - sal_keep, -2)",
+  "salary_round": "round(salary, -2)",
+  "sal_keep_round": "round(sal_keep, -2)",
+  "div_round": "round(div, -3)",
+  "div_tax_round": "round(div_tax, -3)",
+  "div_keep_round": "round(div_keep, -3)",
+  "cpp_round": "round(cpp_total, -2)",
+  "rrsp_round": "round(rrsp_room, -3)"
+ },
+ "spoken": {
+  "profit": "hundred thousand dollars",
+  "gap_round": "fifty-eight hundred",
+  "salary_round": "ninety-five thousand four hundred",
+  "sal_keep_round": "sixty-nine thousand two hundred",
+  "corp_rate": "nine percent",
+  "div_round": "ninety-one thousand",
+  "div_tax_round": "sixteen thousand",
+  "div_keep_round": "seventy-five thousand",
+  "cpp_round": "ninety-three hundred",
+  "rrsp_round": "seventeen thousand",
+  "ei_share": "forty percent"
+ },
+ "sources": {
+  "dividends": "as c1/data.json: ITA 82(1)(b)(i) gross-up 15%, s.121 federal DTC 9/13; Manitoba Income Tax Act s.4.7(1)(b)(i.2) 0.7835%",
+  "salary": "salary is employment income taxed at 2026 federal/Manitoba rates (CRA T4127 2026); Canada employment amount $1,501; employee CPP 5.95% + CPP2 4% with enhanced portion deductible (line 22215), employer pays a matching amount",
+  "cpp": "CPP Act ss.12\u201313: contributions on salary/wages (both employee and employer shares) build CPP pensionable earnings; dividends are not contributory",
+  "rrsp": "ITA 146(1) 'RRSP deduction limit': lesser of the RRSP dollar limit and 18% of the previous year's earned income (employment income counts, dividends do not); laws.justice.gc.ca current to 2026-09-30",
+  "ei": "Employment Insurance Act s.5(2)(b): insurable employment does not include employment by a corporation of a person who controls more than 40% of its voting shares",
+  "corp": "CCPC small business rate 9% federal + 0% Manitoba (c3 R1); salary is deductible to the corporation, so no corporate tax remains when all profit is paid as salary + employer CPP"
+ }
+}

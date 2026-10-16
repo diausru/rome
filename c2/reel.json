@@ -1,0 +1,260 @@
+{
+ "id": "c2",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "$100K IN YOUR COMPANY.",
+  "l2": "SALARY OR DIVIDENDS?"
+ },
+ "hold_after_vo": 0.8,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    470,
+    880,
+    770
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "table": {
+   "box": [
+    80,
+    620,
+    880,
+    660
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "mix": {
+   "box": [
+    80,
+    700,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "ei": {
+   "box": [
+    80,
+    700,
+    880,
+    640
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "made",
+   "beat": "hook",
+   "word": "made",
+   "sfx": "tick"
+  },
+  {
+   "id": "sal",
+   "beat": "hook",
+   "word": "Salary",
+   "sfx": "swish"
+  },
+  {
+   "id": "div",
+   "beat": "hook",
+   "word": "dividends?",
+   "sfx": "swish"
+  },
+  {
+   "id": "more",
+   "beat": "hook",
+   "word": "fifty-eight",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.5,
+   "gain": 0.75
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "s_pay",
+   "beat": "c1",
+   "word": "ninety-five",
+   "sfx": "tick"
+  },
+  {
+   "id": "s_cpp",
+   "beat": "c1",
+   "word": "half",
+   "sfx": "tick"
+  },
+  {
+   "id": "s_tax",
+   "beat": "c1",
+   "word": "income",
+   "sfx": "tick"
+  },
+  {
+   "id": "s_keep",
+   "beat": "c1",
+   "word": "sixty-nine",
+   "sfx": "chime"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "d_corp",
+   "beat": "c2",
+   "word": "nine",
+   "sfx": "tick"
+  },
+  {
+   "id": "d_pay",
+   "beat": "c2",
+   "word": "ninety-one",
+   "sfx": "tick"
+  },
+  {
+   "id": "d_tax",
+   "beat": "c2",
+   "word": "sixteen",
+   "sfx": "tick"
+  },
+  {
+   "id": "d_keep",
+   "beat": "c2",
+   "word": "seventy-five",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "bought",
+   "beat": "c3",
+   "word": "bought",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "cpp",
+   "beat": "c3",
+   "word": "ninety-three",
+   "sfx": "tick"
+  },
+  {
+   "id": "rrsp",
+   "beat": "c3",
+   "word": "seventeen",
+   "sfx": "chime"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.6,
+   "gain": 0.8
+  },
+  {
+   "id": "mix",
+   "beat": "reveal",
+   "word": "mix",
+   "sfx": "tick"
+  },
+  {
+   "id": "later",
+   "beat": "reveal",
+   "word": "later.",
+   "sfx": "tick"
+  },
+  {
+   "id": "forty",
+   "beat": "action",
+   "word": "forty",
+   "sfx": "tick"
+  },
+  {
+   "id": "ei",
+   "beat": "action",
+   "word": "EI.",
+   "sfx": "tick"
+  },
+  {
+   "id": "plan",
+   "beat": "action",
+   "word": "accountant.",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c3",
+   "word": "seventeen",
+   "offset": 1.4
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ]
+}

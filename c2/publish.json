@@ -1,0 +1,90 @@
+{
+ "video": {
+  "title": "Salary or dividends? What the $5,800 buys (C2)",
+  "duration": "1:10 (70.42 s), 1080×1920, 24 fps, VO 69.59 s + 0.8 s hold",
+  "mp4": "showreel/out/c2/c2-final.mp4 (share copy: c2-share.mp4)"
+ },
+ "cover": {
+  "t": 43.45,
+  "ms": 43450,
+  "frame": "'WHAT IT BOUGHT': full ledger (keep $69,188 vs $74,986), stamp 'THE $5,798 BOUGHT SOMETHING', chips $9,293 into CPP and $17,164 RRSP room, the owner visible",
+  "why": "the whole comparison and the twist in one stable frame",
+  "file": "showreel/out/c2/cover.jpg (extracted at 43.448 s)"
+ },
+ "sources": [
+  "Income Tax Act s.82(1)(b)(i), s.121 and Manitoba Income Tax Act s.4.7 · 2026 · dividend gross-up and credits (as C1)",
+  "Income Tax Act s.146(1) 'RRSP deduction limit' (current to 2026-09-30) · lesser of the dollar limit and 18% of the previous year's earned income",
+  "CPP Act ss.12–13 · contributions on salary (employee + employer) build CPP; dividends are not contributory",
+  "Employment Insurance Act s.5(2)(b) · employment of a person controlling more than 40% of the voting shares is not insurable",
+  "CRA T4127 (2026) and CPP 2026 rates; CCPC 9% small business rate · example calculation c2/calc.py"
+ ],
+ "yt": {
+  "titles": [
+   "Salary vs Dividends in Canada: The $5,800 Difference Isn't Free",
+   "Pay Yourself Salary or Dividends? Same $100K, Real Numbers (Canada)",
+   "Salary or Dividends? What Your Corporation's $100K Really Buys (2026)"
+  ],
+  "description": "Your company made $100,000. Salary or dividends? One puts about $5,800 more in your pocket.\n\nAll salary (Manitoba 2026, single owner): the company pays $95,354 + its half of CPP. After CPP ($9,293 in total) and income tax ($21,519), you keep $69,188.\nAll dividends: 9% corporate tax ($9,000), $91,000 paid out, $16,014 of personal tax. You keep $74,986.\n\nSo dividends win? The $5,798 bought something: salary put $9,293 into CPP (your future pension) and creates $17,164 of RRSP room (18% of earned income, up to the annual limit).\n\nThe twist: you don't have to pick one. You can mix both; the right mix depends on what you need now and later.\nOwn more than 40% of the voting shares? Your salary isn't insurable for EI. Plan the mix with an accountant.\n\nNext: spousal RRSPs. How couples split retirement income.\n\nSources: Income Tax Act ss. 82(1)(b), 121, 146(1); Manitoba Income Tax Act s. 4.7; CPP Act ss. 12–13; EI Act s. 5(2)(b); CRA 2026 rates. Example only. General information, not tax advice.\n\n#SalaryVsDividends #CanadaTax #SmallBusiness",
+  "hashtags": "#SalaryVsDividends #CanadaTax #SmallBusiness #Incorporated #PersonalFinanceCanada",
+  "keywords": "salary vs dividends canada, salary vs dividend, dividend or salary, pay yourself salary or dividends canada, cpp on dividends, rrsp room salary, ei business owner 40 percent, small business owner canada",
+  "pinned": "Would you take the $5,800 now, or the CPP and RRSP room? Example only, general info, not advice.",
+  "cta": "Next: spousal RRSPs. How couples split retirement income. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Salary or dividends from your corporation? 🇨🇦 Dividends = ~$5,800 more cash on $100K. Salary = CPP + RRSP room. Here's the math.",
+  "keywords": "salary vs dividends canada · pay yourself from corporation · cpp dividends · rrsp room",
+  "hashtags": "#smallbusinesscanada #canadiantaxes #salaryvsdividends #incorporated #personalfinancecanada",
+  "pinned": "Own more than 40% of the voting shares? Your salary isn't insurable for EI. General info, not advice.",
+  "cta": "Follow for the next one: spousal RRSPs."
+ },
+ "ig": {
+  "caption": "$100K in your company: salary or dividends? 🇨🇦\n\nSalary → keep $69,188 · $9,293 into CPP · $17,164 RRSP room\nDividends → keep $74,986 · no CPP · no RRSP room\n\nThe $5,798 isn't free money. It's what you give up for later.\nYou can mix both. Own >40% of the voting shares? No EI on your salary.\n\nSend this to an incorporated friend.\n\nSources: Income Tax Act, MB Income Tax Act, CPP Act, EI Act, CRA (2026). Example only. General info, not advice.\n\n#smallbusinesscanada #canadiantaxes #salaryvsdividends #incorporated #personalfinancecanada #canadatax",
+  "keywords": "salary vs dividends, incorporated, CPP, RRSP room",
+  "hashtags": "#smallbusinesscanada #canadiantaxes #salaryvsdividends #incorporated #personalfinancecanada #canadatax",
+  "pinned": "Save this for your next talk with your accountant 📌",
+  "cta": "Send this to an incorporated friend."
+ },
+ "eng": {
+  "question": "Cash now or CPP and RRSP room: which would you pick?",
+  "save": "The side-by-side table to bring to an accountant.",
+  "share": "Incorporated owners and professionals.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "salary vs dividends canada",
+  "secondary": "'salary vs dividends canada' 3,778/mo (competition 18.6); 'salary vs dividend' 4,201/mo (14.7); 'dividend or salary' 3,616/mo; 'canadian tax tips' 3,958/mo",
+  "intent": "An incorporated owner deciding how to pay themselves.",
+  "audience": "Owners of small CCPCs and incorporated professionals.",
+  "angle": "Same $100K both ways; the dividend 'win' is what you give up (CPP, RRSP room) + the mix + EI rule.",
+  "questions": "Should I pay myself salary or dividends in Canada? · Do dividends count for CPP? · Do dividends create RRSP room? · Can a business owner get EI?"
+ },
+ "next": [
+  {
+   "topic": "Couples: spousal RRSP and attribution (D4)",
+   "why": "Bridge in this video; next row of the plan",
+   "intent": "spousal rrsp canada",
+   "hook": "Same savings, lower tax in retirement",
+   "angle": "spousal RRSP + the 3-year rule",
+   "payoff": "when it helps"
+  },
+  {
+   "topic": "Passive income inside a corporation",
+   "why": "Money left inside (C1) earns income; the $50K rule",
+   "intent": "passive income corporation canada",
+   "hook": "Your company's savings can shrink its 9% rate",
+   "angle": "the $50,000 passive income grind",
+   "payoff": "when retained money starts costing"
+  },
+  {
+   "topic": "CPP at 60, 65 or 70 for owners who paid little CPP",
+   "why": "Continues the CPP trade-off",
+   "intent": "cpp business owner dividends",
+   "hook": "Dividends all your career? Here's your CPP",
+   "angle": "what low contributions mean later",
+   "payoff": "a realistic estimate path"
+  }
+ ],
+ "series": "Card series, row 15 of PUBLISHING-PLAN §4 (C2), bridged from C1; investigation format. Playlist: 'Self-employed & business'. Best window: November–February (year-end owner pay planning).",
+ "research": "vidIQ: keyword research CA 'salary vs dividends canada' (3,778/mo, competition 18.6; 'salary vs dividend' 4,201, 'dividend or salary' 3,616); titles 83 / 60. Balance 904 (after C1) → 879 = 25 credits. NexLev Shorts search CA: 'Salary vs Dividend in Canada: Two business owners. Same profit, different outcomes!' 9.8K, 'Should you pay yourself a salary or a dividend?' 7.8K, 'Salary vs Dividends — Which Creates More Tax?' 3.9K, '... The $8,860 CPP Difference Nobody Talks About' 99 views; ours adds RRSP room, the mix and the EI 40% rule with verified 2026 Manitoba numbers.",
+ "retention": "Topic on frame 0 ($100K IN YOUR COMPANY. / SALARY OR DIVIDENDS?); two envelopes slide in, '+$5,798?' tag at 6 s (open loop: what do you give up?); the ledger fills row by row; 'bought something' stamp + chips at 36–42 s; mix slider; EI card + bridge. Automated QC: 84 visual events."
+}
