@@ -32,7 +32,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 | 17 | What If You Move From Manitoba to Alberta? | LF-04 rendered 2026-10-12, not published |
 | 18 | What If You Work Two Jobs in Canada? | LF-07 rendered 2026-10-14, not published |
 | 19 | What If You Work Remotely? | queued |
-| 20 | What If You Have a Side Hustle? | queued |
+| 20 | What If You Have a Side Hustle? | rendered 2026-10-16 (LF-09, `longform/lf09-side-hustle`) |
 | 21 | What If You Support Your Parents? | queued |
 | 22 | What If You Sell Your Home? | queued |
 | 23 | What If You Receive a $20,000 Bonus? | queued |

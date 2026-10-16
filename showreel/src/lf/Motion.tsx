@@ -289,4 +289,57 @@ const RaceHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook };
+// ---------- StacksHook: frame-0 hook — two identical cash stacks; each cut peels bills off the top on cue; the taller survivor wins ----------
+// p.people[{name, sub, take, cuts[{label, value, color}]}] (cut j aligned across people) · p.cutAt[] · p.personAt[] · p.finishAt · p.delta · p.qAt · p.question · p.out
+const StacksHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const ppl = p.people as Pn[]; const gross = (p.gross as number) ?? 10000; const N = 50; const BH = 9; const BW = 380; const base = 820;
+  const fin = p.finishAt ? prog(now, p.finishAt.t, 0.7, BACK) : 0; const flash = p.finishAt ? Math.max(0, 1 - Math.abs(now - p.finishAt.t - 0.1) / 0.25) : 0;
+  const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0; const best = Math.max(...ppl.map((q) => q.take));
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.2 - 0.4 * cl(el / 16), y: 0, z: 0.05 + 0.3 * cl(el / 16) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.6})` }} /></div>}
+      <div style={{ position: 'absolute', inset: 0, background: '#fff', opacity: flash * 0.3 }} />
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 60, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{fin > 0.05 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      {ppl.map((pe, i) => {
+        const cx = i === 0 ? 560 : 1360; const cuts = pe.cuts as Pn[];
+        const pin = p.personAt?.[i]?.t !== undefined ? prog(now, p.personAt[i].t, 0.8, BACK) : 1;
+        let done = 0; let cum = 0; const ranges = cuts.map((ct, j) => { const r = [cum, cum + ct.value, prog(now, (p.cutAt?.[j]?.t ?? Infinity) + i * 0.15, 1.1, INOUT)]; cum += ct.value; done += ct.value * (r[2] as number); return r; });
+        const cur = gross - done; const lead = fin > 0 && pe.take === best;
+        const bills: React.ReactNode[] = [];
+        for (let b = 0; b < N; b++) {
+          const mid = (N - 1 - b + 0.5) * (gross / N); const j = ranges.findIndex((r) => mid >= r[0] && mid < r[1]);
+          const top = base - (b + 1) * BH; let k = 0; let col = 'linear-gradient(90deg,#4f8f69,#7FD3A0 45%,#5fae80)';
+          if (j >= 0) { const rk = ranges[j][2] as number; const order = (mid - ranges[j][0]) / Math.max(1, ranges[j][1] - ranges[j][0]); k = cl(rk * 1.6 - (1 - order) * 0.6); if (rk > 0) col = cuts[j].color; }
+          const pop = pin * cl((pin * N - b) / 6 + 1);
+          bills.push(<div key={b} style={{ position: 'absolute', left: cx - BW / 2, top, width: BW, height: BH - 2, borderRadius: 3, background: col, boxShadow: 'inset 0 1px 0 rgba(255,255,255,.25), 0 1px 0 rgba(0,0,0,.4)',
+            opacity: pop * (1 - k), transform: `translate(${k * (i === 0 ? -320 : 320)}px, ${-k * 120}px) rotate(${k * (i === 0 ? -18 : 18)}deg)` }} />);
+        }
+        return (
+          <div key={i} style={{ opacity: (1 - out) * cl(pin * 1.5), transform: `translateX(${out * (i ? 900 : -900)}px)` }}>
+            <div style={{ position: 'absolute', left: cx - 300, width: 600, top: 232, textAlign: 'center', fontFamily: COND }}>
+              <div style={{ fontSize: 62, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{pe.name}</div>
+              <div style={{ fontSize: 28, letterSpacing: 5, color: C.dim }}>{pe.sub}</div>
+            </div>
+            {lead && <div style={{ position: 'absolute', left: cx - BW / 2 - 14, top: base - (N * BH * cur) / gross - 14, width: BW + 28, height: (N * BH * cur) / gross + 28, borderRadius: 10, border: `3px solid ${C.gold}`, boxShadow: `0 0 ${40 * fin}px rgba(232,194,122,.55)` }} />}
+            {bills}
+            <div style={{ position: 'absolute', left: cx - 300, width: 600, top: base + 22, textAlign: 'center', fontFamily: COND, fontWeight: 700, color: lead ? C.gold : C.white }}><RollNumber value={Math.round(cur)} t={-99} now={now} size={72} dur={0.01} /></div>
+            {cuts.map((ct, j) => { const k = ranges[j][2] as number; return k > 0 ? (
+              <div key={j} style={{ position: 'absolute', left: i === 0 ? cx - BW / 2 - 330 : cx + BW / 2 + 40, width: 290, top: 400 + j * 110, textAlign: i === 0 ? 'right' : 'left', fontFamily: COND, opacity: cl(k * 2) }}>
+                <div style={{ fontSize: 24, letterSpacing: 4, color: ct.color }}>{ct.label}</div>
+                <div style={{ fontSize: 50, fontWeight: 700, color: ct.value ? C.white : C.faint }}>{ct.value ? '−$' + ct.value.toLocaleString('en-US') : '$0'}</div>
+              </div>) : null; })}
+            {lead && p.delta && <div style={{ position: 'absolute', left: cx - 200, width: 400, top: base - (N * BH * cur) / gross - 110, textAlign: 'center', fontFamily: COND, fontWeight: 700, fontSize: 70, color: C.gold, transform: `scale(${fin})`, textShadow: '0 4px 24px rgba(0,0,0,.8)' }}>{p.delta}</div>}
+          </div>);
+      })}
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 930, textAlign: 'center', fontFamily: COND, fontSize: 46, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook };
