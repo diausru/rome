@@ -1,0 +1,41 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.09,
+ "beats": [
+  [
+   "hook",
+   "Same hundred thousand dollars of profit. Incorporate, and you keep about six thousand more. But not from lower tax.",
+   0.32
+  ],
+  [
+   "c1",
+   "Option one: sole proprietor in Manitoba. About twenty-one thousand seven hundred of income tax, plus about ninety-three hundred of CPP. You keep about sixty-nine thousand.",
+   0.3
+  ],
+  [
+   "c2",
+   "Option two: a corporation that pays it all out as dividends. Nine percent corporate tax, then tax on the dividends. About twenty-five thousand. More income tax, not less.",
+   0.3
+  ],
+  [
+   "c3",
+   "So where does the six thousand come from? Dividends skip CPP. No contributions, but no CPP pension built, and no RRSP room.",
+   0.32
+  ],
+  [
+   "reveal",
+   "The real edge is money you leave inside. Leave forty thousand in the company, and so far it's only been taxed at nine percent.",
+   0.32
+  ],
+  [
+   "action",
+   "A corporation also files its own tax return every year. Run your numbers with an accountant first.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: salary or dividends. What should an owner pay themselves? Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}

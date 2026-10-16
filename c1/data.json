@@ -1,0 +1,47 @@
+{
+ "topic": "Same $100,000 profit, Manitoba 2026: sole proprietor vs a CCPC paying all profit as non-eligible dividends vs a CCPC leaving $40,000 inside",
+ "tax_year": 2026,
+ "example": {
+  "profit": 100000,
+  "retain": 40000,
+  "corp_rate": 0.09,
+  "sole_tax": 21729.49,
+  "sole_cpp": 9292.9,
+  "sole_keep": 68977.61,
+  "corp_tax": 9000.0,
+  "div": 91000.0,
+  "div_tax": 16014.4,
+  "corp_total_tax": 25014.4,
+  "corp_keep": 74985.6,
+  "note": "example (not a CRA rule): single Manitoba resident, no other income, $100,000 net business profit in 2026; corporation is a CCPC eligible for the small business deduction (9% federal + 0% Manitoba), all after-tax profit paid as non-eligible dividends in the same year; costs of the corporation (incorporation, accounting, T2) not included. Computed by c1/calc.py."
+ },
+ "derive": {
+  "gap": "corp_keep - sole_keep",
+  "more_tax": "corp_total_tax - sole_tax",
+  "gap_round": "round(corp_keep - sole_keep, -3)",
+  "sole_keep_round": "round(sole_keep, -3)",
+  "corp_total_round": "round(corp_total_tax, -3)",
+  "sole_cpp_round": "round(sole_cpp, -2)",
+  "sole_tax_round": "round(sole_tax, -2)"
+ },
+ "spoken": {
+  "profit": "hundred thousand dollars",
+  "gap_round": "six thousand",
+  "sole_tax_round": "twenty-one thousand seven hundred",
+  "sole_cpp_round": "ninety-three hundred",
+  "sole_keep_round": "sixty-nine thousand",
+  "corp_rate": "nine percent",
+  "corp_total_round": "twenty-five thousand",
+  "retain": "forty thousand"
+ },
+ "sources": {
+  "gross_up": "ITA 82(1)(b)(i): non-eligible dividends grossed up by 15% (taxation years after 2018); laws.justice.gc.ca, current to 2026-09-30",
+  "fed_dtc": "ITA 121(a)(ii): federal dividend tax credit 9/13 of the gross-up (after 2018); same",
+  "mb_dtc": "Manitoba Income Tax Act C.C.S.M. c. I10 s.4.7(1)(b)(i.2): 0.7835% of the grossed-up amount for dividends with a federal gross-up of 17% or lower; web2.gov.mb.ca, current from 2026-07-01, accessed 2026-10-16",
+  "corp_rates": "CRA 'Corporation tax rates' and Manitoba small business rate 0% on the first $500,000 (as recorded and sourced in c3/PRODUCTION-BIBLE.md, R1)",
+  "cpp": "CPP 2026: YMPE $74,600, YAMPE $85,000, basic exemption $3,500; self-employed pay both halves (11.9% + 8% CPP2); CPP Act ss.12\u201313: contributions only on salary/wages and self-employed earnings (dividends are neither)",
+  "rrsp": "ITA 146(1) 'earned income': employment, business carried on, rental/royalty income; dividends are not included",
+  "personal_rates": "CRA T4127 (2026) federal brackets/BPA $16,452; Manitoba brackets 10.8/12.75/17.4% and BPA $15,780 (2026, frozen)",
+  "cross_check": "Manitoba non-eligible top combined rate implied by these credits = 46.67%, matching KPMG and EY 2026 tables"
+ }
+}

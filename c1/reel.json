@@ -1,0 +1,243 @@
+{
+ "id": "c1",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "SAME $100K PROFIT.",
+  "l2": "INCORPORATE = MORE?"
+ },
+ "hold_after_vo": 0.8,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    470,
+    880,
+    770
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "bars": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "vault": {
+   "box": [
+    80,
+    660,
+    880,
+    600
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "note": {
+   "box": [
+    80,
+    700,
+    880,
+    640
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "same",
+   "beat": "hook",
+   "word": "Same",
+   "sfx": "tick"
+  },
+  {
+   "id": "six",
+   "beat": "hook",
+   "word": "six",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.5,
+   "gain": 0.75
+  },
+  {
+   "id": "nottax",
+   "beat": "hook",
+   "word": "lower",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "s_tax",
+   "beat": "c1",
+   "word": "twenty-one",
+   "sfx": "tick"
+  },
+  {
+   "id": "s_cpp",
+   "beat": "c1",
+   "word": "ninety-three",
+   "sfx": "tick"
+  },
+  {
+   "id": "s_keep",
+   "beat": "c1",
+   "word": "sixty-nine",
+   "sfx": "chime"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "k_corp",
+   "beat": "c2",
+   "word": "Nine",
+   "sfx": "tick"
+  },
+  {
+   "id": "k_div",
+   "beat": "c2",
+   "word": "dividends.",
+   "n": 2,
+   "sfx": "tick"
+  },
+  {
+   "id": "k_total",
+   "beat": "c2",
+   "word": "twenty-five",
+   "sfx": "chime"
+  },
+  {
+   "id": "more",
+   "beat": "c2",
+   "word": "More",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "skip",
+   "beat": "c3",
+   "word": "skip",
+   "sfx": "tick"
+  },
+  {
+   "id": "pension",
+   "beat": "c3",
+   "word": "pension",
+   "sfx": "tick"
+  },
+  {
+   "id": "rrsp",
+   "beat": "c3",
+   "word": "RRSP",
+   "sfx": "tick"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.6,
+   "gain": 0.8
+  },
+  {
+   "id": "forty",
+   "beat": "reveal",
+   "word": "forty",
+   "sfx": "chime"
+  },
+  {
+   "id": "nine2",
+   "beat": "reveal",
+   "word": "nine",
+   "sfx": "tick"
+  },
+  {
+   "id": "t2",
+   "beat": "action",
+   "word": "return",
+   "sfx": "tick"
+  },
+  {
+   "id": "acct",
+   "beat": "action",
+   "word": "accountant",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c2",
+   "word": "More",
+   "offset": 1.0
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ]
+}

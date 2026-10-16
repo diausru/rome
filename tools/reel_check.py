@@ -141,7 +141,7 @@ def main():
             if 0 < val < 1: cands += [pct_words(val), pct_words(val) + ' percent']
             else:
                 w = words(int(round(val))); cands += [w, w + ' dollars', w + ' days', w + ' years']
-                if w.startswith('one '): cands += ['a ' + w[4:], 'a ' + w[4:] + ' dollars']
+                if w.startswith('one '): cands += ['a ' + w[4:], 'a ' + w[4:] + ' dollars', w[4:], w[4:] + ' dollars']
                 if val % 100 == 0 and 1000 < val < 10000: cands += [words(int(val // 100)) + ' hundred', words(int(val // 100)) + ' hundred dollars']
             ok = norm(spoken) in {norm(c) for c in cands}
             if not ok: fx.append(f'{k}: data {val} ≠ spoken "{spoken}"')
