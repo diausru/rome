@@ -1,0 +1,47 @@
+{
+ "total": 67.523,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "You owe zero tax in Manitoba. The province can still pay you. Three people, one form: MB four seventy-nine.",
+   "start": 0.25,
+   "end": 9.771
+  },
+  {
+   "id": "c1",
+   "text": "Case one: Lena cares for her dad at home, unpaid, for more than ninety days. Once she registers, she can claim fourteen hundred dollars a year.",
+   "start": 10.091,
+   "end": 20.643
+  },
+  {
+   "id": "c2",
+   "text": "Case two: a couple pays twenty thousand dollars for fertility treatment at a Manitoba clinic. Forty percent comes back. That's eight thousand dollars.",
+   "start": 20.943,
+   "end": 32.985
+  },
+  {
+   "id": "c3",
+   "text": "Case three: a homeowner never got the affordability credit on the property tax bill. Claim it on the return: up to sixteen hundred dollars for twenty twenty-six.",
+   "start": 33.285,
+   "end": 43.761
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: these credits are refundable. Even with no tax to pay, the money still comes to you.",
+   "start": 44.081,
+   "end": 51.535
+  },
+  {
+   "id": "action",
+   "text": "Check form MB four seventy-nine with your return. Most of these credits can be claimed up to three years back.",
+   "start": 51.855,
+   "end": 59.379
+  },
+  {
+   "id": "cta",
+   "text": "Next: sole proprietor or corporation. When does incorporating actually pay? Follow so you don't miss it.",
+   "start": 59.679,
+   "end": 67.523
+  }
+ ]
+}

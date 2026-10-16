@@ -1,0 +1,39 @@
+{
+ "topic": "Manitoba refundable credits on Form MB479 that pay out even with $0 income tax: Primary Caregiver Tax Credit, Fertility Treatment Tax Credit, Homeowners Affordability Tax Credit; most MB479 credits can be claimed within 3 years",
+ "tax_year": 2026,
+ "example": {
+  "caregiver": 1400,
+  "fert_paid": 20000,
+  "fert_rate": 0.40,
+  "fert_max_expenses": 40000,
+  "fert_max_credit": 16000,
+  "school_tax": 1900,
+  "hatc_max": 1600,
+  "hatc_2025": 1500,
+  "care_days": 90,
+  "years_back": 3,
+  "note": "examples (not CRA rules): Lena, an unpaid primary caregiver for her father (care level 2+ at home, registered, more than 90 days); a couple with $20,000 of eligible fertility fees at a Manitoba clinic, no reimbursement, claimed by one spouse; a homeowner whose principal residence was not designated with the municipality, gross school taxes $1,900."
+ },
+ "derive": {
+  "fert_credit": "fert_paid * fert_rate",
+  "fert_cap_check": "min(fert_max_expenses * fert_rate, fert_max_credit)",
+  "hatc_credit": "min(hatc_max, school_tax)"
+ },
+ "spoken": {
+  "caregiver": "fourteen hundred dollars",
+  "fert_paid": "twenty thousand dollars",
+  "fert_rate": "forty percent",
+  "fert_credit": "eight thousand dollars",
+  "hatc_credit": "sixteen hundred dollars",
+  "care_days": "ninety days",
+  "years_back": "three years"
+ },
+ "sources": {
+  "caregiver": "gov.mb.ca/finance/tao/caregiver.html (fetched 2026-10-16): flat $1,400 per year for unpaid care; refundable and not income tested ('you can claim it even if you do not have taxable income'); care recipient assessed at care level 2+ living in a private residence in Manitoba; caregiver resident, care for longer than 90 days, no compensation; one primary caregiver per recipient; Registration Form submitted to Manitoba Finance; registration valid up to 3 years then renewal",
+  "fertility": "gov.mb.ca/finance/personal/pcredits.html (fetched 2026-10-16): refundable, 40% of fertility treatment fees paid to a Manitoba licensed medical practitioner or clinic and related prescription drugs, net of reimbursements; from 2024 up to $40,000 of eligible expenses for a maximum credit of $16,000; claimed by either spouse, not split",
+  "hatc": "gov.mb.ca/finance/personal/pcredits.html (fetched 2026-10-16): Homeowners Affordability Tax Credit up to $1,600 on principal residences for 2026 ($1,500 for 2025; $1,700 announced for 2027); amount is the lesser of the maximum and gross school taxes; homeowners who did not receive it on the property tax statement can claim it on the personal income tax return; listed under Refundable Measures; claimed on Form MB479",
+  "refundable": "gov.mb.ca/finance/personal/pcredits.html lists the Fertility Treatment, Homeowners Affordability and Primary Caregiver credits under 'Refundable Measures'; CRA Manitoba information guide: even if you do not have to pay tax, you may be entitled to the primary caregiver tax credit, personal tax credit, homeowners affordability tax credit, renters affordability tax credit and seniors school tax rebate",
+  "three_years": "CRA Manitoba information guide (Form MB479 section, via search results 2026-10-16 and the 2021 guide text): attach Form MB479 to the return; claims for most of these credits must be made within three years of the end of the tax year they relate to",
+  "not_covered": "renters affordability tax credit was the topic of H2 and is not repeated; personal tax credit ($195 basic minus 1% of family net income) and seniors' school tax rebate (up to $235, 65+) mentioned only in the description"
+ }
+}
