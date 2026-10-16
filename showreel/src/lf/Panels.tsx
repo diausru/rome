@@ -133,7 +133,7 @@ const Provinces: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
             <div style={{ fontSize: 20, padding: '9px 0', color: key === 'take_home' ? C.white : C.dim, fontWeight: key === 'take_home' ? 800 : 500, borderTop: key === 'take_home' ? `2px solid ${C.gold}` : 'none' }}>{label}</div>
             {cols.map((x, j) => {
               const v = x.value[key]; const k = sp(c.now, (x.t ?? p.t) + 0.15 * i, c.fps);
-              const win = key === 'take_home' && v === best && c.now >= (p.lead ?? Infinity);
+              const win = key === 'take_home' && v === best && c.now >= (p.lead?.t ?? p.lead ?? Infinity);
               return <div key={j} style={{ textAlign: 'right', padding: '9px 10px', fontFamily: F.serif, fontWeight: 800, fontSize: key === 'take_home' ? 30 : 22, opacity: k, color: key === 'take_home' ? (win ? C.green : C.white) : C.red, borderTop: key === 'take_home' ? `2px solid ${C.gold}` : 'none', background: win ? 'rgba(127,211,160,.10)' : 'transparent', borderRadius: 6 }}>{key === 'take_home' ? '' : '−'}{money(v)}</div>;
             })}
           </React.Fragment>))}
