@@ -1,0 +1,146 @@
+<title>MB479 Credits Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column like an accountant's working paper — verdict first, then the evidence ledger (demand → competitors → audience → titles), each a ruled section with tabular figures. */
+:root {
+  --bg: #f6f8fa;
+  --paper: #ffffff;
+  --ink: #18212b;
+  --muted: #5b6672;
+  --rule: #d9e0e7;
+  --accent: #a3283b;      /* cranberry: the key point */
+  --gold: #a87412;        /* ledger figures */
+  --good: #2f7a52;
+  --bar: #c9d3dd;
+  --bar-hi: #a3283b;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+    --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11161c; --paper: #18202a; --ink: #e8edf2; --muted: #9aa6b2; --rule: #2a3542;
+  --accent: #e0697a; --gold: #e2b14f; --good: #6cc394; --bar: #34414f; --bar-hi: #e0697a; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 14px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font: 800 clamp(34px, 6vw, 56px)/1.02 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+h1 em { font-style: normal; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--muted); margin: 0; }
+.verdict { background: var(--paper); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 6px; padding: 20px 22px; display: grid; gap: 10px; }
+.verdict h2 { margin: 0; font: 600 13px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.verdict ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+section { display: grid; gap: 16px; border-top: 1px solid var(--rule); padding-top: 24px; }
+section h2 { font: 700 24px/1.15 var(--display); margin: 0; text-wrap: balance; }
+section > p { margin: 0; max-width: 64ch; color: var(--muted); }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.kv div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 4px; }
+.kv b { font: 600 28px/1.1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.kv span { font-size: 13px; color: var(--muted); }
+.bars { display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: minmax(150px, 230px) 1fr auto; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 12px; background: transparent; border-radius: 3px; position: relative; }
+.bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 3px; }
+.bar.hi .fill { background: var(--bar-hi); }
+.bar .num { font: 500 13px/1 var(--mono); font-variant-numeric: tabular-nums; color: var(--ink); min-width: 92px; text-align: right; }
+.bar .num small { color: var(--good); }
+.note { font-size: 13px; color: var(--muted); }
+.table { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 620px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tag { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 7px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+.tag.us { color: var(--accent); border-color: var(--accent); }
+.titles { display: grid; gap: 10px; }
+.t { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; }
+.t.win { border-color: var(--accent); }
+.t q { quotes: none; font-weight: 600; min-width: 0; }
+.t .score { font: 600 30px/1 var(--mono); color: var(--gold); font-variant-numeric: tabular-nums; }
+.t .meter { grid-column: 1 / -1; height: 6px; background: var(--bar); border-radius: 3px; overflow: hidden; }
+.t .meter i { display: block; height: 100%; background: var(--gold); }
+.t.win .meter i { background: var(--accent); }
+.gap { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.gap div { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 6px; }
+.gap h3 { margin: 0; font: 600 15px/1.3 var(--body); }
+.gap p { margin: 0; font-size: 14px; color: var(--muted); }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; }
+@media (max-width: 520px) { .bar { grid-template-columns: 1fr auto; } .bar .track { grid-column: 1 / -1; order: 3; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Tax Secrets Canada · Short H1 · анализ vidIQ + NexLev · 16 октября 2026</div>
+    <h1>Налог $0, а <em>Манитоба всё равно платит</em></h1>
+    <p class="lede">Формат расследования: три человека, три возвратных кредита, одна форма MB479. Ниже спрос, конкуренты, наш угол и оценка заголовков.</p>
+  </header>
+
+  <div class="verdict">
+    <h2>Вывод</h2>
+    <ul>
+      <li>Точная фраза «manitoba tax credits» даёт меньше 750 поисков в месяц, но запрос «manitoba» вырос до 13 111 (+48% к базе 30 дней назад).</li>
+      <li>Конкурентов по углу нет: поиск vidIQ по кредитам для опекунов и на лечение бесплодия в CA вернул 0 видео; в Shorts (NexLev) про кредит домовладельцам есть только новости с 5–16 просмотрами.</li>
+      <li>Заголовки: 83 и 80. Основной: «You Owe $0 Tax in Manitoba? These 3 Credits Still Pay You».</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Спрос</h2>
+    <p>Ежемесячные запросы на YouTube по оценке vidIQ. Красным отмечен запрос под ролик.</p>
+    <div class="bars">
+      <div class="bar"><span>manitoba</span><span class="track"><span class="fill" style="width:100%"></span></span><span class="num">13 111 <small>+48%</small></span></div>
+      <div class="bar hi"><span>manitoba tax credits</span><span class="track"><span class="fill" style="width:5.7%"></span></span><span class="num">&lt;750</span></div>
+    </div>
+    <p class="note">Шкала от 0 до 13 111. Полоса для «&lt;750» условная. Конкуренция для «manitoba»: 40,6 из 100.</p>
+  </section>
+
+  <section>
+    <h2>Конкуренты: Shorts по запросу «manitoba tax credits» (NexLev, CA)</h2>
+    <div class="table"><table>
+      <thead><tr><th>Short</th><th>Просмотры</th><th>Угол</th></tr></thead>
+      <tbody>
+        <tr><td>How to fill out TD1 form if you have two jobs</td><td class="n">35 000</td><td>другая тема</td></tr>
+        <tr><td>$1 Million After Taxes in Manitoba, Canada</td><td class="n">13 000</td><td>расчёт налога</td></tr>
+        <tr><td>Top 10 most commonly missed tax deductions and credits in Canada</td><td class="n">5 400</td><td>общий список</td></tr>
+        <tr><td>Manitoba Renters Tax Credit: $575 (2025) → $625 (2026)</td><td class="n">122</td><td>арендаторы (у нас было в H2)</td></tr>
+        <tr><td>Manitoba homeowners say they aren't getting $1,500 property tax credit</td><td class="n">16</td><td>новость</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">vidIQ youtube_search (CA, по просмотрам) по кредитам для опекунов и на лечение бесплодия: 0 результатов.</p>
+  </section>
+
+  <section>
+    <h2>Наш угол: три человека при налоге $0</h2>
+    <div class="gap">
+      <div><h3>Опекун</h3><p>Primary Caregiver Tax Credit: $1 400 в год, фиксированно, без проверки дохода. Регистрация в Manitoba Finance, уход дольше 90 дней, уровень ухода 2+.</p></div>
+      <div><h3>Лечение бесплодия</h3><p>40% расходов: $20 000 → $8 000. Максимум $16 000 при расходах $40 000, за вычетом страховки; заявляет один из супругов.</p></div>
+      <div><h3>Домовладелец</h3><p>Homeowners Affordability Tax Credit: меньшее из $1 600 (2026) и школьного налога. Если не попал в счёт за налог на недвижимость, заявить в декларации.</p></div>
+    </div>
+    <p class="note">Неожиданный вывод: все три кредита возвратные, их выплачивают даже при нулевом налоге. Большинство кредитов MB479 можно заявить за 3 года назад. Источники: gov.mb.ca (страницы получены 16.10.2026), справочник CRA по Манитобе.</p>
+  </section>
+
+  <section>
+    <h2>Оценка заголовков</h2>
+    <p>vidIQ score_title, формат Short.</p>
+    <div class="titles">
+      <div class="t win"><q>You Owe $0 Tax in Manitoba? These 3 Credits Still Pay You</q><span class="score">83</span><span class="meter"><i style="width:83%"></i></span></div>
+      <div class="t"><q>Manitoba Tax Credits That Pay You Even With No Tax Owing (MB479)</q><span class="score">80</span><span class="meter"><i style="width:80%"></i></span></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>vidIQ: баланс 949 → 919 = 30 кредитов (лимит 25 превышен на 5; по прайсу вызовы стоят 20, причина разницы не выяснена). NexLev: 1 поиск.</span>
+    <span>Цифры записаны в h1/data.json и h1/PRODUCTION-BIBLE.md. Примеры условные. Общая информация, не консультация.</span>
+  </footer>
+</div>
