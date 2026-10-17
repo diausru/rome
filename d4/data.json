@@ -1,0 +1,39 @@
+{
+ "topic": "Spousal RRSP: higher earner contributes and deducts from own room; spouse withdraws later at a lower rate; 3-year attribution (premiums in the year or two preceding years) taxes early withdrawals to the contributor",
+ "tax_year": 2026,
+ "example": {
+  "alex": 120000,
+  "sam": 30000,
+  "contrib": 10000,
+  "saving": 3952.52,
+  "sam_tax": 2480.0,
+  "early_tax": 4340.0,
+  "alex_rate": 0.434,
+  "sam_rate": 0.248,
+  "years": 3,
+  "dec_year": 2026,
+  "free_year": 2029,
+  "note": "example (not a CRA rule): Manitoba couple, taxable incomes $120,000 (Alex) and $30,000 (Sam), 2026 federal + Manitoba brackets; Sam's withdrawal tax uses 2026 rates as an illustration of a future year; credits unchanged at these incomes; pension income splitting, OAS clawback and future rate changes not modelled. Computed by d4/calc.py."
+ },
+ "derive": {
+  "saving_round": "round(saving, -1)",
+  "sam_round": "round(sam_tax, -1)",
+  "less_round": "round(saving - sam_tax, -2)",
+  "early_round": "round(early_tax, -1)"
+ },
+ "spoken": {
+  "alex": "hundred and twenty thousand",
+  "contrib": "ten thousand",
+  "saving_round": "three thousand nine hundred and fifty dollars",
+  "sam_round": "two thousand four hundred and eighty dollars",
+  "less_round": "fifteen hundred",
+  "early_round": "four thousand three hundred and forty dollars",
+  "years": "three tax years"
+ },
+ "sources": {
+  "deduction": "ITA 146(5.1): premiums paid to a spousal or common-law partner RRSP are deductible by the contributor, limited by the contributor's own RRSP deduction limit (146(5.1)(b)); payable up to 60 days after year-end; laws.justice.gc.ca current to 2026-09-30",
+  "attribution": "ITA 146(8.3): a withdrawal by the spouse is included in the contributor's income up to premiums paid by the contributor to a spousal plan in the year or in one of the two immediately preceding taxation years (not if living separate and apart due to breakdown)",
+  "rates": "CRA T4127 2026: federal 14% / 20.5% (from $58,523) / 26% (from $117,045); Manitoba 10.8% / 12.75% (from $47,000) / 17.4% (from $100,000)",
+  "not_covered": "pension income splitting (next video), RRIF minimum-amount exception to attribution, marriage breakdown exception named only in the bible"
+ }
+}

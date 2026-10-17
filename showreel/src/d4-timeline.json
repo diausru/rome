@@ -1,0 +1,47 @@
+{
+ "total": 69.823,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "One spouse earns a hundred and twenty thousand, the other thirty thousand. Same ten thousand dollar RRSP deposit. Whose name it's in changes the tax.",
+   "start": 0.25,
+   "end": 11.223
+  },
+  {
+   "id": "c1",
+   "text": "Alex puts ten thousand into a spousal RRSP. Alex claims the deduction, from Alex's own room, and saves about three thousand nine hundred and fifty dollars.",
+   "start": 11.543,
+   "end": 22.056
+  },
+  {
+   "id": "c2",
+   "text": "Years later, Sam takes the ten thousand out. At Sam's lower income, the tax at today's rates is about two thousand four hundred and eighty dollars. Roughly fifteen hundred less.",
+   "start": 22.356,
+   "end": 34.619
+  },
+  {
+   "id": "c3",
+   "text": "The trap: if Sam withdraws while Alex contributed this year or in the two years before, it's taxed to Alex. About four thousand three hundred and forty dollars.",
+   "start": 34.919,
+   "end": 47.131
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: the rule counts calendar years. One deposit in December can tie up the plan for three tax years.",
+   "start": 47.451,
+   "end": 55.953
+  },
+  {
+   "id": "action",
+   "text": "Time withdrawals around the last contribution, and check with an accountant before taking money out.",
+   "start": 56.273,
+   "end": 61.868
+  },
+  {
+   "id": "cta",
+   "text": "Next: pension income splitting. How retired couples move income on paper. Follow so you don't miss it.",
+   "start": 62.168,
+   "end": 69.823
+  }
+ ]
+}

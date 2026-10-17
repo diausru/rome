@@ -1,0 +1,259 @@
+{
+ "id": "d4",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "SAME $10,000 RRSP.",
+  "l2": "WHOSE NAME?"
+ },
+ "hold_after_vo": 0.8,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    470,
+    880,
+    770
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "stairs": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "c3"
+  },
+  "flip": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c3",
+   "to": "reveal"
+  },
+  "years": {
+   "box": [
+    80,
+    680,
+    880,
+    560
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    640
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    80,
+    920,
+    48
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "alex",
+   "beat": "hook",
+   "word": "twenty",
+   "sfx": "tick"
+  },
+  {
+   "id": "sam",
+   "beat": "hook",
+   "word": "thirty.",
+   "sfx": "tick"
+  },
+  {
+   "id": "drop",
+   "beat": "hook",
+   "word": "deposit.",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "name",
+   "beat": "hook",
+   "word": "name",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.5,
+   "gain": 0.75
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "spousal",
+   "beat": "c1",
+   "word": "spousal",
+   "sfx": "tick"
+  },
+  {
+   "id": "room",
+   "beat": "c1",
+   "word": "room,",
+   "sfx": "tick"
+  },
+  {
+   "id": "save",
+   "beat": "c1",
+   "word": "three",
+   "sfx": "chime"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "out",
+   "beat": "c2",
+   "word": "out.",
+   "sfx": "tick"
+  },
+  {
+   "id": "low",
+   "beat": "c2",
+   "word": "two",
+   "sfx": "chime",
+   "n": 1
+  },
+  {
+   "id": "less",
+   "beat": "c2",
+   "word": "fifteen",
+   "sfx": "tick"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.4,
+   "gain": 0.6
+  },
+  {
+   "id": "two",
+   "beat": "c3",
+   "word": "two",
+   "sfx": "tick"
+  },
+  {
+   "id": "toalex",
+   "beat": "c3",
+   "word": "taxed",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "early",
+   "beat": "c3",
+   "word": "four",
+   "sfx": "tick"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "cal",
+   "beat": "reveal",
+   "word": "calendar",
+   "sfx": "tick"
+  },
+  {
+   "id": "dec",
+   "beat": "reveal",
+   "word": "December",
+   "sfx": "tick"
+  },
+  {
+   "id": "three",
+   "beat": "reveal",
+   "word": "three",
+   "sfx": "chime"
+  },
+  {
+   "id": "time",
+   "beat": "action",
+   "word": "Time",
+   "sfx": "tick"
+  },
+  {
+   "id": "acct",
+   "beat": "action",
+   "word": "accountant",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c2",
+   "word": "fifteen",
+   "offset": 1.0
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ]
+}
