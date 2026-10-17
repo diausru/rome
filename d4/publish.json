@@ -1,0 +1,88 @@
+{
+ "video": {
+  "title": "Spousal RRSP: whose name, and the 3-year trap (D4)",
+  "duration": "1:10 (70.62 s), 1080×1920, 24 fps, VO 69.82 s + 0.8 s hold",
+  "mp4": "showreel/out/d4/d4-final.mp4 (share copy: d4-share.mp4)"
+ },
+ "cover": {
+  "t": 34.58,
+  "ms": 34580,
+  "frame": "'YEARS LATER': tax-rate staircase 24.8% → 43.4%, 'ALEX DEDUCTS −$3,953', 'SAM WITHDRAWS, LATER $2,480 tax', stamp '≈ $1,473 LESS TAX', the retired couple on the river path",
+  "why": "the whole payoff in one stable frame",
+  "file": "showreel/out/d4/cover.jpg (extracted at 34.582 s)"
+ },
+ "sources": [
+  "Income Tax Act s.146(5.1) (laws.justice.gc.ca, current to 2026-09-30) · contributor deducts premiums to a spousal RRSP, limited by the contributor's own RRSP deduction limit; up to 60 days after year-end",
+  "Income Tax Act s.146(8.3) · spouse's withdrawal taxed to the contributor up to premiums paid in the year or the two preceding years (exception: living apart due to breakdown)",
+  "CRA T4127 (2026) federal and Manitoba brackets · example calculation d4/calc.py"
+ ],
+ "yt": {
+  "titles": [
+   "Spousal RRSP: The 3-Year Rule That Sends the Tax Back to You",
+   "Spousal RRSP Explained With Real Numbers (Canada 2026)",
+   "One RRSP Deposit, Two Names: How a Spousal RRSP Cuts Couple Tax"
+  ],
+  "description": "One spouse earns $120,000, the other $30,000. Same $10,000 RRSP deposit. Whose name it's in changes the tax.\n\nAlex puts $10,000 into a spousal RRSP (Sam owns it). Alex claims the deduction, from Alex's own RRSP room, and saves about $3,953 (Manitoba 2026, 43.4% bracket).\nYears later, Sam withdraws the $10,000. At Sam's lower income, the tax at today's rates is about $2,480 (24.8%). Roughly $1,500 less.\n\nThe trap: if Sam withdraws while Alex contributed to a spousal RRSP this year or in the two years before, the withdrawal is taxed to Alex: about $4,340 (ITA 146(8.3)).\nThe twist: the rule counts calendar years. One deposit in December 2026 keeps 2026, 2027 and 2028 locked; 2029 is clear.\n\nTime withdrawals around the last contribution, and check with an accountant before taking money out.\n\nNext: pension income splitting. How retired couples move income on paper.\n\nSources: Income Tax Act ss. 146(5.1), 146(8.3); CRA 2026 federal and Manitoba rates. Example couple; the future withdrawal is shown at 2026 rates. General information, not tax advice.\n\n#SpousalRRSP #RRSP #CanadaTax",
+  "hashtags": "#SpousalRRSP #RRSP #CanadaTax #RetirementPlanning #PersonalFinanceCanada",
+  "keywords": "spousal rrsp, spousal rrsp 3 year rule, spousal rrsp withdrawal, spousal rrsp attribution rule, how does a spousal rrsp work, spousal rrsp canada, rrsp couples, income splitting canada",
+  "pinned": "Has a December contribution ever locked your spousal RRSP? Example only, general info, not advice.",
+  "cta": "Next: pension income splitting. How retired couples move income on paper. Follow so you don't miss it."
+ },
+ "tt": {
+  "caption": "Spousal RRSP in Canada 🇨🇦 Higher earner deducts, lower earner withdraws later. But withdraw too soon and the tax comes back. The 3-year rule, with real numbers.",
+  "keywords": "spousal rrsp · 3 year rule · spousal rrsp withdrawal · rrsp couples",
+  "hashtags": "#spousalrrsp #rrsp #canadiantaxes #personalfinancecanada #couplesmoney",
+  "pinned": "One December deposit locks 3 tax years. General info, not advice.",
+  "cta": "Follow for the next one: pension income splitting."
+ },
+ "ig": {
+  "caption": "Same $10,000 RRSP. Whose name? 🇨🇦\n\nAlex ($120K) contributes to a spousal RRSP → saves ~$3,953 (MB 2026)\nSam ($30K) withdraws years later → ~$2,480 tax\n≈ $1,500 less for the couple\n\n⚠️ 3-year rule: withdraw while there were spousal contributions this year or the 2 before → taxed to Alex (~$4,340).\nOne December deposit locks 3 tax years.\n\nSend this to a couple planning retirement.\n\nSources: Income Tax Act s.146, CRA 2026 rates. Example only. General info, not advice.\n\n#spousalrrsp #rrsp #canadiantaxes #personalfinancecanada #retirementplanning #canadatax",
+  "keywords": "spousal rrsp, 3 year rule, rrsp couples, retirement",
+  "hashtags": "#spousalrrsp #rrsp #canadiantaxes #personalfinancecanada #retirementplanning #canadatax",
+  "pinned": "Save this before your next RRSP deposit 📌",
+  "cta": "Send this to a couple planning retirement."
+ },
+ "eng": {
+  "question": "Did you know a December deposit locks three tax years?",
+  "save": "The 3-year rule with a calendar to check against.",
+  "share": "Couples with uneven incomes.",
+  "follow": "Canadian tax rules with real numbers, verified by a Winnipeg accountant."
+ },
+ "seo": {
+  "primary": "spousal rrsp",
+  "secondary": "'spousal rrsp' 4,990/mo (competition 25.6); long-tail <750: 'spousal rrsp withdrawal' (9.3), 'spousal rrsp rules' (8.5), 'spousal rrsp attribution rule' (7.2), 'three year rule spousal rrsp'",
+  "intent": "Couples deciding whose RRSP to fund and when the lower earner can withdraw.",
+  "audience": "Couples aged 35–60 with uneven incomes.",
+  "angle": "Real numbers for both sides + the calendar-year twist of the 3-year rule.",
+  "questions": "How does a spousal RRSP work? · When can my spouse withdraw from a spousal RRSP? · What is the 3-year rule? · Whose room does a spousal RRSP use?"
+ },
+ "next": [
+  {
+   "topic": "Pension income splitting (R5)",
+   "why": "Bridge in this video; retirement arc",
+   "intent": "pension income splitting canada",
+   "hook": "Two pensions, one tax bill",
+   "angle": "T1032: who can split, how much, at what age",
+   "payoff": "the tax difference for a retired couple"
+  },
+  {
+   "topic": "OAS: residence years and age 75 (list-2 #12)",
+   "why": "Retirement arc",
+   "intent": "oas eligibility",
+   "hook": "Lived here 25 years? Your OAS isn't full",
+   "angle": "residence years + the 10% increase at 75",
+   "payoff": "how much you'll get"
+  },
+  {
+   "topic": "CCB: why my wife gets the money (list-2 #3)",
+   "why": "Couples angle continues",
+   "intent": "who receives ccb",
+   "hook": "Why is the CCB in her name?",
+   "angle": "who receives vs whose income counts",
+   "payoff": "what to check"
+  }
+ ],
+ "series": "Card series, row 15 of PUBLISHING-PLAN §4 (D4), bridged from C2; investigation format; leads into the list-2 retirement arc (R5). Playlist: 'RRSP & retirement'. Best window: January–February (RRSP season) and December (the December-deposit twist).",
+ "research": "vidIQ: 'spousal rrsp' 4,990/mo (competition 25.6); titles 86 / 54; credits 864 → 839 = 25. NexLev Shorts CA: top 'Uncovering this Insane Tax-Saving Strategy for Spousal RRSP' 5.8K, 'How a Spousal RRSP Can Help You Pay Less Tax in Retirement' 4.5K, 'Should You Set Up A Spousal RRSP?' 2.4K; the only 3-year-rule Short has 6 views; none shows the calendar-year twist with real numbers.",
+ "retention": "Topic on frame 0 (SAME $10,000 RRSP. / WHOSE NAME?); a coin drops into SAM's jar at 9 s; staircase fills; −$3,953 at 20 s, $2,480 at 29 s, '≈ $1,473 less' at 34 s; red arrow flips back at 42 s; year tiles at 51–54 s; rule card + bridge. Automated QC: 80 visual events."
+}
