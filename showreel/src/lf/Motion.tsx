@@ -342,4 +342,105 @@ const StacksHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook };
+// ---------- GaugeHook: frame-0 hook — three dial gauges ("taken from the next $1,000"); needles swing on cue; the surprise lane glows ----------
+// p.people[{name, sub, taken, keep}] · p.swingAt[] · p.finishAt · p.winner (index) · p.delta · p.qAt · p.question · p.out · p.max (scale, default 600)
+const GaugeHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const ppl = p.people as Pn[]; const MX = p.max ?? 600; const R0 = 210;
+  const fin = p.finishAt ? prog(now, p.finishAt.t, 0.7, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const ang = (v: number) => Math.PI * (1 - v / MX); // 0 → left (180°), MX → right (0°)
+  const pt = (cx: number, cy: number, r: number, a: number) => [cx + r * Math.cos(a), cy - r * Math.sin(a)];
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.2 + 0.4 * cl(el / 16), y: 0, z: 0.05 + 0.25 * cl(el / 16) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.62})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 60, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{fin > 0.05 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0, opacity: 1 - out }}>
+        {ppl.map((pe, i) => {
+          const cx = 360 + i * 600; const cy = 640; const k = p.swingAt?.[i] ? prog(now, p.swingAt[i].t, 1.4, BACK) : 0;
+          const v = pe.taken * k; const a = ang(v); const [nx, ny] = pt(cx, cy, R0 - 30, a); const win = fin > 0 && i === p.winner;
+          const arc = (v0: number, v1: number, col: string, w: number) => { const [x0, y0] = pt(cx, cy, R0, ang(v0)); const [x1, y1] = pt(cx, cy, R0, ang(v1));
+            return <path d={`M ${x0} ${y0} A ${R0} ${R0} 0 0 1 ${x1} ${y1}`} stroke={col} strokeWidth={w} fill="none" strokeLinecap="round" />; };
+          const ticks = [0, 100, 200, 300, 400, 500, 600].filter((t) => t <= MX);
+          return (
+            <g key={i} style={{ transform: `translateY(${(1 - prog(now, p.t + i * 0.15, 0.8, EX)) * 40}px)` }}>
+              {arc(0, MX, 'rgba(255,255,255,.12)', 26)}
+              {v > 1 && arc(0, v, win ? C.gold : C.red, 26)}
+              {ticks.map((t) => { const [a1, b1] = pt(cx, cy, R0 + 22, ang(t)); const [a2, b2] = pt(cx, cy, R0 + 48, ang(t));
+                return <g key={t}><line x1={a1} y1={b1} x2={pt(cx, cy, R0 + 34, ang(t))[0]} y2={pt(cx, cy, R0 + 34, ang(t))[1]} stroke="rgba(255,255,255,.35)" strokeWidth={2} />
+                  <text x={a2} y={b2 + 6} fill={C.faint} fontSize={18} fontFamily="Oswald" textAnchor="middle">${t}</text></g>; })}
+              <line x1={cx} y1={cy} x2={nx} y2={ny} stroke={C.white} strokeWidth={6} strokeLinecap="round" />
+              <circle cx={cx} cy={cy} r={16} fill={C.white} />
+              {win && <circle cx={cx} cy={cy - 60} r={R0 + 70} fill="none" stroke={C.gold} strokeWidth={3} opacity={0.6 * fin} />}
+            </g>);
+        })}
+      </svg>
+      {ppl.map((pe, i) => {
+        const cx = 360 + i * 600; const k = p.swingAt?.[i] ? prog(now, p.swingAt[i].t, 1.4, EX) : 0; const win = fin > 0 && i === p.winner;
+        return (
+          <div key={i} style={{ position: 'absolute', left: cx - 280, width: 560, top: 0, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+            <div style={{ position: 'absolute', top: 236, width: '100%' }}>
+              <div style={{ fontSize: 54, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{pe.name}</div>
+              <div style={{ fontSize: 26, letterSpacing: 5, color: C.dim }}>{pe.sub}</div></div>
+            <div style={{ position: 'absolute', top: 680, width: '100%', opacity: cl(k * 1.5) }}>
+              <div style={{ fontSize: 24, letterSpacing: 5, color: C.dim }}>TAKEN FROM THE NEXT $1,000</div>
+              <div style={{ fontSize: 66, fontWeight: 700, color: win ? C.gold : C.red }}>−${Math.round(pe.taken * k)}</div>
+              <div style={{ fontSize: 34, letterSpacing: 3, color: win ? C.gold : C.white }}>KEEPS ${Math.round(1000 - pe.taken * k)}</div></div>
+            {win && p.delta && <div style={{ position: 'absolute', top: 165, width: '100%', fontSize: 46, fontWeight: 700, color: C.gold, transform: `scale(${fin})` }}>{p.delta}</div>}
+          </div>);
+      })}
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 935, textAlign: 'center', fontFamily: COND, fontSize: 46, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+// ---------- CurveChart: the next-$1,000 line across incomes; revealed left→right on cues; marks + person pins on cue ----------
+// p.data[[x, y]] · p.xr [x0, x1] · p.yr [y0, y1] · p.revealAt[{t, x}] · p.marks[{x, text, t, color}] · p.pins[{x, name, t}] · p.title · p.sub · p.out · p.bands[{x0, x1, t, color, text}]
+const CurveChart: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.8, INOUT) : 0; const inn = prog(now, p.t, 0.9, EX);
+  const data = p.data as number[][]; const [x0, x1] = p.xr; const [y0, y1] = p.yr; const L = 190, Rr = 1730, T = 250, B = 880;
+  const X = (x: number) => L + ((x - x0) / (x1 - x0)) * (Rr - L); const Y = (y: number) => B - ((y - y0) / (y1 - y0)) * (B - T);
+  const rv = (p.revealAt ?? []) as Pn[]; let rx = x0;
+  for (let i = 0; i < rv.length; i++) { const a = rv[i]; const b = rv[i + 1]; if (now >= a.t) { rx = b ? a.x + (b.x - a.x) * INOUT(cl((now - a.t) / Math.max(0.6, Math.min(2.5, b.t - a.t)))) * (now >= b.t ? 1 : 1) : a.x; if (b && now < b.t) rx = a.x + (b.x - a.x) * INOUT(cl((now - a.t) / Math.min(2.2, b.t - a.t))); } }
+  const vis = data.filter((d) => d[0] <= rx); const yAt = (x: number) => { let v = data[0][1]; for (const d of data) { if (d[0] <= x) v = d[1]; else break; } return v; };
+  const step = (pts: number[][]) => pts.map((d, i) => (i ? `L ${X(d[0])} ${Y(pts[i - 1][1])} L ${X(d[0])} ${Y(d[1])}` : `M ${X(d[0])} ${Y(d[1])}`)).join(' ');
+  const line = vis.length ? step(vis) + ` L ${X(rx)} ${Y(vis[vis.length - 1][1])}` : '';
+  const area = vis.length ? `${line} L ${X(rx)} ${B} L ${X(vis[0][0])} ${B} Z` : '';
+  const cy = Y(yAt(rx)); const fmtK = (x: number) => '$' + Math.round(x / 1000) + 'K';
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, opacity: inn * (1 - out), transform: `translateY(${(1 - inn) * 30}px)` }}>
+      <div style={{ position: 'absolute', left: 110, top: 120, width: 1700, height: 860, borderRadius: 22, background: 'rgba(9,14,26,.78)', border: '1px solid rgba(255,255,255,.12)', backdropFilter: 'blur(14px)' }} />
+      <div style={{ position: 'absolute', left: 160, top: 145, fontFamily: COND }}>
+        <div style={{ fontSize: 40, fontWeight: 700, color: C.white, letterSpacing: 2 }}>{p.title}</div>
+        <div style={{ fontSize: 22, letterSpacing: 4, color: C.dim }}>{p.sub}</div></div>
+      <svg width={1920} height={1080} style={{ position: 'absolute', inset: 0 }}>
+        <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#E8C27A" stopOpacity=".42" /><stop offset="1" stopColor="#E8C27A" stopOpacity="0" /></linearGradient></defs>
+        {[200, 300, 400, 500, 600].filter((v) => v >= y0 && v <= y1).map((v) => <g key={v}><line x1={L} x2={Rr} y1={Y(v)} y2={Y(v)} stroke="rgba(255,255,255,.08)" />
+          <text x={L - 14} y={Y(v) + 7} fill={C.faint} fontSize={20} fontFamily="Oswald" textAnchor="end">${v}</text></g>)}
+        {(p.xticks ?? []).map((x: number) => <text key={x} x={X(x)} y={B + 34} fill={C.faint} fontSize={20} fontFamily="Oswald" textAnchor="middle">{fmtK(x)}</text>)}
+        {(p.bands ?? []).map((b: Pn, i: number) => { const k = prog(now, b.t ?? Infinity, 0.6); return k > 0 ? <g key={i} opacity={k}>
+          <rect x={X(b.x0)} y={T} width={X(b.x1) - X(b.x0)} height={B - T} fill={b.color ?? 'rgba(127,211,160,.10)'} />
+          <text x={(X(b.x0) + X(b.x1)) / 2} y={T + 30} fill={C.green} fontSize={22} fontFamily="Oswald" textAnchor="middle" letterSpacing={3}>{b.text}</text></g> : null; })}
+        {area && <path d={area} fill="url(#cg)" />}
+        {line && <path d={line} stroke={C.gold} strokeWidth={5} fill="none" strokeLinejoin="round" />}
+        {(p.marks ?? []).map((m: Pn, i: number) => { const k = prog(now, m.t ?? Infinity, 0.5); if (k <= 0) return null; const mx = X(m.x); const my = Y(yAt(m.x)); const up = (m.dy ?? -70);
+          return <g key={i} opacity={k}><line x1={mx} x2={mx} y1={T + 40} y2={B} stroke={m.color ?? 'rgba(255,255,255,.35)'} strokeDasharray="6 8" strokeWidth={2} />
+            <circle cx={mx} cy={my} r={9 * k} fill={m.color ?? C.white} />
+            <text x={mx + (m.anchor === 'end' ? -14 : 14)} y={my + up} fill={m.color ?? C.white} fontSize={26} fontFamily="Oswald" fontWeight={600} textAnchor={m.anchor ?? 'start'}>{m.text}</text></g>; })}
+        {(p.pins ?? []).map((m: Pn, i: number) => { const k = prog(now, m.t ?? Infinity, 0.6, BACK); if (k <= 0) return null; const mx = X(m.x); const my = Y(yAt(m.x));
+          return <g key={i}><circle cx={mx} cy={my} r={16 * k} fill={m.color ?? C.gold} stroke={C.navy} strokeWidth={4} />
+            <rect x={mx - 90} y={my - 96} width={180} height={62} rx={10} fill="rgba(7,11,20,.9)" stroke={m.color ?? C.gold} strokeWidth={2} opacity={k} />
+            <text x={mx} y={my - 56} fill={m.color ?? C.gold} fontSize={30} fontFamily="Oswald" fontWeight={700} textAnchor="middle" opacity={k}>{m.name}</text></g>; })}
+        {rx > x0 && rx < x1 && now < (p.cursorOff?.t ?? Infinity) && <g><circle cx={X(rx)} cy={cy} r={11} fill={C.white} />
+          <text x={X(rx)} y={cy - 26} fill={C.white} fontSize={30} fontFamily="Oswald" fontWeight={700} textAnchor="middle">${Math.round(yAt(rx))}</text>
+          <text x={X(rx)} y={B + 64} fill={C.gold} fontSize={26} fontFamily="Oswald" fontWeight={700} textAnchor="middle">{'$' + Math.round(rx).toLocaleString('en-US')}</text></g>}
+      </svg>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart };

@@ -7,7 +7,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 |---|---|---|
 | 1 | The Canadian Tax Brackets Explained With Real Numbers | LF-01 done 2026-10-11 |
 | 2 | The Best Tax Software in Canada — What Should You Actually Use in 2026? | LF-02 done, scheduled in Metricool |
-| 3 | Marginal Tax Rates Explained — Why a Raise Doesn't Tax Your Whole Salary | queued |
+| 3 | Marginal Tax Rates Explained — Why a Raise Doesn't Tax Your Whole Salary | rendered 2026-10-17 (LF-10, `longform/lf10-marginal`) |
 | 4 | Federal vs Provincial Tax — Who Actually Takes Your Money? | queued |
 | 5 | Tax Credits vs Tax Deductions — What's the Difference? | queued |
 | 6 | Why Your Tax Refund Doesn't Mean You Paid Less Tax | queued |

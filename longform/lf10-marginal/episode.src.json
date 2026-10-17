@@ -1,0 +1,6131 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: canada.ca \u00b7 CRA T4127 (2026) \u00b7 Ontario 2026 rates \u00b7 Example calculation, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Three coworkers. Same company. Same one-thousand-dollar raise."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "Maya earns sixty-five thousand. She keeps six hundred and forty-three dollars of it."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "Jordan earns ninety thousand. He keeps seven hundred and four."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "Alex earns one hundred and twenty thousand. Alex keeps five hundred and sixty-six."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "Wait. Jordan earns more than Maya, but keeps sixty-one dollars more of the same raise?"
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 0.35,
+   "text": "By the end of this video, you'll know the real tax rate on your next dollar, and the one decision where that rate quietly changes."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "All numbers: twenty twenty-six, Ontario, single, employment income only. Examples, not real people. General information, not advice."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 1.0,
+   "text": "First, the myth that won't die."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "A raise can push some of your income into a higher bracket. But only the dollars above the line pay the higher rate. Everything below stays exactly where it was."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 0.35,
+   "text": "So, for an employee like Maya, a raise doesn't shrink your take-home pay. You always keep more than you had."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "But the bracket rate isn't the whole story. Because tax isn't the only thing that comes off your next dollar."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "So here's the real question. Of your next one thousand dollars, how much actually leaves?"
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 1.0,
+   "text": "Five things can take a piece."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "Federal tax. Ontario tax. The Ontario surtax, once your provincial tax gets big enough. C P P. And E I."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "Add them together, and you get your real marginal rate: the share of the next dollar that you don't keep."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 1.0,
+   "text": "Let's walk up the income ladder, one thousand dollars at a time."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "At fifty thousand: two hundred and fifty-two dollars of the next thousand go. That's federal tax at fourteen percent, Ontario at five point oh five, plus C P P and E I."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "Just past fifty-three thousand, eight hundred and ninety-one, Ontario's rate steps up to nine point one five. At fifty-five thousand, two hundred and ninety-two dollars go."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "Just past fifty-eight thousand, five hundred and twenty-three, the federal rate jumps to twenty point five. At sixty thousand, three hundred and fifty-seven dollars go."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "That's Maya's zone. Higher tax brackets, and still full C P P and E I on every dollar."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "Then something unexpected happens. The line starts going down."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "At sixty-eight thousand, nine hundred, E I stops. You've paid the maximum for the year."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "At seventy-four thousand, six hundred, regular C P P stops too. Only the smaller C P P two continues, at four percent."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "And at eighty-five thousand, C P P two stops as well."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "So at ninety thousand, only two hundred and ninety-six dollars of the next thousand go. Jordan's zone. Less than at sixty thousand."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 0.35,
+   "text": "That's the answer to our opening question. Jordan isn't in a lower bracket. Jordan has simply finished paying C P P and E I for the year."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 1.0,
+   "text": "You can actually see this on a pay stub."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "Employers take C P P and E I off every pay until you reach the yearly maximum. Then they stop."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 0.35,
+   "text": "For someone paid evenly at ninety thousand, E I runs out roughly in the fall, regular C P P a few weeks later, and C P P two near the end of the year."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "So Jordan's last paycheques of the year are bigger. Same salary, same tax bracket. Nothing changed except C P P and E I."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "And then in January, the counters reset, and the deductions start again."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 1.0,
+   "text": "Now the line climbs again."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "Around ninety-eight thousand, six hundred, the Ontario surtax kicks in. It's a tax on your provincial tax. At one hundred thousand, three hundred and fifteen dollars go."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "Past one hundred and seven thousand, seven hundred and eighty-five, Ontario's rate rises to eleven point one six. And the surtax gets a second, bigger step."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "Past one hundred and seventeen thousand and forty-five, the federal rate becomes twenty-six percent. At one hundred and twenty thousand, four hundred and thirty-four dollars go. That's Alex."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "At one hundred and fifty thousand, Ontario's rate rises again. At one hundred and sixty thousand, four hundred and fifty dollars go."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 0.35,
+   "text": "Past one hundred and eighty-one thousand, four hundred and forty, the federal rate becomes twenty-nine percent. And a quiet extra: your federal basic personal amount starts to shrink. About three more dollars per thousand."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "At two hundred and thirty thousand, four hundred and ninety-eight go. And past two hundred and fifty-eight thousand, four hundred and eighty-two, with the top federal rate of thirty-three percent, five hundred and thirty-five."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "There are also three small bumps on this line. The Ontario Health Premium rises in short steps, around forty-eight thousand, seventy-two thousand, and two hundred thousand of taxable income. In those stretches, it can add up to one hundred and fifty dollars to that next thousand."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "So your marginal rate isn't one number from a table. It's a line with steps, a valley, and a few bumps. And where you stand on it depends on your income this year."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 1.0,
+   "text": "Now, the decision where this really matters."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 0.35,
+   "text": "Say all three put one thousand dollars into an R R S P, and have the room to deduct it."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "Maya saves two hundred and ninety-six dollars of tax. Jordan saves two hundred and ninety-six. Alex saves four hundred and thirty-four."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "Look at Maya. Her raise lost three hundred and fifty-seven dollars. But her R R S P deduction saves only two hundred and ninety-six."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "Why the difference? Because an R R S P deduction lowers your income tax. It doesn't give back C P P or E I."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "So there are really two marginal rates. One for earning: everything that comes off the next dollar. And one for deducting: income tax only."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 0.35,
+   "text": "For a raise, a bonus or an extra shift, use the first one. For an R R S P deduction, use the second."
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "That's why Maya and Jordan save exactly the same on the deduction. Both are in the same federal and Ontario brackets. The C P P and E I difference doesn't count here."
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 0.35,
+   "text": "And that's why Alex saves the most. A deduction is worth the most in the years when your income-tax rate is highest."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 1.0,
+   "text": "There's one more lever here, and many people don't know it."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "You don't have to deduct an R R S P contribution in the year you make it. You can carry the deduction forward to a later year."
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.mp3",
+   "gap": 0.35,
+   "text": "Say you earn fifty thousand this year, and you expect one hundred and twenty thousand next year."
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.mp3",
+   "gap": 0.35,
+   "text": "Deduct one thousand dollars this year, and you save about two hundred and seven dollars. Deduct it next year, and you save about four hundred and thirty-four."
+  },
+  {
+   "id": "L54",
+   "file": "vo/L54.mp3",
+   "gap": 0.35,
+   "text": "Same contribution. More than twice the tax saving, just by choosing the year. You still need the contribution room, of course."
+  },
+  {
+   "id": "L55",
+   "file": "vo/L55.mp3",
+   "gap": 1.0,
+   "text": "One important limit. These are employee examples with no family benefits."
+  },
+  {
+   "id": "L56",
+   "file": "vo/L56.mp3",
+   "gap": 0.35,
+   "text": "If you get the Canada Child Benefit, the G S T credit, or other income-tested benefits, a raise can also reduce those. Then your real marginal rate can be higher. And that depends on your own situation."
+  },
+  {
+   "id": "L57",
+   "file": "vo/L57.mp3",
+   "gap": 0.35,
+   "text": "Same if you're self-employed, or in Quebec. Different rules apply."
+  },
+  {
+   "id": "L58",
+   "file": "vo/L58.mp3",
+   "gap": 1.0,
+   "text": "So how do you find your own spot on the line?"
+  },
+  {
+   "id": "L59",
+   "file": "vo/L59.mp3",
+   "gap": 0.35,
+   "text": "Step one. Take your income for the year, and find your federal and provincial brackets. The C R A publishes the federal rates, and your province publishes its own."
+  },
+  {
+   "id": "L60",
+   "file": "vo/L60.mp3",
+   "gap": 0.35,
+   "text": "Step two. Look at your pay stub's year-to-date C P P and E I. If they've stopped, they're no longer part of your marginal rate."
+  },
+  {
+   "id": "L61",
+   "file": "vo/L61.mp3",
+   "gap": 0.35,
+   "text": "Step three. Add it up. Bracket rates, plus any surtax, plus C P P and E I if you're still paying them. That's roughly what your next dollar costs you."
+  },
+  {
+   "id": "L62",
+   "file": "vo/L62.mp3",
+   "gap": 0.35,
+   "text": "And if you're close to a step, a few thousand dollars of income or deductions can move you across it. That's when planning pays."
+  },
+  {
+   "id": "L63",
+   "file": "vo/L63.mp3",
+   "gap": 1.0,
+   "text": "So, what did we learn?"
+  },
+  {
+   "id": "L64",
+   "file": "vo/L64.mp3",
+   "gap": 0.35,
+   "text": "One. A raise only taxes the dollars above each line. You keep more, not less."
+  },
+  {
+   "id": "L65",
+   "file": "vo/L65.mp3",
+   "gap": 0.35,
+   "text": "Two. Your real marginal rate includes C P P and E I. That's why it can drop when you pass their yearly maximums."
+  },
+  {
+   "id": "L66",
+   "file": "vo/L66.mp3",
+   "gap": 0.35,
+   "text": "Three. A deduction like the R R S P saves income tax only. Use that rate to judge it."
+  },
+  {
+   "id": "L67",
+   "file": "vo/L67.mp3",
+   "gap": 0.35,
+   "text": "Four. Check where you stand on the line before you decide on overtime, a bonus, or a contribution."
+  },
+  {
+   "id": "L68",
+   "file": "vo/L68.mp3",
+   "gap": 1.0,
+   "text": "Next on this channel: what if you sell your home? When the profit is tax-free, and the cases where it isn't. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "Three raises"
+  },
+  {
+   "at": "L8",
+   "title": "01 \u00b7 The bracket myth"
+  },
+  {
+   "at": "L13",
+   "title": "02 \u00b7 Five pieces"
+  },
+  {
+   "at": "L16",
+   "title": "03 \u00b7 The line: $45K\u2013$90K"
+  },
+  {
+   "at": "L27",
+   "title": "04 \u00b7 On your pay stub"
+  },
+  {
+   "at": "L32",
+   "title": "05 \u00b7 The line: $90K\u2013$270K"
+  },
+  {
+   "at": "L41",
+   "title": "06 \u00b7 The RRSP twist"
+  },
+  {
+   "at": "L50",
+   "title": "07 \u00b7 Deduct later"
+  },
+  {
+   "at": "L55",
+   "title": "08 \u00b7 Where this changes"
+  },
+  {
+   "at": "L58",
+   "title": "09 \u00b7 Find your rate"
+  },
+  {
+   "at": "L63",
+   "title": "Verdict"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "gauges",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf10/plates/s1.jpg",
+      "depth": "lf/lf10/plates/s1_d.png",
+      "dim": 0.62
+     },
+     "kicker": "SAME COMPANY \u00b7 SAME $1,000 RAISE \u00b7 2026",
+     "title": "WHO KEEPS THE MOST?",
+     "finishTitle": "THE MIDDLE EARNER KEEPS THE MOST",
+     "people": [
+      {
+       "name": "MAYA",
+       "sub": "SALARY $65,000",
+       "taken": 357,
+       "keep": 643
+      },
+      {
+       "name": "JORDAN",
+       "sub": "SALARY $90,000",
+       "taken": 296,
+       "keep": 704
+      },
+      {
+       "name": "ALEX",
+       "sub": "SALARY $120,000",
+       "taken": 434,
+       "keep": 566
+      }
+     ],
+     "swingAt": [
+      {
+       "at": "L2",
+       "word": "keeps"
+      },
+      {
+       "at": "L3",
+       "word": "keeps"
+      },
+      {
+       "at": "L4",
+       "word": "keeps"
+      }
+     ],
+     "finishAt": {
+      "at": "L5",
+      "word": "Wait"
+     },
+     "winner": 1,
+     "delta": "+$61 vs MAYA",
+     "qAt": {
+      "at": "L6",
+      "word": "real"
+     },
+     "question": "THE REAL TAX RATE ON YOUR NEXT DOLLAR",
+     "out": {
+      "at": "L8",
+      "off": -0.9
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 360,
+     "w": 1600,
+     "at": "L7",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "2026 \u00b7 ONTARIO \u00b7 SINGLE \u00b7 EMPLOYMENT INCOME ONLY",
+       "size": 46,
+       "at": "L7"
+      },
+      {
+       "text": "EXAMPLES, NOT REAL PEOPLE \u00b7 GENERAL INFO, NOT ADVICE",
+       "size": 40,
+       "at": "L7",
+       "word": "Examples"
+      }
+     ],
+     "kicker": "THE FINE PRINT"
+    }
+   ]
+  },
+  {
+   "at": "L8",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L8",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE MYTH THAT WON\u2019T DIE",
+       "size": 120,
+       "gold": true,
+       "at": "L8",
+       "word": "myth"
+      }
+     ],
+     "kicker": "01"
+    }
+   ]
+  },
+  {
+   "at": "L9",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 210,
+     "w": 1400,
+     "at": "L9",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "HOW BRACKETS REALLY WORK",
+     "items": [
+      {
+       "n": "1",
+       "head": "ONLY DOLLARS ABOVE THE LINE PAY THE HIGHER RATE",
+       "at": "L9",
+       "word": "above"
+      },
+      {
+       "n": "2",
+       "head": "EVERYTHING BELOW STAYS THE SAME",
+       "at": "L9",
+       "word": "below"
+      },
+      {
+       "n": "=",
+       "head": "A RAISE NEVER SHRINKS TAKE-HOME (EMPLOYEE)",
+       "at": "L10",
+       "word": "shrink"
+      },
+      {
+       "n": "?",
+       "head": "BUT TAX ISN\u2019T THE ONLY THING TAKEN",
+       "at": "L11",
+       "word": "only"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L12",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L12",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "particles",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 130,
+       "gold": true,
+       "seq": [
+        {
+         "text": "YOUR NEXT $1,000",
+         "t": 0
+        },
+        {
+         "text": "HOW MUCH LEAVES?",
+         "at": "L12",
+         "word": "leaves"
+        }
+       ],
+       "at": "L12"
+      }
+     ],
+     "kicker": "THE REAL QUESTION"
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L13",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "5 THINGS TAKE A PIECE",
+     "items": [
+      {
+       "n": "FED",
+       "head": "FEDERAL TAX",
+       "at": "L14",
+       "word": "Federal"
+      },
+      {
+       "n": "ON",
+       "head": "ONTARIO TAX",
+       "at": "L14",
+       "word": "Ontario"
+      },
+      {
+       "n": "SUR",
+       "head": "ONTARIO SURTAX",
+       "at": "L14",
+       "word": "surtax"
+      },
+      {
+       "n": "CPP",
+       "head": "CANADA PENSION PLAN",
+       "at": "L14",
+       "word": "C P P"
+      },
+      {
+       "n": "EI",
+       "head": "EMPLOYMENT INSURANCE",
+       "at": "L14",
+       "word": "E I"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 350,
+     "w": 1600,
+     "at": "L15",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "ADD THEM UP =",
+       "size": 60,
+       "at": "L15"
+      },
+      {
+       "text": "YOUR REAL MARGINAL RATE",
+       "size": 80,
+       "at": "L15",
+       "word": "real",
+       "gold": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "curve",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L16",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "title": "TAKEN FROM THE NEXT $1,000",
+     "sub": "2026 \u00b7 ONTARIO \u00b7 SINGLE EMPLOYEE \u00b7 FED + ON TAX + SURTAX + OHP + CPP + EI",
+     "data": [
+      [
+       45000,
+       252
+      ],
+      [
+       45500,
+       252
+      ],
+      [
+       46000,
+       252
+      ],
+      [
+       46500,
+       252
+      ],
+      [
+       47000,
+       252
+      ],
+      [
+       47500,
+       264
+      ],
+      [
+       48000,
+       388
+      ],
+      [
+       48500,
+       389
+      ],
+      [
+       49000,
+       266
+      ],
+      [
+       49500,
+       252
+      ],
+      [
+       50000,
+       252
+      ],
+      [
+       50500,
+       252
+      ],
+      [
+       51000,
+       252
+      ],
+      [
+       51500,
+       252
+      ],
+      [
+       52000,
+       252
+      ],
+      [
+       52500,
+       252
+      ],
+      [
+       53000,
+       252
+      ],
+      [
+       53500,
+       256
+      ],
+      [
+       54000,
+       276
+      ],
+      [
+       54500,
+       292
+      ],
+      [
+       55000,
+       292
+      ],
+      [
+       55500,
+       292
+      ],
+      [
+       56000,
+       292
+      ],
+      [
+       56500,
+       292
+      ],
+      [
+       57000,
+       292
+      ],
+      [
+       57500,
+       292
+      ],
+      [
+       58000,
+       292
+      ],
+      [
+       58500,
+       320
+      ],
+      [
+       59000,
+       352
+      ],
+      [
+       59500,
+       357
+      ],
+      [
+       60000,
+       357
+      ],
+      [
+       60500,
+       357
+      ],
+      [
+       61000,
+       357
+      ],
+      [
+       61500,
+       357
+      ],
+      [
+       62000,
+       357
+      ],
+      [
+       62500,
+       357
+      ],
+      [
+       63000,
+       357
+      ],
+      [
+       63500,
+       357
+      ],
+      [
+       64000,
+       357
+      ],
+      [
+       64500,
+       357
+      ],
+      [
+       65000,
+       357
+      ],
+      [
+       65500,
+       357
+      ],
+      [
+       66000,
+       357
+      ],
+      [
+       66500,
+       357
+      ],
+      [
+       67000,
+       357
+      ],
+      [
+       67500,
+       357
+      ],
+      [
+       68000,
+       355
+      ],
+      [
+       68500,
+       349
+      ],
+      [
+       69000,
+       344
+      ],
+      [
+       69500,
+       344
+      ],
+      [
+       70000,
+       344
+      ],
+      [
+       70500,
+       344
+      ],
+      [
+       71000,
+       344
+      ],
+      [
+       71500,
+       344
+      ],
+      [
+       72000,
+       420
+      ],
+      [
+       72500,
+       494
+      ],
+      [
+       73000,
+       417
+      ],
+      [
+       73500,
+       344
+      ],
+      [
+       74000,
+       336
+      ],
+      [
+       74500,
+       327
+      ],
+      [
+       75000,
+       325
+      ],
+      [
+       75500,
+       325
+      ],
+      [
+       76000,
+       325
+      ],
+      [
+       76500,
+       325
+      ],
+      [
+       77000,
+       325
+      ],
+      [
+       77500,
+       325
+      ],
+      [
+       78000,
+       325
+      ],
+      [
+       78500,
+       325
+      ],
+      [
+       79000,
+       325
+      ],
+      [
+       79500,
+       325
+      ],
+      [
+       80000,
+       325
+      ],
+      [
+       80500,
+       325
+      ],
+      [
+       81000,
+       325
+      ],
+      [
+       81500,
+       325
+      ],
+      [
+       82000,
+       325
+      ],
+      [
+       82500,
+       325
+      ],
+      [
+       83000,
+       325
+      ],
+      [
+       83500,
+       325
+      ],
+      [
+       84000,
+       325
+      ],
+      [
+       84500,
+       311
+      ],
+      [
+       85000,
+       296
+      ],
+      [
+       85500,
+       296
+      ],
+      [
+       86000,
+       296
+      ],
+      [
+       86500,
+       296
+      ],
+      [
+       87000,
+       297
+      ],
+      [
+       87500,
+       297
+      ],
+      [
+       88000,
+       296
+      ],
+      [
+       88500,
+       296
+      ],
+      [
+       89000,
+       296
+      ],
+      [
+       89500,
+       296
+      ],
+      [
+       90000,
+       296
+      ],
+      [
+       90500,
+       296
+      ],
+      [
+       91000,
+       296
+      ],
+      [
+       91500,
+       296
+      ],
+      [
+       92000,
+       296
+      ],
+      [
+       92500,
+       296
+      ],
+      [
+       93000,
+       296
+      ],
+      [
+       93500,
+       296
+      ],
+      [
+       94000,
+       296
+      ],
+      [
+       94500,
+       296
+      ],
+      [
+       95000,
+       296
+      ],
+      [
+       95500,
+       296
+      ],
+      [
+       96000,
+       296
+      ],
+      [
+       96500,
+       296
+      ],
+      [
+       97000,
+       296
+      ],
+      [
+       97500,
+       296
+      ],
+      [
+       98000,
+       304
+      ],
+      [
+       98500,
+       313
+      ],
+      [
+       99000,
+       315
+      ],
+      [
+       99500,
+       315
+      ],
+      [
+       100000,
+       315
+      ],
+      [
+       100500,
+       315
+      ],
+      [
+       101000,
+       315
+      ],
+      [
+       101500,
+       315
+      ],
+      [
+       102000,
+       315
+      ],
+      [
+       102500,
+       315
+      ],
+      [
+       103000,
+       315
+      ],
+      [
+       103500,
+       315
+      ],
+      [
+       104000,
+       315
+      ],
+      [
+       104500,
+       315
+      ],
+      [
+       105000,
+       315
+      ],
+      [
+       105500,
+       315
+      ],
+      [
+       106000,
+       315
+      ],
+      [
+       106500,
+       315
+      ],
+      [
+       107000,
+       315
+      ],
+      [
+       107500,
+       315
+      ],
+      [
+       108000,
+       317
+      ],
+      [
+       108500,
+       329
+      ],
+      [
+       109000,
+       339
+      ],
+      [
+       109500,
+       339
+      ],
+      [
+       110000,
+       339
+      ],
+      [
+       110500,
+       339
+      ],
+      [
+       111000,
+       339
+      ],
+      [
+       111500,
+       339
+      ],
+      [
+       112000,
+       339
+      ],
+      [
+       112500,
+       339
+      ],
+      [
+       113000,
+       339
+      ],
+      [
+       113500,
+       339
+      ],
+      [
+       114000,
+       339
+      ],
+      [
+       114500,
+       358
+      ],
+      [
+       115000,
+       378
+      ],
+      [
+       115500,
+       379
+      ],
+      [
+       116000,
+       379
+      ],
+      [
+       116500,
+       379
+      ],
+      [
+       117000,
+       379
+      ],
+      [
+       117500,
+       397
+      ],
+      [
+       118000,
+       425
+      ],
+      [
+       118500,
+       434
+      ],
+      [
+       119000,
+       434
+      ],
+      [
+       119500,
+       434
+      ],
+      [
+       120000,
+       434
+      ],
+      [
+       120500,
+       434
+      ],
+      [
+       121000,
+       434
+      ],
+      [
+       121500,
+       434
+      ],
+      [
+       122000,
+       434
+      ],
+      [
+       122500,
+       434
+      ],
+      [
+       123000,
+       434
+      ],
+      [
+       123500,
+       434
+      ],
+      [
+       124000,
+       434
+      ],
+      [
+       124500,
+       434
+      ],
+      [
+       125000,
+       434
+      ],
+      [
+       125500,
+       434
+      ],
+      [
+       126000,
+       434
+      ],
+      [
+       126500,
+       434
+      ],
+      [
+       127000,
+       434
+      ],
+      [
+       127500,
+       434
+      ],
+      [
+       128000,
+       434
+      ],
+      [
+       128500,
+       434
+      ],
+      [
+       129000,
+       434
+      ],
+      [
+       129500,
+       434
+      ],
+      [
+       130000,
+       434
+      ],
+      [
+       130500,
+       434
+      ],
+      [
+       131000,
+       434
+      ],
+      [
+       131500,
+       434
+      ],
+      [
+       132000,
+       434
+      ],
+      [
+       132500,
+       434
+      ],
+      [
+       133000,
+       434
+      ],
+      [
+       133500,
+       434
+      ],
+      [
+       134000,
+       434
+      ],
+      [
+       134500,
+       434
+      ],
+      [
+       135000,
+       434
+      ],
+      [
+       135500,
+       434
+      ],
+      [
+       136000,
+       434
+      ],
+      [
+       136500,
+       434
+      ],
+      [
+       137000,
+       434
+      ],
+      [
+       137500,
+       434
+      ],
+      [
+       138000,
+       434
+      ],
+      [
+       138500,
+       434
+      ],
+      [
+       139000,
+       434
+      ],
+      [
+       139500,
+       434
+      ],
+      [
+       140000,
+       434
+      ],
+      [
+       140500,
+       434
+      ],
+      [
+       141000,
+       434
+      ],
+      [
+       141500,
+       434
+      ],
+      [
+       142000,
+       434
+      ],
+      [
+       142500,
+       434
+      ],
+      [
+       143000,
+       434
+      ],
+      [
+       143500,
+       434
+      ],
+      [
+       144000,
+       434
+      ],
+      [
+       144500,
+       434
+      ],
+      [
+       145000,
+       434
+      ],
+      [
+       145500,
+       434
+      ],
+      [
+       146000,
+       434
+      ],
+      [
+       146500,
+       434
+      ],
+      [
+       147000,
+       434
+      ],
+      [
+       147500,
+       434
+      ],
+      [
+       148000,
+       434
+      ],
+      [
+       148500,
+       434
+      ],
+      [
+       149000,
+       434
+      ],
+      [
+       149500,
+       434
+      ],
+      [
+       150000,
+       434
+      ],
+      [
+       150500,
+       440
+      ],
+      [
+       151000,
+       448
+      ],
+      [
+       151500,
+       450
+      ],
+      [
+       152000,
+       450
+      ],
+      [
+       152500,
+       450
+      ],
+      [
+       153000,
+       450
+      ],
+      [
+       153500,
+       450
+      ],
+      [
+       154000,
+       450
+      ],
+      [
+       154500,
+       450
+      ],
+      [
+       155000,
+       450
+      ],
+      [
+       155500,
+       450
+      ],
+      [
+       156000,
+       450
+      ],
+      [
+       156500,
+       450
+      ],
+      [
+       157000,
+       450
+      ],
+      [
+       157500,
+       450
+      ],
+      [
+       158000,
+       450
+      ],
+      [
+       158500,
+       450
+      ],
+      [
+       159000,
+       450
+      ],
+      [
+       159500,
+       450
+      ],
+      [
+       160000,
+       450
+      ],
+      [
+       160500,
+       450
+      ],
+      [
+       161000,
+       450
+      ],
+      [
+       161500,
+       450
+      ],
+      [
+       162000,
+       450
+      ],
+      [
+       162500,
+       450
+      ],
+      [
+       163000,
+       450
+      ],
+      [
+       163500,
+       450
+      ],
+      [
+       164000,
+       450
+      ],
+      [
+       164500,
+       450
+      ],
+      [
+       165000,
+       450
+      ],
+      [
+       165500,
+       450
+      ],
+      [
+       166000,
+       450
+      ],
+      [
+       166500,
+       450
+      ],
+      [
+       167000,
+       450
+      ],
+      [
+       167500,
+       450
+      ],
+      [
+       168000,
+       450
+      ],
+      [
+       168500,
+       450
+      ],
+      [
+       169000,
+       450
+      ],
+      [
+       169500,
+       450
+      ],
+      [
+       170000,
+       450
+      ],
+      [
+       170500,
+       450
+      ],
+      [
+       171000,
+       450
+      ],
+      [
+       171500,
+       450
+      ],
+      [
+       172000,
+       450
+      ],
+      [
+       172500,
+       450
+      ],
+      [
+       173000,
+       450
+      ],
+      [
+       173500,
+       450
+      ],
+      [
+       174000,
+       450
+      ],
+      [
+       174500,
+       450
+      ],
+      [
+       175000,
+       450
+      ],
+      [
+       175500,
+       450
+      ],
+      [
+       176000,
+       450
+      ],
+      [
+       176500,
+       450
+      ],
+      [
+       177000,
+       450
+      ],
+      [
+       177500,
+       450
+      ],
+      [
+       178000,
+       450
+      ],
+      [
+       178500,
+       450
+      ],
+      [
+       179000,
+       450
+      ],
+      [
+       179500,
+       450
+      ],
+      [
+       180000,
+       450
+      ],
+      [
+       180500,
+       450
+      ],
+      [
+       181000,
+       450
+      ],
+      [
+       181500,
+       450
+      ],
+      [
+       182000,
+       464
+      ],
+      [
+       182500,
+       480
+      ],
+      [
+       183000,
+       483
+      ],
+      [
+       183500,
+       483
+      ],
+      [
+       184000,
+       483
+      ],
+      [
+       184500,
+       483
+      ],
+      [
+       185000,
+       483
+      ],
+      [
+       185500,
+       483
+      ],
+      [
+       186000,
+       483
+      ],
+      [
+       186500,
+       483
+      ],
+      [
+       187000,
+       483
+      ],
+      [
+       187500,
+       483
+      ],
+      [
+       188000,
+       483
+      ],
+      [
+       188500,
+       483
+      ],
+      [
+       189000,
+       483
+      ],
+      [
+       189500,
+       483
+      ],
+      [
+       190000,
+       483
+      ],
+      [
+       190500,
+       483
+      ],
+      [
+       191000,
+       483
+      ],
+      [
+       191500,
+       483
+      ],
+      [
+       192000,
+       483
+      ],
+      [
+       192500,
+       483
+      ],
+      [
+       193000,
+       483
+      ],
+      [
+       193500,
+       483
+      ],
+      [
+       194000,
+       483
+      ],
+      [
+       194500,
+       483
+      ],
+      [
+       195000,
+       483
+      ],
+      [
+       195500,
+       483
+      ],
+      [
+       196000,
+       483
+      ],
+      [
+       196500,
+       483
+      ],
+      [
+       197000,
+       483
+      ],
+      [
+       197500,
+       483
+      ],
+      [
+       198000,
+       483
+      ],
+      [
+       198500,
+       483
+      ],
+      [
+       199000,
+       483
+      ],
+      [
+       199500,
+       483
+      ],
+      [
+       200000,
+       483
+      ],
+      [
+       200500,
+       576
+      ],
+      [
+       201000,
+       633
+      ],
+      [
+       201500,
+       539
+      ],
+      [
+       202000,
+       483
+      ],
+      [
+       202500,
+       483
+      ],
+      [
+       203000,
+       483
+      ],
+      [
+       203500,
+       483
+      ],
+      [
+       204000,
+       483
+      ],
+      [
+       204500,
+       483
+      ],
+      [
+       205000,
+       483
+      ],
+      [
+       205500,
+       483
+      ],
+      [
+       206000,
+       483
+      ],
+      [
+       206500,
+       483
+      ],
+      [
+       207000,
+       483
+      ],
+      [
+       207500,
+       483
+      ],
+      [
+       208000,
+       483
+      ],
+      [
+       208500,
+       483
+      ],
+      [
+       209000,
+       483
+      ],
+      [
+       209500,
+       483
+      ],
+      [
+       210000,
+       483
+      ],
+      [
+       210500,
+       483
+      ],
+      [
+       211000,
+       483
+      ],
+      [
+       211500,
+       483
+      ],
+      [
+       212000,
+       483
+      ],
+      [
+       212500,
+       483
+      ],
+      [
+       213000,
+       483
+      ],
+      [
+       213500,
+       483
+      ],
+      [
+       214000,
+       483
+      ],
+      [
+       214500,
+       483
+      ],
+      [
+       215000,
+       483
+      ],
+      [
+       215500,
+       483
+      ],
+      [
+       216000,
+       483
+      ],
+      [
+       216500,
+       483
+      ],
+      [
+       217000,
+       483
+      ],
+      [
+       217500,
+       483
+      ],
+      [
+       218000,
+       483
+      ],
+      [
+       218500,
+       483
+      ],
+      [
+       219000,
+       483
+      ],
+      [
+       219500,
+       483
+      ],
+      [
+       220000,
+       483
+      ],
+      [
+       220500,
+       488
+      ],
+      [
+       221000,
+       496
+      ],
+      [
+       221500,
+       498
+      ],
+      [
+       222000,
+       498
+      ],
+      [
+       222500,
+       498
+      ],
+      [
+       223000,
+       498
+      ],
+      [
+       223500,
+       498
+      ],
+      [
+       224000,
+       498
+      ],
+      [
+       224500,
+       498
+      ],
+      [
+       225000,
+       498
+      ],
+      [
+       225500,
+       498
+      ],
+      [
+       226000,
+       498
+      ],
+      [
+       226500,
+       498
+      ],
+      [
+       227000,
+       498
+      ],
+      [
+       227500,
+       498
+      ],
+      [
+       228000,
+       498
+      ],
+      [
+       228500,
+       498
+      ],
+      [
+       229000,
+       498
+      ],
+      [
+       229500,
+       498
+      ],
+      [
+       230000,
+       498
+      ],
+      [
+       230500,
+       498
+      ],
+      [
+       231000,
+       498
+      ],
+      [
+       231500,
+       498
+      ],
+      [
+       232000,
+       498
+      ],
+      [
+       232500,
+       498
+      ],
+      [
+       233000,
+       498
+      ],
+      [
+       233500,
+       498
+      ],
+      [
+       234000,
+       498
+      ],
+      [
+       234500,
+       498
+      ],
+      [
+       235000,
+       498
+      ],
+      [
+       235500,
+       498
+      ],
+      [
+       236000,
+       498
+      ],
+      [
+       236500,
+       498
+      ],
+      [
+       237000,
+       498
+      ],
+      [
+       237500,
+       498
+      ],
+      [
+       238000,
+       498
+      ],
+      [
+       238500,
+       498
+      ],
+      [
+       239000,
+       498
+      ],
+      [
+       239500,
+       498
+      ],
+      [
+       240000,
+       498
+      ],
+      [
+       240500,
+       498
+      ],
+      [
+       241000,
+       498
+      ],
+      [
+       241500,
+       498
+      ],
+      [
+       242000,
+       498
+      ],
+      [
+       242500,
+       498
+      ],
+      [
+       243000,
+       498
+      ],
+      [
+       243500,
+       498
+      ],
+      [
+       244000,
+       498
+      ],
+      [
+       244500,
+       498
+      ],
+      [
+       245000,
+       498
+      ],
+      [
+       245500,
+       498
+      ],
+      [
+       246000,
+       498
+      ],
+      [
+       246500,
+       498
+      ],
+      [
+       247000,
+       498
+      ],
+      [
+       247500,
+       498
+      ],
+      [
+       248000,
+       498
+      ],
+      [
+       248500,
+       498
+      ],
+      [
+       249000,
+       498
+      ],
+      [
+       249500,
+       498
+      ],
+      [
+       250000,
+       498
+      ],
+      [
+       250500,
+       498
+      ],
+      [
+       251000,
+       498
+      ],
+      [
+       251500,
+       498
+      ],
+      [
+       252000,
+       498
+      ],
+      [
+       252500,
+       498
+      ],
+      [
+       253000,
+       498
+      ],
+      [
+       253500,
+       498
+      ],
+      [
+       254000,
+       498
+      ],
+      [
+       254500,
+       498
+      ],
+      [
+       255000,
+       498
+      ],
+      [
+       255500,
+       498
+      ],
+      [
+       256000,
+       498
+      ],
+      [
+       256500,
+       498
+      ],
+      [
+       257000,
+       498
+      ],
+      [
+       257500,
+       498
+      ],
+      [
+       258000,
+       498
+      ],
+      [
+       258500,
+       498
+      ],
+      [
+       259000,
+       513
+      ],
+      [
+       259500,
+       531
+      ],
+      [
+       260000,
+       535
+      ],
+      [
+       260500,
+       535
+      ],
+      [
+       261000,
+       535
+      ],
+      [
+       261500,
+       535
+      ],
+      [
+       262000,
+       535
+      ],
+      [
+       262500,
+       535
+      ],
+      [
+       263000,
+       535
+      ],
+      [
+       263500,
+       535
+      ],
+      [
+       264000,
+       535
+      ],
+      [
+       264500,
+       535
+      ],
+      [
+       265000,
+       535
+      ],
+      [
+       265500,
+       535
+      ],
+      [
+       266000,
+       535
+      ],
+      [
+       266500,
+       535
+      ],
+      [
+       267000,
+       535
+      ],
+      [
+       267500,
+       535
+      ],
+      [
+       268000,
+       535
+      ],
+      [
+       268500,
+       535
+      ],
+      [
+       269000,
+       535
+      ],
+      [
+       269500,
+       535
+      ],
+      [
+       270000,
+       535
+      ]
+     ],
+     "xr": [
+      45000,
+      100000
+     ],
+     "yr": [
+      200,
+      650
+     ],
+     "xticks": [
+      50000,
+      60000,
+      70000,
+      80000,
+      90000,
+      100000
+     ],
+     "revealAt": [
+      {
+       "at": "L16",
+       "x": 45000
+      },
+      {
+       "at": "L17",
+       "word": "fifty",
+       "x": 50500
+      },
+      {
+       "at": "L18",
+       "word": "fifty-three",
+       "x": 54400
+      },
+      {
+       "at": "L18",
+       "word": "fifty-five",
+       "x": 55500
+      },
+      {
+       "at": "L19",
+       "word": "fifty-eight",
+       "x": 59100
+      },
+      {
+       "at": "L19",
+       "word": "sixty",
+       "x": 60500
+      },
+      {
+       "at": "L21",
+       "word": "down",
+       "x": 68500
+      },
+      {
+       "at": "L22",
+       "word": "stops",
+       "x": 70000
+      },
+      {
+       "at": "L23",
+       "word": "stops",
+       "x": 75500
+      },
+      {
+       "at": "L24",
+       "word": "stops",
+       "x": 86000
+      },
+      {
+       "at": "L25",
+       "word": "ninety",
+       "x": 91000
+      }
+     ],
+     "marks": [
+      {
+       "at": "L18",
+       "word": "fifty-three",
+       "x": 54400,
+       "text": "ON 9.15%",
+       "dy": -60,
+       "anchor": "start"
+      },
+      {
+       "at": "L19",
+       "word": "fifty-eight",
+       "x": 59100,
+       "text": "FED 20.5%",
+       "dy": -120,
+       "anchor": "start"
+      },
+      {
+       "at": "L22",
+       "word": "stops",
+       "x": 68900,
+       "text": "EI MAX $68,900",
+       "dy": -150,
+       "anchor": "end",
+       "color": "#7FD3A0"
+      },
+      {
+       "at": "L23",
+       "word": "C P P",
+       "x": 74600,
+       "text": "CPP MAX $74,600",
+       "dy": -100,
+       "anchor": "start",
+       "color": "#7FD3A0"
+      },
+      {
+       "at": "L24",
+       "word": "eighty-five",
+       "x": 85000,
+       "text": "CPP2 MAX $85,000",
+       "dy": -50,
+       "anchor": "start",
+       "color": "#7FD3A0"
+      }
+     ],
+     "pins": [
+      {
+       "at": "L20",
+       "word": "Maya",
+       "x": 65000,
+       "name": "MAYA"
+      },
+      {
+       "at": "L25",
+       "word": "Jordan",
+       "x": 90000,
+       "name": "JORDAN"
+      }
+     ],
+     "bands": [
+      {
+       "at": "L21",
+       "word": "down",
+       "x0": 68900,
+       "x1": 85000,
+       "text": "THE VALLEY",
+       "color": "rgba(127,211,160,.08)"
+      },
+      {
+       "at": "L17",
+       "word": "fifty",
+       "x0": 47500,
+       "x1": 49000,
+       "text": "OHP*",
+       "color": "rgba(229,128,110,.14)"
+      },
+      {
+       "at": "L22",
+       "word": "stops",
+       "x0": 71500,
+       "x1": 73000,
+       "text": "OHP*",
+       "color": "rgba(229,128,110,.14)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L26",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 340,
+     "w": 1600,
+     "at": "L26",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "JORDAN ISN\u2019T IN A LOWER BRACKET",
+       "size": 60,
+       "at": "L26",
+       "word": "lower"
+      },
+      {
+       "text": "CPP + EI ARE DONE FOR THE YEAR",
+       "size": 70,
+       "at": "L26",
+       "word": "finished",
+       "gold": true
+      }
+     ],
+     "kicker": "THE ANSWER"
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L27",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "ON A PAY STUB \u00b7 $90,000 PAID EVENLY",
+     "items": [
+      {
+       "n": "1",
+       "head": "CPP + EI OFF EVERY PAY UNTIL THE YEARLY MAX",
+       "at": "L28",
+       "word": "maximum"
+      },
+      {
+       "n": "EI",
+       "head": "RUNS OUT ROUGHLY IN THE FALL",
+       "at": "L29",
+       "word": "fall"
+      },
+      {
+       "n": "CPP",
+       "head": "A FEW WEEKS LATER \u00b7 CPP2 NEAR YEAR-END",
+       "at": "L29",
+       "word": "weeks"
+      },
+      {
+       "n": "\u2191",
+       "head": "LAST PAYCHEQUES OF THE YEAR ARE BIGGER",
+       "at": "L30",
+       "word": "bigger"
+      },
+      {
+       "n": "JAN",
+       "head": "COUNTERS RESET",
+       "at": "L31",
+       "word": "reset"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L32",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "curve",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L32",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "title": "TAKEN FROM THE NEXT $1,000",
+     "sub": "2026 \u00b7 ONTARIO \u00b7 SINGLE EMPLOYEE \u00b7 FED + ON TAX + SURTAX + OHP + CPP + EI",
+     "data": [
+      [
+       45000,
+       252
+      ],
+      [
+       45500,
+       252
+      ],
+      [
+       46000,
+       252
+      ],
+      [
+       46500,
+       252
+      ],
+      [
+       47000,
+       252
+      ],
+      [
+       47500,
+       264
+      ],
+      [
+       48000,
+       388
+      ],
+      [
+       48500,
+       389
+      ],
+      [
+       49000,
+       266
+      ],
+      [
+       49500,
+       252
+      ],
+      [
+       50000,
+       252
+      ],
+      [
+       50500,
+       252
+      ],
+      [
+       51000,
+       252
+      ],
+      [
+       51500,
+       252
+      ],
+      [
+       52000,
+       252
+      ],
+      [
+       52500,
+       252
+      ],
+      [
+       53000,
+       252
+      ],
+      [
+       53500,
+       256
+      ],
+      [
+       54000,
+       276
+      ],
+      [
+       54500,
+       292
+      ],
+      [
+       55000,
+       292
+      ],
+      [
+       55500,
+       292
+      ],
+      [
+       56000,
+       292
+      ],
+      [
+       56500,
+       292
+      ],
+      [
+       57000,
+       292
+      ],
+      [
+       57500,
+       292
+      ],
+      [
+       58000,
+       292
+      ],
+      [
+       58500,
+       320
+      ],
+      [
+       59000,
+       352
+      ],
+      [
+       59500,
+       357
+      ],
+      [
+       60000,
+       357
+      ],
+      [
+       60500,
+       357
+      ],
+      [
+       61000,
+       357
+      ],
+      [
+       61500,
+       357
+      ],
+      [
+       62000,
+       357
+      ],
+      [
+       62500,
+       357
+      ],
+      [
+       63000,
+       357
+      ],
+      [
+       63500,
+       357
+      ],
+      [
+       64000,
+       357
+      ],
+      [
+       64500,
+       357
+      ],
+      [
+       65000,
+       357
+      ],
+      [
+       65500,
+       357
+      ],
+      [
+       66000,
+       357
+      ],
+      [
+       66500,
+       357
+      ],
+      [
+       67000,
+       357
+      ],
+      [
+       67500,
+       357
+      ],
+      [
+       68000,
+       355
+      ],
+      [
+       68500,
+       349
+      ],
+      [
+       69000,
+       344
+      ],
+      [
+       69500,
+       344
+      ],
+      [
+       70000,
+       344
+      ],
+      [
+       70500,
+       344
+      ],
+      [
+       71000,
+       344
+      ],
+      [
+       71500,
+       344
+      ],
+      [
+       72000,
+       420
+      ],
+      [
+       72500,
+       494
+      ],
+      [
+       73000,
+       417
+      ],
+      [
+       73500,
+       344
+      ],
+      [
+       74000,
+       336
+      ],
+      [
+       74500,
+       327
+      ],
+      [
+       75000,
+       325
+      ],
+      [
+       75500,
+       325
+      ],
+      [
+       76000,
+       325
+      ],
+      [
+       76500,
+       325
+      ],
+      [
+       77000,
+       325
+      ],
+      [
+       77500,
+       325
+      ],
+      [
+       78000,
+       325
+      ],
+      [
+       78500,
+       325
+      ],
+      [
+       79000,
+       325
+      ],
+      [
+       79500,
+       325
+      ],
+      [
+       80000,
+       325
+      ],
+      [
+       80500,
+       325
+      ],
+      [
+       81000,
+       325
+      ],
+      [
+       81500,
+       325
+      ],
+      [
+       82000,
+       325
+      ],
+      [
+       82500,
+       325
+      ],
+      [
+       83000,
+       325
+      ],
+      [
+       83500,
+       325
+      ],
+      [
+       84000,
+       325
+      ],
+      [
+       84500,
+       311
+      ],
+      [
+       85000,
+       296
+      ],
+      [
+       85500,
+       296
+      ],
+      [
+       86000,
+       296
+      ],
+      [
+       86500,
+       296
+      ],
+      [
+       87000,
+       297
+      ],
+      [
+       87500,
+       297
+      ],
+      [
+       88000,
+       296
+      ],
+      [
+       88500,
+       296
+      ],
+      [
+       89000,
+       296
+      ],
+      [
+       89500,
+       296
+      ],
+      [
+       90000,
+       296
+      ],
+      [
+       90500,
+       296
+      ],
+      [
+       91000,
+       296
+      ],
+      [
+       91500,
+       296
+      ],
+      [
+       92000,
+       296
+      ],
+      [
+       92500,
+       296
+      ],
+      [
+       93000,
+       296
+      ],
+      [
+       93500,
+       296
+      ],
+      [
+       94000,
+       296
+      ],
+      [
+       94500,
+       296
+      ],
+      [
+       95000,
+       296
+      ],
+      [
+       95500,
+       296
+      ],
+      [
+       96000,
+       296
+      ],
+      [
+       96500,
+       296
+      ],
+      [
+       97000,
+       296
+      ],
+      [
+       97500,
+       296
+      ],
+      [
+       98000,
+       304
+      ],
+      [
+       98500,
+       313
+      ],
+      [
+       99000,
+       315
+      ],
+      [
+       99500,
+       315
+      ],
+      [
+       100000,
+       315
+      ],
+      [
+       100500,
+       315
+      ],
+      [
+       101000,
+       315
+      ],
+      [
+       101500,
+       315
+      ],
+      [
+       102000,
+       315
+      ],
+      [
+       102500,
+       315
+      ],
+      [
+       103000,
+       315
+      ],
+      [
+       103500,
+       315
+      ],
+      [
+       104000,
+       315
+      ],
+      [
+       104500,
+       315
+      ],
+      [
+       105000,
+       315
+      ],
+      [
+       105500,
+       315
+      ],
+      [
+       106000,
+       315
+      ],
+      [
+       106500,
+       315
+      ],
+      [
+       107000,
+       315
+      ],
+      [
+       107500,
+       315
+      ],
+      [
+       108000,
+       317
+      ],
+      [
+       108500,
+       329
+      ],
+      [
+       109000,
+       339
+      ],
+      [
+       109500,
+       339
+      ],
+      [
+       110000,
+       339
+      ],
+      [
+       110500,
+       339
+      ],
+      [
+       111000,
+       339
+      ],
+      [
+       111500,
+       339
+      ],
+      [
+       112000,
+       339
+      ],
+      [
+       112500,
+       339
+      ],
+      [
+       113000,
+       339
+      ],
+      [
+       113500,
+       339
+      ],
+      [
+       114000,
+       339
+      ],
+      [
+       114500,
+       358
+      ],
+      [
+       115000,
+       378
+      ],
+      [
+       115500,
+       379
+      ],
+      [
+       116000,
+       379
+      ],
+      [
+       116500,
+       379
+      ],
+      [
+       117000,
+       379
+      ],
+      [
+       117500,
+       397
+      ],
+      [
+       118000,
+       425
+      ],
+      [
+       118500,
+       434
+      ],
+      [
+       119000,
+       434
+      ],
+      [
+       119500,
+       434
+      ],
+      [
+       120000,
+       434
+      ],
+      [
+       120500,
+       434
+      ],
+      [
+       121000,
+       434
+      ],
+      [
+       121500,
+       434
+      ],
+      [
+       122000,
+       434
+      ],
+      [
+       122500,
+       434
+      ],
+      [
+       123000,
+       434
+      ],
+      [
+       123500,
+       434
+      ],
+      [
+       124000,
+       434
+      ],
+      [
+       124500,
+       434
+      ],
+      [
+       125000,
+       434
+      ],
+      [
+       125500,
+       434
+      ],
+      [
+       126000,
+       434
+      ],
+      [
+       126500,
+       434
+      ],
+      [
+       127000,
+       434
+      ],
+      [
+       127500,
+       434
+      ],
+      [
+       128000,
+       434
+      ],
+      [
+       128500,
+       434
+      ],
+      [
+       129000,
+       434
+      ],
+      [
+       129500,
+       434
+      ],
+      [
+       130000,
+       434
+      ],
+      [
+       130500,
+       434
+      ],
+      [
+       131000,
+       434
+      ],
+      [
+       131500,
+       434
+      ],
+      [
+       132000,
+       434
+      ],
+      [
+       132500,
+       434
+      ],
+      [
+       133000,
+       434
+      ],
+      [
+       133500,
+       434
+      ],
+      [
+       134000,
+       434
+      ],
+      [
+       134500,
+       434
+      ],
+      [
+       135000,
+       434
+      ],
+      [
+       135500,
+       434
+      ],
+      [
+       136000,
+       434
+      ],
+      [
+       136500,
+       434
+      ],
+      [
+       137000,
+       434
+      ],
+      [
+       137500,
+       434
+      ],
+      [
+       138000,
+       434
+      ],
+      [
+       138500,
+       434
+      ],
+      [
+       139000,
+       434
+      ],
+      [
+       139500,
+       434
+      ],
+      [
+       140000,
+       434
+      ],
+      [
+       140500,
+       434
+      ],
+      [
+       141000,
+       434
+      ],
+      [
+       141500,
+       434
+      ],
+      [
+       142000,
+       434
+      ],
+      [
+       142500,
+       434
+      ],
+      [
+       143000,
+       434
+      ],
+      [
+       143500,
+       434
+      ],
+      [
+       144000,
+       434
+      ],
+      [
+       144500,
+       434
+      ],
+      [
+       145000,
+       434
+      ],
+      [
+       145500,
+       434
+      ],
+      [
+       146000,
+       434
+      ],
+      [
+       146500,
+       434
+      ],
+      [
+       147000,
+       434
+      ],
+      [
+       147500,
+       434
+      ],
+      [
+       148000,
+       434
+      ],
+      [
+       148500,
+       434
+      ],
+      [
+       149000,
+       434
+      ],
+      [
+       149500,
+       434
+      ],
+      [
+       150000,
+       434
+      ],
+      [
+       150500,
+       440
+      ],
+      [
+       151000,
+       448
+      ],
+      [
+       151500,
+       450
+      ],
+      [
+       152000,
+       450
+      ],
+      [
+       152500,
+       450
+      ],
+      [
+       153000,
+       450
+      ],
+      [
+       153500,
+       450
+      ],
+      [
+       154000,
+       450
+      ],
+      [
+       154500,
+       450
+      ],
+      [
+       155000,
+       450
+      ],
+      [
+       155500,
+       450
+      ],
+      [
+       156000,
+       450
+      ],
+      [
+       156500,
+       450
+      ],
+      [
+       157000,
+       450
+      ],
+      [
+       157500,
+       450
+      ],
+      [
+       158000,
+       450
+      ],
+      [
+       158500,
+       450
+      ],
+      [
+       159000,
+       450
+      ],
+      [
+       159500,
+       450
+      ],
+      [
+       160000,
+       450
+      ],
+      [
+       160500,
+       450
+      ],
+      [
+       161000,
+       450
+      ],
+      [
+       161500,
+       450
+      ],
+      [
+       162000,
+       450
+      ],
+      [
+       162500,
+       450
+      ],
+      [
+       163000,
+       450
+      ],
+      [
+       163500,
+       450
+      ],
+      [
+       164000,
+       450
+      ],
+      [
+       164500,
+       450
+      ],
+      [
+       165000,
+       450
+      ],
+      [
+       165500,
+       450
+      ],
+      [
+       166000,
+       450
+      ],
+      [
+       166500,
+       450
+      ],
+      [
+       167000,
+       450
+      ],
+      [
+       167500,
+       450
+      ],
+      [
+       168000,
+       450
+      ],
+      [
+       168500,
+       450
+      ],
+      [
+       169000,
+       450
+      ],
+      [
+       169500,
+       450
+      ],
+      [
+       170000,
+       450
+      ],
+      [
+       170500,
+       450
+      ],
+      [
+       171000,
+       450
+      ],
+      [
+       171500,
+       450
+      ],
+      [
+       172000,
+       450
+      ],
+      [
+       172500,
+       450
+      ],
+      [
+       173000,
+       450
+      ],
+      [
+       173500,
+       450
+      ],
+      [
+       174000,
+       450
+      ],
+      [
+       174500,
+       450
+      ],
+      [
+       175000,
+       450
+      ],
+      [
+       175500,
+       450
+      ],
+      [
+       176000,
+       450
+      ],
+      [
+       176500,
+       450
+      ],
+      [
+       177000,
+       450
+      ],
+      [
+       177500,
+       450
+      ],
+      [
+       178000,
+       450
+      ],
+      [
+       178500,
+       450
+      ],
+      [
+       179000,
+       450
+      ],
+      [
+       179500,
+       450
+      ],
+      [
+       180000,
+       450
+      ],
+      [
+       180500,
+       450
+      ],
+      [
+       181000,
+       450
+      ],
+      [
+       181500,
+       450
+      ],
+      [
+       182000,
+       464
+      ],
+      [
+       182500,
+       480
+      ],
+      [
+       183000,
+       483
+      ],
+      [
+       183500,
+       483
+      ],
+      [
+       184000,
+       483
+      ],
+      [
+       184500,
+       483
+      ],
+      [
+       185000,
+       483
+      ],
+      [
+       185500,
+       483
+      ],
+      [
+       186000,
+       483
+      ],
+      [
+       186500,
+       483
+      ],
+      [
+       187000,
+       483
+      ],
+      [
+       187500,
+       483
+      ],
+      [
+       188000,
+       483
+      ],
+      [
+       188500,
+       483
+      ],
+      [
+       189000,
+       483
+      ],
+      [
+       189500,
+       483
+      ],
+      [
+       190000,
+       483
+      ],
+      [
+       190500,
+       483
+      ],
+      [
+       191000,
+       483
+      ],
+      [
+       191500,
+       483
+      ],
+      [
+       192000,
+       483
+      ],
+      [
+       192500,
+       483
+      ],
+      [
+       193000,
+       483
+      ],
+      [
+       193500,
+       483
+      ],
+      [
+       194000,
+       483
+      ],
+      [
+       194500,
+       483
+      ],
+      [
+       195000,
+       483
+      ],
+      [
+       195500,
+       483
+      ],
+      [
+       196000,
+       483
+      ],
+      [
+       196500,
+       483
+      ],
+      [
+       197000,
+       483
+      ],
+      [
+       197500,
+       483
+      ],
+      [
+       198000,
+       483
+      ],
+      [
+       198500,
+       483
+      ],
+      [
+       199000,
+       483
+      ],
+      [
+       199500,
+       483
+      ],
+      [
+       200000,
+       483
+      ],
+      [
+       200500,
+       576
+      ],
+      [
+       201000,
+       633
+      ],
+      [
+       201500,
+       539
+      ],
+      [
+       202000,
+       483
+      ],
+      [
+       202500,
+       483
+      ],
+      [
+       203000,
+       483
+      ],
+      [
+       203500,
+       483
+      ],
+      [
+       204000,
+       483
+      ],
+      [
+       204500,
+       483
+      ],
+      [
+       205000,
+       483
+      ],
+      [
+       205500,
+       483
+      ],
+      [
+       206000,
+       483
+      ],
+      [
+       206500,
+       483
+      ],
+      [
+       207000,
+       483
+      ],
+      [
+       207500,
+       483
+      ],
+      [
+       208000,
+       483
+      ],
+      [
+       208500,
+       483
+      ],
+      [
+       209000,
+       483
+      ],
+      [
+       209500,
+       483
+      ],
+      [
+       210000,
+       483
+      ],
+      [
+       210500,
+       483
+      ],
+      [
+       211000,
+       483
+      ],
+      [
+       211500,
+       483
+      ],
+      [
+       212000,
+       483
+      ],
+      [
+       212500,
+       483
+      ],
+      [
+       213000,
+       483
+      ],
+      [
+       213500,
+       483
+      ],
+      [
+       214000,
+       483
+      ],
+      [
+       214500,
+       483
+      ],
+      [
+       215000,
+       483
+      ],
+      [
+       215500,
+       483
+      ],
+      [
+       216000,
+       483
+      ],
+      [
+       216500,
+       483
+      ],
+      [
+       217000,
+       483
+      ],
+      [
+       217500,
+       483
+      ],
+      [
+       218000,
+       483
+      ],
+      [
+       218500,
+       483
+      ],
+      [
+       219000,
+       483
+      ],
+      [
+       219500,
+       483
+      ],
+      [
+       220000,
+       483
+      ],
+      [
+       220500,
+       488
+      ],
+      [
+       221000,
+       496
+      ],
+      [
+       221500,
+       498
+      ],
+      [
+       222000,
+       498
+      ],
+      [
+       222500,
+       498
+      ],
+      [
+       223000,
+       498
+      ],
+      [
+       223500,
+       498
+      ],
+      [
+       224000,
+       498
+      ],
+      [
+       224500,
+       498
+      ],
+      [
+       225000,
+       498
+      ],
+      [
+       225500,
+       498
+      ],
+      [
+       226000,
+       498
+      ],
+      [
+       226500,
+       498
+      ],
+      [
+       227000,
+       498
+      ],
+      [
+       227500,
+       498
+      ],
+      [
+       228000,
+       498
+      ],
+      [
+       228500,
+       498
+      ],
+      [
+       229000,
+       498
+      ],
+      [
+       229500,
+       498
+      ],
+      [
+       230000,
+       498
+      ],
+      [
+       230500,
+       498
+      ],
+      [
+       231000,
+       498
+      ],
+      [
+       231500,
+       498
+      ],
+      [
+       232000,
+       498
+      ],
+      [
+       232500,
+       498
+      ],
+      [
+       233000,
+       498
+      ],
+      [
+       233500,
+       498
+      ],
+      [
+       234000,
+       498
+      ],
+      [
+       234500,
+       498
+      ],
+      [
+       235000,
+       498
+      ],
+      [
+       235500,
+       498
+      ],
+      [
+       236000,
+       498
+      ],
+      [
+       236500,
+       498
+      ],
+      [
+       237000,
+       498
+      ],
+      [
+       237500,
+       498
+      ],
+      [
+       238000,
+       498
+      ],
+      [
+       238500,
+       498
+      ],
+      [
+       239000,
+       498
+      ],
+      [
+       239500,
+       498
+      ],
+      [
+       240000,
+       498
+      ],
+      [
+       240500,
+       498
+      ],
+      [
+       241000,
+       498
+      ],
+      [
+       241500,
+       498
+      ],
+      [
+       242000,
+       498
+      ],
+      [
+       242500,
+       498
+      ],
+      [
+       243000,
+       498
+      ],
+      [
+       243500,
+       498
+      ],
+      [
+       244000,
+       498
+      ],
+      [
+       244500,
+       498
+      ],
+      [
+       245000,
+       498
+      ],
+      [
+       245500,
+       498
+      ],
+      [
+       246000,
+       498
+      ],
+      [
+       246500,
+       498
+      ],
+      [
+       247000,
+       498
+      ],
+      [
+       247500,
+       498
+      ],
+      [
+       248000,
+       498
+      ],
+      [
+       248500,
+       498
+      ],
+      [
+       249000,
+       498
+      ],
+      [
+       249500,
+       498
+      ],
+      [
+       250000,
+       498
+      ],
+      [
+       250500,
+       498
+      ],
+      [
+       251000,
+       498
+      ],
+      [
+       251500,
+       498
+      ],
+      [
+       252000,
+       498
+      ],
+      [
+       252500,
+       498
+      ],
+      [
+       253000,
+       498
+      ],
+      [
+       253500,
+       498
+      ],
+      [
+       254000,
+       498
+      ],
+      [
+       254500,
+       498
+      ],
+      [
+       255000,
+       498
+      ],
+      [
+       255500,
+       498
+      ],
+      [
+       256000,
+       498
+      ],
+      [
+       256500,
+       498
+      ],
+      [
+       257000,
+       498
+      ],
+      [
+       257500,
+       498
+      ],
+      [
+       258000,
+       498
+      ],
+      [
+       258500,
+       498
+      ],
+      [
+       259000,
+       513
+      ],
+      [
+       259500,
+       531
+      ],
+      [
+       260000,
+       535
+      ],
+      [
+       260500,
+       535
+      ],
+      [
+       261000,
+       535
+      ],
+      [
+       261500,
+       535
+      ],
+      [
+       262000,
+       535
+      ],
+      [
+       262500,
+       535
+      ],
+      [
+       263000,
+       535
+      ],
+      [
+       263500,
+       535
+      ],
+      [
+       264000,
+       535
+      ],
+      [
+       264500,
+       535
+      ],
+      [
+       265000,
+       535
+      ],
+      [
+       265500,
+       535
+      ],
+      [
+       266000,
+       535
+      ],
+      [
+       266500,
+       535
+      ],
+      [
+       267000,
+       535
+      ],
+      [
+       267500,
+       535
+      ],
+      [
+       268000,
+       535
+      ],
+      [
+       268500,
+       535
+      ],
+      [
+       269000,
+       535
+      ],
+      [
+       269500,
+       535
+      ],
+      [
+       270000,
+       535
+      ]
+     ],
+     "xr": [
+      45000,
+      270000
+     ],
+     "yr": [
+      200,
+      650
+     ],
+     "xticks": [
+      50000,
+      75000,
+      100000,
+      125000,
+      150000,
+      175000,
+      200000,
+      225000,
+      250000
+     ],
+     "revealAt": [
+      {
+       "at": "L32",
+       "x": 91000
+      },
+      {
+       "at": "L33",
+       "word": "surtax",
+       "x": 100500
+      },
+      {
+       "at": "L34",
+       "word": "seven",
+       "x": 108300
+      },
+      {
+       "at": "L34",
+       "word": "eleven",
+       "x": 112000
+      },
+      {
+       "at": "L35",
+       "word": "seventeen",
+       "x": 117600
+      },
+      {
+       "at": "L35",
+       "word": "twenty-six",
+       "x": 121000
+      },
+      {
+       "at": "L36",
+       "word": "fifty",
+       "x": 151000
+      },
+      {
+       "at": "L36",
+       "word": "sixty",
+       "x": 161000
+      },
+      {
+       "at": "L37",
+       "word": "twenty-nine",
+       "x": 191000
+      },
+      {
+       "at": "L38",
+       "word": "thirty",
+       "x": 231000
+      },
+      {
+       "at": "L38",
+       "word": "thirty-three",
+       "x": 268000
+      }
+     ],
+     "marks": [
+      {
+       "at": "L33",
+       "word": "surtax",
+       "x": 98600,
+       "text": "ON SURTAX",
+       "dy": -90,
+       "anchor": "end"
+      },
+      {
+       "at": "L34",
+       "word": "seven",
+       "x": 108300,
+       "text": "ON 11.16%",
+       "dy": -150,
+       "anchor": "start"
+      },
+      {
+       "at": "L35",
+       "word": "seventeen",
+       "x": 117600,
+       "text": "FED 26%",
+       "dy": -100,
+       "anchor": "start"
+      },
+      {
+       "at": "L36",
+       "word": "fifty",
+       "x": 150500,
+       "text": "ON 12.16%",
+       "dy": -80,
+       "anchor": "start"
+      },
+      {
+       "at": "L37",
+       "word": "twenty-nine",
+       "x": 181500,
+       "text": "FED 29% + BPA SHRINKS",
+       "dy": -90,
+       "anchor": "start"
+      },
+      {
+       "at": "L38",
+       "word": "thirty",
+       "x": 220500,
+       "text": "ON 13.16%",
+       "dy": -120,
+       "anchor": "start"
+      },
+      {
+       "at": "L38",
+       "word": "thirty-three",
+       "x": 258500,
+       "text": "FED 33%",
+       "dy": -80,
+       "anchor": "end"
+      }
+     ],
+     "pins": [
+      {
+       "at": "L32",
+       "x": 65000,
+       "name": "MAYA"
+      },
+      {
+       "at": "L32",
+       "x": 90000,
+       "name": "JORDAN"
+      },
+      {
+       "at": "L35",
+       "word": "Alex",
+       "x": 120000,
+       "name": "ALEX"
+      }
+     ],
+     "bands": [
+      {
+       "at": "L39",
+       "word": "forty-eight",
+       "x0": 47500,
+       "x1": 49000,
+       "text": "OHP",
+       "color": "rgba(229,128,110,.18)"
+      },
+      {
+       "at": "L39",
+       "word": "seventy-two",
+       "x0": 71500,
+       "x1": 73000,
+       "text": "OHP",
+       "color": "rgba(229,128,110,.18)"
+      },
+      {
+       "at": "L39",
+       "word": "two",
+       "x0": 200000,
+       "x1": 201500,
+       "text": "OHP",
+       "color": "rgba(229,128,110,.18)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L40",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 350,
+     "w": 1600,
+     "at": "L40",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "NOT ONE NUMBER FROM A TABLE",
+       "size": 60,
+       "at": "L40"
+      },
+      {
+       "text": "STEPS \u00b7 A VALLEY \u00b7 A FEW BUMPS",
+       "size": 76,
+       "at": "L40",
+       "word": "steps",
+       "gold": true
+      }
+     ],
+     "kicker": "YOUR MARGINAL RATE"
+    }
+   ]
+  },
+  {
+   "at": "L41",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L41",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE DECISION THAT CHANGES IT",
+       "size": 110,
+       "gold": true,
+       "at": "L41",
+       "word": "decision"
+      }
+     ],
+     "kicker": "06"
+    }
+   ]
+  },
+  {
+   "at": "L42",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L42",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "TAX SAVED BY A $1,000 RRSP DEDUCTION",
+     "sub": "2026 \u00b7 ONTARIO \u00b7 ASSUMES ROOM",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "MAYA \u00b7 $65,000",
+       "value": 296
+      },
+      {
+       "name": "JORDAN \u00b7 $90,000",
+       "value": 296
+      },
+      {
+       "name": "ALEX \u00b7 $120,000",
+       "value": 434
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L43",
+       "word": "Maya"
+      },
+      {
+       "at": "L43",
+       "word": "Jordan"
+      },
+      {
+       "at": "L43",
+       "word": "Alex"
+      }
+     ],
+     "note": "SAME FOR MAYA AND JORDAN"
+    }
+   ]
+  },
+  {
+   "at": "L44",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L44",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "MAYA \u00b7 SAME $1,000, TWO DIRECTIONS",
+     "sub": "2026 \u00b7 ONTARIO",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "TAKEN FROM A $1,000 RAISE",
+       "value": 357
+      },
+      {
+       "name": "SAVED BY A $1,000 RRSP",
+       "value": 296
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L44",
+       "word": "raise"
+      },
+      {
+       "at": "L44",
+       "word": "saves"
+      }
+     ],
+     "note": "RRSP DOESN\u2019T GIVE BACK CPP OR EI"
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L46",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "TWO MARGINAL RATES",
+     "items": [
+      {
+       "n": "EARN",
+       "head": "EVERYTHING OFF THE NEXT DOLLAR",
+       "at": "L46",
+       "word": "earning"
+      },
+      {
+       "n": "DEDUCT",
+       "head": "INCOME TAX ONLY",
+       "at": "L46",
+       "word": "deducting"
+      },
+      {
+       "n": "\u2192",
+       "head": "RAISE \u00b7 BONUS \u00b7 EXTRA SHIFT: THE FIRST",
+       "at": "L47",
+       "word": "raise"
+      },
+      {
+       "n": "\u2192",
+       "head": "RRSP DEDUCTION: THE SECOND",
+       "at": "L47",
+       "word": "second"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L48",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 300,
+     "w": 1400,
+     "at": "L48",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "WHY THE SAVINGS DIFFER",
+     "items": [
+      {
+       "n": "=",
+       "head": "MAYA + JORDAN: SAME FED + ON BRACKETS",
+       "at": "L48",
+       "word": "same"
+      },
+      {
+       "n": "\u2191",
+       "head": "ALEX: HIGHEST INCOME-TAX RATE SAVES MOST",
+       "at": "L49",
+       "word": "most"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L50",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "ONE MORE LEVER",
+       "size": 130,
+       "gold": true,
+       "at": "L50",
+       "word": "lever"
+      }
+     ],
+     "kicker": "07"
+    }
+   ]
+  },
+  {
+   "at": "L51",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L51",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "DEDUCT LATER (CARRY FORWARD)",
+     "items": [
+      {
+       "n": "1",
+       "head": "CONTRIBUTE NOW \u00b7 DEDUCT IN A LATER YEAR",
+       "at": "L51",
+       "word": "carry"
+      },
+      {
+       "n": "NOW",
+       "head": "$50,000 THIS YEAR",
+       "at": "L52",
+       "word": "fifty"
+      },
+      {
+       "n": "NEXT",
+       "head": "$120,000 NEXT YEAR",
+       "at": "L52",
+       "word": "next"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L53",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L53",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "TAX SAVED BY THE SAME $1,000 DEDUCTION",
+     "sub": "2026 RATES \u00b7 ASSUMES ROOM",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "DEDUCT THIS YEAR ($50K)",
+       "value": 207
+      },
+      {
+       "name": "DEDUCT NEXT YEAR ($120K)",
+       "value": 434
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L53",
+       "word": "this"
+      },
+      {
+       "at": "L53",
+       "word": "next"
+      }
+     ],
+     "note": "MORE THAN TWICE \u00b7 STILL NEED ROOM"
+    }
+   ]
+  },
+  {
+   "at": "L55",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L55",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "WHERE THIS CHANGES",
+     "items": [
+      {
+       "n": "!",
+       "head": "EMPLOYEE EXAMPLES \u00b7 NO FAMILY BENEFITS",
+       "at": "L55",
+       "word": "employee"
+      },
+      {
+       "n": "CCB",
+       "head": "INCOME-TESTED BENEFITS CAN SHRINK TOO",
+       "at": "L56",
+       "word": "benefits"
+      },
+      {
+       "n": "\u2191",
+       "head": "REAL MARGINAL RATE CAN BE HIGHER",
+       "at": "L56",
+       "word": "higher"
+      },
+      {
+       "n": "\u2260",
+       "head": "SELF-EMPLOYED \u00b7 QUEBEC: DIFFERENT RULES",
+       "at": "L57",
+       "word": "self-employed"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L58",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L58",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "FIND YOUR SPOT ON THE LINE",
+     "items": [
+      {
+       "n": "1",
+       "head": "YOUR FEDERAL + PROVINCIAL BRACKETS",
+       "at": "L59",
+       "word": "brackets"
+      },
+      {
+       "n": "2",
+       "head": "PAY STUB: YTD CPP + EI STILL RUNNING?",
+       "at": "L60",
+       "word": "stub"
+      },
+      {
+       "n": "3",
+       "head": "ADD: BRACKETS + SURTAX + CPP + EI",
+       "at": "L61",
+       "word": "Add"
+      },
+      {
+       "n": "!",
+       "head": "NEAR A STEP? PLANNING PAYS",
+       "at": "L62",
+       "word": "planning"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L63",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L63",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT DID WE LEARN?",
+       "size": 140,
+       "gold": true,
+       "at": "L63",
+       "word": "learn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L64",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L64",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "YOUR NEXT DOLLAR \u00b7 4 RULES",
+     "items": [
+      {
+       "n": "1",
+       "head": "A RAISE ONLY TAXES DOLLARS ABOVE EACH LINE",
+       "at": "L64",
+       "word": "above"
+      },
+      {
+       "n": "2",
+       "head": "CPP + EI ARE PART OF THE REAL RATE",
+       "at": "L65",
+       "word": "includes"
+      },
+      {
+       "n": "3",
+       "head": "RRSP SAVES INCOME TAX ONLY",
+       "at": "L66",
+       "word": "income"
+      },
+      {
+       "n": "4",
+       "head": "CHECK YOUR SPOT BEFORE YOU DECIDE",
+       "at": "L67",
+       "word": "Check"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L68",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L68",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 110,
+       "gold": true,
+       "seq": [
+        {
+         "text": "WHAT IF YOU SELL YOUR HOME?",
+         "t": 0
+        },
+        {
+         "text": "TAX-FREE\u2026 OR NOT?",
+         "at": "L68",
+         "word": "tax-free"
+        }
+       ],
+       "at": "L68"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L68",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.05
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L8",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -50,
+     "y": 10,
+     "z": 0.2
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 0,
+     "y": 40,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -40,
+     "z": 0.25
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L32",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 0,
+     "y": 30,
+     "z": 0.2
+    },
+    {
+     "x": 0,
+     "y": -30,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L41",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L55",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L58",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": -60,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L63",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf10/plates/s1.jpg",
+    "depth": "lf/lf10/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf10/plates/s2.jpg",
+    "depth": "lf/lf10/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf10/plates/s3.jpg",
+    "depth": "lf/lf10/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf10/plates/s4.jpg",
+    "depth": "lf/lf10/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf10/plates/s5.jpg",
+    "depth": "lf/lf10/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf10/plates/s6.jpg",
+    "depth": "lf/lf10/plates/s6_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L8"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L9"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "above"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "below"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10",
+   "word": "shrink"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L11",
+   "word": "only"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L12"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L13"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "Federal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "surtax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "C P P"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "E I"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L16"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "fifty-three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "fifty-eight"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L22",
+   "word": "stops"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "C P P"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "eighty-five"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L20",
+   "word": "Maya"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25",
+   "word": "Jordan"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L26"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L27"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "maximum"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "fall"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "weeks"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L30",
+   "word": "bigger"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "reset"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L32"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "surtax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "seven"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "seventeen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "fifty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L37",
+   "word": "twenty-nine"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L38",
+   "word": "thirty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L38",
+   "word": "thirty-three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "Alex"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L40"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L41"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "Maya"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "Jordan"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "Alex"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L44"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L44",
+   "word": "raise"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L44",
+   "word": "saves"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L46"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L46",
+   "word": "earning"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L46",
+   "word": "deducting"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L47",
+   "word": "raise"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L47",
+   "word": "second"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L48"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L48",
+   "word": "same"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L49",
+   "word": "most"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L50"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L51"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L51",
+   "word": "carry"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "fifty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "next"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L53"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L53",
+   "word": "this"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L53",
+   "word": "next"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L55"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L55",
+   "word": "employee"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L56",
+   "word": "benefits"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L56",
+   "word": "higher"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L57",
+   "word": "self-employed"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L58"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L59",
+   "word": "brackets"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L60",
+   "word": "stub"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L61",
+   "word": "Add"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L62",
+   "word": "planning"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L63"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L64"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L64",
+   "word": "above"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L65",
+   "word": "includes"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L66",
+   "word": "income"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L67",
+   "word": "Check"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L68"
+  },
+  {
+   "name": "tick",
+   "vol": 0.15,
+   "at": "L2",
+   "word": "keeps"
+  },
+  {
+   "name": "tick",
+   "vol": 0.15,
+   "at": "L3",
+   "word": "keeps"
+  },
+  {
+   "name": "tick",
+   "vol": 0.15,
+   "at": "L4",
+   "word": "keeps"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.2,
+   "at": "L5",
+   "word": "Wait"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L8"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L13"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L16"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L32"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L41"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L50"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L55"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L58"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L63"
+  }
+ ],
+ "ticker": [
+  "NEXT $1,000 @ $65K: \u2212$357",
+  "@ $90K: \u2212$296",
+  "@ $120K: \u2212$434",
+  "EI MAX $68,900 \u00b7 CPP $74,600 \u00b7 CPP2 $85,000 (2026)",
+  "FED 14% \u00b7 20.5% \u00b7 26% \u00b7 29% \u00b7 33%",
+  "RRSP SAVES INCOME TAX ONLY",
+  "2026 RATES \u00b7 ONTARIO \u00b7 EXAMPLE"
+ ],
+ "audio": "lf/lf10/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}
