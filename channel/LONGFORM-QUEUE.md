@@ -104,17 +104,19 @@ Recommended Series 5 order (demand first, then story flow): 38 DTC how to apply 
 Every topic still needs its own primary-source fact check (CRA / Service Canada / ESDC) before scripting; amounts are not taken from this list.
 
 ## Recommended initial production order
-1. LF-01 → #1 The Canadian Tax Brackets Explained With Real Numbers  ← **next on command**
-2. LF-02 → #2 The Best Tax Software in Canada — What Should You Actually Use in 2026?
-3. LF-03 → #10 You Make $100,000 in Canada — Where Does Your Money Actually Go?
-4. LF-04 → #17 What If You Move From Manitoba to Alberta?
-5. LF-05 → #11 $80K vs $100K vs $150K — How Much Do You Actually Keep?
-6. LF-06 → #18 What If You Work Two Jobs in Canada?
-7. LF-07 → #26 Alberta vs Manitoba vs Ontario — Same $100K Salary, Completely Different Take-Home
-8. LF-08 → #20 What If You Have a Side Hustle?
-9. LF-09 → #3 Marginal Tax Rates Explained — Why a Raise Doesn't Tax Your Whole Salary
-10. LF-10 → #22 What If You Sell Your Home?
-11. LF-11 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus?
+Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17). Dates: Metricool slots for LF-02..05, proposed 10-day steps from LF-05 for the rest.
+1. LF-01 → #1 The Canadian Tax Brackets Explained With Real Numbers — published 2026-10-14
+2. LF-02 → #2 The Best Tax Software in Canada — scheduled 2026-10-21
+3. LF-03 → #10 You Make $100,000 in Canada — scheduled 2026-10-28
+4. LF-04 → #17 What If You Move From Manitoba to Alberta? — scheduled 2026-11-04
+5. LF-05 → #38 Disability Tax Credit Canada — scheduled 2026-11-11
+6. LF-06 → #11 $80K vs $100K vs $150K — proposed 2026-11-21 (Sat; 10-day step)
+7. LF-07 → #18 What If You Work Two Jobs in Canada? — proposed 2026-12-01
+8. LF-08 → #26 Alberta vs Manitoba vs Ontario — proposed 2026-12-11
+9. LF-09 → #20 What If You Have a Side Hustle? — proposed 2026-12-21
+10. LF-10 → #3 Marginal Tax Rates Explained — proposed 2026-12-31 (New Year's Eve; check)
+11. LF-11 → #22 What If You Sell Your Home? — next to make
+12. LF-12 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus? — after LF-11
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
 Not a stretched Short and not a re-cut of one: a new question, a new story, new examples and a new visual approach. Already covered by Shorts (do not repeat their angle, hook, examples or visuals):
