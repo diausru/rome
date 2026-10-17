@@ -1,0 +1,7 @@
+https://local/seg1
+https://local/seg2
+https://local/seg3
+https://local/seg4
+https://local/seg5
+https://local/seg6
+https://local/seg7
