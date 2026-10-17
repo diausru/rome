@@ -2,7 +2,7 @@
 
 **File:** `oas/OAS-final.mp4` (also `oas/out/OAS-final.mp4`) · VO Grady (7 lines, 69.8 s speech) · loudness −14.4 LUFS, peak −3.5 dBFS · no black frames
 **Cover:** 4000 ms (`oas/out/cover-4000ms.jpg`): the hook with "$95,323" fully settled, no transition. Record it in Metricool as `videoCoverMilliseconds: 4000` (IG/TikTok only after read-back). YouTube Shorts cover: the user picks manually.
-**Status:** rendered and checked. NOT scheduled. Metricool posts for 2026-10-22 still point to placeholder media until the user confirms.
+**Status:** rendered and checked, NOT scheduled. SPARE: an OAS Short (`e2v2-share.mp4`, 59.5 s) is already attached to the 2026-10-22 posts, so this file is only an alternative. Do not replace the attached one without the user's decision.
 
 ## Facts (canada.ca)
 | Claim | Source | Tax year | Note |
