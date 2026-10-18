@@ -181,3 +181,8 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Remotion 4.0.532 is already our engine: inspect and extend `showreel/src/lf/`, `showreel/src/motion/`, `longform/tools/`, `tools/` instead of rebuilding. No Kling / AI video generators; never present code camera moves on stills as live-action footage.
 - Every future video: a Retention Blueprint (`<project>/BLUEPRINT.md`: opening question + promise, first 30 s VO + visuals, developments/open questions, verified calcs + sources, answer + next step) before visuals; then a 20–30 s 16:9 test MP4 (moving background, glass panels, ≥1 calculation + ≥1 comparison chart, synced VO/captions/SFX), inspected and fixed before the full render. Nothing is reported as done unless executed and verified.
 - Licence: Remotion is free (also commercially) for individuals, companies with ≤3 employees and non-profits; larger for-profits need a Company License (remotion.pro). The user confirms the tier before commercial scale-up.
+
+## Cross-platform promo in captions (user, 2026-10-18; from the Jan 2027 batch on)
+
+- Every scheduled post's caption/description sends viewers to our other networks, worded differently from post to post: YouTube description → TikTok (taxsecretscanada) and Instagram (styleofcanada); TikTok → YouTube (search "Tax Secrets Canada", channel @TaxSecretsCanada) and Instagram; Instagram → YouTube and TikTok.
+- Write the other platforms' handles WITHOUT "@": an "@" tags an account on the same platform, which would point to a stranger's account. Links in Shorts / IG / TikTok captions are not clickable, so give names, not URLs. Generator: `channel/metricool/batch-2027-01/build.py`.

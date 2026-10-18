@@ -80,5 +80,11 @@
  ],
  "series": "Card series, row 11 of PUBLISHING-PLAN §4 (after G5, bridged from it); first card reel on motion engine v1. Playlist: 'Students & families'.",
  "research": "- vidIQ (2026-10-12): keyword research CA (5): 'tuition tax credit canada' <750/mo; 'education tax credits' ≈5,177/mo (competition 18.6); 'tax tips canada' ≈5,298/mo. Competitor search CA by views (5): long-form explainers (Dr. Steph 'Tuition tax credits explained' 65K, Nick's Taxes 33K, CloudTax 2019 Short 21K still citing the education/textbook amounts). Shorts outliers (5): no relevant results (Indian 'tuition' comedy skits). Titles scored (10): 'Tuition Tax Credit Canada: Can Your Parents Claim It?' 91 (primary), 'Your Tuition Slip Is Worth Money. But Whose? (T2202, Canada)' 73. Balance 1,395 → 1,370 (25 credits).",
- "retention": "Hook (0–6.5 s): topic on frame 0 ('YOUR TUITION SLIP'), tags from three sides, gold 'WHOSE?' on the open-loop word ✅. Rule and 14% by 12 s, '$1,120' counts up exactly on 'one thousand' at 19 s ✅. Scene change into the kitchen with the parent at 22 s when 'yours first' is spoken; '$0 tax' at 31.5 s ✅. Transfer bar fills to $5,000 and '$700' lands on 'seven' at 40.8 s ✅. Third scene (first job) at 44.8 s for the carry-forward: the payoff of 'whose?' ✅. Weakest point: 32–44 s (the longest line, the transfer), carried by the bar, the chips and the count-up."
+ "retention": "Hook (0–6.5 s): topic on frame 0 ('YOUR TUITION SLIP'), tags from three sides, gold 'WHOSE?' on the open-loop word ✅. Rule and 14% by 12 s, '$1,120' counts up exactly on 'one thousand' at 19 s ✅. Scene change into the kitchen with the parent at 22 s when 'yours first' is spoken; '$0 tax' at 31.5 s ✅. Transfer bar fills to $5,000 and '$700' lands on 'seven' at 40.8 s ✅. Third scene (first job) at 44.8 s for the carry-forward: the payoff of 'whose?' ✅. Weakest point: 32–44 s (the longest line, the transfer), carried by the bar, the chips and the count-up.",
+ "cover": {
+  "ms": 42000,
+  "t": 42.0,
+  "source": "chosen 2026-10-18 from the final render (settled card, key figure + person visible)",
+  "youtube": "manual: set the Shorts cover at 42.00 s"
+ }
 }

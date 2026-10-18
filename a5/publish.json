@@ -81,5 +81,11 @@
  "series": "Card series, row 12 of PUBLISHING-PLAN §4 (after A1, bridged from it). Second investigation-format reel (list-2 #6, absorbs A5). Playlist: 'CRA letters & deadlines'.",
  "research": "- vidIQ (2026-10-12): keyword research CA (5): 'cra says i owe money' <750/mo; 'cra' ≈29,417/mo (+10.8%); 'canada revenue agency' ≈5,334/mo. Competitor search CA by views (5): 'How to pay income tax owing to CRA' 21 s Short 50K; Fix My Books 'CRA How to: Pay Taxes Owing' 29K; CRA's own NOA explainer 9.6K. Shorts outliers (5): Faris CPA 'CRA Audits, Collections, Tax Debt — What to Do First' 167K and 'When the CRA Comes After You…' 106K (fear framing); TurboTax 'Why would I owe federal taxes' 714K (US). Titles scored (10): 'Got a CRA Bill? You Have 90 Days (But Interest Starts Now)' 94 → primary reworded to 'Is Already Running' for accuracy (interest runs from April 30; the reworded title was not re-scored to stay within the cap); 'CRA Says You Owe $5,000? Check These 3 Things First' 83. Balance 1,265 → 1,245 at the last reading.",
  "retention": "Topic + the $5,000 balance on frame 0 (notice close-up, lens count-up); open loop \"three usual suspects\" by 3 s; a new suspect/evidence panel every 6–9 s; a mid-video twist (timeline: 90 days vs interest from April 30) at ~40 s; actionable 3-step end + bridge to the next topic. Automated QC: no static stretch over 3 s (75 visual events).",
- "duration": "1:09 (69.00 s), 1080×1920, 24 fps, VO 67.26 s + hold"
+ "duration": "1:09 (69.00 s), 1080×1920, 24 fps, VO 67.26 s + hold",
+ "cover": {
+  "ms": 39000,
+  "t": 39.0,
+  "source": "chosen 2026-10-18 from the final render (settled card, key figure + person visible)",
+  "youtube": "manual: set the Shorts cover at 39.00 s"
+ }
 }
