@@ -23,7 +23,7 @@ We run a face-off with four Canadians — a student, an employee with one T4, an
 
 The twist: certified software applies the same tax law. What you pay for is forms, help and audit protection — not a different tax result.
 
-Not sponsored. No affiliate links. Every price was checked on the company's own website and on canada.ca on October 11, 2026. Prices can change; the CRA publishes a new certified list each year — check it before you file.
+Not sponsored. No affiliate links. Prices can change; the CRA publishes a new certified list each year — check it before you file.
 
 Chapters
 0:00 The question
@@ -39,7 +39,7 @@ Chapters
 10:48 Verdict
 11:33 Next
 
-Sources (checked 2026-10-11): canada.ca — Find certified tax software (2025 list), NETFILE, Auto-fill My Return, Due dates, SimpleFile, Free tax clinics; wealthsimple.com/en-ca/tax; turbotax.intuit.ca/tax/software/online; hrblock.ca/online-tax-software and /tax-situations/under-25; ufile.ca (products, file for free); studiotax.com (payment page); cloudtax.ca/pricing; genutax.ca.
+Sources: canada.ca — Find certified tax software (2025 list), NETFILE, Auto-fill My Return, Due dates, SimpleFile, Free tax clinics; wealthsimple.com/en-ca/tax; turbotax.intuit.ca/tax/software/online; hrblock.ca/online-tax-software and /tax-situations/under-25; ufile.ca (products, file for free); studiotax.com (payment page); cloudtax.ca/pricing; genutax.ca.
 
 General information, not tax advice. Your situation may differ.
 
@@ -49,7 +49,7 @@ General information, not tax advice. Your situation may differ.
 best tax software canada, tax software canada, free tax software canada, wealthsimple tax, turbotax canada, h&r block canada, ufile, studiotax, cloudtax, genutax, netfile, file taxes online canada, cra certified software, tax return canada 2026
 
 ## Pinned comment
-Which one do you use — and did you ever pay for a tier you didn't need? Prices are for the 2025 tax year (checked Oct 11, 2026). When the CRA publishes the 2026 list, we'll update.
+Which one do you use — and did you ever pay for a tier you didn't need? Prices are for the 2025 tax year. When the CRA publishes the 2026 list, we'll update.
 
 ## Shorts candidates
 1. "Under 25? This tax software is $0 — every package" (H&R Block, L22).
@@ -59,3 +59,9 @@ Which one do you use — and did you ever pay for a tier you didn't need? Prices
 
 ## Next
 LF-03: You make $100,000 in Canada — where does every dollar actually go?
+
+
+## Update 2026-10-17
+- Removed the claim "every price checked … on October 11, 2026" from the description, the sources line and the first comment (not verified in this session).
+- Metricool post for YouTube 2026-10-21 16:00 updated; new post id 398785757 (uuid -5081867078408319813).
+- OPEN: the video voiceover (lines.json L4) and the on-screen card "CHECKED 2026-10-11" still make the same claim. Video not re-rendered; decide before 2026-10-21.

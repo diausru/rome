@@ -83,3 +83,17 @@ Slot from Metricool best-time data for YouTube: Wednesday 16:00 America/Winnipeg
 - LF-03 · Wed 2026-10-28 16:00 · post 394482856 · "You Make $100,000 in Canada — Here's Where Every Dollar Actually Goes (2026)" (vidIQ 97) · media from GitHub (clean audio, size verified) · thumbnail: user adds
 - LF-04 · Wed 2026-11-04 16:00 · post 394483313 · "Moving From Manitoba to Alberta on $100K…" (vidIQ 93) · media verified · thumbnail: user adds
 - LF-05 · Wed 2026-11-11 16:00 · post 394483485 · "Disability Tax Credit Canada: Who Qualifies, Who Signs…" (vidIQ 88) · media from Drive (size verified) · thumbnail: user adds
+
+## Long-form LF-06 … LF-10 (created 2026-10-17 on the user's command): DRAFTS with placeholder media
+YouTube only · 16:00 America/Winnipeg · every 10 days from LF-05 (11-11), shifted one day where a date fell on a Saturday or New Year's Eve. All are `draft: true` (they cannot publish). Media = placeholder clip; the user swaps in the 1080p master and a thumbnail, then schedules. Titles, descriptions and tags are from each `longform/<dir>/PUBLISH.md`.
+
+| Date | Video | Metricool id |
+|---|---|---|
+| Fri 2026-11-20 | LF-06 $80K → $150K · "I Followed One Canadian Paycheque From $80K to $150K…" | 398828010 |
+| Tue 2026-12-01 | LF-07 Two jobs · "Working Two Jobs in Canada? The One TD1 Box…" | 398828027 |
+| Fri 2026-12-11 | LF-08 AB / MB / ON · "Calgary vs Toronto vs Winnipeg: Same $100K Salary…" | 398828041 |
+| Mon 2026-12-21 | LF-09 Side hustle · "Side Hustle Taxes in Canada: How Much of $10,000…" | 398828061 |
+| Wed 2026-12-30 | LF-10 Marginal rates · "How Tax Brackets Really Work in Canada…" | 398828071 |
+
+## Correction 2026-10-18
+Everything else in this file marked as "placeholder media" is outdated: Blocks 1 and 2 carry the real videos (attached from Drive), and 2026-10-13, 10-15, 10-17 and LF-01 (10-14) are already PUBLISHED.

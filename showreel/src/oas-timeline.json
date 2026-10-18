@@ -1,0 +1,47 @@
+{
+ "total": 69.8,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Retired, with income over ninety-five thousand? Part of your Old Age Security can go back to the government.",
+   "start": 0.25,
+   "end": 7.497
+  },
+  {
+   "id": "rule",
+   "text": "The OAS recovery tax takes fifteen cents of every dollar of net income above ninety-five thousand, three hundred and twenty-three.",
+   "start": 7.797,
+   "end": 16.162
+  },
+  {
+   "id": "example",
+   "text": "Say your net income is one hundred and ten thousand. That's fourteen thousand, six hundred and seventy-seven over the line. Fifteen percent is two thousand, two hundred and one dollars.",
+   "start": 16.462,
+   "end": 30.382
+  },
+  {
+   "id": "timing",
+   "text": "It's repaid from your OAS payments, from July twenty twenty-seven to June twenty twenty-eight, based on your twenty twenty-six income.",
+   "start": 30.682,
+   "end": 39.125
+  },
+  {
+   "id": "levers",
+   "text": "Three legal levers. First, from age sixty-five, split up to half of your eligible pension income with your spouse.",
+   "start": 39.425,
+   "end": 48.705
+  },
+  {
+   "id": "levers2",
+   "text": "Second, TFSA withdrawals aren't income. Third, delay your OAS: six-tenths of a percent for each month past sixty-five, up to thirty-six percent at seventy.",
+   "start": 49.005,
+   "end": 63.0
+  },
+  {
+   "id": "cta",
+   "text": "Next: how couples split pension income, step by step. Follow so you don't miss it.",
+   "start": 63.3,
+   "end": 69.5
+  }
+ ]
+}

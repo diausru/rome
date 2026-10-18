@@ -1,0 +1,27 @@
+{
+ "topic": "OAS clawback 2026 (recovery tax on net world income above the threshold)",
+ "tax_year": 2026,
+ "threshold_2026_income": 95323,
+ "rate": 0.15,
+ "example": {
+  "net_income": 110000,
+  "over": 14677,
+  "recovery": 2201.55,
+  "months": "July 2027 to June 2028",
+  "note": "example, not a CRA rule"
+ },
+ "deferral": {
+  "per_month": 0.006,
+  "max_at_70": 0.36
+ },
+ "splitting": {
+  "share_max": 0.5,
+  "min_age": 65,
+  "form": "T1032"
+ },
+ "sources": [
+  "canada.ca OAS pension recovery tax (threshold $95,323 for July 2027-June 2028, based on 2026 income; estimate Jan-Sep 2026, final Oct-Dec 2026)",
+  "canada.ca Line 23500 / OASRI (rate 15%)"
+ ],
+ "verify_before_post": "Re-check the threshold in October 2026 when the figure becomes final."
+}
