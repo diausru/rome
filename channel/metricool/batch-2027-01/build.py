@@ -27,6 +27,12 @@ IG = ["🎥 Full-length breakdowns on YouTube: search Tax Secrets Canada\n🎵 T
       "Long version on YouTube → Tax Secrets Canada · TikTok → taxsecretscanada",
       "▶️ YouTube: Tax Secrets Canada for deeper dives · TikTok: taxsecretscanada"]
 def dt(d, h): return {"dateTime": f"{d}T{h}:00:00", "timezone": TZ}
+def tag_text(caption, promo, tags):
+    # publish.json captions sometimes already end with the hashtag block; never append it twice
+    t = (tags or "").strip()
+    if not t or t in caption:
+        return f"{caption}\n\n{promo}"
+    return f"{caption}\n\n{promo}\n\n{t}"
 out = []
 for i, (p, day, fid, ms) in enumerate(PLAN):
     j = json.load(open(ROOT / p / "publish.json"))
@@ -42,12 +48,12 @@ for i, (p, day, fid, ms) in enumerate(PLAN):
             "smartLinkData": {"ids": []}, "media": media, "mediaAltText": [], "hasNotReadNotes": False}
     out.append(dict(p=p, net="tiktok", date=dt(day, 10), info={**base,
         "publicationDate": dt(day, 10), "providers": [{"network": "tiktok"}],
-        "text": f"{tt['caption']}\n\n{TT[i % 3]}\n\n{tt['hashtags']}",
+        "text": tag_text(tt['caption'], TT[i % 3], tt['hashtags']),
         "firstCommentText": tt["pinned"], "videoCoverMilliseconds": ms,
         "tiktokData": {"privacyOption": "PUBLIC_TO_EVERYONE", "title": title, "photoCoverIndex": 0, "isAigc": True}}))
     out.append(dict(p=p, net="instagram", date=dt(day, 11), info={**base,
         "publicationDate": dt(day, 11), "providers": [{"network": "instagram"}],
-        "text": f"{ig['caption']}\n\n{IG[i % 3]}\n\n{ig['hashtags']}",
+        "text": tag_text(ig['caption'], IG[i % 3], ig['hashtags']),
         "firstCommentText": ig["pinned"], "videoCoverMilliseconds": ms,
         "instagramData": {"type": "REEL", "showReelOnFeed": True, "isAiGenerated": True}}))
     out.append(dict(p=p, net="youtube", date=dt(day, 16), info={**base,
