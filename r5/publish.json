@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Pension income splitting: move it on paper (R5)",
-  "duration": "",
+  "duration": "1:10 (70.46 s), 1080×1920, 24 fps, VO 69.93 s + 0.53 s hold",
   "mp4": "showreel/out/r5/r5-final.mp4 (share copy: r5-share.mp4)"
  },
  "cover": {
@@ -9,7 +9,7 @@
   "ms": 34410,
   "frame": "'THE RULE': two income tubes levelled at $60,000 (PAT / JO), 'UP TO 50%' arrow, '−$3,030 LESS BRACKET TAX', the couple at the kitchen table",
   "why": "the whole mechanism and the payoff in one stable frame",
-  "file": "r5/cover.jpg"
+  "file": "r5/cover.jpg (extracted at 34.41 s from r5-final.mp4, checked)"
  },
  "sources": [
   {
