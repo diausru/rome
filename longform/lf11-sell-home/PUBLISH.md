@@ -1,4 +1,5 @@
 # LF-11 — PUBLISH PACKAGE (YouTube long-form)
+**QC (2026-10-24):** 555.2 s, h264 1920×1080 30 fps, AAC, −13.9 LUFS, no black frames, contact sheet checked.
 **File:** `LF11-1080p.mp4` · 1920×1080 · 30 fps · 9:15 · VO Grady (57 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command). Proposed slot: Fri 2027-01-08 16:00 America/Winnipeg (10-day cadence).
 **Thumbnail:** made by the user.
@@ -36,6 +37,8 @@ CHAPTERS
 6:08 04 · Gray zones
 7:28 05 · Before you sell
 8:24 Verdict
+
+More short tax breakdowns: TikTok taxsecretscanada · Instagram styleofcanada.
 
 ## Hashtags / keywords
 #CanadaTax #SellingYourHome #PrincipalResidence #CapitalGains #FlippingRule #CRA
