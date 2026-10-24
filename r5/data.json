@@ -1,0 +1,40 @@
+{
+ "topic": "Pension income splitting: a pensioner may elect jointly with a spouse/common-law partner to report up to 50% of eligible pension income on the partner's return (Form T1032), every year; CPP/OAS excluded; under 65 only life annuity from a pension plan qualifies (RRIF only at 65+ or on a spouse's death)",
+ "tax_year": 2026,
+ "example": {
+  "pat": 100000,
+  "pat_rpp": 80000,
+  "jo": 20000,
+  "split": 40000,
+  "each_after": 60000,
+  "bracket_saving": 3030,
+  "pension_credit": 388,
+  "total_saving": 3418,
+  "rate_pat": 0.3325,
+  "rate_jo": 0.248,
+  "note": "example (not a CRA rule): Manitoba couple, both 66 at the end of 2026; Pat: $80,000 registered pension plan life pension + $20,000 CPP/OAS; Jo: $20,000 CPP/OAS. Bracket tax on 2026 federal + Manitoba rates; the basic personal amount is claimed either way and cancels; Jo's new pension credit = federal $2,000 x 14% + Manitoba $1,000 x 10.8%. Not modelled: age amount, OAS recovery tax, withholding. Computed by r5/calc.py."
+ },
+ "derive": {
+  "saving_round": "round(total_saving, -2)",
+  "bracket_round": "round(bracket_saving, -1)"
+ },
+ "spoken": {
+  "split": "forty thousand",
+  "pat": "hundred thousand",
+  "pat_rpp": "eighty thousand",
+  "jo": "twenty thousand",
+  "each_after": "sixty thousand",
+  "saving_round": "three thousand four hundred",
+  "bracket_round": "three thousand and thirty dollars",
+  "pension_credit": "three hundred and eighty-eight dollars"
+ },
+ "sources": {
+  "split": "ITA 60.03(1) 'split-pension amount' = up to 0.5 x eligible pension income (pro-rated by months married); 'joint election' in prescribed form filed with both returns by their filing-due dates; laws-lois.justice.gc.ca (fetched 2026-10-24)",
+  "effect": "ITA 60.03(2): the transferee is deemed to receive the split amount as pension income / qualified pension income for s. 118(3); 56(1)(a.2) and 60(c) include/deduct it",
+  "eligible": "ITA 118(7): at 65+ pension income incl. RRIF payments and RRSP annuity; under 65 'qualified pension income' = life annuity from a superannuation or pension plan, or the other items only as a consequence of the death of a spouse",
+  "excluded": "ITA 118(8)(a)-(b): OAS and CPP/QPP benefits are not pension income",
+  "credit": "ITA 118(3): credit on the lesser of $2,000 and eligible pension income x appropriate percentage (14% for 2026); Manitoba pension amount $1,000 (gov.mb.ca Personal Tax Credits, fetched 2026-10-24) x 10.8%",
+  "rates": "CRA T4127 2026: federal 14% / 20.5% (from $58,523) / 26% (from $117,045); Manitoba 10.8% / 12.75% (from $47,000) / 17.4% (from $100,000)",
+  "form": "Form T1032, Joint Election to Split Pension Income: both spouses file it with their returns by the filing due date; one joint election per tax year (canada.ca 'Pension income splitting', CRA; found via search 2026-10-24); transferor deducts on line 21000, transferee reports on line 11600"
+ }
+}

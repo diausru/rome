@@ -1,0 +1,283 @@
+{
+ "id": "r5",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "MOVE $40,000 OF PENSION",
+  "l2": "ON PAPER."
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "tubes": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "exc"
+  },
+  "sort": {
+   "box": [
+    80,
+    660,
+    880,
+    580
+   ],
+   "from": "exc",
+   "to": "reveal"
+  },
+  "form": {
+   "box": [
+    80,
+    660,
+    880,
+    600
+   ],
+   "from": "reveal",
+   "to": "cta"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "cta",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "cta"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "cta"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "pat",
+   "beat": "hook",
+   "word": "forty",
+   "sfx": "tick"
+  },
+  {
+   "id": "paper",
+   "beat": "hook",
+   "word": "paper,",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "save",
+   "beat": "hook",
+   "word": "three",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "patinc",
+   "beat": "c1",
+   "word": "hundred",
+   "sfx": "tick"
+  },
+  {
+   "id": "rpp",
+   "beat": "c1",
+   "word": "eighty",
+   "sfx": "tick"
+  },
+  {
+   "id": "jo",
+   "beat": "c1",
+   "word": "twenty",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "half",
+   "beat": "c2",
+   "word": "half",
+   "sfx": "tick"
+  },
+  {
+   "id": "moves",
+   "beat": "c2",
+   "word": "Forty",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "level",
+   "beat": "c2",
+   "word": "sixty",
+   "sfx": "chime"
+  },
+  {
+   "id": "less",
+   "beat": "c2",
+   "word": "thirty",
+   "sfx": "tick"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "credit",
+   "beat": "c3",
+   "word": "credit:",
+   "sfx": "tick"
+  },
+  {
+   "id": "c388",
+   "beat": "c3",
+   "word": "eighty-eight",
+   "sfx": "chime"
+  },
+  {
+   "id": "exc",
+   "beat": "exc",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "cpp",
+   "beat": "exc",
+   "word": "CPP",
+   "sfx": "tick"
+  },
+  {
+   "id": "oas",
+   "beat": "exc",
+   "word": "OAS",
+   "sfx": "tick"
+  },
+  {
+   "id": "u65",
+   "beat": "exc",
+   "word": "sixty-five,",
+   "sfx": "tick"
+  },
+  {
+   "id": "rrif",
+   "beat": "exc",
+   "word": "RRIF",
+   "sfx": "tick"
+  },
+  {
+   "id": "work",
+   "beat": "exc",
+   "word": "workplace",
+   "sfx": "chime"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "cheque",
+   "beat": "reveal",
+   "word": "cheque",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "form",
+   "beat": "reveal",
+   "word": "form",
+   "sfx": "tick"
+  },
+  {
+   "id": "both",
+   "beat": "reveal",
+   "word": "both",
+   "sfx": "tick"
+  },
+  {
+   "id": "every",
+   "beat": "reveal",
+   "word": "every",
+   "sfx": "chime"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c2",
+   "word": "thirty",
+   "offset": 1.2
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "pension2"
+}

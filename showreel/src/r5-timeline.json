@@ -1,0 +1,47 @@
+{
+ "total": 69.931,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Move forty thousand dollars of pension on paper, and this retired couple pays about three thousand four hundred dollars less tax a year.",
+   "start": 0.25,
+   "end": 9.609
+  },
+  {
+   "id": "c1",
+   "text": "Pat, sixty-six: a hundred thousand dollars, mostly an eighty thousand dollar workplace pension. Jo, sixty-six: twenty thousand.",
+   "start": 9.959,
+   "end": 21.467
+  },
+  {
+   "id": "c2",
+   "text": "Pat can report up to half of that pension on Jo's return. Forty thousand moves. Both land at sixty thousand: about three thousand and thirty dollars less tax in Manitoba.",
+   "start": 21.767,
+   "end": 35.509
+  },
+  {
+   "id": "c3",
+   "text": "And Jo can now claim the pension credit: three hundred and eighty-eight dollars more.",
+   "start": 35.809,
+   "end": 41.422
+  },
+  {
+   "id": "exc",
+   "text": "But CPP and OAS can't be split. And under sixty-five, RRIF withdrawals don't count. A workplace life pension does.",
+   "start": 41.772,
+   "end": 53.422
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: no money moves. The cheque still goes to Pat. It's form T ten thirty-two, filed with both returns, every year.",
+   "start": 53.772,
+   "end": 64.813
+  },
+  {
+   "id": "cta",
+   "text": "Next: the disability tax credit. Follow so you don't miss it.",
+   "start": 65.163,
+   "end": 69.931
+  }
+ ]
+}
