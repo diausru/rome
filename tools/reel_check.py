@@ -145,6 +145,8 @@ def main():
                 if val % 100 == 0 and 1000 < val < 10000: cands += [words(int(val // 100)) + ' hundred', words(int(val // 100)) + ' hundred dollars']
                 if val % 10 == 0 and 1000 < val < 10000 and int(val) % 100: cands += [words(int(val // 100)) + ' ' + words(int(val % 100))]  # 'thirty-nine fifty' = 3,950
                 cands += [w + ' tax years']
+                c = int(round(val * 100)) % 100
+                if c: wd = words(int(val)); cands += [wd + ' dollars and ' + words(c) + ' cents']  # '$204.20'
             ok = norm(spoken) in {norm(c) for c in cands}
             if not ok: fx.append(f'{k}: data {val} ≠ spoken "{spoken}"')
         summary = ', '.join(f'{k} {env[k]:g}' for k in data['spoken'])

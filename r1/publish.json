@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Disability tax credit: $0 for Noah, three doors (R1)",
-  "duration": "",
+  "duration": "1:07 (67.21 s), 1080×1920, 24 fps, VO 66.70 s + 0.51 s hold",
   "mp4": "showreel/out/r1/r1-final.mp4 (share copy: r1-share.mp4)"
  },
  "cover": {
@@ -9,7 +9,7 @@
   "ms": 47490,
   "frame": "'DOOR 3': all three doors open ($3,480 / $1,000 / $204.20), 'ALL NEED DTC APPROVAL' stamp, mother and son at the bank desk",
   "why": "the whole payoff (three amounts + the condition) in one settled frame",
-  "file": "r1/cover.jpg"
+  "file": "r1/cover.jpg (extracted at 47.49 s from r1-final.mp4, checked)"
  },
  "sources": [
   {
