@@ -34,7 +34,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 | 19 | What If You Work Remotely? | queued |
 | 20 | What If You Have a Side Hustle? | rendered 2026-10-16 (LF-09, `longform/lf09-side-hustle`) |
 | 21 | What If You Support Your Parents? | queued |
-| 22 | What If You Sell Your Home? | queued |
+| 22 | What If You Sell Your Home? | rendered LF-11 (2026-10-24) |
 | 23 | What If You Receive a $20,000 Bonus? | queued |
 | 24 | What If You Make $100K in One Province and Move to Another? | queued |
 | 25 | What If Your Income Changes From $80K to $150K? | queued |
@@ -115,7 +115,7 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 8. LF-08 → #26 Alberta vs Manitoba vs Ontario — proposed 2026-12-11
 9. LF-09 → #20 What If You Have a Side Hustle? — proposed 2026-12-21
 10. LF-10 → #3 Marginal Tax Rates Explained — proposed 2026-12-31 (New Year's Eve; check)
-11. LF-11 → #22 What If You Sell Your Home? — next to make
+11. LF-11 → #22 What If You Sell Your Home? — rendered 2026-10-24
 12. LF-12 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus? — after LF-11
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
