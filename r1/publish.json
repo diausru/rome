@@ -1,0 +1,105 @@
+{
+ "video": {
+  "title": "Disability tax credit: $0 for Noah, three doors (R1)",
+  "duration": "",
+  "mp4": "showreel/out/r1/r1-final.mp4 (share copy: r1-share.mp4)"
+ },
+ "cover": {
+  "t": 47.49,
+  "ms": 47490,
+  "frame": "'DOOR 3': all three doors open ($3,480 / $1,000 / $204.20), 'ALL NEED DTC APPROVAL' stamp, mother and son at the bank desk",
+  "why": "the whole payoff (three amounts + the condition) in one settled frame",
+  "file": "r1/cover.jpg"
+ },
+ "sources": [
+  {
+   "source": "canada.ca Child disability benefit (CRA)",
+   "year": "Jul 2026–Jun 2027",
+   "supports": "up to $3,480/yr per DTC-eligible child; reduced above AFNI $82,847; paid with the CCB"
+  },
+  {
+   "source": "canada.ca (ESDC) How much you could get in grants and bonds",
+   "year": "current",
+   "supports": "grant up to $3,500/yr ($70,000 lifetime) matching; bond up to $1,000/yr ($20,000 lifetime), no contribution, low income; DTC eligibility required"
+  },
+  {
+   "source": "canada.ca Canada Disability Benefit – How much you could receive",
+   "year": "Jul 2026–Jun 2027",
+   "supports": "up to $204.20/month; ages 18–64; DTC; income-tested; prior-year return filed"
+  },
+  {
+   "source": "Income Tax Act s. 118.3 (laws-lois.justice.gc.ca)",
+   "year": "2026",
+   "supports": "DTC: severe and prolonged impairment certified on the prescribed form (T2201); non-refundable credit"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "DTC Approved? These 3 Benefits Need It (RDSP, CDB, Canada Disability Benefit)",
+   "Disability Tax Credit Worth $0? It Unlocks 3 Other Benefits (Canada 2026)",
+   "Why Get the Disability Tax Credit If You Pay No Tax? (Canada)"
+  ],
+  "description": "Noah is 10. His disability tax credit saves him $0 on his own return: he pays no tax. So why get it approved? Because DTC approval is the key to three other doors.\n\nDoor 1: the Child Disability Benefit. Up to $3,480 a year per child (July 2026 – June 2027), paid with the Canada child benefit; reduced when family net income is over $82,847.\nDoor 2: an RDSP. For lower-income families, the Canada Disability Savings Bond pays up to $1,000 a year with no contribution (lifetime $20,000). Grants match deposits up to $3,500 a year (lifetime $70,000).\nDoor 3, at 18: the Canada Disability Benefit. Up to $204.20 a month (July 2026 – June 2027), ages 18–64, income-tested.\n\nThe key for all three: CRA approval of form T2201. Then file a tax return every year, even with no income.\n\nNext: the Canada caregiver credit.\n\nSources: canada.ca (CRA) Child disability benefit; ESDC How much you could get in grants and bonds; Canada Disability Benefit – How much you could receive; Income Tax Act s. 118.3. Maximums; actual amounts depend on income and eligibility. Example family. General information, not advice.\n\n#DisabilityTaxCredit #RDSP #CanadaTax",
+  "hashtags": "#DisabilityTaxCredit #RDSP #CanadaTax #CRA #T2201",
+  "keywords": "disability tax credit canada, dtc canada, t2201, child disability benefit, rdsp grant bond, canada disability benefit, canada disability benefit amount 2026, disability benefits canada, rdsp canada, disability tax credit benefits",
+  "pinned": "Quick check: an adult with DTC approval, age 30, no income. Which door applies: the child disability benefit or the Canada Disability Benefit? General info, not advice.",
+  "cta": "Follow for the next one: the Canada caregiver credit."
+ },
+ "tt": {
+  "caption": "His disability tax credit saves him $0 🔑 But approval opens 3 doors: $3,480/yr child benefit, RDSP bond + grants, and $204.20/month at 18.",
+  "keywords": "disability tax credit canada · t2201 · rdsp · canada disability benefit",
+  "hashtags": "#disabilitytaxcredit #rdsp #canadiantaxes #cra #disabilitybenefits",
+  "pinned": "All three need CRA approval of T2201, and a tax return filed every year. Maximums, income-tested. (General info, not advice.)",
+  "cta": "Follow for the next one: the Canada caregiver credit."
+ },
+ "ig": {
+  "caption": "A tax credit worth $0 can still matter 🔑🇨🇦\n\nNoah is 10 and pays no tax, so his DTC saves him nothing. But approval opens:\n1️⃣ Child Disability Benefit: up to $3,480/yr (Jul 2026–Jun 2027), with the CCB\n2️⃣ RDSP: bond up to $1,000/yr with no deposit (lower incomes) + grants up to $3,500/yr matching deposits\n3️⃣ At 18: Canada Disability Benefit, up to $204.20/month (income-tested)\n🔑 The key: CRA approval of form T2201\n✅ File a return every year, even with no income\n\nSend this to a family who should know.\n\nSource: canada.ca (CRA, ESDC). Maximums; example family. General info, not advice.",
+  "keywords": "disability tax credit, rdsp, canada disability benefit",
+  "hashtags": "#disabilitytaxcredit #rdsp #disabilitycanada #canadiantaxes #personalfinancecanada #canadatax",
+  "pinned": "Save this 📌",
+  "cta": "Send this to a family who should know."
+ },
+ "eng": {
+  "question": "Which door applies at 30 with no income? (the Canada Disability Benefit)",
+  "save": "The three doors and their maximums.",
+  "share": "Families of DTC-eligible children; adults 18–64.",
+  "follow": "Canadian tax rules with real numbers."
+ },
+ "seo": {
+  "primary": "disability tax credit canada",
+  "secondary": "seed <750/mo (competition 24); competitors: 'Canada Disability Benefit 2025: Get $2400!' 12K, 'The Disability Tax Credit' 17K, RDSP short 5.5K",
+  "intent": "Families asking what DTC approval is worth when no tax is owed.",
+  "audience": "Parents of children with disabilities; adults 18–64 with a disability.",
+  "angle": "DTC as the key: three linked benefits with their 2026–27 maximums.",
+  "questions": "Is the DTC worth it with no income? What does DTC unlock? How much is the Canada Disability Benefit?"
+ },
+ "next": [
+  {
+   "topic": "Canada Caregiver Credit (R2)",
+   "why": "Bridge; credits arc",
+   "intent": "canada caregiver credit",
+   "hook": "Caring for a parent? Who claims",
+   "angle": "eligibility + who claims",
+   "payoff": "the amount"
+  },
+  {
+   "topic": "Medical expenses (list-2 #30)",
+   "why": "Credits arc",
+   "intent": "medical expense tax credit canada",
+   "hook": "The 3% floor",
+   "angle": "which spouse claims",
+   "payoff": "the difference"
+  },
+  {
+   "topic": "Donations (R3)",
+   "why": "Credits arc",
+   "intent": "donation tax credit canada",
+   "hook": "Combine receipts",
+   "angle": "two-tier credit above $200",
+   "payoff": "the extra credit"
+  }
+ ],
+ "series": "Card series, TOPICS-2 R1 (credits arc), bridged from R5; angle chosen to avoid LF-05 (long-form DTC: who qualifies/who signs/10 years back). Playlist: 'Benefits & credits'. Topic type: evergreen (amounts re-checked each July).",
+ "research": "vidIQ: 'disability tax credit canada' <750/mo (competition 24); titles 78 (primary) / 75; balance 649 → 634 = 15 credits. NexLev Shorts CA: 'The Disability Tax Credit' 17K, 'Canada Disability Benefit 2025: Get $2400!' 12K, RDSP 5.5K, 'DTC Approved? Don't Make This $20K Mistake' 638; none links the three benefits to one approval with 2026–27 amounts.",
+ "retention": "Frame 0 'DISABILITY TAX CREDIT: $0 FOR NOAH.'; $0 struck through at 5 s; open loop 'SO WHY APPROVE IT?' at 9 s (paid off at 48 s 'same key'); door 1 opens at 12.6 s ($3,480 at 16.7 s); door 2 at 25 s ($1,000 at 30 s); door 3 at 39 s ($204.20 at 43 s); 'ALL NEED DTC APPROVAL' at 47.5 s (mid re-hook, 71 %); key + T2201 at 51–55 s; checklist; next pill."
+}

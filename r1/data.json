@@ -1,0 +1,33 @@
+{
+ "topic": "Disability tax credit approval as the gateway: Child Disability Benefit, RDSP grants/bond, Canada Disability Benefit all require DTC eligibility",
+ "tax_year": 2026,
+ "example": {
+  "credit_own": 0,
+  "child_dis": 3480,
+  "child_dis_month": 290,
+  "afni_reduce": 82847,
+  "bond": 1000,
+  "bond_life": 20000,
+  "grant": 3500,
+  "grant_life": 70000,
+  "cdb_month": 204.2,
+  "cdb_year": 2450.4,
+  "age": 18,
+  "note": "example (not a CRA rule): Noah, 10, Manitoba, DTC-eligible, no income so no tax on his own return (the unused credit may be transferable to a supporting person; not covered here). Amounts are maximums for the benefit year July 2026 \u2013 June 2027 (CDB child, Canada Disability Benefit) and per year (RDSP); all are income-tested except the matching grant's basic rate."
+ },
+ "derive": {},
+ "spoken": {
+  "child_dis": "three thousand four hundred and eighty dollars",
+  "bond": "thousand dollars a year",
+  "grant": "thirty-five hundred",
+  "cdb_month": "two hundred and four dollars and twenty cents",
+  "age": "eighteen"
+ },
+ "sources": {
+  "child_dis": "canada.ca Child disability benefit: up to $3,480/yr ($290/month) per child eligible for the DTC, July 2026\u2013June 2027, reduced when AFNI > $82,847; paid with the CCB (search 2026-10-24)",
+  "rdsp": "canada.ca (ESDC) How much you could get in grants and bonds: grant up to $3,500/yr, $70,000 lifetime (matching contributions, until the end of the year the beneficiary turns 49); bond up to $1,000/yr, $20,000 lifetime, no contribution needed, low income; beneficiary must be DTC-eligible (search 2026-10-24)",
+  "cdb": "canada.ca Canada Disability Benefit \u2013 How much you could receive: up to $204.20/month July 2026\u2013June 2027, income-tested on 2025 AFNI; eligibility: DTC-eligible, age 18\u201364, resident, filed prior-year return (search 2026-10-24)",
+  "dtc": "ITA 118.3(1): severe and prolonged impairment, marked restriction certified by a medical practitioner in prescribed form (T2201); non-refundable credit reduces tax payable",
+  "overlap": "LF-05 (long-form DTC) covers who qualifies / who signs / up to 10 years back; this Short avoids those angles"
+ }
+}

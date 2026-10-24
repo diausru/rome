@@ -1,0 +1,237 @@
+{
+ "id": "r1",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "DISABILITY TAX CREDIT:",
+  "l2": "$0 FOR NOAH."
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "doors": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "key": {
+   "box": [
+    80,
+    660,
+    880,
+    580
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "zero",
+   "beat": "hook",
+   "word": "zero",
+   "sfx": "tick"
+  },
+  {
+   "id": "why",
+   "beat": "hook",
+   "word": "why",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "door1",
+   "beat": "c1",
+   "word": "one:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "amt1",
+   "beat": "c1",
+   "word": "three",
+   "sfx": "chime"
+  },
+  {
+   "id": "less1",
+   "beat": "c1",
+   "word": "less",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "door2",
+   "beat": "c2",
+   "word": "two:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "bond",
+   "beat": "c2",
+   "word": "bond",
+   "sfx": "tick"
+  },
+  {
+   "id": "nocon",
+   "beat": "c2",
+   "word": "contribution.",
+   "sfx": "tick"
+  },
+  {
+   "id": "grant",
+   "beat": "c2",
+   "word": "grants",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "door3",
+   "beat": "c3",
+   "word": "three,",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "amt3",
+   "beat": "c3",
+   "word": "two",
+   "sfx": "chime"
+  },
+  {
+   "id": "tested",
+   "beat": "c3",
+   "word": "income-tested.",
+   "sfx": "tick"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "key",
+   "beat": "reveal",
+   "word": "key.",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "form",
+   "beat": "reveal",
+   "word": "form",
+   "sfx": "chime"
+  },
+  {
+   "id": "apply",
+   "beat": "action",
+   "word": "apply",
+   "sfx": "tick"
+  },
+  {
+   "id": "file",
+   "beat": "action",
+   "word": "file",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c3",
+   "word": "income-tested.",
+   "offset": 0.7
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "kids"
+}

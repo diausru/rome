@@ -1,0 +1,41 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.0,
+ "beats": [
+  [
+   "hook",
+   "Noah is ten. His disability tax credit saves him zero dollars: he pays no tax. So why does his mom want it approved?",
+   0.35
+  ],
+  [
+   "c1",
+   "Door one: the child disability benefit. Up to three thousand four hundred and eighty dollars a year, paid with the Canada child benefit, less at higher family incomes.",
+   0.3
+  ],
+  [
+   "c2",
+   "Door two: an RDSP. For lower-income families, a bond of up to a thousand dollars a year, with no contribution. Plus grants of up to thirty-five hundred that match deposits.",
+   0.3
+  ],
+  [
+   "c3",
+   "Door three, at eighteen: the Canada Disability Benefit. Up to two hundred and four dollars and twenty cents a month, also income-tested.",
+   0.35
+  ],
+  [
+   "reveal",
+   "The twist: every door has the same key. CRA approval of form T twenty-two oh one.",
+   0.3
+  ],
+  [
+   "action",
+   "So apply once, and file a tax return every year, even with no income.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: the Canada caregiver credit. Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}
