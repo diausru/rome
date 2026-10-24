@@ -186,3 +186,8 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 
 - Every scheduled post's caption/description sends viewers to our other networks, worded differently from post to post: YouTube description → TikTok (taxsecretscanada) and Instagram (styleofcanada); TikTok → YouTube (search "Tax Secrets Canada", channel @TaxSecretsCanada) and Instagram; Instagram → YouTube and TikTok.
 - Write the other platforms' handles WITHOUT "@": an "@" tags an account on the same platform, which would point to a stranger's account. Links in Shorts / IG / TikTok captions are not clickable, so give names, not URLs. Generator: `channel/metricool/batch-2027-01/build.py`.
+
+## Faceless documentary framework (user, 2026-10-24; full mapping `channel/FACELESS-DOC-FRAMEWORK.md`)
+
+- Apply the user's "Faceless YouTube (Documentaries)" checklist to every new video, on top of the rules above (they win on conflict: no AI video generation, facts first, one video at a time).
+- Per video, add: topic type (evergreen / seasonal / trend) + the viewer's emotion and curiosity gap; a short angle note (2–3 angles, one chosen); in BLUEPRINT.md the open loop with its payoff time and one mid-video re-hook (~55–65 % of the runtime); the title formula used; a licence record for any stock/archival footage. Monetization items are recorded only, nothing built without the user's decision.
