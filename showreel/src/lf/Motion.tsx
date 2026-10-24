@@ -443,4 +443,52 @@ const CurveChart: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart };
+// ---------- SoldHook: frame-0 hook — three SOLD house cards with the same profit; a tax stamp slams onto each on cue ----------
+// p.cards[{name, sub, tax, color, tone}] · p.gain · p.cardAt[] · p.stampAt[] · p.finishAt · p.title · p.kicker · p.qAt · p.question · p.out · p.bg
+const SoldHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const cards = p.cards as Pn[]; const fin = p.finishAt ? prog(now, p.finishAt.t, 0.7, BACK) : 0;
+  const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0; const CW = 500, CH = 640, GAP = 70; const X0 = (1920 - (3 * CW + 2 * GAP)) / 2;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 18), y: 0, z: 0.05 + 0.25 * cl(el / 18) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.66})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 56, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{fin > 0.05 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      {cards.map((cd, i) => {
+        const x = X0 + i * (CW + GAP); const ci = p.cardAt?.[i]?.t !== undefined ? prog(now, p.cardAt[i].t + i * 0.18, 0.8, BACK) : 1;
+        const st = p.stampAt?.[i]?.t !== undefined ? prog(now, p.stampAt[i].t, 0.45, BACK) : 0; const fl = p.stampAt?.[i]?.t !== undefined ? Math.max(0, 1 - Math.abs(now - p.stampAt[i].t - 0.1) / 0.22) : 0;
+        const col = cd.tone === 'good' ? C.green : cd.tone === 'bad' ? C.red : C.org;
+        return (
+          <div key={i} style={{ position: 'absolute', left: x, top: 230 + (1 - ci) * 160, width: CW, height: CH, opacity: (1 - out) * cl(ci * 1.6), transform: `translateX(${out * (i === 0 ? -1100 : i === 2 ? 1100 : 0)}px) scale(${0.96 + 0.04 * ci})`, borderRadius: 26, background: 'linear-gradient(165deg, rgba(14,22,38,.92), rgba(9,14,26,.88))', border: `2px solid ${st > 0.5 ? col : 'rgba(255,255,255,.16)'}`, boxShadow: st > 0.5 ? `0 0 ${46 * st}px ${col}55` : '0 24px 60px rgba(0,0,0,.5)' }}>
+            <svg width={CW} height={190} viewBox="0 0 500 190" style={{ position: 'absolute', left: 0, top: 18 }}>
+              <path d="M110 150 L110 88 L250 20 L390 88 L390 150 Z" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.55)" strokeWidth={4} strokeLinejoin="round" />
+              <rect x="224" y="98" width="52" height="52" fill="rgba(232,194,122,.35)" stroke={C.gold} strokeWidth={3} />
+              <rect x="136" y="100" width="46" height="34" fill="rgba(143,179,232,.35)" stroke="rgba(255,255,255,.5)" strokeWidth={3} />
+              <rect x="318" y="100" width="46" height="34" fill="rgba(143,179,232,.35)" stroke="rgba(255,255,255,.5)" strokeWidth={3} />
+            </svg>
+            <div style={{ position: 'absolute', right: -14, top: 26, padding: '6px 22px', fontFamily: COND, fontSize: 30, fontWeight: 700, letterSpacing: 6, color: '#fff', background: C.red, transform: 'rotate(8deg)', boxShadow: '0 6px 18px rgba(0,0,0,.45)' }}>SOLD</div>
+            <div style={{ position: 'absolute', left: 0, right: 0, top: 220, textAlign: 'center', fontFamily: COND }}>
+              <div style={{ fontSize: 58, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{cd.name}</div>
+              <div style={{ fontSize: 24, letterSpacing: 4, color: C.dim, marginTop: 2 }}>{cd.sub}</div>
+              <div style={{ fontSize: 22, letterSpacing: 5, color: C.faint, marginTop: 22 }}>PROFIT</div>
+              <div style={{ fontSize: 62, fontWeight: 700, color: C.gold }}>${(p.gain as number).toLocaleString('en-US')}</div>
+            </div>
+            <div style={{ position: 'absolute', left: 30, right: 30, top: 470, height: 130, borderRadius: 16, border: `3px dashed ${st > 0.05 ? col : 'rgba(255,255,255,.2)'}`, textAlign: 'center', fontFamily: COND, overflow: 'hidden' }}>
+              <div style={{ position: 'absolute', inset: 0, background: '#fff', opacity: fl * 0.45 }} />
+              {st < 0.05 && <div style={{ position: 'absolute', left: 0, right: 0, top: 36, fontSize: 40, letterSpacing: 8, color: C.faint }}>TAX ?</div>}
+              {st >= 0.05 && <div style={{ transform: `scale(${1.5 - 0.5 * st}) rotate(${(1 - st) * -8}deg)`, opacity: cl(st * 2), transformOrigin: 'center', paddingTop: 10 }}>
+                <div style={{ fontSize: 22, letterSpacing: 6, color: col }}>TAX</div>
+                <div style={{ fontSize: 66, fontWeight: 700, color: col, lineHeight: 1 }}>${(cd.tax as number).toLocaleString('en-US')}</div></div>}
+            </div>
+          </div>);
+      })}
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 878, textAlign: 'center', fontFamily: COND, fontSize: 44, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook };
