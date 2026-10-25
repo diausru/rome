@@ -9,7 +9,7 @@ import json, math, os, subprocess as sp, sys
 p, step = sys.argv[1], sys.argv[2]; P = p.upper(); R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(R); src = 'showreel/src'; out = f'showreel/out/{p}'; os.makedirs(out, exist_ok=True)
 run = lambda *a, **k: sp.run(list(a), check=True, **k)
-q = lambda *a: sp.run(list(a), check=True, capture_output=True, text=True).stdout
+q = lambda *a, **k: sp.run(list(a), check=True, capture_output=True, text=True, **k).stdout
 tl = lambda: json.load(open(f'{src}/{p}-timeline.json'))
 if step == 'vo':
     print(q('python3', 'tools/vo_hf.py', f'{p}/vo-beats.json', f'{p}/vo-urls.txt', f'{p}/vo', f'{src}/{p}-timeline.json').strip().splitlines()[-1])

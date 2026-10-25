@@ -1,0 +1,47 @@
+{
+ "total": 69.942,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Same daughter, same mom, same care. One year the tax credit is worth over twelve hundred dollars. The next year, zero. The difference is mom's income.",
+   "start": 0.25,
+   "end": 13.921
+  },
+  {
+   "id": "c1",
+   "text": "Priya's mom lives with her and has an impairment. With mom's net income at eighteen thousand, Priya claims the full eight thousand six hundred and one dollars. That's a thousand two hundred and forty-seven dollars off her federal tax.",
+   "start": 14.271,
+   "end": 31.624
+  },
+  {
+   "id": "c2",
+   "text": "At twenty-four thousand, the amount shrinks dollar for dollar above twenty thousand one hundred and ninety-seven. Now it's worth six hundred and ninety-six dollars.",
+   "start": 31.924,
+   "end": 43.512
+  },
+  {
+   "id": "c3",
+   "text": "At thirty thousand, mostly OAS and CPP, it's gone.",
+   "start": 43.812,
+   "end": 48.776
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: the credit follows mom's income, not Priya's. And if her brother helps too, they can split it, but never above one maximum.",
+   "start": 49.176,
+   "end": 59.015
+  },
+  {
+   "id": "action",
+   "text": "So check mom's net income before you claim.",
+   "start": 59.315,
+   "end": 62.445
+  },
+  {
+   "id": "cta",
+   "text": "Next: medical expenses, and which spouse should claim them. Follow so you don't miss it.",
+   "start": 62.745,
+   "end": 69.942
+  }
+ ]
+}

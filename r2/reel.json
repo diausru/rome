@@ -1,0 +1,225 @@
+{
+ "id": "r2",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "SAME CARE.",
+  "l2": "$1,247 OR $0?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "meter": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "split": {
+   "box": [
+    80,
+    660,
+    880,
+    580
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "twelve",
+   "beat": "hook",
+   "word": "twelve",
+   "sfx": "tick"
+  },
+  {
+   "id": "zero",
+   "beat": "hook",
+   "word": "zero.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "income0",
+   "beat": "hook",
+   "word": "income.",
+   "sfx": "tick"
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "inc_a",
+   "beat": "c1",
+   "word": "eighteen",
+   "sfx": "tick"
+  },
+  {
+   "id": "max",
+   "beat": "c1",
+   "word": "eight",
+   "sfx": "chime"
+  },
+  {
+   "id": "cr_a",
+   "beat": "c1",
+   "word": "forty-seven",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "inc_b",
+   "beat": "c2",
+   "word": "twenty-four",
+   "sfx": "tick"
+  },
+  {
+   "id": "shrink",
+   "beat": "c2",
+   "word": "shrinks",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "cr_b",
+   "beat": "c2",
+   "word": "ninety-six",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "gone",
+   "beat": "c3",
+   "word": "gone.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "follows",
+   "beat": "reveal",
+   "word": "follows",
+   "sfx": "tick"
+  },
+  {
+   "id": "brother",
+   "beat": "reveal",
+   "word": "brother",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "onemax",
+   "beat": "reveal",
+   "word": "maximum.",
+   "sfx": "chime"
+  },
+  {
+   "id": "check",
+   "beat": "action",
+   "word": "check",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c2",
+   "word": "ninety-six",
+   "offset": 1.2
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "pension"
+}

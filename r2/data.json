@@ -1,0 +1,33 @@
+{
+ "topic": "Canada caregiver amount for an infirm dependant 18+ (line 30450): max $8,601 (2025), reduced dollar-for-dollar by the dependant's net income above $20,197, nil at $28,798; claim can be split between supporters, total \u2264 max",
+ "tax_year": 2025,
+ "example": {
+  "max": 8601,
+  "threshold": 20197,
+  "zero_at": 28798,
+  "rate": 0.145,
+  "inc_a": 18000,
+  "inc_b": 24000,
+  "inc_c": 30000,
+  "amt_b": 4798,
+  "credit_a": 1247,
+  "credit_b": 696,
+  "credit_c": 0,
+  "note": "example (not a CRA rule): Priya supports her mother (lives with her, infirm). Federal credit at the 2025 lowest rate 14.5%; provincial caregiver amounts not included. Computed in r2/data.json build."
+ },
+ "derive": {},
+ "spoken": {
+  "inc_a": "eighteen thousand",
+  "max": "eight thousand six hundred and one dollars",
+  "credit_a": "a thousand two hundred and forty-seven dollars",
+  "inc_b": "twenty-four thousand",
+  "threshold": "twenty thousand one hundred and ninety-seven",
+  "credit_b": "six hundred and ninety-six dollars",
+  "inc_c": "thirty thousand"
+ },
+ "sources": {
+  "amount": "canada.ca line 30450 (CRA): up to $8,601 per eligible dependant 18+, dependant net income under $28,798 (2025); relationships; temporary illness is not infirmity; split allowed, total \u2264 max (via search 2026-10-25)",
+  "threshold": "RCGT tax planning guide; KPMG 2025 non-refundable credit table; CRA TD1 2025 worksheet: reduced dollar-for-dollar above $20,197, nil at $28,798",
+  "rate": "federal lowest rate 2025 = 14.5% (CRA 'What's new for 2025', recorded in longform/lf05-dtc)"
+ }
+}
