@@ -1,0 +1,32 @@
+{
+ "bonus": 20000,
+ "S60": {
+  "salary": 60000,
+  "tax": 5807,
+  "cppei_year": 1230,
+  "keep": 12963,
+  "taken": 7037,
+  "pct": 35.2
+ },
+ "S90": {
+  "salary": 90000,
+  "tax": 6165,
+  "cppei_year": 0,
+  "keep": 13835,
+  "taken": 6165,
+  "pct": 30.8
+ },
+ "S150": {
+  "salary": 150000,
+  "tax": 8976,
+  "cppei_year": 0,
+  "keep": 11024,
+  "taken": 8976,
+  "pct": 44.9
+ },
+ "mar_cpp": 1190,
+ "mar_ei": 326,
+ "mar_net": 12319,
+ "dec_net": 13835,
+ "rrsp10": 3174
+}
