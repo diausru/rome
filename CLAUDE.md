@@ -191,3 +191,10 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 
 - Apply the user's "Faceless YouTube (Documentaries)" checklist to every new video, on top of the rules above (they win on conflict: no AI video generation, facts first, one video at a time).
 - Per video, add: topic type (evergreen / seasonal / trend) + the viewer's emotion and curiosity gap; a short angle note (2–3 angles, one chosen); in BLUEPRINT.md the open loop with its payoff time and one mid-video re-hook (~55–65 % of the runtime); the title formula used; a licence record for any stock/archival footage. Monetization items are recorded only, nothing built without the user's decision.
+
+## Lean production mode (user, 2026-10-25: "use as few of your credits as possible")
+
+- Finish every card reel with `tools/short.py <p> vo | stills | final` (one command per stage, short output) instead of many separate commands.
+- Per video at most: one fact pass (law text / one WebSearch per figure group), one vidIQ keyword call + one NexLev search + two title scores, ONE VO batch (write the script to ≈135 words so it fits 45–70 s the first time), ONE plate batch (3 scenes, no duplicate variants) + upscales, ONE stills contact sheet, ONE fix pass, ONE final render.
+- New composition = copy the previous `<P>V3.tsx` and change only the hook / main visual / reveal (Variety rule); do not re-read large files already known.
+- Skip: Whisper unless the QC fact check fails; the separate analysis Artifact page (research goes into PUBLISH.md and the Kit card); long reports (short Russian summary with links).
