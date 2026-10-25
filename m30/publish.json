@@ -1,11 +1,15 @@
 {
  "video": {
   "title": "M30 · medical expenses: whose return?",
-  "duration": ""
+  "duration": "1:08 (68.38 s), 1080×1920, 24 fps",
+  "mp4": "showreel/out/m30/m30-final.mp4 (share copy: m30-share.mp4)"
  },
  "cover": {
   "frame": "'ON SAM'S RETURN': both receipt bars, Sam's $900 floor and '$2,600 counts', red stamp 'SAM: +$261', the couple at the optometrist",
-  "why": "the comparison and the payoff in one frame"
+  "why": "the comparison and the payoff in one frame",
+  "t": 45.4,
+  "ms": 45400,
+  "file": "m30/cover.jpg (extracted at 45.4 s, checked; the 46.42 s cue fell inside the scene-transition blur)"
  },
  "sources": [
   {
