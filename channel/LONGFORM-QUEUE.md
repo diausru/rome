@@ -20,7 +20,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 |---|---|---|
 | 10 | You Make $100,000 in Canada — Where Does Your Money Actually Go? | LF-03 done 2026-10-11, not published |
 | 11 | $80K vs $100K vs $150K — How Much Do You Actually Keep? | LF-06 rendered 2026-10-13, not published |
-| 12 | What Happens to Your Paycheque When You Get a $20,000 Bonus? | queued |
+| 12 | What Happens to Your Paycheque When You Get a $20,000 Bonus? | rendered LF-12 (2026-10-25) |
 | 13 | Why Your $100K Salary Does NOT Mean You Have $100K of Taxable Income | queued |
 | 14 | You Have a Side Hustle in Canada — What Actually Gets Taxed? | queued |
 | 15 | What Happens When You Work Two Jobs in Canada? | queued |
@@ -116,7 +116,7 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 9. LF-09 → #20 What If You Have a Side Hustle? — proposed 2026-12-21
 10. LF-10 → #3 Marginal Tax Rates Explained — proposed 2026-12-31 (New Year's Eve; check)
 11. LF-11 → #22 What If You Sell Your Home? — rendered 2026-10-24
-12. LF-12 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus? — after LF-11
+12. LF-12 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus? — rendered 2026-10-25
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
 Not a stretched Short and not a re-cut of one: a new question, a new story, new examples and a new visual approach. Already covered by Shorts (do not repeat their angle, hook, examples or visuals):

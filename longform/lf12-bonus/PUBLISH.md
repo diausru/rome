@@ -1,4 +1,5 @@
 # LF-12 — PUBLISH PACKAGE (YouTube long-form)
+**QC (2026-10-25):** 532.7 s, −13.8 LUFS, no black frames, contact sheet checked.
 **File:** `LF12-1080p.mp4` · 1920×1080 · 30 fps · 8:53 · VO Grady (55 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command). Proposed slot: Tue 2027-01-19 (10-day cadence).
 **Intro type:** BonusHook (new). **Thumbnail:** made by the user.
