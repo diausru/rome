@@ -443,6 +443,49 @@ const CurveChart: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
+// ---------- BonusHook: frame-0 hook — a $20,000 bonus bar; deductions drop out on cue (March stub), then the month flips and CPP/EI return ----------
+// p.total · p.parts[{label, amount, tone:'tax'|'cpp', back}] · p.cutAt[] · p.month · p.flipAt · p.month2 · p.kicker · p.title · p.finishTitle · p.qAt · p.question · p.out · p.bg
+const BonusHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const parts = p.parts as Pn[]; const tot = p.total as number; const W = 1400, X0 = 260, Y = 400, H = 150;
+  const flip = p.flipAt ? prog(now, p.flipAt.t, 0.9, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const cut = parts.map((_, i) => p.cutAt?.[i]?.t !== undefined ? prog(now, p.cutAt[i].t, 0.6, BACK) : 0);
+  const ret = parts.map((pt) => pt.back ? flip : 0);
+  const taken = parts.reduce((a, pt, i) => a + pt.amount * cut[i] * (1 - ret[i]), 0); const net = Math.round(tot - taken);
+  let off = W * (1 - parts.reduce((a, pt) => a + pt.amount, 0) / tot);
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.3 - 0.6 * cl(el / 20), y: 0, z: 0.05 + 0.22 * cl(el / 20) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.66})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 56, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{flip > 0.05 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      <div style={{ position: 'absolute', left: X0, top: Y - 150, width: W, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', fontFamily: COND, opacity: 1 - out }}>
+        <div><div style={{ fontSize: 26, letterSpacing: 6, color: C.dim }}>ON THE STUB</div>
+          <div style={{ fontSize: 92, fontWeight: 700, color: C.gold, lineHeight: 1 }}>{fmt(net)}</div></div>
+        <div style={{ padding: '10px 26px', borderRadius: 12, border: `2px solid ${flip > 0.5 ? C.green : C.gold}`, fontSize: 40, fontWeight: 700, letterSpacing: 8, color: flip > 0.5 ? C.green : C.gold, transform: `rotateX(${Math.sin(flip * Math.PI) * 80}deg)` }}>{flip > 0.5 ? p.month2 : p.month}</div>
+      </div>
+      <div style={{ position: 'absolute', left: X0, top: Y, width: W, height: H, borderRadius: 18, border: '2px dashed rgba(255,255,255,.22)', opacity: 1 - out }} />
+      <div style={{ position: 'absolute', left: X0, top: Y, width: off, height: H, borderRadius: '18px 0 0 18px', background: 'linear-gradient(180deg,#F1D38E,#C9A055)', opacity: 1 - out, boxShadow: '0 20px 50px rgba(0,0,0,.45)' }}>
+        <div style={{ position: 'absolute', left: 30, top: 44, fontFamily: COND, fontSize: 52, fontWeight: 700, color: '#1A1408', letterSpacing: 3 }}>YOU KEEP</div></div>
+      {parts.map((pt, i) => {
+        const w = W * pt.amount / tot; const x = X0 + off; off += w; const k = cut[i] * (1 - ret[i]);
+        const col = pt.tone === 'tax' ? C.red : C.org; const back = ret[i] > 0.5;
+        return (
+          <div key={i} style={{ position: 'absolute', left: x + 6 * k, top: Y + k * (240 + i * 18), width: w - 4, height: H, borderRadius: i === parts.length - 1 ? '0 18px 18px 0' : 4, opacity: 1 - out,
+            background: back ? 'linear-gradient(180deg,#F1D38E,#C9A055)' : `linear-gradient(180deg, ${col}, ${col}bb)`, transform: `rotate(${k * (i - 1) * 3}deg)`, boxShadow: '0 16px 40px rgba(0,0,0,.45)' }}>
+            {cut[i] > 0.4 && !back && <div style={{ position: 'absolute', left: i === 0 ? 0 : (i - 1) * 170 - 40, top: H + 12, minWidth: 220, whiteSpace: 'nowrap', fontFamily: COND, color: col, opacity: cl((cut[i] - 0.4) * 3) }}>
+              <div style={{ fontSize: 24, letterSpacing: 5 }}>{pt.label}</div><div style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>−{fmt(pt.amount)}</div></div>}
+          </div>);
+      })}
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 900, textAlign: 'center', fontFamily: COND, fontSize: 48, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
 // ---------- SoldHook: frame-0 hook — three SOLD house cards with the same profit; a tax stamp slams onto each on cue ----------
 // p.cards[{name, sub, tax, color, tone}] · p.gain · p.cardAt[] · p.stampAt[] · p.finishAt · p.title · p.kicker · p.qAt · p.question · p.out · p.bg
 const SoldHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
@@ -491,4 +534,4 @@ const SoldHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook };
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook };

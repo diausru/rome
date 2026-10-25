@@ -1,0 +1,58 @@
+import json
+L = """Sam gets a twenty thousand dollar bonus. The pay stub says twelve thousand, three hundred and nineteen.
+Where did seven thousand, six hundred and eighty-one dollars go? It feels like the government took almost forty percent.
+Here's the strange part. If the same bonus had landed in December, the stub would show thirteen thousand, eight hundred and thirty-five.
+Same bonus. Same person. Same year. A different number on the stub. And by the end of this video, you'll know which number is real.
+All numbers: twenty twenty-six, Ontario, single, a ninety thousand dollar salary, no other income. Examples, not real people. General information, not advice.
+First, the myth.
+Many people believe a bonus is taxed at a special, higher rate. It isn't.
+A bonus is employment income. It's added to your salary and taxed with the same federal and provincial brackets as every other dollar you earn.
+So why does it feel so heavy? Because of how your employer calculates what to hold back.
+The C R A gives employers a method for bonuses. It's in the payroll formulas guide, T forty-one twenty-seven.
+The employer works out the tax on your yearly salary plus the bonus. Then the tax on your salary alone. The difference is what gets withheld from the bonus.
+In other words, the whole bonus is taxed at the top of your income, not spread across your lower brackets.
+That's not a penalty. Those lower brackets are already used up by your salary.
+For Sam, salary ninety thousand, plus twenty thousand, the tax difference is six thousand, one hundred and sixty-five dollars.
+That's the income tax part. Now, the rest of the stub.
+Sam's bonus was paid in March. By March, he had only paid a few months of C P P and E I.
+So the payroll takes C P P on the bonus: one thousand, one hundred and ninety dollars. And E I: three hundred and twenty-six.
+Add it up. Six thousand, one hundred and sixty-five in tax, plus one thousand, five hundred and sixteen in C P P and E I. That's the seven thousand, six hundred and eighty-one.
+But here's the twist. At a ninety thousand dollar salary, Sam already reaches the yearly maximums for C P P and E I, bonus or not.
+So the bonus doesn't add a single dollar of C P P or E I to his year. It only takes them earlier.
+He hits the maximums sooner, and his paycheques later in the year stop C P P and E I sooner. They get bigger.
+That's why a December bonus looks better. By December, Sam's maximums are already reached. The stub shows only the income tax.
+So the real number is thirteen thousand, eight hundred and thirty-five. Sam keeps about sixty-nine percent of his bonus. The March stub just moved part of the bill forward.
+Now, will Sam get money back when he files? Usually, not much.
+The bonus method aims to withhold about the tax the bonus really adds. If nothing else changes, the withholding and the real tax land close together.
+What can change it: other income, deductions, credits, or what you put on your T D one form. That depends on your own situation.
+Now let's make it fair. Three coworkers, same twenty thousand dollar bonus, different salaries.
+Maya earns sixty thousand. Sam earns ninety thousand. Alex earns one hundred and fifty thousand.
+Maya keeps twelve thousand, nine hundred and sixty-three. Her bonus pushes her through the C P P and E I range, so for her, one thousand, two hundred and thirty dollars of it is real extra C P P and E I, not just timing.
+Sam keeps thirteen thousand, eight hundred and thirty-five. The most of the three.
+Alex keeps eleven thousand and twenty-four. His bonus lands in higher brackets, with the Ontario surtax on top. Almost forty-five percent of it is gone.
+So the person who keeps the most isn't the lowest earner. It's the one in the middle, past the C P P and E I maximums, but below the higher brackets.
+If that sounds familiar, it's the same line we drew in our video on marginal tax rates.
+Now, what can you actually do?
+The main lever is the R R S P. A contribution creates a deduction, and the deduction comes off the top of your income. The same place your bonus landed.
+If Sam puts ten thousand dollars of the bonus into his R R S P, and he has the room, his income tax drops by about three thousand, one hundred and seventy-four dollars.
+There are two ways to do it. Contribute yourself, and get the tax back when you file. Or, if your employer offers it, send part of the bonus to your R R S P through payroll.
+When the employer has reasonable grounds to believe you can deduct the contribution, for example a copy of your R R S P deduction limit, they can withhold less income tax on that part.
+Either way, you need contribution room. Your limit is on your notice of assessment, or in My Account.
+And remember: the R R S P lowers income tax. It doesn't refund C P P or E I.
+A second point: timing. If you can choose when a bonus is paid, ask what that does to your stub and to your year. A bonus paid early in the year shows more C P P and E I on the stub. For Sam, it all evens out by December.
+But a bonus paid in January instead of December falls into the next tax year. That can matter if your income will be lower or higher next year. Ask your employer, and if the amounts are large, a tax professional.
+Where this changes. These are single employees with no family benefits. Income-tested benefits, like the Canada child benefit, can make the real cost of a bonus higher.
+Quebec has its own payroll rules and its own pension plan, and other provinces have different rates. The method is the same, the numbers move.
+So, here's your checklist.
+One. Look at the stub: split the tax from the C P P and E I.
+Two. Check your year-to-date C P P and E I. If you'll hit the maximums anyway, that part is just timing.
+Three. Know your R R S P room before the bonus arrives.
+Four. When you file, compare the tax withheld with your actual tax. That's what decides a refund or a balance owing.
+So, what did we learn?
+One. A bonus isn't taxed at a special rate. It's taxed at the top of your income.
+Two. The stub can make it look worse. Part of it may be C P P and E I taken earlier, not extra.
+Three. The real cost depends on where your salary sits. The middle earner can keep the most.
+Four. An R R S P contribution is the main way to keep more of it, if you have the room.
+Next on this channel: why the same salary pays different tax in different provinces, and which part of your tax is federal. Subscribe, so you don't miss it."""
+lines = [[f'L{i+1}', t] for i, t in enumerate(L.split('\n'))]
+json.dump(lines, open('lines.json', 'w'), indent=1); print(len(lines), 'lines', sum(len(t.split()) for _, t in lines), 'words')
