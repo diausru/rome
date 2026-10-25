@@ -39,7 +39,7 @@ elif step == 'final':
     dur = float(q('ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f'{out}/{p}-final.mp4'))
     pj = f'{p}/publish.json'
     if os.path.exists(pj):
-        j = json.load(open(pj)); j['video']['duration'] = f'{int(dur // 60)}:{int(dur % 60):02d} ({dur:.2f} s), 1080×1920, 24 fps'
+        j = json.load(open(pj)); j['video'].setdefault('mp4', f'{out}/{p}-final.mp4 (share copy: {p}-share.mp4)'); j['video']['duration'] = f'{int(dur // 60)}:{int(dur % 60):02d} ({dur:.2f} s), 1080×1920, 24 fps'
         j.setdefault('cover', {}).update(t=ct, ms=int(round(ct * 1000)), file=f'{p}/cover.jpg (extracted at {ct} s from the final render)')
         json.dump(j, open(pj, 'w'), ensure_ascii=False, indent=1)
         q('python3', 'tools/publish_doc.py', pj, f'{src}/{p}-timeline.json', f'{p}/PUBLISH.md')
