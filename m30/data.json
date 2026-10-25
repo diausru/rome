@@ -1,0 +1,37 @@
+{
+ "topic": "Medical expense tax credit: expenses above the lesser of 3% of net income or $2,834 (2025); either spouse may claim the family's line 33099 expenses; non-refundable",
+ "tax_year": 2025,
+ "example": {
+  "alex": 90000,
+  "sam": 30000,
+  "expenses": 3500,
+  "cap": 2834,
+  "floor_a": 2700,
+  "floor_s": 900,
+  "elig_a": 800,
+  "elig_s": 2600,
+  "credit_a": 116,
+  "credit_s": 377,
+  "gain": 261,
+  "rate": 0.145,
+  "note": "example (not a CRA rule): couple, net incomes $90,000 and $30,000, $3,500 of eligible expenses for themselves (line 33099), 2025, federal credit at 14.5%; Sam's federal tax before credits \u2248 ($30,000 \u2212 $16,129) \u00d7 14.5% \u2248 $2,011, enough to absorb $377; provincial credits not included."
+ },
+ "derive": {},
+ "spoken": {
+  "credit_a": "a hundred and sixteen dollars",
+  "credit_s": "three hundred and seventy-seven",
+  "alex": "ninety thousand",
+  "sam": "thirty thousand",
+  "expenses": "thirty-five hundred dollars",
+  "cap": "two thousand eight hundred and thirty-four dollars",
+  "floor_a": "twenty-seven hundred",
+  "elig_a": "eight hundred dollars",
+  "floor_s": "nine hundred",
+  "elig_s": "twenty-six hundred"
+ },
+ "sources": {
+  "threshold": "canada.ca Budget 2025 \u2013 CRA information on select measures: METC on eligible expenses above the lesser of $2,834 (2025) and 3% of net income; lines 33099 / 33199 (via search 2026-10-25)",
+  "who": "CRA line 33099: expenses for you, your spouse/common-law partner and children under 18 can be claimed by either spouse",
+  "rate": "2025 lowest federal rate 14.5%; 2025 BPA $16,129 (CRA What's new for 2025)"
+ }
+}

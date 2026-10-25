@@ -1,0 +1,46 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.0,
+ "beats": [
+  [
+   "hook",
+   "Same receipts. Same family. Claim them on one return and you get a hundred and sixteen dollars. On the other: three hundred and seventy-seven.",
+   0.35
+  ],
+  [
+   "c1",
+   "Alex earns ninety thousand, Sam thirty thousand. Together they paid thirty-five hundred dollars for dental work and glasses.",
+   0.3
+  ],
+  [
+   "c2",
+   "The rule: only the part above three percent of net income counts, capped at two thousand eight hundred and thirty-four dollars for twenty twenty-five.",
+   0.3
+  ],
+  [
+   "c3",
+   "On Alex's return, three percent is twenty-seven hundred. Only eight hundred dollars counts.",
+   0.3
+  ],
+  [
+   "c4",
+   "On Sam's, three percent is nine hundred. Twenty-six hundred counts.",
+   0.4
+  ],
+  [
+   "reveal",
+   "The twist: the lower income usually wins, but only if that spouse owes enough tax to use the credit. It can't create a refund on its own.",
+   0.3
+  ],
+  [
+   "action",
+   "So run both returns before you choose.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: donations, and why combining receipts can pay more. Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}

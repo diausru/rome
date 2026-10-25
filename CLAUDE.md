@@ -204,3 +204,7 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Look at images only when needed: one contact sheet per render (and at most one still batch before it); no re-reading files already in context; short tool outputs (`tail`, `grep`), no large dumps.
 - Reuse code: copy the previous episode's `gen_episode.py` / components and change data; build a new component only for a new intro (required) or when a visual truly needs it.
 - Short reports in Russian; no restating of plans; commit once per milestone.
+
+## Mandatory reel elements (user, 2026-10-25: "the rules and effects we always use must be written down and always be in the video")
+
+- Every card reel must pass `channel/REEL-CHECKLIST.md` (flag header, living 3-scene plate with camera moves, frame-0 kinetic hook, typed titles, word-synced captions, glass data visual with gold numbers, stamp re-hook, reveal, VO + ducked music + cue SFX + sonic logo, check card + NEXT pill + follow line, sources footer, cover cue, QC). Lean mode never removes any of these.
