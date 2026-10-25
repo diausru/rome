@@ -198,3 +198,9 @@ An MP4 is never "done". After visual, technical, factual and VO QC, research the
 - Per video at most: one fact pass (law text / one WebSearch per figure group), one vidIQ keyword call + one NexLev search + two title scores, ONE VO batch (write the script to ≈135 words so it fits 45–70 s the first time), ONE plate batch (3 scenes, no duplicate variants) + upscales, ONE stills contact sheet, ONE fix pass, ONE final render.
 - New composition = copy the previous `<P>V3.tsx` and change only the hook / main visual / reveal (Variety rule); do not re-read large files already known.
 - Skip: Whisper unless the QC fact check fails; the separate analysis Artifact page (research goes into PUBLISH.md and the Kit card); long reports (short Russian summary with links).
+## Economy mode: spend as little of Claude's usage as possible (user, 2026-10-25)
+
+- One command per stage: `longform/tools/finish.sh <ep-dir> <name> <OUT.mp4>` renders all chunks, splices audio, encodes and QCs, printing ONE line. Run it in the background and wait for its single completion notice; no monitors, no polling, no progress messages.
+- Look at images only when needed: one contact sheet per render (and at most one still batch before it); no re-reading files already in context; short tool outputs (`tail`, `grep`), no large dumps.
+- Reuse code: copy the previous episode's `gen_episode.py` / components and change data; build a new component only for a new intro (required) or when a visual truly needs it.
+- Short reports in Russian; no restating of plans; commit once per milestone.
