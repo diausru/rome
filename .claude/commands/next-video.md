@@ -1,4 +1,4 @@
-Make the next card Short. Read ONLY: channel/QUEUE.md, channel/REEL-CHECKLIST.md, the last delivered `<P>V3.tsx` (template) and its `<p>/reel.json`. Do not read channel/RULES-FULL.md unless a rule is unclear. Arg (optional): $ARGUMENTS = topic id to override the queue.
+Make the next card Short. Read ONLY: channel/QUEUE.md, channel/REEL-CHECKLIST.md, the last delivered `<P>V3.tsx` (template) and its `<p>/reel.json`. Do not read channel/RULES-SHORTS.md unless a rule is unclear. Arg (optional): $ARGUMENTS = topic id to override the queue.
 Steps (one batch each, short outputs, no polling loops):
 1. Facts: 1–2 WebSearch / law text → `<p>/data.json` (numbers, `spoken`, `sources` with year). Overlap grep in */PUBLISH.md.
 2. vidIQ: balance + 1 keyword_research (CA) [+ 2 title scores after render]; NexLev: 1 youtube_search shorts CA. Skip if not connected, say so.

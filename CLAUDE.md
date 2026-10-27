@@ -1,6 +1,11 @@
+# Router (2026-10-27). Two separate chats, read ONLY your file.
+- Long-form (16:9, YouTube): `longform/BOOT.md`. Commands: `/lf`, `/lf-status`, `/lf-fix`, `/lf-meta`.
+- Shorts / card reels / handwritten: `channel/RULES-SHORTS.md` (full rules, unchanged) — reference only; the compact Shorts rules below are enough.
+Common: branch `claude/kling-ai-skill-install-goznyv`, commit+push, no PR; facts from canada.ca/CRA only; no AI video generation; Metricool/publishing only on explicit command; never print API keys; replies to the user in Russian, short.
+
 # Tax Secrets Canada — Shorts (card series). Compact rules (2026-10-27)
 
-Full history/rules: `channel/RULES-FULL.md` (read only if unclear). Long-form lives in another chat: `longform/CLAUDE.md` — do not read it here.
+Full Shorts rules: `channel/RULES-SHORTS.md` (read only if a rule is unclear). Long-form: other chat, do not read `longform/` here.
 
 ## Commands
 - `/next-video [id]` — make the next Short from `channel/QUEUE.md`, deliver, STOP.

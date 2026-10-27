@@ -1,0 +1,1 @@
+Read `longform/BOOT.md`. For episode $ARGUMENTS create a Metricool YouTube DRAFT (draft:true) from its PUBLISH.md on its planned date, 16:00 America/Winnipeg (blogId 6894064). Only because the user ran this command. Report the post id.

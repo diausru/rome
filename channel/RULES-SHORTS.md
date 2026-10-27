@@ -1,4 +1,4 @@
-# Repository instructions
+# RULES — Shorts / card / handwritten sessions (full text, moved from CLAUDE.md 2026-10-27; read at the start of every Shorts chat)
 
 ## Video production (standing rule from the user, 2026-10-05)
 
