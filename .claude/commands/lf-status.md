@@ -1,0 +1,1 @@
+Read `longform/BOOT.md` and the "Recommended initial production order" block of `channel/LONGFORM-QUEUE.md` (grep, not the whole file). Reply in Russian, ≤8 lines: done, next, planned dates, open items. Change nothing.
