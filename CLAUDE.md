@@ -1,210 +1,22 @@
-# Repository instructions
+# Tax Secrets Canada — Shorts (card series). Compact rules (2026-10-27)
 
-## Video production (standing rule from the user, 2026-10-05)
+Full history/rules: `channel/RULES-FULL.md` (read only if unclear). Long-form lives in another chat: `longform/CLAUDE.md` — do not read it here.
 
-For every video / Short request, follow `short/MASTER-SYSTEM.md` (Claude Live-Action Video Director, Master System v1.0) in full:
-- The video is built by code (rendering, compositing, simulation), never handed to an external video-generation model.
-- Keep the project bible in `short/PRODUCTION-BIBLE.md` and update it explicitly when a decision changes.
-- Render, verify (ffprobe and visual QC), self-correct, and report in the format of Master §33.
+## Commands
+- `/next-video [id]` — make the next Short from `channel/QUEUE.md`, deliver, STOP.
+- `/schedule <p1 p2 …>` — schedule those Shorts in Metricool (only on this command).
+- `/status` — last done, next, not yet scheduled.
 
-## Channel content
-
-Tax content for the Tax Secrets Canada channel: see `channel/TOPICS.md` and `channel/RESEARCH-2026-10.md`. Fact-check every tax figure. Do not use "secret / loophole" framing.
-
-## Shorts format reference (user, 2026-10-05)
-
-Reference the user liked: a CPA reel "$100,000 salary after tax by province". Moving background matched to the story; in front, the topic's data enters row by row while text runs like film titles. Improve on it, don't copy it: the background must follow Master §1/§12 realism, data enters with motivated motion, clear hierarchy, readable on a phone, one idea per beat.
-
-## Facts and safety
-
-- Taxes = CRA (not IRCC). Every figure: canada.ca / CRA / provincial source with the tax year, recorded in the bible. Unverified figures are marked `[VERIFY]` and not shipped. Numbers are rendered by code, never baked into generated images.
-- On-screen footer: "Source: canada.ca · General info, not advice" (or the specific source).
-- Never print API keys (keys live in `~/.config/reels-montage/keys.env`, filled by the user). No subliminal / "25th frame" tricks. Don't work around refused downloads of external code.
-- Branch `claude/kling-ai-skill-install-goznyv`; commit and push; no PR unless asked.
-
-## Shorts series standing rules (user, 2026-10-05)
-
-- The approved format is `showreel/src/SalaryShort.tsx` ("$100K, 10 provinces"): defocused office plate with a slow pan; glass hero card; typed film-title captions; persistent data board; gold numbers; sources footer. Every Short in the series reuses this language.
-- Always include a Canadian flag somewhere in the frame (placement at Claude's discretion; code-drawn, correct 1:2:1 proportions).
-- All 48 topics in `channel/TOPICS.md` become Shorts, published to YouTube on an optimized schedule (titles, hooks, descriptions, hashtags, playlists, posting times).
-
-## REAL TAX INFORMATION MODE (user, verbatim, applies to every tax video)
-
-Before creating the educational content:
-1. Research the current Canadian tax rules relevant to this topic.
-2. Use authoritative primary sources whenever possible.
-3. Prefer current CRA / Government of Canada sources.
-4. Verify every tax-related factual claim.
-5. Do not invent thresholds, dates, eligibility rules, credits, deductions or exceptions.
-6. Distinguish clearly between: general information; eligibility requirements; exceptions; situations requiring professional advice.
-7. Do not present an example as an actual CRA rule.
-8. If the tax treatment depends on facts that cannot be established from the topic, explicitly identify the dependency.
-9. Keep a record of the sources used for the factual claims.
-10. Only after the factual research is complete, design the 45–60 second story.
-
-FACTUAL ACCURACY HAS PRIORITY OVER DRAMATIC STORYTELLING.
-Never modify a tax rule to make the story more interesting.
-
-## VOICEOVER ENGINE — MANDATORY (user, 2026-10-05; full text in `channel/VOICEOVER-ENGINE.md`)
-
-Every video ships with a complete, professional voiceover designed on the SAME master timeline as the visuals:
-- Written for speech (Canadian English, confident, calm, slightly dramatic, conversational). No "hello everyone" / "in today's video" / filler. Hook in the first 1–2 s with an open loop.
-- Every important on-screen number, ranking, comparison or conclusion is explained or reinforced by the narration (complement, don't read the screen word for word).
-- Build from the actual timeline: beats → narration per beat → realistic speaking duration → pauses → key words land at or just before their visual reveal.
-- Numbers written as spoken words. Every tax claim verified (CRA / Government of Canada / provinces / StatCan).
-- Deliver: A. final script; B. timecoded VO [mm:ss.ss–mm:ss.ss]; C. delivery notes; D. audio cue points; E. total spoken duration vs. video duration.
-- If the narration does not fit, MODIFY THE VIDEO TIMELINE AND RE-RENDER. Do not just report the mismatch.
-- The audio track is produced and muxed onto the video in sync.
-
-## Next-phase production rules (user, 2026-10-05; apply from the next new topic, not retroactively)
-
-- **Topic-matched background:** the plate behind the cards changes per topic and approximates the story: different offices, a school or classroom (kids / RESP / students), a Main Street storefront, a field or rural road, a retirement setting, an airport or train for travel. Keep it moving, defocused and real-looking (Master §1/§12).
-- **Topic props in the scene** when they serve the story: money, a vacation, a plane or train with a family or business traveller (e.g. "are trips tax-deductible?"). Realistic, not cartoon.
-- **Background music**, quiet and well under the VO (duck under speech), mood per theme: light and curious for school and kids, warm and calm for pensions, energetic for students, etc. Overt mood only: NO subliminal / "25th frame" content.
-- **Typography per topic group** (e.g. pensions vs students vs business) while keeping the layout: glass cards, typed captions, gold numbers, flag, sources footer.
-- Claude may improve realism and details on its own initiative, as long as the established layout is kept.
-
-## REALISTIC HANDWRITTEN EXPLAINER — production mode (user, 2026-10-06; full text in `channel/HANDWRITTEN-ENGINE.md`)
-
-An additional Tax Secrets Canada mode: a realistic hand physically writes the explanation (numbers, arrows, circles, calculations) on paper, 9:16, 45–60 s. Style reference: `channel/refs/handwritten-reference.png` (reference only, never copied). Use it only when handwriting is the clearest way to explain the topic (§39); otherwise use the card format or a hybrid. Key rules: research and fact-check first; the VO is the master timeline; a drawing timeline with stroke order; ink is revealed only under the moving pen tip (no fades or typewriter effects); one continuous hand and pen; final delivery in the §37 structure plus the publishing package.
-
-### Handwritten mode: realism and delivery rules (user, 2026-10-06)
-
-- **Publishing artifact for every video:** besides `<project>/PUBLISH.md`, publish an Artifact page with the full publishing package (titles, description, hashtags, keywords, pinned comments, CTAs for YouTube / TikTok / Instagram, with copy buttons) and give the user the link.
-- **Natural camera:** handheld-style, non-periodic operator motion; motivated moves. **Push in on every sum that is circled or underlined** (hold while the narration lands it), then return to the line; establishing wide at the start, pull back to the whole page at the end.
-- **Living background:** the plate must never look frozen: window light that breathes (passing cloud, blind sway), steam from a hot drink, etc. All made in code, subtle and physically plausible.
-- **Maximum realism and quality:** 180° shutter motion blur on fast hand moves, light continuity between the hand, paper and desk, nothing that reads as CG or as a still photo.
-- **Final CTA & curiosity loop (user, 2026-10-08; full text verbatim in `channel/HANDWRITTEN-CTA.md`; from the next handwritten Short on, B7 and earlier stay as delivered unless the user asks):** every Written Hand Short ends with a deliberate 3–5 s handwritten CTA on the same paper, hand, pen, light and camera: final reveal → short pause → the hand writes a curious question or challenge tied to the next logical tax question → it underlines/circles/draws an arrow from the final result → 1–1.5 s hold → end. No overlays, end cards, "follow for more", "like and subscribe" or "thanks for watching". Ask one specific question that is easy to answer in a short comment (e.g. "Should we calculate this for $150K?"); follow is secondary and worded differently each time. Per video, draft 3–5 ending CTAs, pick the strongest (topic relevance, curiosity, comment potential, continuation, fit with the final visual, likelihood of producing the next topic), record the options in the bible, and do not repeat the same CTA structure in consecutive videos. For the handwritten series this replaces the spoken "Next: … Follow so you don't miss it." bridge line: the question itself points to the next topic. A Short is not complete until the CTA is written, animated, timed to the VO and integrated.
-
-## PUBLISHING & GROWTH ENGINE — MANDATORY final step (user, 2026-10-05; full text in `channel/PUBLISHING-ENGINE.md`)
-
-An MP4 is never "done". After visual, technical, factual and VO QC, research the current landscape for the topic (search intent, platform discovery, current Canadian tax news and questions), run a retention analysis (fix and re-render if weak), and write `<project>/PUBLISH.md` in the exact FINAL DELIVERY structure: video specs, VO + timecodes, fact sources (source · tax year · what it supports), YouTube (3 titles, description, hashtags, keywords, pinned comment, CTA), TikTok (caption, search keywords, hashtags, pinned comment, CTA), Instagram (caption, keywords, hashtags, pinned comment, one CTA), engagement strategy, SEO analysis, next 3 topics, series fit. Same facts everywhere; no engagement bait; no copied creator material.
-
-## Voice for upcoming topics (user, 2026-10-05; not retroactive: Shorts #1, #2 and CASE #002 stay as they are)
-
-- From the next topic on, the narration uses an ElevenLabs voice through Higgsfield (`generate_audio`, model `text2speech_v2`, variant `elevenlabs`, a preset voice), ≈0.3 credits per line. Choose a natural, human-sounding, warm and confident male or female narrator; the user wants it livelier and less "AI" than the Piper voice. The voice is chosen together with the user (sample candidates first) and then kept consistent across the series.
-- **Chosen voice: Grady** (user, 2026-10-06; the user has used it before). Higgsfield `generate_audio` with model `text2speech_v2`, variant `elevenlabs`, voice_type `preset`, voice_id `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678`. Keep it for the whole series. Test: 21 words in 7.97 s (≈158 wpm), mp3 44.1 kHz mono.
-- Network access to Higgsfield results now works (cloudfront `d8j0ntlcm91z4` / `d1xarpci4ikg0w`, `cdn.higgsfield.ai`): generate per beat, download, measure → master timeline → mux.
-- Publishing Kit artifact (https://claude.ai/artifact/6LfkQdgNBtoZTiy2WEYSiK, source `channel/publishing-kit.html` (copy it to the scratchpad and publish with `url`); its data is built from the `<project>/publish.json` files): after every new video, add its card (titles, description, hashtags, keywords, pinned comment, TikTok and Instagram captions) and republish to the same URL (user, 2026-10-06).
-- Topic order: follow `channel/PUBLISHING-PLAN.md` §4 (user, 2026-10-06: "go by the list"). Next: E3, E2, E1, D3, D6, E4, A6, …
-
-## Paid tools budget (user, 2026-10-06)
-
-- vidIQ (user, updated 2026-10-06: the user is buying a subscription and WANTS demand/interest research with it, minimal requests): check `vidiq_balance` (free) first. Per video, BEFORE writing the script: one `vidiq_keyword_research` call (mode `questions` or `research`, country CA) to see what people actually search and ask, and use it to pick the hook and the first-frame wording; after the render, at most one `vidiq_score_title` for the chosen title. Never batch extra calls. Report the credits spent. If the balance is 0, fall back to WebSearch and recorded data and say so.
-- **[SUPERSEDED by the 25-credit cap below] vidIQ full research per video (user, 2026-10-08; supersedes the minimal rule above, balance ≈1,850, renews Nov 6):** for every new video run, before the script: keyword research (CA), viewer questions (`questions` mode), competitor analysis (top / outlier videos on the topic: what they promise, length, angle, what they miss) and a trend check (demand growth vs baseline, rising terms); after the render, score ALL THREE title variants (`vidiq_score_title`, 5 credits each) and pick the primary from the scores. Record everything in PUBLISH.md / publish.json and report the credits spent.
-- **NexLev in the analysis (user, 2026-10-13):** from the next video on, add NexLev to the per-video research: check the Canadian tax/personal-finance niche (niche overview, outlier videos, similar/competitor channels) and competitors for the upcoming topics; record findings in PUBLISH.md next to vidIQ. Use it only as part of a video's research (nothing on its own now).
-- Higgsfield: generate only the VO lines needed; re-generate only lines that changed.
-- **vidIQ analysis per video (user, 2026-10-08; from the video after C5 on): HARD CAP 25 credits per video, measured by `vidiq_balance` before and after; applies to long-form videos too and to the handwritten "Real Tax Math" series from the video after B7 (user, 2026-10-08).** For long-form the default plan swaps "Shorts outliers" for long-form competitor/outlier videos on the topic. Claude picks the most useful calls within the cap. Default plan (25): keyword research `research` CA (5) + top competitor videos `vidiq_youtube_search` CA by views (5) + Shorts outliers for the topic (5) + score the two strongest titles (2 × 5). Skip `questions` and `comment_insights` unless a call is dropped to make room. Still publish the designed analysis Artifact page per video and report the credits spent.
-- **NexLev in the per-video analysis (user, 2026-10-13: "используй инструмент nexlev. Проверяй нишу налогов также и конкурентов для следующих видео… пока что не надо ничего, но просто запомни"):** from the next video on (A2 in progress is not affected), add NexLev to the pre-script research next to vidIQ: check the tax niche (niche overview / niche-finder channels for Canadian tax and personal-finance Shorts) and the competitors for that topic (similar channels, their outlier videos and Shorts, what they promise and miss). Keep calls minimal and useful, record findings in PUBLISH.md / publish.json and on the analysis Artifact page, and report what was used.
-- **Duration tolerance (user, 2026-10-06):** a finished VO anywhere from 45 s to 1:10 is acceptable. Inside that range do NOT spend credits or regenerate/trim/speed up audio to hit 60 s; just set the video length to the VO (+≈0.5 s hold) and move on. Only outside 45 s–1:10 shorten or extend.
-
-## Design direction (user, 2026-10-06; applies to the next videos, finished ones stay as they are)
-
-- Less background blur: the plate must read as a real scene with visible movement and detail (people and objects moving), not a wash.
-- More design and beauty in the foreground, but minimalist: one idea per card, clear hierarchy, clean and precise. Keep the layout (glass cards, typed captions, gold numbers, flag, sources footer).
-- The improved look (E2 v2: photo plate + motivated camera moves + minimal cards) was APPROVED by the user on 2026-10-06 ("камера движется… фон классный… бомба"). It is the series standard from now on.
-- **Background = photo plate (user chose option 1, 2026-10-06; references: editorial photos with topic props sharp in the foreground — calculator, coins, folders, a graduation cap, a coin jar — and the topic's people/place softly defocused behind).** Generate one photoreal still per topic with Higgsfield `gpt_image_2_5` (9:16, ≈0.25 credits), prompt says "no text, no numbers, no letters, no logos"; check the result for any writing; upscale to 4K (`upscale_image`, 2 credits). All motion is code (`showreel/src/Plate.tsx`: motivated camera moves between per-beat focus points, slow push, snow/steam/light). Only a light blur (≈0.8 px). No video-generation model is used; numbers stay in code.
-- Minimal foreground (`showreel/src/E2v2.tsx` is the reference): one smoked-glass card per beat in the lower third, overline label with a short gold rule, one gold-gradient hero number that rises out of a mask, a gold hairline under it, one supporting line; a light sweep on entry; a slim persistent strip of pills (key figure + levers ticking on) instead of a big board; captions top-left; the photo's subject stays visible in the middle.
-
-## Pace: one video at a time (user, 2026-10-06)
-
-- Work strictly one topic at a time: research → VO → plate → render → deliver, then STOP and wait for the user's command before starting the next topic or the next render. Do not prepare several topics ahead or queue several renders (the user has a time-based usage limit).
-- Already prepared and waiting for the user's go (assets, compositions and docs committed; only render + delivery + kit card + vidIQ title score remain; from C3 on also the series upgrade: three scenes + bridge CTA): none left (D2, D5 delivered 2026-10-06; C3, F1, F5 delivered 2026-10-07; F4, C5, A4, G1 delivered 2026-10-08; G4, G2, G5 delivered 2026-10-09; holiday extras added by the user: `xmas` gifts & tax for Tue Dec 22 delivered 2026-10-10, up to 1:30 for that video only; the New Year extra `ny` for Tue Dec 29: the user declined TFSA room, and "before Dec 31" duplicated C5, so it is tax-loss selling by Dec 30 + the superficial loss rule, made 2026-10-10, and the `xmas` CTA was re-bridged to it); D1 tuition delivered 2026-10-12 (first card reel on motion engine v1, `showreel/src/D1V3.tsx`); H4 Manitoba frozen brackets delivered 2026-10-12 (`showreel/src/H4V3.tsx`, new hook/visual set per the Variety rule); A1 credits people miss delivered 2026-10-12 (`showreel/src/A1V3.tsx`, first investigation-format reel, Retention Blueprint + 25 s test); A5 "CRA says you owe $5,000" delivered 2026-10-12 (`showreel/src/A5V3.tsx`, investigation format, document close-up hook + suspect line-up); A8 "filing late vs paying late" delivered 2026-10-13 (`showreel/src/A8V3.tsx`, myth-stamp hook + three-return scoreboard + penalty gauge); A2 "why your refund got smaller" delivered 2026-10-13 (`showreel/src/A2V3.tsx`, split before/after hook + balance scale + receipt reveal); A9 "filed wrong? fix your return" delivered 2026-10-13 (`showreel/src/A9V3.tsx`, date-flip hook + red-pen return page + fork + turnaround chart; first video with NexLev research); H1 "Manitoba pays you even at $0 tax: MB479 credits" delivered 2026-10-16 (`showreel/src/H1V3.tsx`, $0 meter hook + payout columns + refundable switch + checklist; cover cue at 32.65 s); C1 "sole proprietor vs corporation: the real trade-off" delivered 2026-10-16 (`showreel/src/C1V3.tsx`, +$6,008 count-up hook + split $100K bars + vault reveal + note card; cover cue at 34.59 s); C2 "salary or dividends? what the $5,800 buys" delivered 2026-10-16 (`showreel/src/C2V3.tsx`, two-envelope hook + ledger table + mix slider + EI card; cover cue at 43.45 s); D4 "spousal RRSP: whose name, and the 3-year trap" delivered 2026-10-17 (`showreel/src/D4V3.tsx`, coin-into-jar hook + tax-rate staircase + calendar-year tiles + rule card; cover cue at 34.58 s); PUBLISHING-PLAN §4 is now exhausted except 0.1 / 0.2 (non-tax) and F2 / F3 (need the user's decision), so the series continues with TOPICS-2; R5 "pension income splitting: move $40,000 on paper" delivered 2026-10-24 (`showreel/src/R5V3.tsx`, two-returns strip hook + levelling income tubes + ✕/✓ sorting tray + T1032 card; cover cue at 34.41 s); R1 "disability tax credit: $0 for Noah, three doors" delivered 2026-10-24 (`showreel/src/R1V3.tsx`, struck-$0 question hook + three opening doors + one-key reveal + checklist; angle chosen to avoid LF-05; cover cue at 47.49 s); R2 "caregiver credit: $1,247 or $0" delivered 2026-10-25 (`showreel/src/R2V3.tsx`, two year-cards hook + phase-out ramp + split bar; first video in lean mode via tools/short.py; cover from the `cover` cue); M30 "medical expenses: whose return? $116 vs $377" delivered 2026-10-25 (`showreel/src/M30V3.tsx`, swinging name-tag hook + receipt bars with sliding 3% floor + tax-tank reveal; first video checked against channel/REEL-CHECKLIST.md; cover 45.4 s); next: R3 donations, bridged from M30.
-
-## MOTION ENGINE v1 for card reels (user, 2026-10-12; details in `channel/MOTION-ENGINE.md`; built in the card-series session in parallel with "Motion Engine v3" below from the same request: both exist side by side, `motion/Reel.tsx` vs `motion/Engine.tsx`, until the user picks one standard)
-
-- Upgrade of the existing look, not a redesign: our brand (navy / charcoal / blue-gray scenes, white type, restrained gold, purposeful Canadian red, dark-glass panels, ALL-CAPS principal headings, Mont, flag, sources footer) stays.
-- From the next card reel on, build on `showreel/src/motion/` (template `showreel/src/NyV3.tsx`): progressive hook with the topic on screen from frame 0, floating tags, kinetic headlines, narration-driven highlights and count-ups, word-synced captions (`tools/beat_words.py`), depth layers, glass entrances/exits, one cue anchor per event driving both the visual and its sound (`<p>/reel.json` → `tools/reel_cues.py`), the sonic identity and logo (`tools/sfx.py`, D major), the mix (`tools/mix_reel.py`), verified numbers in `<p>/data.json`, and the automated QC `tools/reel_check.py` before delivery. No Kling, no video-generation model.
-
-## Variety: every reel different (user, 2026-10-12: "они должны быть разные и графика меняется и не всегда начало быть одинаково. Мы используем инструкцию для максимального внедрения")
-
-- Use the motion engine (marketing-skill techniques) to the maximum, but never as a fixed template: each reel gets its own hook type (e.g. kinetic question, big number count-up, split before/after, a ticker or a document close-up, a myth stamped FALSE, a timeline scrub), its own main data visual (bars, ladder, gauge, timeline, split screen, receipt, stacked blocks…), different entrance/exit mixes, a different music mood/tempo where the topic allows, and a different end composition.
-- Before building, compare with the previous 2–3 card reels (their bible "Format" rows) and record in the bible what is new: hook type, main visual, transitions, end. Do not repeat the previous reel's hook type or main visual.
-
-## Topic list 2 and the investigation format (user, 2026-10-12; analysis in `channel/TOPICS-2.md`)
-
-- After the current 48-topic plan, the series continues with the 30 topics in `channel/TOPICS-2.md` (after the overlap check: 22 kept/refocused, 3 merged, 5 replaced with new gap topics R1–R5; suggested order by arcs there).
-- Every topic in that list is a small investigation, not an explanation of the law: **Hook** (a concrete problem or money difference) → **Promise** (what the viewer will understand by the end) → **Investigation** (2–3 scenarios with numbers, documents and rules) → **Reveal** (why the result is unexpected) → **Action** (what to check in your own situation). A1 (= list-2 #23) is the first topic made this way.
-
-## Remotion system integration (user, 2026-10-12; full verbatim task, repo inventory and licence notes in `channel/REMOTION-SYSTEM.md`) — recorded only, execute on command
-
-- Same brief as "Remotion integration brief" below (recorded in parallel by the long-form session in `channel/REMOTION-INTEGRATION.md`): ONE task, executed once by whichever session the user commands.
-- When commanded: inspect the existing pipeline first (scripts, deps, render, audio, components, QC) and keep/improve rather than rebuild; read the current official Remotion docs and install the official Remotion Agent Skills if appropriate.
-- Hard constraints: no Kling, no external AI video generators; code-driven (Remotion, React, SVG, Canvas, CSS, FFmpeg); never claim code camera moves turn a still into live-action footage; reuse legitimate footage/assets; check Remotion licensing before production or commercial deployment (free tier: individual / ≤3 employees / non-profit; larger companies need a Company License; terms change in Remotion 5.0).
-- Reusable components to build: cinematic 16:9 backgrounds and layered parallax; dark-glass financial panels; animated tables, calculations, comparisons, charts, diagrams; kinetic typography and staggered floating labels; number reveals, count-ups, highlights, masks, light sweeps, blur-to-focus, controlled dissolves; VO-synced captions and restrained SFX; source citations and data callouts. Identity: dark navy/charcoal, restrained blue and amber, realistic financial-documentary feel, precise legible type.
-- Retention Blueprint before any visuals: opening question + promised result; first 30 s of narration and visual direction; major developments and open questions; verified calculations, evidence and sources; final answer and practical next step. Meaningful developments throughout; never delay a simple answer artificially.
-- Test first: a 20–30 s 16:9 sample (real moving background if legitimate footage exists, animated glass panels, at least one calculation and one comparison chart, synced narration/captions/sound, purposeful entrances/exits), rendered to MP4 and inspected (timing, readability, clipping, missing assets, A/V sync, render errors), defects fixed before a full episode.
-- Deliverables: working project + components, exact setup/render commands, the sample MP4, a report (changed / works / incomplete / licence costs), and a recommendation for the 10–15 min YouTube workflow and the short-form pipeline. Nothing is marked complete unless executed and verified.
-
-## Coordination with the handwritten session (user, 2026-10-08)
-
-- Before every new card-format topic, check what the parallel handwritten "Real Tax Math" session has made or promised (its project folders, `<project>/PUBLISH.md` "NEXT 3 TOPICS", the bridge CTA in its `publish.json`, the Publishing Kit labels "(handwritten)"). Never make the same topic or the same angle. The handwritten session owns the self-employed B-series (B1–B8, B4P, RRSP-SE, INST); the card series skips those and takes the next non-overlapping topic in PUBLISHING-PLAN §4. Record the check in the bible.
-
-## Motion Engine v3 for card-format Reels (user, 2026-10-12; full text and decisions in `channel/MOTION-ENGINE-V3.md`)
-
-- From the next card-format Reel on, build with `showreel/src/motion/Engine.tsx` + `tools/words.py` (word-level captions from the VO) + `tools/sfx_mix.py` (brand SFX, ducked bed, −14 LUFS / ≤ −1 dBTP) + `tools/check_v3.py` (automated QC, then a visual pass). Techniques adapted from github.com/marcosmodly/marketing-skill; its templates and look are NOT used.
-- Keep the identity: dark navy / charcoal / blue-gray scenes, white type, restrained gold, purposeful Canadian red, dark-glass panels, large figures, ALL-CAPS headlines and labels, realistic financial-documentary imagery, flag, sources footer.
-- Opening hook: topic readable on frame 0, then staged reveals (floating tags from different sides, mask headline, emphasized number/question, transition). Panels and rows light up gold as the narration reaches them; numbers count up to the verified value; one shared timeline drives visuals, captions and SFX.
-- Verified numbers live in `<project>/data.json` generated from the calculation; presentation code never computes or edits them. No Kling / video-generation model; simulated motion is never described as live-action footage. Nothing is published or scheduled without explicit approval.
-
-## Cover frame strategy (user, 2026-10-15; full text `channel/COVER-FRAME-STRATEGY.md`)
-
-- Every Short/Reel/TikTok is designed with a deliberate cover moment: a stable, fully rendered, scroll-stopping frame (key figure/question + subject visible, no transition/blur), chosen per video (not a fixed timestamp), natural in the edit. Record timestamp + why + frame description, extract and check that exact frame in the render.
-- IG Reels / TikTok via Metricool: `info.videoCoverMilliseconds` (verified in the schema 2026-10-15; TikTok only for Business-connected accounts). Never report a cover as configured unless read back and verified; otherwise mark manual/unsupported with the timestamp.
-- YouTube Shorts: document the recommended timestamp only; the user selects the cover manually (never via Metricool).
-- Card series: the cover is a `cover` cue in `<project>/reel.json` on a settled frame (hook text + key figure + person, no transition), different per video; extract and check that exact frame from the final MP4 and record it in `<project>/publish.json` → `cover` and in PUBLISH.md (procedure in the strategy file).
-- Handwritten "Real Tax Math" series: the cover is a `cover` mark in `film.py` on a settled frame (circled/underlined result or the hook question fully written, pen clear of the key figure, no camera move), extracted and checked the same way (section "Handwritten series" in the strategy file).
-
-
-## Metricool: only on command (user, 2026-10-07)
-
-- Never create, update or schedule anything in Metricool unless the user explicitly says so for that video. Per video: make the video, run the analysis and the publishing package, then STOP and wait. Prepared payloads may sit in `channel/metricool/schedule.json`, but nothing is sent.
-
-## Series upgrade (user, 2026-10-06; from D5 on)
-
-- **CTA = a bridge to the next video**, different every time: the last VO line names the next topic and asks to follow, e.g. "Next: why a small corporation pays nine percent. Follow so you don't miss it." The on-screen pill shows the next topic. One new Grady line per video (≈0.3 credits). No engagement bait.
-- **Three photo scenes per video (option B)**: three plates of the same people/place in story order (e.g. morning at home → daycare door → evening receipts), each shown once, changed at a beat boundary where the meaning changes, with a designed code transition (directional motion blur + push, light sweep). Keep the people consistent (use the first plate as the image reference); check every plate for text. Cost ≈ 3 × (variants + 4K upscale).
-
-## LONG-FORM YOUTUBE MODE (user, 2026-10-07; full text in `channel/LONGFORM-ENGINE.md`, queue in `channel/LONGFORM-QUEUE.md`)
-
-- A separate product for YouTube only: 10–15 min (set by the story, never padded), 16:9 1920×1080, 24/30 fps. Pipeline: market research (vidIQ / NexLev / Metricool / web, whatever is connected) → concept doc → verified facts (claim · source · tax year · date checked · method) → full VO first (Grady) → one master timeline → code-rendered video → QC and re-render → thumbnails (3) + titles (5) → YouTube package, chapters, Shorts candidates (3–7), next ideas → report in the §43 format → update `longform/LONGFORM-BIBLE.md`.
-- Topics go one at a time ONLY on the user's command, in the "Recommended initial production order" of `channel/LONGFORM-QUEUE.md` (first: "The Canadian Tax Brackets Explained With Real Numbers"). Every long-form topic must be completely different from the Shorts (new question, story, examples and visuals; see the queue file). Tax-software reviews are independent comparisons, sponsorship always disclosed. No TikTok/Instagram packages; never publish or schedule without explicit approval.
-- **Face-off system (user, 2026-10-08; full text in `channel/LONGFORM-FACEOFF.md`):** core rule for every long-form video with a comparison/choice. One consistent desk world (no permanent talking head; at most one consistent human), story QUESTION → CONTENDERS → RULES → ROUNDS → SCORE → SURPRISE → FINAL FACE-OFF → VERDICT (~12 acts, 2–6 states each), conflict on screen in the first 5 s matching the thumbnail, one icon family, evolving evidence-based scoreboard (no fake or sponsor-favoured winner), information change every 15–30 s, reusable asset library (`longform/assets/`) built once and reused, ≈60–80 % code graphics / 20–40 % generated stills, every spoken number shown when spoken. Claude delivers the finished MP4, not a script or storyboard.
-- **Every long-form intro different (user, 2026-10-14):** never reuse the photo-collage opening (4–5 photos) as a default. Each episode gets its own intro type built for retention: a concrete conflict/money surprise on screen from frame 0, an open loop answered later (and a second one paid off near the end), stakes in the first 15–30 s, no channel intro or subscribe ask up front. Pick the intro from the topic's strategy (e.g. LF-07: two 'correct' pay stubs collide → bill drops); record the intro type per episode in `longform/LONGFORM-BIBLE.md` and do not repeat the previous episode's.
-- **Long-form engine "machine #1" (2026-10-11): `longform/ENGINE.md`.** Episodes are made by writing `episode.src.json` + VO lines → `longform/tools/build.py` → `longform/tools/render.sh` (Remotion `LongForm`, `--gl=angle`, auto-QC). Numbers come from `longform/tools/taxcalc.py`. Change data, not code; extend the engine only when an episode truly needs a new event type.
-- **Long-form rules v2 (user, 2026-10-11; full text `channel/LONGFORM-RULES-2026-10-11.md`):** finished MP4 with VO, animation, sound and edit; Face-Off 10 story steps with 12 acts (2–6 states each); no static slideshow; visual change every 15–30 s; photo plate and pictograms are part of the look; generated stills 20–40 % only where they add to the story (one per chapter, not per line); research from primary sources only; Higgsfield spending is allowed for photos.
-- **Code-only production system (user, 2026-10-11; full text `channel/LONGFORM-CODE-ONLY.md`; replaces the Kling rules; from LF-02 on):** NO Kling or any external AI video generator. Everything in code (Remotion/SVG/Canvas/FFmpeg/Python); stills may come from image tools and are animated in code with layered parallax, simulated camera moves, animated light; ALL-CAPS large typography; 13 code-made entrance/exit effects; VO-synced timeline with SFX; 20–30 s test render before the full render; inspect the exported MP4; no publishing without approval.
-- **Advanced cinematic motion system (user, 2026-10-12; full text + reference study `channel/LONGFORM-MOTION-SYSTEM.md`; adds to the code-only system):** alive opening (navy/amber/blue/dotted grid + staggered floating ALL-CAPS tags + kinetic headline + financial object), kinetic typography, reusable active-state icons, step-by-step data reveals, glass panels with story-chosen transitions, moving realistic backgrounds (hybrid composition), reusable motion engine synced to the VO, 20–30 s test before every full render.
-
-## Remotion integration brief (user, 2026-10-12; full text `channel/REMOTION-INTEGRATION.md`; recorded only, build/test on command)
-
-- Remotion 4.0.532 is already our engine: inspect and extend `showreel/src/lf/`, `showreel/src/motion/`, `longform/tools/`, `tools/` instead of rebuilding. No Kling / AI video generators; never present code camera moves on stills as live-action footage.
-- Every future video: a Retention Blueprint (`<project>/BLUEPRINT.md`: opening question + promise, first 30 s VO + visuals, developments/open questions, verified calcs + sources, answer + next step) before visuals; then a 20–30 s 16:9 test MP4 (moving background, glass panels, ≥1 calculation + ≥1 comparison chart, synced VO/captions/SFX), inspected and fixed before the full render. Nothing is reported as done unless executed and verified.
-- Licence: Remotion is free (also commercially) for individuals, companies with ≤3 employees and non-profits; larger for-profits need a Company License (remotion.pro). The user confirms the tier before commercial scale-up.
-
-## Cross-platform promo in captions (user, 2026-10-18; from the Jan 2027 batch on)
-
-- Every scheduled post's caption/description sends viewers to our other networks, worded differently from post to post: YouTube description → TikTok (taxsecretscanada) and Instagram (styleofcanada); TikTok → YouTube (search "Tax Secrets Canada", channel @TaxSecretsCanada) and Instagram; Instagram → YouTube and TikTok.
-- Write the other platforms' handles WITHOUT "@": an "@" tags an account on the same platform, which would point to a stranger's account. Links in Shorts / IG / TikTok captions are not clickable, so give names, not URLs. Generator: `channel/metricool/batch-2027-01/build.py`.
-
-## Faceless documentary framework (user, 2026-10-24; full mapping `channel/FACELESS-DOC-FRAMEWORK.md`)
-
-- Apply the user's "Faceless YouTube (Documentaries)" checklist to every new video, on top of the rules above (they win on conflict: no AI video generation, facts first, one video at a time).
-- Per video, add: topic type (evergreen / seasonal / trend) + the viewer's emotion and curiosity gap; a short angle note (2–3 angles, one chosen); in BLUEPRINT.md the open loop with its payoff time and one mid-video re-hook (~55–65 % of the runtime); the title formula used; a licence record for any stock/archival footage. Monetization items are recorded only, nothing built without the user's decision.
-
-## Lean production mode (user, 2026-10-25: "use as few of your credits as possible")
-
-- Finish every card reel with `tools/short.py <p> vo | stills | final` (one command per stage, short output) instead of many separate commands.
-- Per video at most: one fact pass (law text / one WebSearch per figure group), one vidIQ keyword call + one NexLev search + two title scores, ONE VO batch (write the script to ≈135 words so it fits 45–70 s the first time), ONE plate batch (3 scenes, no duplicate variants) + upscales, ONE stills contact sheet, ONE fix pass, ONE final render.
-- New composition = copy the previous `<P>V3.tsx` and change only the hook / main visual / reveal (Variety rule); do not re-read large files already known.
-- Skip: Whisper unless the QC fact check fails; the separate analysis Artifact page (research goes into PUBLISH.md and the Kit card); long reports (short Russian summary with links).
-## Economy mode: spend as little of Claude's usage as possible (user, 2026-10-25)
-
-- One command per stage: `longform/tools/finish.sh <ep-dir> <name> <OUT.mp4>` renders all chunks, splices audio, encodes and QCs, printing ONE line. Run it in the background and wait for its single completion notice; no monitors, no polling, no progress messages.
-- Look at images only when needed: one contact sheet per render (and at most one still batch before it); no re-reading files already in context; short tool outputs (`tail`, `grep`), no large dumps.
-- Reuse code: copy the previous episode's `gen_episode.py` / components and change data; build a new component only for a new intro (required) or when a visual truly needs it.
-- Short reports in Russian; no restating of plans; commit once per milestone.
-
-## Mandatory reel elements (user, 2026-10-25: "the rules and effects we always use must be written down and always be in the video")
-
-- Every card reel must pass `channel/REEL-CHECKLIST.md` (flag header, living 3-scene plate with camera moves, frame-0 kinetic hook, typed titles, word-synced captions, glass data visual with gold numbers, stamp re-hook, reveal, VO + ducked music + cue SFX + sonic logo, check card + NEXT pill + follow line, sources footer, cover cue, QC). Lean mode never removes any of these.
+## Rules
+- Reply in Russian, short. One video at a time, then STOP and wait.
+- Facts: every figure from CRA / canada.ca / law / province with tax year → `<p>/data.json` sources. Unverified = `[VERIFY]`, not shipped. Example ≠ CRA rule. No "secret/loophole".
+- Numbers only in code; generated photos have no text/numbers. No Kling / AI video. Motion = code (Remotion).
+- Every Short passes `channel/REEL-CHECKLIST.md` (flag header, 3 scenes same people + camera moves + snow/steam, frame-0 kinetic hook, typed titles, word captions, glass panel + gold numbers, stamp re-hook 55–65 %, reveal, Grady VO + ducked music + cue SFX + sonic logo, check card + NEXT pill + "Follow so you don't miss it", sources footer, settled cover frame, QC pass).
+- Variety: hook + main visual differ from the last 2–3 reels.
+- VO: Higgsfield `text2speech_v2`, variant `elevenlabs`, preset `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678` (Grady); ≈135 words, 45–70 s; numbers as words; last line bridges to the next queue topic.
+- Photos: `gpt_image_2_5` 9:16 "no text, no numbers, no letters, no logos" → `upscale_image` 4k.
+- Pipeline: `tools/short.py <p> vo | stills | final` (template = last `showreel/src/<P>V3.tsx`).
+- Budget: vidIQ ≤25 credits/video (balance before/after); 1 NexLev search; 1 batch VO, 1 batch photos, 1 contact sheet, 1 fix pass, 1 render; no Whisper unless QC facts fail.
+- Metricool only on `/schedule`; covers via `videoCoverMilliseconds` + read-back; YouTube cover manual. Captions cross-promo other networks without "@".
+- Never print API keys. No subliminal tricks.
+- Git: branch `claude/kling-ai-skill-install-goznyv`, commit + push per video, no PR. `*/audio/music.wav` ignored.

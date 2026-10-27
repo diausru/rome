@@ -1,0 +1,1 @@
+Print in Russian, max 8 lines: last delivered Short (from channel/QUEUE.md), next topic, which projects are not yet in Metricool (compare QUEUE done list with channel/metricool/*/created.json), vidIQ balance if connected. Read nothing else.

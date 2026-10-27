@@ -1,3 +1,5 @@
+> Superseded by the compact CLAUDE.md + .claude/commands (2026-10-27). Kept as reference.
+
 # СТЕК И АРХИТЕКТУРА
 - Репо `diausru/rome`, ветка `claude/kling-ai-skill-install-goznyv`; commit+push, без PR.
 - Канал Tax Secrets Canada: Shorts 9:16 1080×1920 24fps, 45–70 с.
