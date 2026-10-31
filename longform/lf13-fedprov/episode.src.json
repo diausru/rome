@@ -1,0 +1,2273 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: canada.ca \u00b7 CRA T4127 / T4032 (2026), Form 428, Dept. of Finance (Quebec abatement) \u00b7 Example calculation, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Priya earns seventy-five thousand dollars a year in Toronto. This year, her income tax is twelve thousand, seven hundred and five dollars."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "One number on her return. But it isn't one tax. It's two taxes, set by two different governments."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "So here's the question. Out of every dollar of income tax Priya pays, how much goes to Ottawa, and how much goes to Ontario?"
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "If you guessed half and half, you're not even close."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "And there's a second surprise. If Priya moved to Calgary or Vancouver tomorrow, one of those two taxes wouldn't change by a single dollar. By the end of this video, you'll know which one, and why."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 0.35,
+   "text": "All numbers: twenty twenty-six, single, employment income only, no other deductions. Examples, not real people. General information, not advice."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 1.0,
+   "text": "First: who actually collects your tax."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "Canada has two levels of government that tax your income. The federal government, and your province or territory."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "Each one sets its own rules. Its own brackets, its own rates, its own credits."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 0.35,
+   "text": "But you don't file two returns. Outside Quebec, the C R A collects both taxes, on one return."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "Your federal tax is worked out on the return itself. Your provincial tax goes on a separate form, called Form four twenty-eight. In Ontario, it's the O N four twenty-eight."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "The C R A collects the money for the provinces and territories, under tax collection agreements between the two levels of government."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "Quebec is the exception. If you live in Quebec, you file a second return, with Revenu Qu\u00e9bec, for your provincial tax."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "Your paycheque works the same way. Your employer takes off federal and provincial tax together, using the province where you work. That's why you fill out a federal T D one, and sometimes a provincial one too."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 1.0,
+   "text": "Now, the split."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 0.35,
+   "text": "Both taxes start from the same number: your taxable income. For Priya, that's her salary, minus a small deduction for part of her C P P contributions."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "Then each government applies its own brackets."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "On the federal side: fourteen percent in the first bracket, then twenty point five percent above fifty-eight thousand, five hundred and twenty-three dollars."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "On the Ontario side: five point zero five percent in the first bracket, then nine point one five percent above fifty-three thousand, eight hundred and ninety-one."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "Then each side subtracts its own credits, like the basic personal amount, at its own lowest rate."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "Here's the result. Federal tax: eight thousand, two hundred and fifty-nine dollars. Ontario: four thousand, four hundred and forty-six."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "So about two thirds of Priya's income tax is federal. About one third is Ontario's."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "Per month, that's about six hundred and eighty-eight dollars federal, and three hundred and seventy for the province."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "And inside the Ontario part, there's a line many people never notice: the Ontario Health Premium. Seven hundred and fifty dollars of her four thousand, four hundred and forty-six."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "It isn't a separate bill. It's charged through the tax return, based on taxable income, on the provincial side."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 1.0,
+   "text": "Now, the second surprise."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 0.35,
+   "text": "What if Priya moves? Same job, same seventy-five thousand dollar salary."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "Your provincial tax for the year depends on where you lived on December thirty-first."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 0.35,
+   "text": "In Alberta, her provincial tax would be four thousand and ten dollars. In British Columbia, three thousand, six hundred and sixty-one."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "And her federal tax? Eight thousand, two hundred and fifty-nine. In Ontario, in Alberta, in British Columbia. Exactly the same."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "That's the answer to the opening question. Outside Quebec, your federal tax doesn't depend on your province. Same income, same federal brackets, same federal credits."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 0.35,
+   "text": "The part that moves is the provincial part. It's the only line a move can change."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "And here, it's the smaller line. The gap between these three provinces is less than eight hundred dollars, on a tax bill of about twelve thousand."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "Quebec works differently again. Quebec residents get a federal reduction called the Quebec abatement: sixteen point five percent of basic federal tax."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "It is compensation to Quebec for opting out of certain federal programs, set up back in the nineteen sixties."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 1.0,
+   "text": "But here's what most explanations skip. The split isn't fixed. It changes as your income grows."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 0.35,
+   "text": "At forty thousand dollars in Ontario: federal two thousand, six hundred and ninety-one. Ontario one thousand, six hundred and seventy-one."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "At one hundred and fifty thousand: federal twenty-five thousand, three hundred and two. Ontario fourteen thousand, six hundred and eight."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "At two hundred and fifty thousand: federal fifty-three thousand, five hundred and twenty-four. Ontario thirty-four thousand, one hundred and sixty-one."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "Federal stays the bigger share, around sixty to sixty-five percent. But at higher incomes, Ontario's share climbs."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "The reason is the Ontario surtax. It's an extra tax on the Ontario tax itself, once that tax passes set amounts. At one hundred and fifty thousand dollars, it adds two thousand, five hundred and eleven."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 0.35,
+   "text": "So the higher your income in Ontario, the bigger the province's slice of your bill."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 1.0,
+   "text": "Now, what can you actually do?"
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "You can't choose which government taxes you. But a deduction lowers both taxes at once, because both start from taxable income."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "If Priya puts one thousand dollars into her R R S P, and she has the room, her federal tax drops by about two hundred and five dollars, and her Ontario tax by about ninety-one."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "That's about two hundred and ninety-six dollars in total. The federal side does most of the work."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 0.35,
+   "text": "Credits are different. A federal credit lowers your federal tax. A provincial credit lowers your provincial tax. Each side has its own list, on its own form."
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "So when you file, don't stop at the federal side. Check the provincial form for credits that apply to you."
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 0.35,
+   "text": "And if you move during the year, remember the December thirty-first rule. Your payroll may have used your old province's tables. The difference is settled when you file."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 1.0,
+   "text": "Here's your checklist."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "One. On your return, find two numbers: your net federal tax and your provincial tax. Now you know who gets what."
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.mp3",
+   "gap": 0.35,
+   "text": "Two. Make sure your employer uses the right province, especially after a move."
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.mp3",
+   "gap": 0.35,
+   "text": "Three. Before you file, check the provincial form for credits, not just the federal ones."
+  },
+  {
+   "id": "L54",
+   "file": "vo/L54.mp3",
+   "gap": 0.35,
+   "text": "Four. If you live in Quebec, expect two returns, and the abatement on your federal one."
+  },
+  {
+   "id": "L55",
+   "file": "vo/L55.mp3",
+   "gap": 1.0,
+   "text": "So, what did we learn?"
+  },
+  {
+   "id": "L56",
+   "file": "vo/L56.mp3",
+   "gap": 0.35,
+   "text": "One. Your income tax is two taxes on one return, collected by the C R A, except in Quebec."
+  },
+  {
+   "id": "L57",
+   "file": "vo/L57.mp3",
+   "gap": 0.35,
+   "text": "Two. For Priya, about two thirds is federal, and one third is Ontario's, health premium included."
+  },
+  {
+   "id": "L58",
+   "file": "vo/L58.mp3",
+   "gap": 0.35,
+   "text": "Three. Outside Quebec, the federal part doesn't change when you move. Only the provincial part does."
+  },
+  {
+   "id": "L59",
+   "file": "vo/L59.mp3",
+   "gap": 0.35,
+   "text": "Four. A deduction cuts both taxes. A credit cuts only its own side."
+  },
+  {
+   "id": "L60",
+   "file": "vo/L60.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: tax credits versus tax deductions, and why a one thousand dollar deduction and a one thousand dollar credit are worth very different amounts. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "One tax bill, two governments"
+  },
+  {
+   "at": "L7",
+   "title": "01 \u00b7 Who collects your tax"
+  },
+  {
+   "at": "L15",
+   "title": "02 \u00b7 The split"
+  },
+  {
+   "at": "L26",
+   "title": "03 \u00b7 What if you move?"
+  },
+  {
+   "at": "L36",
+   "title": "04 \u00b7 The split isn't fixed"
+  },
+  {
+   "at": "L43",
+   "title": "05 \u00b7 What you can do"
+  },
+  {
+   "at": "L50",
+   "title": "06 \u00b7 Checklist"
+  },
+  {
+   "at": "L55",
+   "title": "Verdict"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "fedprov",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf13/plates/s1.jpg",
+      "depth": "lf/lf13/plates/s1_d.png",
+      "dim": 0.62
+     },
+     "kicker": "ONE SALARY \u00b7 ONE RETURN \u00b7 2026",
+     "title": "ONE TAX BILL",
+     "finishTitle": "TWO TAXES. TWO GOVERNMENTS.",
+     "total": 12705,
+     "fed": 8259,
+     "provs": [
+      {
+       "code": "ONTARIO",
+       "amount": 4446
+      },
+      {
+       "code": "ALBERTA",
+       "amount": 4010
+      },
+      {
+       "code": "BRITISH COLUMBIA",
+       "amount": 3661
+      }
+     ],
+     "splitAt": {
+      "at": "L2",
+      "word": "two"
+     },
+     "provAt": [
+      {
+       "at": "L5",
+       "word": "Calgary"
+      },
+      {
+       "at": "L5",
+       "word": "Vancouver"
+      }
+     ],
+     "lockAt": {
+      "at": "L5",
+      "word": "single"
+     },
+     "qAt": {
+      "at": "L5",
+      "word": "which"
+     },
+     "question": "WHICH PART MOVES WITH YOU?",
+     "out": {
+      "at": "L6",
+      "off": -0.9
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 360,
+     "w": 1600,
+     "at": "L6",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "2026 \u00b7 SINGLE \u00b7 EMPLOYMENT INCOME ONLY",
+       "size": 46,
+       "at": "L6"
+      },
+      {
+       "text": "EXAMPLES, NOT REAL PEOPLE \u00b7 GENERAL INFO, NOT ADVICE",
+       "size": 40,
+       "at": "L6",
+       "word": "Examples"
+      }
+     ],
+     "kicker": "THE FINE PRINT"
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L7",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHO COLLECTS YOUR TAX",
+       "size": 120,
+       "gold": true,
+       "at": "L7",
+       "word": "collects"
+      }
+     ],
+     "kicker": "01"
+    }
+   ]
+  },
+  {
+   "at": "L8",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L8",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "TWO LEVELS OF GOVERNMENT",
+     "items": [
+      {
+       "n": "FED",
+       "head": "THE FEDERAL GOVERNMENT",
+       "at": "L8",
+       "word": "federal"
+      },
+      {
+       "n": "PROV",
+       "head": "YOUR PROVINCE OR TERRITORY",
+       "at": "L8",
+       "word": "province"
+      },
+      {
+       "n": "=",
+       "head": "EACH SETS ITS OWN BRACKETS \u00b7 RATES \u00b7 CREDITS",
+       "at": "L9",
+       "word": "brackets"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L10",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L10",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "ONE RETURN \u00b7 TWO TAXES",
+     "items": [
+      {
+       "n": "CRA",
+       "head": "COLLECTS BOTH \u00b7 OUTSIDE QUEBEC",
+       "at": "L10",
+       "word": "collects"
+      },
+      {
+       "n": "T1",
+       "head": "FEDERAL TAX: ON THE RETURN ITSELF",
+       "at": "L11",
+       "word": "itself"
+      },
+      {
+       "n": "428",
+       "head": "PROVINCIAL TAX: FORM 428 (ONTARIO: ON428)",
+       "at": "L11",
+       "word": "separate"
+      },
+      {
+       "n": "TCA",
+       "head": "TAX COLLECTION AGREEMENTS",
+       "at": "L12",
+       "word": "agreements"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L13",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "QUEBEC = TWO RETURNS",
+       "size": 90,
+       "at": "L13",
+       "word": "exception",
+       "gold": true
+      },
+      {
+       "text": "FEDERAL RETURN + REVENU QU\u00c9BEC RETURN",
+       "size": 52,
+       "at": "L13",
+       "word": "second"
+      }
+     ],
+     "kicker": "THE EXCEPTION"
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L14",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "YOUR PAYCHEQUE",
+     "items": [
+      {
+       "n": "1",
+       "head": "FEDERAL + PROVINCIAL TAX WITHHELD TOGETHER",
+       "at": "L14",
+       "word": "together"
+      },
+      {
+       "n": "2",
+       "head": "TABLES OF THE PROVINCE WHERE YOU WORK",
+       "at": "L14",
+       "word": "work"
+      },
+      {
+       "n": "TD1",
+       "head": "FEDERAL TD1 \u00b7 SOMETIMES A PROVINCIAL ONE",
+       "at": "L14",
+       "word": "sometimes"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L15",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE SPLIT",
+       "size": 140,
+       "gold": true,
+       "at": "L15",
+       "word": "split"
+      }
+     ],
+     "kicker": "02"
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L16",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "ONE STARTING POINT",
+     "items": [
+      {
+       "n": "$",
+       "head": "TAXABLE INCOME",
+       "at": "L16",
+       "word": "taxable"
+      },
+      {
+       "n": "\u2212",
+       "head": "SALARY MINUS PART OF CPP (ENHANCED)",
+       "at": "L16",
+       "word": "minus"
+      },
+      {
+       "n": "\u00d72",
+       "head": "EACH GOVERNMENT: ITS OWN BRACKETS",
+       "at": "L17",
+       "word": "brackets"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L18",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L18",
+     "fxIn": "slideL",
+     "fxOut": "collapse",
+     "title": "SAME INCOME \u00b7 TWO RATE SCHEDULES",
+     "items": [
+      {
+       "n": "FED",
+       "head": "14% \u2192 20.5% ABOVE $58,523",
+       "at": "L18",
+       "word": "fourteen"
+      },
+      {
+       "n": "ON",
+       "head": "5.05% \u2192 9.15% ABOVE $53,891",
+       "at": "L19",
+       "word": "five"
+      },
+      {
+       "n": "CR",
+       "head": "EACH SIDE: OWN CREDITS AT ITS LOWEST RATE",
+       "at": "L20",
+       "word": "credits"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L21",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "PRIYA \u00b7 $75,000 \u00b7 ONTARIO \u00b7 INCOME TAX",
+     "sub": "2026 \u00b7 SINGLE",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "FEDERAL",
+       "value": 8259
+      },
+      {
+       "name": "ONTARIO",
+       "value": 4446
+      },
+      {
+       "name": "TOTAL INCOME TAX",
+       "value": 12705
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L21",
+       "word": "Federal"
+      },
+      {
+       "at": "L21",
+       "word": "Ontario"
+      },
+      {
+       "at": "L22",
+       "word": "thirds"
+      }
+     ],
+     "note": "\u2248 2/3 FEDERAL \u00b7 1/3 ONTARIO"
+    }
+   ]
+  },
+  {
+   "at": "L23",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L23",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "PER MONTH",
+       "size": 60,
+       "at": "L23",
+       "word": "month"
+      },
+      {
+       "anim": "decode",
+       "text": "$688 FEDERAL \u00b7 $370 ONTARIO",
+       "size": 96,
+       "gold": true,
+       "at": "L23",
+       "word": "six"
+      }
+     ],
+     "kicker": "PRIYA"
+    }
+   ]
+  },
+  {
+   "at": "L24",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L24",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "INSIDE THE ONTARIO PART",
+     "sub": "$75,000 \u00b7 2026",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "ONTARIO TAX",
+       "value": 3696
+      },
+      {
+       "name": "ONTARIO HEALTH PREMIUM",
+       "value": 750
+      },
+      {
+       "name": "ONTARIO TOTAL",
+       "value": 4446
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L24",
+       "word": "inside"
+      },
+      {
+       "at": "L24",
+       "word": "Premium"
+      },
+      {
+       "at": "L24",
+       "word": "four"
+      }
+     ],
+     "note": "CHARGED THROUGH THE RETURN \u00b7 NOT A SEPARATE BILL"
+    }
+   ]
+  },
+  {
+   "at": "L26",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L26",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE SECOND SURPRISE",
+       "size": 120,
+       "gold": true,
+       "at": "L26",
+       "word": "surprise"
+      }
+     ],
+     "kicker": "03"
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L27",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "SAME JOB \u00b7 SAME $75,000",
+       "size": 80,
+       "at": "L27",
+       "word": "Same"
+      },
+      {
+       "text": "YOUR PROVINCE ON DECEMBER 31 DECIDES",
+       "size": 56,
+       "at": "L28",
+       "word": "December",
+       "gold": true
+      }
+     ],
+     "kicker": "WHAT IF PRIYA MOVES?"
+    }
+   ]
+  },
+  {
+   "at": "L29",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L29",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "PROVINCIAL TAX \u00b7 $75,000",
+     "sub": "2026 \u00b7 SINGLE",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "ONTARIO",
+       "value": 4446
+      },
+      {
+       "name": "ALBERTA",
+       "value": 4010
+      },
+      {
+       "name": "BRITISH COLUMBIA",
+       "value": 3661
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L29"
+      },
+      {
+       "at": "L29",
+       "word": "Alberta"
+      },
+      {
+       "at": "L29",
+       "word": "British"
+      }
+     ],
+     "note": "THIS LINE MOVES"
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L30",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "FEDERAL TAX \u00b7 $75,000",
+     "sub": "2026 \u00b7 SINGLE",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "ONTARIO",
+       "value": 8259
+      },
+      {
+       "name": "ALBERTA",
+       "value": 8259
+      },
+      {
+       "name": "BRITISH COLUMBIA",
+       "value": 8259
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L30",
+       "word": "Ontario"
+      },
+      {
+       "at": "L30",
+       "word": "Alberta"
+      },
+      {
+       "at": "L30",
+       "word": "British"
+      }
+     ],
+     "note": "EXACTLY THE SAME"
+    }
+   ]
+  },
+  {
+   "at": "L31",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L31",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "THE ANSWER",
+     "items": [
+      {
+       "n": "=",
+       "head": "SAME FEDERAL BRACKETS + CREDITS \u00b7 OUTSIDE QUEBEC",
+       "at": "L31",
+       "word": "Same"
+      },
+      {
+       "n": "\u2194",
+       "head": "ONLY THE PROVINCIAL LINE MOVES",
+       "at": "L32",
+       "word": "provincial"
+      },
+      {
+       "n": "<$800",
+       "head": "GAP ON \u00b7 AB \u00b7 BC ON A \u2248$12,000 BILL",
+       "at": "L33",
+       "word": "gap"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L34",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L34",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "THE QUEBEC ABATEMENT",
+       "size": 80,
+       "at": "L34",
+       "word": "abatement",
+       "gold": true
+      },
+      {
+       "text": "\u221216.5% OF BASIC FEDERAL TAX",
+       "size": 64,
+       "at": "L34",
+       "word": "sixteen"
+      },
+      {
+       "text": "COMPENSATION FOR OPTING OUT OF FEDERAL PROGRAMS",
+       "size": 44,
+       "at": "L35",
+       "word": "compensation"
+      }
+     ],
+     "kicker": "QUEBEC"
+    }
+   ]
+  },
+  {
+   "at": "L36",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L36",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE SPLIT ISN'T FIXED",
+       "size": 120,
+       "gold": true,
+       "at": "L36",
+       "word": "fixed"
+      }
+     ],
+     "kicker": "04"
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L37",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "FEDERAL vs ONTARIO \u00b7 BY INCOME",
+     "items": [
+      {
+       "n": "$40K",
+       "head": "FED $2,691 \u00b7 ON $1,671 \u00b7 62% FEDERAL",
+       "at": "L37",
+       "word": "forty"
+      },
+      {
+       "n": "$150K",
+       "head": "FED $25,302 \u00b7 ON $14,608 \u00b7 63% FEDERAL",
+       "at": "L38",
+       "word": "one"
+      },
+      {
+       "n": "$250K",
+       "head": "FED $53,524 \u00b7 ON $34,161 \u00b7 61% FEDERAL",
+       "at": "L39",
+       "word": "two"
+      },
+      {
+       "n": "\u2191",
+       "head": "FEDERAL \u2248 60\u201365% \u00b7 ONTARIO'S SHARE CLIMBS AT THE TOP",
+       "at": "L40",
+       "word": "climbs"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L41",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L41",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "THE ONTARIO PART \u00b7 $150,000",
+     "sub": "2026 \u00b7 SINGLE",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "ONTARIO TAX",
+       "value": 11348
+      },
+      {
+       "name": "ONTARIO SURTAX",
+       "value": 2511
+      },
+      {
+       "name": "HEALTH PREMIUM",
+       "value": 750
+      },
+      {
+       "name": "ONTARIO TOTAL",
+       "value": 14608
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L41",
+       "word": "reason"
+      },
+      {
+       "at": "L41",
+       "word": "adds"
+      },
+      {
+       "at": "L41",
+       "word": "eleven"
+      },
+      {
+       "at": "L42",
+       "word": "bigger"
+      }
+     ],
+     "note": "SURTAX = EXTRA TAX ON THE ONTARIO TAX"
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L43",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT YOU CAN DO",
+       "size": 120,
+       "gold": true,
+       "at": "L43",
+       "word": "actually"
+      }
+     ],
+     "kicker": "05"
+    }
+   ]
+  },
+  {
+   "at": "L44",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L44",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "DEDUCTION vs CREDIT",
+     "items": [
+      {
+       "n": "\u2193\u2193",
+       "head": "A DEDUCTION LOWERS BOTH TAXES",
+       "at": "L44",
+       "word": "deduction"
+      },
+      {
+       "n": "RRSP",
+       "head": "$1,000 \u2192 FED \u2212$205 \u00b7 ON \u2212$91 \u2248 $296",
+       "at": "L45",
+       "word": "drops"
+      },
+      {
+       "n": "\u2193",
+       "head": "A CREDIT LOWERS ONLY ITS OWN SIDE",
+       "at": "L47",
+       "word": "Credits"
+      },
+      {
+       "n": "428",
+       "head": "CHECK THE PROVINCIAL FORM FOR CREDITS",
+       "at": "L48",
+       "word": "provincial"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L49",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 310,
+     "w": 1600,
+     "at": "L49",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "MOVED THIS YEAR?",
+       "size": 80,
+       "at": "L49",
+       "word": "move",
+       "gold": true
+      },
+      {
+       "text": "PAYROLL MAY USE YOUR OLD PROVINCE",
+       "size": 54,
+       "at": "L49",
+       "word": "payroll"
+      },
+      {
+       "text": "SETTLED WHEN YOU FILE",
+       "size": 54,
+       "at": "L49",
+       "word": "settled"
+      }
+     ],
+     "kicker": "DECEMBER 31 RULE"
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L50",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "YOUR CHECKLIST",
+     "items": [
+      {
+       "n": "1",
+       "head": "FIND NET FEDERAL TAX + PROVINCIAL TAX",
+       "at": "L51",
+       "word": "find"
+      },
+      {
+       "n": "2",
+       "head": "RIGHT PROVINCE ON PAYROLL \u00b7 AFTER A MOVE",
+       "at": "L52",
+       "word": "right"
+      },
+      {
+       "n": "3",
+       "head": "PROVINCIAL FORM: CHECK THE CREDITS",
+       "at": "L53",
+       "word": "check"
+      },
+      {
+       "n": "4",
+       "head": "QUEBEC: TWO RETURNS + ABATEMENT",
+       "at": "L54",
+       "word": "Quebec"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L55",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L55",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT DID WE LEARN?",
+       "size": 140,
+       "gold": true,
+       "at": "L55",
+       "word": "learn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L56",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L56",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "FEDERAL vs PROVINCIAL \u00b7 4 RULES",
+     "items": [
+      {
+       "n": "1",
+       "head": "TWO TAXES \u00b7 ONE RETURN \u00b7 CRA (EXCEPT QC)",
+       "at": "L56",
+       "word": "two"
+      },
+      {
+       "n": "2",
+       "head": "PRIYA: \u22482/3 FEDERAL \u00b7 \u22481/3 ONTARIO",
+       "at": "L57",
+       "word": "thirds"
+      },
+      {
+       "n": "3",
+       "head": "MOVE \u2192 ONLY THE PROVINCIAL PART CHANGES",
+       "at": "L58",
+       "word": "move"
+      },
+      {
+       "n": "4",
+       "head": "DEDUCTION CUTS BOTH \u00b7 CREDIT CUTS ITS SIDE",
+       "at": "L59",
+       "word": "deduction"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L60",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L60",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 100,
+       "gold": true,
+       "seq": [
+        {
+         "text": "FEDERAL vs PROVINCIAL",
+         "t": 0
+        },
+        {
+         "text": "CREDIT vs DEDUCTION",
+         "at": "L60",
+         "word": "credits"
+        }
+       ],
+       "at": "L60"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L60",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.05
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 0,
+     "y": 30,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -30,
+     "z": 0.25
+    }
+   ]
+  },
+  {
+   "at": "L26",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L29",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    },
+    {
+     "x": -30,
+     "y": 10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L36",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L50",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L55",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf13/plates/s1.jpg",
+    "depth": "lf/lf13/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf13/plates/s2.jpg",
+    "depth": "lf/lf13/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf13/plates/s3.jpg",
+    "depth": "lf/lf13/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf13/plates/s4.jpg",
+    "depth": "lf/lf13/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf13/plates/s5.jpg",
+    "depth": "lf/lf13/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf13/plates/s6.jpg",
+    "depth": "lf/lf13/plates/s6_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L8"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "federal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "province"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "brackets"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L10"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10",
+   "word": "collects"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L11",
+   "word": "itself"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L11",
+   "word": "separate"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L12",
+   "word": "agreements"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L13"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L14"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "together"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "work"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "sometimes"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L16"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "taxable"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "minus"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "brackets"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L18"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "fourteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "five"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L20",
+   "word": "credits"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L21"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L21",
+   "word": "Federal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L21",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L22",
+   "word": "thirds"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L23"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L24"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "inside"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "Premium"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "four"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L26"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L29"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "British"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L30"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L30",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L30",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L30",
+   "word": "British"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L31"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "Same"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "provincial"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "gap"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L34"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L36"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L37"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L37",
+   "word": "forty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L38",
+   "word": "one"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L39",
+   "word": "two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "climbs"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L41"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "reason"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "adds"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "eleven"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L42",
+   "word": "bigger"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L44"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L44",
+   "word": "deduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "drops"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L47",
+   "word": "Credits"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L48",
+   "word": "provincial"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L49"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L50"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L51",
+   "word": "find"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "right"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L53",
+   "word": "check"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L54",
+   "word": "Quebec"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L55"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L56"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L56",
+   "word": "two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L57",
+   "word": "thirds"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L58",
+   "word": "move"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L59",
+   "word": "deduction"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L60"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.2,
+   "at": "L2",
+   "word": "two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L5",
+   "word": "Calgary"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L5",
+   "word": "Vancouver"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L5",
+   "word": "single"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L21"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L26"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L29"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L36"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L43"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L50"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L55"
+  }
+ ],
+ "ticker": [
+  "$75,000 \u00b7 FEDERAL $8,259 \u00b7 ONTARIO $4,446",
+  "PROVINCIAL @ $75K: ON $4,446 \u00b7 AB $4,010 \u00b7 BC $3,661",
+  "FEDERAL @ $75K: $8,259 IN ALL THREE",
+  "CRA COLLECTS BOTH \u00b7 EXCEPT QUEBEC",
+  "2026 RATES \u00b7 EXAMPLE"
+ ],
+ "audio": "lf/lf13/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

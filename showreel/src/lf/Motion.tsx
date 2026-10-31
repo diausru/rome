@@ -534,4 +534,47 @@ const SoldHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook };
+// ---------- FedProvHook: frame-0 hook — one income-tax bar splits into FEDERAL + PROVINCIAL; province pill cycles, only the provincial block moves ----------
+// p.total · p.fed · p.provs[{code, amount}] · p.splitAt · p.provAt[] (one per provs[1..]) · p.lockAt · p.kicker · p.title · p.finishTitle · p.qAt · p.question · p.out · p.bg
+const FedProvHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const provs = p.provs as Pn[]; const fed = p.fed as number; const sp = p.splitAt ? prog(now, p.splitAt.t, 0.9, BACK) : 0;
+  let prov = provs[0].amount; let idx = 0;
+  provs.slice(1).forEach((pv, i) => { const t = p.provAt?.[i]?.t; if (t === undefined) return; const k = prog(now, t, 0.7, INOUT); prov += (pv.amount - prov) * k; if (k > 0.5) idx = i + 1; });
+  const lk = p.lockAt ? prog(now, p.lockAt.t, 0.6, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const W = 1400, X0 = 260, Y = 420, H = 170, scale = W / (fed + provs[0].amount); const gap = 90 * sp;
+  const fw = fed * scale - gap / 2, pw = prov * scale - gap / 2, px = X0 + fed * scale + gap / 2;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const goldBar = 'linear-gradient(180deg,#F1D38E,#C9A055)', blueBar = 'linear-gradient(180deg,#A9C6F0,#6F93C9)';
+  const mix = (a: string, b: string) => (sp > 0.5 ? b : a);
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.3 - 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.22 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.66})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 56, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{sp > 0.5 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      <div style={{ position: 'absolute', left: X0, top: Y - 150, width: W, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', fontFamily: COND, opacity: 1 - out }}>
+        <div><div style={{ fontSize: 26, letterSpacing: 6, color: C.dim }}>INCOME TAX · $75,000 SALARY</div>
+          <div style={{ fontSize: 92, fontWeight: 700, color: C.white, lineHeight: 1 }}>{fmt(fed + prov)}</div></div>
+        <div style={{ padding: '10px 30px', borderRadius: 12, border: `2px solid ${C.gold}`, fontSize: 46, fontWeight: 700, letterSpacing: 10, color: C.gold, transform: `rotateX(${(p.provAt ?? []).reduce((a: number, w: Pn) => a + (w?.t !== undefined ? Math.sin(prog(now, w.t, 0.7, INOUT) * Math.PI) * 80 : 0), 0)}deg)` }}>{provs[idx].code}</div>
+      </div>
+      <div style={{ position: 'absolute', left: X0, top: Y, width: fw, height: H, borderRadius: sp > 0.3 ? 18 : '18px 0 0 18px', background: mix(goldBar, blueBar), opacity: 1 - out, boxShadow: lk > 0.05 ? `0 0 ${50 * lk}px rgba(143,179,232,.7)` : '0 20px 50px rgba(0,0,0,.45)', transform: `translateX(${-out * 900}px)` }}>
+        {sp > 0.4 && <div style={{ position: 'absolute', left: 30, top: 26, fontFamily: COND, color: '#0D1626', opacity: cl((sp - 0.4) * 2) }}>
+          <div style={{ fontSize: 30, letterSpacing: 6, fontWeight: 600 }}>FEDERAL</div><div style={{ fontSize: 70, fontWeight: 700, lineHeight: 1.05 }}>{fmt(fed)}</div></div>}
+        {lk > 0.05 && <div style={{ position: 'absolute', right: 22, top: 22, padding: '6px 16px', borderRadius: 10, background: '#0D1626', fontFamily: COND, fontSize: 26, letterSpacing: 4, color: C.blue, transform: `scale(${0.6 + 0.4 * lk})`, opacity: lk }}>= SAME IN EVERY PROVINCE</div>}
+      </div>
+      <div style={{ position: 'absolute', left: px, top: Y, width: pw, height: H, borderRadius: sp > 0.3 ? 18 : '0 18px 18px 0', background: goldBar, opacity: 1 - out, boxShadow: '0 20px 50px rgba(0,0,0,.45)', transform: `translateX(${out * 900}px)` }}>
+        {sp > 0.4 && <div style={{ position: 'absolute', left: 26, top: 26, fontFamily: COND, color: '#1A1408', opacity: cl((sp - 0.4) * 2), whiteSpace: 'nowrap' }}>
+          <div style={{ fontSize: 30, letterSpacing: 6, fontWeight: 600 }}>{provs[idx].code}</div><div style={{ fontSize: 70, fontWeight: 700, lineHeight: 1.05 }}>{fmt(prov)}</div></div>}
+      </div>
+      {sp > 0.4 && <div style={{ position: 'absolute', left: X0, top: Y + H + 24, width: W, display: 'flex', fontFamily: COND, fontSize: 30, letterSpacing: 5, opacity: cl((sp - 0.4) * 2) * (1 - out) }}>
+        <div style={{ width: fw + gap, color: C.blue }}>GOES TO OTTAWA</div><div style={{ color: C.gold }}>GOES TO THE PROVINCE</div></div>}
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 880, textAlign: 'center', fontFamily: COND, fontSize: 50, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook };
