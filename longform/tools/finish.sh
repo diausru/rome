@@ -2,7 +2,7 @@
 # finish.sh <ep-dir> <name> <OUT.mp4>: render all chunks, splice audio, encode, QC — one command, one short report.
 set -uo pipefail; EP=$(realpath "$1"); N=$2; OUT="$EP/$3"; C=/home/user/rome/showreel/out/lf/chunks/$N
 cd /home/user/rome/showreel
-while r=$(CH=1500 bash ../longform/tools/next_chunk.sh "$EP" "$N" 2>&1 | tail -1); do [[ $r == ALL_DONE ]] && break; [[ $r == *rc=[1-9]* ]] && { echo "RENDER FAIL $r"; exit 1; }; done
+while r=$(CH=${CH:-1500} TO=${TO:-580} bash ../longform/tools/next_chunk.sh "$EP" "$N" 2>&1 | tail -1); do [[ $r == ALL_DONE ]] && break; [[ $r == *rc=[1-9]* ]] && { echo "RENDER FAIL $r"; exit 1; }; done
 cd "$C" && rm -f list.txt alist.txt a_*.wav
 for f in part0*.mp4; do n=$(ffprobe -v error -select_streams v -count_packets -show_entries stream=nb_read_packets -of csv=p=0 $f | tr -d ','); d=$(python3 -c "print($n/30)")
   ffmpeg -v error -y -i $f -vn -af "atrim=0:$d,apad=whole_dur=$d" -ar 48000 -ac 2 a_${f%.mp4}.wav; echo "file '$C/$f'" >> list.txt; echo "file '$C/a_${f%.mp4}.wav'" >> alist.txt; done

@@ -8,7 +8,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 | 1 | The Canadian Tax Brackets Explained With Real Numbers | LF-01 done 2026-10-11 |
 | 2 | The Best Tax Software in Canada — What Should You Actually Use in 2026? | LF-02 done, scheduled in Metricool |
 | 3 | Marginal Tax Rates Explained — Why a Raise Doesn't Tax Your Whole Salary | rendered 2026-10-17 (LF-10, `longform/lf10-marginal`) |
-| 4 | Federal vs Provincial Tax — Who Actually Takes Your Money? | queued |
+| 4 | Federal vs Provincial Tax — Who Actually Takes Your Money? | rendered LF-13 (2026-10-31, `longform/lf13-fedprov`) |
 | 5 | Tax Credits vs Tax Deductions — What's the Difference? | queued |
 | 6 | Why Your Tax Refund Doesn't Mean You Paid Less Tax | queued |
 | 7 | CPP, EI and Income Tax — What Actually Comes Off Your Paycheque? | queued |
@@ -117,6 +117,7 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 10. LF-10 → #3 Marginal Tax Rates Explained — proposed 2026-12-31 (New Year's Eve; check)
 11. LF-11 → #22 What If You Sell Your Home? — rendered 2026-10-24
 12. LF-12 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus? — rendered 2026-10-25
+13. LF-13 → #4 Federal vs Provincial Tax — Who Actually Takes Your Money? — rendered 2026-10-31 (proposed 2027-01-29)
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
 Not a stretched Short and not a re-cut of one: a new question, a new story, new examples and a new visual approach. Already covered by Shorts (do not repeat their angle, hook, examples or visuals):
