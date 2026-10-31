@@ -28,7 +28,7 @@
  },
  "sources": {
   "rates": "canada.ca CRA 'How much you can claim' – Donations and gifts (line 34900), 2025: federal lowest rate 14.5%, middle 29%, highest 33% (via canada.ca search 2026-10-31)",
-  "who": "canada.ca CRA line 34900 'Who can claim' / 'How to claim': eligible amount of gifts made by you or your spouse or common-law partner; Schedule 9 → line 34900",
+  "who": "canada.ca CRA line 34900 'How to claim' (updated Jul 6, 2026): 'Include the eligible amount of all donations and gifts either you or your spouse or common-law partner want to claim on your tax return'; 'Who can claim': 'You or your spouse or common-law partner made a gift of money or other property… to a qualified donee' (via Google search, Scrape Creators, 2026-10-31)",
   "limits": "canada.ca CRA 'How much you can claim': up to 75% of net income (line 23600); unused gifts carried forward for any of the next 5 years (10 for ecologically sensitive land); P113 Gifts and Income Tax 2025"
  },
  "unverified": "www.canada.ca was not fetchable in this session (network policy); facts taken from canada.ca search result excerpts only"
