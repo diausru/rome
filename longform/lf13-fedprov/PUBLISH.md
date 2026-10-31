@@ -1,5 +1,5 @@
 # LF-13 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** see bottom (filled after render).
+**QC (2026-10-31):** 547.2 s (9:07), −14.0 LUFS, no black frames, contact sheet checked (20 frames).
 **File:** `LF13-1080p.mp4` · 1920×1080 · 30 fps · ≈9:07 · VO Grady (60 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command). Proposed slot: Fri 2027-01-29 (10-day cadence).
 **Intro type:** FedProvHook (new). **Thumbnail:** made by the user.
