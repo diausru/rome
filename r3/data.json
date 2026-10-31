@@ -1,0 +1,35 @@
+{
+ "topic": "Donation tax credit: federal 14.5% on the first $200 of gifts per return (2025), 29% above $200; you may claim gifts made by you or your spouse/common-law partner, so pooling receipts on one return can pay more; non-refundable; carry forward up to 5 years",
+ "tax_year": 2025,
+ "example": {
+  "alex": 200,
+  "sam": 200,
+  "total": 400,
+  "tier": 200,
+  "low": 0.145,
+  "high": 0.29,
+  "credit_each": 29,
+  "split": 58,
+  "pooled": 87,
+  "gain": 29,
+  "note": "example (not a CRA rule): couple, each gave $200 to registered charities in 2025. Split: 2 × ($200 × 14.5%) = $58. Pooled on one return: $200 × 14.5% + $200 × 29% = $29 + $58 = $87. Difference $29. Federal only; provincial credits not included; the 33% rate on gifts above $200 for income in the top bracket not used; the claimant must owe enough tax (non-refundable)."
+ },
+ "derive": {},
+ "spoken": {
+  "total": "four hundred dollars",
+  "split": "fifty-eight dollars",
+  "pooled": "eighty-seven",
+  "tier": "two hundred dollars",
+  "low": "fourteen and a half percent",
+  "high": "twenty-nine",
+  "credit_each": "twenty-nine dollars each",
+  "gain": "twenty-nine more",
+  "carry": "five years"
+ },
+ "sources": {
+  "rates": "canada.ca CRA 'How much you can claim' – Donations and gifts (line 34900), 2025: federal lowest rate 14.5%, middle 29%, highest 33% (via canada.ca search 2026-10-31)",
+  "who": "canada.ca CRA line 34900 'Who can claim' / 'How to claim': eligible amount of gifts made by you or your spouse or common-law partner; Schedule 9 → line 34900",
+  "limits": "canada.ca CRA 'How much you can claim': up to 75% of net income (line 23600); unused gifts carried forward for any of the next 5 years (10 for ecologically sensitive land); P113 Gifts and Income Tax 2025"
+ },
+ "unverified": "www.canada.ca was not fetchable in this session (network policy); facts taken from canada.ca search result excerpts only"
+}

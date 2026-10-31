@@ -1,0 +1,238 @@
+{
+ "id": "r3",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "SAME $400.",
+  "l2": "$58 OR $87?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "stairs": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "years": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "c400",
+   "beat": "hook",
+   "word": "four",
+   "sfx": "tick"
+  },
+  {
+   "id": "c58",
+   "beat": "hook",
+   "word": "fifty-eight",
+   "sfx": "tick"
+  },
+  {
+   "id": "c87",
+   "beat": "hook",
+   "word": "eighty-seven.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "alex",
+   "beat": "c1",
+   "word": "Alex",
+   "sfx": "tick"
+  },
+  {
+   "id": "sam",
+   "beat": "c1",
+   "word": "Sam",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "low",
+   "beat": "c2",
+   "word": "fourteen",
+   "sfx": "tick"
+  },
+  {
+   "id": "high",
+   "beat": "c2",
+   "word": "twenty-nine.",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "each",
+   "beat": "c3",
+   "word": "Twenty-nine",
+   "sfx": "tick"
+  },
+  {
+   "id": "split",
+   "beat": "c3",
+   "word": "Fifty-eight",
+   "sfx": "chime"
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "jump",
+   "beat": "c4",
+   "word": "jumps",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "more",
+   "beat": "c4",
+   "word": "Twenty-nine",
+   "n": 2,
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "five",
+   "beat": "reveal",
+   "word": "five",
+   "sfx": "tick"
+  },
+  {
+   "id": "stack",
+   "beat": "reveal",
+   "word": "stack.",
+   "sfx": "chime"
+  },
+  {
+   "id": "owed",
+   "beat": "reveal",
+   "word": "owed.",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "pool",
+   "beat": "action",
+   "word": "pool",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "same",
+   "offset": -0.1
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "pension2"
+}

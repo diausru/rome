@@ -1,0 +1,46 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.0,
+ "beats": [
+  [
+   "hook",
+   "Same four hundred dollars of donations. Split across two returns, you get fifty-eight dollars back. Put them on one: eighty-seven.",
+   0.35
+  ],
+  [
+   "c1",
+   "Alex and Sam each gave two hundred dollars to charity in twenty twenty-five. Each claimed their own receipt.",
+   0.3
+  ],
+  [
+   "c2",
+   "The federal rule: the first two hundred dollars on a return gets fourteen and a half percent. Above that: twenty-nine.",
+   0.3
+  ],
+  [
+   "c3",
+   "Split, neither return gets past the first two hundred. Twenty-nine dollars each. Fifty-eight total.",
+   0.3
+  ],
+  [
+   "c4",
+   "Pooled on one return, the second two hundred jumps to twenty-nine percent. Twenty-nine more, same gifts.",
+   0.4
+  ],
+  [
+   "reveal",
+   "The twist: you don't have to claim this year. Receipts can wait up to five years and stack. But the credit only cuts tax owed.",
+   0.3
+  ],
+  [
+   "action",
+   "So pool them on the spouse who owes tax, before you file.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: moving for work or school, and the forty kilometre rule. Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}
