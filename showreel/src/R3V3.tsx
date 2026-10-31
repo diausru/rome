@@ -21,7 +21,7 @@ export const R3DUR = Math.ceil((TL.total + REEL.hold_after_vo) * R3FPS);
 const Q = Object.fromEntries(Object.entries(CUE).map(([k, v]) => [k, Math.round((v as number) * R3FPS)])) as Record<string, number>;
 const X = DATA.example;
 const GREEN = T.green;
-const PW = 2294, PH = 4096; // TODO: confirm against the downloaded 4K plates
+const PW = 2294, PH = 4096;
 const CUTS = [B.c2.s, B.reveal.s];
 const L = Object.fromEntries(Object.entries(REEL.layout).map(([k, v]) => [k, { x: v.box[0], y: v.box[1], w: v.box[2], h: v.box[3] }])) as Record<string, { x: number; y: number; w: number; h: number }>;
 const K1: Focus[] = [{ f: 0, u: 0.5, v: 0.3, k: 1.14 }, { f: B.c1.s, u: 0.45, v: 0.28, k: 1.22 }];
@@ -71,7 +71,7 @@ const Hook = ({ f }: { f: number }) => {
 const Stairs = ({ f }: { f: number }) => {
   const a = B.c1.s + 2, b = B.reveal.s;
   if (f < a - 1 || f > b + 14) return null;
-  const y = L.stairs.y, base = y + 470, SW = 170, hLow = 140, hHigh = 280;
+  const y = L.stairs.y, base = y + 470, SW = 200, hLow = 170, hHigh = 330;
   const pool = outExpo((f - Q.jump) / 20), pooled = f >= B.c4.s;
   const steps = (x: number, who: string, filledLow: boolean, filledHigh: number, credit: number, dim: boolean) => (
     <div style={{ position: 'absolute', left: 0, top: 0, opacity: dim ? 0.3 : 1 }}>
@@ -96,11 +96,11 @@ const Stairs = ({ f }: { f: number }) => {
       <div style={{ position: 'absolute', left: 90, top: y + 34, fontFamily: T.font, fontSize: 22, fontWeight: 800, color: T.soft, opacity: ease(f, Q.low - 2, Q.low + 8) }}>
         first {money(X.tier)} × 14.5% = {money(X.credit_each)} · <span style={{ opacity: ease(f, Q.high - 2, Q.high + 8) }}>next {money(X.tier)} × 29% = {money(X.tier * X.high)}</span>
       </div>
-      {f >= Q.alex && steps(110, 'ALEX', lowOn, alexHigh, lowOn ? credA : 0, false)}
-      {f >= Q.sam && steps(560, 'SAM', lowOn && !(pooled && pool > 0.5), 0, lowOn ? (pooled && pool > 0.6 ? 0 : X.credit_each) : 0, pooled && pool > 0.6)}
+      {f >= Q.alex && steps(100, 'ALEX', lowOn, alexHigh, lowOn ? credA : 0, false)}
+      {f >= Q.sam && steps(540, 'SAM', lowOn && !(pooled && pool > 0.5), 0, lowOn ? (pooled && pool > 0.6 ? 0 : X.credit_each) : 0, pooled && pool > 0.6)}
       {f >= Q.split - 2 && f < B.c4.s && <div style={{ position: 'absolute', left: 90, top: y + 108, ...label(T.white), fontSize: 24, opacity: ease(f, Q.split - 2, Q.split + 8) }}>SPLIT TOTAL: {money(X.split)}</div>}
       {pooled && <div style={{ position: 'absolute', left: 90, top: y + 108, ...label(T.gold), fontSize: 24, opacity: ease(f, Q.jump, Q.jump + 10) }}>POOLED TOTAL: {money(X.pooled)}</div>}
-      {f >= Q.more && <Stamp f={f} at={Q.more} text={`+${money(X.gain)} · SAME GIFTS`} x={500} y={y + 140} size={30} color={T.red} rotate={-5} />}
+      {f >= Q.more && <Stamp f={f} at={Q.more} text={`+${money(X.gain)} · SAME GIFTS`} x={560} y={y + 170} size={30} color={T.red} rotate={-5} />}
     </div>
   );
 };
@@ -167,9 +167,9 @@ export const R3V3 = () => {
   return (
     <AbsoluteFill style={{ background: T.navy, fontFamily: T.font, overflow: 'hidden' }}>
       <SceneCuts f={f} cuts={CUTS} scene={(i) => i === 0 ? (
-        <PhotoPlate f={f} src="plates/r3-s1-4k.jpg" iw={PW} ih={PH} keys={K1} glide={40} blur={0.8 + 4 * (1 - ease(f, 0, 20))} snow={[{ u0: 0.5, v0: 0.0, u1: 1.0, v1: 0.3 }]} />
+        <PhotoPlate f={f} src="plates/r3-s1-4k.jpg" iw={PW} ih={PH} keys={K1} glide={40} blur={0.8 + 4 * (1 - ease(f, 0, 20))} snow={[{ u0: 0.45, v0: 0.12, u1: 0.95, v1: 0.45 }]} />
       ) : i === 1 ? (
-        <PhotoPlate f={f} src="plates/r3-s2-4k.jpg" iw={PW} ih={PH} keys={K2} glide={50} blur={0.8} />
+        <PhotoPlate f={f} src="plates/r3-s2-4k.jpg" iw={PW} ih={PH} keys={K2} glide={50} blur={0.8} snow={[{ u0: 0.6, v0: 0.03, u1: 1.0, v1: 0.4 }]} />
       ) : (
         <PhotoPlate f={f} src="plates/r3-s3-4k.jpg" iw={PW} ih={PH} keys={K3} glide={40} blur={0.8} steam={{ u: 0.45, v: 0.72, w: 0.03 }} />
       )} />

@@ -12,7 +12,8 @@
   "split": 58,
   "pooled": 87,
   "gain": 29,
-  "note": "example (not a CRA rule): couple, each gave $200 to registered charities in 2025. Split: 2 × ($200 × 14.5%) = $58. Pooled on one return: $200 × 14.5% + $200 × 29% = $29 + $58 = $87. Difference $29. Federal only; provincial credits not included; the 33% rate on gifts above $200 for income in the top bracket not used; the claimant must owe enough tax (non-refundable)."
+  "note": "example (not a CRA rule): couple, each gave $200 to registered charities in 2025. Split: 2 × ($200 × 14.5%) = $58. Pooled on one return: $200 × 14.5% + $200 × 29% = $29 + $58 = $87. Difference $29. Federal only; provincial credits not included; the 33% rate on gifts above $200 for income in the top bracket not used; the claimant must owe enough tax (non-refundable).",
+  "carry_years": 5
  },
  "derive": {},
  "spoken": {
@@ -20,16 +21,18 @@
   "split": "fifty-eight dollars",
   "pooled": "eighty-seven",
   "tier": "two hundred dollars",
-  "low": "fourteen and a half percent",
   "high": "twenty-nine",
-  "credit_each": "twenty-nine dollars each",
-  "gain": "twenty-nine more",
-  "carry": "five years"
+  "credit_each": "twenty-nine dollars",
+  "gain": "twenty-nine",
+  "carry_years": "five years"
  },
  "sources": {
   "rates": "canada.ca CRA 'How much you can claim' – Donations and gifts (line 34900), 2025: federal lowest rate 14.5%, middle 29%, highest 33% (via canada.ca search 2026-10-31)",
   "who": "canada.ca CRA line 34900 'How to claim' (updated Jul 6, 2026): 'Include the eligible amount of all donations and gifts either you or your spouse or common-law partner want to claim on your tax return'; 'Who can claim': 'You or your spouse or common-law partner made a gift of money or other property… to a qualified donee' (via Google search, Scrape Creators, 2026-10-31)",
   "limits": "canada.ca CRA 'How much you can claim': up to 75% of net income (line 23600); unused gifts carried forward for any of the next 5 years (10 for ecologically sensitive land); P113 Gifts and Income Tax 2025"
  },
- "unverified": "www.canada.ca was not fetchable in this session (network policy); facts taken from canada.ca search result excerpts only"
+ "unverified": "www.canada.ca was not fetchable in this session (network policy); facts taken from canada.ca search result excerpts only",
+ "spoken_manual": {
+  "low": "fourteen and a half percent = 14.5% (checker reads rates as 'point'; checked by hand)"
+ }
 }
