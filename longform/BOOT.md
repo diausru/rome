@@ -7,7 +7,7 @@ Template episode: `longform/lf12-bonus/` (copy data.py/lines.py/gen_episode.py, 
 - Different from Shorts and previous LF; new intro component every episode (used: collage, stubs, race, stacks, gauges, sold, bonus, fedprov) in `showreel/src/lf/Motion.tsx`, register in PANELS_MOTION.
 - Script ~1,100–1,300 words (8–10 min), numbers as words, "C R A / C P P / E I / R R S P"; hook with open loop; mid re-hook ~60%; last line = bridge to next queue topic + "Subscribe, so you don't miss it."
 - No AI video; plates = Higgsfield `gpt_image_2_5` 16:9, prompt ends "No text, no numbers, no letters, no logos."; check once (contact sheet); no 4K upscale (local resize).
-- vidIQ ≤ 5–15 credits (1 keyword research CA, ≤2 title scores); NexLev 1 `youtube_search`.
+- vidIQ ≤ 5–15 credits (1 keyword research CA, ≤2 title scores); NexLev 1 `youtube_search`; Scrape Creators (user, 2026-10-31): use its credits for research too (1–2 calls, balance before/after).
 - Economy: no polling/monitors; one stills sheet before render, one contact sheet after; short outputs; one commit per milestone; report in Russian, ≤10 lines.
 - Never: Metricool without command; `mv` to /dev/null; `pkill -f` matching own shell.
 

@@ -1,0 +1,35 @@
+{
+ "topic": "Donation tax credit (federal, 2025): 14.5% on the first $200 of gifts, 29% above $200 (33% part for taxable income above $253,414); you or your spouse/common-law partner may claim gifts; unused amounts carry forward up to 5 years",
+ "tax_year": 2025,
+ "example": {
+  "each": 200,
+  "total": 400,
+  "low": 0.145,
+  "high": 0.29,
+  "tier": 200,
+  "sep_each": 29,
+  "sep_total": 58,
+  "comb": 87,
+  "gain": 29,
+  "gain_pct": 50,
+  "carry_years": 5,
+  "note": "example (not a CRA rule): Alex and Sam each give $200 to registered charities in 2025; separately 200 x 14.5% = $29 each ($58); on one return 200 x 14.5% + 200 x 29% = $29 + $58 = $87; federal only, provincial credits add more and differ; assumes enough tax to absorb the credit and taxable income below $253,414. Carry-forward visual: two small gifts of $150 in different years claimed together (illustration).",
+  "carry_small": 150
+ },
+ "spoken": {
+  "total": "four hundred dollars",
+  "sep_total": "fifty-eight dollars",
+  "comb": "eighty-seven",
+  "each": "two hundred dollars",
+  "low": "fourteen point five percent",
+  "high": "twenty-nine",
+  "sep_each": "twenty-nine dollars",
+  "carry_years": "five years"
+ },
+ "sources": {
+  "rates": "canada.ca Report on Federal Tax Expenditures 2026 (Finance Canada): 2025 charitable donation credit 14.5% on the first $200, 29% above, 33% above $253,414 of taxable income; CRA 5000-G 2025 (lowest rate 14.5% for 2025) (via search 2026-10-31)",
+  "who": "canada.ca line 34900 'Who can claim': you or your spouse or common-law partner can claim eligible gifts (official receipts)",
+  "carry": "canada.ca line 34900 'How much you can claim': unused donations can be carried forward up to 5 years; carried-forward amounts are claimed first; generally limited to 75% of net income"
+ },
+ "derive": {}
+}

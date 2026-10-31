@@ -21,7 +21,7 @@ Full Shorts rules: `channel/RULES-SHORTS.md` (read only if a rule is unclear). L
 - VO: Higgsfield `text2speech_v2`, variant `elevenlabs`, preset `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678` (Grady); ≈135 words, 45–70 s; numbers as words; last line bridges to the next queue topic.
 - Photos: `gpt_image_2_5` 9:16 "no text, no numbers, no letters, no logos" → `upscale_image` 4k.
 - Pipeline: `tools/short.py <p> vo | stills | final` (template = last `showreel/src/<P>V3.tsx`).
-- Budget: vidIQ ≤25 credits/video (balance before/after); 1 NexLev search; 1 batch VO, 1 batch photos, 1 contact sheet, 1 fix pass, 1 render; no Whisper unless QC facts fail.
+- Budget: vidIQ ≤25 credits/video (balance before/after); 1 NexLev search; Scrape Creators (user, 2026-10-31): use its credits for research too (1–2 calls: YouTube/TikTok/IG search, transcripts, credit balance before/after); 1 batch VO, 1 batch photos, 1 contact sheet, 1 fix pass, 1 render; no Whisper unless QC facts fail.
 - Metricool only on `/schedule`; covers via `videoCoverMilliseconds` + read-back; YouTube cover manual. Captions cross-promo other networks without "@".
 - Never print API keys. No subliminal tricks.
 - Git: branch `claude/kling-ai-skill-install-goznyv`, commit + push per video, no PR. `*/audio/music.wav` ignored.

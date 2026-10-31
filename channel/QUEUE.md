@@ -3,8 +3,8 @@ Details per topic: channel/TOPICS-2.md (by #). Check overlap: `grep -ril "<keywo
 
 | # | Topic | Status | Bridge from |
 |---|---|---|---|
-| R3 | Donations: combining receipts on one return pays more (2-tier credit above $200) | next | M30 |
-| R4 | Moving for work/school: which expenses count (40 km rule) | todo | |
+| R3 | Donations: combining receipts on one return pays more (2-tier credit above $200) | done 2026-10-31 | M30 |
+| R4 | Moving for work/school: which expenses count (40 km rule) | next | R3 |
 | 29 | First-time home buyer: FHSA / HBP / credit, what changed | todo | |
 | 10 | Wife got a bigger refund: who claims shared credits | todo | |
 | 3 | CCB: why one parent receives it | todo | |

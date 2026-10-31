@@ -1,0 +1,53 @@
+{
+ "total": 68.022,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Same four hundred dollars to charity. Claim it one way, and you get fifty-eight dollars back. Claim it another way: eighty-seven.",
+   "start": 0.25,
+   "end": 9.934
+  },
+  {
+   "id": "c1",
+   "text": "Alex and Sam each gave two hundred dollars to registered charities in twenty twenty-five.",
+   "start": 10.284,
+   "end": 15.481
+  },
+  {
+   "id": "c2",
+   "text": "The federal donation credit has two tiers. The first two hundred dollars gets fourteen point five percent. Every dollar above that gets twenty-nine.",
+   "start": 15.781,
+   "end": 25.246
+  },
+  {
+   "id": "c3",
+   "text": "Claimed separately, each of them stays in the low tier. Twenty-nine dollars each. Fifty-eight in total.",
+   "start": 25.546,
+   "end": 32.489
+  },
+  {
+   "id": "c4",
+   "text": "But a couple can put both receipts on one return. Four hundred dollars: the first two hundred at the low rate, the rest at twenty-nine percent. Eighty-seven dollars.",
+   "start": 32.789,
+   "end": 45.68
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: a small receipt doesn't have to be used this year. You can carry donations forward up to five years, and claim them together once you pass two hundred.",
+   "start": 46.08,
+   "end": 58.276
+  },
+  {
+   "id": "action",
+   "text": "So pool your receipts before you file.",
+   "start": 58.576,
+   "end": 60.938
+  },
+  {
+   "id": "cta",
+   "text": "Next: moving for work or school, and which costs count. Follow so you don't miss it.",
+   "start": 61.238,
+   "end": 68.022
+  }
+ ]
+}

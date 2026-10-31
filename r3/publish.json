@@ -1,0 +1,93 @@
+{
+ "video": {
+  "title": "R3 · donations: two receipts, one return",
+  "mp4": "showreel/out/r3/r3-final.mp4 (share copy: r3-share.mp4)",
+  "duration": "1:08 (68.54 s), 1080×1920, 24 fps",
+  "note": "scene 1 plate: local Lanczos resize to 2294×4096 (Higgsfield 4K upscale stalled); scenes 2–3: Higgsfield 4K upscale"
+ },
+ "cover": {
+  "frame": "'ONE RETURN': the combined $400 column climbing into the 29% tier, $87 in green, red stamp '+$29 · +50%', the couple at the food drive",
+  "why": "the comparison and the payoff in one frame",
+  "t": 45.2,
+  "ms": 45200,
+  "file": "r3/cover.jpg (extracted at 45.2 s, checked; the 45.94 s cue fell inside the scene-transition blur)"
+ },
+ "sources": [
+  {
+   "source": "canada.ca, Finance Canada Report on Federal Tax Expenditures 2026",
+   "year": "2025",
+   "supports": "donation credit 14.5% on the first $200, 29% above (33% above $253,414 taxable income)"
+  },
+  {
+   "source": "canada.ca CRA line 34900 – Who can claim",
+   "year": "2025",
+   "supports": "you or your spouse/common-law partner can claim eligible gifts"
+  },
+  {
+   "source": "canada.ca CRA line 34900 – How much you can claim",
+   "year": "2025",
+   "supports": "carry forward unused donations up to 5 years; generally up to 75% of net income"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "Donation Tax Credit Canada: Combine Your Receipts ($58 vs $87)",
+   "Why Couples Should Claim Donations on ONE Return (Canada 2025)",
+   "The $200 Donation Rule Most Canadians Miss"
+  ],
+  "description": "Same $400 to charity: $58 back one way, $87 the other.\n\nThe rule (federal, 2025): the donation credit is 14.5% on the first $200 of gifts and 29% on every dollar above $200. You or your spouse or common-law partner can claim the couple's eligible gifts.\n• Separately: Alex $200 → $29, Sam $200 → $29 = $58\n• One return: $400 → $29 + $58 = $87 (+$29)\n\nThe twist: unused donations can be carried forward up to 5 years, so small gifts can be claimed together once they pass $200.\n\nPool your receipts before you file (Schedule 9, line 34900).\n\nNext: moving for work or school, and which costs count.\n\nSources: canada.ca (CRA) line 34900; Finance Canada Report on Federal Tax Expenditures (2025 rates). Federal only; provinces add their own credit. Example couple. General information, not advice.\n\n#Donations #CanadaTax #CRA",
+  "hashtags": "#Donations #CanadaTax #CRA #TaxTips",
+  "keywords": "donation tax credit canada, charitable donations spouse combine, line 34900, $200 donation rule, schedule 9, carry forward donations canada",
+  "pinned": "Quick check: one return with $600 of gifts — how much federal credit? (General info, not advice.)",
+  "cta": "Follow for the next one: moving costs."
+ },
+ "tt": {
+  "caption": "Same $400 to charity: $58 or $87 back 🎁 The $200 rule decides.",
+  "keywords": "donation tax credit canada · combine receipts · line 34900",
+  "hashtags": "#taxtips #canadiantaxes #cra #donations #personalfinancecanada",
+  "pinned": "Federal example, 2025 rates. Provinces add their own credit. (General info, not advice.)",
+  "cta": "Follow for the next one: moving costs."
+ },
+ "ig": {
+  "caption": "Two receipts. One return. 🎁🇨🇦\n\nDonation credit (federal, 2025): 14.5% on the first $200, 29% above.\n• Separately: $29 + $29 = $58\n• On one return: $87\n✅ Either spouse can claim the couple's gifts\n✅ Carry unused gifts forward up to 5 years\n\nSend this to your partner before tax season.\n\nSource: CRA (canada.ca). Federal, example. General info, not advice.",
+  "keywords": "donation tax credit, combine receipts, $200 rule",
+  "hashtags": "#donations #canadiantaxes #taxtips #personalfinancecanada #canadatax #givingtuesday",
+  "pinned": "Save this for tax season 📌",
+  "cta": "Send this to your partner before tax season."
+ },
+ "eng": {
+  "question": "Credit on $600 on one return? ($29 + $116 = $145)",
+  "save": "The $200 / 29% rule.",
+  "share": "Couples who give to charity.",
+  "follow": "Canadian tax rules with real numbers."
+ },
+ "next": [
+  {
+   "topic": "R4 Moving for work or school: which expenses count (40 km rule)",
+   "why": "Movers often miss deductible costs or claim the wrong ones",
+   "intent": "moving expenses tax deduction canada",
+   "hook": "You moved for a new job. Which receipts count?",
+   "angle": "the 40 km rule and what qualifies",
+   "payoff": "a short list of eligible costs"
+  },
+  {
+   "topic": "29 First-time home buyer: FHSA / HBP / credit",
+   "why": "Several programs changed 2024–2025",
+   "intent": "first time home buyer canada tax",
+   "hook": "Three programs, one first home",
+   "angle": "which one fits when",
+   "payoff": "what each is worth"
+  }
+ ],
+ "research": "vidIQ 556 credits before; keyword 'donation tax credit canada' (CA) <750/mo, competition 8 (related: 'canadian tax tips' ≈3.8K/mo). NexLev shorts search CA: nothing on combining spouses' receipts; top hits 381–2.8K views. Scrape Creators (7,070 credits before, 1 used): YouTube shorts 'donation tax credit canada' top 2.6K/1.5K views, none shows the two-tier math on one return.",
+ "retention": "Frame 0 'SAME $400 GIVEN. $58 OR $87?'; two $200 receipts ($29 each) merge into one $400 receipt ($87) by 9 s; tiers appear 20–25 s; separate columns 29–32 s; combined column + '+$29 · +50%' stamp ≈44 s (re-hook, ≈65 %); carry-forward chips 46–58 s; check card + next pill.",
+ "seo": {
+  "primary": "donation tax credit canada",
+  "secondary": "canadian tax tips; charitable donations spouse",
+  "intent": "Couples who give to charity and file separately.",
+  "audience": "Couples 30–65.",
+  "angle": "same gifts, one return vs two, the $200 tier.",
+  "questions": "Can my spouse claim my donations? Why is the first $200 worth less?"
+ },
+ "series": "Card series, TOPICS-2 R3, bridged from M30. Topic type: evergreen (year-end giving season). Playlist: 'Benefits & credits'."
+}

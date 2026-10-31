@@ -1,0 +1,225 @@
+{
+ "id": "r3",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "SAME $400 GIVEN.",
+  "l2": "$58 OR $87?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "tiers": {
+   "box": [
+    80,
+    640,
+    880,
+    640
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "carry": {
+   "box": [
+    80,
+    660,
+    880,
+    560
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "c58",
+   "beat": "hook",
+   "word": "fifty-eight",
+   "sfx": "tick"
+  },
+  {
+   "id": "c87",
+   "beat": "hook",
+   "word": "eighty-seven.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "gave",
+   "beat": "c1",
+   "word": "two",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "low",
+   "beat": "c2",
+   "word": "fourteen",
+   "sfx": "tick"
+  },
+  {
+   "id": "high",
+   "beat": "c2",
+   "word": "twenty-nine.",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "sep",
+   "beat": "c3",
+   "word": "Twenty-nine",
+   "sfx": "tick"
+  },
+  {
+   "id": "sept",
+   "beat": "c3",
+   "word": "Fifty-eight",
+   "sfx": "chime"
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "one",
+   "beat": "c4",
+   "word": "one",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "rest",
+   "beat": "c4",
+   "word": "twenty-nine",
+   "sfx": "tick"
+  },
+  {
+   "id": "comb",
+   "beat": "c4",
+   "word": "Eighty-seven",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "carry",
+   "beat": "reveal",
+   "word": "five",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "pass",
+   "beat": "reveal",
+   "word": "pass",
+   "sfx": "tick"
+  },
+  {
+   "id": "pool",
+   "beat": "action",
+   "word": "pool",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "Eighty-seven",
+   "offset": 0.86
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "pension2"
+}
