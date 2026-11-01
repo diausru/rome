@@ -33,7 +33,7 @@ const CAPS: Cap[] = [
   { at: B.c3.s, l1: 'SPLIT', l2: 'two returns, two low steps', until: B.c4.s - 2 },
   { at: B.c4.s, l1: 'POOLED', l2: 'one return claims both receipts', until: B.reveal.s - 2 },
   { at: B.reveal.s, l1: 'THE TWIST', l2: 'claim now or carry forward', until: B.action.s - 2 },
-]
+];
 const glass = { background: 'linear-gradient(160deg, rgba(10,16,28,.86), rgba(10,16,28,.62))', border: `1px solid ${T.glassEdge}` };
 const label = (c: string) => ({ fontFamily: T.font, fontSize: 18, fontWeight: 900, letterSpacing: 4, color: c });
 

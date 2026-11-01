@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  ["hook", "Same move, same truck. Thirty-four kilometres closer to work: zero deduction. Forty-three closer: the whole move counts.", 0.35],
+  ["c1", "Riley took a new job in twenty twenty-five. The old home was fifty-two kilometres from it.", 0.3],
+  ["c2", "The rule: your new home must be at least forty kilometres closer to the new work, by the shortest public route.", 0.3],
+  ["c3", "An apartment eighteen kilometres away is only thirty-four closer. Nothing to claim.", 0.3],
+  ["c4", "One nine kilometres away is forty-three closer. Now the forty-two hundred dollar move counts: truck, travel, up to fifteen days of temporary living.", 0.4],
+  ["reveal", "The twist: it only comes off income earned at the new job. Riley started in December and earned twenty-five hundred. The other seventeen hundred carries forward.", 0.3],
+  ["action", "So measure the route before you sign the lease, and keep every receipt.", 0.3],
+  ["cta", "Next: first-time home buyers, and what changed. Follow so you don't miss it.", 0.0]
+ ]
+}

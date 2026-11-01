@@ -1,0 +1,53 @@
+{
+ "total": 68.174,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Same move, same truck. Thirty-four kilometres closer to work: zero deduction. Forty-three closer: the whole move counts.",
+   "start": 0.25,
+   "end": 10.334
+  },
+  {
+   "id": "c1",
+   "text": "Riley took a new job in twenty twenty-five. The old home was fifty-two kilometres from it.",
+   "start": 10.684,
+   "end": 16.907
+  },
+  {
+   "id": "c2",
+   "text": "The rule: your new home must be at least forty kilometres closer to the new work, by the shortest public route.",
+   "start": 17.207,
+   "end": 24.942
+  },
+  {
+   "id": "c3",
+   "text": "An apartment eighteen kilometres away is only thirty-four closer. Nothing to claim.",
+   "start": 25.242,
+   "end": 31.968
+  },
+  {
+   "id": "c4",
+   "text": "One nine kilometres away is forty-three closer. Now the forty-two hundred dollar move counts: truck, travel, up to fifteen days of temporary living.",
+   "start": 32.268,
+   "end": 44.649
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: it only comes off income earned at the new job. Riley started in December and earned twenty-five hundred. The other seventeen hundred carries forward.",
+   "start": 45.049,
+   "end": 56.722
+  },
+  {
+   "id": "action",
+   "text": "So measure the route before you sign the lease, and keep every receipt.",
+   "start": 57.022,
+   "end": 62.34
+  },
+  {
+   "id": "cta",
+   "text": "Next: first-time home buyers, and what changed. Follow so you don't miss it.",
+   "start": 62.64,
+   "end": 68.174
+  }
+ ]
+}
