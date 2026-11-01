@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.1,
+ "beats": [
+  ["hook", "Eighty thousand dollars of income. Federal tax: zero. Legally. Here's how it works.", 0.35],
+  ["c1", "Dana has no salary. Her only income in twenty twenty-six is eighty thousand dollars of eligible dividends from Canadian companies.", 0.3],
+  ["c2", "First, the dividend is grossed up by thirty-eight percent. On paper, her income becomes a hundred and ten thousand, four hundred.", 0.3],
+  ["c3", "Federal tax on that, after her basic personal amount: about sixteen thousand, five hundred.", 0.3],
+  ["c4", "Then the dividend tax credit: fifteen percent of the grossed-up amount. About sixteen thousand, six hundred. It wipes out the whole bill. Zero.", 0.4],
+  ["reveal", "The twist: the same eighty thousand as a salary costs about nine thousand, two hundred in federal tax. The credit exists because the company already paid tax on its profits. And provinces add their own rules.", 0.3],
+  ["action", "So check what kind of income you earn. It changes the tax.", 0.3],
+  ["cta", "Next: O A S, and how to keep more of it. Follow so you don't miss it.", 0.0]
+ ]
+}

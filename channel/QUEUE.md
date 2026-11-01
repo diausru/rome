@@ -1,10 +1,14 @@
 # Shorts queue (card series). Take the first `next`/`todo`; after delivery mark it `done <date>` and set the next one to `next`.
-Details per topic: channel/TOPICS-2.md (by #). Check overlap: `grep -ril "<keyword>" */PUBLISH.md` before starting.
+Details per topic: channel/TOPICS-2.md (by #); N1–N4: channel/TOPICS-3.md (user briefs 2026-11-01, made first). Check overlap: `grep -ril "<keyword>" */PUBLISH.md` before starting.
 
 | # | Topic | Status | Bridge from |
 |---|---|---|---|
 | R3 | Donations: combining receipts on one return pays more (2-tier credit above $200) | done 2026-10-31 | M30 |
-| R4 | Moving for work/school: which expenses count (40 km rule) | next | R3 |
+| N1 | Invest your way to $0 tax (legally): $80K of eligible dividends, $0 federal tax 2026 (user topic 1, Canadian adaptation) | done 2026-11-01 | R3 |
+| N2 | OAS: keep more of it in 2026 (clawback threshold, TFSA withdrawals, deferral to 70) (user topic 2) `[VERIFY]` | next | N1 |
+| N3 | The retirement tax window: low-income years before CPP/OAS/RRIF (RRSP drawdown) (user topic 3) `[VERIFY]` | todo | N2 |
+| N4 | CCB 2026: how RRSP/deductions and filing raise the benefit (user topic 4) `[VERIFY]` | todo | N3 |
+| R4 | Moving for work/school: which expenses count (40 km rule) | todo | N4 |
 | 29 | First-time home buyer: FHSA / HBP / credit, what changed | todo | |
 | 10 | Wife got a bigger refund: who claims shared credits | todo | |
 | 3 | CCB: why one parent receives it | todo | |

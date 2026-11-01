@@ -1,0 +1,92 @@
+{
+ "video": {
+  "title": "N1 · $80,000 of income, $0 federal tax (eligible dividends)",
+  "mp4": "showreel/out/n1/n1-final.mp4 (share copy: n1-share.mp4)",
+  "duration": "1:09 (69.88 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'STEP 3': the waterfall with the tax bar at $0, the green dividend-tax-credit bar and the 'FEDERAL TAX $0' stamp; Dana on the snowy street",
+  "why": "the payoff and the mechanism in one frame",
+  "t": 42.84,
+  "ms": 42840,
+  "file": "n1/cover.jpg (extracted at 42.84 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "canada.ca CRA line 40425 Federal dividend tax credit",
+   "year": "2026",
+   "supports": "eligible dividends grossed up 38%; credit 15.0198% of the taxable amount"
+  },
+  {
+   "source": "CRA T4127 Payroll Deductions Formulas, 122nd ed. (Jan 2026)",
+   "year": "2026",
+   "supports": "federal 14% / 20.5% (threshold $58,523); BPA $16,452"
+  },
+  {
+   "source": "canada.ca Income Tax Folio S3-F2-C2",
+   "year": "current",
+   "supports": "gross-up and credit reflect tax paid by the corporation"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "$80,000 Income, $0 Federal Tax? How Canadian Dividends Work (2026)",
+   "Why $80K of Dividends Pays $0 Federal Tax and a Salary Pays $9,243 (Canada)",
+   "The Dividend Tax Credit Explained With Real Numbers (2026)"
+  ],
+  "description": "$80,000 of income and $0 federal tax, legally. Here's the math (2026, federal, example).\n\nDana has no salary; her only income is $80,000 of eligible dividends from Canadian companies.\n• Gross-up 38%: taxable on paper $110,400\n• Federal tax after the basic personal amount: ≈ $16,525\n• Dividend tax credit 15.0198% of $110,400: ≈ $16,582 → federal tax $0 (the credit is non-refundable)\n\nThe twist: the same $80,000 as a salary pays ≈ $9,243 of federal tax. The credit exists because the company already paid tax on its profits. Provinces have their own rates and credits.\n\nCheck what kind of income you earn: it changes the tax.\n\nNext: OAS, and how to keep more of it.\n\nSources: canada.ca (CRA) line 40425; CRA T4127 (2026). Federal only, no other income. Example. General information, not advice.\n\n#Dividends #CanadaTax #CRA",
+  "hashtags": "#Dividends #CanadaTax #CRA #TaxTips",
+  "keywords": "dividend tax credit canada, eligible dividends tax canada, zero tax dividends canada, gross-up 38%, line 40425, dividend income tax 2026",
+  "pinned": "Federal only, 2026, no other income. Provinces add their own tax and credits. (General info, not advice.)",
+  "cta": "Follow for the next one: keeping more OAS."
+ },
+ "tt": {
+  "caption": "$80,000 of income. $0 federal tax. Legally 🇨🇦 Here's the dividend math.",
+  "keywords": "dividend tax credit canada · eligible dividends · zero tax",
+  "hashtags": "#taxtips #canadiantaxes #cra #dividends #personalfinancecanada",
+  "pinned": "Federal example, 2026. Provinces differ. (General info, not advice.)",
+  "cta": "Follow for the next one: keeping more OAS."
+ },
+ "ig": {
+  "caption": "$80K of income. $0 federal tax? 🇨🇦\n\nEligible Canadian dividends (federal, 2026):\n• Gross-up 38% → $110,400 on paper\n• Tax after basic amount ≈ $16,525\n• Dividend tax credit ≈ $16,582 → $0\n⚖️ Same $80K as a salary: ≈ $9,243\n\nSave this before you plan your income.\n\nSource: CRA (canada.ca). Federal, example. General info, not advice.",
+  "keywords": "dividend tax credit, eligible dividends, zero tax",
+  "hashtags": "#dividends #canadiantaxes #taxtips #personalfinancecanada #canadatax #dividendinvesting",
+  "pinned": "Save this 📌",
+  "cta": "Save this before you plan your income."
+ },
+ "eng": {
+  "question": "Salary or dividends: which do you earn?",
+  "save": "The 38% / 15.0198% math.",
+  "share": "Dividend investors.",
+  "follow": "Canadian tax rules with real numbers."
+ },
+ "research": "vidIQ: 'dividend tax credit canada' (CA) <750/mo, competition 17; related 'dividend tax' ≈5.2K/mo, 'canadian dividend investing' ≈6K/mo, 'dividend income' ≈9.6K/mo (+43%). Scrape Creators shorts search 'zero tax dividends canada': 3.4K / 4.9K views on 'zero tax on dividends' shorts; US 0%-bracket short 3.2M. NexLev not used (Scrape Creators covered the search).",
+ "retention": "Frame 0 '$80,000 OF INCOME. FEDERAL TAX: $0?'; slot slams to $0 at ≈4 s; waterfall 15–42 s; 'FEDERAL TAX $0' stamp ≈42 s (re-hook, ≈61 %); salary vs dividends face-off; check card + next pill.",
+ "seo": {
+  "primary": "dividend tax credit canada",
+  "secondary": "dividend tax; canadian dividend investing",
+  "intent": "Investors and retirees asking how dividends are taxed.",
+  "audience": "Investors 35–70.",
+  "angle": "same $80K, $0 vs $9,243, step-by-step math.",
+  "questions": "Why do dividends pay less tax? What is the gross-up?"
+ },
+ "series": "Card series, TOPICS-3 N1 (user brief 'Invest your way to a zero tax bill', Canadian adaptation), bridged from R3. Topic type: evergreen.",
+ "next": [
+  {
+   "topic": "N2 OAS: keep more of it (clawback threshold, TFSA, deferral)",
+   "why": "OAS recovery tax hits retirees above the threshold",
+   "intent": "oas clawback canada",
+   "hook": "Same pension, one keeps all of OAS",
+   "angle": "which income counts and which doesn't",
+   "payoff": "what each move is worth"
+  },
+  {
+   "topic": "N3 The retirement tax window",
+   "why": "Low-income years before CPP/OAS/RRIF",
+   "intent": "rrsp withdrawal before 65",
+   "hook": "The years most retirees waste",
+   "angle": "filling low brackets early",
+   "payoff": "tax saved over the window"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "topic": "Eligible Canadian dividends: 38% gross-up and 15.0198% federal dividend tax credit; with no other income, about $80,000 of eligible dividends pays $0 federal tax in 2026 (example)",
+ "tax_year": 2026,
+ "example": {
+  "div": 80000,
+  "grossup_rate": 0.38,
+  "taxable": 110400,
+  "pre_credit": 18828,
+  "bpa_credit": 2303,
+  "after_bpa": 16525,
+  "dtc_rate": 0.150198,
+  "dtc": 16582,
+  "fed": 0,
+  "salary_fed": 9243,
+  "note": "example (not a CRA rule): single person, 2026, no other income, eligible dividends from taxable Canadian corporations; federal brackets 14% to $58,523, 20.5% to $117,045; BPA $16,452 x 14% = $2,303; tax on $110,400 = $18,828; DTC 15.0198% x $110,400 = $16,582 >= $16,525 -> $0 federal tax (credit is non-refundable). Salary comparison: $80,000 employment income, federal tax after BPA, CPP/EI and Canada employment credits = $9,243 (longform th() model). Provincial tax, Ontario health premium and other income not included; break-even \u2248 $80,755 of eligible dividends. VO rounds $9,243 to 'about nine thousand, two hundred' (salary_fed_r).",
+  "salary_fed_r": 9200
+ },
+ "derive": {},
+ "spoken": {
+  "div": "eighty thousand dollars",
+  "grossup_rate": "thirty-eight percent",
+  "taxable": "a hundred and ten thousand, four hundred",
+  "salary_fed_r": "nine thousand, two hundred"
+ },
+ "sources": {
+  "dtc": "canada.ca CRA line 40425 Federal dividend tax credit: eligible dividends grossed up by 38%; credit = 15.0198% of the taxable amount on line 12000 (via search 2026-11-01)",
+  "brackets": "CRA T4127 Payroll Deductions Formulas 122nd ed. (Jan 2026): federal 14% / 20.5% (threshold $58,523), BPA $16,452 (see longform/lf10-marginal/FACTS.md)",
+  "why": "canada.ca Income Tax Folio S3-F2-C2: gross-up and dividend tax credit reflect tax paid by the corporation (integration)"
+ }
+}
