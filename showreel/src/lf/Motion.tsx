@@ -577,4 +577,50 @@ const FedProvHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook };
+// ---------- OasHook: frame-0 hook — two couples, 12 monthly OAS cheques each; one row's cheques drain by the clawback, the other stays whole ----------
+// p.rows[{name, sub, loss, tone}] · p.monthly · p.months[] · p.cutAt · p.keepAt · p.kicker · p.title · p.finishTitle · p.qAt · p.question · p.out · p.bg
+const OasHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const rows = p.rows as Pn[]; const months = p.months as string[]; const M = p.monthly as number;
+  const cut = p.cutAt?.t; const keep = p.keepAt ? prog(now, p.keepAt.t, 0.6, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const X0 = 250, W = 1420, n = months.length, gap = 16, bw = (W - (n - 1) * gap) / n, BH = 165;
+  const fmt = (v: number) => '$' + v.toLocaleString('en-US', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
+  const fin = cut !== undefined ? prog(now, cut + n * 0.09, 0.6) : 0;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.22 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.66})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 44, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 80, fontWeight: 700, color: fin > 0.5 && p.finishTitle ? C.red : C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{fin > 0.5 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      {rows.map((r, ri) => {
+        const y = 240 + ri * 300; const ri0 = prog(now, p.t + 0.15 + ri * 0.35, 0.7, BACK);
+        const lossPer = (r.loss ?? 0) / n; const good = !r.loss;
+        const lost = r.loss && cut !== undefined ? months.reduce((a, _, i) => a + lossPer * prog(now, cut + i * 0.09, 0.45, EX), 0) : 0;
+        return (
+          <div key={ri} style={{ position: 'absolute', left: 0, top: y, width: 1920, opacity: (1 - out) * cl(ri0 * 1.5), transform: `translateX(${(1 - ri0) * (ri ? 80 : -80)}px)` }}>
+            <div style={{ position: 'absolute', left: X0, top: 0, width: W, display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', fontFamily: COND }}>
+              <div><span style={{ fontSize: 44, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{r.name}</span><span style={{ fontSize: 28, color: C.dim, letterSpacing: 4, marginLeft: 22 }}>{r.sub}</span></div>
+              <div style={{ fontSize: 46, fontWeight: 700, color: good ? C.green : C.red, opacity: good ? keep : cl(lost / 50) }}>{good ? 'OAS LOST: $0' : `−${fmt(Math.round(lost))}`}</div>
+            </div>
+            {months.map((m, i) => {
+              const k = r.loss && cut !== undefined ? prog(now, cut + i * 0.09, 0.45, EX) : 0; const h = BH * (1 - (lossPer / M) * k);
+              return (
+                <div key={i} style={{ position: 'absolute', left: X0 + i * (bw + gap), top: 70, width: bw, height: BH + 50 }}>
+                  <div style={{ position: 'absolute', left: 0, bottom: 50, width: bw, height: BH, borderRadius: 10, border: '1px dashed rgba(255,255,255,.18)' }} />
+                  {k > 0 && <div style={{ position: 'absolute', left: 0, bottom: 50 + h + 40 * k, width: bw, height: BH - h, borderRadius: 10, background: C.red, opacity: 1 - k * 0.85, transform: `rotate(${k * (i % 2 ? 8 : -8)}deg)` }} />}
+                  <div style={{ position: 'absolute', left: 0, bottom: 50, width: bw, height: h, borderRadius: 10, background: good && keep > 0.5 ? 'linear-gradient(180deg,#9FE3B9,#5BB585)' : 'linear-gradient(180deg,#F1D38E,#C9A055)', boxShadow: good && keep > 0.5 ? `0 0 ${24 * keep}px rgba(127,211,160,.5)` : '0 10px 26px rgba(0,0,0,.45)' }} />
+                  <div style={{ position: 'absolute', left: 0, right: 0, bottom: 14, textAlign: 'center', fontFamily: COND, fontSize: 22, letterSpacing: 2, color: C.dim }}>{m}</div>
+                </div>);
+            })}
+          </div>);
+      })}
+      <div style={{ position: 'absolute', left: 250, top: 196, fontFamily: COND, fontSize: 26, letterSpacing: 5, color: C.dim, opacity: 1 - out }}>OAS · {fmt(M)} / MONTH · JULY → JUNE</div>
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 862, textAlign: 'center', fontFamily: COND, fontSize: 48, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook };

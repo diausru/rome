@@ -1,5 +1,5 @@
 # LONG-FORM BOOT (compact; read this, not old docs)
-State: LF-01…LF-13 done (MP4 in repo, unpublished). Next = first row with status `queued` in "Recommended initial production order" of `channel/LONGFORM-QUEUE.md` (now: LF-14 #5 tax credits vs deductions, bridged from LF-13). Dates: every 10 days from LF-11 Jan 8 2027 (LF-12 Jan 19, LF-13 Jan 29, LF-14 Feb 8…).
+State: LF-01…LF-13 done (MP4 in repo, unpublished). Next = first row with status `queued` in "Recommended initial production order" of `channel/LONGFORM-QUEUE.md` (now: LF-14 #67 OAS, user brief; then LF-15 #68, LF-16 #69, then #5 credits vs deductions). Dates: every 10 days from LF-11 Jan 8 2027 (LF-12 Jan 19, LF-13 Jan 29, LF-14 Feb 8…).
 Template episode: `longform/lf12-bonus/` (copy data.py/lines.py/gen_episode.py, change data). Tax model: `th(g, rrsp, p)` in `longform/lf10-marginal/data.py` (exec-import as lf12 data.py).
 
 ## Rules (hard)

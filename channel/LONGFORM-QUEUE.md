@@ -103,6 +103,14 @@ Tier A = measured search demand ≥ ~3.5K/mo and low/medium competition; B = cle
 Recommended Series 5 order (demand first, then story flow): 38 DTC how to apply (+59 who can certify) → 53 medical expenses → 45 GIS/OAS for a low-income parent (+64) → 46 CPP/OAS/GIS when you work → 42+43 DTC rejected → how to fix (+60) → 41 DTC back years → 58 DTC for ADHD/autism/mental health → 50 DTC vs Canada Disability Benefit → 49 child with a disability → 39+40 claiming a parent / caregiver credit (+56, +62, old #21) → 44 parents' medical & care-home costs → 47 paid caregiving leave (+48, +57) → 51 transfer the DTC (+61) → 54 attendant care & nursing homes (+63) → 52 home accessibility → 65 disabled spouse → 55 adult child → 37 parents getting older (overview) → 66 family tax audit checklist (finale).
 Every topic still needs its own primary-source fact check (CRA / Service Canada / ESDC) before scripting; amounts are not taken from this list.
 
+## Series 6 — Retirement & Family Benefits (user briefs, 2026-11-01; made next, before the rest of the order)
+Briefs (hook / intro / problem / development / climax / summary / CTA) from the user; Canadian facts only (canada.ca / CRA), no "hack / secret / loophole" claims in the video.
+| # | Topic (user working title) | Angle | Status |
+|---|---|---|---|
+| 67 | OAS Shelter Strategy 2026: UNLOCKED! (Maximize Your Benefits NOW) | OAS recovery tax (clawback): threshold, 15%, July–June repayment; levers: pension splitting, TFSA, timing one-off income, deferral to 70 | in production LF-14 |
+| 68 | Canadians Are MISSING This Retirement Tax Window (DON'T Be Them!) | low-income years between retirement and CPP/OAS/RRIF: drawing RRSP at low brackets | queued |
+| 69 | 2026 CHILD BENEFIT HACK: Get THOUSANDS More (Complete Guide!) | CCB uses adjusted family net income: RRSP/deductions and filing raise the benefit | queued |
+
 ## Recommended initial production order
 Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17). Dates: Metricool slots for LF-02..05, proposed 10-day steps from LF-05 for the rest.
 1. LF-01 → #1 The Canadian Tax Brackets Explained With Real Numbers — published 2026-10-14
@@ -118,6 +126,9 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 11. LF-11 → #22 What If You Sell Your Home? — rendered 2026-10-24
 12. LF-12 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus? — rendered 2026-10-25
 13. LF-13 → #4 Federal vs Provincial Tax — Who Actually Takes Your Money? — rendered 2026-10-31 (proposed 2027-01-29)
+14. LF-14 → #67 OAS: keep more of it (user brief) — in production
+15. LF-15 → #68 The retirement tax window (user brief) — queued
+16. LF-16 → #69 CCB: how to get more (user brief) — queued
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
 Not a stretched Short and not a re-cut of one: a new question, a new story, new examples and a new visual approach. Already covered by Shorts (do not repeat their angle, hook, examples or visuals):
