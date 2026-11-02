@@ -1,0 +1,1593 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: canada.ca \u00b7 CRA basic personal amount & how tax is calculated, Finance Canada (tax expenditures, lowest-rate report), T4127 (2026) \u00b7 Examples, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Three friends each get the same one thousand dollar tax break."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "Nina saves eight dollars. Omar saves two hundred and ninety-six. Priya saves four hundred and thirty-four."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "Same thousand dollars. Three different results."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "Change one word, from deduction to credit, and the results change completely. By the end of this video, you'll know which one is worth more to you, and why."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "All numbers: twenty twenty-six, Ontario, employment income. Examples, not real people. General information, not advice."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 1.0,
+   "text": "First: where each one works on your return."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "Your return runs in a fixed order. Income first. Then deductions. Then the tax. Then credits."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "A deduction comes off your income, before the tax is calculated. An R R S P contribution is the classic example."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "A credit comes off the tax itself, after it's calculated."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 0.35,
+   "text": "That one difference in order changes everything."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 1.0,
+   "text": "Now, deductions."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "A deduction saves you whatever tax that last thousand dollars of income would have cost. That's your marginal rate."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "The higher your income, the higher that rate, and the more a deduction is worth."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "Nina earns fourteen thousand dollars. Her tax for the whole year is about eight dollars. So a thousand-dollar deduction saves her eight dollars. There's nothing more to save."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "Omar earns sixty-five thousand. The same deduction saves him two hundred and ninety-six dollars."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 0.35,
+   "text": "Priya earns one hundred and twenty thousand. She saves four hundred and thirty-four."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "The Department of Finance says it plainly: deductions give bigger savings to people with higher marginal tax rates."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 1.0,
+   "text": "Now, credits."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "Most credits on your return are non-refundable. You claim an amount, and it's multiplied by the lowest tax rate."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "Federally, that's fourteen percent in twenty twenty-six. In Ontario, five point zero five percent."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "So a one thousand dollar credit amount is worth about one hundred and ninety dollars and fifty cents. For Omar, and for Priya. Exactly the same."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "A credit doesn't care how much you earn. As long as you owe enough tax to use it."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "And that's the catch."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "Here's the part most people miss. A non-refundable credit can only bring your tax down to zero. Anything left over is lost."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "Nina owes eight dollars. So her thousand-dollar credit amount is worth eight dollars to her. The rest disappears."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 0.35,
+   "text": "For someone with little or no tax, a non-refundable credit and a deduction can both be worth almost nothing."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 1.0,
+   "text": "But there's a third kind: refundable credits."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "A refundable credit is paid to you even if you owe no tax at all. The C R A treats the income tax already taken off your paycheques the same way."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 0.35,
+   "text": "That's why low-income Canadians should always file. Refundable credits and many benefits depend on filing a return."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 1.0,
+   "text": "So which is worth more? Let's put it side by side."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "For Nina: the deduction, eight dollars. The non-refundable credit, eight dollars. A refundable credit, paid in full."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 0.35,
+   "text": "For Omar: the deduction, two hundred and ninety-six. The credit, one hundred and ninety dollars and fifty cents. The deduction wins."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "For Priya: four hundred and thirty-four, against the same one hundred and ninety and fifty. The deduction wins by more."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "Once your income is past the first bracket, a deduction is usually worth more than a credit of the same size."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "And there's a bonus. A deduction lowers your net income. That number also decides income-tested benefits, like the Canada child benefit and the O A S clawback."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "A credit doesn't touch net income at all."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 1.0,
+   "text": "Now, what can you do with this?"
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "One: if you have a choice of timing, take deductions in your higher-income years. R R S P deductions can even be carried forward to a later year."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "Two: for couples, many credits can be claimed by either partner. Give them to the partner who has enough tax to use them."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "Three: with little or no tax, focus on refundable credits and benefits, and file every year."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "Where this changes. Your exact marginal rate depends on your province and your income, and some deductions and credits have their own limits. Your return does the final math."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 1.0,
+   "text": "Here's your checklist."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "One. Know your marginal rate: that's what a deduction is worth."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "Two. Know the lowest rate: that's what a non-refundable credit is worth."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "Three. Check whether you owe enough tax to use your credits."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "Four. File every year, even with no income."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 1.0,
+   "text": "So, what did we learn?"
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "One. Deductions come off income. Credits come off tax."
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 0.35,
+   "text": "Two. A deduction is worth more as income rises. A credit is worth the same, if you can use it."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 0.35,
+   "text": "Three. Only refundable credits pay you with zero tax."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: why a tax refund doesn't mean you paid less tax. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "Same $1,000, three results"
+  },
+  {
+   "at": "L6",
+   "title": "01 \u00b7 Where each one works"
+  },
+  {
+   "at": "L11",
+   "title": "02 \u00b7 Deductions"
+  },
+  {
+   "at": "L18",
+   "title": "03 \u00b7 Credits"
+  },
+  {
+   "at": "L27",
+   "title": "Refundable credits"
+  },
+  {
+   "at": "L30",
+   "title": "Side by side"
+  },
+  {
+   "at": "L37",
+   "title": "What you can do"
+  },
+  {
+   "at": "L42",
+   "title": "Checklist"
+  },
+  {
+   "at": "L47",
+   "title": "Verdict"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "breaks",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf17/plates/s1.jpg",
+      "depth": "lf/lf17/plates/s1_d.png",
+      "dim": 0.66
+     },
+     "kicker": "SAME TAX BREAK \u00b7 2026 \u00b7 ONTARIO",
+     "title": "SAME $1,000. WHAT DOES IT SAVE?",
+     "finishTitle": "CHANGE ONE WORD",
+     "people": [
+      {
+       "name": "NINA",
+       "sub": "EARNS $14,000",
+       "ded": 8,
+       "cred": 7.98
+      },
+      {
+       "name": "OMAR",
+       "sub": "EARNS $65,000",
+       "ded": 296,
+       "cred": 190.5
+      },
+      {
+       "name": "PRIYA",
+       "sub": "EARNS $120,000",
+       "ded": 434,
+       "cred": 190.5
+      }
+     ],
+     "valAt": [
+      {
+       "at": "L2",
+       "word": "Nina"
+      },
+      {
+       "at": "L2",
+       "word": "Omar"
+      },
+      {
+       "at": "L2",
+       "word": "Priya"
+      }
+     ],
+     "flipAt": {
+      "at": "L4",
+      "word": "credit"
+     },
+     "qAt": {
+      "at": "L4",
+      "word": "which"
+     },
+     "question": "DEDUCTION OR CREDIT: WHICH IS WORTH MORE TO YOU?",
+     "out": {
+      "at": "L5",
+      "off": -0.9
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 360,
+     "w": 1600,
+     "at": "L5",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "2026 \u00b7 ONTARIO \u00b7 EMPLOYMENT INCOME",
+       "size": 46,
+       "at": "L5"
+      },
+      {
+       "text": "EXAMPLES, NOT REAL PEOPLE \u00b7 GENERAL INFO, NOT ADVICE",
+       "size": 40,
+       "at": "L5",
+       "word": "Examples"
+      }
+     ],
+     "kicker": "THE FINE PRINT"
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L6",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHERE EACH ONE WORKS",
+       "size": 120,
+       "gold": true,
+       "at": "L6",
+       "word": "works"
+      }
+     ],
+     "kicker": "01"
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L7",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "THE ORDER OF YOUR RETURN",
+     "items": [
+      {
+       "n": "1",
+       "head": "INCOME",
+       "at": "L7",
+       "word": "Income"
+      },
+      {
+       "n": "2",
+       "head": "MINUS DEDUCTIONS (E.G. RRSP)",
+       "at": "L8",
+       "word": "deduction"
+      },
+      {
+       "n": "3",
+       "head": "TAX IS CALCULATED",
+       "at": "L8",
+       "word": "calculated"
+      },
+      {
+       "n": "4",
+       "head": "MINUS CREDITS \u00b7 OFF THE TAX ITSELF",
+       "at": "L9",
+       "word": "credit"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L11",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "DEDUCTIONS",
+       "size": 150,
+       "gold": true,
+       "at": "L11",
+       "word": "deductions"
+      }
+     ],
+     "kicker": "02"
+    }
+   ]
+  },
+  {
+   "at": "L12",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L12",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "A $1,000 DEDUCTION SAVES\u2026",
+     "sub": "YOUR MARGINAL RATE \u00b7 2026 \u00b7 ONTARIO",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "NINA \u00b7 $14,000",
+       "value": 8
+      },
+      {
+       "name": "OMAR \u00b7 $65,000",
+       "value": 296
+      },
+      {
+       "name": "PRIYA \u00b7 $120,000",
+       "value": 434
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L14",
+       "word": "Nina"
+      },
+      {
+       "at": "L15",
+       "word": "Omar"
+      },
+      {
+       "at": "L16",
+       "word": "Priya"
+      }
+     ],
+     "note": "FINANCE CANADA: BIGGER SAVINGS AT HIGHER MARGINAL RATES"
+    }
+   ]
+  },
+  {
+   "at": "L18",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L18",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "CREDITS",
+       "size": 150,
+       "gold": true,
+       "at": "L18",
+       "word": "credits"
+      }
+     ],
+     "kicker": "03"
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L19",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "NON-REFUNDABLE CREDITS",
+     "items": [
+      {
+       "n": "\u00d7",
+       "head": "CREDIT AMOUNT \u00d7 THE LOWEST RATE",
+       "at": "L19",
+       "word": "multiplied"
+      },
+      {
+       "n": "14%",
+       "head": "FEDERAL \u00b7 2026",
+       "at": "L20",
+       "word": "fourteen"
+      },
+      {
+       "n": "5.05%",
+       "head": "ONTARIO",
+       "at": "L20",
+       "word": "five"
+      },
+      {
+       "n": "=",
+       "head": "$1,000 AMOUNT \u2248 $190.50 \u00b7 SAME FOR OMAR AND PRIYA",
+       "at": "L21",
+       "word": "worth"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L23",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L23",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "THE CATCH",
+       "size": 110,
+       "at": "L23",
+       "word": "catch",
+       "gold": true
+      },
+      {
+       "text": "A NON-REFUNDABLE CREDIT STOPS AT $0 TAX",
+       "size": 54,
+       "at": "L24",
+       "word": "zero"
+      },
+      {
+       "text": "NINA OWES $8 \u2192 HER CREDIT IS WORTH $8",
+       "size": 50,
+       "at": "L25",
+       "word": "eight"
+      }
+     ],
+     "kicker": "MOST PEOPLE MISS THIS"
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L27",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "REFUNDABLE CREDITS",
+       "size": 96,
+       "at": "L27",
+       "word": "refundable",
+       "gold": true
+      },
+      {
+       "text": "PAID EVEN WITH $0 TAX",
+       "size": 60,
+       "at": "L28",
+       "word": "paid"
+      },
+      {
+       "text": "FILE EVERY YEAR",
+       "size": 56,
+       "at": "L29",
+       "word": "file"
+      }
+     ],
+     "kicker": "THE THIRD KIND"
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L30",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "THE SAME $1,000 \u00b7 SIDE BY SIDE",
+     "sub": "DEDUCTION vs NON-REFUNDABLE CREDIT AMOUNT",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "NINA \u00b7 DEDUCTION",
+       "value": 8
+      },
+      {
+       "name": "NINA \u00b7 CREDIT",
+       "value": 8
+      },
+      {
+       "name": "OMAR \u00b7 DEDUCTION",
+       "value": 296
+      },
+      {
+       "name": "OMAR \u00b7 CREDIT",
+       "value": 190
+      },
+      {
+       "name": "PRIYA \u00b7 DEDUCTION",
+       "value": 434
+      },
+      {
+       "name": "PRIYA \u00b7 CREDIT",
+       "value": 190
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L31",
+       "word": "deduction"
+      },
+      {
+       "at": "L31",
+       "word": "non-refundable"
+      },
+      {
+       "at": "L32",
+       "word": "deduction"
+      },
+      {
+       "at": "L32",
+       "word": "credit"
+      },
+      {
+       "at": "L33",
+       "word": "four"
+      },
+      {
+       "at": "L33",
+       "word": "same"
+      }
+     ],
+     "note": "PAST THE FIRST BRACKET, THE DEDUCTION USUALLY WINS"
+    }
+   ]
+  },
+  {
+   "at": "L35",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L35",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "BONUS: A DEDUCTION LOWERS NET INCOME",
+       "size": 64,
+       "at": "L35",
+       "word": "lowers",
+       "gold": true
+      },
+      {
+       "text": "CCB \u2191 \u00b7 OAS CLAWBACK \u2193",
+       "size": 60,
+       "at": "L35",
+       "word": "Canada"
+      },
+      {
+       "text": "A CREDIT DOESN'T TOUCH NET INCOME",
+       "size": 48,
+       "at": "L36",
+       "word": "touch"
+      }
+     ],
+     "kicker": "04"
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L37",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "WHAT YOU CAN DO",
+     "items": [
+      {
+       "n": "1",
+       "head": "DEDUCTIONS IN HIGHER-INCOME YEARS \u00b7 RRSP CAN WAIT",
+       "at": "L38",
+       "word": "timing"
+      },
+      {
+       "n": "2",
+       "head": "COUPLES: GIVE CREDITS TO THE PARTNER WHO OWES TAX",
+       "at": "L39",
+       "word": "couples"
+      },
+      {
+       "n": "3",
+       "head": "LITTLE OR NO TAX: REFUNDABLE CREDITS \u00b7 FILE",
+       "at": "L40",
+       "word": "little"
+      },
+      {
+       "n": "\u2260",
+       "head": "PROVINCE \u00b7 INCOME \u00b7 LIMITS CHANGE THE MATH",
+       "at": "L41",
+       "word": "changes"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L42",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L42",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "YOUR CHECKLIST",
+     "items": [
+      {
+       "n": "1",
+       "head": "MARGINAL RATE = A DEDUCTION'S VALUE",
+       "at": "L43",
+       "word": "marginal"
+      },
+      {
+       "n": "2",
+       "head": "LOWEST RATE = A CREDIT'S VALUE",
+       "at": "L44",
+       "word": "lowest"
+      },
+      {
+       "n": "3",
+       "head": "ENOUGH TAX TO USE YOUR CREDITS?",
+       "at": "L45",
+       "word": "enough"
+      },
+      {
+       "n": "4",
+       "head": "FILE EVERY YEAR",
+       "at": "L46",
+       "word": "File"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L47",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT DID WE LEARN?",
+       "size": 140,
+       "gold": true,
+       "at": "L47",
+       "word": "learn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L48",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L48",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "CREDITS vs DEDUCTIONS \u00b7 3 RULES",
+     "items": [
+      {
+       "n": "1",
+       "head": "DEDUCTIONS OFF INCOME \u00b7 CREDITS OFF TAX",
+       "at": "L48",
+       "word": "Deductions"
+      },
+      {
+       "n": "2",
+       "head": "DEDUCTION GROWS WITH INCOME \u00b7 CREDIT IS FLAT",
+       "at": "L49",
+       "word": "rises"
+      },
+      {
+       "n": "3",
+       "head": "ONLY REFUNDABLE CREDITS PAY AT $0 TAX",
+       "at": "L50",
+       "word": "refundable"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L51",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L51",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 100,
+       "gold": true,
+       "seq": [
+        {
+         "text": "CREDIT vs DEDUCTION",
+         "t": 0
+        },
+        {
+         "text": "A REFUND \u2260 LESS TAX",
+         "at": "L51",
+         "word": "refund"
+        }
+       ],
+       "at": "L51"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L51",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.05
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 0,
+     "y": 30,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -30,
+     "z": 0.25
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L18",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    },
+    {
+     "x": -30,
+     "y": 10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf17/plates/s1.jpg",
+    "depth": "lf/lf17/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf17/plates/s2.jpg",
+    "depth": "lf/lf17/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf17/plates/s3.jpg",
+    "depth": "lf/lf17/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf17/plates/s4.jpg",
+    "depth": "lf/lf17/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf17/plates/s5.jpg",
+    "depth": "lf/lf17/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf17/plates/s6.jpg",
+    "depth": "lf/lf17/plates/s6_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L5"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L7",
+   "word": "Income"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "deduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "calculated"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "credit"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L12"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "Nina"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "Omar"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "Priya"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L18"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L19"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "multiplied"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L20",
+   "word": "fourteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L20",
+   "word": "five"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L21",
+   "word": "worth"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L23"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L30"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "deduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "non-refundable"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "deduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "credit"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "four"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "same"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L35"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L37"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L38",
+   "word": "timing"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L39",
+   "word": "couples"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "little"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "changes"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "marginal"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L44",
+   "word": "lowest"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "enough"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L46",
+   "word": "File"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L47"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L48"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L48",
+   "word": "Deductions"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L49",
+   "word": "rises"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L50",
+   "word": "refundable"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L51"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L2",
+   "word": "Nina"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L2",
+   "word": "Omar"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L2",
+   "word": "Priya"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.22,
+   "at": "L4",
+   "word": "credit"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L14"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L16"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L18"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L30"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L37"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L47"
+  }
+ ],
+ "ticker": [
+  "$1,000 DEDUCTION SAVES: $14K $8 \u00b7 $65K $296 \u00b7 $120K $434",
+  "$1,000 NON-REFUNDABLE CREDIT AMOUNT \u2248 $190.50 (14% + 5.05%)",
+  "NON-REFUNDABLE CREDITS STOP AT $0 TAX",
+  "REFUNDABLE CREDITS PAY EVEN WITH $0 TAX",
+  "EXAMPLES \u00b7 2026 \u00b7 ONTARIO"
+ ],
+ "audio": "lf/lf17/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

@@ -1,0 +1,22 @@
+{
+ "credit_rate": 0.1905,
+ "credit_value": 190.5,
+ "nina": {
+  "income": 14000,
+  "tax": 8,
+  "ded": 8,
+  "credit": 7.98
+ },
+ "omar": {
+  "income": 65000,
+  "tax": 9725,
+  "ded": 296,
+  "credit": 190.5
+ },
+ "priya": {
+  "income": 120000,
+  "tax": 26888,
+  "ded": 434,
+  "credit": 190.5
+ }
+}
