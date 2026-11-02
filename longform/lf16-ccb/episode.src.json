@@ -1,0 +1,1610 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: canada.ca \u00b7 CRA Canada child benefit: how much you can get (July 2026 \u2013 June 2027), T4114 \u00b7 T4127 (2026) \u00b7 Examples, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Sara earns seventy thousand dollars. She has one child, under six. This year, her family gets five thousand, nine hundred and thirty-four dollars of Canada child benefit."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "With one change on her tax return, the same family could get six thousand, six hundred and thirty-four. And pay less tax too."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "Altogether, about three thousand, six hundred and sixty-five dollars more in one year. Same job. Same child. Same income."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "By the end of this video, you'll know exactly how the C C B is calculated, and the legal moves that change it."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "All numbers: the C C B year from July twenty twenty-six to June twenty twenty-seven, Ontario taxes, twenty twenty-six rates. Examples, not real people. General information, not advice."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 1.0,
+   "text": "First: how the C C B is calculated."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "The Canada child benefit is a tax-free monthly payment for families with children under eighteen."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "For July twenty twenty-six to June twenty twenty-seven, the maximum is eight thousand, one hundred and fifty-seven dollars a year for each child under six. That's six hundred and seventy-nine dollars and seventy-five cents a month."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "For a child aged six to seventeen, the maximum is six thousand, eight hundred and eighty-three."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 0.35,
+   "text": "But most families don't get the maximum. The amount shrinks as your income rises."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "And here's the key. It's not your salary that counts. It's your adjusted family net income, from your tax returns for the year before."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "For this benefit year, that's your twenty twenty-five income."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 1.0,
+   "text": "Now, the reduction."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "Once adjusted family net income passes thirty-eight thousand, two hundred and thirty-seven dollars, the benefit starts to drop."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "With one child, it drops by seven percent of every dollar above that line, up to eighty-two thousand, eight hundred and forty-seven."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 0.35,
+   "text": "With three children, it drops by nineteen percent."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "For Sara, at seventy thousand, that's seven percent of thirty-one thousand, seven hundred and sixty-three. A reduction of about two thousand, two hundred and twenty-three dollars."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "Eight thousand, one hundred and fifty-seven, minus that reduction: five thousand, nine hundred and thirty-four dollars."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "So every extra thousand dollars of net income costs Sara seventy dollars of C C B. And the reverse is also true."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "Every thousand dollars you take off your net income gives seventy dollars back. With three children, a hundred and ninety."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 1.0,
+   "text": "Now, the move. Lever one: the R R S P."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "An R R S P contribution is a deduction. It lowers your net income, and that's exactly the number the C C B uses."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "Say Sara contributes ten thousand dollars to her R R S P, and she has the room."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "Her net income drops to sixty thousand. Her C C B rises to six thousand, six hundred and thirty-four. Seven hundred dollars more."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "And her income tax drops by about two thousand, nine hundred and sixty-five dollars."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 0.35,
+   "text": "Together: about three thousand, six hundred and sixty-five dollars from one ten-thousand-dollar contribution. And the ten thousand is still hers, in the R R S P."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 1.0,
+   "text": "But here's the timing most families miss. The C C B looks back."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "A contribution for twenty twenty-six lowers your twenty twenty-six net income. That changes the C C B paid from July twenty twenty-seven."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 0.35,
+   "text": "So the benefit arrives the following year. And the thresholds are updated every July, so the exact numbers move a little."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "With three children in the same income range, the same ten thousand dollars would add about one thousand, nine hundred of C C B, plus the tax saving."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 1.0,
+   "text": "Lever two: other deductions. Child care expenses, union dues, and other deductions also lower net income. Claim every one you're entitled to."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 0.35,
+   "text": "Lever three: file, every year, both of you. The C C B is calculated from both partners' returns."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "If one return is missing, the C R A can't calculate the benefit, and payments can stop. Even with no income, file."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "Lever four: keep your information current. A new child, a separation, a move, or a change in custody can all change the amount. Tell the C R A when it happens."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 1.0,
+   "text": "Where this changes. Provinces add their own child benefits, with their own rules. Above eighty-two thousand, eight hundred and forty-seven, the reduction rate changes. And a child with a disability may qualify for an extra benefit."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "Your exact amount comes from the C R A's calculation, so check it in My Account."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 1.0,
+   "text": "Here's your checklist."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "One. Find your adjusted family net income from last year's returns."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "Two. If it's between thirty-eight thousand, two hundred and thirty-seven and eighty-two thousand, eight hundred and forty-seven, every deduction also raises your C C B."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "Three. Use your R R S P room, and claim child care and other deductions."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "Four. Both partners file on time, every year."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 1.0,
+   "text": "So, what did we learn?"
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "One. The C C B uses net income, not salary."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "Two. Each dollar of deduction can come back twice: less tax, and more benefit."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "Three. The benefit arrives the following July."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: tax credits versus tax deductions, and why the same thousand dollars can be worth very different amounts. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "Same family, one change"
+  },
+  {
+   "at": "L6",
+   "title": "01 \u00b7 How the CCB is calculated"
+  },
+  {
+   "at": "L13",
+   "title": "02 \u00b7 The reduction"
+  },
+  {
+   "at": "L21",
+   "title": "03 \u00b7 Lever 1: the RRSP"
+  },
+  {
+   "at": "L27",
+   "title": "04 \u00b7 The timing"
+  },
+  {
+   "at": "L31",
+   "title": "More levers"
+  },
+  {
+   "at": "L35",
+   "title": "Where this changes"
+  },
+  {
+   "at": "L37",
+   "title": "Checklist"
+  },
+  {
+   "at": "L42",
+   "title": "Verdict"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "ccb",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf16/plates/s1.jpg",
+      "depth": "lf/lf16/plates/s1_d.png",
+      "dim": 0.64
+     },
+     "kicker": "ONE CHILD UNDER 6 \u00b7 JULY 2026 \u2013 JUNE 2027",
+     "title": "SAME FAMILY. SAME INCOME.",
+     "finishTitle": "ONE CHANGE ON THE RETURN",
+     "before": 5934,
+     "after": 6634,
+     "tax": 2965,
+     "total": 3665,
+     "incFrom": 70000,
+     "incTo": 60000,
+     "lo": 38237,
+     "hi": 82847,
+     "showAt": {
+      "at": "L1"
+     },
+     "moveAt": {
+      "at": "L2",
+      "word": "change"
+     },
+     "totalAt": {
+      "at": "L3",
+      "word": "three"
+     },
+     "qAt": {
+      "at": "L4",
+      "word": "calculated"
+     },
+     "question": "HOW IS YOUR CCB REALLY CALCULATED?",
+     "out": {
+      "at": "L5",
+      "off": -0.9
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 360,
+     "w": 1600,
+     "at": "L5",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "CCB JULY 2026 \u2013 JUNE 2027 \u00b7 ONTARIO \u00b7 2026 RATES",
+       "size": 44,
+       "at": "L5"
+      },
+      {
+       "text": "EXAMPLES, NOT REAL PEOPLE \u00b7 GENERAL INFO, NOT ADVICE",
+       "size": 40,
+       "at": "L5",
+       "word": "Examples"
+      }
+     ],
+     "kicker": "THE FINE PRINT"
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L6",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "HOW THE CCB IS CALCULATED",
+       "size": 110,
+       "gold": true,
+       "at": "L6",
+       "word": "calculated"
+      }
+     ],
+     "kicker": "01"
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L7",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "CANADA CHILD BENEFIT \u00b7 2026\u201327",
+     "items": [
+      {
+       "n": "$0 TAX",
+       "head": "TAX-FREE MONTHLY PAYMENT \u00b7 UNDER 18",
+       "at": "L7",
+       "word": "tax-free"
+      },
+      {
+       "n": "<6",
+       "head": "MAX $8,157 / YEAR \u00b7 $679.75 / MONTH",
+       "at": "L8",
+       "word": "eight"
+      },
+      {
+       "n": "6\u201317",
+       "head": "MAX $6,883 / YEAR",
+       "at": "L9",
+       "word": "six"
+      },
+      {
+       "n": "\u2193",
+       "head": "SHRINKS AS INCOME RISES",
+       "at": "L10",
+       "word": "shrinks"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L11",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "NOT YOUR SALARY",
+       "size": 90,
+       "at": "L11",
+       "word": "salary"
+      },
+      {
+       "text": "ADJUSTED FAMILY NET INCOME \u00b7 LAST YEAR",
+       "size": 56,
+       "at": "L11",
+       "word": "adjusted",
+       "gold": true
+      },
+      {
+       "text": "2026\u201327 BENEFIT \u2190 2025 INCOME",
+       "size": 46,
+       "at": "L12",
+       "word": "twenty"
+      }
+     ],
+     "kicker": "THE KEY"
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L13",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE REDUCTION",
+       "size": 140,
+       "gold": true,
+       "at": "L13",
+       "word": "reduction"
+      }
+     ],
+     "kicker": "02"
+    }
+   ]
+  },
+  {
+   "at": "L14",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L14",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "HOW IT SHRINKS \u00b7 2026\u201327",
+     "items": [
+      {
+       "n": "LINE",
+       "head": "FAMILY NET INCOME ABOVE $38,237",
+       "at": "L14",
+       "word": "thirty-eight"
+      },
+      {
+       "n": "7%",
+       "head": "ONE CHILD \u00b7 UP TO $82,847",
+       "at": "L15",
+       "word": "seven"
+      },
+      {
+       "n": "19%",
+       "head": "THREE CHILDREN",
+       "at": "L16",
+       "word": "nineteen"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L17",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L17",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "SARA'S CCB \u00b7 ONE CHILD UNDER 6",
+     "sub": "FAMILY NET INCOME $70,000",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "MAXIMUM",
+       "value": 8157
+      },
+      {
+       "name": "REDUCTION 7% \u00d7 $31,763",
+       "value": 2223
+      },
+      {
+       "name": "SARA RECEIVES",
+       "value": 5934
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L17",
+       "word": "Sara"
+      },
+      {
+       "at": "L17",
+       "word": "reduction"
+      },
+      {
+       "at": "L18",
+       "word": "five"
+      }
+     ],
+     "note": "EVERY $1,000 OF NET INCOME = \u2212$70"
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 310,
+     "w": 1600,
+     "at": "L19",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "\u2212$1,000 OF NET INCOME",
+       "size": 76,
+       "at": "L20",
+       "word": "take"
+      },
+      {
+       "text": "+$70 CCB \u00b7 ONE CHILD",
+       "size": 80,
+       "at": "L20",
+       "word": "seventy",
+       "gold": true
+      },
+      {
+       "text": "+$190 CCB \u00b7 THREE CHILDREN",
+       "size": 64,
+       "at": "L20",
+       "word": "three"
+      }
+     ],
+     "kicker": "AND THE REVERSE"
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L21",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "LEVER 1 \u00b7 THE RRSP",
+       "size": 130,
+       "gold": true,
+       "at": "L21",
+       "word": "R"
+      }
+     ],
+     "kicker": "03"
+    }
+   ]
+  },
+  {
+   "at": "L23",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L23",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "SARA PUTS $10,000 IN HER RRSP",
+     "sub": "NET INCOME $70,000 \u2192 $60,000",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "CCB BEFORE",
+       "value": 5934
+      },
+      {
+       "name": "CCB AFTER",
+       "value": 6634
+      },
+      {
+       "name": "INCOME TAX SAVED",
+       "value": 2965
+      },
+      {
+       "name": "TOTAL GAIN",
+       "value": 3665
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L23",
+       "word": "contributes"
+      },
+      {
+       "at": "L24",
+       "word": "six"
+      },
+      {
+       "at": "L25",
+       "word": "two"
+      },
+      {
+       "at": "L26",
+       "word": "Together"
+      }
+     ],
+     "note": "THE $10,000 IS STILL HERS, IN THE RRSP"
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L27",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE CCB LOOKS BACK",
+       "size": 120,
+       "gold": true,
+       "at": "L27",
+       "word": "back"
+      }
+     ],
+     "kicker": "04"
+    }
+   ]
+  },
+  {
+   "at": "L28",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L28",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "THE TIMING",
+     "items": [
+      {
+       "n": "2026",
+       "head": "RRSP FOR 2026 \u2192 LOWER 2026 NET INCOME",
+       "at": "L28",
+       "word": "contribution"
+      },
+      {
+       "n": "JUL 2027",
+       "head": "HIGHER CCB FROM JULY 2027",
+       "at": "L28",
+       "word": "July"
+      },
+      {
+       "n": "\u2248",
+       "head": "THRESHOLDS UPDATED EVERY JULY",
+       "at": "L29",
+       "word": "thresholds"
+      },
+      {
+       "n": "\u00d73",
+       "head": "THREE CHILDREN: \u2248 +$1,900 CCB + THE TAX SAVING",
+       "at": "L30",
+       "word": "three"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L31",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L31",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "MORE LEVERS",
+     "items": [
+      {
+       "n": "2",
+       "head": "CHILD CARE \u00b7 UNION DUES \u00b7 OTHER DEDUCTIONS",
+       "at": "L31",
+       "word": "Child"
+      },
+      {
+       "n": "3",
+       "head": "BOTH PARTNERS FILE \u00b7 EVERY YEAR \u00b7 EVEN AT $0",
+       "at": "L32",
+       "word": "file"
+      },
+      {
+       "n": "!",
+       "head": "A MISSING RETURN CAN STOP PAYMENTS",
+       "at": "L33",
+       "word": "missing"
+      },
+      {
+       "n": "4",
+       "head": "NEW CHILD \u00b7 SEPARATION \u00b7 MOVE \u00b7 CUSTODY: TELL THE CRA",
+       "at": "L34",
+       "word": "current"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L35",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L35",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "WHERE THIS CHANGES",
+     "items": [
+      {
+       "n": "PROV",
+       "head": "PROVINCIAL CHILD BENEFITS \u00b7 OWN RULES",
+       "at": "L35",
+       "word": "Provinces"
+      },
+      {
+       "n": "$82,847+",
+       "head": "DIFFERENT REDUCTION ABOVE IT",
+       "at": "L35",
+       "word": "Above"
+      },
+      {
+       "n": "CDB",
+       "head": "CHILD DISABILITY BENEFIT \u00b7 EXTRA",
+       "at": "L35",
+       "word": "disability"
+      },
+      {
+       "n": "CRA",
+       "head": "YOUR EXACT AMOUNT: MY ACCOUNT",
+       "at": "L36",
+       "word": "My"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L37",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "YOUR CCB CHECKLIST",
+     "items": [
+      {
+       "n": "1",
+       "head": "FIND LAST YEAR'S FAMILY NET INCOME",
+       "at": "L38",
+       "word": "Find"
+      },
+      {
+       "n": "2",
+       "head": "$38,237\u2013$82,847: DEDUCTIONS RAISE CCB",
+       "at": "L39",
+       "word": "deduction"
+      },
+      {
+       "n": "3",
+       "head": "RRSP ROOM \u00b7 CHILD CARE \u00b7 OTHER DEDUCTIONS",
+       "at": "L40",
+       "word": "Use"
+      },
+      {
+       "n": "4",
+       "head": "BOTH PARTNERS FILE ON TIME",
+       "at": "L41",
+       "word": "Both"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L42",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L42",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT DID WE LEARN?",
+       "size": 140,
+       "gold": true,
+       "at": "L42",
+       "word": "learn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L43",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "THE CCB \u00b7 3 RULES",
+     "items": [
+      {
+       "n": "1",
+       "head": "NET INCOME, NOT SALARY",
+       "at": "L43",
+       "word": "net"
+      },
+      {
+       "n": "2",
+       "head": "A DEDUCTION PAYS TWICE: TAX + BENEFIT",
+       "at": "L44",
+       "word": "twice"
+      },
+      {
+       "n": "3",
+       "head": "IT ARRIVES THE FOLLOWING JULY",
+       "at": "L45",
+       "word": "July"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L46",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 100,
+       "gold": true,
+       "seq": [
+        {
+         "text": "MORE CCB",
+         "t": 0
+        },
+        {
+         "text": "CREDIT vs DEDUCTION",
+         "at": "L46",
+         "word": "credits"
+        }
+       ],
+       "at": "L46"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L46",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.05
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L13",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L21",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": 0,
+     "y": 30,
+     "z": 0.0
+    },
+    {
+     "x": 0,
+     "y": -30,
+     "z": 0.25
+    }
+   ]
+  },
+  {
+   "at": "L27",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L31",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    },
+    {
+     "x": -30,
+     "y": 10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L35",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L42",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf16/plates/s1.jpg",
+    "depth": "lf/lf16/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf16/plates/s2.jpg",
+    "depth": "lf/lf16/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf16/plates/s3.jpg",
+    "depth": "lf/lf16/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf16/plates/s4.jpg",
+    "depth": "lf/lf16/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf16/plates/s5.jpg",
+    "depth": "lf/lf16/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf16/plates/s6.jpg",
+    "depth": "lf/lf16/plates/s6_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L5"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L7",
+   "word": "tax-free"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "eight"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10",
+   "word": "shrinks"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L13"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L14"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "thirty-eight"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "seven"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "nineteen"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L17"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "Sara"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "reduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "five"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L19"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L21"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L23"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "contributes"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L25",
+   "word": "two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L26",
+   "word": "Together"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L28"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "contribution"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "July"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "thresholds"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L30",
+   "word": "three"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L31"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L31",
+   "word": "Child"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "file"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "missing"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "current"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L35"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "Provinces"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "Above"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "disability"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "My"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L37"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L38",
+   "word": "Find"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L39",
+   "word": "deduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "Use"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L41",
+   "word": "Both"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L43"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "net"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L44",
+   "word": "twice"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "July"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L46"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.2,
+   "at": "L2",
+   "word": "change"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L3",
+   "word": "three"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L13"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L21"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L27"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L31"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L35"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L37"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L42"
+  }
+ ],
+ "ticker": [
+  "CCB 2026\u201327 \u00b7 UNDER 6: MAX $8,157 \u00b7 6\u201317: MAX $6,883",
+  "REDUCTION STARTS ABOVE $38,237 OF FAMILY NET INCOME",
+  "ONE CHILD: \u2212$70 PER $1,000 \u00b7 THREE: \u2212$190",
+  "SARA: RRSP $10,000 \u2192 +$700 CCB + $2,965 TAX = $3,665",
+  "BOTH PARTNERS FILE EVERY YEAR",
+  "EXAMPLES \u00b7 2026"
+ ],
+ "audio": "lf/lf16/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

@@ -664,4 +664,44 @@ const WindowHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook };
+// ---------- CcbHook: frame-0 hook — a CCB meter; an RRSP card slides the net-income knob left, the benefit rises and a tax-saved tag pops ----------
+// p.before · p.after · p.tax · p.total · p.incFrom · p.incTo · p.lo · p.hi · p.showAt · p.moveAt · p.totalAt · p.kicker · p.title · p.finishTitle · p.qAt · p.question · p.out · p.bg
+const CcbHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const sh = p.showAt ? prog(now, p.showAt.t, 0.7, BACK) : 1; const mv = p.moveAt ? prog(now, p.moveAt.t, 1.4, INOUT) : 0;
+  const tk = p.totalAt ? prog(now, p.totalAt.t, 0.6, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const inc = p.incFrom + (p.incTo - p.incFrom) * mv; const ccb = p.before + (p.after - p.before) * mv;
+  const X0 = 260, W = 1400, Y = 640; const kx = X0 + (W * (inc - p.lo)) / (p.hi - p.lo);
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.22 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.66})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 50, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{mv > 0.5 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      <div style={{ opacity: (1 - out) * cl(sh * 1.4) }}>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 250, textAlign: 'center', fontFamily: COND }}>
+          <div style={{ fontSize: 30, letterSpacing: 8, color: C.dim }}>CANADA CHILD BENEFIT · PER YEAR</div>
+          <div style={{ fontSize: 170, fontWeight: 700, lineHeight: 1, color: mv > 0.05 ? C.green : C.gold, textShadow: '0 10px 40px rgba(0,0,0,.6)', transform: `scale(${0.9 + 0.1 * sh})` }}>{fmt(ccb)}</div>
+        </div>
+        <div style={{ position: 'absolute', left: X0, top: Y, width: W, height: 14, borderRadius: 7, background: 'linear-gradient(90deg, rgba(127,211,160,.8), rgba(232,194,122,.8), rgba(229,128,110,.8))' }} />
+        <div style={{ position: 'absolute', left: X0, top: Y + 30, width: W, display: 'flex', justifyContent: 'space-between', fontFamily: COND, fontSize: 24, letterSpacing: 4, color: C.dim }}><span>LOWER NET INCOME · MORE CCB</span><span>HIGHER NET INCOME · LESS CCB</span></div>
+        <div style={{ position: 'absolute', left: kx - 180, top: Y - 120, width: 360, textAlign: 'center', fontFamily: COND }}>
+          <div style={{ fontSize: 22, letterSpacing: 4, color: C.dim }}>FAMILY NET INCOME</div>
+          <div style={{ fontSize: 44, fontWeight: 700, color: C.white }}>{fmt(inc)}</div></div>
+        <div style={{ position: 'absolute', left: kx - 18, top: Y - 11, width: 36, height: 36, borderRadius: 18, background: C.white, boxShadow: '0 0 20px rgba(255,255,255,.6)' }} />
+        {mv > 0.02 && <div style={{ position: 'absolute', left: X0 + W - 380 - 200 * mv, top: Y + 90, padding: '14px 26px', borderRadius: 14, background: 'linear-gradient(180deg,#F1D38E,#C9A055)', fontFamily: COND, fontSize: 36, fontWeight: 700, color: '#1A1408', opacity: cl(mv * 3) }}>RRSP −$10,000</div>}
+        {tk > 0.05 && <div style={{ position: 'absolute', left: 0, right: 0, top: Y + 170, textAlign: 'center', fontFamily: COND, transform: `scale(${0.7 + 0.3 * tk})`, opacity: cl(tk * 1.5) }}>
+          <span style={{ fontSize: 40, color: C.green, fontWeight: 700 }}>+{fmt(p.after - p.before)} CCB</span><span style={{ fontSize: 40, color: C.dim }}>  +  </span>
+          <span style={{ fontSize: 40, color: C.green, fontWeight: 700 }}>{fmt(p.tax)} LESS TAX</span><span style={{ fontSize: 40, color: C.dim }}>  =  </span>
+          <span style={{ fontSize: 56, color: C.gold, fontWeight: 700 }}>{fmt(p.total)}</span></div>}
+      </div>
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 905, textAlign: 'center', fontFamily: COND, fontSize: 46, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook };
