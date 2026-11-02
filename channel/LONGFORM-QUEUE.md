@@ -107,7 +107,7 @@ Every topic still needs its own primary-source fact check (CRA / Service Canada 
 Briefs (hook / intro / problem / development / climax / summary / CTA) from the user; Canadian facts only (canada.ca / CRA), no "hack / secret / loophole" claims in the video.
 | # | Topic (user working title) | Angle | Status |
 |---|---|---|---|
-| 67 | OAS Shelter Strategy 2026: UNLOCKED! (Maximize Your Benefits NOW) | OAS recovery tax (clawback): threshold, 15%, July–June repayment; levers: pension splitting, TFSA, timing one-off income, deferral to 70 | in production LF-14 |
+| 67 | OAS Shelter Strategy 2026: UNLOCKED! (Maximize Your Benefits NOW) | OAS recovery tax (clawback): threshold, 15%, July–June repayment; levers: pension splitting, TFSA, timing one-off income, deferral to 70 | rendered LF-14 (2026-11-02, `longform/lf14-oas`) |
 | 68 | Canadians Are MISSING This Retirement Tax Window (DON'T Be Them!) | low-income years between retirement and CPP/OAS/RRIF: drawing RRSP at low brackets | queued |
 | 69 | 2026 CHILD BENEFIT HACK: Get THOUSANDS More (Complete Guide!) | CCB uses adjusted family net income: RRSP/deductions and filing raise the benefit | queued |
 
@@ -126,7 +126,7 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 11. LF-11 → #22 What If You Sell Your Home? — rendered 2026-10-24
 12. LF-12 → #12 What Happens to Your Paycheque When You Get a $20,000 Bonus? — rendered 2026-10-25
 13. LF-13 → #4 Federal vs Provincial Tax — Who Actually Takes Your Money? — rendered 2026-10-31 (proposed 2027-01-29)
-14. LF-14 → #67 OAS: keep more of it (user brief) — in production
+14. LF-14 → #67 OAS: keep more of it (user brief) — rendered 2026-11-02 (proposed 2027-02-08)
 15. LF-15 → #68 The retirement tax window (user brief) — queued
 16. LF-16 → #69 CCB: how to get more (user brief) — queued
 

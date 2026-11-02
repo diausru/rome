@@ -1,5 +1,5 @@
 # LF-14 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** filled after render.
+**QC (2026-11-02):** 538.9 s (8:59), −13.8 LUFS, no black frames, contact sheet checked (20 frames).
 **File:** `LF14-1080p.mp4` · 1920×1080 · 30 fps · ≈8:59 · VO Grady (59 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command). Proposed slot: 2027-02-08 (10-day cadence).
 **Intro type:** OasHook (new). **Thumbnail:** made by the user.
