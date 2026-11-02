@@ -1,10 +1,10 @@
 # LONG-FORM BOOT (compact; read this, not old docs)
-State: LF-01…LF-14 done (MP4 in repo, unpublished). Next = first row with status `queued` in "Recommended initial production order" of `channel/LONGFORM-QUEUE.md` (now: LF-15 #68 retirement tax window, user brief; then LF-16 #69 CCB, then #5 credits vs deductions). Dates: every 10 days from LF-11 Jan 8 2027 (LF-12 Jan 19, LF-13 Jan 29, LF-14 Feb 8…).
+State: LF-01…LF-15 done (MP4 in repo, unpublished). Next = first row with status `queued` in "Recommended initial production order" of `channel/LONGFORM-QUEUE.md` (now: LF-16 #69 CCB, user brief; then #5 credits vs deductions). Dates: every 10 days from LF-11 Jan 8 2027 (LF-12 Jan 19, LF-13 Jan 29, LF-14 Feb 8…).
 Template episode: `longform/lf12-bonus/` (copy data.py/lines.py/gen_episode.py, change data). Tax model: `th(g, rrsp, p)` in `longform/lf10-marginal/data.py` (exec-import as lf12 data.py).
 
 ## Rules (hard)
 - Facts: canada.ca/CRA via WebSearch (allowed_domains canada.ca), 1 pass; unverified → not in video; FACTS.md = claim·source·year·lines.
-- Different from Shorts and previous LF; new intro component every episode (used: collage, stubs, race, stacks, gauges, sold, bonus, fedprov, oas) in `showreel/src/lf/Motion.tsx`, register in PANELS_MOTION.
+- Different from Shorts and previous LF; new intro component every episode (used: collage, stubs, race, stacks, gauges, sold, bonus, fedprov, oas, window) in `showreel/src/lf/Motion.tsx`, register in PANELS_MOTION.
 - Script ~1,100–1,300 words (8–10 min), numbers as words, "C R A / C P P / E I / R R S P"; hook with open loop; mid re-hook ~60%; last line = bridge to next queue topic + "Subscribe, so you don't miss it."
 - No AI video; plates = Higgsfield `gpt_image_2_5` 16:9, prompt ends "No text, no numbers, no letters, no logos."; check once (contact sheet); no 4K upscale (local resize).
 - vidIQ ≤ 5–15 credits (1 keyword research CA, ≤2 title scores); NexLev 1 `youtube_search`; Scrape Creators (user, 2026-10-31): use its credits for research too (1–2 calls, balance before/after).
