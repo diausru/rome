@@ -109,7 +109,7 @@ Briefs (hook / intro / problem / development / climax / summary / CTA) from the 
 |---|---|---|---|
 | 67 | OAS Shelter Strategy 2026: UNLOCKED! (Maximize Your Benefits NOW) | OAS recovery tax (clawback): threshold, 15%, July–June repayment; levers: pension splitting, TFSA, timing one-off income, deferral to 70 | rendered LF-14 (2026-11-02, `longform/lf14-oas`) |
 | 68 | Canadians Are MISSING This Retirement Tax Window (DON'T Be Them!) | low-income years between retirement and CPP/OAS/RRIF: drawing RRSP at low brackets | rendered LF-15 (2026-11-02, `longform/lf15-window`) |
-| 69 | 2026 CHILD BENEFIT HACK: Get THOUSANDS More (Complete Guide!) | CCB uses adjusted family net income: RRSP/deductions and filing raise the benefit | queued |
+| 69 | 2026 CHILD BENEFIT HACK: Get THOUSANDS More (Complete Guide!) | CCB uses adjusted family net income: RRSP/deductions and filing raise the benefit | rendered LF-16 (2026-11-02, `longform/lf16-ccb`) |
 
 ## Recommended initial production order
 Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17). Dates: Metricool slots for LF-02..05, proposed 10-day steps from LF-05 for the rest.
@@ -128,7 +128,7 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 13. LF-13 → #4 Federal vs Provincial Tax — Who Actually Takes Your Money? — rendered 2026-10-31 (proposed 2027-01-29)
 14. LF-14 → #67 OAS: keep more of it (user brief) — rendered 2026-11-02 (proposed 2027-02-08)
 15. LF-15 → #68 The retirement tax window (user brief) — rendered 2026-11-02 (proposed 2027-02-18)
-16. LF-16 → #69 CCB: how to get more (user brief) — queued
+16. LF-16 → #69 CCB: how to get more (user brief) — rendered 2026-11-02 (proposed 2027-02-28)
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
 Not a stretched Short and not a re-cut of one: a new question, a new story, new examples and a new visual approach. Already covered by Shorts (do not repeat their angle, hook, examples or visuals):
