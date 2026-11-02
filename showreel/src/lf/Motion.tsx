@@ -623,4 +623,45 @@ const OasHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook };
+// ---------- WindowHook: frame-0 hook — an age timeline 60→75 with a glowing low-tax window; one $10,000 block lands at 62 (cheap) then at 72 (expensive) ----------
+// p.ages[a0,a1] · p.win[w0,w1] · p.stops[{age, tax, tone, label}] · p.stopAt[] · p.closeAt · p.kicker · p.title · p.finishTitle · p.qAt · p.question · p.out · p.bg
+const WindowHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const [a0, a1] = p.ages as number[]; const [w0, w1] = p.win as number[]; const stops = p.stops as Pn[];
+  const X0 = 200, W = 1520, Y = 560; const ax = (a: number) => X0 + (W * (a - a0)) / (a1 - a0);
+  const wi = prog(now, p.t + 0.3, 1.0, EX); const cls = p.closeAt ? prog(now, p.closeAt.t, 0.8, INOUT) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const ks = stops.map((_, i) => (p.stopAt?.[i]?.t !== undefined ? prog(now, p.stopAt[i].t, 0.7, BACK) : 0));
+  const cur = ks[1] > 0.05 ? 1 : 0; const bx = cur ? ax(stops[0].age) + (ax(stops[1].age) - ax(stops[0].age)) * ks[1] : ax(stops[0].age);
+  const fin = ks[1] > 0.6;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.3 - 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.22 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.66})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 50, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{fin && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      <div style={{ opacity: 1 - out }}>
+        <div style={{ position: 'absolute', left: ax(w0), top: Y - 260, width: (ax(w1) - ax(w0)) * wi * (1 - 0.0 * cls), height: 300, borderRadius: 22, background: `linear-gradient(180deg, rgba(127,211,160,${0.28 * (1 - 0.6 * cls)}), rgba(127,211,160,.04))`, border: `2px solid rgba(127,211,160,${0.7 * (1 - 0.6 * cls)})` }}>
+          <div style={{ position: 'absolute', left: 24, top: 18, fontFamily: COND, fontSize: 30, letterSpacing: 6, color: C.green, opacity: wi }}>LOW-TAX WINDOW</div>
+        </div>
+        <div style={{ position: 'absolute', left: ax(w1) - 4, top: Y - 290, width: 8, height: 330 * cls, background: C.red, borderRadius: 4, boxShadow: `0 0 ${20 * cls}px ${C.red}` }} />
+        {cls > 0.3 && <div style={{ position: 'absolute', left: ax(w1) + 18, top: Y - 290, fontFamily: COND, fontSize: 26, letterSpacing: 4, color: C.red, opacity: cls }}>RRSP → RRIF BY 71</div>}
+        <div style={{ position: 'absolute', left: X0, top: Y + 40, width: W, height: 4, background: 'rgba(255,255,255,.5)' }} />
+        {Array.from({ length: a1 - a0 + 1 }, (_, i) => a0 + i).map((a) => (
+          <div key={a} style={{ position: 'absolute', left: ax(a) - 30, width: 60, top: Y + 56, textAlign: 'center', fontFamily: COND, fontSize: a % 5 === 0 || stops.some((s) => s.age === a) ? 34 : 22, color: stops.some((s) => s.age === a) ? C.white : C.dim }}>{a}</div>))}
+        {(ks[0] > 0.02) && <div style={{ position: 'absolute', left: bx - 110, top: Y - 150 - 60 * (1 - ks[0]), width: 220, height: 150, borderRadius: 18, background: 'linear-gradient(180deg,#F1D38E,#C9A055)', boxShadow: '0 20px 50px rgba(0,0,0,.5)', opacity: cl(ks[0] * 2), display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: COND, color: '#1A1408' }}>
+          <div style={{ fontSize: 22, letterSpacing: 5 }}>RRSP</div><div style={{ fontSize: 56, fontWeight: 700 }}>$10,000</div></div>}
+        {stops.map((s, i) => ks[i] > 0.05 && (
+          <div key={i} style={{ position: 'absolute', left: ax(s.age) - 160, width: 320, top: Y + 120, textAlign: 'center', fontFamily: COND, opacity: cl(ks[i] * 1.5), transform: `scale(${0.8 + 0.2 * ks[i]})` }}>
+            <div style={{ fontSize: 24, letterSpacing: 5, color: C.dim }}>{s.label}</div>
+            <div style={{ fontSize: 86, fontWeight: 700, color: s.tone === 'good' ? C.green : C.red, lineHeight: 1 }}>{'$' + (s.tax as number).toLocaleString('en-US')}</div>
+          </div>))}
+      </div>
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 900, textAlign: 'center', fontFamily: COND, fontSize: 50, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook };
