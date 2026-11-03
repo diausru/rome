@@ -738,4 +738,40 @@ const BreakHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook };
+// ---------- RefundHook: frame-0 hook — two people, two bars each (WITHHELD vs REAL TAX); the gap drips out as a refund for one, zero for the other; then SAME TAX ----------
+// p.rows[{name, withheld, real}] · p.gapAt[] · p.sameAt · p.kicker · p.title · p.finishTitle · p.qAt · p.question · p.out · p.bg
+const RefundHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const rows = p.rows as Pn[]; const sm = p.sameAt ? prog(now, p.sameAt.t, 0.7, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const X0 = 360, W = 1200, MAXV = 16000; const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.3 - 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.22 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.66})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 50, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 34, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: 84, fontWeight: 700, color: C.white, letterSpacing: 2, marginTop: 4, textShadow: '0 6px 30px rgba(0,0,0,.7)' }}>{sm > 0.5 && p.finishTitle ? p.finishTitle : p.title}</div>
+      </div>
+      {rows.map((r, i) => {
+        const y = 270 + i * 290; const g = p.gapAt?.[i]?.t !== undefined ? prog(now, p.gapAt[i].t, 0.9, EX) : 0; const gap = r.withheld - r.real; const wR = (W * r.real) / MAXV, wG = (W * gap) / MAXV;
+        const i0 = prog(now, p.t + 0.2 + i * 0.3, 0.7, BACK);
+        return (
+          <div key={i} style={{ position: 'absolute', left: 0, top: y, width: 1920, opacity: (1 - out) * cl(i0 * 1.5) }}>
+            <div style={{ position: 'absolute', left: X0, top: 0, fontFamily: COND, fontSize: 46, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{r.name}<span style={{ fontSize: 26, color: C.dim, marginLeft: 20, letterSpacing: 4 }}>$70,000 SALARY</span></div>
+            <div style={{ position: 'absolute', left: X0, top: 70, fontFamily: COND, fontSize: 22, letterSpacing: 4, color: C.dim }}>TAX WITHHELD</div>
+            <div style={{ position: 'absolute', left: X0 + 200, top: 64, width: wR, height: 40, borderRadius: '8px 0 0 8px', background: 'linear-gradient(90deg,#C9A055,#F1D38E)' }} />
+            {gap > 0 && <div style={{ position: 'absolute', left: X0 + 200 + wR + 2 + 60 * g, top: 64 + 50 * g, width: wG, height: 40, borderRadius: 8, background: C.green, boxShadow: g > 0.3 ? `0 0 ${24 * g}px rgba(127,211,160,.6)` : 'none', transform: `rotate(${6 * g}deg)` }} />}
+            <div style={{ position: 'absolute', left: X0, top: 124, fontFamily: COND, fontSize: 22, letterSpacing: 4, color: C.dim }}>REAL TAX</div>
+            <div style={{ position: 'absolute', left: X0 + 200, top: 118, width: wR, height: 40, borderRadius: 8, background: 'rgba(244,241,234,.85)', boxShadow: sm > 0.3 ? `0 0 ${30 * sm}px rgba(232,194,122,.7)` : 'none' }} />
+            {sm > 0.05 && <div style={{ position: 'absolute', left: X0 + 210 + wR, top: 116, fontFamily: COND, fontSize: 38, fontWeight: 700, color: C.gold, opacity: sm }}>{fmt(r.real)}</div>}
+            {g > 0.2 && <div style={{ position: 'absolute', left: X0 + 200 + W - 120, top: 0, textAlign: 'right', width: 200, fontFamily: COND, opacity: cl((g - 0.2) * 2) }}>
+              <div style={{ fontSize: 22, letterSpacing: 4, color: C.dim }}>REFUND</div><div style={{ fontSize: 60, fontWeight: 700, color: gap > 0 ? C.green : C.white, lineHeight: 1 }}>{fmt(gap)}</div></div>}
+          </div>);
+      })}
+      {p.qAt && <div style={{ position: 'absolute', left: 120, right: 120, top: 900, textAlign: 'center', fontFamily: COND, fontSize: 48, fontWeight: 600, color: C.white, textTransform: 'uppercase', textShadow: '0 4px 30px rgba(0,0,0,.9)', opacity: qk * (1 - out) }}>{p.question}</div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook };
