@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  ["hook", "Two parents, one child, one deposit. Every month the Canada Child Benefit lands in Maya's account, never Dan's. It's not a mistake.", 0.35],
+  ["c1", "Maya and Dan live together with their four-year-old. Right now that's up to eight thousand one hundred and fifty-seven dollars a year.", 0.3],
+  ["c2", "But the CRA pays only one person per home. And the law presumes the mother is primarily responsible for the child, so she applies.", 0.3],
+  ["c3", "If Dan does most of the caregiving, he can apply instead, with a signed letter from Maya saying so.", 0.3],
+  ["c4", "Same-sex parents? One of you applies for all the children, and you choose who.", 0.4],
+  ["reveal", "The twist: switching who gets it doesn't change the amount by a cent. The CRA says it's the same, no matter which parent receives it.", 0.3],
+  ["action", "So pick who applies, and keep filing your returns every year.", 0.3],
+  ["cta", "Next: separated parents and shared custody, who gets the benefit then? Follow so you don't miss it.", 0.0]
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "topic": "Canada Child Benefit: who receives it. CRA pays one person per household; when both parents live with the child, the female parent is usually considered primarily responsible (legislative requirement, Income Tax Act) and should apply; the male parent can apply with a signed letter from the female parent; same-sex parents: one parent applies for all children; the amount is the same whichever parent receives it",
+ "tax_year": 2026,
+ "example": {
+  "under6": 8157,
+  "age6to17": 6883,
+  "child_age": 4,
+  "note": "example (not a CRA rule): Maya and Dan live together with their 4-year-old; the July 2026–June 2027 maximum for a child under 6 is $8,157 a year (actual amount depends on adjusted family net income from the 2025 returns)."
+ },
+ "derive": {},
+ "spoken": {
+  "under6": "eight thousand one hundred and fifty-seven dollars",
+  "child_age": "four"
+ },
+ "sources": {
+  "who": "canada.ca CRA 'Who can apply – Canada child benefit': female parent living with the child usually considered primarily responsible; the other parent can apply with a signed letter from the female parent; same-sex parents: one parent applies for all children (via canada.ca search excerpts 2026-11-04)",
+  "same": "CRA Taxology podcast ep. 7 'Parenting perks' (canada.ca): presumption is a legislative requirement under the Income Tax Act; no matter which parent receives the CCB, the amount will be the same; CRA can only pay one person in the household",
+  "amount": "canada.ca CRA 'How much you can get' (current page): July 2026–June 2027 up to $8,157 per child under 6 and $6,883 per child 6–17; ESDC July 2026 release 'Canada Child Benefit payments increasing in 2026-2027'"
+ },
+ "unverified": "www.canada.ca not fetchable from this session; facts from canada.ca search excerpts"
+}

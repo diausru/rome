@@ -1,0 +1,213 @@
+{
+ "id": "m3",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "ONE DEPOSIT.",
+  "l2": "WHY ONLY MOM?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "rule": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "scale": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "dep",
+   "beat": "hook",
+   "word": "deposit.",
+   "sfx": "chime"
+  },
+  {
+   "id": "maya",
+   "beat": "hook",
+   "word": "Maya's",
+   "sfx": "tick"
+  },
+  {
+   "id": "never",
+   "beat": "hook",
+   "word": "never",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "amt",
+   "beat": "c1",
+   "word": "eight",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "one",
+   "beat": "c2",
+   "word": "one",
+   "sfx": "tick"
+  },
+  {
+   "id": "law",
+   "beat": "c2",
+   "word": "presumes",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "letter",
+   "beat": "c3",
+   "word": "signed",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "choose",
+   "beat": "c4",
+   "word": "choose",
+   "sfx": "tick"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "cent",
+   "beat": "reveal",
+   "word": "cent.",
+   "sfx": "tick"
+  },
+  {
+   "id": "same",
+   "beat": "reveal",
+   "word": "same,",
+   "sfx": "chime"
+  },
+  {
+   "id": "pick",
+   "beat": "action",
+   "word": "pick",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "choose",
+   "offset": -0.4
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "kids"
+}

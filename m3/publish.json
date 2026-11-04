@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "M3 · CCB: why only Mom's account",
+  "mp4": "showreel/out/m3/m3-final.mp4 (share copy: m3-share.mp4)",
+  "duration": "1:04 (64.00 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'SAME-SEX PARENTS': the 4-step decision path (one payee per home → mother presumed → dad + signed letter → same-sex parents choose), 'SIGNED LETTER = DAD CAN APPLY' stamp, Dan pulling their daughter on a sled",
+  "why": "the whole rule in one frame",
+  "t": 39.6,
+  "ms": 39600,
+  "file": "m3/cover.jpg (extracted at 39.6 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "canada.ca CRA Who can apply – Canada child benefit",
+   "year": "2026",
+   "supports": "female parent usually considered primarily responsible; other parent applies with a signed letter; same-sex parents: one parent for all children"
+  },
+  {
+   "source": "CRA Taxology podcast ep. 7 (canada.ca)",
+   "year": "2026",
+   "supports": "legislative requirement under the Income Tax Act; CRA can only pay one person per household; the amount is the same whichever parent receives it"
+  },
+  {
+   "source": "canada.ca CRA How much you can get (CCB)",
+   "year": "July 2026–June 2027",
+   "supports": "up to $8,157 per child under 6, $6,883 per child 6–17"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "Why the Canada Child Benefit Goes to Mom (and How Dad Can Apply)",
+   "CCB in Mom's Account Only? The CRA Rule Explained (2026)",
+   "Who Should Apply for the Canada Child Benefit? One Parent Per Home"
+  ],
+  "description": "Two parents, one child, one deposit: every month the Canada Child Benefit lands in Maya's account, never Dan's. It's not a mistake.\n\nThe rules (CRA):\n• The CRA pays the CCB to only one person per home.\n• When both parents live with the child, the female parent is usually considered primarily responsible (a requirement in the Income Tax Act), so she applies.\n• If the other parent does most of the caregiving, he can apply instead, with a signed letter from her.\n• Same-sex parents: one parent applies for all the children; the couple chooses.\n\nThe twist: switching who receives it doesn't change the amount. The CRA says it's the same, no matter which parent receives it. (July 2026–June 2027: up to $8,157 per child under 6, $6,883 per child 6–17, based on adjusted family net income.)\n\nDecide who applies, and keep filing your returns every year.\n\nNext: separated parents and shared custody.\n\nSources: canada.ca (CRA) Canada child benefit – who can apply; how much you can get; CRA Taxology podcast ep. 7. Example family. General information, not advice.\n\n#CCB #CanadaChildBenefit #CRA",
+  "hashtags": "#CCB #CanadaChildBenefit #CRA #ParentingCanada",
+  "keywords": "canada child benefit who should apply, ccb mother or father, why does ccb go to mother, ccb father apply letter, ccb same sex parents, canada child benefit 2026 amount",
+  "pinned": "Quick check: Dad stays home with the kids. What does he need to apply for the CCB? (A signed letter from Mom.) General info, not advice.",
+  "cta": "Follow for the next one: shared custody."
+ },
+ "tt": {
+  "caption": "Why the CCB only lands in Mom's account 👶 and how Dad can apply instead.",
+  "keywords": "canada child benefit · who applies · ccb dad",
+  "hashtags": "#ccb #canadachildbenefit #canadiantaxes #cra #parentsofcanada",
+  "pinned": "Same amount no matter which parent gets it. (General info, not advice.)",
+  "cta": "Follow for the next one: shared custody."
+ },
+ "ig": {
+  "caption": "One child. One deposit. Why only Mom? 👶🇨🇦\n\n• CRA pays the CCB to one person per home\n• Both parents at home → the mother is presumed primarily responsible (Income Tax Act)\n• Dad does most of the care? He applies with a signed letter from Mom\n• Same-sex parents: one applies for all kids, you choose\n✅ Same amount either way (up to $8,157/yr per child under 6, July 2026–June 2027)\n\nSend this to a parent who's wondered.\n\nSource: CRA (canada.ca). General info, not advice.",
+  "keywords": "canada child benefit, ccb, who applies",
+  "hashtags": "#ccb #canadachildbenefit #canadiantaxes #momsofcanada #dadsofcanada #personalfinancecanada",
+  "pinned": "Save this for your CCB application 📌",
+  "cta": "Send this to a parent who's wondered."
+ },
+ "eng": {
+  "question": "Dad is the main caregiver: what does he need? (Mom's signed letter)",
+  "save": "One payee per home rule.",
+  "share": "New parents.",
+  "follow": "Canadian tax and benefit rules with real numbers."
+ },
+ "seo": {
+  "primary": "canada child benefit who should apply",
+  "secondary": "vidIQ CA: seed <750/mo; 'ccb' 140K/mo (mixed intent)",
+  "intent": "Parents wondering why the CCB goes to one parent.",
+  "audience": "Parents 25–45.",
+  "angle": "one payee per home; mother presumption; letter for dad; same amount.",
+  "questions": "Why does the CCB go to the mother? Can the father apply? Does it change the amount?"
+ },
+ "next": [
+  {
+   "topic": "Separated parents: who gets CCB (#26)",
+   "why": "Bridge",
+   "intent": "ccb shared custody",
+   "hook": "50/50 custody",
+   "angle": "each parent gets half",
+   "payoff": "apply correctly"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #3, bridged from M10. Playlist: 'Benefits & credits'.",
+ "research": {
+  "vidiq": "balance 444 before; 1 keyword_research CA",
+  "nexlev": "youtube_search shorts CA: no Short answers 'why Mom gets it'; generic CCB explainers ≤10K views"
+ },
+ "retention": "Frame 0 'ONE DEPOSIT. WHY ONLY MOM?'; coin drops into Maya's card 2–6 s, Dan '$0 NEVER' 7 s; $8,157 at 15 s; decision path nodes 21 s, 24 s, 33 s, 36 s; 'SIGNED LETTER = DAD CAN APPLY' stamp 35.3 s (re-hook, ≈55 %); balance scale reveal 41–51 s; check card + next pill."
+}
