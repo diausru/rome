@@ -7,9 +7,16 @@ Cadence: 1 episode / week, 16:9 1920×1080 30 fps, 7–10 min, English. Separate
 - Facts: every rule/limit/number re-checked on canada.ca / CRA / laws-lois / fintrac-canafe / osb (gov) before render. Secondary sources in Part C (TaxTips, TD, Fidelity, RBC, PwC…) are NOT enough → confirm on a government page or mark `[VERIFY]` and do not ship. "Verify before publishing" list → top of `upload.txt` + `QA_NOTES.md`.
 - Never change Part B numbers silently: if a number disagrees with canada.ca → stop, write `QA_NOTES.md`, ask.
 - Long-standing channel rules apply in full (same as `longform/BOOT.md` "Rules (hard)"): numbers as words in VO, "C R A / R R S P / T F S A" spelled, open-loop hook, mid re-hook ~60 %, last line = bridge to next story + "Subscribe, so you don't miss it.", vidIQ ≤15 credits, 1 NexLev search, 1 batch VO, 1 batch images, 1 contact sheet, 1 fix pass, 1 render, no polling.
-- VO: Grady ONLY — Higgsfield `text2speech_v2`, variant `elevenlabs`, preset `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678`. Prompt file's ElevenLabs settings ignored. On-screen host = a man matching the voice (replaces the woman in A4/A6; same outfit colours, same 4 expressions).
+- VO: Grady ONLY — Higgsfield `text2speech_v2`, variant `elevenlabs`, preset `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678`. Prompt file's ElevenLabs settings ignored. Grady = off-screen narrator.
 - Images: Higgsfield `gpt_image_2_5` 16:9, illustrated style A4, prompt ends "No text, no numbers, no letters, no logos."; numbers/text only in code.
-- Handle: replace every `@canadataxwizard` → `Instagram taxsecretscanada` (no "@"); cross-promo TikTok taxsecretscanada.
+- Handles: every `@canadataxwizard` → Instagram `@taxsecretscanada`; YouTube `@TaxSecretsCanada` (search "Tax Secrets Canada"); TikTok `taxsecretscanada`. CTA + description show Instagram + YouTube.
+
+## Style (NEW, owner 2026-11-04) — story-told, NO host
+- No host anywhere: drop all "Host …" scenes/expressions/host thumbnails from the prompt file. Hook/Rules/Takeaways/CTA open on story panels or kinetic type instead.
+- Part 1 = the STORY: illustrated panels change with the narration (one panel per VO beat, ~6–12 s each); each panel "comes alive" in code — push-in/pan, 3-layer parallax (bg-removed character/props), light flicker, steam/snow/paper particles, phone screens & documents animated as code overlays, timeline chips (Year 1 → Year 2).
+- Turn = hard cut + thud + the letter/bill built in code.
+- Part 2 = the SOLUTION, exact and step by step: rule cards with source tags, animated calc (L1–L4 rotate), numbered step cards, "without fix vs with fix" split, 3 takeaways.
+- Thumbnail: story character panel (left) + 3–4 word text + red/green number badge, all text in code.
 - Publishing / Metricool only on explicit command. Altered-content flag reminder in `upload.txt`.
 - Git: branch `claude/quirky-keller-5cbtln`, commit + push per episode, no PR.
 
