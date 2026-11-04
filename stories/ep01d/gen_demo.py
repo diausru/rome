@@ -19,19 +19,19 @@ M = {'dir': 'lf/st01d/mascot', 'frames': {'run': 8, 'talk': 60, 'point': 30, 'wa
 def mascot(at, keys, **kw): return P('mascot', 0, 0, 1920, at, fxIn='fade', fxOut='fade', inDur=0.01, keys=keys, **M, **kw)
 events = [
  scene('L1',
-   mascot('L1', [K('L1', None, -0.8, x=2150, y=1050, h=560, action='talk', move=1.6), K('L1', None, 0.8, x=1610, y=1050, h=560, action='talk'),
-                 K('L2', x=1610, y=1050, h=560, action='point', flip=True)], off=-0.8, bright=0.86, warm=0.3),
+   mascot('L1', [K('L1', None, -0.8, x=2150, y=1110, h=820, action='talk', move=1.6), K('L1', None, 0.8, x=1650, y=1110, h=820, action='talk'),
+                 K('L2', x=1650, y=1110, h=820, action='point', flip=True)], off=-0.8, bright=0.86, warm=0.3),
    P('glasswin', 930, 120, 760, 'L1', None, fxIn='fade', fxOut='fade', kicker='Real situation · Maya, 27', accent='gold',
-     lines=[ln('Take-home: $9,800 / month', 'L1', 'nine thousand', 50), ln('$1,000 → TFSA every Monday', 'L1', 'every single', 50, hl=True)]), off=-0.8),
+     lines=[ln('Take-home: $9,800 / month', 'L1', 'nine thousand', 50, fx='type'), ln('$1,000 → TFSA every Monday', 'L1', 'every single', 50, hl=True, fx='decode')]), off=-0.8),
  scene('L3',
-   mascot('L3', [K('L3', x=1640, y=1060, h=600, action='talk'), K('L3', 'one percent', x=1640, y=1060, h=600, action='shock')], bright=0.9, warm=0.25),
+   mascot('L3', [K('L3', x=1640, y=1110, h=820, action='talk'), K('L3', 'one percent', x=1640, y=1110, h=820, action='shock')], bright=0.9, warm=0.25),
    P('glasswin', 110, 140, 760, 'L3', 'problem', fxIn='fade', fxOut='fade', kicker='The problem', accent='red',
-     lines=[ln('Sometime in 2027…', 'L3', 'sometime', 50), ln('CRA charges 1% / month', 'L3', 'charging', 56, hl=True, accent='red')])),
+     lines=[ln('Sometime in 2027…', 'L3', 'sometime', 50, fx='rise'), ln('CRA charges 1% / month', 'L3', 'charging', 56, hl=True, accent='red', fx='glow')])),
  scene('L20',
-   mascot('L20', [K('L20', None, -0.6, x=-200, y=1060, h=600, action='talk', move=1.4, moving='run', flip=True), K('L20', None, 0.8, x=330, y=1060, h=600, action='point', flip=False)], bright=1.0, warm=0.1),
+   mascot('L20', [K('L20', None, -0.6, x=-200, y=1110, h=820, action='talk', move=1.4, moving='run', flip=True), K('L20', None, 0.8, x=310, y=1110, h=820, action='point', flip=False)], bright=1.0, warm=0.1),
    P('glasswin', 620, 130, 820, 'L20', 'go over', fxIn='fade', fxOut='fade', kicker='The rule · TFSA', accent='red',
-     lines=[ln('Over your TFSA room?', 'L20', 'go over', 46, light=True), ln('1% per month', 'L20', 'one percent', 92, accent='red'),
-            ln('on the HIGHEST excess', 'L21', 'highest', 52, hl=True, accent='red'), ln('— not the average', 'L21', 'average', 40, light=True)],
+     lines=[ln('Over your TFSA room?', 'L20', 'go over', 46, light=True, fx='type'), ln('1% per month', 'L20', 'one percent', 92, accent='red', fx='glow'),
+            ln('on the HIGHEST excess', 'L21', 'highest', 52, hl=True, accent='red', fx='mask'), ln('— not the average', 'L21', 'average', 40, light=True, fx='rise')],
      src='Source: canada.ca — If you owe tax on excess TFSA amounts', srcAt=W('L21', 'highest')), off=-0.6),
 ]
 PL = 'lf/st01d/plates/'
@@ -45,5 +45,5 @@ sfx = [{'name': 'whoosh', 'vol': 0.14, **W('L3')}, {'name': 'whoosh', 'vol': 0.1
 ticker = ['TFSA LIMIT 2026: $7,000', 'EXCESS TFSA AMOUNTS: 1% PER MONTH', 'RRSP 2026: 18% UP TO $33,810', 'FHSA: $8,000 A YEAR', 'SOURCE: CANADA.CA']
 ep = {'fps': 30, 'lead': 0.8, 'tail': 1.5, 'footer': 'Based on real situations Canadians shared online · Names and numbers changed · General information, not tax advice',
       'vo': vo, 'chapters': [{'title': 'Real situations · Maya', **W('L1')}, {'title': '02 · What the rules say', **W('L20')}], 'events': events, 'shots': shots, 'plates': plates,
-      'film': True, 'captions': True, 'sfx': sfx, 'ticker': ticker, 'audio': 'lf/st01d/mix.wav', 'music': 'music.wav', 'musicVol': 0.05}
+      'film': True, 'captions': True, 'sfx': sfx, 'audio': 'lf/st01d/mix.wav', 'music': 'music.wav', 'musicVol': 0.05}
 json.dump(ep, open('episode.src.json', 'w'), indent=1); print('ok')

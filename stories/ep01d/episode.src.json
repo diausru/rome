@@ -65,24 +65,24 @@
        "at": "L1",
        "off": -0.8,
        "x": 2150,
-       "y": 1050,
-       "h": 560,
+       "y": 1110,
+       "h": 820,
        "action": "talk",
        "move": 1.6
       },
       {
        "at": "L1",
        "off": 0.8,
-       "x": 1610,
-       "y": 1050,
-       "h": 560,
+       "x": 1650,
+       "y": 1110,
+       "h": 820,
        "action": "talk"
       },
       {
        "at": "L2",
-       "x": 1610,
-       "y": 1050,
-       "h": 560,
+       "x": 1650,
+       "y": 1110,
+       "h": 820,
        "action": "point",
        "flip": true
       }
@@ -95,7 +95,9 @@
       "wave": 30,
       "shock": 30
      },
-     "off": -0.8
+     "off": -0.8,
+     "bright": 0.86,
+     "warm": 0.3
     },
     {
      "type": "glasswin",
@@ -113,14 +115,16 @@
        "text": "Take-home: $9,800 / month",
        "size": 50,
        "at": "L1",
-       "word": "nine thousand"
+       "word": "nine thousand",
+       "fx": "type"
       },
       {
        "text": "$1,000 \u2192 TFSA every Monday",
        "size": 50,
        "at": "L1",
        "word": "every single",
-       "hl": true
+       "hl": true,
+       "fx": "decode"
       }
      ]
     }
@@ -145,16 +149,16 @@
       {
        "at": "L3",
        "x": 1640,
-       "y": 1060,
-       "h": 600,
+       "y": 1110,
+       "h": 820,
        "action": "talk"
       },
       {
        "at": "L3",
        "word": "one percent",
        "x": 1640,
-       "y": 1060,
-       "h": 600,
+       "y": 1110,
+       "h": 820,
        "action": "shock"
       }
      ],
@@ -165,7 +169,9 @@
       "point": 30,
       "wave": 30,
       "shock": 30
-     }
+     },
+     "bright": 0.9,
+     "warm": 0.25
     },
     {
      "type": "glasswin",
@@ -184,7 +190,8 @@
        "text": "Sometime in 2027\u2026",
        "size": 50,
        "at": "L3",
-       "word": "sometime"
+       "word": "sometime",
+       "fx": "rise"
       },
       {
        "text": "CRA charges 1% / month",
@@ -192,7 +199,8 @@
        "at": "L3",
        "word": "charging",
        "hl": true,
-       "accent": "red"
+       "accent": "red",
+       "fx": "glow"
       }
      ]
     }
@@ -217,8 +225,8 @@
        "at": "L20",
        "off": -0.6,
        "x": -200,
-       "y": 1060,
-       "h": 600,
+       "y": 1110,
+       "h": 820,
        "action": "talk",
        "move": 1.4,
        "moving": "run",
@@ -227,9 +235,9 @@
       {
        "at": "L20",
        "off": 0.8,
-       "x": 330,
-       "y": 1060,
-       "h": 600,
+       "x": 310,
+       "y": 1110,
+       "h": 820,
        "action": "point",
        "flip": false
       }
@@ -241,7 +249,9 @@
       "point": 30,
       "wave": 30,
       "shock": 30
-     }
+     },
+     "bright": 1.0,
+     "warm": 0.1
     },
     {
      "type": "glasswin",
@@ -261,14 +271,16 @@
        "size": 46,
        "at": "L20",
        "word": "go over",
-       "light": true
+       "light": true,
+       "fx": "type"
       },
       {
        "text": "1% per month",
        "size": 92,
        "at": "L20",
        "word": "one percent",
-       "accent": "red"
+       "accent": "red",
+       "fx": "glow"
       },
       {
        "text": "on the HIGHEST excess",
@@ -276,14 +288,16 @@
        "at": "L21",
        "word": "highest",
        "hl": true,
-       "accent": "red"
+       "accent": "red",
+       "fx": "mask"
       },
       {
        "text": "\u2014 not the average",
        "size": 40,
        "at": "L21",
        "word": "average",
-       "light": true
+       "light": true,
+       "fx": "rise"
       }
      ],
      "src": "Source: canada.ca \u2014 If you owe tax on excess TFSA amounts",
@@ -412,13 +426,6 @@
    "at": "L21",
    "word": "highest"
   }
- ],
- "ticker": [
-  "TFSA LIMIT 2026: $7,000",
-  "EXCESS TFSA AMOUNTS: 1% PER MONTH",
-  "RRSP 2026: 18% UP TO $33,810",
-  "FHSA: $8,000 A YEAR",
-  "SOURCE: CANADA.CA"
  ],
  "audio": "lf/st01d/mix.wav",
  "music": "music.wav",

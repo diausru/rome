@@ -19,6 +19,26 @@ const Typed: React.FC<{ text: string; t: number; now: number; cps?: number; acce
     {typing && <span style={{ display: 'inline-block', width: '0.08em', height: '0.9em', marginLeft: 4, verticalAlign: '-0.08em', background: accent, opacity: Math.sin(now * 20) > 0 ? 1 : 0.15 }} />}</span>;
 };
 
+const GL = '!<>-_\\/[]{}=+*^?#$%&0123456789';
+const colorize = (txt: string, accent: string) => txt.split(/(\$?\d[\d,.]*%?(?:\s?\/\s?\w+)?)/).map((s, i) => i % 2 ? <span key={i} style={{ color: accent, fontWeight: 900 }}>{s}</span> : <React.Fragment key={i}>{s}</React.Fragment>);
+// text-appear effects: type (letter by letter + caret), decode (scramble → real), rise (words float up from blur), mask (wipe reveal), glow (letters flash in)
+const FxText: React.FC<{ fx: string; text: string; t: number; now: number; accent: string; cps?: number }> = ({ fx, text, t, now, accent, cps = 30 }) => {
+  const u = now - t;
+  if (fx === 'decode') {
+    const n = text.length; const done = Math.floor(Math.max(0, u) / 0.9 * n);
+    if (done >= n) return <span style={{ whiteSpace: 'nowrap' }}>{colorize(text, accent)}</span>;
+    return <span style={{ whiteSpace: 'nowrap', fontVariantNumeric: 'tabular-nums' }}>{text.split('').map((ch, i) => i < done || ch === ' ' ? ch : <span key={i} style={{ color: accent, opacity: 0.8 }}>{GL[Math.floor((now * 30 + i * 7) % GL.length)]}</span>)}</span>;
+  }
+  if (fx === 'rise') return <span style={{ whiteSpace: 'nowrap' }}>{text.split(' ').map((w, i) => { const k = k01(now, t + i * 0.12, 0.5);
+    return <span key={i} style={{ display: 'inline-block', marginRight: '0.28em', opacity: k, filter: `blur(${(1 - k) * 12}px)`, transform: `translateY(${(1 - k) * 0.6}em)` }}>{colorize(w, accent)}</span>; })}</span>;
+  if (fx === 'mask') { const k = k01(now, t, 0.9);
+    return <span style={{ position: 'relative', display: 'inline-block', whiteSpace: 'nowrap', clipPath: `inset(-20% ${(1 - k) * 100}% -20% 0)` }}>{colorize(text, accent)}
+      <span style={{ position: 'absolute', top: '-10%', bottom: '-10%', left: `${k * 100}%`, width: 4, background: accent, boxShadow: `0 0 16px ${accent}`, opacity: k < 1 ? 1 : 0 }} /></span>; }
+  if (fx === 'glow') return <span style={{ whiteSpace: 'nowrap' }}>{text.split('').map((ch, i) => { const k = k01(now, t + i * 0.035, 0.35); const isN = /[\d$%,.]/.test(ch);
+    return <span key={i} style={{ opacity: k, color: isN ? accent : undefined, fontWeight: isN ? 900 : undefined, textShadow: `0 0 ${(1 - k) * 30}px ${accent}`, display: 'inline-block', transform: `scale(${1.6 - 0.6 * k})`, whiteSpace: 'pre' }}>{ch}</span>; })}</span>;
+  return <Typed text={text} t={t} now={now} cps={cps} accent={accent} />;
+};
+
 // frosted glass window: backdrop blur, soft border, a light that runs around the edge, kicker with a live dot, typed lines
 const GlassWin: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   const acc = ACC[p.accent ?? 'gold']; const k = k01(c.now, p.t, 0.5); const lines = p.lines as Pn[];
@@ -36,10 +56,10 @@ const GlassWin: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
         <span style={{ width: 12, height: 12, borderRadius: 6, background: acc, boxShadow: `0 0 ${8 + 6 * Math.sin(c.now * 5)}px ${acc}` }} />{p.kicker}</div>}
       {lines.map((ln, i) => {
         const t = T(ln, p.t + 0.4 + i * 0.8); if (c.now < t) return null;
-        const hl = ln.hl && c.now > t + ln.text.length / 30;
+        const dur = (ln.fx ?? 'type') === 'type' ? ln.text.length / 30 : 0.9; const hl = ln.hl && c.now > t + dur;
         return <div key={i} style={{ position: 'relative', fontSize: ln.size ?? 48, fontWeight: ln.light ? 600 : 800, lineHeight: 1.22, padding: '2px 0', textShadow: '0 2px 18px rgba(0,0,0,.45)' }}>
-          {hl && <div style={{ position: 'absolute', left: -10, right: -10, top: '8%', bottom: '8%', borderRadius: 8, background: acc, opacity: 0.22, transformOrigin: 'left', transform: `scaleX(${k01(c.now, t + ln.text.length / 30, 0.4)})` }} />}
-          <Typed text={ln.text} t={t} now={c.now} cps={ln.cps ?? 30} accent={ACC[ln.accent ?? p.accent ?? 'gold']} />
+          {hl && <div style={{ position: 'absolute', left: -10, right: -10, top: '8%', bottom: '8%', borderRadius: 8, background: acc, opacity: 0.22, transformOrigin: 'left', transform: `scaleX(${k01(c.now, t + dur, 0.4)})` }} />}
+          <FxText fx={ln.fx ?? 'type'} text={ln.text} t={t} now={c.now} cps={ln.cps ?? 30} accent={ACC[ln.accent ?? p.accent ?? 'gold']} />
         </div>;
       })}
       {p.src && <div style={{ marginTop: 14, fontSize: 18, color: 'rgba(255,255,255,.7)', fontWeight: 600, opacity: k01(c.now, T(p.srcAt, p.t + 1.5)) }}>✓ {p.src}</div>}
@@ -69,7 +89,7 @@ const Mascot: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
 export const Captions: React.FC<{ words: { w: string; s: number; e: number }[]; t: number }> = ({ words, t }) => {
   const i = words.findIndex((w) => t >= w.s && t < w.e + 0.25); if (i < 0) return null;
   const g0 = Math.floor(i / 4) * 4; const grp = words.slice(g0, g0 + 4);
-  return <div style={{ position: 'absolute', left: 0, right: 0, bottom: 150, textAlign: 'center', fontFamily: F.head, fontWeight: 900, fontSize: 58, letterSpacing: 0.5, textTransform: 'uppercase' }}>
+  return <div style={{ position: 'absolute', bottom: 70, left: 420, right: 420, textAlign: 'center', fontFamily: F.head, fontWeight: 900, fontSize: 58, letterSpacing: 0.5, textTransform: 'uppercase' }}>
     {grp.map((w, j) => { const cur = g0 + j === i; const k = k01(t, w.s, 0.12);
       return <span key={j} style={{ display: 'inline-block', margin: '0 10px', padding: '2px 14px', borderRadius: 12, color: '#fff', background: cur ? '#D71920' : 'transparent', transform: `scale(${cur ? 1 + 0.08 * k : 1})`,
         WebkitTextStroke: cur ? undefined : '2px rgba(0,0,0,.85)', textShadow: '0 4px 14px rgba(0,0,0,.6)', opacity: t >= w.s - 0.05 ? 1 : 0.55 }}>{w.w}</span>; })}

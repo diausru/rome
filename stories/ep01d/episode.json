@@ -27,23 +27,23 @@
      "keys": [
       {
        "x": 2150,
-       "y": 1050,
-       "h": 560,
+       "y": 1110,
+       "h": 820,
        "action": "talk",
        "move": 1.6,
        "t": 0.0
       },
       {
-       "x": 1610,
-       "y": 1050,
-       "h": 560,
+       "x": 1650,
+       "y": 1110,
+       "h": 820,
        "action": "talk",
        "t": 1.6
       },
       {
-       "x": 1610,
-       "y": 1050,
-       "h": 560,
+       "x": 1650,
+       "y": 1110,
+       "h": 820,
        "action": "point",
        "flip": true,
        "t": 12.851
@@ -57,6 +57,8 @@
       "wave": 30,
       "shock": 30
      },
+     "bright": 0.86,
+     "warm": 0.3,
      "t": 0.0
     },
     {
@@ -73,12 +75,14 @@
       {
        "text": "Take-home: $9,800 / month",
        "size": 50,
+       "fx": "type",
        "t": 2.165
       },
       {
        "text": "$1,000 \u2192 TFSA every Monday",
        "size": 50,
        "hl": true,
+       "fx": "decode",
        "t": 5.94
       }
      ],
@@ -103,15 +107,15 @@
      "keys": [
       {
        "x": 1640,
-       "y": 1060,
-       "h": 600,
+       "y": 1110,
+       "h": 820,
        "action": "talk",
        "t": 16.098
       },
       {
        "x": 1640,
-       "y": 1060,
-       "h": 600,
+       "y": 1110,
+       "h": 820,
        "action": "shock",
        "t": 27.235
       }
@@ -124,6 +128,8 @@
       "wave": 30,
       "shock": 30
      },
+     "bright": 0.9,
+     "warm": 0.25,
      "t": 16.098
     },
     {
@@ -140,6 +146,7 @@
       {
        "text": "Sometime in 2027\u2026",
        "size": 50,
+       "fx": "rise",
        "t": 20.258
       },
       {
@@ -147,6 +154,7 @@
        "size": 56,
        "hl": true,
        "accent": "red",
+       "fx": "glow",
        "t": 24.958
       }
      ],
@@ -171,8 +179,8 @@
      "keys": [
       {
        "x": -200,
-       "y": 1060,
-       "h": 600,
+       "y": 1110,
+       "h": 820,
        "action": "talk",
        "move": 1.4,
        "moving": "run",
@@ -180,9 +188,9 @@
        "t": 29.456
       },
       {
-       "x": 330,
-       "y": 1060,
-       "h": 600,
+       "x": 310,
+       "y": 1110,
+       "h": 820,
        "action": "point",
        "flip": false,
        "t": 30.856
@@ -196,6 +204,8 @@
       "wave": 30,
       "shock": 30
      },
+     "bright": 1.0,
+     "warm": 0.1,
      "t": 30.056
     },
     {
@@ -213,12 +223,14 @@
        "text": "Over your TFSA room?",
        "size": 46,
        "light": true,
+       "fx": "type",
        "t": 30.436
       },
       {
        "text": "1% per month",
        "size": 92,
        "accent": "red",
+       "fx": "glow",
        "t": 36.149
       },
       {
@@ -226,12 +238,14 @@
        "size": 52,
        "hl": true,
        "accent": "red",
+       "fx": "mask",
        "t": 40.64
       },
       {
        "text": "\u2014 not the average",
        "size": 40,
        "light": true,
+       "fx": "rise",
        "t": 43.78
       }
      ],
@@ -355,13 +369,6 @@
    "vol": 0.18,
    "t": 40.64
   }
- ],
- "ticker": [
-  "TFSA LIMIT 2026: $7,000",
-  "EXCESS TFSA AMOUNTS: 1% PER MONTH",
-  "RRSP 2026: 18% UP TO $33,810",
-  "FHSA: $8,000 A YEAR",
-  "SOURCE: CANADA.CA"
  ],
  "audio": "lf/st01d/mix.wav",
  "music": "music.wav",
