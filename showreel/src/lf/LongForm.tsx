@@ -2,6 +2,7 @@
 // One reusable 16:9 composition driven by an episode JSON (see longform/ENGINE.md).
 // Per episode only data changes: events, numbers, contenders, scores, audio, plate.
 import { Parallax } from './Parallax';
+import { ClipBg } from './ClipBg';
 import React from 'react';
 import { Scene } from './Panels';
 import { AbsoluteFill, Audio, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
@@ -370,7 +371,7 @@ export const LongForm: React.FC<{ ep: Episode }> = ({ ep }) => {
   if (ep.plate && !plates.length) plates.push({ src: ep.plate, t0: 0 });
   return (
     <AbsoluteFill style={{ fontFamily: F.sans, color: C.white }}>
-      {ep.shots ? <Parallax shots={ep.shots} plates={ep.plates} t={t} total={ep.duration ?? 0} /> : <Desk plates={plates} t={t} />}
+      {(ep as any).clips ? <ClipBg clips={(ep as any).clips} t={t} total={ep.duration ?? 0} /> : ep.shots ? <Parallax shots={ep.shots} plates={ep.plates} t={t} total={ep.duration ?? 0} /> : <Desk plates={plates} t={t} />}
       {ep.events.filter((e) => t >= e.t && t < e.t + e.dur).map((e, i) => {
         if (e.type === 'scene') return <AbsoluteFill key={`${e.t}-${i}`}><Scene e={e} now={t} fps={fps} /></AbsoluteFill>;
         const Comp = REG[e.type]; if (!Comp) return null;

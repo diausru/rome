@@ -98,7 +98,7 @@ def walk(o, base=None):
     elif isinstance(o, list):
         for v in o: walk(v, base)
 for c in ep.get('chapters', []): c['t'] = round(at(c), 3)
-for sh in ep.get('shots', []): sh['t'] = round(at(sh), 3)
+for sh in ep.get('shots', []) + ep.get('clips', []): sh['t'] = round(at(sh), 3)
 for fx in ep.get('sfx', []): fx['t'] = round(at(fx), 3)
 evs = ep['events']
 for e in evs:

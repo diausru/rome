@@ -3,7 +3,7 @@ Source of truth for content: `stories/TAX_STORIES_PROMPT.md` (Parts A–C, 12 ep
 Cadence: 1 episode / week, 16:9 1920×1080 30 fps, 7–10 min, English. Separate from Shorts and LF (do not read `longform/` or Shorts docs).
 
 ## Channel rules that OVERRIDE the prompt file (repo CLAUDE.md wins)
-- No AI video: every `SEEDANCE` mark → code motion in Remotion (push-in + parallax / kinetic cards). No Seedance/Kling.
+- AI video ALLOWED for Stories only (owner 2026-11-04, style v2): mascot clips via Higgsfield `seedance_2_5` (start_image = photoreal frame). Shorts/LF rules unchanged (no AI video there).
 - Facts: every rule/limit/number re-checked on canada.ca / CRA / laws-lois / fintrac-canafe / osb (gov) before render. Secondary sources in Part C (TaxTips, TD, Fidelity, RBC, PwC…) are NOT enough → confirm on a government page or mark `[VERIFY]` and do not ship. "Verify before publishing" list → top of `upload.txt` + `QA_NOTES.md`.
 - Never change Part B numbers silently: if a number disagrees with canada.ca → stop, write `QA_NOTES.md`, ask.
 - Long-standing channel rules apply in full (same as `longform/BOOT.md` "Rules (hard)"): numbers as words in VO, "C R A / R R S P / T F S A" spelled, open-loop hook, mid re-hook ~60 %, last line = bridge to next story + "Subscribe, so you don't miss it.", vidIQ ≤15 credits, 1 NexLev search, 1 batch VO, 1 batch images, 1 contact sheet, 1 fix pass, 1 render, no polling.
@@ -32,3 +32,10 @@ Cadence: 1 episode / week, 16:9 1920×1080 30 fps, 7–10 min, English. Separate
 - VO download: `DATE=YYYYMMDD START=HHMM xargs -P30 -n2 longform/tools/vo_find.sh < jobs.txt` in the foreground (backgrounded `&` gets killed). Whisper: `python3 longform/tools/vo_words.py stories/epNN`.
 - Render: this container needs `GL=swangle` (angle renders black plates): `GL=swangle nohup bash longform/tools/finish.sh stories/epNN stNN STNN-1080p.mp4 > showreel/out/lf/stNN_finish.log 2>&1 &` (~5 min per 1,500 frames).
 - Thumbnail: PIL on a story plate, text in code (Nunito-900), red badge.
+
+## STYLE v2 (owner 2026-11-04, replaces the illustrated v1 look of Ep01)
+- Narrator on screen = MASCOT only: smooth white 3D figure (~60 cm), red cap with white front + red maple leaf, red knitted scarf with white maple leaf (`stories/assets/mascot_main.png`, Higgsfield media 345cbc5d-bfd1-4622-994b-bd24f453af4a). He runs, points, gestures, reacts; voice = Grady.
+- Everything else = photoreal, 4K-looking real life: real people, real Canadian places, natural light. No illustration/cartoon backgrounds.
+- Pipeline per beat: `gpt_image_2_5` 16:9 high 2k photoreal frame with mascot reference → `seedance_2_5` image-to-video (start_image, 1080p, no audio, camera move in prompt) → clip under VO in Remotion.
+- Code on top: light leaks / lens flares / film grain, running ticker (бегущая строка), paper cards + numbers, source tags, end card.
+- Pilot first (hook ~45 s) → owner OK → full episode.
