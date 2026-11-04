@@ -1,0 +1,94 @@
+// TAX SECRETS CANADA — "2.5D studio" overlays (Stories v3): Blender clay mascot sprite, frosted-glass windows with typed text and a
+// running highlight line, CapCut-style word captions, film FX (light leaks on cuts, flare, grain). No AI video.
+import React from 'react';
+import { AbsoluteFill, Img, staticFile, interpolate } from 'remotion';
+import { easeOut } from './Effects';
+
+type Ctx = { now: number; fps: number; end: number };
+type Pn = { [k: string]: any };
+const T = (x: any, d: number) => (x && typeof x === 'object' ? (x.t ?? d) : (x ?? d));
+const k01 = (now: number, t: number, d = 0.45) => easeOut(Math.max(0, Math.min(1, (now - t) / d)));
+const F = { head: 'Mont, Montserrat, sans-serif', cond: 'Oswald, Mont, sans-serif' };
+const ACC: Record<string, string> = { gold: '#F2C76B', red: '#FF5A4E', green: '#5FE0A0', white: '#FFFFFF' };
+
+// typed text with caret; numbers/money tokens get the accent colour, never clipped (no overflow:hidden, nowrap)
+const Typed: React.FC<{ text: string; t: number; now: number; cps?: number; accent: string }> = ({ text, t, now, cps = 30, accent }) => {
+  const n = Math.max(0, Math.floor((now - t) * cps)); const shown = text.slice(0, n); const typing = n < text.length && now >= t;
+  const parts = shown.split(/(\$?\d[\d,.]*%?(?:\s?\/\s?\w+)?)/);
+  return <span style={{ whiteSpace: 'nowrap' }}>{parts.map((s, i) => i % 2 ? <span key={i} style={{ color: accent, fontWeight: 900 }}>{s}</span> : s)}
+    {typing && <span style={{ display: 'inline-block', width: '0.08em', height: '0.9em', marginLeft: 4, verticalAlign: '-0.08em', background: accent, opacity: Math.sin(now * 20) > 0 ? 1 : 0.15 }} />}</span>;
+};
+
+// frosted glass window: backdrop blur, soft border, a light that runs around the edge, kicker with a live dot, typed lines
+const GlassWin: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const acc = ACC[p.accent ?? 'gold']; const k = k01(c.now, p.t, 0.5); const lines = p.lines as Pn[];
+  const run = ((c.now - p.t) * 0.22) % 1;
+  return (
+    <div style={{ position: 'relative', display: 'inline-block', padding: '26px 36px 28px', borderRadius: 22, background: 'linear-gradient(135deg, rgba(255,255,255,.16), rgba(255,255,255,.05))',
+      backdropFilter: 'blur(18px) saturate(1.3) brightness(.78)', WebkitBackdropFilter: 'blur(18px) saturate(1.3) brightness(.78)', border: '1px solid rgba(255,255,255,.28)',
+      boxShadow: '0 30px 80px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.35)', color: '#fff', fontFamily: F.head,
+      transform: `translateY(${(1 - k) * 30}px) scale(${0.96 + 0.04 * k})`, opacity: k }}>
+      <svg style={{ position: 'absolute', inset: -1, width: 'calc(100% + 2px)', height: 'calc(100% + 2px)', overflow: 'visible', pointerEvents: 'none' }}>
+        <rect x="1" y="1" width="99.6%" height="99.4%" rx="22" pathLength={100} fill="none" stroke={acc} strokeWidth={3} strokeDasharray="14 86" strokeDashoffset={-run * 100} style={{ filter: `drop-shadow(0 0 8px ${acc})` }} />
+        <rect x="1" y="1" width="99.6%" height="99.4%" rx="22" pathLength={100} fill="none" stroke="rgba(255,255,255,.8)" strokeWidth={1.5} strokeDasharray="5 95" strokeDashoffset={-run * 100 - 50} />
+      </svg>
+      {p.kicker && <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: F.cond, fontSize: 24, letterSpacing: 5, color: 'rgba(255,255,255,.85)', marginBottom: 12, textTransform: 'uppercase' }}>
+        <span style={{ width: 12, height: 12, borderRadius: 6, background: acc, boxShadow: `0 0 ${8 + 6 * Math.sin(c.now * 5)}px ${acc}` }} />{p.kicker}</div>}
+      {lines.map((ln, i) => {
+        const t = T(ln, p.t + 0.4 + i * 0.8); if (c.now < t) return null;
+        const hl = ln.hl && c.now > t + ln.text.length / 30;
+        return <div key={i} style={{ position: 'relative', fontSize: ln.size ?? 48, fontWeight: ln.light ? 600 : 800, lineHeight: 1.22, padding: '2px 0', textShadow: '0 2px 18px rgba(0,0,0,.45)' }}>
+          {hl && <div style={{ position: 'absolute', left: -10, right: -10, top: '8%', bottom: '8%', borderRadius: 8, background: acc, opacity: 0.22, transformOrigin: 'left', transform: `scaleX(${k01(c.now, t + ln.text.length / 30, 0.4)})` }} />}
+          <Typed text={ln.text} t={t} now={c.now} cps={ln.cps ?? 30} accent={ACC[ln.accent ?? p.accent ?? 'gold']} />
+        </div>;
+      })}
+      {p.src && <div style={{ marginTop: 14, fontSize: 18, color: 'rgba(255,255,255,.7)', fontWeight: 600, opacity: k01(c.now, T(p.srcAt, p.t + 1.5)) }}>✓ {p.src}</div>}
+    </div>
+  );
+};
+
+// Blender clay mascot: pre-rendered loops (15 fps) per action; path keys move/scale/flip him over the scene; soft contact shadow
+const Mascot: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const keys = p.keys as Pn[]; let i = 0; for (let j = 0; j < keys.length; j++) if (c.now >= T(keys[j], 0)) i = j;
+  const a = keys[i], b = keys[Math.min(i + 1, keys.length - 1)]; const ta = T(a, 0), tb = T(b, ta + 1);
+  const move = a.move && b !== a ? easeOut(Math.max(0, Math.min(1, (c.now - ta) / Math.max(0.1, a.move)))) : 1;
+  const L = (q: string) => (a.move && b !== a ? a[q] + (b[q] - a[q]) * move : a[q]);
+  const x = L('x'), y = L('y'), h = L('h'); const action = a.move && move < 1 ? (a.moving ?? 'run') : a.action;
+  const n = (p.frames as Record<string, number>)[action]; const fi = Math.floor((c.now - ta) * 15) % n;
+  const file = `${p.dir}/${action}/f_${String(fi * 2 + 1).padStart(4, '0')}.png`;
+  const flip = a.flip ? -1 : 1; const w = h * 600 / 720;
+  return (
+    <div style={{ position: 'absolute', left: x - w / 2, top: y - h, width: w, height: h }}>
+      <div style={{ position: 'absolute', left: '22%', right: '22%', bottom: h * 0.035, height: h * 0.05, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(0,0,0,.55), transparent)', filter: 'blur(4px)' }} />
+      <Img src={staticFile(file)} style={{ width: '100%', height: '100%', transform: `scaleX(${flip})`, filter: `brightness(${p.bright ?? 1}) sepia(${p.warm ?? 0.08}) drop-shadow(0 10px 18px rgba(0,0,0,.35))` }} />
+    </div>
+  );
+};
+
+// CapCut-style captions: 3–4 word groups, the spoken word pops in a red pill
+export const Captions: React.FC<{ words: { w: string; s: number; e: number }[]; t: number }> = ({ words, t }) => {
+  const i = words.findIndex((w) => t >= w.s && t < w.e + 0.25); if (i < 0) return null;
+  const g0 = Math.floor(i / 4) * 4; const grp = words.slice(g0, g0 + 4);
+  return <div style={{ position: 'absolute', left: 0, right: 0, bottom: 150, textAlign: 'center', fontFamily: F.head, fontWeight: 900, fontSize: 58, letterSpacing: 0.5, textTransform: 'uppercase' }}>
+    {grp.map((w, j) => { const cur = g0 + j === i; const k = k01(t, w.s, 0.12);
+      return <span key={j} style={{ display: 'inline-block', margin: '0 10px', padding: '2px 14px', borderRadius: 12, color: '#fff', background: cur ? '#D71920' : 'transparent', transform: `scale(${cur ? 1 + 0.08 * k : 1})`,
+        WebkitTextStroke: cur ? undefined : '2px rgba(0,0,0,.85)', textShadow: '0 4px 14px rgba(0,0,0,.6)', opacity: t >= w.s - 0.05 ? 1 : 0.55 }}>{w.w}</span>; })}
+  </div>;
+};
+
+// film FX over the 2.5D plates: light leak on every cut, drifting flare, grain, vignette
+export const FilmFX: React.FC<{ cuts: number[]; t: number }> = ({ cuts, t }) => {
+  const rnd = (n: number) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+  const fr = Math.floor(t * 24);
+  return <AbsoluteFill style={{ pointerEvents: 'none' }}>
+    {cuts.map((c, i) => { const u = (t - c) / 1.1; if (u < 0 || u > 1) return null;
+      return <AbsoluteFill key={i} style={{ mixBlendMode: 'screen', opacity: Math.sin(u * Math.PI) * 0.7, background: `linear-gradient(${105 + (i % 3) * 25}deg, transparent 15%, rgba(255,170,90,.6) 45%, rgba(255,80,60,.35) 56%, transparent 85%)`, transform: `translateX(${interpolate(u, [0, 1], [-40, 40])}%)` }} />; })}
+    <AbsoluteFill style={{ mixBlendMode: 'screen' }}>
+      <div style={{ position: 'absolute', top: `${20 + Math.sin(t * 0.13) * 6}%`, left: `${-30 + ((t * 2.4) % 150)}%`, width: '60%', height: 3, background: 'linear-gradient(90deg, transparent, rgba(255,215,170,.6), transparent)', filter: 'blur(2px)', opacity: 0.55 }} />
+      <div style={{ position: 'absolute', top: `${6 + Math.sin(t * 0.2) * 4}%`, left: `${72 + Math.sin(t * 0.1) * 8}%`, width: 300, height: 300, borderRadius: '50%', background: 'radial-gradient(closest-side, rgba(255,200,140,.30), transparent)', opacity: 0.6 + 0.3 * Math.sin(t * 0.7) }} />
+    </AbsoluteFill>
+    <AbsoluteFill style={{ opacity: 0.08, backgroundImage: 'radial-gradient(rgba(255,255,255,.9) 1px, transparent 1px)', backgroundSize: `${3 + rnd(fr) * 2}px ${3 + rnd(fr + 1) * 2}px`, backgroundPosition: `${rnd(fr + 2) * 50}px ${rnd(fr + 3) * 50}px` }} />
+  </AbsoluteFill>;
+};
+
+export const PANELS_STUDIO: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { glasswin: GlassWin, mascot: Mascot };
