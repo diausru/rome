@@ -149,3 +149,7 @@ Not a stretched Short and not a re-cut of one: a new question, a new story, new 
 
 ## Overlaps to resolve before production (noted, not decided)
 - #15/#18 (two jobs), #14/#20 (side hustle), #12/#23 ($20K bonus), #17/#24 (moving provinces), #2/#29/#33 (best tax software) are near-duplicates. Each needs a distinct angle or a merge; decided with the user when the second of a set comes up.
+
+## Metricool schedule (YouTube, brand "Tax Tips Canada" 6894064, 16:00 America/Winnipeg; set 2026-11-04 on the user's command)
+Media from Google Drive (re-hosted by Metricool); cover = video frame (videoCoverMilliseconds); AI-content flag on; first comment = pinned text from PUBLISH.md.
+LF-06 Nov 13 · LF-07 Nov 18 · LF-08 Nov 20 · LF-09 Nov 25 · LF-10 Nov 27 · LF-11 Dec 2 · LF-12 Dec 4 · LF-13 Dec 9 · LF-14 Dec 11 · LF-15 Dec 16 · LF-16 Dec 18 · LF-17 Dec 23 · LF-18 Dec 30 (2026). Already in Metricool before: LF-04 Nov 4, LF-05 Nov 11 (17:00).
