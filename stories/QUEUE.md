@@ -1,7 +1,7 @@
 # Stories queue (1 per week; dates set by owner on /schedule)
 | Ep | Title | Status |
 |---|---|---|
-| 01 | She Makes $9,800 a Month… Here's the Tax Trap Coming in 2027 | queued |
+| 01 | She Makes $9,800 a Month… Here's the Tax Trap Coming in 2027 | done (unpublished) |
 | 02 | Her Tax Preparer Made One Mistake — Now She Owes $20,000 | queued |
 | 03 | $83,000 in Debt With Two Kids — The Legal Way Out Most People Never Hear About | queued |
 | 04 | Why She Should Have Opened an Empty FHSA a Year Ago | queued |

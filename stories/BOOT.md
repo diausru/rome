@@ -25,3 +25,10 @@ Cadence: 1 episode / week, 16:9 1920×1080 30 fps, 7–10 min, English. Separate
 3. Character sheet + panels (1 batch) → contact sheet → fix once. 4. VO (1 batch) → word timestamps.
 5. Remotion composition (reuse `showreel/src/lf/` engine; calc layouts L1–L4 rotate; captions; source tags; disclaimer 0:20; end card).
 6. Render → stills sheet QC → `upload.txt` (title, description, chapters, 10 tags, verify list, AI-disclosure) → commit, push, send file. Stop.
+
+## Engine notes (from Ep01, 2026-11-04)
+- Template episode: `stories/ep01/` (lines.py → data.py → gen_episode.py). Story panels: `showreel/src/lf/Story.tsx` (chip, phone, roomyears, months, ledger, versus, stepcards, srctag, lower, stamp, endcard) on the LongForm composition (shots + depth plates).
+- Plates: character sheet first (1 image), then panels with `medias:[{role:'image_references', value:<sheet job id>}]`; `longform/tools/plate_local.sh stories/epNN stNN` (depth maps) → then plates/*.png → jpg for git.
+- VO download: `DATE=YYYYMMDD START=HHMM xargs -P30 -n2 longform/tools/vo_find.sh < jobs.txt` in the foreground (backgrounded `&` gets killed). Whisper: `python3 longform/tools/vo_words.py stories/epNN`.
+- Render: this container needs `GL=swangle` (angle renders black plates): `GL=swangle nohup bash longform/tools/finish.sh stories/epNN stNN STNN-1080p.mp4 > showreel/out/lf/stNN_finish.log 2>&1 &` (~5 min per 1,500 frames).
+- Thumbnail: PIL on a story plate, text in code (Nunito-900), red badge.
