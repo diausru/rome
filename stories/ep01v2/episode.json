@@ -1,0 +1,263 @@
+{
+ "fps": 30,
+ "footer": "Real situations \u00b7 Tax Secrets Canada \u00b7 General information, not tax advice",
+ "chapters": [
+  {
+   "title": "Real situations \u00b7 Maya",
+   "t": 0.8
+  },
+  {
+   "title": "01 \u00b7 The story",
+   "t": 48.827
+  }
+ ],
+ "events": [
+  {
+   "type": "scene",
+   "panels": [
+    {
+     "type": "chip",
+     "x": 1240,
+     "y": 250,
+     "w": 600,
+     "glass": false,
+     "lines": [
+      {
+       "text": "$1,000",
+       "size": 96,
+       "tone": "green",
+       "t": 0.8
+      },
+      {
+       "text": "every Monday \u2192 TFSA",
+       "size": 44,
+       "t": 5.94
+      },
+      {
+       "text": "= a penalty waiting",
+       "size": 50,
+       "tone": "red",
+       "t": 27.235
+      }
+     ],
+     "fxIn": "slideR",
+     "fxOut": "fade",
+     "kicker": "Take-home $9,800 / month",
+     "rot": -1.2,
+     "t": 0.8
+    }
+   ],
+   "t": 0.0,
+   "dur": 30.056
+  },
+  {
+   "type": "scene",
+   "panels": [
+    {
+     "type": "lower",
+     "x": 56,
+     "y": 840,
+     "w": 1500,
+     "glass": false,
+     "text": "Based on real situations Canadians shared online. Names and numbers changed. General information, not tax advice.",
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "t": 30.056
+    }
+   ],
+   "t": 30.056,
+   "dur": 18.771
+  },
+  {
+   "type": "scene",
+   "panels": [
+    {
+     "type": "chip",
+     "x": 1240,
+     "y": 230,
+     "w": 600,
+     "glass": false,
+     "lines": [
+      {
+       "text": "Maya, 27",
+       "size": 64,
+       "t": 49.587
+      },
+      {
+       "text": "Mississauga",
+       "size": 40,
+       "t": 53.807
+      },
+      {
+       "text": "Job #1 + Job #2",
+       "size": 50,
+       "tone": "green",
+       "t": 55.327
+      }
+     ],
+     "fxIn": "slideR",
+     "fxOut": "fade",
+     "kicker": "Year 1 \u00b7 2026",
+     "t": 48.827
+    }
+   ],
+   "t": 48.827,
+   "dur": 12.233
+  },
+  {
+   "type": "scene",
+   "panels": [
+    {
+     "type": "chip",
+     "x": 1240,
+     "y": 700,
+     "w": 600,
+     "glass": false,
+     "lines": [
+      {
+       "text": "No kids \u00b7 single \u00b7 no car",
+       "size": 40,
+       "t": 61.06
+      }
+     ],
+     "fxIn": "slideR",
+     "fxOut": "fade",
+     "t": 61.06
+    }
+   ],
+   "t": 61.06,
+   "dur": 2.829
+  },
+  {
+   "type": "scene",
+   "panels": [
+    {
+     "type": "phone",
+     "x": 1400,
+     "y": 120,
+     "w": 380,
+     "glass": false,
+     "title": "CHEQUING",
+     "balance": 9800,
+     "balanceSub": "take-home this month",
+     "rot": 5,
+     "fxIn": "slideUp",
+     "fxOut": "fade",
+     "rows": [
+      {
+       "label": "Job #1 \u00b7 payroll",
+       "value": "deposit",
+       "t": 64.909
+      },
+      {
+       "label": "Job #2 \u00b7 payroll",
+       "value": "deposit",
+       "t": 65.229
+      }
+     ],
+     "t": 64.909
+    }
+   ],
+   "t": 63.889,
+   "dur": 12.662
+  }
+ ],
+ "clips": [
+  {
+   "src": "lf/st01v2/clips/c1.mp4",
+   "rate": 0.6,
+   "t": 0.0
+  },
+  {
+   "src": "lf/st01v2/clips/c4.mp4",
+   "rate": 0.75,
+   "t": 16.098
+  },
+  {
+   "src": "lf/st01v2/clips/c3.mp4",
+   "rate": 0.55,
+   "t": 30.056
+  },
+  {
+   "src": "lf/st01v2/clips/c2.mp4",
+   "rate": 0.8,
+   "t": 48.827
+  },
+  {
+   "src": "lf/st01v2/clips/c1.mp4",
+   "from": 4,
+   "t": 61.06
+  },
+  {
+   "src": "lf/st01v2/clips/c4.mp4",
+   "from": 2,
+   "rate": 0.7,
+   "t": 63.889
+  }
+ ],
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "t": 16.098
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "t": 30.056
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "t": 48.827
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "t": 61.06
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.1,
+   "t": 63.889
+  },
+  {
+   "name": "paper",
+   "vol": 0.16,
+   "t": 30.056
+  },
+  {
+   "name": "paper",
+   "vol": 0.16,
+   "t": 48.827
+  },
+  {
+   "name": "paper",
+   "vol": 0.16,
+   "t": 61.06
+  },
+  {
+   "name": "paper",
+   "vol": 0.16,
+   "t": 63.889
+  }
+ ],
+ "ticker": [
+  "TFSA LIMIT 2026: $7,000",
+  "EXCESS TFSA AMOUNTS: 1% PER MONTH",
+  "RRSP 2026: 18% UP TO $33,810",
+  "FHSA: $8,000 A YEAR",
+  "SOURCE: CANADA.CA"
+ ],
+ "audio": "lf/st01v2/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05,
+ "data": {
+  "facts": {
+   "fed_bpa": 16452,
+   "fed_low_rate": 0.14,
+   "bpa_credit": 2303
+  }
+ },
+ "duration": 76.551
+}
