@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  ["hook", "Sam paid the tuition. Alex got the bigger refund: seven hundred and twenty-five dollars bigger. And that's the plan.", 0.35],
+  ["c1", "Sam went back to school in twenty twenty-five: eight thousand dollars of tuition, and only twelve thousand of income.", 0.3],
+  ["c2", "That's under the basic personal amount, so Sam owes zero federal tax. The tuition credit has nothing to cut.", 0.3],
+  ["c3", "The rule: a spouse can take up to five thousand dollars of this year's tuition, minus what the student needs.", 0.3],
+  ["c4", "Sam needs none. Alex claims the full five thousand, worth seven hundred and twenty-five dollars in federal tax.", 0.4],
+  ["reveal", "The twist: the other three thousand stays with Sam, carried forward, and it can never move to Alex later. Unused age, pension and disability amounts transfer the same way.", 0.3],
+  ["action", "So do the lower-income return first, and see what's left to transfer.", 0.3],
+  ["cta", "Next: why the Canada Child Benefit goes to one parent. Follow so you don't miss it.", 0.0]
+ ]
+}

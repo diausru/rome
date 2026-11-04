@@ -1,0 +1,53 @@
+{
+ "total": 66.005,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Sam paid the tuition. Alex got the bigger refund: seven hundred and twenty-five dollars bigger. And that's the plan.",
+   "start": 0.25,
+   "end": 8.855
+  },
+  {
+   "id": "c1",
+   "text": "Sam went back to school in twenty twenty-five: eight thousand dollars of tuition, and only twelve thousand of income.",
+   "start": 9.205,
+   "end": 16.756
+  },
+  {
+   "id": "c2",
+   "text": "That's under the basic personal amount, so Sam owes zero federal tax. The tuition credit has nothing to cut.",
+   "start": 17.056,
+   "end": 25.03
+  },
+  {
+   "id": "c3",
+   "text": "The rule: a spouse can take up to five thousand dollars of this year's tuition, minus what the student needs.",
+   "start": 25.33,
+   "end": 33.551
+  },
+  {
+   "id": "c4",
+   "text": "Sam needs none. Alex claims the full five thousand, worth seven hundred and twenty-five dollars in federal tax.",
+   "start": 33.851,
+   "end": 41.532
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: the other three thousand stays with Sam, carried forward, and it can never move to Alex later. Unused age, pension and disability amounts transfer the same way.",
+   "start": 41.932,
+   "end": 54.586
+  },
+  {
+   "id": "action",
+   "text": "So do the lower-income return first, and see what's left to transfer.",
+   "start": 54.886,
+   "end": 59.263
+  },
+  {
+   "id": "cta",
+   "text": "Next: why the Canada Child Benefit goes to one parent. Follow so you don't miss it.",
+   "start": 59.563,
+   "end": 66.005
+  }
+ ]
+}

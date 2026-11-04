@@ -1,0 +1,30 @@
+{
+ "topic": "Transferring unused credits between spouses (line 32600, Schedule 2): a spouse can claim the unused part of the partner's current-year tuition (max $5,000 minus what the student needs to bring their own tax to zero), age, pension and disability amounts; carried-forward tuition cannot be transferred",
+ "tax_year": 2025,
+ "example": {
+  "tuition": 8000,
+  "income": 12000,
+  "bpa": 16129,
+  "cap": 5000,
+  "needed": 0,
+  "rate": 0.145,
+  "credit": 725,
+  "carry": 3000,
+  "note": "example (not a CRA rule): Sam, student in 2025, $8,000 of current-year tuition, net income $12,000 (below the 2025 basic personal amount of $16,129 → federal tax $0 before tuition, so Sam needs $0 of the tuition credit). Alex (spouse) claims $5,000 transferred on line 32600 → $5,000 × 14.5% = $725 less federal tax. The remaining $3,000 is carried forward by Sam only. Provincial amounts not included."
+ },
+ "derive": {},
+ "spoken": {
+  "credit": "seven hundred and twenty-five dollars",
+  "tuition": "eight thousand dollars",
+  "income": "twelve thousand",
+  "cap": "five thousand dollars",
+  "carry": "three thousand"
+ },
+ "spoken_manual": {"needed": "'Sam needs none' = $0 needed", "bpa": "'under the basic personal amount' = $16,129 shown on screen"},
+ "sources": {
+  "spouse": "canada.ca CRA line 32600 'Amounts transferred from your spouse or common-law partner': unused age amount, Canada caregiver amount for infirm children under 18, pension income amount, disability amount for self, tuition amounts; only if the partner did not need them to bring their federal tax to zero; carried-forward tuition cannot be transferred; Schedule 2",
+  "cap": "canada.ca CRA line 32400 (tax year 2025) and 'Transferring and carrying forward amounts': maximum transfer $5,000 minus the amount the student needs to reduce their own tax payable; only current-year amounts",
+  "rate": "2025 lowest federal rate 14.5%; 2025 basic personal amount $16,129 (CRA What's new for 2025, cited in m30/data.json)"
+ },
+ "unverified": "www.canada.ca not fetchable from this session; facts from canada.ca search excerpts (2026-11-04)"
+}
