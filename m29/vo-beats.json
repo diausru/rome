@@ -1,0 +1,46 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.07,
+ "beats": [
+  [
+   "hook",
+   "First home in twenty twenty-five: fifty-nine thousand dollars of the down payment came out tax-free. Plus a fourteen hundred and fifty dollar credit.",
+   0.35
+  ],
+  [
+   "c1",
+   "Three programs, one home. First, the FHSA: eight thousand dollars of room a year, forty thousand for life.",
+   0.3
+  ],
+  [
+   "c2",
+   "Jamie filled one since twenty twenty-three: twenty-four thousand. Deducted going in, tax-free coming out.",
+   0.3
+  ],
+  [
+   "c3",
+   "Second, the Home Buyers' Plan: now up to sixty thousand from your RRSP. Jamie took thirty-five thousand, for the same home.",
+   0.3
+  ],
+  [
+   "c4",
+   "Third, the home buyers' amount: ten thousand dollars, worth fourteen hundred and fifty in federal tax.",
+   0.4
+  ],
+  [
+   "reveal",
+   "The twist: the FHSA is never paid back. The RRSP money is a loan to yourself: one fifteenth a year, starting in twenty thirty.",
+   0.3
+  ],
+  [
+   "action",
+   "So check your FHSA room and your RRSP before you make an offer.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: who should claim the shared credits? Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}

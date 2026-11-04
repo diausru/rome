@@ -1,0 +1,235 @@
+{
+ "id": "m29",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "FIRST HOME:",
+  "l2": "$59,000 TAX-FREE"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "stack": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "keep": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "h59",
+   "beat": "hook",
+   "word": "fifty-nine",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "h1450",
+   "beat": "hook",
+   "word": "fourteen",
+   "sfx": "chime"
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "fyear",
+   "beat": "c1",
+   "word": "eight",
+   "sfx": "tick"
+  },
+  {
+   "id": "flife",
+   "beat": "c1",
+   "word": "forty",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "f24",
+   "beat": "c2",
+   "word": "twenty-four",
+   "sfx": "chime"
+  },
+  {
+   "id": "taxfree",
+   "beat": "c2",
+   "word": "tax-free"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "h60",
+   "beat": "c3",
+   "word": "sixty",
+   "sfx": "tick"
+  },
+  {
+   "id": "h35",
+   "beat": "c3",
+   "word": "thirty-five",
+   "sfx": "chime"
+  },
+  {
+   "id": "both",
+   "beat": "c3",
+   "word": "same",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "ten",
+   "beat": "c4",
+   "word": "ten"
+  },
+  {
+   "id": "cr",
+   "beat": "c4",
+   "word": "fourteen",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "never",
+   "beat": "reveal",
+   "word": "never",
+   "sfx": "tick"
+  },
+  {
+   "id": "loan",
+   "beat": "reveal",
+   "word": "loan",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "y2030",
+   "beat": "reveal",
+   "word": "thirty.",
+   "sfx": "tick"
+  },
+  {
+   "id": "check",
+   "beat": "action",
+   "word": "check",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "federal",
+   "offset": 0.2
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "holiday"
+}

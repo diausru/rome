@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "M29 · first home: three programs, one home",
+  "mp4": "showreel/out/m29/m29-final.mp4 (share copy: m29-share.mp4)",
+  "duration": "1:08 (68.96 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'PROGRAM 3 · CREDIT': the code-drawn house complete (FHSA $24,000 foundation, HBP $35,000 walls with $35,000 → $60,000 limit, $1,450 credit roof), 'BOTH · SAME HOME' stamp, '= $59,000' line, Jamie at the laptop in the snowy-evening kitchen",
+  "why": "all three programs and the total in one frame",
+  "t": 44.97,
+  "ms": 44970,
+  "file": "m29/cover.jpg (extracted at 44.97 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "canada.ca CRA First Home Savings Account / tax tips 2025",
+   "year": "2025",
+   "supports": "$8,000 annual, $40,000 lifetime FHSA limits; carry-forward up to $8,000"
+  },
+  {
+   "source": "canada.ca CRA Home Buyers' Plan + housing tax tips 2025",
+   "year": "2025",
+   "supports": "HBP up to $60,000 (was $35,000); repayment starts 5th year after withdrawal for first withdrawals 2022–2025; FHSA + HBP for the same home"
+  },
+  {
+   "source": "canada.ca CRA line 31270 Home buyers' amount",
+   "year": "2025",
+   "supports": "$10,000 amount, non-refundable; 14.5% federal rate for 2025"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "First-Time Home Buyer Canada 2025: FHSA + HBP + $1,450 Credit ($59,000 Tax-Free)",
+   "FHSA vs Home Buyers' Plan: Which Money Do You Have to Pay Back?",
+   "3 Tax Programs for Your First Home in Canada (What Changed)"
+  ],
+  "description": "First home in 2025: $59,000 of the down payment from tax-sheltered money, plus a $1,450 federal credit.\n\nThree programs, one home:\n• FHSA: $8,000 of room a year, $40,000 for life. Opened in 2023 and filled every year → $24,000. Deducted going in, tax-free coming out.\n• Home Buyers' Plan: now up to $60,000 from your RRSPs (was $35,000). Example withdrawal: $35,000. You can use the FHSA and the HBP for the same home.\n• Home buyers' amount (line 31270): $10,000 × 14.5% = $1,450 off federal tax (non-refundable).\n\nThe twist: the FHSA is never paid back. The HBP is a loan to yourself: 1/15 a year (here ≈ $2,333), starting in the 5th year after the withdrawal year (2030 for a 2025 withdrawal, under the relief for first withdrawals in 2022–2025).\n\nCheck your FHSA room and your RRSP before you make an offer.\n\nNext: who should claim the shared credits?\n\nSources: canada.ca (CRA) FHSA; Home Buyers' Plan; line 31270. Federal 2025. Example. General information, not advice.\n\n#FirstTimeHomeBuyer #FHSA #CanadaTax",
+  "hashtags": "#FirstTimeHomeBuyer #FHSA #CanadaTax #CRA",
+  "keywords": "first time home buyer canada, fhsa explained, home buyers plan 60000, fhsa and hbp same home, home buyers amount 31270, first time home buyer tax credit canada 2025",
+  "pinned": "Quick check: HBP withdrawal of $30,000. Yearly repayment? ($30,000 ÷ 15 = $2,000) General info, not advice.",
+  "cta": "Follow for the next one: shared credits."
+ },
+ "tt": {
+  "caption": "$59,000 of a first-home down payment, tax-free 🏡 FHSA + HBP + a $1,450 credit. Only one you keep.",
+  "keywords": "first time home buyer canada · fhsa · home buyers plan",
+  "hashtags": "#firsttimehomebuyer #fhsa #canadiantaxes #cra #personalfinancecanada",
+  "pinned": "The HBP is repaid 1/15 a year; the FHSA isn't. (General info, not advice.)",
+  "cta": "Follow for the next one: shared credits."
+ },
+ "ig": {
+  "caption": "First home: three programs, one home 🏡🇨🇦\n\n• FHSA: $8,000/yr, $40,000 lifetime → $24,000 since 2023 (deducted in, tax-free out)\n• Home Buyers' Plan: up to $60,000 from RRSPs (was $35,000) → $35,000\n• Home buyers' amount: $10,000 × 14.5% = $1,450 (2025)\n✅ FHSA + HBP can fund the same home\n⚠️ HBP = a loan to yourself: 1/15 a year, from the 5th year\n\nSend this to a friend saving for a first home.\n\nSource: CRA (canada.ca). Federal 2025, example. General info, not advice.",
+  "keywords": "first time home buyer, fhsa, home buyers plan",
+  "hashtags": "#firsttimehomebuyer #fhsa #canadiantaxes #personalfinancecanada #canadatax #realestatecanada",
+  "pinned": "Save this before you make an offer 📌",
+  "cta": "Send this to a friend saving for a first home."
+ },
+ "eng": {
+  "question": "HBP $30,000 → yearly repayment? ($2,000)",
+  "save": "FHSA / HBP / $1,450 credit.",
+  "share": "Friends saving for a first home.",
+  "follow": "Canadian tax rules with real numbers."
+ },
+ "seo": {
+  "primary": "first time home buyer canada",
+  "secondary": "vidIQ CA: 'first time home buyer canada' 11.4K/mo (comp 23); 'fhsa explained' 6.5K/mo",
+  "intent": "First-time buyers planning a down payment.",
+  "audience": "Adults 25–40.",
+  "angle": "three programs stacked on one home; what changed (HBP $60K, repayment relief); keep vs repay.",
+  "questions": "Can I use FHSA and HBP together? Do I pay back the FHSA? What is the home buyers' amount?"
+ },
+ "next": [
+  {
+   "topic": "Shared credits: who claims (#10)",
+   "why": "Bridge",
+   "intent": "which spouse should claim credits canada",
+   "hook": "bigger refund",
+   "angle": "who claims shared credits",
+   "payoff": "bigger total refund"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #29, bridged from R4. Topic type: evergreen with yearly limits. Playlist: 'Benefits & credits'.",
+ "research": {
+  "vidiq": "balance 454 before (other sessions also spend); 1 keyword_research CA",
+  "nexlev": "youtube_search shorts CA: FHSA explainers 8K–43K views; 'FHSA + HBP both' angle ≤ 23 views (open)"
+ },
+ "retention": "Frame 0 'FIRST HOME: $59,000 TAX-FREE'; $59,000 counter at 2.6 s, '+$1,450 credit' at 7.4 s; house builds: FHSA foundation 15–24 s, HBP walls 32–36 s, 'BOTH · SAME HOME' stamp 37.8 s (re-hook, ≈55 %), credit roof 43 s; keep vs repay reveal 46–58 s; check card + next pill."
+}

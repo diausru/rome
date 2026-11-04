@@ -1,0 +1,41 @@
+{
+ "topic": "First-time home buyer, 2025: FHSA ($8,000/yr, $40,000 lifetime, deductible in, tax-free qualifying withdrawal), Home Buyers' Plan (up to $60,000 from RRSPs, was $35,000; repay over 15 years, start deferred to the 5th year after the withdrawal year for first withdrawals 2022–2025), both usable for the same home; home buyers' amount $10,000 (line 31270) × 14.5% = $1,450 federal",
+ "tax_year": 2025,
+ "example": {
+  "fhsa_year": 8000,
+  "fhsa_life": 40000,
+  "fhsa": 24000,
+  "hbp_max": 60000,
+  "hbp_old": 35000,
+  "hbp": 35000,
+  "total": 59000,
+  "hbtc": 10000,
+  "rate": 0.145,
+  "credit": 1450,
+  "repay_start": 2030,
+  "repay_year": 2333.33,
+  "note": "example (not a CRA rule): Jamie, first home bought in 2025; FHSA opened 2023, $8,000 contributed in each of 2023, 2024, 2025 = $24,000 (growth ignored); HBP withdrawal $35,000 in 2025 (limit $60,000); $24,000 + $35,000 = $59,000; HBTC $10,000 × 14.5% = $1,450 federal; HBP repayment 1/15 a year = $2,333.33 starting 2030 (5th year after 2025)."
+ },
+ "derive": {},
+ "spoken": {
+  "total": "fifty-nine thousand",
+  "fhsa_year": "eight thousand dollars",
+  "fhsa_life": "forty thousand",
+  "fhsa": "twenty-four thousand",
+  "hbp_max": "sixty thousand",
+  "hbp": "thirty-five thousand",
+  "hbtc": "ten thousand dollars"
+ },
+ "spoken_manual": {
+  "credit": "fourteen hundred and fifty = $1,450 = $10,000 × 14.5% (checked by hand)",
+  "repay_start": "'starting in twenty thirty' = 5th year after the 2025 withdrawal year",
+  "hbp_old_screen": "former $35,000 limit shown on screen only (not spoken)"
+ },
+ "sources": {
+  "fhsa": "canada.ca CRA 'Make the most of your first home savings account' (tax tips 2025) and CRA FHSA page: annual limit $8,000, lifetime $40,000, carry-forward up to $8,000",
+  "hbp": "canada.ca CRA housing tax tips 2025: enhanced HBP, withdraw up to $60,000 (Budget 2024 raised it from $35,000); CRA HBP page: repayment starts in the 5th year after the withdrawal year for first withdrawals 2022-01-01 to 2025-12-31 (temporary relief)",
+  "both": "canada.ca CRA: HBP withdrawal and FHSA qualifying withdrawal can be used for the same qualifying home if all conditions are met at each withdrawal",
+  "hbtc": "canada.ca CRA line 31270 Home buyers' amount: up to $10,000 for a qualifying home bought in 2025; non-refundable; 2025 federal rate 14.5% (5013 Schedule B)"
+ },
+ "unverified": "www.canada.ca not fetchable from this session; facts from canada.ca search excerpts (2026-11-04)"
+}
