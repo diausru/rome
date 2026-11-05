@@ -98,7 +98,7 @@ def walk(o, base=None):
     elif isinstance(o, list):
         for v in o: walk(v, base)
 for c in ep.get('chapters', []): c['t'] = round(at(c), 3)
-for sh in ep.get('shots', []): sh['t'] = round(at(sh), 3)
+for sh in ep.get('shots', []) + ep.get('clips', []): sh['t'] = round(at(sh), 3)
 for fx in ep.get('sfx', []): fx['t'] = round(at(fx), 3)
 evs = ep['events']
 for e in evs:
@@ -151,6 +151,8 @@ if parts:
         subprocess.run(['ffmpeg','-v','error','-y',*ins,'-filter_complex',';'.join(flt),'-map','[o]','-ac','1',os.path.join(d,'mix.wav')], check=True)
         print(f"sfx: {len(ep['sfx'])} cues mixed -> mix.wav")
     ep['audio'] = ep.get('audio') or 'VO_PLACEHOLDER'
+if ep.pop('captions', False) and WORDS:   # CapCut-style captions: absolute word times from whisper
+    ep['words'] = [{'w': x['w'].strip(' ,.?!:;"'), 's': round(starts[k] + x['s'], 3), 'e': round(starts[k] + x['e'], 3)} for k in starts for x in WORDS.get(k, []) if x['w'].strip(' ,.?!:;"')]
 json.dump(ep, open(os.path.join(d, 'episode.json'), 'w'), indent=1)
 with open(os.path.join(d, 'timeline.txt'), 'w') as fo:
     for k, v in starts.items(): fo.write(f'{int(v//60):02d}:{v%60:05.2f}  {k}\n')

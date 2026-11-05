@@ -1,0 +1,433 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 1.5,
+ "footer": "Based on real situations Canadians shared online \u00b7 Names and numbers changed \u00b7 General information, not tax advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.4,
+   "text": "She takes home nine thousand eight hundred dollars a month. And every single Monday, one thousand dollars goes into her T F S A."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.4,
+   "text": "Sounds like the most responsible person you know, right?"
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.4,
+   "text": "Here's the problem. If she keeps doing exactly that, sometime in twenty twenty-seven the C R A starts charging her one percent. Every month."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 1.2,
+   "text": "And if you go over? Any excess amount in your T F S A is taxed at one percent per month."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.4,
+   "text": "It's calculated on the highest excess in your account that month. Not the average. The highest."
+  }
+ ],
+ "chapters": [
+  {
+   "title": "Real situations \u00b7 Maya",
+   "at": "L1"
+  },
+  {
+   "title": "02 \u00b7 What the rules say",
+   "at": "L20"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "mascot",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "keys": [
+      {
+       "at": "L1",
+       "off": -0.8,
+       "x": 2150,
+       "y": 1110,
+       "h": 820,
+       "action": "talk",
+       "move": 1.6
+      },
+      {
+       "at": "L1",
+       "off": 0.8,
+       "x": 1650,
+       "y": 1110,
+       "h": 820,
+       "action": "talk"
+      },
+      {
+       "at": "L2",
+       "x": 1650,
+       "y": 1110,
+       "h": 820,
+       "action": "point",
+       "flip": true
+      }
+     ],
+     "dir": "lf/st01d/mascot",
+     "frames": {
+      "run": 8,
+      "talk": 60,
+      "point": 30,
+      "wave": 30,
+      "shock": 30
+     },
+     "off": -0.8,
+     "bright": 0.86,
+     "warm": 0.3
+    },
+    {
+     "type": "glasswin",
+     "x": 930,
+     "y": 120,
+     "w": 760,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "kicker": "Real situation \u00b7 Maya, 27",
+     "accent": "gold",
+     "lines": [
+      {
+       "text": "Take-home: $9,800 / month",
+       "size": 50,
+       "at": "L1",
+       "word": "nine thousand",
+       "fx": "type"
+      },
+      {
+       "text": "$1,000 \u2192 TFSA every Monday",
+       "size": 50,
+       "at": "L1",
+       "word": "every single",
+       "hl": true,
+       "fx": "decode"
+      }
+     ]
+    }
+   ],
+   "off": -0.8
+  },
+  {
+   "at": "L3",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "mascot",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L3",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "keys": [
+      {
+       "at": "L3",
+       "x": 1640,
+       "y": 1110,
+       "h": 820,
+       "action": "talk"
+      },
+      {
+       "at": "L3",
+       "word": "one percent",
+       "x": 1640,
+       "y": 1110,
+       "h": 820,
+       "action": "shock"
+      }
+     ],
+     "dir": "lf/st01d/mascot",
+     "frames": {
+      "run": 8,
+      "talk": 60,
+      "point": 30,
+      "wave": 30,
+      "shock": 30
+     },
+     "bright": 0.9,
+     "warm": 0.25
+    },
+    {
+     "type": "glasswin",
+     "x": 110,
+     "y": 140,
+     "w": 760,
+     "at": "L3",
+     "glass": false,
+     "word": "problem",
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "kicker": "The problem",
+     "accent": "red",
+     "lines": [
+      {
+       "text": "Sometime in 2027\u2026",
+       "size": 50,
+       "at": "L3",
+       "word": "sometime",
+       "fx": "rise"
+      },
+      {
+       "text": "CRA charges 1% / month",
+       "size": 56,
+       "at": "L3",
+       "word": "charging",
+       "hl": true,
+       "accent": "red",
+       "fx": "glow"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L20",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "mascot",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L20",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "keys": [
+      {
+       "at": "L20",
+       "off": -0.6,
+       "x": -200,
+       "y": 1110,
+       "h": 820,
+       "action": "talk",
+       "move": 1.4,
+       "moving": "run",
+       "flip": true
+      },
+      {
+       "at": "L20",
+       "off": 0.8,
+       "x": 310,
+       "y": 1110,
+       "h": 820,
+       "action": "point",
+       "flip": false
+      }
+     ],
+     "dir": "lf/st01d/mascot",
+     "frames": {
+      "run": 8,
+      "talk": 60,
+      "point": 30,
+      "wave": 30,
+      "shock": 30
+     },
+     "bright": 1.0,
+     "warm": 0.1
+    },
+    {
+     "type": "glasswin",
+     "x": 620,
+     "y": 130,
+     "w": 820,
+     "at": "L20",
+     "glass": false,
+     "word": "go over",
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "kicker": "The rule \u00b7 TFSA",
+     "accent": "red",
+     "lines": [
+      {
+       "text": "Over your TFSA room?",
+       "size": 46,
+       "at": "L20",
+       "word": "go over",
+       "light": true,
+       "fx": "type"
+      },
+      {
+       "text": "1% per month",
+       "size": 92,
+       "at": "L20",
+       "word": "one percent",
+       "accent": "red",
+       "fx": "glow"
+      },
+      {
+       "text": "on the HIGHEST excess",
+       "size": 52,
+       "at": "L21",
+       "word": "highest",
+       "hl": true,
+       "accent": "red",
+       "fx": "mask"
+      },
+      {
+       "text": "\u2014 not the average",
+       "size": 40,
+       "at": "L21",
+       "word": "average",
+       "light": true,
+       "fx": "rise"
+      }
+     ],
+     "src": "Source: canada.ca \u2014 If you owe tax on excess TFSA amounts",
+     "srcAt": {
+      "at": "L21",
+      "word": "highest"
+     }
+    }
+   ],
+   "off": -0.6
+  }
+ ],
+ "shots": [
+  {
+   "plate": "f1",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 30,
+     "y": -10,
+     "z": 0.28
+    }
+   ],
+   "at": "L1",
+   "off": -0.8
+  },
+  {
+   "plate": "f3",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.12
+    },
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.3
+    }
+   ],
+   "at": "L3"
+  },
+  {
+   "plate": "f4",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.05
+    },
+    {
+     "x": -20,
+     "y": -20,
+     "z": 0.3
+    }
+   ],
+   "at": "L20",
+   "off": -0.6
+  }
+ ],
+ "plates": {
+  "f1": {
+   "photo": {
+    "src": "lf/st01d/plates/f1.jpg",
+    "depth": "lf/st01d/plates/f1_d.png",
+    "amt": 0.07
+   }
+  },
+  "f3": {
+   "photo": {
+    "src": "lf/st01d/plates/f3.jpg",
+    "depth": "lf/st01d/plates/f3_d.png",
+    "amt": 0.07
+   },
+   "steam": {
+    "x": 34,
+    "y": 70
+   }
+  },
+  "f4": {
+   "photo": {
+    "src": "lf/st01d/plates/f4.jpg",
+    "depth": "lf/st01d/plates/f4_d.png",
+    "amt": 0.07
+   }
+  }
+ },
+ "film": true,
+ "captions": true,
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.14,
+   "at": "L3"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.14,
+   "at": "L20",
+   "off": -0.6
+  },
+  {
+   "name": "thump",
+   "vol": 0.4,
+   "at": "L3",
+   "word": "one percent"
+  },
+  {
+   "name": "thump",
+   "vol": 0.35,
+   "at": "L20",
+   "word": "one percent"
+  },
+  {
+   "name": "paper",
+   "vol": 0.15,
+   "at": "L1"
+  },
+  {
+   "name": "tick",
+   "vol": 0.18,
+   "at": "L21",
+   "word": "highest"
+  }
+ ],
+ "audio": "lf/st01d/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}

@@ -2,6 +2,8 @@
 // One reusable 16:9 composition driven by an episode JSON (see longform/ENGINE.md).
 // Per episode only data changes: events, numbers, contenders, scores, audio, plate.
 import { Parallax } from './Parallax';
+import { ClipBg } from './ClipBg';
+import { Captions, FilmFX } from './Studio';
 import React from 'react';
 import { Scene } from './Panels';
 import { AbsoluteFill, Audio, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from 'remotion';
@@ -370,7 +372,8 @@ export const LongForm: React.FC<{ ep: Episode }> = ({ ep }) => {
   if (ep.plate && !plates.length) plates.push({ src: ep.plate, t0: 0 });
   return (
     <AbsoluteFill style={{ fontFamily: F.sans, color: C.white }}>
-      {ep.shots ? <Parallax shots={ep.shots} plates={ep.plates} t={t} total={ep.duration ?? 0} /> : <Desk plates={plates} t={t} />}
+      {(ep as any).clips ? <ClipBg clips={(ep as any).clips} t={t} total={ep.duration ?? 0} /> : ep.shots ? <Parallax shots={ep.shots} plates={ep.plates} t={t} total={ep.duration ?? 0} /> : <Desk plates={plates} t={t} />}
+      {(ep as any).film && ep.shots && <FilmFX cuts={ep.shots.slice(1).map((s: any) => s.t)} t={t} />}
       {ep.events.filter((e) => t >= e.t && t < e.t + e.dur).map((e, i) => {
         if (e.type === 'scene') return <AbsoluteFill key={`${e.t}-${i}`}><Scene e={e} now={t} fps={fps} /></AbsoluteFill>;
         const Comp = REG[e.type]; if (!Comp) return null;
@@ -378,6 +381,7 @@ export const LongForm: React.FC<{ ep: Episode }> = ({ ep }) => {
         const push = 1 + (lf / durF) * (e.push ?? 0.025); // motivated slow push per event
         return <AbsoluteFill key={`${e.t}-${i}`} style={{ opacity: outOp(lf, durF, fps), transform: `scale(${push})` }}><Comp e={e} lf={lf} fps={fps} durF={durF} /></AbsoluteFill>;
       })}
+      {(ep as any).words && <Captions words={(ep as any).words} t={t} />}
       <Chrome ep={ep} t={t} />
       {ep.audio && <Audio src={staticFile(ep.audio)} />}
       {ep.music && <Audio src={staticFile(ep.music)} volume={ep.musicVol ?? 0.08} loop />}
