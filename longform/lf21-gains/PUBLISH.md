@@ -1,5 +1,5 @@
 # LF-21 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** filled after render.
+**QC (2026-11-05):** 503.0 s (8:23), −13.9 LUFS, no black frames, contact sheet checked.
 **File:** `LF21-1080p.mp4` · 1920×1080 · 30 fps · ≈8:23 · VO Grady (68 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** HalfHook (new). **Thumbnail:** made by the user.
