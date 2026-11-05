@@ -774,4 +774,45 @@ const RefundHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook };
+// ---------- PayHook: frame-0 hook — 26 paycheque bars (net · tax · CPP · CPP2 · EI); EI then CPP drop out in the fall, the net rises; first vs last net, +diff ----------
+// p.rows[{n,cpp,cpp2,ei,tax,net}] · p.gross · p.firstAt · p.lastAt · p.diffAt · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const PayHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const rows = p.rows as Pn[]; const n = rows.length; const X0 = 170, SPAN = 1580, step = SPAN / n, bw = step * 0.7, BASE = 890, HMAX = 520, G = p.gross as number;
+  const fa = p.firstAt ? prog(now, p.firstAt.t, 0.7, BACK) : 0; const la = p.lastAt ? prog(now, p.lastAt.t, 0.7, BACK) : 0; const da = p.diffAt ? prog(now, p.diffAt.t, 0.8, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const segs: [string, string][] = [['net', 'linear-gradient(180deg,#F1D38E,#C9A055)'], ['tax', 'rgba(244,241,234,.78)'], ['cpp', C.blue], ['cpp2', C.org], ['ei', C.green]];
+  const leg: [string, string][] = [['TAKE-HOME', C.gold], ['INCOME TAX', C.white], ['CPP', C.blue], ['CPP2', C.org], ['EI', C.green]];
+  const hOf = (v: number) => (HMAX * v) / G;
+  const netTop = (r: Pn) => BASE - hOf(r.net);
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.7})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 54 : 78, height: 96, lineHeight: '96px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+        </div>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: BASE + 48, display: 'flex', justifyContent: 'center', gap: 34, fontFamily: COND, opacity: 1 - out }}>{leg.map(([t, col], i) => (
+          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 24, letterSpacing: 3, color: C.dim, opacity: cl((el - 0.4 - i * 0.12) * 3) }}><span style={{ width: 22, height: 22, borderRadius: 5, background: col }} />{t}</div>))}</div>
+      {rows.map((r, i) => {
+        const a = prog(now, p.t + 0.15 + i * 0.07, 0.6, BACK); const x = X0 + i * step; let y = BASE; const hot = r.net > rows[0].net + 1 && la > 0;
+        return (
+          <div key={i} style={{ opacity: (1 - out) * cl(a * 2) }}>
+            {segs.map(([k, bg]) => { const h = hOf(r[k] || 0) * a; y -= h; return h > 0.3 ? <div key={k} style={{ position: 'absolute', left: x, top: y, width: bw, height: h, background: bg, borderRadius: 3, boxShadow: k === 'net' && hot ? `0 0 ${22 * la}px rgba(232,194,122,.75)` : 'none' }} /> : null; })}
+            <div style={{ position: 'absolute', left: x - 6, top: BASE + 10, width: bw + 12, textAlign: 'center', fontFamily: COND, fontSize: 20, color: C.faint }}>{r.n}</div>
+          </div>);
+      })}
+      {fa > 0.02 && <div style={{ position: 'absolute', left: X0 - 20, top: 214, fontFamily: COND, opacity: fa * (1 - out), transform: `translateY(${(1 - fa) * 30}px)` }}>
+        <div style={{ fontSize: 24, letterSpacing: 4, color: C.dim }}>FIRST · JANUARY</div><div style={{ fontSize: 76, fontWeight: 700, color: C.gold, lineHeight: 1 }}>{fmt(rows[0].net)}</div></div>}
+      {la > 0.02 && <div style={{ position: 'absolute', left: X0 + SPAN - 330, width: 330, textAlign: 'right', top: 214, fontFamily: COND, opacity: la * (1 - out), transform: `translateY(${(1 - la) * 30}px)` }}>
+        <div style={{ fontSize: 24, letterSpacing: 4, color: C.dim }}>LAST · DECEMBER</div><div style={{ fontSize: 76, fontWeight: 700, color: C.gold, lineHeight: 1 }}>{fmt(rows[n - 1].net)}</div></div>}
+      {da > 0.02 && <div style={{ position: 'absolute', left: 0, right: 0, top: 196, textAlign: 'center', fontFamily: COND, opacity: da * (1 - out), transform: `scale(${0.7 + 0.3 * da})` }}>
+        <div style={{ fontSize: 100, lineHeight: 1, fontWeight: 700, color: C.green, textShadow: '0 0 40px rgba(127,211,160,.45)' }}>+{fmt(rows[n - 1].net - rows[0].net)}</div>
+        <div style={{ fontSize: 30, letterSpacing: 6, color: C.white }}>SAME SALARY · NO RAISE</div></div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook };
