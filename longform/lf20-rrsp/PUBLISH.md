@@ -1,5 +1,5 @@
 # LF-20 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** filled after render.
+**QC (2026-11-05):** 505.2 s (8:25), −13.7 LUFS, no black frames, contact sheet checked.
 **File:** `LF20-1080p.mp4` · 1920×1080 · 30 fps · ≈8:25 · VO Grady (68 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** DepositHook (new). **Thumbnail:** made by the user.
