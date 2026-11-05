@@ -1,5 +1,5 @@
 # LF-19 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** see final report line (filled after render).
+**QC (2026-11-05):** 529.6 s (8:50), −13.9 LUFS, no black frames, contact sheet checked.
 **File:** `LF19-1080p.mp4` · 1920×1080 · 30 fps · ≈8:50 · VO Grady (61 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** PayHook (new). **Thumbnail:** made by the user.
