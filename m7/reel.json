@@ -1,0 +1,230 @@
+{
+ "id": "m7",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "SAME JOB. SAME KIDS.",
+  "l2": "NEW CCB IN JULY?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "lag": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "shadow": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "july",
+   "beat": "hook",
+   "word": "July,",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "changed",
+   "beat": "hook",
+   "word": "changed.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "year",
+   "beat": "c1",
+   "word": "July",
+   "sfx": "tick"
+  },
+  {
+   "id": "recalc",
+   "beat": "c1",
+   "word": "recalculates",
+   "sfx": "chime"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "map",
+   "beat": "c2",
+   "word": "twenty-five",
+   "sfx": "tick"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "i60",
+   "beat": "c3",
+   "word": "sixty",
+   "sfx": "tick"
+  },
+  {
+   "id": "i70",
+   "beat": "c3",
+   "word": "seventy",
+   "sfx": "tick"
+  },
+  {
+   "id": "lands",
+   "beat": "c3",
+   "word": "lands",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "idx",
+   "beat": "c4",
+   "word": "indexed",
+   "sfx": "tick"
+  },
+  {
+   "id": "m1",
+   "beat": "c4",
+   "word": "seven"
+  },
+  {
+   "id": "m2",
+   "beat": "c4",
+   "word": "eight",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "behind",
+   "beat": "reveal",
+   "word": "behind",
+   "sfx": "tick"
+  },
+  {
+   "id": "next_july",
+   "beat": "reveal",
+   "word": "July.",
+   "sfx": "chime"
+  },
+  {
+   "id": "check",
+   "beat": "action",
+   "word": "check",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "eight",
+   "offset": 1.4
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "kids"
+}

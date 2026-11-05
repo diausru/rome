@@ -1,0 +1,27 @@
+{
+ "topic": "Why the CCB changes in July: the benefit year runs July–June and payments are recalculated every July from the previous year's adjusted family net income (July 2026–June 2027 uses 2025 returns); amounts are indexed to inflation each July (child under 6: $7,997 → $8,157; 6–17: $6,748 → $6,883); reduction starts above $38,237 AFNI",
+ "tax_year": 2026,
+ "example": {
+  "old_inc": 60000,
+  "new_inc": 70000,
+  "old_max": 7997,
+  "new_max": 8157,
+  "old_617": 6748,
+  "new_617": 6883,
+  "thr": 38237,
+  "note": "example (not a CRA rule): Priya's family AFNI rose from $60,000 (2024) to $70,000 (2025); the July 2026–June 2027 CCB is computed on the $70,000 (above the $38,237 reduction threshold, so the income part of the calculation reduces the benefit more). Exact CCB amount not computed in the video."
+ },
+ "derive": {},
+ "spoken": {
+  "old_inc": "sixty thousand",
+  "new_inc": "seventy thousand",
+  "old_max": "seven thousand nine hundred and ninety-seven",
+  "new_max": "eight thousand one hundred and fifty-seven dollars"
+ },
+ "sources": {
+  "july": "canada.ca CRA 'How much you can get – CCB': payments recalculated every July using the prior year's adjusted family net income; July 2026–June 2027 based on the 2025 tax year; CCB indexed to inflation; reduction thresholds $38,237 and $82,847 (via canada.ca search excerpts 2026-11-05)",
+  "amounts": "canada.ca CRA: July 2026–June 2027 up to $8,157 ($679.75/mo) under 6, $6,883 ($573.58/mo) 6–17; July 2025–June 2026: $7,997 under 6, $6,748 6–17 (ESDC July 2025 release)",
+  "period": "CRA T4114 Canada Child Benefit: the payment period runs from July 1 of the year after the base year to June 30 of the next year"
+ },
+ "unverified": "month the rate changes after a child's 6th birthday not confirmed in CRA excerpts — not used. www.canada.ca not fetchable from this session"
+}

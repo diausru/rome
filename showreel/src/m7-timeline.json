@@ -1,0 +1,53 @@
+{
+ "total": 68.378,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Same kids, same job. Then in July, the Canada Child Benefit deposit changed. Nobody called. It happens every year.",
+   "start": 0.25,
+   "end": 9.371
+  },
+  {
+   "id": "c1",
+   "text": "The benefit year runs from July to June. Every July, the CRA recalculates it from last year's tax return.",
+   "start": 9.721,
+   "end": 17.779
+  },
+  {
+   "id": "c2",
+   "text": "So payments from July twenty twenty-six use your twenty twenty-five family income.",
+   "start": 18.079,
+   "end": 24.041
+  },
+  {
+   "id": "c3",
+   "text": "Priya's family went from sixty thousand to seventy thousand in twenty twenty-five. That raise lands on the benefit now, in July.",
+   "start": 24.341,
+   "end": 33.089
+  },
+  {
+   "id": "c4",
+   "text": "Reason two: the amounts are indexed to inflation. The maximum for a child under six went from seven thousand nine hundred and ninety-seven to eight thousand one hundred and fifty-seven dollars.",
+   "start": 33.389,
+   "end": 46.619
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: the benefit always runs a year behind your life. Lose income this year, and it only shows up next July.",
+   "start": 47.019,
+   "end": 56.244
+  },
+  {
+   "id": "action",
+   "text": "So when July looks different, check last year's return, not this year's paycheque.",
+   "start": 56.544,
+   "end": 62.026
+  },
+  {
+   "id": "cta",
+   "text": "Next: the GST credit got a new name, and who gets it. Follow so you don't miss it.",
+   "start": 62.326,
+   "end": 68.378
+  }
+ ]
+}
