@@ -1,11 +1,16 @@
 // TAX SECRETS CANADA — "Real Situations" story panels (stories/BOOT.md). Cream paper cards on living illustrated plates.
 // Palette (prompt file A4): deep green / cream / warm red / charcoal. Every number arrives from episode data.
 import React from 'react';
-import { interpolate } from 'remotion';
+import { interpolate, useCurrentFrame } from 'remotion';
 import { easeOut } from './Effects';
 import { RollNumber } from './Kinetic';
+import { FxText } from './Studio';
+const FXS = ['type', 'rise', 'decode', 'mask', 'glow'];
 
-const S = { green: '#1F4D3A', green2: '#2E6B52', cream: '#F4EFE6', paper: '#FBF7EF', red: '#C8102E', red2: '#E0574F', ink: '#2B2B2B', dim: 'rgba(43,43,43,.62)', gold: '#C9A15A' };
+// v4 theme: frosted glass on photoreal plates (owner 2026-11-05) — light text, bright accents
+const S = { green: '#3FD08A', green2: '#7FE6B0', cream: '#F4EFE6', paper: 'rgba(255,255,255,.10)', red: '#FF5A4E', red2: '#E0574F', ink: '#FFFFFF', dim: 'rgba(255,255,255,.74)', gold: '#F2C76B' };
+const GLASS: React.CSSProperties = { background: 'linear-gradient(135deg, rgba(255,255,255,.16), rgba(255,255,255,.05))', backdropFilter: 'blur(18px) saturate(1.3) brightness(.72)', WebkitBackdropFilter: 'blur(18px) saturate(1.3) brightness(.72)', border: '1px solid rgba(255,255,255,.28)', boxShadow: '0 30px 80px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.35)' };
+const PH = { ink: '#2B2B2B', dim: 'rgba(43,43,43,.62)', green: '#1F4D3A' };
 const F = { head: 'Mont, Montserrat, sans-serif', cond: 'Oswald, Mont, sans-serif', num: 'Mont, Montserrat, sans-serif' };
 type Ctx = { now: number; fps: number; end: number };
 type Pn = { [k: string]: any };
@@ -21,12 +26,20 @@ const Typed: React.FC<{ text: string; t: number; now: number; cps?: number }> = 
 };
 
 const Paper: React.FC<{ children: React.ReactNode; accent?: string; style?: React.CSSProperties }> = ({ children, accent = S.green, style }) => (
-  <div style={{ position: 'relative', background: S.paper, color: S.ink, borderRadius: 14, padding: '22px 28px 22px 36px', boxShadow: '0 26px 60px rgba(0,0,0,.42), 0 2px 0 rgba(255,255,255,.6) inset', overflow: 'hidden', ...style }}>
-    <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 10, background: accent }} />
-    <div style={{ position: 'absolute', inset: 0, background: 'repeating-linear-gradient(0deg, rgba(43,43,43,.025) 0 2px, transparent 2px 5px)', pointerEvents: 'none' }} />
+  <div style={{ position: 'relative', ...GLASS, color: S.ink, borderRadius: 20, padding: '24px 32px 24px 38px', textShadow: '0 2px 16px rgba(0,0,0,.4)', ...style }}>
+    <div style={{ position: 'absolute', left: 0, top: 18, bottom: 18, width: 5, borderRadius: 3, background: accent, boxShadow: `0 0 14px ${accent}` }} />
+    <RunLine accent={accent} />
     {children}
   </div>
 );
+
+// light that runs around a window edge (time from the global frame clock)
+const RunLine: React.FC<{ accent: string }> = ({ accent }) => {
+  const now = useCurrentFrame() / 30; const run = (now * 0.22) % 1;
+  return <svg style={{ position: 'absolute', inset: -1, width: 'calc(100% + 2px)', height: 'calc(100% + 2px)', overflow: 'visible', pointerEvents: 'none' }}>
+    <rect x="1" y="1" width="99.6%" height="99.4%" rx="20" pathLength={100} fill="none" stroke={accent} strokeWidth={2.5} strokeDasharray="12 88" strokeDashoffset={-run * 100} style={{ filter: `drop-shadow(0 0 7px ${accent})` }} />
+    <rect x="1" y="1" width="99.6%" height="99.4%" rx="20" pathLength={100} fill="none" stroke="rgba(255,255,255,.75)" strokeWidth={1.2} strokeDasharray="5 95" strokeDashoffset={-run * 100 - 50} /></svg>;
+};
 
 // story caption card: kicker + typed lines (tone green/red/ink), optional rolling number
 const Chip: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => (
@@ -35,7 +48,7 @@ const Chip: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => (
     {(p.lines as Pn[]).map((ln, i) => {
       const t = T(ln, p.t + i * 0.7); if (c.now < t) return null;
       if (ln.roll !== undefined) return <div key={i} style={{ color: toneC(ln.tone), fontWeight: 800, lineHeight: 1.1 }}><RollNumber value={ln.roll} t={t} now={c.now} size={ln.size ?? 84} prefix={ln.prefix ?? '$'} style={{ fontFamily: F.num, fontWeight: 800 }} />{ln.suffix && <span style={{ fontSize: (ln.size ?? 84) * 0.42, marginLeft: 10, color: S.dim }}>{ln.suffix}</span>}</div>;
-      return <div key={i} style={{ fontFamily: F.head, fontWeight: ln.light ? 600 : 800, fontSize: ln.size ?? 46, lineHeight: 1.15, color: toneC(ln.tone), opacity: ln.strike && c.now > T(ln.strike, 1e9) ? 0.45 : 1, textDecoration: ln.strike && c.now > T(ln.strike, 1e9) ? `line-through ${S.red} 5px` : undefined }}><Typed text={ln.text} t={t} now={c.now} cps={ln.cps ?? 38} /></div>;
+      return <div key={i} style={{ fontFamily: F.head, fontWeight: ln.light ? 600 : 800, fontSize: ln.size ?? 46, lineHeight: 1.15, color: toneC(ln.tone), opacity: ln.strike && c.now > T(ln.strike, 1e9) ? 0.45 : 1, textDecoration: ln.strike && c.now > T(ln.strike, 1e9) ? `line-through ${S.red} 5px` : undefined }}><FxText fx={ln.fx ?? FXS[(i + Math.round(p.t)) % FXS.length]} text={ln.text} t={t} now={c.now} cps={ln.cps ?? 34} accent={ln.tone === 'red' ? S.red : ln.tone === 'green' ? S.green : S.gold} /></div>;
     })}
   </Paper>
 );
@@ -46,8 +59,8 @@ const Phone: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   const alertT = p.alertAt ? T(p.alertAt, 1e9) : 1e9; const al = c.now >= alertT;
   return (
     <div style={{ width: 380, height: 760, borderRadius: 54, background: '#141414', padding: 14, boxShadow: '0 40px 90px rgba(0,0,0,.55)', transform: `translateY(${(1 - k) * 80}px) rotate(${(p.rot ?? 4) * (1 - 0.3 * k)}deg)`, opacity: k }}>
-      <div style={{ width: '100%', height: '100%', borderRadius: 42, background: S.cream, overflow: 'hidden', position: 'relative', fontFamily: F.head, color: S.ink }}>
-        <div style={{ background: al ? S.red : S.green, color: S.cream, padding: '46px 26px 22px', transition: 'none' }}>
+      <div style={{ width: '100%', height: '100%', borderRadius: 42, background: S.cream, overflow: 'hidden', position: 'relative', fontFamily: F.head, color: PH.ink }}>
+        <div style={{ background: al ? '#C8102E' : PH.green, color: S.cream, padding: '46px 26px 22px', transition: 'none' }}>
           <div style={{ fontSize: 18, letterSpacing: 3, opacity: 0.8 }}>{(al ? p.alertTitle : p.title) ?? 'MY ACCOUNT'}</div>
           <div style={{ fontSize: 54, fontWeight: 800, marginTop: 6 }}>{p.balance !== undefined ? <RollNumber value={p.balance} t={p.t + 0.3} now={c.now} size={54} dur={1.4} /> : p.big}</div>
           {p.balanceSub && <div style={{ fontSize: 18, opacity: 0.85, marginTop: 2 }}>{p.balanceSub}</div>}
@@ -56,8 +69,8 @@ const Phone: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
           {rows.map((r, i) => {
             const t = T(r, p.t + 0.8 + i * 0.5); const kk = k01(c.now, t, 0.35); if (c.now < t) return null;
             return <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 10px', borderBottom: '1px solid rgba(43,43,43,.1)', opacity: kk, transform: `translateX(${(1 - kk) * 40}px)` }}>
-              <div><div style={{ fontSize: 20, fontWeight: 700 }}>{r.label}</div>{r.sub && <div style={{ fontSize: 15, color: S.dim }}>{r.sub}</div>}</div>
-              <div style={{ fontSize: 24, fontWeight: 800, color: r.tone === 'red' ? S.red : S.green }}>{r.value}</div>
+              <div><div style={{ fontSize: 20, fontWeight: 700 }}>{r.label}</div>{r.sub && <div style={{ fontSize: 15, color: PH.dim }}>{r.sub}</div>}</div>
+              <div style={{ fontSize: 24, fontWeight: 800, color: r.tone === 'red' ? '#C8102E' : PH.green }}>{r.value}</div>
             </div>;
           })}
         </div>
@@ -108,7 +121,7 @@ const Months: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
       </div>
       <div style={{ position: 'relative', height: H, marginTop: 18, display: 'flex', alignItems: 'flex-end', gap: 12 }}>
         <div style={{ position: 'absolute', left: 0, right: 0, top: ry, borderTop: `3px dashed ${S.green}`, zIndex: 2 }}>
-          <div style={{ position: 'absolute', right: 0, top: -34, fontSize: 19, fontWeight: 800, color: S.green, background: S.paper, padding: '0 6px' }}>{p.roomLabel}</div>
+          <div style={{ position: 'absolute', right: 0, top: -34, fontSize: 19, fontWeight: 800, color: S.green, background: 'rgba(0,0,0,.45)', borderRadius: 6, padding: '0 8px' }}>{p.roomLabel}</div>
         </div>
         {cum.map((v, i) => {
           const t = t0 + (span * i) / cum.length; const kk = k01(c.now, t, 0.5); const h = (v / top) * H * kk; const okH = Math.min(h, (room / top) * H);
@@ -164,7 +177,7 @@ const StepCards: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
       {items.map((it, i) => {
         const t = T(it, p.t + 0.5 + i); const kk = k01(c.now, t, 0.5); const nextT = i + 1 < items.length ? T(items[i + 1], 1e9) : 1e9; const cur = c.now >= t && c.now < nextT;
         if (c.now < t) return null;
-        return <div key={i} style={{ display: 'flex', gap: 22, alignItems: 'center', marginBottom: 14, background: S.paper, color: S.ink, borderRadius: 14, padding: '16px 22px', boxShadow: cur ? '0 18px 40px rgba(0,0,0,.45)' : '0 6px 16px rgba(0,0,0,.25)', opacity: cur ? kk : 0.82, transform: `translateX(${(1 - kk) * 120}px) scale(${cur ? 1 : 0.97})`, transformOrigin: 'left center' }}>
+        return <div key={i} style={{ display: 'flex', gap: 22, alignItems: 'center', marginBottom: 14, ...GLASS, color: S.ink, borderRadius: 16, padding: '16px 22px', boxShadow: cur ? '0 18px 40px rgba(0,0,0,.45)' : '0 6px 16px rgba(0,0,0,.25)', opacity: cur ? kk : 0.82, transform: `translateX(${(1 - kk) * 120}px) scale(${cur ? 1 : 0.97})`, transformOrigin: 'left center' }}>
           <div style={{ minWidth: 64, height: 64, borderRadius: 32, background: it.tone === 'red' ? S.red : S.green, color: S.cream, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: F.head, fontWeight: 800, fontSize: 30 }}>{it.n ?? i + 1}</div>
           <div><div style={{ fontFamily: F.head, fontWeight: 800, fontSize: 31, lineHeight: 1.15 }}>{it.head}</div>{it.text && <div style={{ fontSize: 22, color: S.dim, marginTop: 4 }}>{it.text}</div>}</div>
         </div>;
@@ -183,7 +196,7 @@ const Lower: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   const k = k01(c.now, p.t, 0.5);
   return <div style={{ display: 'flex', alignItems: 'stretch', transform: `translateX(${(1 - k) * -60}px)`, opacity: k }}>
     <div style={{ width: 12, background: p.tone === 'red' ? S.red : S.green, borderRadius: '6px 0 0 6px' }} />
-    <div style={{ background: 'rgba(251,247,239,.96)', color: S.ink, padding: '14px 24px', borderRadius: '0 10px 10px 0', fontFamily: F.head, fontSize: p.size ?? 26, fontWeight: 700, lineHeight: 1.3, maxWidth: p.w }}>{p.text}</div>
+    <div style={{ ...GLASS, color: S.ink, padding: '14px 24px', borderRadius: '0 10px 10px 0', fontFamily: F.head, fontSize: p.size ?? 26, fontWeight: 700, lineHeight: 1.3, maxWidth: p.w }}>{p.text}</div>
   </div>;
 };
 
@@ -194,7 +207,7 @@ const EndCard: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
     <div style={{ fontSize: 30, letterSpacing: 6, fontFamily: F.cond, opacity: k(0), color: '#BFD9C9' }}>YOUR TURN · COMMENTS</div>
     <div style={{ fontSize: 50, fontWeight: 800, lineHeight: 1.2, margin: '14px auto 26px', maxWidth: 1400, opacity: k(0.3), textShadow: '0 6px 30px rgba(0,0,0,.6)' }}>{p.question}</div>
     <div style={{ display: 'flex', gap: 24, justifyContent: 'center', opacity: k(T(p.handlesAt, p.t + 1) - p.t) }}>
-      {(p.handles as string[]).map((h, i) => <div key={i} style={{ background: S.paper, color: S.ink, borderRadius: 999, padding: '12px 28px', fontSize: 30, fontWeight: 800 }}>{h}</div>)}
+      {(p.handles as string[]).map((h, i) => <div key={i} style={{ ...GLASS, color: S.ink, borderRadius: 999, padding: '12px 28px', fontSize: 30, fontWeight: 800 }}>{h}</div>)}
     </div>
     {c.now >= T(p.nextAt, 1e9) && <div style={{ marginTop: 34, display: 'inline-flex', alignItems: 'center', gap: 16, background: S.red, borderRadius: 999, padding: '12px 30px', fontSize: 30, fontWeight: 800, transform: `scale(${0.9 + 0.1 * k01(c.now, T(p.nextAt, 0), 0.5)})` }}><span style={{ fontFamily: F.cond, letterSpacing: 4 }}>NEXT</span>{p.next}</div>}
     {c.now >= T(p.subAt, 1e9) && <div style={{ marginTop: 22, fontSize: 34, fontWeight: 800, color: '#F1D58C' }}>Follow so you don't miss it</div>}
@@ -205,7 +218,7 @@ const EndCard: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
 // a hard "turn" hit: red flash ring + stamp text
 const Stamp: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   const u = (c.now - p.t); const s = interpolate(u, [0, 0.18, 0.35], [2.4, 0.94, 1], { extrapolateRight: 'clamp' });
-  return <div style={{ display: 'inline-block', border: `8px solid ${S.red}`, color: S.red, borderRadius: 18, padding: '14px 34px', fontFamily: F.head, fontWeight: 900, fontSize: p.size ?? 84, letterSpacing: 2, transform: `scale(${s}) rotate(${p.rot ?? -6}deg)`, background: 'rgba(251,247,239,.92)', boxShadow: '0 20px 60px rgba(0,0,0,.5)', opacity: interpolate(u, [0, 0.1], [0, 1], { extrapolateRight: 'clamp' }) }}>{p.text}</div>;
+  return <div style={{ display: 'inline-block', color: S.red, borderRadius: 18, padding: '14px 34px', fontFamily: F.head, fontWeight: 900, fontSize: p.size ?? 84, letterSpacing: 2, transform: `scale(${s}) rotate(${p.rot ?? -6}deg)`, ...GLASS, border: `6px solid ${S.red}`, opacity: interpolate(u, [0, 0.1], [0, 1], { extrapolateRight: 'clamp' }) }}>{p.text}</div>;
 };
 
 export const PANELS_STORY: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { chip: Chip, phone: Phone, roomyears: RoomYears, months: Months, ledger: Ledger, versus: Versus, stepcards: StepCards, srctag: SrcTag, lower: Lower, endcard: EndCard, stamp: Stamp };

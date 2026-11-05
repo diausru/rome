@@ -39,3 +39,10 @@ Cadence: 1 episode / week, 16:9 1920×1080 30 fps, 7–10 min, English. Separate
 - Pipeline per beat: `gpt_image_2_5` 16:9 high 2k photoreal frame with mascot reference → `seedance_2_5` image-to-video (start_image, 1080p, no audio, camera move in prompt) → clip under VO in Remotion.
 - Code on top: light leaks / lens flares / film grain, running ticker (бегущая строка), paper cards + numbers, source tags, end card.
 - Pilot first (hook ~45 s) → owner OK → full episode.
+
+## STYLE v4 (owner 2026-11-05) — current
+- No mascot, no AI video. Higgsfield = still images only (`gpt_image_2_5` photoreal 16:9, Maya reference media 47db7874-1bb5-41ed-901f-a45c6b690a82).
+- Background: photoreal plates with depth parallax (2.5D) + FilmFX (light leaks on cuts, flare, grain); `film: true`.
+- All cards = frosted glass windows (Story.tsx v4 theme) with running edge light; text appears with rotating effects (type / rise / decode / mask / glow); numbers roll.
+- Captions: `captions: true` → word-level morph-assemble (letters fly in and lock, no haze), spoken word on red pill. No bottom ticker.
+- Template: `stories/ep01r/`. Render: `CH=900 GL=swangle bash longform/tools/finish.sh stories/epNN stNN OUT.mp4`.

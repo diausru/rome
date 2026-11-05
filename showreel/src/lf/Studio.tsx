@@ -22,7 +22,7 @@ const Typed: React.FC<{ text: string; t: number; now: number; cps?: number; acce
 const GL = '!<>-_\\/[]{}=+*^?#$%&0123456789';
 const colorize = (txt: string, accent: string) => txt.split(/(\$?\d[\d,.]*%?(?:\s?\/\s?\w+)?)/).map((s, i) => i % 2 ? <span key={i} style={{ color: accent, fontWeight: 900 }}>{s}</span> : <React.Fragment key={i}>{s}</React.Fragment>);
 // text-appear effects: type (letter by letter + caret), decode (scramble → real), rise (words float up from blur), mask (wipe reveal), glow (letters flash in)
-const FxText: React.FC<{ fx: string; text: string; t: number; now: number; accent: string; cps?: number }> = ({ fx, text, t, now, accent, cps = 30 }) => {
+export const FxText: React.FC<{ fx: string; text: string; t: number; now: number; accent: string; cps?: number }> = ({ fx, text, t, now, accent, cps = 30 }) => {
   const u = now - t;
   if (fx === 'decode') {
     const n = text.length; const done = Math.floor(Math.max(0, u) / 0.9 * n);
@@ -86,13 +86,20 @@ const Mascot: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
 };
 
 // CapCut-style captions: 3–4 word groups, the spoken word pops in a red pill
+// captions: each word materialises from nothing — its letters fly in from scattered points, spin and lock into place
+// (morph-assemble, no blur/haze); the spoken word sits on a red pill
+const rh = (n: number) => { const x = Math.sin(n * 91.7 + 13.3) * 43758.5453; return x - Math.floor(x); };
 export const Captions: React.FC<{ words: { w: string; s: number; e: number }[]; t: number }> = ({ words, t }) => {
-  const i = words.findIndex((w) => t >= w.s && t < w.e + 0.25); if (i < 0) return null;
+  const i = words.findIndex((w) => t >= w.s && t < w.e + 0.3); if (i < 0) return null;
   const g0 = Math.floor(i / 4) * 4; const grp = words.slice(g0, g0 + 4);
-  return <div style={{ position: 'absolute', bottom: 70, left: 420, right: 420, textAlign: 'center', fontFamily: F.head, fontWeight: 900, fontSize: 58, letterSpacing: 0.5, textTransform: 'uppercase' }}>
-    {grp.map((w, j) => { const cur = g0 + j === i; const k = k01(t, w.s, 0.12);
-      return <span key={j} style={{ display: 'inline-block', margin: '0 10px', padding: '2px 14px', borderRadius: 12, color: '#fff', background: cur ? '#D71920' : 'transparent', transform: `scale(${cur ? 1 + 0.08 * k : 1})`,
-        WebkitTextStroke: cur ? undefined : '2px rgba(0,0,0,.85)', textShadow: '0 4px 14px rgba(0,0,0,.6)', opacity: t >= w.s - 0.05 ? 1 : 0.55 }}>{w.w}</span>; })}
+  return <div style={{ position: 'absolute', bottom: 70, left: 300, right: 300, textAlign: 'center', fontFamily: F.head, fontWeight: 900, fontSize: 58, letterSpacing: 0.5, textTransform: 'uppercase' }}>
+    {grp.map((w, j) => { const idx = g0 + j; if (t < w.s - 0.08) return null; const cur = idx === i; const pk = k01(t, w.s, 0.18);
+      return <span key={j} style={{ display: 'inline-block', margin: '0 10px', padding: '2px 14px', borderRadius: 12, color: '#fff', background: cur ? `rgba(215,25,32,${pk})` : 'transparent',
+        textShadow: '0 4px 14px rgba(0,0,0,.65)', WebkitTextStroke: cur ? undefined : '2px rgba(0,0,0,.8)' }}>
+        {w.w.split('').map((ch, q) => { const sd = idx * 31 + q * 7; const k = k01(t, w.s - 0.08 + q * 0.022, 0.32);
+          const dx = (rh(sd) - 0.5) * 140 * (1 - k), dy = (rh(sd + 1) - 0.5) * 90 * (1 - k), r = (rh(sd + 2) - 0.5) * 120 * (1 - k);
+          return <span key={q} style={{ display: 'inline-block', whiteSpace: 'pre', opacity: k, transform: `translate(${dx}px, ${dy}px) rotate(${r}deg) scale(${0.25 + 0.75 * k})` }}>{ch}</span>; })}
+      </span>; })}
   </div>;
 };
 
