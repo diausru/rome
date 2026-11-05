@@ -856,4 +856,44 @@ const DepositHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook };
+// ---------- HalfHook: frame-0 hook — a capital-gain bar splits in half (half not taxed, half taxable) and drops a red tax chip; below, the same amount fully taxed with a bigger chip; then a "−$X" stamp; title flips to the question ----------
+// p.gain · p.taxable · p.taxGain · p.taxFull · p.splitAt · p.fullAt · p.stampAt · p.stamp · p.stampSub · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const HalfHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const G = p.gain as number; const X0 = 260, W = 1240, H = 74; const w = (v: number) => (W * v) / G;
+  const k0 = prog(now, p.t + 0.2, 0.9, EX); const sp = p.splitAt ? prog(now, p.splitAt.t, 0.9, BACK) : 0; const fu = p.fullAt ? prog(now, p.fullAt.t, 0.8, BACK) : 0;
+  const st = p.stampAt ? prog(now, p.stampAt.t, 0.6, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const lab = (t: string, col: string) => <div style={{ fontFamily: COND, fontSize: 24, letterSpacing: 4, color: col }}>{t}</div>;
+  const yA = 330, yB = 650;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.3 - 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.72})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 80, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: (1 - out) * cl(k0 * 2) }}>
+        <div style={{ position: 'absolute', left: X0, top: yA - 92 }}>{lab('CAPITAL GAIN · SHARES SOLD', C.dim)}<div style={{ fontFamily: COND, fontSize: 40, fontWeight: 700, color: C.white }}>{fmt(G)}</div></div>
+        <div style={{ position: 'absolute', left: X0, top: yA, width: w(G / 2) * k0, height: H, borderRadius: '10px 0 0 10px', background: 'rgba(127,211,160,.85)', transform: `translate(${-30 * sp}px, ${60 * sp}px)`, opacity: 1 - 0.45 * sp }} />
+        {sp > 0.05 && <div style={{ position: 'absolute', left: X0 - 30, top: yA + H + 70, opacity: sp }}>{lab('HALF · NOT TAXED', C.green)}</div>}
+        <div style={{ position: 'absolute', left: X0 + w(G / 2) * k0, top: yA, width: w(G / 2) * k0, height: H, borderRadius: '0 10px 10px 0', background: 'linear-gradient(90deg,#C9A055,#F1D38E)', transform: `translateX(${20 * sp}px)` }} />
+        {sp > 0.05 && <div style={{ position: 'absolute', left: X0 + w(G / 2) + 20, top: yA + H + 10, opacity: sp }}>{lab(`TAXABLE HALF · ${fmt(p.taxable)}`, C.gold)}</div>}
+        {sp > 0.05 && <div style={{ position: 'absolute', left: X0 + W + 20 - w(p.taxGain) * sp, top: yA - 6, width: w(p.taxGain) * sp, height: H + 12, borderRadius: 10, background: C.red, boxShadow: '0 0 24px rgba(229,128,110,.55)' }} />}
+        {sp > 0.4 && <div style={{ position: 'absolute', left: X0 + W + 40, top: yA - 4, fontFamily: COND, opacity: cl((sp - 0.4) * 2) }}>{lab('TAX', C.dim)}<div style={{ fontSize: 56, fontWeight: 700, color: C.red, lineHeight: 1 }}>{fmt(p.taxGain)}</div></div>}
+        {fu > 0.02 && <div style={{ opacity: fu }}>
+          <div style={{ position: 'absolute', left: X0, top: yB - 92 }}>{lab('SAME AMOUNT · FULLY TAXED', C.dim)}<div style={{ fontFamily: COND, fontSize: 40, fontWeight: 700, color: C.white }}>{fmt(G)}</div></div>
+          <div style={{ position: 'absolute', left: X0, top: yB, width: W * fu, height: H, borderRadius: 10, background: 'rgba(244,241,234,.8)' }} />
+          <div style={{ position: 'absolute', left: X0 + W + 20 - w(p.taxFull) * fu, top: yB - 6, width: w(p.taxFull) * fu, height: H + 12, borderRadius: 10, background: C.red }} />
+          <div style={{ position: 'absolute', left: X0 + W + 40, top: yB - 4, fontFamily: COND }}>{lab('TAX', C.dim)}<div style={{ fontSize: 56, fontWeight: 700, color: C.red, lineHeight: 1 }}>{fmt(p.taxFull)}</div></div></div>}
+      </div>
+      {st > 0.02 && <div style={{ position: 'absolute', left: 0, right: 0, top: 820, textAlign: 'center', fontFamily: COND, opacity: st * (1 - out), transform: `scale(${1.4 - 0.4 * st}) rotate(${-3 * st}deg)` }}>
+        <span style={{ display: 'inline-block', padding: '8px 30px', border: `4px solid ${C.green}`, borderRadius: 14, color: C.green, fontSize: 64, fontWeight: 700, background: 'rgba(7,11,20,.6)' }}>{p.stamp}</span>
+        <div style={{ fontSize: 26, letterSpacing: 6, color: C.white, marginTop: 6 }}>{p.stampSub}</div></div>}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook };

@@ -1,0 +1,23 @@
+{
+ "salary": 70000,
+ "shares": 400,
+ "buy": 50,
+ "sell": 80,
+ "comm": 10,
+ "acb": 20010,
+ "proceeds": 32000,
+ "gain": 11990,
+ "taxable": 5995,
+ "tax_gain": 1928,
+ "tax_salary": 3705,
+ "tax_gain_120": 2602,
+ "tax_gain_40": 1142,
+ "loss": 4000,
+ "net_gain": 7990,
+ "tax_net": 1335,
+ "keep_gain": 10062,
+ "keep_salary": 8285,
+ "diff": 1777,
+ "eff": 16.1,
+ "saved_by_loss": 593
+}

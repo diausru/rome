@@ -13,7 +13,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 | 6 | Why Your Tax Refund Doesn't Mean You Paid Less Tax | rendered LF-18 (2026-11-03, `longform/lf18-refund`) |
 | 7 | CPP, EI and Income Tax — What Actually Comes Off Your Paycheque? | rendered LF-19 (2026-11-05, `longform/lf19-paycheque`) |
 | 8 | RRSP Explained With Real Numbers — When Does It Actually Reduce Your Tax? | rendered LF-20 (2026-11-05, `longform/lf20-rrsp`) |
-| 9 | Capital Gains Tax in Canada Explained With a Real Example | queued |
+| 9 | Capital Gains Tax in Canada Explained With a Real Example | rendered LF-21 (2026-11-05, `longform/lf21-gains`) |
 
 ## Series 2 — Real Tax Math
 | # | Topic | Status |
@@ -133,7 +133,8 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 18. LF-18 → #6 Why Your Tax Refund Doesn't Mean You Paid Less Tax — rendered 2026-11-03 (proposed 2027-03-20)
 19. LF-19 → #7 CPP, EI and Income Tax — What Actually Comes Off Your Paycheque? — rendered 2026-11-05 (proposed 2027-03-30)
 20. LF-20 → #8 RRSP Explained With Real Numbers — When Does It Actually Reduce Your Tax? — rendered 2026-11-05 (proposed 2027-04-09)
-21. LF-21 → #9 Capital Gains Tax in Canada Explained With a Real Example — queued
+21. LF-21 → #9 Capital Gains Tax in Canada Explained With a Real Example — rendered 2026-11-05 (proposed 2027-04-19)
+22. LF-22 → #13 Why Your $100K Salary Does NOT Mean You Have $100K of Taxable Income — queued
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
 Not a stretched Short and not a re-cut of one: a new question, a new story, new examples and a new visual approach. Already covered by Shorts (do not repeat their angle, hook, examples or visuals):
