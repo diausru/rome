@@ -815,4 +815,45 @@ const PayHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook };
+// ---------- DepositHook: frame-0 hook — five identical $10,000 RRSP blocks; tax-saving bars rise from each (very different heights); a pair is bracketed "+$59"; title flips to the question ----------
+// p.people[{name, salary, saving, pct}] · p.riseAt · p.pairAt · p.pair[i,j] · p.pairText · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const DepositHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const ps = p.people as Pn[]; const n = ps.length; const CW = 300, X0 = (1920 - n * CW) / 2, BASE = 840, BH = 120, HMAX = 380;
+  const max = Math.max(...ps.map((x) => x.saving)); const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0; const pk = p.pairAt ? prog(now, p.pairAt.t, 0.7, BACK) : 0;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const rise = (i: number) => (p.riseAt ? prog(now, p.riseAt.t + i * 0.35, 1.1, EX) : 0);
+  const [a, b] = (p.pair ?? [2, 3]) as number[];
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0, y: 0.2 - 0.4 * cl(el / 22), z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.72})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 80, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      {ps.map((x, i) => {
+        const cx = X0 + i * CW + CW / 2; const k = prog(now, p.t + 0.2 + i * 0.12, 0.7, BACK); const r = rise(i); const h = (HMAX * x.saving / max) * r;
+        const hl = pk > 0 && (i === a || i === b); const dim = pk > 0 && !hl ? 1 - 0.55 * pk : 1;
+        return (
+          <div key={i} style={{ opacity: (1 - out) * cl(k * 2) * dim }}>
+            <div style={{ position: 'absolute', left: cx - 110, top: BASE - BH, width: 220, height: BH, borderRadius: 12, background: 'rgba(244,241,234,.12)', border: '2px solid rgba(232,194,122,.55)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: COND, transform: `translateY(${(1 - k) * 60}px)` }}>
+              <div style={{ fontSize: 20, letterSpacing: 4, color: C.dim }}>RRSP</div><div style={{ fontSize: 46, fontWeight: 700, color: C.white, lineHeight: 1 }}>$10,000</div></div>
+            <div style={{ position: 'absolute', left: cx - 70, top: BASE - BH - 12 - h, width: 140, height: h, borderRadius: '10px 10px 4px 4px', background: 'linear-gradient(180deg,#9BE3B6,#4FA874)', boxShadow: hl ? `0 0 ${30 * pk}px rgba(127,211,160,.7)` : 'none' }} />
+            {r > 0.05 && <div style={{ position: 'absolute', left: cx - 140, width: 280, top: BASE - BH - 12 - h - 92, textAlign: 'center', fontFamily: COND, opacity: cl(r * 2) }}>
+              <div style={{ fontSize: 56, fontWeight: 700, color: C.green, lineHeight: 1 }}>{fmt(x.saving * r)}</div>
+              <div style={{ fontSize: 22, letterSpacing: 3, color: C.dim, marginTop: 4 }}>≈ {x.pct.toFixed(1)}¢ PER $1</div></div>}
+            <div style={{ position: 'absolute', left: cx - 140, width: 280, top: BASE + 16, textAlign: 'center', fontFamily: COND }}>
+              <div style={{ fontSize: 40, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{x.name.toUpperCase()}</div>
+              <div style={{ fontSize: 24, letterSpacing: 3, color: C.gold }}>{fmt(x.salary)}</div></div>
+          </div>);
+      })}
+      {pk > 0.02 && (() => { const x1 = X0 + a * CW + CW / 2 - 90, x2 = X0 + b * CW + CW / 2 + 90; const top = BASE - BH - 12 - HMAX * Math.max(ps[a].saving, ps[b].saving) / max - 150;
+        return <div style={{ position: 'absolute', left: x1, width: x2 - x1, top, height: 40, borderTop: `3px solid ${C.gold}`, borderLeft: `3px solid ${C.gold}`, borderRight: `3px solid ${C.gold}`, borderRadius: '10px 10px 0 0', opacity: pk * (1 - out) }}>
+          <div style={{ position: 'absolute', left: -300, right: -300, top: -64, textAlign: 'center', whiteSpace: 'nowrap', fontFamily: COND, fontSize: 44, fontWeight: 700, color: C.gold, transform: `scale(${0.7 + 0.3 * pk})` }}>{p.pairText}</div></div>; })()}
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook };

@@ -1,0 +1,48 @@
+{
+ "people": {
+  "Ben": {
+   "salary": 22000,
+   "saving": 853,
+   "pct": 8.5,
+   "tax": 853
+  },
+  "Ella": {
+   "salary": 45000,
+   "saving": 2055,
+   "pct": 20.6,
+   "tax": 5243
+  },
+  "Ravi": {
+   "salary": 75000,
+   "saving": 3115,
+   "pct": 31.1,
+   "tax": 12705
+  },
+  "Kate": {
+   "salary": 110000,
+   "saving": 3174,
+   "pct": 31.7,
+   "tax": 23199
+  },
+  "Marc": {
+   "salary": 160000,
+   "saving": 4479,
+   "pct": 44.8,
+   "tax": 44390
+  }
+ },
+ "limit2026": 33810,
+ "limit2027": 35390,
+ "pct": 18,
+ "room_ravi": 13500,
+ "room_kate": 19800,
+ "room_marc": 28800,
+ "noor_now": 2055,
+ "noor_later": 2965,
+ "kate_wd45": 2083,
+ "kate_wd110": 3689,
+ "ben_tax": 853,
+ "ben_1k": 250,
+ "noor_gain": 910,
+ "kate_net": 1091
+}
