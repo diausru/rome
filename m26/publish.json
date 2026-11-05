@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "M26 · Two homes, two CCB deposits",
+  "mp4": "showreel/out/m26/m26-final.mp4 (share copy: m26-share.mp4)",
+  "duration": "1:00 (60.29 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'NOT EQUAL HALVES': 14-night week-on/week-off grid, the 40–60% band, 50%/50% split, Jordan's longer half vs Casey's shorter half, 'EACH ON OWN INCOME' stamp, the child walking up the steps",
+  "why": "the whole shared-custody rule in one frame",
+  "t": 38.54,
+  "ms": 38540,
+  "file": "m26/cover.jpg (extracted at 38.54 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "canada.ca CRA Who can apply – Canada child benefit (shared custody)",
+   "year": "2026",
+   "supports": "40%–60% = shared custody; each parent gets 50% of the full-time payment; based on each parent's own adjusted family net income; >60% full custody; <40% not eligible"
+  },
+  {
+   "source": "canada.ca CRA How much you can get",
+   "year": "July 2026–June 2027",
+   "supports": "up to $8,157 per child under 6"
+  },
+  {
+   "source": "Department of Finance (2019)",
+   "year": "2019",
+   "supports": "Income Tax Act amended to the 40%–60% test"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "Shared Custody and the Canada Child Benefit: Who Gets What?",
+   "50/50 Custody in Canada: Both Parents Get the CCB (Not the Same Amount)",
+   "CCB After Separation: The 40% and 60% Rule Explained"
+  ],
+  "description": "Same child, two homes, two deposits. After a separation, both parents can get the Canada Child Benefit, but not always the same amount.\n\nThe rule (CRA): if the child lives with you 40% to 60% of the time, it's shared custody. Each parent gets 50% of the payment they would get if the child lived with them full-time, and each half is calculated on that parent's own adjusted family net income. So the lower-income parent's half can be bigger.\n\nExample: a 5-year-old, week on / week off. July 2026–June 2027 maximum for a child under 6: $8,157 a year, so each half is at most $4,078.50.\n\nThe twist: over 60% of the time, you have full custody and you're the only one eligible. Under 40%, you can't apply.\n\nCount the real nights before either of you applies.\n\nNext: why the Canada Child Benefit changes every July.\n\nSources: canada.ca (CRA) Canada child benefit – who can apply; how much you can get. Example family. General information, not advice.\n\n#CCB #SharedCustody #CanadaChildBenefit",
+  "hashtags": "#CCB #SharedCustody #CanadaChildBenefit #CRA",
+  "keywords": "ccb shared custody, canada child benefit separated parents, 50/50 custody ccb, 40 60 rule ccb, who gets ccb after separation, canada child benefit split",
+  "pinned": "Quick check: the child is with you 9 nights out of 14. Shared or full custody? (64% → full custody, only you) General info, not advice.",
+  "cta": "Follow for the next one: why the CCB changes in July."
+ },
+ "tt": {
+  "caption": "Two homes, two CCB deposits 🏠🏠 but not the same amount. The 40%–60% rule.",
+  "keywords": "ccb shared custody · separated parents canada · canada child benefit",
+  "hashtags": "#ccb #coparenting #canadiantaxes #cra #singleparentcanada",
+  "pinned": "Over 60% = only you. Under 40% = can't apply. (General info, not advice.)",
+  "cta": "Follow for the next one: why the CCB changes in July."
+ },
+ "ig": {
+  "caption": "Two homes. Two CCB deposits? 🏠🏠🇨🇦\n\nCRA shared custody = the child lives with you 40%–60% of the time.\n• Each parent gets 50% of their own full-time amount\n• Each half uses that parent's own family income → halves can differ\n• Child under 6: up to $8,157/yr → each half up to $4,078.50 (July 2026–June 2027)\n⚠️ Over 60%: only you. Under 40%: you can't apply.\n\nSend this to a co-parent.\n\nSource: CRA (canada.ca). Example family. General info, not advice.",
+  "keywords": "ccb shared custody, co-parenting canada, canada child benefit",
+  "hashtags": "#ccb #coparenting #canadiantaxes #sharedcustody #personalfinancecanada #canadatax",
+  "pinned": "Save this for your next schedule change 📌",
+  "cta": "Send this to a co-parent."
+ },
+ "eng": {
+  "question": "9 nights out of 14: shared or full? (64% → full)",
+  "save": "The 40 / 60 lines.",
+  "share": "Co-parents after a separation.",
+  "follow": "Canadian tax and benefit rules with real numbers."
+ },
+ "seo": {
+  "primary": "ccb shared custody",
+  "secondary": "vidIQ CA: seed <750/mo; 'ccb' 140K/mo (mixed intent)",
+  "intent": "Separated parents splitting time with a child.",
+  "audience": "Co-parents 25–50.",
+  "angle": "two homes, two halves, each on own income; the 40/60 lines.",
+  "questions": "Do both parents get the CCB in 50/50 custody? How is it split? What if it's 70/30?"
+ },
+ "next": [
+  {
+   "topic": "Why the CCB amount changes in July (#7)",
+   "why": "Bridge",
+   "intent": "why did my ccb change in july",
+   "hook": "new amount every July",
+   "angle": "benefit year uses last year's return + indexation",
+   "payoff": "know when and why it changes"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #26, bridged from M3. Playlist: 'Benefits & credits'.",
+ "research": {
+  "vidiq": "balance 429 before; 1 keyword_research CA (no relevant related terms)",
+  "nexlev": "youtube_search shorts CA: few CCB-specific Shorts on shared custody (≤400 views); child-support Shorts dominate"
+ },
+ "retention": "Frame 0 'TWO HOMES. TWO CCB DEPOSITS?'; two homes by 2 s, '≠' at 9 s; 14 nights fill 15 s; 40–60% band 19–20 s; 50/50 split 26 s; own-income halves 33 s; 'EACH ON OWN INCOME' stamp ≈34 s (re-hook, ≈57 %); three-zone slider reveal 40–50 s (50 → 64 → 38); check card + next pill."
+}

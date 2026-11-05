@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  ["hook", "Same child, two homes, two deposits. After a separation, both parents can get the Canada Child Benefit. But not always the same amount.", 0.35],
+  ["c1", "Jordan and Casey separated. Their five-year-old spends one week with each of them.", 0.3],
+  ["c2", "The rule: if the child lives with you forty to sixty percent of the time, the CRA calls it shared custody.", 0.3],
+  ["c3", "Then each parent gets fifty percent of what they would get with the child full-time.", 0.3],
+  ["c4", "And each half is worked out on that parent's own family income. Jordan earns less, so Jordan's half can be bigger.", 0.4],
+  ["reveal", "The twist: the lines are sharp. Over sixty percent, you're the only one eligible. Under forty, you can't apply at all.", 0.3],
+  ["action", "So count the real nights before either of you applies.", 0.3],
+  ["cta", "Next: why the Canada Child Benefit changes every July. Follow so you don't miss it.", 0.0]
+ ]
+}

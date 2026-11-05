@@ -1,0 +1,26 @@
+{
+ "topic": "CCB in shared custody: if the child lives with you 40% to 60% of the time (the other parent the rest, at a different address), each parent receives 50% of the payment they would get with the child 100% of the time, calculated on each parent's own adjusted family net income; over 60% = full custody, only that parent eligible; under 40% = not eligible, should not apply",
+ "tax_year": 2026,
+ "example": {
+  "lo": 40,
+  "hi": 60,
+  "share": 50,
+  "under6": 8157,
+  "half_max": 4078.5,
+  "child_age": 5,
+  "note": "example (not a CRA rule): Jordan and Casey separated; their 5-year-old alternates weeks (7 of 14 nights = 50%). July 2026–June 2027 maximum for a child under 6 is $8,157/yr; in shared custody each parent gets half of their own full-custody amount, so at most $4,078.50 each (only at low adjusted family net income); the actual halves differ with each parent's income."
+ },
+ "derive": {},
+ "spoken": {
+  "lo": "forty",
+  "hi": "sixty",
+  "share": "fifty",
+  "child_age": "five"
+ },
+ "sources": {
+  "shared": "canada.ca CRA 'Who can apply – Canada child benefit': shared custody if the child lives with you 40% to 60% of the time; each individual gets 50% of the payment they would have received if the child lived with them 100% of the time; payments calculated on each parent's own adjusted family net income; more than 60% = full custody; less than 40% = not an eligible individual (via canada.ca search excerpts 2026-11-05)",
+  "amount": "canada.ca CRA 'How much you can get': July 2026–June 2027 up to $8,157 per child under 6",
+  "history": "Department of Finance 2019: Income Tax Act amended to the 40%–60% test after a court read 'near equal' as 45%–55%"
+ },
+ "unverified": "www.canada.ca not fetchable from this session; facts from canada.ca search excerpts"
+}

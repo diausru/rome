@@ -1,0 +1,219 @@
+{
+ "id": "m26",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "TWO HOMES.",
+  "l2": "TWO CCB DEPOSITS?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "weeks": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "zones": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "two",
+   "beat": "hook",
+   "word": "two",
+   "sfx": "tick"
+  },
+  {
+   "id": "both",
+   "beat": "hook",
+   "word": "both",
+   "sfx": "chime"
+  },
+  {
+   "id": "not",
+   "beat": "hook",
+   "word": "not",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "week",
+   "beat": "c1",
+   "word": "week",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "lo",
+   "beat": "c2",
+   "word": "forty",
+   "sfx": "tick"
+  },
+  {
+   "id": "hi",
+   "beat": "c2",
+   "word": "sixty"
+  },
+  {
+   "id": "shared",
+   "beat": "c2",
+   "word": "shared",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "half",
+   "beat": "c3",
+   "word": "fifty",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "own",
+   "beat": "c4",
+   "word": "own",
+   "sfx": "tick"
+  },
+  {
+   "id": "bigger",
+   "beat": "c4",
+   "word": "bigger.",
+   "sfx": "chime"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "over",
+   "beat": "reveal",
+   "word": "Over",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "under",
+   "beat": "reveal",
+   "word": "Under",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "count",
+   "beat": "action",
+   "word": "count",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "bigger.",
+   "offset": -0.4
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "kids"
+}
