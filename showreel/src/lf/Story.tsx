@@ -29,9 +29,38 @@ const Paper: React.FC<{ children: React.ReactNode; accent?: string; style?: Reac
   <div style={{ position: 'relative', ...GLASS, color: S.ink, borderRadius: 20, padding: '24px 32px 24px 38px', textShadow: '0 2px 16px rgba(0,0,0,.4)', ...style }}>
     <div style={{ position: 'absolute', left: 0, top: 18, bottom: 18, width: 5, borderRadius: 3, background: accent, boxShadow: `0 0 14px ${accent}` }} />
     <RunLine accent={accent} />
+    <Sheen />
     {children}
   </div>
 );
+
+// specular sheen that slides over the glass as the virtual camera orbits
+const Sheen: React.FC = () => { const now = useCurrentFrame() / 30; const x = 50 + 60 * Math.sin(now * 0.23);
+  return <div style={{ position: 'absolute', inset: 0, borderRadius: 20, pointerEvents: 'none', background: `linear-gradient(115deg, transparent ${x - 22}%, rgba(255,255,255,.16) ${x}%, transparent ${x + 22}%)` }} />; };
+
+// 3D icon badge (floats at the panel corner, turns with the camera)
+const ICONS: Record<string, string> = {
+  coin: 'M12 3a9 9 0 100 18 9 9 0 000-18zm1 4v1.5c1.4.3 2.4 1.2 2.5 2.5h-2c-.1-.6-.6-1-1.5-1s-1.5.4-1.5 1c0 .6.5.9 1.8 1.2 2 .5 3.2 1.2 3.2 2.9 0 1.3-1 2.3-2.5 2.6V18h-2v-1.4c-1.6-.3-2.7-1.3-2.8-2.8h2c.1.7.7 1.2 1.8 1.2 1 0 1.5-.4 1.5-1 0-.5-.4-.8-1.9-1.2-1.9-.5-3.1-1.2-3.1-2.9 0-1.3 1-2.2 2.5-2.5V7h2z',
+  calendar: 'M7 2v2H5a2 2 0 00-2 2v13a2 2 0 002 2h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7zm-2 7h14v10H5V9zm2 2v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z',
+  phone: 'M8 2h8a2 2 0 012 2v16a2 2 0 01-2 2H8a2 2 0 01-2-2V4a2 2 0 012-2zm0 3v13h8V5H8zm3 14v1h2v-1h-2z',
+  work: 'M9 3h6a2 2 0 012 2v1h3a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h3V5a2 2 0 012-2zm0 3h6V5H9v1z',
+  receipt: 'M5 2l1.5 1L8 2l1.5 1L11 2l1.5 1L14 2l1.5 1L17 2l1.5 1L20 2v20l-1.5-1-1.5 1-1.5-1-1.5 1-1.5-1-1.5 1-1.5-1L8 22l-1.5-1L5 22V2zm3 5v2h8V7H8zm0 4v2h8v-2H8zm0 4v2h5v-2H8z',
+  alert: 'M12 2L1 21h22L12 2zm-1 7h2v6h-2V9zm0 8h2v2h-2v-2z',
+  check: 'M9 16.2l-3.5-3.5L4 14.2l5 5 11-11-1.5-1.5z',
+  home: 'M12 3l10 9h-3v9h-5v-6h-4v6H5v-9H2l10-9z',
+  key: 'M7 14a5 5 0 114.6-7H22v4h-2v3h-3v-3h-5.4A5 5 0 017 14zm0-3a2 2 0 100-4 2 2 0 000 4z',
+  mail: 'M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm1 3v9h16V8l-8 5-8-5zm1-1l7 4.4L19 7H5z',
+  chart: 'M4 20V10h3v10H4zm6 0V4h3v16h-3zm6 0v-7h3v7h-3z',
+  percent: 'M7 9a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm10 11a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM5 19L19 5l1.4 1.4-14 14L5 19z',
+  user: 'M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-5 0-9 2.5-9 6v2h18v-2c0-3.5-4-6-9-6z',
+  quote: 'M6 17h4l2-4V7H6v6h3l-3 4zm8 0h4l2-4V7h-6v6h3l-3 4z',
+};
+const IconBadge: React.FC<{ name: string; color: string; t: number }> = ({ name, color, t }) => {
+  const now = useCurrentFrame() / 30; const k = Math.max(0, Math.min(1, (now - t) / 0.6)); const e = 1 - Math.pow(1 - k, 3);
+  return <div style={{ position: 'absolute', right: -30, top: -34, width: 76, height: 76, borderRadius: 38, background: `radial-gradient(circle at 35% 30%, rgba(255,255,255,.55), ${color} 45%, rgba(0,0,0,.55) 100%)`,
+    boxShadow: `0 14px 30px rgba(0,0,0,.45), 0 0 26px ${color}`, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${0.3 + 0.7 * e}) rotateY(${(1 - e) * 180 + 18 * Math.sin(now * 0.9)}deg)`, opacity: e }}>
+    <svg width="40" height="40" viewBox="0 0 24 24"><path d={ICONS[name] ?? ICONS.coin} fill="#fff" /></svg></div>;
+};
 
 // light that runs around a window edge (time from the global frame clock)
 const RunLine: React.FC<{ accent: string }> = ({ accent }) => {
@@ -44,6 +73,7 @@ const RunLine: React.FC<{ accent: string }> = ({ accent }) => {
 // story caption card: kicker + typed lines (tone green/red/ink), optional rolling number
 const Chip: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => (
   <Paper accent={p.accent === 'red' ? S.red : S.green} style={{ transform: `rotate(${p.rot ?? -0.6}deg)` }}>
+    {p.icon && <IconBadge name={p.icon} color={p.accent === 'red' ? S.red : S.green} t={p.t} />}
     {p.kicker && <div style={{ fontFamily: F.cond, fontSize: 22, letterSpacing: 5, color: p.accent === 'red' ? S.red : S.green2, marginBottom: 8, textTransform: 'uppercase' }}>{p.kicker}</div>}
     {(p.lines as Pn[]).map((ln, i) => {
       const t = T(ln, p.t + i * 0.7); if (c.now < t) return null;

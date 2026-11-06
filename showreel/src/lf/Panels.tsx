@@ -238,11 +238,19 @@ const Misconception: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
 
 const PANELS: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { ...PANELS2, ...PANELS3, ...PANELS_MOTION, ...PANELS_STORY, ...PANELS_STUDIO, table: Table, formula: Formula, brackets: Brackets, provinces: Provinces, stack: Stack, donut: Donut, line: LineChart, source: Source, takeaway: Takeaway, misconception: Misconception };
 
+// v5 '3D camera': panels fly in from depth with a turn, then the whole set is slowly orbited by a virtual camera
+const cam3d = (p: Pn, now: number, drift: number) => {
+  const u = Math.max(0, Math.min(1, (now - p.t) / 0.95)); const k = 1 - Math.pow(1 - u, 3);
+  const dir = (p.x ?? 0) + (p.w ?? 0) / 2 > 960 ? 1 : -1; const big = (p.w ?? 0) > 1200;
+  const oy = 7 * Math.sin(now * 0.23 + (p.x ?? 0) * 0.001), ox = 3.5 * Math.sin(now * 0.17 + 1);
+  return `translateY(${drift}px) translateZ(${(1 - k) * -750}px) rotateY(${(1 - k) * -42 * dir + (big ? oy * 0.4 : oy) - dir * 6}deg) rotateX(${(1 - k) * 14 + ox}deg)`;
+};
+
 // ---------- scene: several panels, each with its own entry time; slight depth + parallax drift ----------
 export const Scene: React.FC<{ e: Pn; now: number; fps: number }> = ({ e, now, fps }) => {
   const end = e.t + e.dur;
   return (
-    <AbsoluteFill style={{ fontFamily: F.sans, color: C.white, perspective: 1800 }}>
+    <AbsoluteFill style={{ fontFamily: F.sans, color: C.white, perspective: e.cam3d ? 1400 : 1800, perspectiveOrigin: e.cam3d ? `${50 + 10 * Math.sin(now * 0.21)}% ${46 + 6 * Math.sin(now * 0.16 + 1)}%` : undefined }}>
       {(e.panels as Pn[]).map((p, i) => {
         const P = PANELS[p.type]; if (!P || now < p.t) return null;
         const until = p.until !== undefined ? (typeof p.until === 'object' ? p.until.t : p.until) : end;
@@ -257,7 +265,7 @@ export const Scene: React.FC<{ e: Pn; now: number; fps: number }> = ({ e, now, f
         const drift = Math.sin((now + i * 3.1) * 0.35) * 3;
         const glass = p.glass === false ? {} : { padding: p.pad ?? '26px 30px', background: p.bg ?? C.glass, border: `1px solid ${C.line}`, borderRadius: 20, boxShadow: '0 24px 60px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.10)' };
         return (
-          <div key={p.id ?? i} style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, transform: `translateY(${drift}px) rotateY(${p.tilt ?? 0}deg) rotateX(${p.tiltX ?? 0}deg)`, transformOrigin: p.origin ?? 'center' }}>
+          <div key={p.id ?? i} style={{ position: 'absolute', left: p.x, top: p.y, width: p.w, transform: e.cam3d ? cam3d(p, now, drift) : `translateY(${drift}px) rotateY(${p.tilt ?? 0}deg) rotateX(${p.tiltX ?? 0}deg)`, transformOrigin: p.origin ?? 'center' }}>
           <div style={{ position: 'relative', ...glass, ...fx.style, transform: [fx.style.transform].filter(Boolean).join(' ') || undefined }}>
             {fx.overlay}
             {p.glass !== false && p.runBorder !== false && <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible', pointerEvents: 'none' }}>
