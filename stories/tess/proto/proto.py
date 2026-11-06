@@ -1,0 +1,17 @@
+import sys; sys.path.insert(0, '..')
+from t3d import *
+S = Scene(8000)
+S.lights()
+S.camera([(0, (900, 520, -2150)), (8000, (1010, 560, -1820))], target=(960, 540, 0), fov=50)
+S.backdrop('s1', z=300)
+g = S.panel((1450, 330, -300), (720, 300), GOLD, rot=(0, -14, 0), name='P1')
+t1 = S.text('$1,000', (-300, 40, -10), 130, GOLD, parent=g, name='Big')
+t2 = S.text('every Monday > TFSA', (-300, 110, -10), 46, WHITE, parent=g, depth=6, name='Sub')
+c = S.coin((1180, 640, -420), 75)
+# fly-in + settle
+S.keys(g, 'position', [(0, [2300, 330, -300]), (900, [1450, 330, -300])], 'vector3', 'out')
+S.keys(g, 'rotationY', [(0, -60), (900, -14), (8000, -6)], 'float', 'out')
+S.keys(c, 'rotationY', [(0, 0), (8000, 720)], 'float', 'linear')
+S.keys(c, 'position', [(0, [1180, 900, -420]), (1400, [1180, 640, -420]), (8000, [1180, 620, -420])], 'vector3', 'out')
+S.glow()
+S.dump('proto.json')
