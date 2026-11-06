@@ -1,5 +1,5 @@
 # LF-22 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** filled after render.
+**QC (2026-11-06):** 525.9 s (8:46), −13.9 LUFS, no black frames, contact sheet checked.
 **File:** `LF22-1080p.mp4` · 1920×1080 · 30 fps · ≈8:46 · VO Grady (72 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** ColumnHook (new). **Thumbnail:** made by the user.
