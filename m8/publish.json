@@ -1,0 +1,92 @@
+{
+ "video": {
+  "title": "M8 · The GST credit has a new name",
+  "mp4": "showreel/out/m8/m8-final.mp4 (share copy: m8-share.mp4)",
+  "duration": "1:05 (65.04 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'WHEN IT ARRIVES': the paper receipt ($890 + 2 × $234 = $1,358/yr), four JUL/OCT/JAN/APR $339.50 coupons, '4 PAYMENTS A YEAR' stamp, Amira and Ben unpacking groceries",
+  "why": "the amount and the schedule in one frame",
+  "t": 39.86,
+  "ms": 39860,
+  "file": "m8/cover.jpg (extracted at 39.86 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "canada.ca CRA How much you can get – Canada Groceries and Essentials Benefit",
+   "year": "July 2026–June 2027 (2025 base year)",
+   "supports": "$679 single, $890 couple, $234 per child under 19; $46,432 phase-out threshold"
+  },
+  {
+   "source": "Department of Finance releases (June/July 2026)",
+   "year": "2026",
+   "supports": "replaces the GST credit; 25% increase for five years (2026–2031)"
+  },
+  {
+   "source": "Budget 2026 tax measures",
+   "year": "2026",
+   "supports": "5% phase-out on 2025 adjusted family net income above $46,432"
+  },
+  {
+   "source": "CRA payment dates / payments chart",
+   "year": "2026–27",
+   "supports": "quarterly: July 2026, October 2026, January 2027, April 2027"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "The GST Credit Has a New Name (and It's 25% Bigger) | Canada 2026",
+   "Canada Groceries and Essentials Benefit: How Much You Get (2026–27)",
+   "GST Credit Is Gone: What Replaced It and Who Gets $1,358"
+  ],
+  "description": "The GST credit is gone. Same deposit, new name: the Canada Groceries and Essentials Benefit (CGEB), and it's bigger.\n\n• Replaced the GST/HST credit in July 2026: 25% more, for five years.\n• Maximum for July 2026–June 2027: $679 single, $890 for a couple, plus $234 per child under 19.\n• Example: a couple with two kids and family net income up to $46,432 → $890 + 2 × $234 = $1,358 a year.\n• Paid in four parts: July, October, January and April (here $339.50 each).\n\nThe twist: above $46,432 of family net income, 5% of the extra comes off. $10,000 over? $500 less ($858 in the example).\n\nIt's worked out from last year's return, so file on time, every year.\n\nNext: the Canada Workers Benefit.\n\nSources: canada.ca (CRA) Canada Groceries and Essentials Benefit – how much you can get, payment dates; Department of Finance; Budget 2026. Example family. General information, not advice.\n\n#CGEB #GSTCredit #CanadaTax",
+  "hashtags": "#CGEB #GSTCredit #CanadaTax #CRA",
+  "keywords": "canada groceries and essentials benefit, gst credit new name, gst credit 2026, cgeb amount, gst hst credit replaced, groceries benefit payment dates",
+  "pinned": "Quick check: single, no kids, income under the threshold. Max per year? ($679) General info, not advice.",
+  "cta": "Follow for the next one: the Canada Workers Benefit."
+ },
+ "tt": {
+  "caption": "The GST credit is gone 🛒 New name, 25% bigger. Here's who gets $1,358.",
+  "keywords": "gst credit new name · canada groceries and essentials benefit · cgeb",
+  "hashtags": "#gstcredit #canadiantaxes #cra #groceries #personalfinancecanada",
+  "pinned": "Above $46,432 family income, 5% of the extra comes off. (General info, not advice.)",
+  "cta": "Follow for the next one: the Canada Workers Benefit."
+ },
+ "ig": {
+  "caption": "The GST credit has a new name 🛒🇨🇦\n\nCanada Groceries and Essentials Benefit (since July 2026): 25% more, for 5 years.\n• Max (Jul 2026–Jun 2027): $679 single · $890 couple · +$234 per child\n• Couple + 2 kids, income ≤ $46,432 → $1,358/yr\n• Paid Jul · Oct · Jan · Apr\n⚠️ Above $46,432: −5% of the extra\n✅ File your return on time every year\n\nSend this to someone who still calls it the GST credit.\n\nSource: CRA (canada.ca). Example family. General info, not advice.",
+  "keywords": "gst credit new name, groceries benefit canada, cgeb",
+  "hashtags": "#gstcredit #canadiantaxes #groceries #personalfinancecanada #canadatax #cra",
+  "pinned": "Save this for the next payment date 📌",
+  "cta": "Send this to someone who still calls it the GST credit."
+ },
+ "eng": {
+  "question": "Single, no kids, low income: max per year? ($679)",
+  "save": "The CGEB amounts and dates.",
+  "share": "Anyone who still calls it the GST credit.",
+  "follow": "Canadian tax and benefit rules with real numbers."
+ },
+ "seo": {
+  "primary": "canada groceries and essentials benefit",
+  "secondary": "vidIQ CA: seed <750/mo, competition 37 (related terms are news queries)",
+  "intent": "People who got the GST credit and see a new name / amount.",
+  "audience": "Low- and modest-income adults and families.",
+  "angle": "same deposit, new name, 25% bigger; real family example; the 5% phase-out line.",
+  "questions": "What replaced the GST credit? How much is the Canada Groceries and Essentials Benefit? When is it paid?"
+ },
+ "next": [
+  {
+   "topic": "Canada Workers Benefit (#9)",
+   "why": "Bridge",
+   "intent": "canada workers benefit 2026",
+   "hook": "refundable credit for low-income workers",
+   "angle": "who qualifies, advance payments",
+   "payoff": "claim it"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #8, bridged from M7. Playlist: 'Benefits & credits'.",
+ "research": {
+  "vidiq": "balance 414 before; 1 keyword_research CA",
+  "nexlev": "youtube_search shorts CA: news clips 5K–176K views (government ESDC ad 15M); explainer Shorts on the rename ≤175 views"
+ },
+ "retention": "Frame 0 'THE GST CREDIT HAS A NEW NAME'; old name struck 1.8 s, CGEB card 5.7 s, +25% at 9.2 s; receipt maximums 19–26 s; Amira & Ben $1,358 at 32.9 s; four quarterly coupons 37–40 s with '4 PAYMENTS A YEAR' stamp at 37.2 s (re-hook, ≈57 %); 5% slope reveal 40–55 s ($56,432 → −$500); check card + next pill."
+}

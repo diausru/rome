@@ -60,6 +60,7 @@ import { M10V3, M10DUR, M10FPS } from './M10V3';
 import { M3V3, M3DUR, M3FPS } from './M3V3';
 import { M26V3, M26DUR, M26FPS } from './M26V3';
 import { M7V3, M7DUR, M7FPS } from './M7V3';
+import { M8V3, M8DUR, M8FPS } from './M8V3';
 import { useCurrentFrame } from 'remotion';
 import { LongForm, lfDuration, Episode } from './lf/LongForm';
 import lfDemo from './lf/demo.json';
@@ -137,6 +138,7 @@ export const RemotionRoot = () => (
     <Composition id="M3V3" component={M3V3} durationInFrames={M3DUR} fps={M3FPS} width={1080} height={1920} />
     <Composition id="M26V3" component={M26V3} durationInFrames={M26DUR} fps={M26FPS} width={1080} height={1920} />
     <Composition id="M7V3" component={M7V3} durationInFrames={M7DUR} fps={M7FPS} width={1080} height={1920} />
+    <Composition id="M8V3" component={M8V3} durationInFrames={M8DUR} fps={M8FPS} width={1080} height={1920} />
     <Composition id="LongForm" component={LongForm as any} defaultProps={{ ep: lfDemo as Episode }} durationInFrames={300} fps={30} width={1920} height={1080}
       calculateMetadata={({ props }: any) => ({ durationInFrames: lfDuration(props.ep), fps: props.ep.fps })} />
     <Composition id="OfficeTest" component={OfficeTest} durationInFrames={LOOP} fps={30} width={CW / 2} height={SH / 2} />

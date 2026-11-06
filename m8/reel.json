@@ -1,0 +1,239 @@
+{
+ "id": "m8",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "THE GST CREDIT",
+  "l2": "HAS A NEW NAME"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "receipt": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "slope": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "gone",
+   "beat": "hook",
+   "word": "gone.",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "name",
+   "beat": "hook",
+   "word": "Canada"
+  },
+  {
+   "id": "bigger",
+   "beat": "hook",
+   "word": "bigger.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "pct",
+   "beat": "c1",
+   "word": "twenty-five",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "s",
+   "beat": "c2",
+   "word": "six",
+   "sfx": "tick"
+  },
+  {
+   "id": "cp",
+   "beat": "c2",
+   "word": "eight",
+   "sfx": "tick"
+  },
+  {
+   "id": "ch",
+   "beat": "c2",
+   "word": "two"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "tot",
+   "beat": "c3",
+   "word": "thirteen",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "q1",
+   "beat": "c4",
+   "word": "July,",
+   "sfx": "tick"
+  },
+  {
+   "id": "q2",
+   "beat": "c4",
+   "word": "October,"
+  },
+  {
+   "id": "q3",
+   "beat": "c4",
+   "word": "January"
+  },
+  {
+   "id": "q4",
+   "beat": "c4",
+   "word": "April.",
+   "sfx": "chime"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "thr",
+   "beat": "reveal",
+   "word": "forty-six",
+   "sfx": "tick"
+  },
+  {
+   "id": "over",
+   "beat": "reveal",
+   "word": "Ten",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "cut",
+   "beat": "reveal",
+   "word": "less.",
+   "sfx": "tick"
+  },
+  {
+   "id": "file",
+   "beat": "action",
+   "word": "file",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "April.",
+   "offset": 0.3
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "pension"
+}

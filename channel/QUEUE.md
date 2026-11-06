@@ -10,8 +10,8 @@ Details per topic: channel/TOPICS-2.md (by #). Check overlap: `grep -ril "<keywo
 | 3 | CCB: why one parent receives it | done 2026-11-04 (M3) | 10 |
 | 26 | Separated parents: who gets CCB (shared custody) | done 2026-11-05 (M26) | 3 |
 | 7 | Why the CCB amount changes in July | done 2026-11-05 (M7) | 26 |
-| 8 | GST/HST credit (now Canada Groceries and Essentials Benefit) | next | 7 |
-| 9 | Canada Workers Benefit | todo | |
+| 8 | GST/HST credit (now Canada Groceries and Essentials Benefit) | done 2026-11-06 (M8) | 7 |
+| 9 | Canada Workers Benefit | next | 8 |
 | 2 | Friend got benefits, I got nothing | todo | |
 | 14 | Why benefits stopped or dropped | todo | |
 | 15 | Two jobs worth it after tax and benefit cuts | todo | |
@@ -24,4 +24,4 @@ Details per topic: channel/TOPICS-2.md (by #). Check overlap: `grep -ril "<keywo
 | 25 | Employees: T2200 home office, phone, car | todo | |
 | 5 | Why I owe with two jobs (withholding) | todo | |
 
-Done: 7 (M7), 26 (M26), 3 (M3), 10 (M10), 29 (M29), R4, R3, R5, R1, R2, 30 (M30), 1 (A2), 6 (A5), 23 (A1).
+Done: 8 (M8), 7 (M7), 26 (M26), 3 (M3), 10 (M10), 29 (M29), R4, R3, R5, R1, R2, 30 (M30), 1 (A2), 6 (A5), 23 (A1).

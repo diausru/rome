@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  ["hook", "The GST credit is gone. Same deposit, new name: the Canada Groceries and Essentials Benefit. And it's bigger.", 0.35],
+  ["c1", "It replaced the GST credit in July twenty twenty-six: twenty-five percent more, for five years.", 0.3],
+  ["c2", "The maximum, July to June: six hundred and seventy-nine dollars single, eight hundred and ninety for a couple, plus two hundred and thirty-four per child.", 0.3],
+  ["c3", "Amira and Ben have two kids and a modest income. That's thirteen hundred and fifty-eight dollars a year.", 0.3],
+  ["c4", "Paid in four parts: July, October, January and April.", 0.4],
+  ["reveal", "The twist: above forty-six thousand four hundred and thirty-two dollars of family income, five percent of the extra comes off. Ten thousand over? Five hundred dollars less.", 0.3],
+  ["action", "And it's worked out from last year's return. So file on time, every year.", 0.3],
+  ["cta", "Next: the Canada Workers Benefit. Follow so you don't miss it.", 0.0]
+ ]
+}
