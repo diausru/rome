@@ -896,4 +896,50 @@ const HalfHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook };
+// ---------- ColumnHook: frame-0 hook — a tall $100K salary column; deduction slices peel off the top and fall; what's left is labelled TAXABLE; a red tax fill rises; a second column (no RRSP) appears taller with a bigger tax fill; diff badge; title flips ----------
+// p.salary · p.cuts[{label, value}] · p.taxable · p.tax · p.other{label, taxable, tax} · p.cutAt · p.taxAt · p.otherAt · p.diffAt · p.diffText · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const ColumnHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const S = p.salary as number; const BASE = 900, HMAX = 560, CW = 240; const hv = (v: number) => (HMAX * v) / S;
+  const k0 = prog(now, p.t + 0.2, 0.9, EX); const cu = p.cutAt ? prog(now, p.cutAt.t, 1.1, EX) : 0; const tx = p.taxAt ? prog(now, p.taxAt.t, 1.0, EX) : 0;
+  const ot = p.otherAt ? prog(now, p.otherAt.t, 0.9, BACK) : 0; const df = p.diffAt ? prog(now, p.diffAt.t, 0.6, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const xA = ot > 0 ? 560 - 120 * ot : 840, xB = 1120;
+  const cuts = p.cuts as Pn[]; let acc = 0;
+  const lab = (t: string, col: string, size = 24) => <div style={{ fontFamily: COND, fontSize: size, letterSpacing: 4, color: col }}>{t}</div>;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.74})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 80, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: (1 - out) * cl(k0 * 2) }}>
+        <div style={{ position: 'absolute', left: xA - 60, width: CW + 120, top: BASE - hv(S) - 2, borderTop: `3px dashed ${C.gold}`, opacity: 0.8 }} />
+        <div style={{ position: 'absolute', left: xA - 300, width: 280, textAlign: 'right', top: BASE - hv(S) - 96, fontFamily: COND }}>{lab('SALARY', C.dim)}<div style={{ fontSize: 44, fontWeight: 700, color: C.gold, lineHeight: 1 }}>{fmt(S)}</div></div>
+        <div style={{ position: 'absolute', left: xA, top: BASE - hv(p.taxable) * k0, width: CW, height: hv(p.taxable) * k0, borderRadius: '8px 8px 0 0', background: 'rgba(244,241,234,.86)' }} />
+        <div style={{ position: 'absolute', left: xA, top: BASE - hv(p.tax) * tx, width: CW, height: hv(p.tax) * tx, background: C.red, boxShadow: tx > 0.2 ? '0 0 26px rgba(229,128,110,.5)' : 'none' }} />
+        {cuts.map((x, i) => { const h = hv(x.value); const top0 = BASE - hv(p.taxable) - acc - h; acc += h; const f = cl(cu * 1.4 - i * 0.25);
+          return <div key={i} style={{ opacity: 1 - ot }}>
+            <div style={{ position: 'absolute', left: xA + 330 * f, top: top0 + 120 * f, width: CW, height: Math.max(h, 6), borderRadius: 6, background: i === 0 ? C.green : C.blue, opacity: (1 - 0.3 * f) * cl(k0 * 2), transform: `rotate(${10 * f}deg)` }} />
+            {f > 0.3 && <div style={{ position: 'absolute', left: xA + 330 * f + CW + 16, top: top0 + 120 * f - 6 + i * 84, fontFamily: COND, opacity: cl((f - 0.3) * 2), whiteSpace: 'nowrap' }}>{lab(x.label, C.dim, 22)}<div style={{ fontSize: 36, fontWeight: 700, color: i === 0 ? C.green : C.blue, lineHeight: 1 }}>−{fmt(x.value)}</div></div>}
+          </div>; })}
+        {cu > 0.6 && <div style={{ position: 'absolute', left: xA, width: CW, top: BASE - hv(p.taxable) + 14, textAlign: 'center', fontFamily: COND, opacity: cl((cu - 0.6) * 3) }}>{lab('TAXABLE', '#3A3F4A', 22)}<div style={{ fontSize: 42, fontWeight: 700, color: C.navy, lineHeight: 1 }}>{fmt(p.taxable)}</div></div>}
+        {tx > 0.3 && <div style={{ position: 'absolute', left: xA, width: CW, top: BASE - hv(p.tax) + 14, textAlign: 'center', fontFamily: COND, opacity: cl((tx - 0.3) * 2) }}>{lab('INCOME TAX', 'rgba(7,11,20,.7)', 20)}<div style={{ fontSize: 40, fontWeight: 700, color: C.navy, lineHeight: 1 }}>{fmt(p.tax)}</div></div>}
+        <div style={{ position: 'absolute', left: xA - 20, width: CW + 40, top: BASE + 14, textAlign: 'center', fontFamily: COND, fontSize: 36, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{p.name}</div>
+        {ot > 0.02 && (() => { const o = p.other as Pn; return <div style={{ opacity: ot }}>
+          <div style={{ position: 'absolute', left: xB, top: BASE - hv(o.taxable) * ot, width: CW, height: hv(o.taxable) * ot, borderRadius: '8px 8px 0 0', background: 'rgba(244,241,234,.6)' }} />
+          <div style={{ position: 'absolute', left: xB, top: BASE - hv(o.tax) * ot, width: CW, height: hv(o.tax) * ot, background: C.red }} />
+          <div style={{ position: 'absolute', left: xB, width: CW, top: BASE - hv(o.taxable) + 14, textAlign: 'center', fontFamily: COND }}>{lab('TAXABLE', '#3A3F4A', 22)}<div style={{ fontSize: 42, fontWeight: 700, color: C.navy, lineHeight: 1 }}>{fmt(o.taxable)}</div></div>
+          <div style={{ position: 'absolute', left: xB, width: CW, top: BASE - hv(o.tax) + 14, textAlign: 'center', fontFamily: COND }}>{lab('INCOME TAX', 'rgba(7,11,20,.7)', 20)}<div style={{ fontSize: 40, fontWeight: 700, color: C.navy, lineHeight: 1 }}>{fmt(o.tax)}</div></div>
+          <div style={{ position: 'absolute', left: xB - 20, width: CW + 40, top: BASE + 14, textAlign: 'center', fontFamily: COND, fontSize: 36, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{o.label}</div></div>; })()}
+        {df > 0.02 && <div style={{ position: 'absolute', left: xB + CW + 40, top: BASE - hv((p.other as Pn).tax) - 20, fontFamily: COND, opacity: df, transform: `scale(${0.7 + 0.3 * df})`, transformOrigin: 'left center', whiteSpace: 'nowrap' }}>
+          <div style={{ fontSize: 64, fontWeight: 700, color: C.red, lineHeight: 1 }}>{p.diffText}</div>{lab('SAME $100,000 SALARY', C.white)}</div>}
+      </div>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook };
