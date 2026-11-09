@@ -2,62 +2,60 @@
 TAX SECRETS CANADA — FINAL DELIVERY
 
 VIDEO
-Title: R3 · donations: same $400, $58 or $87
-Duration: 1:08 (68.67 s), 1080×1920, 24 fps
+Title: R3 · donations: $116 or $145
+Duration: 1:01 (61.50 s), 1080×1920, 24 fps
 Resolution: 1080×1920 (9:16)
 FPS: 24
 MP4: showreel/out/r3/r3-final.mp4 (share copy: r3-share.mp4)
 
 VOICEOVER
-Same four hundred dollars of donations. Split across two returns, you get fifty-eight dollars back. Put them on one: eighty-seven. Alex and Sam each gave two hundred dollars to charity in twenty twenty-five. Each claimed their own receipt. The federal rule: the first two hundred dollars on a return gets fourteen and a half percent. Above that: twenty-nine. Split, neither return gets past the first two hundred. Twenty-nine dollars each. Fifty-eight total. Pooled on one return, the second two hundred jumps to twenty-nine percent. Twenty-nine more, same gifts. The twist: you don't have to claim this year. Receipts can wait up to five years and stack. But the credit only cuts tax owed. So pool them on the spouse who owes tax, before you file. Next: moving for work or school, and the forty kilometre rule. Follow so you don't miss it.
+Lea and Max each gave three hundred dollars to charity. Claimed separately, they get a hundred and sixteen dollars back. On one return: a hundred and forty-five. Here's why. The federal donation credit is fourteen and a half percent on the first two hundred dollars. Above that, twenty-nine percent. Claimed separately, each return uses up its own low-rate two hundred. Twice. Combined, six hundred dollars on one return: two hundred at the low rate, four hundred at the high one. Twenty-nine dollars more, from the same gifts. The twist: you can also hold small donations and claim them in any of the next five years, so a quiet year can join a bigger one. So pool the receipts on one return, and check that spouse has enough tax to use the credit. Next: moving for work or school, and which expenses count. Follow so you don't miss it.
 
 VOICEOVER TIMECODES
-[00:00.25–00:10.49] Same four hundred dollars of donations. Split across two returns, you get fifty-eight dollars back. Put them on one: eighty-seven.
-[00:10.84–00:17.85] Alex and Sam each gave two hundred dollars to charity in twenty twenty-five. Each claimed their own receipt.
-[00:18.15–00:27.61] The federal rule: the first two hundred dollars on a return gets fourteen and a half percent. Above that: twenty-nine.
-[00:27.91–00:34.83] Split, neither return gets past the first two hundred. Twenty-nine dollars each. Fifty-eight total.
-[00:35.12–00:44.13] Pooled on one return, the second two hundred jumps to twenty-nine percent. Twenty-nine more, same gifts.
-[00:44.53–00:55.85] The twist: you don't have to claim this year. Receipts can wait up to five years and stack. But the credit only cuts tax owed.
-[00:56.15–01:00.85] So pool them on the spouse who owes tax, before you file.
-[01:01.15–01:08.16] Next: moving for work or school, and the forty kilometre rule. Follow so you don't miss it.
+[00:00.25–00:10.88] Lea and Max each gave three hundred dollars to charity. Claimed separately, they get a hundred and sixteen dollars back. On one return: a hundred and forty-five.
+[00:11.23–00:18.50] Here's why. The federal donation credit is fourteen and a half percent on the first two hundred dollars. Above that, twenty-nine percent.
+[00:18.80–00:28.62] Claimed separately, each return uses up its own low-rate two hundred. Twice.
+[00:28.92–00:36.12] Combined, six hundred dollars on one return: two hundred at the low rate, four hundred at the high one. Twenty-nine dollars more, from the same gifts.
+[00:36.47–00:48.22] The twist: you can also hold small donations and claim them in any of the next five years, so a quiet year can join a bigger one.
+[00:48.52–00:53.39] So pool the receipts on one return, and check that spouse has enough tax to use the credit.
+[00:53.69–01:00.97] Next: moving for work or school, and which expenses count. Follow so you don't miss it.
 
 FACT SOURCES
-- {'source': 'canada.ca CRA line 34900 – How much you can claim', 'year': '2025', 'supports': 'federal rates 14.5% / 29% / 33%; 75% of net income limit; 5-year carry-forward'}
-- {'source': 'canada.ca CRA line 34900 – How to claim / Who can claim', 'year': '2025', 'supports': 'you may claim gifts made by you or your spouse or common-law partner; Schedule 9'}
-- {'source': 'CRA P113 Gifts and Income Tax 2025', 'year': '2025', 'supports': 'carry-forward 5 years (10 for ecological gifts)'}
+- {'source': 'canada.ca CRA line 34900 (who can claim, how much)', 'year': '2025', 'supports': "spouse's receipts; carry forward 5 years"}
+- {'source': 'KPMG 2025 credit table; taxtips.ca 2025', 'year': '2025', 'supports': '14.5% first $200, 29% above'}
 
 ⸻
 YOUTUBE SHORTS
 
-Primary Title: Donation Tax Credit Canada: Combine Your Receipts ($58 vs $87)
-Alternative Title A: Why Couples Should Claim Donations on ONE Return (Canada 2025)
-Alternative Title B: Charitable Donation Tax Credit Explained: The $200 Rule
+Primary Title: Donation Tax Credit Canada: Why Combining Receipts Pays More ($116 vs $145)
+Alternative Title A: Donating With Your Spouse? Claim It on One Return (Canada 2025)
+Alternative Title B: Charitable Donation Tax Credit Explained With Real Numbers
 
 Description:
-Same $400 of donations: $58 back split across two returns, $87 on one.
+Lea and Max each gave $300 to charity. Claimed separately: $116 back. On one return: $145.
 
-The rule (federal, 2025): the first $200 of gifts on a return gets a 14.5% credit; everything above $200 gets 29% (33% on the part of income in the top bracket). You can claim gifts made by you or your spouse or common-law partner (Schedule 9, line 34900).
-• Split: Alex $200 → $29, Sam $200 → $29 = $58
-• Pooled: $200 × 14.5% + $200 × 29% = $87 (+$29, same gifts)
+Why (federal, 2025): the donation credit is 14.5% on the first $200 of gifts and 29% above $200 (33% only to the extent of income in the top bracket).
+• Separately: each return uses its own low-rate $200 → $58 + $58 = $116.
+• Together, $600 on one return: $200 at 14.5% + $400 at 29% = $145. $29 more from the same gifts.
 
-The twist: you don't have to claim them this year. Unused gifts can be carried forward for any of the next 5 years and stacked. But the credit is non-refundable: it only cuts tax the claimer owes.
+The twist: gifts you don't claim can be carried forward for any of the next 5 years, so a small year can join a bigger one (carried-forward gifts are claimed first).
 
-Pool them on the spouse who owes tax, before you file.
+Pool receipts on one return (line 34900), and check that spouse has enough tax to use a non-refundable credit.
 
-Next: moving for work or school, and the 40 km rule.
+Next: moving for work or school, and which expenses count.
 
-Sources: canada.ca (CRA) line 34900 Donations and gifts; P113 Gifts and Income Tax 2025. Federal only; provincial credits differ. Example couple. General information, not advice.
+Sources: canada.ca (CRA) line 34900 who can claim / how much you can claim; 2025 federal rates (KPMG 2025 table, taxtips.ca). Federal only; provincial credits differ. Example couple. General information, not advice.
 
 #Donations #CanadaTax #CRA
 
 Hashtags:
-#Donations #CanadaTax #CRA #TaxTips
+#Donations #CanadaTax #CRA #CharitableGiving
 
 Keywords:
-donation tax credit canada, charitable donation tax credit, combine donation receipts spouse, line 34900, schedule 9, donation carry forward 5 years, canadian tax tips
+donation tax credit canada, charitable donation tax credit, combine donations with spouse, line 34900, carry forward donations canada, how much tax back for donations canada
 
 Pinned Comment:
-Quick check: one receipt of $500. Credit? ($200 × 14.5% + $300 × 29% = $116) General info, not advice.
+Quick check: you gave $150 this year and nothing else. Claim now or carry it forward? General info, not advice.
 
 CTA:
 Follow for the next one: moving expenses.
@@ -66,16 +64,16 @@ Follow for the next one: moving expenses.
 TIKTOK
 
 Caption:
-Same $400 of donations: $58 or $87 🎁 It depends on how many returns you split them across.
+Same $600 of donations: $116 back or $145 back 🎁 It depends on how many returns you split it across.
 
 Search Keywords:
-donation tax credit canada · combine receipts · line 34900
+donation tax credit canada · combine receipts spouse · line 34900
 
 Hashtags:
-#taxtips #canadiantaxes #cra #donations #personalfinancecanada
+#canadiantaxes #cra #donations #taxtips #personalfinancecanada
 
 Pinned Comment:
-Non-refundable: the spouse who claims needs tax to cut. (General info, not advice.)
+Gifts can also be carried forward up to 5 years. (General info, not advice.)
 
 CTA:
 Follow for the next one: moving expenses.
@@ -84,21 +82,20 @@ Follow for the next one: moving expenses.
 INSTAGRAM REELS
 
 Caption:
-Same $400. $58 or $87? 🎁🇨🇦
+Same donations. $116 or $145? 🎁🇨🇦
 
-Donation credit (federal, 2025): first $200 per return → 14.5%, above $200 → 29%.
-• Split on two returns: $29 + $29 = $58
-• Pooled on one: $29 + $58 = $87
-🗓 Unused receipts can wait up to 5 years and stack
-⚠️ Non-refundable: only cuts tax owed
-✅ Pool them on the spouse who owes tax
+Federal donation credit (2025): 14.5% on the first $200, 29% above.
+• Each claims $300 → $58 + $58 = $116
+• One return, $600 → $145 (+$29)
+⏳ Unclaimed gifts: carry forward up to 5 years
+✅ The claiming spouse needs tax to cut
 
 Send this to your partner before tax season.
 
-Source: CRA (canada.ca), line 34900. Federal, example. General info, not advice.
+Source: CRA (canada.ca). Federal, example. General info, not advice.
 
 Search Keywords:
-donation tax credit, combine receipts, charity tax credit canada
+donation tax credit, combine receipts, charitable giving canada
 
 Hashtags:
 #donations #canadiantaxes #taxtips #personalfinancecanada #canadatax #givingtuesday
@@ -112,49 +109,56 @@ Send this to your partner before tax season.
 ⸻
 ENGAGEMENT STRATEGY
 
-Primary Discussion Question: Credit on one $500 receipt? ($116)
-Save Trigger: The $200 / 14.5% / 29% rule.
-Share Trigger: Couples who give to charity.
+Primary Discussion Question: $150 alone: claim or carry forward?
+Save Trigger: The two tiers.
+Share Trigger: Couples who donate.
 Follow Reason: Canadian tax rules with real numbers.
 
 ⸻
 SEO ANALYSIS
 
 Primary Keyword: donation tax credit canada
-Secondary Keywords: vidIQ CA: seed <750/mo, competition 8; related 'canadian tax tips' 3.8K/mo
-Search Intent: Couples who give to charity deciding how to claim.
-Search Questions: Can I combine my spouse's donation receipts? Why is the first $200 credited less?
+Secondary Keywords: (vidIQ/NexLev not used this run)
+Search Intent: How to get more back for donations.
+Search Questions: Can I claim my spouse's donations? How long can I carry forward?
 Pain / Curiosity: 
-Target Audience: Couples 30–65.
-Curiosity Angle: same gifts, split vs pooled, carry-forward + non-refundable catch.
+Target Audience: Couples who give.
+Curiosity Angle: same gifts, one return vs two.
 
 ⸻
 NEXT CONTENT OPPORTUNITIES
 
 Next Topic #1: Moving expenses (R4)
-  Why it matters: Credits arc
+  Why it matters: Bridge
   Search intent: moving expenses canada
   Hook: 40 km rule
-  Curiosity angle: who qualifies
+  Curiosity angle: what counts
   Payoff: deduction
 
 Next Topic #2: First-time home buyer (#29)
-  Why it matters: Credits arc
-  Search intent: first time home buyer canada tax
+  Why it matters: Queue
+  Search intent: fhsa hbp
   Hook: three programs
   Curiosity angle: what changed
   Payoff: what you can claim
 
-Series: Card series, TOPICS-2 R3 (replaces #22), bridged from M30. Topic type: evergreen (rates per tax year). Playlist: 'Benefits & credits'.
+Next Topic #3: Wife got a bigger refund (#10)
+  Why it matters: Couples arc
+  Search intent: spouse refund canada
+  Hook: who claims shared credits
+  Curiosity angle: couples
+  Payoff: difference
+
+Series: Card series, TOPICS-2 R3, bridged from M30. Topic type: seasonal (Nov–Dec giving, Feb–Apr filing). Playlist: 'Benefits & credits'.
 ========================================
 
 ## Research notes (how this package was built)
-{'vidiq': 'balance 596 before; keyword_research CA (5 cr)', 'nexlev': "youtube_search shorts CA 'donation tax credit canada': most ≤2.6K views; outlier 553K (donating a home)"}
+vidIQ/NexLev not connected or skipped this run (0 credits); facts via 2 web searches (rates; CRA line 34900).
 
 ## Retention analysis
-Frame 0 'SAME $400. $58 OR $87?'; two $200 envelopes merge and $58 flips to $87 by 10 s (open loop: why?); staircase steps 14.5% / 29% at 19–28 s; split total 35 s; pooled jump 39 s; '+$29 · SAME GIFTS' stamp at ≈41 s (re-hook, ≈60 %); carry-forward year rail 45–56 s; check card + next pill.
+Frame 0 'SAME DONATIONS. $116 OR $145?'; receipts merge at 9 s; tiers at 12–19 s; two jars 20 s; one jar 28 s; '+$29' stamp at 35 s (57 %); carry-forward tiles 41 s; check card + next pill.
 
 
 ## COVER FRAME
-- **Timestamp:** 42.95 s (42950 ms), `cover` cue in `r3/reel.json`; frame: 'POOLED': credit staircase with Alex's 29% step lit gold, '+$29 · SAME GIFTS' stamp, the couple at the food bank
+- **Timestamp:** 35.93 s (35930 ms), `cover` cue in `r3/reel.json`; frame: 'ON ONE RETURN': the combined jar ($200 at 14.5% + $400 at 29%), '$145', red stamp '+$29', the couple carrying the box in the snow
 - IG/TikTok via Metricool `videoCoverMilliseconds` only on the user's command; YouTube Shorts: set manually.
