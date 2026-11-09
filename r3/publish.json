@@ -1,12 +1,15 @@
 {
  "video": {
   "title": "R3 · donations: $116 or $145",
-  "duration": "",
+  "duration": "1:01 (61.50 s), 1080×1920, 24 fps",
   "mp4": "showreel/out/r3/r3-final.mp4 (share copy: r3-share.mp4)"
  },
  "cover": {
   "frame": "'ON ONE RETURN': the combined jar ($200 at 14.5% + $400 at 29%), '$145', red stamp '+$29', the couple carrying the box in the snow",
-  "why": "rule + payoff in one frame"
+  "why": "rule + payoff in one frame",
+  "t": 36.18,
+  "ms": 36180,
+  "file": "r3/cover.jpg (extracted at 36.18 s from the final render)"
  },
  "sources": [
   {
