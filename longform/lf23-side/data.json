@@ -1,0 +1,14 @@
+{
+ "salary": 70000,
+ "sales": 14000,
+ "expenses": 4000,
+ "profit": 10000,
+ "tax_profit": 3115,
+ "tax_noexp": 4301,
+ "exp_saving": 1186,
+ "rate": 31.1,
+ "monthly": 260,
+ "keep": 6885,
+ "tax_45": 2083,
+ "tax_110": 3689
+}

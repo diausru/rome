@@ -942,4 +942,39 @@ const ColumnHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook };
+// ---------- PingHook: frame-0 hook — payment cards ("e-transfer received +$X") drop into a stack while a counter rolls to the total; "TAX WITHHELD $0" in red; then a big "BILL NEXT SPRING ≈ $X" box and a green "RECEIPTS −$Y" chip; title flips ----------
+// p.payments[] · p.total · p.withheldAt · p.billAt · p.bill · p.saveAt · p.save · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const PingHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const pays = p.payments as number[]; const step = 0.42; const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  let run = 0; const shown = pays.map((v, i) => { const k = prog(now, p.t + 0.3 + i * step, 0.5, BACK); run += v * cl(k * 1.2); return k; });
+  const wh = p.withheldAt ? prog(now, p.withheldAt.t, 0.6, BACK) : 0; const bl = p.billAt ? prog(now, p.billAt.t, 0.7, BACK) : 0; const sv = p.saveAt ? prog(now, p.saveAt.t, 0.6, BACK) : 0;
+  const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.3 - 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.72})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 80, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: 1 - out }}>
+        {pays.map((v, i) => { const k = shown[i]; const col = i % 2, row = Math.floor(i / 2);
+          return k > 0.01 ? <div key={i} style={{ position: 'absolute', left: 200 + col * 330, top: 300 + row * 130, width: 300, height: 104, borderRadius: 16, background: 'rgba(244,241,234,.1)', border: '1px solid rgba(127,211,160,.5)', backdropFilter: 'blur(6px)', fontFamily: COND, padding: '14px 20px', boxSizing: 'border-box', opacity: cl(k * 2), transform: `translateY(${(1 - k) * -60}px) scale(${0.85 + 0.15 * k})` }}>
+            <div style={{ fontSize: 20, letterSpacing: 3, color: C.dim }}>E-TRANSFER RECEIVED</div><div style={{ fontSize: 44, fontWeight: 700, color: C.green, lineHeight: 1.1 }}>+{fmt(v)}</div></div> : null; })}
+        <div style={{ position: 'absolute', left: 980, top: 300, width: 760, fontFamily: COND }}>
+          <div style={{ fontSize: 26, letterSpacing: 5, color: C.dim }}>SIDE HUSTLE SALES · THIS YEAR</div>
+          <div style={{ fontSize: 120, fontWeight: 700, color: C.white, lineHeight: 1 }}>{fmt(Math.min(run, p.total))}</div>
+          {wh > 0.02 && <div style={{ marginTop: 18, opacity: wh, transform: `translateX(${(1 - wh) * 40}px)` }}><span style={{ fontSize: 26, letterSpacing: 5, color: C.dim }}>TAX WITHHELD </span><span style={{ fontSize: 60, fontWeight: 700, color: C.red }}>$0</span></div>}
+          {bl > 0.02 && <div style={{ marginTop: 22, display: 'inline-block', padding: '12px 26px', borderRadius: 14, background: 'rgba(229,128,110,.18)', border: `3px solid ${C.red}`, opacity: bl, transform: `scale(${0.8 + 0.2 * bl})`, transformOrigin: 'left center' }}>
+            <div style={{ fontSize: 24, letterSpacing: 5, color: C.white }}>INCOME TAX NEXT SPRING</div><div style={{ fontSize: 76, fontWeight: 700, color: C.red, lineHeight: 1 }}>≈{fmt(p.bill)}</div></div>}
+          {sv > 0.02 && <div style={{ marginTop: 18, display: 'inline-block', marginLeft: bl > 0 ? 24 : 0, padding: '10px 22px', borderRadius: 14, border: `3px solid ${C.green}`, opacity: sv, transform: `rotate(${-3 * sv}deg) scale(${1.3 - 0.3 * sv})`, verticalAlign: 'top' }}>
+            <div style={{ fontSize: 22, letterSpacing: 5, color: C.white }}>ONE HABIT</div><div style={{ fontSize: 60, fontWeight: 700, color: C.green, lineHeight: 1 }}>−{fmt(p.save)}</div></div>}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook };
