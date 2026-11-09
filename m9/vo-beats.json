@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.1,
+ "beats": [
+  ["hook", "Low pay, little tax, maybe none at all. The CRA can still pay you up to sixteen hundred and thirty-three dollars. Here's who gets it.", 0.35],
+  ["c1", "It's the Canada Workers Benefit. A refundable credit: it comes back to you even if you owe nothing.", 0.3],
+  ["c2", "For twenty twenty-five: up to sixteen hundred and thirty-three dollars single, twenty-eight hundred and thirteen for a family. You need working income over three thousand dollars.", 0.3],
+  ["c3", "Then it fades. Single, above twenty-six thousand eight hundred and fifty-five dollars, fifteen percent of the extra comes off.", 0.3],
+  ["c4", "Leo earned thirty thousand. That's three thousand one hundred and forty-five over, so four hundred and seventy-two less. Still about eleven hundred and sixty-one dollars.", 0.4],
+  ["reveal", "The twist: you don't have to wait for the refund. Up to half can be paid to you in advance, during the year.", 0.3],
+  ["action", "So claim it when you file: Schedule six, line forty-five three hundred.", 0.3],
+  ["cta", "Next: your friend got benefits and you got nothing. Here's why. Follow so you don't miss it.", 0.0]
+ ]
+}
