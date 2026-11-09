@@ -1,53 +1,47 @@
 {
- "total": 68.164,
+ "total": 60.966,
  "beats": [
   {
    "id": "hook",
-   "text": "Same four hundred dollars of donations. Split across two returns, you get fifty-eight dollars back. Put them on one: eighty-seven.",
+   "text": "Lea and Max each gave three hundred dollars to charity. Claimed separately, they get a hundred and sixteen dollars back. On one return: a hundred and forty-five.",
    "start": 0.25,
-   "end": 10.492
+   "end": 10.881
   },
   {
    "id": "c1",
-   "text": "Alex and Sam each gave two hundred dollars to charity in twenty twenty-five. Each claimed their own receipt.",
-   "start": 10.842,
-   "end": 17.85
+   "text": "Here's why. The federal donation credit is fourteen and a half percent on the first two hundred dollars. Above that, twenty-nine percent.",
+   "start": 11.231,
+   "end": 18.499
   },
   {
    "id": "c2",
-   "text": "The federal rule: the first two hundred dollars on a return gets fourteen and a half percent. Above that: twenty-nine.",
-   "start": 18.15,
-   "end": 27.605
+   "text": "Claimed separately, each return uses up its own low-rate two hundred. Twice.",
+   "start": 18.799,
+   "end": 28.624
   },
   {
    "id": "c3",
-   "text": "Split, neither return gets past the first two hundred. Twenty-nine dollars each. Fifty-eight total.",
-   "start": 27.905,
-   "end": 34.825
-  },
-  {
-   "id": "c4",
-   "text": "Pooled on one return, the second two hundred jumps to twenty-nine percent. Twenty-nine more, same gifts.",
-   "start": 35.125,
-   "end": 44.132
+   "text": "Combined, six hundred dollars on one return: two hundred at the low rate, four hundred at the high one. Twenty-nine dollars more, from the same gifts.",
+   "start": 28.924,
+   "end": 36.115
   },
   {
    "id": "reveal",
-   "text": "The twist: you don't have to claim this year. Receipts can wait up to five years and stack. But the credit only cuts tax owed.",
-   "start": 44.532,
-   "end": 55.848
+   "text": "The twist: you can also hold small donations and claim them in any of the next five years, so a quiet year can join a bigger one.",
+   "start": 36.465,
+   "end": 48.22
   },
   {
    "id": "action",
-   "text": "So pool them on the spouse who owes tax, before you file.",
-   "start": 56.148,
-   "end": 60.852
+   "text": "So pool the receipts on one return, and check that spouse has enough tax to use the credit.",
+   "start": 48.52,
+   "end": 53.394
   },
   {
    "id": "cta",
-   "text": "Next: moving for work or school, and the forty kilometre rule. Follow so you don't miss it.",
-   "start": 61.152,
-   "end": 68.164
+   "text": "Next: moving for work or school, and which expenses count. Follow so you don't miss it.",
+   "start": 53.694,
+   "end": 60.966
   }
  ]
 }

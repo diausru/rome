@@ -1,45 +1,40 @@
 {
- "voice": "Grady (ElevenLabs via Higgsfield)",
- "tempo": 1.04,
+ "voice": "Grady",
+ "tempo": 1.0,
  "beats": [
   [
    "hook",
-   "Same four hundred dollars of donations. Split across two returns, you get fifty-eight dollars back. Put them on one: eighty-seven.",
+   "Lea and Max each gave three hundred dollars to charity. Claimed separately, they get a hundred and sixteen dollars back. On one return: a hundred and forty-five.",
    0.35
   ],
   [
    "c1",
-   "Alex and Sam each gave two hundred dollars to charity in twenty twenty-five. Each claimed their own receipt.",
+   "Here's why. The federal donation credit is fourteen and a half percent on the first two hundred dollars. Above that, twenty-nine percent.",
    0.3
   ],
   [
    "c2",
-   "The federal rule: the first two hundred dollars on a return gets fourteen and a half percent. Above that: twenty-nine.",
+   "Claimed separately, each return uses up its own low-rate two hundred. Twice.",
    0.3
   ],
   [
    "c3",
-   "Split, neither return gets past the first two hundred. Twenty-nine dollars each. Fifty-eight total.",
-   0.3
-  ],
-  [
-   "c4",
-   "Pooled on one return, the second two hundred jumps to twenty-nine percent. Twenty-nine more, same gifts.",
-   0.4
+   "Combined, six hundred dollars on one return: two hundred at the low rate, four hundred at the high one. Twenty-nine dollars more, from the same gifts.",
+   0.35
   ],
   [
    "reveal",
-   "The twist: you don't have to claim this year. Receipts can wait up to five years and stack. But the credit only cuts tax owed.",
+   "The twist: you can also hold small donations and claim them in any of the next five years, so a quiet year can join a bigger one.",
    0.3
   ],
   [
    "action",
-   "So pool them on the spouse who owes tax, before you file.",
+   "So pool the receipts on one return, and check that spouse has enough tax to use the credit.",
    0.3
   ],
   [
    "cta",
-   "Next: moving for work or school, and the forty kilometre rule. Follow so you don't miss it.",
+   "Next: moving for work or school, and which expenses count. Follow so you don't miss it.",
    0.0
   ]
  ]

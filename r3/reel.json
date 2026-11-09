@@ -1,11 +1,11 @@
 {
  "id": "r3",
- "engine": "motion v1 (showreel/src/motion)",
  "hook": {
-  "l1": "SAME $400.",
-  "l2": "$58 OR $87?"
+  "l1": "SAME DONATIONS.",
+  "l2": "$116 OR $145?"
  },
  "hold_after_vo": 0.5,
+ "music": "holiday",
  "layout": {
   "hook_text": {
    "box": [
@@ -16,6 +16,26 @@
    ],
    "from": "start",
    "to": "c1"
+  },
+  "jars": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "years": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
   },
   "end": {
    "box": [
@@ -56,45 +76,25 @@
    ],
    "from": "start",
    "to": "end"
-  },
-  "stairs": {
-   "box": [
-    80,
-    640,
-    880,
-    620
-   ],
-   "from": "c1",
-   "to": "reveal"
-  },
-  "years": {
-   "box": [
-    80,
-    660,
-    880,
-    520
-   ],
-   "from": "reveal",
-   "to": "action"
   }
  },
  "cues": [
   {
-   "id": "c400",
+   "id": "e300",
    "beat": "hook",
-   "word": "four",
+   "word": "three",
    "sfx": "tick"
   },
   {
-   "id": "c58",
+   "id": "s116",
    "beat": "hook",
-   "word": "fifty-eight",
+   "word": "sixteen",
    "sfx": "tick"
   },
   {
-   "id": "c87",
+   "id": "c145",
    "beat": "hook",
-   "word": "eighty-seven.",
+   "word": "forty-five.",
    "sfx": [
     "riser",
     "impact"
@@ -109,16 +109,16 @@
    "sfx": "swish"
   },
   {
-   "id": "alex",
+   "id": "low",
    "beat": "c1",
-   "word": "Alex",
+   "word": "fourteen",
    "sfx": "tick"
   },
   {
-   "id": "sam",
+   "id": "high",
    "beat": "c1",
-   "word": "Sam",
-   "sfx": "tick"
+   "word": "twenty-nine",
+   "sfx": "chime"
   },
   {
    "id": "c2",
@@ -127,16 +127,10 @@
    "sfx": "swish"
   },
   {
-   "id": "low",
+   "id": "twice",
    "beat": "c2",
-   "word": "fourteen",
-   "sfx": "tick"
-  },
-  {
-   "id": "high",
-   "beat": "c2",
-   "word": "twenty-nine.",
-   "sfx": "chime"
+   "word": "Twice.",
+   "sfx": "whoosh"
   },
   {
    "id": "c3",
@@ -145,34 +139,21 @@
    "sfx": "swish"
   },
   {
-   "id": "each",
+   "id": "six",
    "beat": "c3",
-   "word": "Twenty-nine",
+   "word": "six",
    "sfx": "tick"
   },
   {
-   "id": "split",
+   "id": "four",
    "beat": "c3",
-   "word": "Fifty-eight",
+   "word": "four",
    "sfx": "chime"
   },
   {
-   "id": "c4",
-   "beat": "c4",
-   "at": 0,
-   "sfx": "swish"
-  },
-  {
-   "id": "jump",
-   "beat": "c4",
-   "word": "jumps",
-   "sfx": "whoosh"
-  },
-  {
    "id": "more",
-   "beat": "c4",
-   "word": "Twenty-nine",
-   "n": 2,
+   "beat": "c3",
+   "word": "more,",
    "sfx": [
     "riser",
     "impact"
@@ -193,15 +174,9 @@
    "sfx": "tick"
   },
   {
-   "id": "stack",
+   "id": "join",
    "beat": "reveal",
-   "word": "stack.",
-   "sfx": "chime"
-  },
-  {
-   "id": "owed",
-   "beat": "reveal",
-   "word": "owed.",
+   "word": "join",
    "sfx": "whoosh"
   },
   {
@@ -223,9 +198,9 @@
   },
   {
    "id": "cover",
-   "beat": "c4",
-   "word": "same",
-   "offset": -0.1
+   "beat": "c3",
+   "word": "more,",
+   "offset": 0.8
   },
   {
    "id": "logo",
@@ -233,6 +208,5 @@
    "offset": 0.1,
    "sfx": "logo"
   }
- ],
- "music": "pension2"
+ ]
 }
