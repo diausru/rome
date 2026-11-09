@@ -1,5 +1,5 @@
 # LF-23 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** filled after render.
+**QC (2026-11-09):** 497.0 s (8:17), −14.0 LUFS, no black frames, contact sheet checked.
 **File:** `LF23-1080p.mp4` · 1920×1080 · 30 fps · ≈8:17 · VO Grady (67 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** PingHook (new). **Thumbnail:** made by the user.
