@@ -1,5 +1,5 @@
 # LF-24 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** filled after render.
+**QC (2026-11-12):** 488.8 s (8:09), −13.9 LUFS, no black frames, contact sheet checked.
 **File:** `LF24-1080p.mp4` · 1920×1080 · 30 fps · ≈8:09 · VO Grady (70 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** TwinHook (new). **Thumbnail:** made by the user.
