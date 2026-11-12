@@ -1,12 +1,15 @@
 {
  "video": {
   "title": "#29 · first home: up to $200,000 stacked",
-  "duration": "",
+  "duration": "1:06 (66.25 s), 1080×1920, 24 fps",
   "mp4": "showreel/out/h29/h29-final.mp4 (share copy: h29-share.mp4)"
  },
  "cover": {
   "frame": "'TWO BUYERS': two towers FHSA $40,000 + HBP $60,000 = $100,000 each, red stamp 'TOGETHER $200,000', the couple at the bank",
-  "why": "the stack and the total in one frame"
+  "why": "the stack and the total in one frame",
+  "t": 35.19,
+  "ms": 35190,
+  "file": "h29/cover.jpg (extracted at 35.19 s from the final render)"
  },
  "sources": [
   {
