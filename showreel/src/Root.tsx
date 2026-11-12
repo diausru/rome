@@ -55,6 +55,7 @@ import { R2V3, R2DUR, R2FPS } from './R2V3';
 import { M30V3, M30DUR, M30FPS } from './M30V3';
 import { R3V3, R3DUR, R3FPS } from './R3V3';
 import { R4V3, R4DUR, R4FPS } from './R4V3';
+import { H29V3, H29DUR, H29FPS } from './H29V3';
 import { M29V3, M29DUR, M29FPS } from './M29V3';
 import { M10V3, M10DUR, M10FPS } from './M10V3';
 import { M3V3, M3DUR, M3FPS } from './M3V3';
@@ -135,6 +136,7 @@ export const RemotionRoot = () => (
     <Composition id="M30V3" component={M30V3} durationInFrames={M30DUR} fps={M30FPS} width={1080} height={1920} />
     <Composition id="R3V3" component={R3V3} durationInFrames={R3DUR} fps={R3FPS} width={1080} height={1920} />
     <Composition id="R4V3" component={R4V3} durationInFrames={R4DUR} fps={R4FPS} width={1080} height={1920} />
+    <Composition id="H29V3" component={H29V3} durationInFrames={H29DUR} fps={H29FPS} width={1080} height={1920} />
     <Composition id="M29V3" component={M29V3} durationInFrames={M29DUR} fps={M29FPS} width={1080} height={1920} />
     <Composition id="M10V3" component={M10V3} durationInFrames={M10DUR} fps={M10FPS} width={1080} height={1920} />
     <Composition id="M3V3" component={M3V3} durationInFrames={M3DUR} fps={M3FPS} width={1080} height={1920} />

@@ -1,0 +1,97 @@
+{
+ "video": {
+  "title": "#29 · first home: up to $200,000 stacked",
+  "duration": "",
+  "mp4": "showreel/out/h29/h29-final.mp4 (share copy: h29-share.mp4)"
+ },
+ "cover": {
+  "frame": "'TWO BUYERS': two towers FHSA $40,000 + HBP $60,000 = $100,000 each, red stamp 'TOGETHER $200,000', the couple at the bank",
+  "why": "the stack and the total in one frame"
+ },
+ "sources": [
+  {
+   "source": "canada.ca CRA FHSA",
+   "year": "2026",
+   "supports": "$8,000/yr, $40,000 lifetime"
+  },
+  {
+   "source": "canada.ca What is the Home Buyers' Plan",
+   "year": "2026",
+   "supports": "$60,000, 15 years, 2026–2028 deferral, FHSA + HBP same home"
+  },
+  {
+   "source": "CRA line 31270",
+   "year": "2025",
+   "supports": "home buyers' amount up to $10,000"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "First Home in Canada: How Two Buyers Stack Up to $200,000 (FHSA + HBP)",
+   "FHSA + Home Buyers' Plan: Can You Use Both? Yes, Here's the Math",
+   "First-Time Home Buyer Programs Canada 2026, Explained in 60 Seconds"
+  ],
+  "description": "Two first-time buyers can put up to $200,000 toward one home, with no tax on the way out. Here's how it stacks.\n\n• FHSA: up to $8,000 a year, $40,000 lifetime. Contributions are deductible; qualifying withdrawals for a first home are tax-free.\n• Home Buyers' Plan (HBP): up to $60,000 from your RRSP, repaid over 15 years.\n• Per person up to $100,000; two qualifying buyers, up to $200,000.\n\nThe twist: you can use the FHSA and the HBP for the same home. For a first HBP withdrawal from 2026 to 2028, repayments start in the fifth year after (CRA example: withdraw in 2026, first repayment year 2031).\n\nPlus the home buyers' amount (line 31270): up to $10,000 claimed as a credit. Check every condition before you withdraw.\n\nNext: couples, and who should claim the shared credits.\n\nSources: canada.ca (CRA) First Home Savings Account; What is the Home Buyers' Plan; line 31270. Maximums; conditions apply. General information, not advice.\n\n#FirstHome #FHSA #CanadaTax",
+  "hashtags": "#FirstHome #FHSA #CanadaTax #HomeBuyersPlan",
+  "keywords": "fhsa canada, first home savings account, home buyers plan 60000, fhsa and hbp together, first time home buyer canada 2026, home buyers amount line 31270, hbp repayment 2026",
+  "pinned": "Quick check: can you use the FHSA and the Home Buyers' Plan for the same home? Answer below. General info, not advice.",
+  "cta": "Follow for the next one: couples and shared credits."
+ },
+ "tt": {
+  "caption": "Two first-time buyers, up to $200,000 toward one home 🏠 FHSA + Home Buyers' Plan, stacked.",
+  "keywords": "fhsa canada · home buyers plan · first time home buyer canada",
+  "hashtags": "#firsthome #fhsa #canadiantaxes #realestatecanada #personalfinancecanada",
+  "pinned": "First HBP withdrawal in 2026–2028? Repayments start in year five. (General info, not advice.)",
+  "cta": "Follow for the next one: couples and shared credits."
+ },
+ "ig": {
+  "caption": "First home? Up to $200,000, stacked 🏠🇨🇦\n\n🟩 FHSA: $8,000/yr, $40,000 total, in deductible, out tax-free\n🟨 Home Buyers' Plan: up to $60,000 from your RRSP, 15 years to repay\n👥 Two first-time buyers: up to $200,000\n✅ Both for the same home\n⏳ First HBP withdrawal 2026–2028 → repay from year five\n➕ Home buyers' amount up to $10,000\n\nSend this to someone saving for a first home.\n\nSource: CRA (canada.ca). Maximums, conditions apply. General info, not advice.",
+  "keywords": "fhsa, home buyers plan, first home canada",
+  "hashtags": "#firsthome #fhsa #firsttimehomebuyer #canadiantaxes #personalfinancecanada #canadarealestate",
+  "pinned": "Save this before you buy 📌",
+  "cta": "Send this to someone saving for a first home."
+ },
+ "eng": {
+  "question": "FHSA and HBP for the same home? (yes, if all conditions are met)",
+  "save": "The stack.",
+  "share": "First-time buyers.",
+  "follow": "Canadian tax rules with real numbers."
+ },
+ "seo": {
+  "primary": "fhsa canada",
+  "secondary": "(vidIQ/NexLev skipped)",
+  "intent": "How much can I use for my first home?",
+  "audience": "Renters 25–40 saving to buy.",
+  "angle": "stack + 2026–2028 deferral.",
+  "questions": "Can I use FHSA and HBP together? When do HBP repayments start?"
+ },
+ "next": [
+  {
+   "topic": "Couples: who claims shared credits (#10)",
+   "why": "Bridge",
+   "intent": "spouse claims credits",
+   "hook": "bigger refund",
+   "angle": "who claims",
+   "payoff": "difference"
+  },
+  {
+   "topic": "CCB: why one parent receives it (#3)",
+   "why": "Queue",
+   "intent": "ccb",
+   "hook": "one parent",
+   "angle": "who receives",
+   "payoff": "rule"
+  },
+  {
+   "topic": "Separated parents and CCB (#26)",
+   "why": "Queue",
+   "intent": "shared custody ccb",
+   "hook": "50/50",
+   "angle": "split",
+   "payoff": "rule"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #29, bridged from R4. Topic type: seasonal (spring buying season). Playlist: 'Home & housing'.",
+ "research": "vidIQ/NexLev skipped (0 credits); facts via 2 web searches (HBTC; FHSA/HBP canada.ca).",
+ "retention": "Frame 0 'FIRST HOME? UP TO $200,000' with count-up; FHSA block 12–20 s; HBP block 21–27 s; second tower + 'TOGETHER $200,000' stamp ~32 s (re-hook ≈52 %); timeline 2026→2031 at 41–50 s; check card + next pill."
+}

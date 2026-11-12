@@ -1,0 +1,47 @@
+{
+ "total": 65.717,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Two first-time buyers can put up to two hundred thousand dollars toward one home, without paying tax on the way out. Here's how it stacks.",
+   "start": 0.25,
+   "end": 9.979
+  },
+  {
+   "id": "c1",
+   "text": "First, the FHSA. Up to eight thousand a year, forty thousand in total. Deductible going in, tax-free coming out for a first home.",
+   "start": 10.329,
+   "end": 21.459
+  },
+  {
+   "id": "c2",
+   "text": "Second, the Home Buyers' Plan. Up to sixty thousand dollars from your RRSP, paid back over fifteen years.",
+   "start": 21.759,
+   "end": 29.434
+  },
+  {
+   "id": "c3",
+   "text": "That's a hundred thousand dollars per person. Two first-time buyers: up to two hundred thousand.",
+   "start": 29.734,
+   "end": 37.646
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: you can use both for the same home. And if your first plan withdrawal is between twenty twenty-six and twenty twenty-eight, repayments don't start until the fifth year after.",
+   "start": 38.046,
+   "end": 50.998
+  },
+  {
+   "id": "action",
+   "text": "Add the home buyers' amount, up to ten thousand dollars on your return, and check every condition before you withdraw.",
+   "start": 51.298,
+   "end": 58.79
+  },
+  {
+   "id": "cta",
+   "text": "Next: couples, and who should claim the shared credits. Follow so you don't miss it.",
+   "start": 59.09,
+   "end": 65.717
+  }
+ ]
+}
