@@ -1,0 +1,32 @@
+{
+ "topic": "Same salary, different benefits: income-tested benefits (CGEB, CCB) use adjusted family net income — your line 23600 net income plus your spouse's or common-law partner's; and both partners must file a return to start or keep receiving them",
+ "tax_year": 2026,
+ "example": {
+  "salary": 45000,
+  "thr": 46432,
+  "single": 679,
+  "couple": 890,
+  "partner": 35000,
+  "family": 80000,
+  "over": 33568,
+  "pct": 5,
+  "reduction": 1678.4,
+  "note": "example (not a CRA rule): CGEB July 2026–June 2027 (2025 base year). Nora, single, net income $45,000 ≤ $46,432 → $679. Sam, same $45,000, partner $35,000 → family net income $80,000; $80,000 − $46,432 = $33,568 over; × 5% = $1,678.40 > couple maximum $890 → $0. No children."
+ },
+ "derive": {},
+ "spoken": {
+  "salary": "forty-five thousand",
+  "thr": "forty-six thousand four hundred and thirty-two",
+  "single": "six hundred and seventy-nine dollars",
+  "partner": "thirty-five thousand",
+  "family": "eighty thousand",
+  "over": "thirty-three thousand five hundred and sixty-eight",
+  "pct": "five"
+ },
+ "sources": {
+  "afni": "canada.ca CRA (line 23600 / benefits): if you have a spouse or common-law partner, your adjusted net incomes are combined to get your adjusted family net income (AFNI); report your spouse's net income even if it is zero",
+  "file": "CRA Federal Income Tax and Benefit Information 2025 (5000-G): file a 2025 return if you or your spouse want to begin or continue receiving credits and benefits such as the CCB; if you have a spouse or common-law partner, they also have to file; CCB statistics page: recipients and their spouse are required to file to receive a CCB payment",
+  "cgeb": "canada.ca CRA CGEB how much (July 2026–June 2027): $679 single, $890 couple; phase-out above $46,432 at 5% (Budget 2026)"
+ },
+ "unverified": "www.canada.ca not fetchable from this session; facts from canada.ca search excerpts"
+}

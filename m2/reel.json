@@ -1,0 +1,219 @@
+{
+ "id": "m2",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "SAME $45K SALARY.",
+  "l2": "$679 OR $0?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "stack": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "file": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "sal",
+   "beat": "hook",
+   "word": "forty-five",
+   "sfx": "tick"
+  },
+  {
+   "id": "nora",
+   "beat": "hook",
+   "word": "Nora",
+   "sfx": "chime"
+  },
+  {
+   "id": "sam",
+   "beat": "hook",
+   "word": "nothing.",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "fam",
+   "beat": "c1",
+   "word": "family",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "thr",
+   "beat": "c2",
+   "word": "forty-six",
+   "sfx": "tick"
+  },
+  {
+   "id": "full",
+   "beat": "c2",
+   "word": "six",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "partner",
+   "beat": "c3",
+   "word": "thirty-five",
+   "sfx": "tick"
+  },
+  {
+   "id": "eighty",
+   "beat": "c3",
+   "word": "eighty",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "over",
+   "beat": "c4",
+   "word": "thirty-three"
+  },
+  {
+   "id": "zero",
+   "beat": "c4",
+   "word": "Zero.",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "nofile",
+   "beat": "reveal",
+   "word": "didn't",
+   "sfx": "tick"
+  },
+  {
+   "id": "stop",
+   "beat": "reveal",
+   "word": "stop.",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "check",
+   "beat": "action",
+   "word": "check",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "Zero.",
+   "offset": -2.0
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "work"
+}
