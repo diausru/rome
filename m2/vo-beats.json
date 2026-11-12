@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  ["hook", "Same job, same forty-five thousand dollar salary. Nora gets a grocery benefit every quarter. Sam gets nothing. The CRA isn't looking at your salary.", 0.35],
+  ["c1", "Benefits like the Canada Groceries and Essentials Benefit use family net income: yours plus your spouse's.", 0.3],
+  ["c2", "Nora is single. Forty-five thousand is under forty-six thousand four hundred and thirty-two, so she gets the full six hundred and seventy-nine dollars.", 0.3],
+  ["c3", "Sam's partner earns thirty-five thousand. Family income: eighty thousand.", 0.3],
+  ["c4", "That's thirty-three thousand five hundred and sixty-eight over the line. Five percent of that wipes out the whole benefit. Zero.", 0.4],
+  ["reveal", "The twist: sometimes it's not income at all. If either spouse didn't file a return, the payments stop.", 0.3],
+  ["action", "So check your family net income, and make sure both of you filed.", 0.3],
+  ["cta", "Next: why your benefits suddenly stopped. Follow so you don't miss it.", 0.0]
+ ]
+}

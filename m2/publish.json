@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "M2 · Same salary, $679 or $0",
+  "mp4": "showreel/out/m2/m2-final.mp4 (share copy: m2-share.mp4)",
+  "duration": "1:06 (66.96 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'OVER THE LINE': Nora's $45K bar under the $46,432 line ($679), Sam's $45K + partner $35K = $80K with the excess hatched ($0), '$33,568 over × 5% = $1,678 > $890 → $0', 'COUNTS BOTH INCOMES' stamp",
+  "why": "the whole comparison in one frame",
+  "t": 46.56,
+  "ms": 46560,
+  "file": "m2/cover.jpg (extracted at 46.56 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "canada.ca CRA line 23600 / adjusted family net income",
+   "year": "2025–26",
+   "supports": "spouses' net incomes are combined into adjusted family net income for benefits"
+  },
+  {
+   "source": "CRA 5000-G Federal Income Tax and Benefit Information 2025; CCB statistics",
+   "year": "2025",
+   "supports": "if you have a spouse or common-law partner, they also have to file to begin or continue receiving benefits"
+  },
+  {
+   "source": "canada.ca CRA CGEB how much (July 2026–June 2027); Budget 2026",
+   "year": "2026",
+   "supports": "$679 single, $890 couple; 5% phase-out above $46,432"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "Same Salary, No Benefits? Why Your Friend Gets Paid (Canada)",
+   "Why You Didn't Get the GST Credit (It's Not Your Salary)",
+   "$679 or $0 on the Same $45K Salary: The CRA's Real Test"
+  ],
+  "description": "Same job, same $45,000 salary. Nora gets the grocery benefit every quarter. Sam gets nothing. The CRA isn't looking at your salary.\n\nIncome-tested benefits like the Canada Groceries and Essentials Benefit (the old GST credit) and the CCB use family net income: your net income plus your spouse's or common-law partner's.\n• Nora, single: $45,000 is under $46,432 → full $679 (July 2026–June 2027).\n• Sam: $45,000 + partner's $35,000 = $80,000 family income → $33,568 over the line × 5% = $1,678, more than the $890 couple maximum → $0.\n\nThe twist: sometimes it's not income at all. If either spouse didn't file a return, the payments stop.\n\nCheck your family net income, and make sure both of you filed.\n\nNext: why your benefits suddenly stopped.\n\nSources: canada.ca (CRA) adjusted family net income; Federal Income Tax and Benefit Information 2025; CGEB how much (July 2026–June 2027); Budget 2026. Example. General information, not advice.\n\n#GSTCredit #CanadaTax #CRA",
+  "hashtags": "#GSTCredit #CanadaTax #CRA #Benefits",
+  "keywords": "why didn't i get gst credit, family net income canada, benefits same salary, gst credit married, cgeb couple, both spouses file taxes benefits",
+  "pinned": "Quick check: single, $40,000 net income. CGEB? (Full $679, under $46,432) General info, not advice.",
+  "cta": "Follow for the next one: why your benefits stopped."
+ },
+ "tt": {
+  "caption": "Same $45K salary: one gets $679, the other $0 🤔 The CRA counts your spouse too.",
+  "keywords": "gst credit · family net income · canada benefits",
+  "hashtags": "#gstcredit #canadiantaxes #cra #couplesmoney #personalfinancecanada",
+  "pinned": "Both spouses must file to keep benefits. (General info, not advice.)",
+  "cta": "Follow for the next one: why benefits stopped."
+ },
+ "ig": {
+  "caption": "Same salary. $679 or $0? 🤔🇨🇦\n\nThe CRA uses FAMILY net income, not your salary.\n• Nora, single, $45K → full $679 (CGEB)\n• Sam, $45K + partner $35K = $80K → $0\n⚠️ Either spouse didn't file? Payments stop\n✅ Check family net income + both returns filed\n\nSend this to the coworker who's confused.\n\nSource: CRA (canada.ca). Example. General info, not advice.",
+  "keywords": "family net income, gst credit, canada benefits",
+  "hashtags": "#gstcredit #canadiantaxes #couplesandmoney #personalfinancecanada #canadatax #cra",
+  "pinned": "Save this for tax season 📌",
+  "cta": "Send this to the coworker who's confused."
+ },
+ "eng": {
+  "question": "Single, $40K: CGEB? (full $679)",
+  "save": "The family-net-income rule.",
+  "share": "Coworkers comparing benefits.",
+  "follow": "Canadian tax and benefit rules with real numbers."
+ },
+ "seo": {
+  "primary": "why didn't i get gst credit",
+  "secondary": "vidIQ CA: seed <750/mo; 'canadian personal finance' 18K/mo",
+  "intent": "People who got nothing while a friend got paid.",
+  "audience": "Adults 22–45, couples.",
+  "angle": "same salary, family income decides; the unfiled-return twist.",
+  "questions": "Why didn't I get the GST credit? Does my spouse's income count? Do both spouses have to file?"
+ },
+ "next": [
+  {
+   "topic": "Why benefits stopped or dropped (#14)",
+   "why": "Bridge",
+   "intent": "why did my benefits stop canada",
+   "hook": "payment vanished",
+   "angle": "five usual causes",
+   "payoff": "fix it fast"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #2 (absorbs #19), bridged from M9. Playlist: 'Benefits & credits'.",
+ "research": {
+  "vidiq": "balance 2,018 before; 1 keyword_research CA",
+  "nexlev": "youtube_search shorts CA: 'why no GST payment' Shorts 1K–2.7K views; no family-income comparison angle"
+ },
+ "retention": "Frame 0 'SAME $45K SALARY. $679 OR $0?'; two badges, $679 at 4.4 s, $0 at 8.5 s; family-net-income label 17 s; bars: Nora under the line 21–30 s, Sam + partner 32–38 s; 'COUNTS BOTH INCOMES' stamp 37.8 s (re-hook, ≈56 %); excess hatched 39 s, $0 at ≈41 s; filing checkboxes reveal 50–56 s; check card + next pill."
+}
