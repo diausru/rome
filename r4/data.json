@@ -1,37 +1,29 @@
 {
- "topic": "Moving expenses (line 21900): new home at least 40 km closer to the new work location by the shortest public route; deductible only from employment/self-employment income earned at the new location; unused part carries forward to future years (from that income); temporary living (meals and lodging) up to 15 days",
+ "topic": "Moving expenses (line 21900): 40 km closer test; deductible only from income earned at the new work location; unused part carried forward; reimbursed amounts excluded",
  "tax_year": 2025,
  "example": {
-  "old": 52,
-  "near": 18,
-  "nearer": 9,
-  "rule": 40,
-  "gap_near": 34,
-  "gap_nearer": 43,
-  "cost": 4200,
-  "earned": 2500,
-  "carry": 1700,
-  "days": 15,
-  "note": "example (not a CRA rule): Riley, new job in 2025; old home 52 km from the new work location (shortest public route); option A 18 km → 34 km closer (fails the 40 km test); option B 9 km → 43 km closer (qualifies). Eligible moving costs $4,200 (truck, travel, temporary living). Started work in December 2025 and earned $2,500 there in 2025 → deducts $2,500 for 2025; $1,700 carried forward against future income at the new location. No employer reimbursement."
+  "cost": 6000,
+  "movers": 4000,
+  "trip": 800,
+  "lodging": 1200,
+  "km": 40,
+  "income_new": 4000,
+  "deduct_now": 4000,
+  "carry": 2000,
+  "note": "example (not a CRA rule): employee moves Winnipeg \u2192 Calgary in November 2025; $6,000 eligible expenses (movers $4,000, travel $800, temporary lodging $1,200), not reimbursed; $4,000 employment income at the new location in 2025; the unused $2,000 is deducted from 2026 income at the same new location. Tax saved depends on the marginal rate (not shown)."
  },
  "derive": {},
  "spoken": {
-  "gap_near": "thirty-four",
-  "gap_nearer": "forty-three",
-  "old": "fifty-two",
-  "rule": "forty",
-  "near": "eighteen",
-  "nearer": "nine",
-  "cost": "forty-two hundred",
-  "days": "fifteen days",
-  "earned": "twenty-five hundred",
-  "carry": "seventeen hundred"
+  "cost": "six thousand dollars",
+  "km": "forty",
+  "income_new": "four thousand dollars",
+  "carry": "two thousand"
  },
  "sources": {
-  "rule": "canada.ca CRA Line 21900 – Moving expenses (updated Jan 20, 2026): 'your new home must be at least 40 kilometres closer (by the shortest public route) to your new work location' (via Google search excerpts, 2026-11-01)",
-  "income": "canada.ca CRA line 21900: 'You can deduct eligible moving expenses from the employment or self-employment income you earned at your new work location'; not from other income such as investment income or EI",
-  "carry": "canada.ca CRA line 21900 / Income Tax Folio S1-F3-C4 ¶4.18: unused moving expenses carried forward and deducted from income earned at the new work location in a future year; no carry back",
-  "temp": "Income Tax Folio S1-F3-C4 and CRA common adjustments: meals and lodging near the old or new residence for a period not exceeding 15 days"
- },
- "unverified": "www.canada.ca not fetchable from this session (timeout); facts taken from canada.ca search result excerpts"
+  "test": "canada.ca line 21900 (2025): new home at least 40 km closer (shortest public route) to the new work location; establish the new home where you normally live",
+  "income": "canada.ca line 21900: deduct only from employment/self-employment income earned at the new work location; not investment income or EI",
+  "carry": "canada.ca line 21900: unused net moving expenses carried forward to future income at the new work location; no carry-back",
+  "reimb": "canada.ca line 21900: if the employer reimbursed you, include it in income or reduce the expenses by it",
+  "expenses": "canada.ca line 21900 / Folio S1-F3-C4: transportation and storage, travel, temporary living expenses (up to 15 days) among eligible expenses"
+ }
 }

@@ -4,283 +4,171 @@
   {
    "id": "hook",
    "start": 0.25,
-   "end": 10.334,
+   "end": 10.729,
    "runs": 6,
-   "clip": 10.084,
+   "clip": 10.479,
    "words": [
     {
      "i": 0,
-     "text": "Same",
+     "text": "Maya",
      "start": 0.25,
-     "end": 0.655
+     "end": 0.511
     },
     {
      "i": 1,
-     "text": "move,",
-     "start": 0.655,
-     "end": 1.06
+     "text": "moved",
+     "start": 0.511,
+     "end": 0.829
     },
     {
      "i": 2,
-     "text": "same",
-     "start": 1.34,
-     "end": 1.706
+     "text": "from",
+     "start": 0.829,
+     "end": 1.09
     },
     {
      "i": 3,
-     "text": "truck.",
-     "start": 1.706,
-     "end": 2.15
+     "text": "Winnipeg",
+     "start": 1.38,
+     "end": 2.029
     },
     {
      "i": 4,
-     "text": "Thirty-four",
-     "start": 2.63,
-     "end": 3.197
+     "text": "to",
+     "start": 2.029,
+     "end": 2.23
     },
     {
      "i": 5,
-     "text": "kilometres",
-     "start": 3.197,
-     "end": 3.763
+     "text": "Calgary",
+     "start": 2.72,
+     "end": 3.222
     },
     {
      "i": 6,
-     "text": "closer",
-     "start": 3.763,
-     "end": 4.118
+     "text": "for",
+     "start": 3.222,
+     "end": 3.463
     },
     {
      "i": 7,
-     "text": "to",
-     "start": 4.118,
-     "end": 4.261
+     "text": "a",
+     "start": 3.463,
+     "end": 3.574
     },
     {
      "i": 8,
-     "text": "work:",
-     "start": 4.261,
-     "end": 4.51
+     "text": "new",
+     "start": 3.574,
+     "end": 3.816
     },
     {
      "i": 9,
-     "text": "zero",
-     "start": 5.02,
-     "end": 5.379
+     "text": "job",
+     "start": 3.816,
+     "end": 4.057
     },
     {
      "i": 10,
-     "text": "deduction.",
-     "start": 5.379,
-     "end": 6.12
+     "text": "and",
+     "start": 4.057,
+     "end": 4.298
     },
     {
      "i": 11,
-     "text": "Forty-three",
-     "start": 6.72,
-     "end": 7.488
+     "text": "spent",
+     "start": 4.298,
+     "end": 4.67
     },
     {
      "i": 12,
-     "text": "closer:",
-     "start": 7.488,
-     "end": 7.97
+     "text": "six",
+     "start": 5.19,
+     "end": 5.402
     },
     {
      "i": 13,
-     "text": "the",
-     "start": 8.53,
-     "end": 8.843
+     "text": "thousand",
+     "start": 5.402,
+     "end": 5.899
     },
     {
      "i": 14,
-     "text": "whole",
-     "start": 8.843,
-     "end": 9.325
+     "text": "dollars.",
+     "start": 5.899,
+     "end": 6.34
     },
     {
      "i": 15,
-     "text": "move",
-     "start": 9.325,
-     "end": 9.723
+     "text": "She",
+     "start": 6.97,
+     "end": 7.177
     },
     {
      "i": 16,
-     "text": "counts.",
-     "start": 9.723,
-     "end": 10.29
+     "text": "can",
+     "start": 7.177,
+     "end": 7.385
+    },
+    {
+     "i": 17,
+     "text": "deduct",
+     "start": 7.385,
+     "end": 7.76
+    },
+    {
+     "i": 18,
+     "text": "all",
+     "start": 7.76,
+     "end": 7.967
+    },
+    {
+     "i": 19,
+     "text": "of",
+     "start": 7.967,
+     "end": 8.119
+    },
+    {
+     "i": 20,
+     "text": "it.",
+     "start": 8.119,
+     "end": 8.27
+    },
+    {
+     "i": 21,
+     "text": "Just",
+     "start": 8.87,
+     "end": 9.268
+    },
+    {
+     "i": 22,
+     "text": "not",
+     "start": 9.268,
+     "end": 9.581
+    },
+    {
+     "i": 23,
+     "text": "all",
+     "start": 9.581,
+     "end": 9.894
+    },
+    {
+     "i": 24,
+     "text": "this",
+     "start": 9.894,
+     "end": 10.292
+    },
+    {
+     "i": 25,
+     "text": "year.",
+     "start": 10.292,
+     "end": 10.69
     }
    ],
    "chunks": [
     {
      "start": 0.25,
-     "end": 1.06,
-     "words": [
-      0,
-      1
-     ]
-    },
-    {
-     "start": 1.34,
-     "end": 2.15,
-     "words": [
-      2,
-      3
-     ]
-    },
-    {
-     "start": 2.63,
-     "end": 3.763,
-     "words": [
-      4,
-      5
-     ]
-    },
-    {
-     "start": 3.763,
-     "end": 4.51,
-     "words": [
-      6,
-      7,
-      8
-     ]
-    },
-    {
-     "start": 5.02,
-     "end": 6.12,
-     "words": [
-      9,
-      10
-     ]
-    },
-    {
-     "start": 6.72,
-     "end": 7.97,
-     "words": [
-      11,
-      12
-     ]
-    },
-    {
-     "start": 8.53,
-     "end": 10.29,
-     "words": [
-      13,
-      14,
-      15,
-      16
-     ]
-    }
-   ]
-  },
-  {
-   "id": "c1",
-   "start": 10.684,
-   "end": 16.907,
-   "runs": 3,
-   "clip": 6.223,
-   "words": [
-    {
-     "i": 0,
-     "text": "Riley",
-     "start": 10.694,
-     "end": 11.088
-    },
-    {
-     "i": 1,
-     "text": "took",
-     "start": 11.088,
-     "end": 11.414
-    },
-    {
-     "i": 2,
-     "text": "a",
-     "start": 11.414,
-     "end": 11.531
-    },
-    {
-     "i": 3,
-     "text": "new",
-     "start": 11.531,
-     "end": 11.787
-    },
-    {
-     "i": 4,
-     "text": "job",
-     "start": 11.787,
-     "end": 12.043
-    },
-    {
-     "i": 5,
-     "text": "in",
-     "start": 12.043,
-     "end": 12.23
-    },
-    {
-     "i": 6,
-     "text": "twenty",
-     "start": 12.23,
-     "end": 12.694
-    },
-    {
-     "i": 7,
-     "text": "twenty-five.",
-     "start": 12.694,
-     "end": 13.434
-    },
-    {
-     "i": 8,
-     "text": "The",
-     "start": 14.254,
-     "end": 14.489
-    },
-    {
-     "i": 9,
-     "text": "old",
-     "start": 14.489,
-     "end": 14.725
-    },
-    {
-     "i": 10,
-     "text": "home",
-     "start": 14.725,
-     "end": 15.024
-    },
-    {
-     "i": 11,
-     "text": "was",
-     "start": 15.204,
-     "end": 15.408
-    },
-    {
-     "i": 12,
-     "text": "fifty-two",
-     "start": 15.408,
-     "end": 15.887
-    },
-    {
-     "i": 13,
-     "text": "kilometres",
-     "start": 15.887,
-     "end": 16.476
-    },
-    {
-     "i": 14,
-     "text": "from",
-     "start": 16.476,
-     "end": 16.735
-    },
-    {
-     "i": 15,
-     "text": "it.",
-     "start": 16.735,
-     "end": 16.884
-    }
-   ],
-   "chunks": [
-    {
-     "start": 10.694,
-     "end": 11.531,
+     "end": 1.09,
      "words": [
       0,
       1,
@@ -288,248 +176,276 @@
      ]
     },
     {
-     "start": 11.531,
-     "end": 12.043,
+     "start": 1.38,
+     "end": 2.23,
      "words": [
       3,
       4
      ]
     },
     {
-     "start": 12.043,
-     "end": 13.434,
+     "start": 2.72,
+     "end": 3.816,
      "words": [
       5,
       6,
-      7
+      7,
+      8
      ]
     },
     {
-     "start": 14.254,
-     "end": 15.024,
+     "start": 3.816,
+     "end": 4.67,
      "words": [
-      8,
       9,
-      10
+      10,
+      11
      ]
     },
     {
-     "start": 15.204,
-     "end": 15.887,
+     "start": 5.19,
+     "end": 6.34,
      "words": [
-      11,
-      12
-     ]
-    },
-    {
-     "start": 15.887,
-     "end": 16.884,
-     "words": [
+      12,
       13,
-      14,
-      15
+      14
+     ]
+    },
+    {
+     "start": 6.97,
+     "end": 7.76,
+     "words": [
+      15,
+      16,
+      17
+     ]
+    },
+    {
+     "start": 7.76,
+     "end": 8.27,
+     "words": [
+      18,
+      19,
+      20
+     ]
+    },
+    {
+     "start": 8.87,
+     "end": 9.581,
+     "words": [
+      21,
+      22
+     ]
+    },
+    {
+     "start": 9.581,
+     "end": 10.69,
+     "words": [
+      23,
+      24,
+      25
      ]
     }
    ]
   },
   {
-   "id": "c2",
-   "start": 17.207,
-   "end": 24.942,
-   "runs": 4,
-   "clip": 7.734,
+   "id": "c1",
+   "start": 11.079,
+   "end": 17.532,
+   "runs": 3,
+   "clip": 6.453,
    "words": [
     {
      "i": 0,
      "text": "The",
-     "start": 17.227,
-     "end": 17.425
+     "start": 11.089,
+     "end": 11.262
     },
     {
      "i": 1,
-     "text": "rule:",
-     "start": 17.425,
-     "end": 17.677
+     "text": "test:",
+     "start": 11.262,
+     "end": 11.483
     },
     {
      "i": 2,
      "text": "your",
-     "start": 18.427,
-     "end": 18.695
+     "start": 11.483,
+     "end": 11.703
     },
     {
      "i": 3,
      "text": "new",
-     "start": 18.695,
-     "end": 18.907
+     "start": 11.703,
+     "end": 11.876
     },
     {
      "i": 4,
      "text": "home",
-     "start": 18.907,
-     "end": 19.175
+     "start": 11.876,
+     "end": 12.096
     },
     {
      "i": 5,
      "text": "must",
-     "start": 19.175,
-     "end": 19.443
+     "start": 12.096,
+     "end": 12.317
     },
     {
      "i": 6,
      "text": "be",
-     "start": 19.443,
-     "end": 19.598
+     "start": 12.317,
+     "end": 12.443
     },
     {
      "i": 7,
      "text": "at",
-     "start": 19.598,
-     "end": 19.752
+     "start": 12.443,
+     "end": 12.57
     },
     {
      "i": 8,
      "text": "least",
-     "start": 19.752,
-     "end": 20.077
+     "start": 12.57,
+     "end": 12.837
     },
     {
      "i": 9,
      "text": "forty",
-     "start": 20.237,
-     "end": 20.615
+     "start": 12.837,
+     "end": 13.104
     },
     {
      "i": 10,
      "text": "kilometres",
-     "start": 20.615,
-     "end": 21.323
+     "start": 13.104,
+     "end": 13.605
     },
     {
      "i": 11,
      "text": "closer",
-     "start": 21.323,
-     "end": 21.767
+     "start": 13.605,
+     "end": 13.919
     },
     {
      "i": 12,
      "text": "to",
-     "start": 21.767,
-     "end": 21.946
+     "start": 14.789,
+     "end": 14.944
     },
     {
      "i": 13,
      "text": "the",
-     "start": 21.946,
-     "end": 22.191
+     "start": 14.944,
+     "end": 15.155
     },
     {
      "i": 14,
      "text": "new",
-     "start": 22.191,
-     "end": 22.436
+     "start": 15.155,
+     "end": 15.367
     },
     {
      "i": 15,
-     "text": "work,",
-     "start": 22.436,
-     "end": 22.747
+     "text": "job.",
+     "start": 15.367,
+     "end": 15.579
     },
     {
      "i": 16,
-     "text": "by",
-     "start": 23.137,
-     "end": 23.313
+     "text": "Winnipeg",
+     "start": 15.779,
+     "end": 16.242
     },
     {
      "i": 17,
-     "text": "the",
-     "start": 23.313,
-     "end": 23.554
+     "text": "to",
+     "start": 16.242,
+     "end": 16.386
     },
     {
      "i": 18,
-     "text": "shortest",
-     "start": 23.554,
-     "end": 24.12
+     "text": "Calgary",
+     "start": 16.386,
+     "end": 16.796
     },
     {
      "i": 19,
-     "text": "public",
-     "start": 24.12,
-     "end": 24.556
+     "text": "passes",
+     "start": 16.796,
+     "end": 17.152
     },
     {
      "i": 20,
-     "text": "route.",
-     "start": 24.556,
-     "end": 24.927
+     "text": "easily.",
+     "start": 17.152,
+     "end": 17.509
     }
    ],
    "chunks": [
     {
-     "start": 17.227,
-     "end": 17.677,
+     "start": 11.089,
+     "end": 11.483,
      "words": [
       0,
       1
      ]
     },
     {
-     "start": 18.427,
-     "end": 19.175,
+     "start": 11.483,
+     "end": 11.876,
      "words": [
       2,
-      3,
-      4
+      3
      ]
     },
     {
-     "start": 19.175,
-     "end": 19.752,
+     "start": 11.876,
+     "end": 12.443,
      "words": [
+      4,
       5,
-      6,
-      7
+      6
      ]
     },
     {
-     "start": 19.752,
-     "end": 20.615,
+     "start": 12.443,
+     "end": 13.104,
      "words": [
+      7,
       8,
       9
      ]
     },
     {
-     "start": 20.615,
-     "end": 21.946,
+     "start": 13.104,
+     "end": 13.919,
      "words": [
       10,
-      11,
-      12
+      11
      ]
     },
     {
-     "start": 21.946,
-     "end": 22.747,
+     "start": 14.789,
+     "end": 15.579,
      "words": [
+      12,
       13,
       14,
       15
      ]
     },
     {
-     "start": 23.137,
-     "end": 23.554,
+     "start": 15.779,
+     "end": 16.386,
      "words": [
       16,
       17
      ]
     },
     {
-     "start": 23.554,
-     "end": 24.927,
+     "start": 16.386,
+     "end": 17.509,
      "words": [
       18,
       19,
@@ -539,294 +455,320 @@
    ]
   },
   {
-   "id": "c3",
-   "start": 25.242,
-   "end": 31.968,
-   "runs": 3,
-   "clip": 6.726,
+   "id": "c2",
+   "start": 17.832,
+   "end": 25.863,
+   "runs": 4,
+   "clip": 8.03,
    "words": [
     {
      "i": 0,
-     "text": "An",
-     "start": 25.252,
-     "end": 25.422
+     "text": "What",
+     "start": 17.852,
+     "end": 18.322
     },
     {
      "i": 1,
-     "text": "apartment",
-     "start": 25.422,
-     "end": 26.032
+     "text": "counts:",
+     "start": 19.072,
+     "end": 19.754
     },
     {
      "i": 2,
-     "text": "eighteen",
-     "start": 26.032,
-     "end": 26.579
+     "text": "the",
+     "start": 19.754,
+     "end": 20.13
     },
     {
      "i": 3,
-     "text": "kilometres",
-     "start": 26.579,
-     "end": 27.252
+     "text": "movers,",
+     "start": 20.13,
+     "end": 20.812
     },
     {
      "i": 4,
-     "text": "away",
-     "start": 27.602,
-     "end": 27.919
+     "text": "the",
+     "start": 20.972,
+     "end": 21.3
     },
     {
      "i": 5,
-     "text": "is",
-     "start": 27.919,
-     "end": 28.101
+     "text": "trip,",
+     "start": 21.3,
+     "end": 21.715
     },
     {
      "i": 6,
-     "text": "only",
-     "start": 28.101,
-     "end": 28.418
+     "text": "and",
+     "start": 21.715,
+     "end": 22.043
     },
     {
      "i": 7,
-     "text": "thirty-four",
-     "start": 28.418,
-     "end": 29.14
+     "text": "temporary",
+     "start": 22.043,
+     "end": 22.901
     },
     {
      "i": 8,
-     "text": "closer.",
-     "start": 29.14,
-     "end": 29.592
+     "text": "lodging.",
+     "start": 22.901,
+     "end": 23.582
     },
     {
      "i": 9,
-     "text": "Nothing",
-     "start": 31.012,
-     "end": 31.467
+     "text": "Six",
+     "start": 23.992,
+     "end": 24.234
     },
     {
      "i": 10,
-     "text": "to",
-     "start": 31.467,
-     "end": 31.626
+     "text": "thousand",
+     "start": 24.234,
+     "end": 24.802
     },
     {
      "i": 11,
-     "text": "claim.",
-     "start": 31.626,
-     "end": 31.962
+     "text": "dollars",
+     "start": 24.802,
+     "end": 25.304
+    },
+    {
+     "i": 12,
+     "text": "in",
+     "start": 25.304,
+     "end": 25.481
+    },
+    {
+     "i": 13,
+     "text": "total.",
+     "start": 25.481,
+     "end": 25.853
     }
    ],
    "chunks": [
     {
-     "start": 25.252,
-     "end": 26.032,
+     "start": 17.852,
+     "end": 18.322,
      "words": [
-      0,
+      0
+     ]
+    },
+    {
+     "start": 19.072,
+     "end": 19.754,
+     "words": [
       1
      ]
     },
     {
-     "start": 26.032,
-     "end": 27.252,
+     "start": 19.754,
+     "end": 20.812,
      "words": [
       2,
       3
      ]
     },
     {
-     "start": 27.602,
-     "end": 28.101,
+     "start": 20.972,
+     "end": 21.715,
      "words": [
       4,
       5
      ]
     },
     {
-     "start": 28.101,
-     "end": 28.418,
+     "start": 21.715,
+     "end": 22.901,
      "words": [
-      6
+      6,
+      7
      ]
     },
     {
-     "start": 28.418,
-     "end": 29.592,
+     "start": 22.901,
+     "end": 23.582,
      "words": [
-      7,
       8
      ]
     },
     {
-     "start": 31.012,
-     "end": 31.962,
+     "start": 23.992,
+     "end": 24.802,
      "words": [
       9,
-      10,
-      11
+      10
+     ]
+    },
+    {
+     "start": 24.802,
+     "end": 25.853,
+     "words": [
+      11,
+      12,
+      13
      ]
     }
    ]
   },
   {
-   "id": "c4",
-   "start": 32.268,
-   "end": 44.649,
-   "runs": 5,
-   "clip": 12.381,
+   "id": "c3",
+   "start": 26.163,
+   "end": 33.145,
+   "runs": 3,
+   "clip": 6.982,
    "words": [
     {
      "i": 0,
-     "text": "One",
-     "start": 32.278,
-     "end": 32.578
+     "text": "The",
+     "start": 26.173,
+     "end": 26.291
     },
     {
      "i": 1,
-     "text": "nine",
-     "start": 32.578,
-     "end": 32.959
+     "text": "catch:",
+     "start": 26.291,
+     "end": 26.472
     },
     {
      "i": 2,
-     "text": "kilometres",
-     "start": 32.959,
-     "end": 33.827
+     "text": "the",
+     "start": 26.472,
+     "end": 26.59
     },
     {
      "i": 3,
-     "text": "away",
-     "start": 33.827,
-     "end": 34.208
+     "text": "deduction",
+     "start": 26.59,
+     "end": 26.898
     },
     {
      "i": 4,
-     "text": "is",
-     "start": 34.208,
-     "end": 34.427
+     "text": "only",
+     "start": 26.898,
+     "end": 27.047
     },
     {
      "i": 5,
-     "text": "forty-three",
-     "start": 34.427,
-     "end": 35.295
+     "text": "comes",
+     "start": 27.047,
+     "end": 27.229
     },
     {
      "i": 6,
-     "text": "closer.",
-     "start": 35.295,
-     "end": 35.838
+     "text": "from",
+     "start": 27.229,
+     "end": 27.378
     },
     {
      "i": 7,
-     "text": "Now",
-     "start": 37.118,
-     "end": 37.37
+     "text": "income",
+     "start": 27.378,
+     "end": 27.591
     },
     {
      "i": 8,
-     "text": "the",
-     "start": 37.37,
-     "end": 37.623
+     "text": "earned",
+     "start": 27.591,
+     "end": 27.804
     },
     {
      "i": 9,
-     "text": "forty-two",
-     "start": 37.623,
-     "end": 38.217
+     "text": "at",
+     "start": 27.804,
+     "end": 27.89
     },
     {
      "i": 10,
-     "text": "hundred",
-     "start": 38.217,
-     "end": 38.742
+     "text": "the",
+     "start": 27.89,
+     "end": 28.008
     },
     {
      "i": 11,
-     "text": "dollar",
-     "start": 38.742,
-     "end": 39.2
+     "text": "new",
+     "start": 28.008,
+     "end": 28.125
     },
     {
      "i": 12,
-     "text": "move",
-     "start": 39.2,
-     "end": 39.52
+     "text": "job.",
+     "start": 28.125,
+     "end": 28.243
     },
     {
      "i": 13,
-     "text": "counts:",
-     "start": 39.52,
-     "end": 39.978
+     "text": "She",
+     "start": 28.613,
+     "end": 28.813
     },
     {
      "i": 14,
-     "text": "truck,",
-     "start": 40.458,
-     "end": 40.828
+     "text": "started",
+     "start": 28.813,
+     "end": 29.229
     },
     {
      "i": 15,
-     "text": "travel,",
-     "start": 41.198,
-     "end": 41.618
+     "text": "in",
+     "start": 29.229,
+     "end": 29.375
     },
     {
      "i": 16,
-     "text": "up",
-     "start": 41.968,
-     "end": 42.164
+     "text": "November",
+     "start": 29.375,
+     "end": 29.846
     },
     {
      "i": 17,
-     "text": "to",
-     "start": 42.164,
-     "end": 42.36
+     "text": "and",
+     "start": 29.846,
+     "end": 30.046
     },
     {
      "i": 18,
-     "text": "fifteen",
-     "start": 42.36,
-     "end": 42.919
+     "text": "earned",
+     "start": 30.046,
+     "end": 30.408
     },
     {
      "i": 19,
-     "text": "days",
-     "start": 42.919,
-     "end": 43.26
+     "text": "four",
+     "start": 30.408,
+     "end": 30.663
     },
     {
      "i": 20,
-     "text": "of",
-     "start": 43.26,
-     "end": 43.456
+     "text": "thousand",
+     "start": 32.163,
+     "end": 32.548
     },
     {
      "i": 21,
-     "text": "temporary",
-     "start": 43.456,
-     "end": 44.161
+     "text": "dollars",
+     "start": 32.548,
+     "end": 32.89
     },
     {
      "i": 22,
-     "text": "living.",
-     "start": 44.161,
-     "end": 44.648
+     "text": "there.",
+     "start": 32.89,
+     "end": 33.143
     }
    ],
    "chunks": [
     {
-     "start": 32.278,
-     "end": 32.959,
+     "start": 26.173,
+     "end": 26.472,
      "words": [
       0,
       1
      ]
     },
     {
-     "start": 32.959,
-     "end": 34.427,
+     "start": 26.472,
+     "end": 27.047,
      "words": [
       2,
       3,
@@ -834,74 +776,68 @@
      ]
     },
     {
-     "start": 34.427,
-     "end": 35.838,
+     "start": 27.047,
+     "end": 27.591,
      "words": [
       5,
-      6
+      6,
+      7
      ]
     },
     {
-     "start": 37.118,
-     "end": 37.623,
+     "start": 27.591,
+     "end": 27.89,
      "words": [
-      7,
-      8
+      8,
+      9
      ]
     },
     {
-     "start": 37.623,
-     "end": 38.742,
+     "start": 27.89,
+     "end": 28.243,
      "words": [
-      9,
-      10
+      10,
+      11,
+      12
      ]
     },
     {
-     "start": 38.742,
-     "end": 39.2,
+     "start": 28.613,
+     "end": 29.229,
      "words": [
-      11
-     ]
-    },
-    {
-     "start": 39.2,
-     "end": 39.978,
-     "words": [
-      12,
-      13
-     ]
-    },
-    {
-     "start": 40.458,
-     "end": 40.828,
-     "words": [
+      13,
       14
      ]
     },
     {
-     "start": 41.198,
-     "end": 41.618,
+     "start": 29.229,
+     "end": 30.046,
      "words": [
-      15
+      15,
+      16,
+      17
      ]
     },
     {
-     "start": 41.968,
-     "end": 43.26,
+     "start": 30.046,
+     "end": 30.663,
      "words": [
-      16,
-      17,
       18,
       19
      ]
     },
     {
-     "start": 43.26,
-     "end": 44.648,
+     "start": 32.163,
+     "end": 32.89,
      "words": [
       20,
-      21,
+      21
+     ]
+    },
+    {
+     "start": 32.89,
+     "end": 33.143,
+     "words": [
       22
      ]
     }
@@ -909,507 +845,164 @@
   },
   {
    "id": "reveal",
-   "start": 45.049,
-   "end": 56.722,
+   "start": 33.495,
+   "end": 45.627,
    "runs": 7,
-   "clip": 11.673,
+   "clip": 12.132,
    "words": [
     {
      "i": 0,
-     "text": "The",
-     "start": 45.069,
-     "end": 45.297
+     "text": "So",
+     "start": 33.515,
+     "end": 33.764
     },
     {
      "i": 1,
-     "text": "twist:",
-     "start": 45.297,
-     "end": 45.649
+     "text": "she",
+     "start": 33.764,
+     "end": 34.105
     },
     {
      "i": 2,
-     "text": "it",
-     "start": 46.219,
-     "end": 46.411
+     "text": "deducts",
+     "start": 34.715,
+     "end": 35.273
     },
     {
      "i": 3,
-     "text": "only",
-     "start": 46.411,
-     "end": 46.746
+     "text": "four",
+     "start": 35.273,
+     "end": 35.613
     },
     {
      "i": 4,
-     "text": "comes",
-     "start": 46.746,
-     "end": 47.152
+     "text": "thousand",
+     "start": 35.613,
+     "end": 36.244
     },
     {
      "i": 5,
-     "text": "off",
-     "start": 47.152,
-     "end": 47.415
+     "text": "this",
+     "start": 36.244,
+     "end": 36.584
     },
     {
      "i": 6,
-     "text": "income",
-     "start": 47.415,
-     "end": 47.892
+     "text": "year,",
+     "start": 36.584,
+     "end": 36.925
     },
     {
      "i": 7,
-     "text": "earned",
-     "start": 47.892,
-     "end": 48.369
+     "text": "and",
+     "start": 37.105,
+     "end": 37.355
     },
     {
      "i": 8,
-     "text": "at",
-     "start": 48.529,
-     "end": 48.717
+     "text": "carries",
+     "start": 37.355,
+     "end": 37.875
     },
     {
      "i": 9,
      "text": "the",
-     "start": 48.717,
-     "end": 48.974
+     "start": 37.875,
+     "end": 38.125
     },
     {
      "i": 10,
-     "text": "new",
-     "start": 48.974,
-     "end": 49.232
+     "text": "other",
+     "start": 39.105,
+     "end": 39.568
     },
     {
      "i": 11,
-     "text": "job.",
-     "start": 49.232,
-     "end": 49.489
+     "text": "two",
+     "start": 39.568,
+     "end": 39.868
     },
     {
      "i": 12,
-     "text": "Riley",
-     "start": 50.429,
-     "end": 50.76
+     "text": "thousand",
+     "start": 39.868,
+     "end": 40.575
     },
     {
      "i": 13,
-     "text": "started",
-     "start": 50.76,
-     "end": 51.207
+     "text": "forward",
+     "start": 40.865,
+     "end": 41.502
     },
     {
      "i": 14,
-     "text": "in",
-     "start": 51.207,
-     "end": 51.364
+     "text": "to",
+     "start": 41.502,
+     "end": 41.725
     },
     {
      "i": 15,
-     "text": "December",
-     "start": 51.364,
-     "end": 51.869
+     "text": "next",
+     "start": 41.725,
+     "end": 42.114
     },
     {
      "i": 16,
-     "text": "and",
-     "start": 52.139,
-     "end": 52.352
+     "text": "year's",
+     "start": 42.114,
+     "end": 42.585
     },
     {
      "i": 17,
-     "text": "earned",
-     "start": 52.352,
-     "end": 52.738
+     "text": "pay",
+     "start": 43.275,
+     "end": 43.666
     },
     {
      "i": 18,
-     "text": "twenty-five",
-     "start": 52.738,
-     "end": 53.355
+     "text": "from",
+     "start": 43.666,
+     "end": 44.164
     },
     {
      "i": 19,
-     "text": "hundred.",
-     "start": 53.355,
-     "end": 53.799
+     "text": "the",
+     "start": 44.164,
+     "end": 44.555
     },
     {
      "i": 20,
-     "text": "The",
-     "start": 54.449,
-     "end": 54.62
+     "text": "same",
+     "start": 44.795,
+     "end": 45.259
     },
     {
      "i": 21,
-     "text": "other",
-     "start": 54.62,
-     "end": 54.884
-    },
-    {
-     "i": 22,
-     "text": "seventeen",
-     "start": 54.884,
-     "end": 55.333
-    },
-    {
-     "i": 23,
-     "text": "hundred",
-     "start": 55.333,
-     "end": 55.689
-    },
-    {
-     "i": 24,
-     "text": "carries",
-     "start": 55.929,
-     "end": 56.324
-    },
-    {
-     "i": 25,
-     "text": "forward.",
-     "start": 56.324,
-     "end": 56.719
+     "text": "job.",
+     "start": 45.259,
+     "end": 45.625
     }
    ],
    "chunks": [
     {
-     "start": 45.069,
-     "end": 45.649,
+     "start": 33.515,
+     "end": 34.105,
      "words": [
       0,
       1
      ]
     },
     {
-     "start": 46.219,
-     "end": 47.152,
+     "start": 34.715,
+     "end": 35.613,
      "words": [
       2,
-      3,
-      4
-     ]
-    },
-    {
-     "start": 47.152,
-     "end": 48.717,
-     "words": [
-      5,
-      6,
-      7,
-      8
-     ]
-    },
-    {
-     "start": 48.717,
-     "end": 49.489,
-     "words": [
-      9,
-      10,
-      11
-     ]
-    },
-    {
-     "start": 50.429,
-     "end": 51.207,
-     "words": [
-      12,
-      13
-     ]
-    },
-    {
-     "start": 51.207,
-     "end": 51.869,
-     "words": [
-      14,
-      15
-     ]
-    },
-    {
-     "start": 52.139,
-     "end": 52.738,
-     "words": [
-      16,
-      17
-     ]
-    },
-    {
-     "start": 52.738,
-     "end": 53.799,
-     "words": [
-      18,
-      19
-     ]
-    },
-    {
-     "start": 54.449,
-     "end": 54.884,
-     "words": [
-      20,
-      21
-     ]
-    },
-    {
-     "start": 54.884,
-     "end": 55.689,
-     "words": [
-      22,
-      23
-     ]
-    },
-    {
-     "start": 55.929,
-     "end": 56.719,
-     "words": [
-      24,
-      25
-     ]
-    }
-   ]
-  },
-  {
-   "id": "action",
-   "start": 57.022,
-   "end": 62.34,
-   "runs": 4,
-   "clip": 5.318,
-   "words": [
-    {
-     "i": 0,
-     "text": "So",
-     "start": 57.022,
-     "end": 57.382
-    },
-    {
-     "i": 1,
-     "text": "measure",
-     "start": 57.552,
-     "end": 58.013
-    },
-    {
-     "i": 2,
-     "text": "the",
-     "start": 58.013,
-     "end": 58.234
-    },
-    {
-     "i": 3,
-     "text": "route",
-     "start": 58.234,
-     "end": 58.575
-    },
-    {
-     "i": 4,
-     "text": "before",
-     "start": 58.575,
-     "end": 58.977
-    },
-    {
-     "i": 5,
-     "text": "you",
-     "start": 58.977,
-     "end": 59.198
-    },
-    {
-     "i": 6,
-     "text": "sign",
-     "start": 59.198,
-     "end": 59.479
-    },
-    {
-     "i": 7,
-     "text": "the",
-     "start": 59.479,
-     "end": 59.701
-    },
-    {
-     "i": 8,
-     "text": "lease,",
-     "start": 59.701,
-     "end": 60.042
-    },
-    {
-     "i": 9,
-     "text": "and",
-     "start": 60.382,
-     "end": 60.607
-    },
-    {
-     "i": 10,
-     "text": "keep",
-     "start": 60.607,
-     "end": 60.892
-    },
-    {
-     "i": 11,
-     "text": "every",
-     "start": 61.122,
-     "end": 61.637
-    },
-    {
-     "i": 12,
-     "text": "receipt.",
-     "start": 61.637,
-     "end": 62.332
-    }
-   ],
-   "chunks": [
-    {
-     "start": 57.022,
-     "end": 58.234,
-     "words": [
-      0,
-      1,
-      2
-     ]
-    },
-    {
-     "start": 58.234,
-     "end": 59.198,
-     "words": [
-      3,
-      4,
-      5
-     ]
-    },
-    {
-     "start": 59.198,
-     "end": 60.042,
-     "words": [
-      6,
-      7,
-      8
-     ]
-    },
-    {
-     "start": 60.382,
-     "end": 60.892,
-     "words": [
-      9,
-      10
-     ]
-    },
-    {
-     "start": 61.122,
-     "end": 62.332,
-     "words": [
-      11,
-      12
-     ]
-    }
-   ]
-  },
-  {
-   "id": "cta",
-   "start": 62.64,
-   "end": 68.174,
-   "runs": 4,
-   "clip": 5.534,
-   "words": [
-    {
-     "i": 0,
-     "text": "Next:",
-     "start": 62.65,
-     "end": 63.07
-    },
-    {
-     "i": 1,
-     "text": "first-time",
-     "start": 63.45,
-     "end": 64.089
-    },
-    {
-     "i": 2,
-     "text": "home",
-     "start": 64.089,
-     "end": 64.399
-    },
-    {
-     "i": 3,
-     "text": "buyers,",
-     "start": 64.399,
-     "end": 64.84
-    },
-    {
-     "i": 4,
-     "text": "and",
-     "start": 65.12,
-     "end": 65.327
-    },
-    {
-     "i": 5,
-     "text": "what",
-     "start": 65.327,
-     "end": 65.59
-    },
-    {
-     "i": 6,
-     "text": "changed.",
-     "start": 65.59,
-     "end": 66.02
-    },
-    {
-     "i": 7,
-     "text": "Follow",
-     "start": 66.85,
-     "end": 67.201
-    },
-    {
-     "i": 8,
-     "text": "so",
-     "start": 67.201,
-     "end": 67.343
-    },
-    {
-     "i": 9,
-     "text": "you",
-     "start": 67.343,
-     "end": 67.536
-    },
-    {
-     "i": 10,
-     "text": "don't",
-     "start": 67.536,
-     "end": 67.783
-    },
-    {
-     "i": 11,
-     "text": "miss",
-     "start": 67.783,
-     "end": 68.029
-    },
-    {
-     "i": 12,
-     "text": "it.",
-     "start": 68.029,
-     "end": 68.17
-    }
-   ],
-   "chunks": [
-    {
-     "start": 62.65,
-     "end": 63.07,
-     "words": [
-      0
-     ]
-    },
-    {
-     "start": 63.45,
-     "end": 64.399,
-     "words": [
-      1,
-      2
-     ]
-    },
-    {
-     "start": 64.399,
-     "end": 64.84,
-     "words": [
       3
      ]
     },
     {
-     "start": 65.12,
-     "end": 66.02,
+     "start": 35.613,
+     "end": 36.925,
      "words": [
       4,
       5,
@@ -1417,8 +1010,8 @@
      ]
     },
     {
-     "start": 66.85,
-     "end": 67.536,
+     "start": 37.105,
+     "end": 38.125,
      "words": [
       7,
       8,
@@ -1426,8 +1019,312 @@
      ]
     },
     {
-     "start": 67.536,
-     "end": 68.17,
+     "start": 39.105,
+     "end": 40.575,
+     "words": [
+      10,
+      11,
+      12
+     ]
+    },
+    {
+     "start": 40.865,
+     "end": 42.585,
+     "words": [
+      13,
+      14,
+      15,
+      16
+     ]
+    },
+    {
+     "start": 43.275,
+     "end": 44.164,
+     "words": [
+      17,
+      18
+     ]
+    },
+    {
+     "start": 44.164,
+     "end": 45.625,
+     "words": [
+      19,
+      20,
+      21
+     ]
+    }
+   ]
+  },
+  {
+   "id": "action",
+   "start": 45.927,
+   "end": 51.439,
+   "runs": 5,
+   "clip": 5.512,
+   "words": [
+    {
+     "i": 0,
+     "text": "Keep",
+     "start": 45.927,
+     "end": 46.297
+    },
+    {
+     "i": 1,
+     "text": "every",
+     "start": 46.477,
+     "end": 46.862
+    },
+    {
+     "i": 2,
+     "text": "receipt,",
+     "start": 46.862,
+     "end": 47.382
+    },
+    {
+     "i": 3,
+     "text": "and",
+     "start": 47.382,
+     "end": 47.632
+    },
+    {
+     "i": 4,
+     "text": "if",
+     "start": 47.632,
+     "end": 47.815
+    },
+    {
+     "i": 5,
+     "text": "your",
+     "start": 47.815,
+     "end": 48.132
+    },
+    {
+     "i": 6,
+     "text": "employer",
+     "start": 48.132,
+     "end": 48.72
+    },
+    {
+     "i": 7,
+     "text": "paid",
+     "start": 48.72,
+     "end": 49.037
+    },
+    {
+     "i": 8,
+     "text": "you",
+     "start": 49.417,
+     "end": 49.642
+    },
+    {
+     "i": 9,
+     "text": "back,",
+     "start": 49.642,
+     "end": 49.927
+    },
+    {
+     "i": 10,
+     "text": "don't",
+     "start": 50.187,
+     "end": 50.409
+    },
+    {
+     "i": 11,
+     "text": "claim",
+     "start": 50.409,
+     "end": 50.677
+    },
+    {
+     "i": 12,
+     "text": "that",
+     "start": 50.837,
+     "end": 51.137
+    },
+    {
+     "i": 13,
+     "text": "part.",
+     "start": 51.137,
+     "end": 51.437
+    }
+   ],
+   "chunks": [
+    {
+     "start": 45.927,
+     "end": 47.382,
+     "words": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "start": 47.382,
+     "end": 47.815,
+     "words": [
+      3,
+      4
+     ]
+    },
+    {
+     "start": 47.815,
+     "end": 49.037,
+     "words": [
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "start": 49.417,
+     "end": 49.927,
+     "words": [
+      8,
+      9
+     ]
+    },
+    {
+     "start": 50.187,
+     "end": 51.437,
+     "words": [
+      10,
+      11,
+      12,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "start": 51.739,
+   "end": 57.472,
+   "runs": 4,
+   "clip": 5.734,
+   "words": [
+    {
+     "i": 0,
+     "text": "Next:",
+     "start": 51.749,
+     "end": 52.169
+    },
+    {
+     "i": 1,
+     "text": "first-time",
+     "start": 52.559,
+     "end": 53.23
+    },
+    {
+     "i": 2,
+     "text": "home",
+     "start": 53.23,
+     "end": 53.555
+    },
+    {
+     "i": 3,
+     "text": "buyers,",
+     "start": 53.555,
+     "end": 54.019
+    },
+    {
+     "i": 4,
+     "text": "and",
+     "start": 54.309,
+     "end": 54.525
+    },
+    {
+     "i": 5,
+     "text": "what",
+     "start": 54.525,
+     "end": 54.799
+    },
+    {
+     "i": 6,
+     "text": "changed.",
+     "start": 54.799,
+     "end": 55.249
+    },
+    {
+     "i": 7,
+     "text": "Follow",
+     "start": 56.109,
+     "end": 56.47
+    },
+    {
+     "i": 8,
+     "text": "so",
+     "start": 56.47,
+     "end": 56.616
+    },
+    {
+     "i": 9,
+     "text": "you",
+     "start": 56.616,
+     "end": 56.815
+    },
+    {
+     "i": 10,
+     "text": "don't",
+     "start": 56.815,
+     "end": 57.069
+    },
+    {
+     "i": 11,
+     "text": "miss",
+     "start": 57.069,
+     "end": 57.323
+    },
+    {
+     "i": 12,
+     "text": "it.",
+     "start": 57.323,
+     "end": 57.468
+    }
+   ],
+   "chunks": [
+    {
+     "start": 51.749,
+     "end": 52.169,
+     "words": [
+      0
+     ]
+    },
+    {
+     "start": 52.559,
+     "end": 53.555,
+     "words": [
+      1,
+      2
+     ]
+    },
+    {
+     "start": 53.555,
+     "end": 54.019,
+     "words": [
+      3
+     ]
+    },
+    {
+     "start": 54.309,
+     "end": 55.249,
+     "words": [
+      4,
+      5,
+      6
+     ]
+    },
+    {
+     "start": 56.109,
+     "end": 56.815,
+     "words": [
+      7,
+      8,
+      9
+     ]
+    },
+    {
+     "start": 56.815,
+     "end": 57.468,
      "words": [
       10,
       11,

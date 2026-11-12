@@ -1,120 +1,115 @@
 [
  {
-  "t": 2.63,
+  "t": 5.19,
   "sound": "tick",
   "gain": 1.0
  },
  {
-  "t": 5.02,
-  "sound": "whoosh",
-  "gain": 1.0
- },
- {
-  "t": 6.72,
+  "t": 10.292,
   "sound": "riser",
   "gain": 0.65,
   "dur": 0.45
  },
  {
-  "t": 6.72,
+  "t": 10.292,
   "sound": "impact",
   "gain": 0.65,
   "dur": 0.45
  },
  {
-  "t": 10.684,
+  "t": 11.079,
   "sound": "swish",
   "gain": 1.0
  },
  {
-  "t": 15.408,
-  "sound": "tick",
-  "gain": 1.0
- },
- {
-  "t": 17.207,
-  "sound": "swish",
-  "gain": 1.0
- },
- {
-  "t": 20.237,
+  "t": 12.837,
   "sound": "chime",
   "gain": 1.0
  },
  {
-  "t": 25.242,
-  "sound": "swish",
-  "gain": 1.0
- },
- {
-  "t": 28.418,
+  "t": 16.796,
   "sound": "tick",
   "gain": 1.0
  },
  {
-  "t": 31.012,
+  "t": 17.832,
+  "sound": "swish",
+  "gain": 1.0
+ },
+ {
+  "t": 20.13,
+  "sound": "tick",
+  "gain": 1.0
+ },
+ {
+  "t": 21.3,
+  "sound": "tick",
+  "gain": 1.0
+ },
+ {
+  "t": 22.901,
+  "sound": "tick",
+  "gain": 1.0
+ },
+ {
+  "t": 25.481,
+  "sound": "chime",
+  "gain": 1.0
+ },
+ {
+  "t": 26.163,
+  "sound": "swish",
+  "gain": 1.0
+ },
+ {
+  "t": 26.898,
   "sound": "whoosh",
   "gain": 1.0
  },
  {
-  "t": 32.268,
-  "sound": "swish",
-  "gain": 1.0
- },
- {
-  "t": 32.578,
+  "t": 29.375,
   "sound": "tick",
   "gain": 1.0
  },
  {
-  "t": 34.427,
+  "t": 30.408,
   "sound": "riser",
   "gain": 0.65,
   "dur": 0.45
  },
  {
-  "t": 34.427,
+  "t": 30.408,
   "sound": "impact",
   "gain": 0.65,
   "dur": 0.45
  },
  {
-  "t": 37.623,
-  "sound": "chime",
-  "gain": 1.0
- },
- {
-  "t": 45.049,
+  "t": 33.495,
   "sound": "swish",
   "gain": 1.0
  },
  {
-  "t": 51.364,
-  "sound": "tick",
-  "gain": 1.0
- },
- {
-  "t": 52.738,
+  "t": 35.273,
   "sound": "chime",
   "gain": 1.0
  },
  {
-  "t": 54.884,
+  "t": 37.355,
   "sound": "whoosh",
   "gain": 1.0
  },
  {
-  "t": 57.552,
+  "t": 45.927,
   "sound": "tick",
   "gain": 1.0
  },
  {
-  "t": 62.65,
+  "t": 51.749,
   "sound": "whoosh",
   "gain": 1.0
  },
  {
-  "t": 68.274,
+  "t": 57.572,
   "sound": "logo",
   "gain": 1.0
  }
