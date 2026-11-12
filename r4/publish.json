@@ -1,12 +1,15 @@
 {
  "video": {
   "title": "R4 · moving expenses: not all this year",
-  "duration": "",
+  "duration": "0:58 (58.00 s), 1080×1920, 24 fps",
   "mp4": "showreel/out/r4/r4-final.mp4 (share copy: r4-share.mp4)"
  },
  "cover": {
   "frame": "'THE CATCH': $6,000 expense stack vs $4,000 new-job pay with the cap line, red stamp 'ONLY $4,000 THIS YEAR', Maya at the moving van",
-  "why": "the catch and the numbers in one frame"
+  "why": "the catch and the numbers in one frame",
+  "t": 32.01,
+  "ms": 32010,
+  "file": "r4/cover.jpg (extracted at 32.01 s from the final render)"
  },
  "sources": [
   {
