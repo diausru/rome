@@ -977,4 +977,44 @@ const PingHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook };
+// ---------- TwinHook: frame-0 hook — two payroll "windows" (JOB A / JOB B) each believing its job is the only income, both granting the basic personal amount; withheld counters roll; then a combined bar REAL TAX vs WITHHELD with a red "OWES" gap; title flips ----------
+// p.jobs[{name, pay, withheld}] · p.real · p.withheld · p.rollAt · p.gapAt · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const TwinHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const jobs = p.jobs as Pn[]; const ro = p.rollAt ? prog(now, p.rollAt.t, 1.4, EX) : 0; const gp = p.gapAt ? prog(now, p.gapAt.t, 1.0, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const X0 = 300, W = 1320, sc = W / (p.real as number);
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.74})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 80, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: 1 - out }}>
+        {jobs.map((j, i) => { const k = prog(now, p.t + 0.3 + i * 0.4, 0.7, BACK); const x = 300 + i * 680;
+          return <div key={i} style={{ position: 'absolute', left: x, top: 260, width: 640, height: 300, borderRadius: 18, background: 'rgba(244,241,234,.09)', border: '1px solid rgba(255,255,255,.18)', backdropFilter: 'blur(8px)', fontFamily: COND, padding: '22px 30px', boxSizing: 'border-box', opacity: cl(k * 2) * (1 - 0.35 * gp), transform: `translateY(${(1 - k) * 50}px)` }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}><span style={{ fontSize: 34, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{j.name} · PAYROLL</span><span style={{ fontSize: 20, letterSpacing: 3, color: C.dim }}>SEES ONE JOB</span></div>
+            <div style={{ fontSize: 22, letterSpacing: 4, color: C.dim, marginTop: 14 }}>THINKS YOUR WHOLE INCOME IS</div>
+            <div style={{ fontSize: 58, fontWeight: 700, color: C.gold, lineHeight: 1 }}>{fmt(j.pay)}</div>
+            <div style={{ marginTop: 14, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
+              <div><div style={{ fontSize: 22, letterSpacing: 4, color: C.dim }}>TAX WITHHELD · YEAR</div><div style={{ fontSize: 50, fontWeight: 700, color: C.white, lineHeight: 1 }}>{fmt(j.withheld * ro)}</div></div>
+              <div style={{ padding: '6px 14px', borderRadius: 10, border: `2px solid ${C.green}`, color: C.green, fontSize: 22, letterSpacing: 2 }}>✓ BASIC PERSONAL AMOUNT</div></div>
+          </div>; })}
+        {gp > 0.02 && <div style={{ opacity: cl(gp * 1.5) }}>
+          <div style={{ position: 'absolute', left: X0, top: 620, fontFamily: COND, fontSize: 24, letterSpacing: 4, color: C.dim }}>ON HER RETURN · BOTH JOBS TOGETHER · REAL INCOME TAX</div>
+          <div style={{ position: 'absolute', left: X0, top: 660, width: W * gp, height: 70, borderRadius: 10, background: 'rgba(244,241,234,.85)' }} />
+          <div style={{ position: 'absolute', left: X0, top: 660, width: (p.withheld as number) * sc * gp, height: 70, borderRadius: '10px 0 0 10px', background: 'linear-gradient(90deg,#C9A055,#F1D38E)' }} />
+          <div style={{ position: 'absolute', left: X0 + 20, top: 672, fontFamily: COND, fontSize: 40, fontWeight: 700, color: C.navy }}>WITHHELD {fmt(p.withheld)}</div>
+          <div style={{ position: 'absolute', left: X0, width: W, top: 742, textAlign: 'right', fontFamily: COND, fontSize: 30, color: C.white, letterSpacing: 2 }}>REAL TAX {fmt(p.real)}</div>
+          <div style={{ position: 'absolute', left: X0 + (p.withheld as number) * sc, width: W - (p.withheld as number) * sc, top: 800, textAlign: 'center', fontFamily: COND, transform: `scale(${0.7 + 0.3 * gp})` }}>
+            <span style={{ display: 'inline-block', padding: '8px 28px', borderRadius: 14, border: `4px solid ${C.red}`, color: C.red, fontSize: 64, fontWeight: 700, background: 'rgba(7,11,20,.6)' }}>OWES {fmt((p.real as number) - (p.withheld as number))}</span></div>
+        </div>}
+      </div>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook };

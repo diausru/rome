@@ -1,0 +1,18 @@
+{
+ "jobA": 45000,
+ "jobB": 30000,
+ "total": 75000,
+ "wA": 5243,
+ "wB": 2452,
+ "withheld": 7695,
+ "real": 12705,
+ "short": 5010,
+ "wB0": 5411,
+ "withheld0": 10654,
+ "short0": 2050,
+ "extra_pp": 193,
+ "extra_pp0": 79,
+ "ei_paid": 1222.5,
+ "ei_max": 1123.07,
+ "ei_refund": 99.43
+}

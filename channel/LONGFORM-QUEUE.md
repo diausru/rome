@@ -23,7 +23,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 | 12 | What Happens to Your Paycheque When You Get a $20,000 Bonus? | rendered LF-12 (2026-10-25) |
 | 13 | Why Your $100K Salary Does NOT Mean You Have $100K of Taxable Income | rendered LF-22 (2026-11-06, `longform/lf22-taxable`) |
 | 14 | You Have a Side Hustle in Canada — What Actually Gets Taxed? | rendered LF-23 (2026-11-09, `longform/lf23-side`) |
-| 15 | What Happens When You Work Two Jobs in Canada? | queued |
+| 15 | What Happens When You Work Two Jobs in Canada? | rendered LF-24 (2026-11-12, `longform/lf24-twojobs`) |
 | 16 | The Complete Canadian Tax Year — From Your First Paycheque to Your Tax Return | queued |
 
 ## Series 3 — What If?
@@ -136,7 +136,8 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 21. LF-21 → #9 Capital Gains Tax in Canada Explained With a Real Example — rendered 2026-11-05 (proposed 2027-04-19)
 22. LF-22 → #13 Why Your $100K Salary Does NOT Mean You Have $100K of Taxable Income — rendered 2026-11-06 (proposed 2027-04-29)
 23. LF-23 → #14 You Have a Side Hustle in Canada — What Actually Gets Taxed? — rendered 2026-11-09 (proposed 2027-05-09)
-24. LF-24 → #15 What Happens When You Work Two Jobs in Canada? — queued
+24. LF-24 → #15 What Happens When You Work Two Jobs in Canada? — rendered 2026-11-12 (proposed 2027-05-19)
+25. LF-25 → #16 The Complete Canadian Tax Year — From Your First Paycheque to Your Tax Return — queued
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)
 Not a stretched Short and not a re-cut of one: a new question, a new story, new examples and a new visual approach. Already covered by Shorts (do not repeat their angle, hook, examples or visuals):
