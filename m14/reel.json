@@ -1,0 +1,229 @@
+{
+ "id": "m14",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "THE DEPOSIT",
+  "l2": "DIDN'T COME. WHY?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "cards": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "sort": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "miss",
+   "beat": "hook",
+   "word": "didn't",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "four",
+   "beat": "hook",
+   "word": "four",
+   "sfx": "tick"
+  },
+  {
+   "id": "money",
+   "beat": "hook",
+   "word": "money.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "spouse",
+   "beat": "c1",
+   "word": "spouse's.",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "july",
+   "beat": "c2",
+   "word": "July",
+   "sfx": "tick"
+  },
+  {
+   "id": "later",
+   "beat": "c2",
+   "word": "later."
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "march",
+   "beat": "c3",
+   "word": "March",
+   "sfx": "tick"
+  },
+  {
+   "id": "april",
+   "beat": "c3",
+   "word": "April.",
+   "sfx": "chime"
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "added",
+   "beat": "c4",
+   "word": "added,"
+  },
+  {
+   "id": "adj",
+   "beat": "c4",
+   "word": "adjusted",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "age",
+   "beat": "reveal",
+   "word": "eighteen,",
+   "sfx": "tick"
+  },
+  {
+   "id": "twist",
+   "beat": "reveal",
+   "word": "twist:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "earn",
+   "beat": "reveal",
+   "word": "earn.",
+   "sfx": "chime"
+  },
+  {
+   "id": "check",
+   "beat": "action",
+   "word": "check",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "adjusted",
+   "offset": 1.0
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "pension"
+}

@@ -1,0 +1,22 @@
+{
+ "topic": "Why benefits stop or drop — four common causes: (1) a return not filed (yours or your spouse's/common-law partner's); (2) income went up — benefits recalculated every July from last year's return; (3) marital status changed — tell the CRA by the end of the month after the change; CCB adjusted starting the month after; new spouse's income added; (4) a child turned 18 — CCB for that child stops",
+ "tax_year": 2026,
+ "example": {
+  "year": 2026,
+  "count": 4,
+  "age": 18,
+  "note": "example (not a CRA rule): Dana married in March 2026 → must tell the CRA by the end of April 2026; her CCB is adjusted starting April 2026, with her spouse's income added to adjusted family net income."
+ },
+ "derive": {},
+ "spoken": {
+  "count": "four",
+  "age": "eighteen"
+ },
+ "sources": {
+  "file": "CRA 5000-G (2025): file to begin or continue receiving benefits; if you have a spouse or common-law partner, they also have to file (used in m2)",
+  "july": "canada.ca CRA CCB how much: recalculated every July from the prior year's adjusted family net income (used in m7)",
+  "marital": "canada.ca CRA Marital status / Keep getting your payments (CCB): tell the CRA by the end of the month after your status changed (My Account, phone, Form RC65); CCB adjusted starting with the month following the change; separated: wait until separated more than 90 consecutive days",
+  "age18": "canada.ca CRA Keep getting your payments – CCB: 'Your child turned 18' among the reasons payments stop or change"
+ },
+ "unverified": "moving / address change as a cause not confirmed in excerpts — not used. www.canada.ca not fetchable from this session"
+}

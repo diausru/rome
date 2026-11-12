@@ -1,0 +1,87 @@
+{
+ "video": {
+  "title": "M14 · The deposit didn't come: 4 reasons",
+  "mp4": "showreel/out/m14/m14-final.mp4 (share copy: m14-share.mp4)",
+  "duration": "1:07 (67.08 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'DANA'S CCB': reason tiles 1–3 with #3 lit, the MAR → APR (tell CRA by Apr 30) → FROM APR (CCB adjusted) timeline, '+ new spouse's income', 'REPORT BY END OF NEXT MONTH' stamp, Dana at the wedding",
+  "why": "the reasons and the worked case in one frame",
+  "t": 41.47,
+  "ms": 41470,
+  "file": "m14/cover.jpg (extracted at 41.47 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "CRA 5000-G Federal Income Tax and Benefit Information 2025",
+   "year": "2025",
+   "supports": "file to begin or keep benefits; a spouse or common-law partner also has to file"
+  },
+  {
+   "source": "canada.ca CRA CCB how much",
+   "year": "July 2026–June 2027",
+   "supports": "recalculated every July from the prior year's adjusted family net income"
+  },
+  {
+   "source": "canada.ca CRA Marital status; Keep getting your payments (CCB)",
+   "year": "2026",
+   "supports": "tell the CRA by the end of the month after the change; CCB adjusted from the month after; a child turning 18 is a reason payments stop"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "Why Did My CRA Benefits Stop? 4 Common Reasons (Canada)",
+   "CCB Payment Didn't Come? Check These 4 Things First",
+   "Got Married? Tell the CRA by the End of Next Month (Benefits)"
+  ],
+  "description": "The deposit didn't come. No letter, no call. It's usually one of four things, and only one is about money.\n\n1) A return wasn't filed: yours or your spouse's. No return, no benefit.\n2) Your income went up: every July the CRA recalculates from last year's return, so a raise shows up a year later.\n3) Your marital status changed: e.g. married in March 2026 → tell the CRA by the end of April. Your new spouse's income is added, and the CCB is adjusted starting the month after the change.\n4) A child turned 18: that child's CCB stops.\n\nThe twist: only one of the four is about how much you earn.\n\nCheck your messages in CRA My Account before you call.\n\nNext: is a second job worth it after tax and benefit cuts?\n\nSources: canada.ca (CRA) Keep getting your payments (CCB); Marital status; CCB how much; Federal Income Tax and Benefit Information 2025. Example. General information, not advice.\n\n#CCB #CRA #CanadaTax",
+  "hashtags": "#CCB #CRA #CanadaTax #Benefits",
+  "keywords": "why did my ccb stop, cra benefits stopped, ccb payment didn't come, marital status change cra, ccb child turns 18, benefits recalculated july",
+  "pinned": "Quick check: separated in June. When do you tell the CRA? (After 90 consecutive days apart, then by the end of the following month) General info, not advice.",
+  "cta": "Follow for the next one: is a second job worth it?"
+ },
+ "tt": {
+  "caption": "The CRA deposit didn't come? 4 usual reasons, and only 1 is about money 📭",
+  "keywords": "ccb stopped · cra benefits stopped · marital status cra",
+  "hashtags": "#ccb #canadiantaxes #cra #parentsofcanada #personalfinancecanada",
+  "pinned": "Got married? Tell the CRA by the end of the next month. (General info, not advice.)",
+  "cta": "Follow for the next one: is a second job worth it?"
+ },
+ "ig": {
+  "caption": "The deposit didn't come? 📭🇨🇦\n\n4 usual reasons:\n1️⃣ A return wasn't filed (yours or your spouse's)\n2️⃣ Income went up (recalculated every July)\n3️⃣ Marital status changed (tell the CRA by the end of next month)\n4️⃣ A child turned 18\nOnly one is about money.\n✅ Check CRA My Account messages first\n\nSend this to a friend whose payment vanished.\n\nSource: CRA (canada.ca). General info, not advice.",
+  "keywords": "ccb stopped, cra benefits, marital status",
+  "hashtags": "#ccb #canadiantaxes #cra #personalfinancecanada #canadatax #momsofcanada",
+  "pinned": "Save this for the next missing deposit 📌",
+  "cta": "Send this to a friend whose payment vanished."
+ },
+ "eng": {
+  "question": "Separated in June: when do you tell the CRA? (after 90 days, then by end of next month)",
+  "save": "The 4 reasons checklist.",
+  "share": "Anyone whose CRA deposit vanished.",
+  "follow": "Canadian tax and benefit rules with real numbers."
+ },
+ "seo": {
+  "primary": "why did my ccb stop",
+  "secondary": "vidIQ CA: seed <750/mo; 'ccb' 156K/mo (mixed intent)",
+  "intent": "People whose benefit payment stopped or dropped.",
+  "audience": "Parents and benefit recipients 25–50.",
+  "angle": "four causes; marital-status timing; only one is about income.",
+  "questions": "Why did my CCB stop? Do I have to tell the CRA I got married? What happens when my child turns 18?"
+ },
+ "next": [
+  {
+   "topic": "Two jobs worth it after tax and benefit cuts (#15)",
+   "why": "Bridge",
+   "intent": "second job worth it canada tax",
+   "hook": "extra $10K, how much stays",
+   "angle": "tax + benefit reductions",
+   "payoff": "real keep rate"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #14, bridged from M2. Playlist: 'Benefits & credits'.",
+ "research": {
+  "vidiq": "balance 2,013 before; 1 keyword_research CA",
+  "nexlev": "youtube_search shorts CA: no direct 'why CCB stopped' explainer in top results; CCB application Shorts 4–12K views"
+ },
+ "retention": "Frame 0 'THE DEPOSIT DIDN'T COME. WHY?'; monthly chips with a missing one (red ?) at 1 s; '4 USUAL REASONS' 6 s; tiles light 9 s / 17 s / 27 s; Dana timeline MAR → APR 32–37 s; spouse income 39 s; 'REPORT BY END OF NEXT MONTH' stamp 40.5 s (re-hook, ≈60 %); reason 4 at 46 s; sort reveal 50–55 s ('only 1 of 4 is about income'); check card + next pill."
+}

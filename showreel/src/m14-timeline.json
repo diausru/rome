@@ -1,0 +1,53 @@
+{
+ "total": 66.573,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "The deposit didn't come. No letter, no call. It's usually one of four things, and only one is about money.",
+   "start": 0.25,
+   "end": 8.639
+  },
+  {
+   "id": "c1",
+   "text": "One: a return wasn't filed. Yours, or your spouse's. No return, no benefit.",
+   "start": 8.989,
+   "end": 16.626
+  },
+  {
+   "id": "c2",
+   "text": "Two: your income went up. Every July the CRA recalculates from last year's return, so a raise shows up a year later.",
+   "start": 16.926,
+   "end": 26.855
+  },
+  {
+   "id": "c3",
+   "text": "Three: your marital status changed. Dana got married in March twenty twenty-six. She has to tell the CRA by the end of April.",
+   "start": 27.155,
+   "end": 37.004
+  },
+  {
+   "id": "c4",
+   "text": "Her new spouse's income gets added, and the benefit is adjusted starting the month after the change.",
+   "start": 37.304,
+   "end": 43.391
+  },
+  {
+   "id": "reveal",
+   "text": "Four: a child turned eighteen, and that child's benefit stops. The twist: only one of the four is about how much you earn.",
+   "start": 43.791,
+   "end": 55.488
+  },
+  {
+   "id": "action",
+   "text": "So check your messages in My Account before you call.",
+   "start": 55.788,
+   "end": 58.845
+  },
+  {
+   "id": "cta",
+   "text": "Next: is a second job worth it after tax and benefit cuts? Follow so you don't miss it.",
+   "start": 59.145,
+   "end": 66.573
+  }
+ ]
+}

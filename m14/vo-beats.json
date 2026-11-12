@@ -1,0 +1,14 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  ["hook", "The deposit didn't come. No letter, no call. It's usually one of four things, and only one is about money.", 0.35],
+  ["c1", "One: a return wasn't filed. Yours, or your spouse's. No return, no benefit.", 0.3],
+  ["c2", "Two: your income went up. Every July the CRA recalculates from last year's return, so a raise shows up a year later.", 0.3],
+  ["c3", "Three: your marital status changed. Dana got married in March twenty twenty-six. She has to tell the CRA by the end of April.", 0.3],
+  ["c4", "Her new spouse's income gets added, and the benefit is adjusted starting the month after the change.", 0.4],
+  ["reveal", "Four: a child turned eighteen, and that child's benefit stops. The twist: only one of the four is about how much you earn.", 0.3],
+  ["action", "So check your messages in My Account before you call.", 0.3],
+  ["cta", "Next: is a second job worth it after tax and benefit cuts? Follow so you don't miss it.", 0.0]
+ ]
+}

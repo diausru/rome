@@ -13,8 +13,8 @@ Details per topic: channel/TOPICS-2.md (by #). Check overlap: `grep -ril "<keywo
 | 8 | GST/HST credit (now Canada Groceries and Essentials Benefit) | done 2026-11-06 (M8) | 7 |
 | 9 | Canada Workers Benefit | done 2026-11-09 (M9) | 8 |
 | 2 | Friend got benefits, I got nothing | done 2026-11-12 (M2) | 9 |
-| 14 | Why benefits stopped or dropped | next | 2 |
-| 15 | Two jobs worth it after tax and benefit cuts | todo | |
+| 14 | Why benefits stopped or dropped | done 2026-11-12 (M14) | 2 |
+| 15 | Two jobs worth it after tax and benefit cuts | next | 14 |
 | 17 | Part-time vs full-time: CWB/CCB/GST | todo | |
 | 18 | Why January's paycheque shrinks | todo | |
 | 12 | OAS: residence years and age 75 | todo | |
@@ -24,4 +24,4 @@ Details per topic: channel/TOPICS-2.md (by #). Check overlap: `grep -ril "<keywo
 | 25 | Employees: T2200 home office, phone, car | todo | |
 | 5 | Why I owe with two jobs (withholding) | todo | |
 
-Done: 2 (M2), 9 (M9), 8 (M8), 7 (M7), 26 (M26), 3 (M3), 10 (M10), 29 (M29), R4, R3, R5, R1, R2, 30 (M30), 1 (A2), 6 (A5), 23 (A1).
+Done: 14 (M14), 2 (M2), 9 (M9), 8 (M8), 7 (M7), 26 (M26), 3 (M3), 10 (M10), 29 (M29), R4, R3, R5, R1, R2, 30 (M30), 1 (A2), 6 (A5), 23 (A1).
