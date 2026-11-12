@@ -94,7 +94,7 @@ const Route = ({ f }: { f: number }) => {
               <div style={{ position: 'absolute', left: 560, width: 300, top: top + H - X.income_new * sc - 56, textAlign: 'center', fontFamily: T.font, fontSize: 40, fontWeight: 900, color: GREEN, opacity: ease(f, Q.four - 2, Q.four + 8) }}>{money(X.income_new)}</div>
             </>
           )}
-          {f >= Q.four + 6 && <Stamp f={f} at={Q.four + 6} text={`ONLY ${money(X.income_new)} THIS YEAR`} x={130} y={y + 40} size={28} color={T.red} rotate={-4} />}
+          {f >= Q.four + 6 && <Stamp f={f} at={Q.four + 6} text={`ONLY ${money(X.income_new)} THIS YEAR`} x={520} y={y + 40} size={28} color={T.red} rotate={-4} />}
         </>
       )}
     </div>
