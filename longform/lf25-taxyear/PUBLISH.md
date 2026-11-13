@@ -1,5 +1,5 @@
 # LF-25 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** filled after render.
+**QC (2026-11-13):** 497.2 s (8:17), −13.8 LUFS, no black frames, contact sheet checked.
 **File:** `LF25-1080p.mp4` · 1920×1080 · 30 fps · ≈8:17 · VO Grady (64 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** YearHook (new). **Thumbnail:** made by the user.
