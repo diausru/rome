@@ -1,0 +1,53 @@
+{
+ "total": 65.152,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "A weekend job: ten thousand dollars more. The tax bracket says you keep eighty-six percent. The real number is closer to two thirds.",
+   "start": 0.25,
+   "end": 9.856
+  },
+  {
+   "id": "c1",
+   "text": "Kai's family earns fifty thousand, with two kids. The extra ten thousand gets hit three ways.",
+   "start": 10.206,
+   "end": 17.522
+  },
+  {
+   "id": "c2",
+   "text": "Federal tax first: fourteen percent, and the last fourteen hundred and seventy-seven dollars at twenty and a half. About fifteen hundred dollars.",
+   "start": 17.822,
+   "end": 27.735
+  },
+  {
+   "id": "c3",
+   "text": "Then the Canada Child Benefit. With two kids, it shrinks by thirteen and a half percent of the extra: thirteen hundred and fifty dollars.",
+   "start": 28.035,
+   "end": 37.627
+  },
+  {
+   "id": "c4",
+   "text": "And the groceries benefit drops five percent: another five hundred.",
+   "start": 37.927,
+   "end": 42.622
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: that's a third gone before provincial tax, CPP and EI. And the benefit cuts land the next July.",
+   "start": 43.022,
+   "end": 51.95
+  },
+  {
+   "id": "action",
+   "text": "So before you say yes, count the benefits, not just the bracket.",
+   "start": 52.25,
+   "end": 57.789
+  },
+  {
+   "id": "cta",
+   "text": "Next: part-time or full-time, which pays more after benefits? Follow so you don't miss it.",
+   "start": 58.089,
+   "end": 65.152
+  }
+ ]
+}

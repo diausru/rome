@@ -1,0 +1,92 @@
+{
+ "video": {
+  "title": "M15 · A $10,000 side job: you keep how much?",
+  "mp4": "showreel/out/m15/m15-final.mp4 (share copy: m15-share.mp4)",
+  "duration": "1:05 (65.67 s), 1080×1920, 24 fps"
+ },
+ "cover": {
+  "frame": "'HIT 3 · GROCERIES BENEFIT': the $10,000 bar eaten by federal tax −$1,496, CCB −$1,350 and the groceries benefit −$500, 'KEEP $6,654', '−$3,346 · A THIRD GONE' stamp, Kai on the weekend job",
+  "why": "all three hits and the result in one frame",
+  "t": 41.8,
+  "ms": 41800,
+  "file": "m15/cover.jpg (extracted at 41.8 s from the final render)"
+ },
+ "sources": [
+  {
+   "source": "CRA current-year federal tax rates",
+   "year": "2026",
+   "supports": "14% to $58,523; 20.5% to $117,045"
+  },
+  {
+   "source": "canada.ca CRA CCB how much",
+   "year": "July 2026–June 2027",
+   "supports": "reduction above $38,237 AFNI: 7% / 13.5% / 19% / 23% (1/2/3/4+ children) up to $82,847"
+  },
+  {
+   "source": "canada.ca CRA CGEB how much; Budget 2026",
+   "year": "July 2026–June 2027",
+   "supports": "couple $890 + $234 per child; 5% phase-out above $46,432"
+  },
+  {
+   "source": "canada.ca CRA benefits",
+   "year": "2026",
+   "supports": "recalculated every July from the prior year's income"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "Is a Second Job Worth It in Canada? $10,000 Extra, You Keep $6,654",
+   "Side Job Math: Tax + Benefit Cuts Take a Third (Canada 2026)",
+   "The Tax Bracket Says 86%. The Real Number Is 2/3."
+  ],
+  "description": "A weekend job: $10,000 more. The tax bracket says you keep 86%. The real number is closer to two thirds.\n\nExample (federal only, 2026): Kai's family, two kids, family net income $50,000 → $60,000.\n• Federal tax: 14%, and the last $1,477 (above $58,523) at 20.5% → $1,496\n• Canada Child Benefit: with two kids it shrinks by 13.5% of the extra → $1,350 a year less\n• Canada Groceries and Essentials Benefit: 5% of the extra → $500 a year less\nTotal: $3,346 (33.5%) → you keep $6,654.\n\nThe twist: that's a third gone before provincial tax, CPP and EI, and the benefit cuts land the next July (they're based on last year's return).\n\nBefore you say yes, count the benefits, not just the bracket.\n\nNext: part-time or full-time, which pays more after benefits?\n\nSources: CRA 2026 federal rates; canada.ca CCB and CGEB how much you can get (July 2026–June 2027); Budget 2026. Example; benefit thresholds are re-indexed each July. General information, not advice.\n\n#SideHustle #CanadaTax #CCB",
+  "hashtags": "#SideHustle #CanadaTax #CCB #CRA",
+  "keywords": "is a second job worth it canada, side hustle tax canada, ccb clawback second job, effective tax rate benefits canada, second income tax canada, job stacking canada tax",
+  "pinned": "Quick check: same family, one kid instead of two. CCB cut on +$10,000? (7% → $700) General info, not advice.",
+  "cta": "Follow for the next one: part-time vs full-time."
+ },
+ "tt": {
+  "caption": "+$10,000 side job, you keep $6,654 💼 The bracket says 86%. Benefits say otherwise.",
+  "keywords": "second job worth it · side hustle tax canada · ccb clawback",
+  "hashtags": "#sidehustle #canadiantaxes #cra #ccb #personalfinancecanada",
+  "pinned": "Benefit cuts arrive the next July. (General info, not advice.)",
+  "cta": "Follow for the next one: part-time vs full-time."
+ },
+ "ig": {
+  "caption": "A $10,000 side job. You keep how much? 💼🇨🇦\n\nFamily of 4, $50K → $60K (federal, 2026):\n• Federal tax −$1,496\n• CCB −$1,350 (13.5% with 2 kids)\n• Groceries benefit −$500 (5%)\n= −$3,346 → keep $6,654\n⚠️ Before provincial tax, CPP and EI\n⏳ Benefit cuts start the next July\n\nSend this to someone weighing a second job.\n\nSource: CRA (canada.ca). Example. General info, not advice.",
+  "keywords": "second job, side hustle tax, ccb clawback",
+  "hashtags": "#sidehustle #canadiantaxes #personalfinancecanada #canadatax #cra #familybudget",
+  "pinned": "Save this before you take that shift 📌",
+  "cta": "Send this to someone weighing a second job."
+ },
+ "eng": {
+  "question": "One kid instead of two: CCB cut on +$10K? ($700)",
+  "save": "The three hits on extra income.",
+  "share": "Parents weighing a second job.",
+  "follow": "Canadian tax and benefit rules with real numbers."
+ },
+ "seo": {
+  "primary": "is a second job worth it canada",
+  "secondary": "vidIQ CA: seed <750/mo; 'second income' 10K/mo, 'job stacking' 20K/mo, 'side hustle' 276K/mo",
+  "intent": "People deciding whether extra work pays.",
+  "audience": "Parents 25–45 with modest income.",
+  "angle": "bracket vs real: tax + CCB + CGEB on the extra $10,000.",
+  "questions": "Is a second job worth it in Canada? How much CCB do I lose if I earn more? What's my real tax rate on extra income?"
+ },
+ "next": [
+  {
+   "topic": "Part-time vs full-time: CWB/CCB/GST (#17)",
+   "why": "Bridge",
+   "intent": "part time vs full time benefits canada",
+   "hook": "more hours, less benefit",
+   "angle": "CWB vs CCB vs CGEB",
+   "payoff": "see the real trade-off"
+  }
+ ],
+ "series": "Card series, TOPICS-2 #15, bridged from M14. Playlist: 'Benefits & credits'.",
+ "research": {
+  "vidiq": "balance 2,003 before; 1 keyword_research CA",
+  "nexlev": "youtube_search shorts CA: no direct 'second job + CCB' Short; take-home-by-salary Shorts ≤100 views"
+ },
+ "retention": "Frame 0 '+$10,000 SIDE JOB. YOU KEEP HOW MUCH?'; +$10,000 at 1.8 s, 'bracket 86%' 5.6 s, struck → '2/3' at 9.4 s; bar from 11 s; federal −$1,496 at 26.5 s; CCB −$1,350 at 35.5 s; groceries −$500 and '−$3,346 · A THIRD GONE' stamp 41.2 s (re-hook, ≈63 %); 14% vs 33.5% reveal 43–52 s, 'benefit cuts start next July' 51.6 s; check card + next pill."
+}

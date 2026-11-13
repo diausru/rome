@@ -1,0 +1,208 @@
+{
+ "id": "m15",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "+$10,000 SIDE JOB.",
+  "l2": "YOU KEEP HOW MUCH?"
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "bills": {
+   "box": [
+    80,
+    640,
+    880,
+    620
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "gap": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "ten",
+   "beat": "hook",
+   "word": "ten",
+   "sfx": "chime"
+  },
+  {
+   "id": "k86",
+   "beat": "hook",
+   "word": "eighty-six",
+   "sfx": "tick"
+  },
+  {
+   "id": "two3",
+   "beat": "hook",
+   "word": "thirds.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "three",
+   "beat": "c1",
+   "word": "three",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "fed",
+   "beat": "c2",
+   "word": "fifteen",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "ccb",
+   "beat": "c3",
+   "word": "thirteen",
+   "n": 2,
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "cg",
+   "beat": "c4",
+   "word": "another",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "third",
+   "beat": "reveal",
+   "word": "third",
+   "sfx": "tick"
+  },
+  {
+   "id": "july",
+   "beat": "reveal",
+   "word": "July.",
+   "sfx": "chime"
+  },
+  {
+   "id": "count",
+   "beat": "action",
+   "word": "count",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "another",
+   "offset": 0.6
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "work"
+}
