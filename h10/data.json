@@ -1,0 +1,22 @@
+{
+ "topic": "Transfer of a spouse's unused credits (line 32600): age, pension, disability (self), caregiver for infirm child under 18, current-year tuition up to $5,000",
+ "tax_year": 2025,
+ "example": {
+  "tuition": 8000,
+  "transfer": 5000,
+  "rate": 0.145,
+  "credit": 725,
+  "note": "example (not a CRA rule): Lee, full-time student, no income, $8,000 eligible current-year tuition; transfers the maximum $5,000 to the spouse; federal 14.5% (2025 lowest rate) gives $725. Remaining $3,000 is carried forward by Lee."
+ },
+ "derive": {},
+ "spoken": {
+  "tuition": "eight thousand dollars",
+  "transfer": "five thousand dollars",
+  "credit": "seven hundred and twenty-five dollars"
+ },
+ "sources": {
+  "l32600": "canada.ca Line 32600 – Amounts transferred from your spouse or common-law partner: age amount, pension income amount, disability amount for self, caregiver amount for infirm child under 18, tuition up to $5,000 of current year; not if separated 90+ days including Dec 31 (tax year 2025)",
+  "tuition": "canada.ca Line 32300 / Schedule 11: only current-year tuition can be transferred; carried-forward amounts cannot",
+  "rate": "canada.ca federal tax rates 2025: lowest rate 14.5% for 2025 (15% Jan–Jun, 14% from Jul 1)"
+ }
+}

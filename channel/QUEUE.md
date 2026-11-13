@@ -6,7 +6,7 @@ Details per topic: channel/TOPICS-2.md (by #). Check overlap: `grep -ril "<keywo
 | R3 | Donations: combining receipts on one return pays more (2-tier credit above $200) | done 2026-10-31 | M30 |
 | R4 | Moving for work/school: which expenses count (40 km rule) | done 2026-11-01 | R3 |
 | 29 | First-time home buyer: FHSA / HBP / credit, what changed | done 2026-11-04 | R4 |
-| 10 | Wife got a bigger refund: who claims shared credits | done 2026-11-04 (M10, tuition/credit transfer angle) | 29 |
+| 10 | Wife got a bigger refund: who claims shared credits | done 2026-11-04 (M10, tuition/credit transfer angle); alt cut H10 2026-11-13 (duplicate angle, 5 credits + carried-forward twist) | 29 |
 | 3 | CCB: why one parent receives it | done 2026-11-04 (M3) | 10 |
 | 26 | Separated parents: who gets CCB (shared custody) | done 2026-11-05 (M26) | 3 |
 | 7 | Why the CCB amount changes in July | done 2026-11-05 (M7) | 26 |

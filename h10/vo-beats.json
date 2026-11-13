@@ -1,0 +1,41 @@
+{
+ "voice": "Grady",
+ "tempo": 1.0,
+ "beats": [
+  [
+   "hook",
+   "Your spouse paid no tax this year. Their unused credits don't have to go to waste. Some of them can move to your return.",
+   0.35
+  ],
+  [
+   "c1",
+   "The rule: once a spouse's tax is already zero, five credits can transfer. The age amount, the pension amount, the disability amount, the caregiver amount for an infirm child, and tuition.",
+   0.3
+  ],
+  [
+   "c2",
+   "Example: Lee went back to school full-time, earned nothing, and paid eight thousand dollars in tuition.",
+   0.3
+  ],
+  [
+   "c3",
+   "Lee needs none of it. Up to five thousand dollars moves to the spouse's return. That's seven hundred and twenty-five dollars off federal tax.",
+   0.3
+  ],
+  [
+   "reveal",
+   "The twist: only this year's tuition can move. Amounts Lee carried forward from earlier years stay with Lee.",
+   0.3
+  ],
+  [
+   "action",
+   "Use Schedule two, line three-two-six-hundred, and check you weren't separated at year end.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: the Canada child benefit, and why one parent receives it. Follow so you don't miss it.",
+   0.3
+  ]
+ ]
+}
