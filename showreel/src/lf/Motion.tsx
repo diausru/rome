@@ -1017,4 +1017,37 @@ const TwinHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook };
+// ---------- YearHook: frame-0 hook — a 16-month calendar strip (JAN 2026 → APR 2027) in two rows; tiles light up month by month; tagged tiles show amounts; one tile in the NEXT year glows with the payoff; title flips ----------
+// p.months[{m, y, tag?, tagAt?, color?}] · p.sweepAt · p.dimAt · p.hiIdx · p.hiAt · p.hiText · p.hiSub · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const YearHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const ms = p.months as Pn[]; const sw = p.sweepAt ? p.sweepAt.t : p.t + 0.3; const dm = p.dimAt ? prog(now, p.dimAt.t, 0.8) : 0; const hi = p.hiAt ? prog(now, p.hiAt.t, 0.8, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const TW = 176, TH = 150, GAP = 18, X0 = (1920 - (8 * TW + 7 * GAP)) / 2;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.3 - 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.74})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 80, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: 1 - out }}>
+        {ms.map((m, i) => { const row = Math.floor(i / 8), col = i % 8; const x = X0 + col * (TW + GAP), y = 300 + row * (TH + 90);
+          const on = prog(now, sw + i * 0.12, 0.5, BACK); const isHi = i === p.hiIdx; const nextYr = m.y !== ms[0].y;
+          const tg = m.tagAt ? prog(now, m.tagAt.t, 0.6, BACK) : 0; const dim = !isHi && !nextYr ? 1 - 0.5 * dm : 1;
+          return <div key={i} style={{ opacity: cl(on * 2) * dim }}>
+            <div style={{ position: 'absolute', left: x, top: y, width: TW, height: TH, borderRadius: 14, background: isHi && hi > 0 ? `rgba(127,211,160,${0.12 + 0.2 * hi})` : nextYr ? 'rgba(143,179,232,.12)' : 'rgba(244,241,234,.10)', border: `2px solid ${isHi && hi > 0 ? C.green : nextYr ? 'rgba(143,179,232,.6)' : 'rgba(255,255,255,.2)'}`, boxShadow: isHi && hi > 0 ? `0 0 ${40 * hi}px rgba(127,211,160,.55)` : 'none', fontFamily: COND, textAlign: 'center', transform: `translateY(${(1 - on) * 40}px) scale(${isHi ? 1 + 0.08 * hi : 1})` }}>
+              <div style={{ fontSize: 44, fontWeight: 700, color: C.white, marginTop: 22, letterSpacing: 2 }}>{m.m}</div>
+              <div style={{ fontSize: 26, letterSpacing: 4, color: nextYr ? C.blue : C.dim }}>{m.y}</div></div>
+            {m.tag && tg > 0.02 && <div style={{ position: 'absolute', left: x - 30, width: TW + 60, top: y + TH + 10, textAlign: 'center', fontFamily: COND, fontSize: 34, fontWeight: 700, color: m.color ?? C.gold, opacity: tg, transform: `scale(${0.7 + 0.3 * tg})` }}>{m.tag}</div>}
+          </div>; })}
+        {hi > 0.02 && (() => { const i = p.hiIdx as number; const row = Math.floor(i / 8), col = i % 8; const x = X0 + col * (TW + GAP), y = 300 + row * (TH + 90);
+          return <div style={{ position: 'absolute', left: x - 120, width: TW + 240, top: y + TH + 52, textAlign: 'center', fontFamily: COND, opacity: hi }}>
+            <div style={{ fontSize: 60, fontWeight: 700, color: C.green, lineHeight: 1 }}>{p.hiText}</div><div style={{ fontSize: 24, letterSpacing: 4, color: C.white }}>{p.hiSub}</div></div>; })()}
+      </div>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook, year: YearHook };
