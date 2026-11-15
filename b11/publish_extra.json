@@ -1,0 +1,5 @@
+{
+ "vo_stats": "143 words, 60.9 s of speech, ≈141 wpm. Last word ends at 01:04.66; video 01:08.96.",
+ "cues": "00:00.3 \"laptop: all at once?\" · 00:03.9 \"2026 yes · 2027 no\" · 00:07.4 \"$60K net · MB · laptop $2,000\" · 00:16.6 \"equipment: class 50 = 55%/yr\" · 00:24.0 \"in use by Dec 31: 100% = $2,000\", underlined ≈31.3 + push-in (cover 32.2) · 00:33.0 \"saves $711\" circled ≈35.3 + push-in, \"tax + CPP\" · 00:39.8 \"Jan 2027: 55% = $1,100\" · 00:45.2 \"saves $391\" · 00:47.9 \"+ $900 over later years\" · 00:52.6 \"spend $2,000 → save $711\" · 00:56.7 \"buy it if you need it\" · 01:00.1 \"sell the old one?\" · 01:02.8 \"comment: CATCH\", CATCH boxed ≈65.8 · still hold.",
+ "drawing": "See build/timeline.json. Paper lines: laptop: all at once? · 2026 yes · 2027 no · $60K net · MB · laptop $2,000 · equipment: class 50 = 55%/yr · in use by Dec 31: 100% = $2,000 (underlined) · saves $711 (circled) tax + CPP · Jan 2027: 55% = $1,100 · saves $391 · + $900 over later years · spend $2,000 → save $711 · buy it if you need it · sell the old one? · comment: CATCH (boxed) · hold."
+}
