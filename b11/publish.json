@@ -92,7 +92,7 @@
   "frame": "b11/cover.jpg",
   "why": "settled push-in on the underlined '100% = $2,000' with '2027 no' above: states the topic and the payoff; camera held 31.9–32.6 s, no writing",
   "visual_text": "handwritten: '2026 yes · 2027 no', 'class 50 = 55%/yr', 'Dec 31: 100% = $2,000' underlined",
-  "checked_in_render": "pending",
+  "checked_in_render": "yes — frame at 32.2 s extracted to b11/cover.jpg: sharp, underline and '$2,000' complete, '2027 no' above; the left edge crops 'Dec' to 'c 31' (push-in framing); t±0.25 s differ only by handheld drift",
   "metricool_ig": "manual action required (not scheduled; set videoCoverMilliseconds 32200 on /schedule)",
   "metricool_tiktok": "manual action required (Business-account status unverified)",
   "youtube": "manual — the user selects the cover at 00:32.2"

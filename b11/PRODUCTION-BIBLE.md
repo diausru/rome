@@ -46,3 +46,5 @@ Mode: REALISTIC HANDWRITTEN EXPLAINER, series "Real Tax Math" (… → B10 → B
 
 ## 6. Revision log
 - v1 (2026-11-15): preview fixes: writing speeds raised to keep pace with the voice; "tax + CPP" moved off the circled $711; camera hold added for the cover frame.
+- v1 render QC (2026-11-15): 1080×1920, 24 fps, 1655 frames, 68.96 s, H.264 + AAC 48 kHz stereo, full decode clean, −14.0 LUFS, peak −2.4 dBFS; frame strip clean; cover frame 32.2 s checked (b11/cover.jpg); final CTA "comment: CATCH" with the box readable at the hold (the source tag covers the top line in the last frame, as in B9).
+- Publishing Kit version 68 (73 cards, merged onto the live version with the card session's M15).
