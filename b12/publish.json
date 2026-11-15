@@ -1,0 +1,99 @@
+{
+ "video": {
+  "title": "Sold Your Business Laptop? CRA Wants Some Back (Canada) (handwritten)",
+  "duration": "62.19 s (1493 frames)",
+  "mp4": "b12/build/b12_final.mp4 (share copy: b12_share.mp4)"
+ },
+ "sources": [
+  "CRA — Guide T4002, Chapter 4 (CCA) · current · when you sell depreciable property, the class is reduced by the lesser of (proceeds minus related expenses) and the capital cost; a negative column 7 means a recapture of CCA, added to income; additions in the same period count before the comparison; no CCA when column 7 is negative; terminal loss when no property is left and a positive balance remains",
+  "CRA — Completing Form T2125, column 7 (canada.ca, page details 2026-08-31) · current · UCC = start-of-year UCC + additions − proceeds of dispositions; negative = recapture, report on line 8230 Other income; positive with no property left = terminal loss, line 9270",
+  "B11 (this series) · 2026 · Class 50 laptop $2,000 written off 100% in 2026 (Income Tax Regs 1100(2), SC 2026 c. 3) → UCC $0",
+  "CRA T4127 (Jan 2026) and CPP 2026, via b4/calc.py · 2026 · tax + CPP for the B4 freelancer (MB, single, $60,000 net)",
+  "Calculation (not a CRA rule): b12/calc.py → data.json. UCC $0 − lesser of ($700 proceeds, $2,000 cost) = −$700 → recapture $700 → tax + CPP $248.94 at 2026 rates (35.6¢ per $1). Replacement $2,500 in the same year: $0 + $2,500 − $700 = $1,800 UCC, no recapture. Dependencies: the class balance at year end (other Class 50 property counts), selling costs, the year's rates and income, mixed business/personal use; a sale above the original cost also triggers a capital gain (not covered). Example only."
+ ],
+ "yt": {
+  "titles": [
+   "Sold Your Business Laptop? CRA Wants Some Back (Canada)",
+   "The Catch After Writing Off Your Laptop in Canada (Recapture)",
+   "Write-Off Then Sell? How CCA Recapture Works in Canada"
+  ],
+  "description": "You wrote off the whole laptop. Then you sold it for $700. Here's the catch.\n\nExample (continuing the last video): a $2,000 laptop claimed 100% as capital cost allowance (Class 50). Its tax value (undepreciated capital cost) is now $0.\n• Sell it for $700: $0 − $700 = −$700. A negative balance at year end is a recapture of CCA, and it goes back into business income (Form T2125, line 8230).\n• For a Manitoba freelancer netting $60,000, that's about $249 in tax + CPP (2026 rates).\n• Fair, really: you deducted value the laptop never actually lost.\n\nThe fix: buy the replacement in the same year. Its cost goes into the class first: $0 + $2,500 − $700 = $1,800 still to claim, and no recapture.\n\nOnly 60% for work? Reply 60 and we'll run it.\n\nSources: CRA Guide T4002 ch. 4 (CCA, recapture, terminal loss); CRA Form T2125 column 7; CRA T4127 2026 rates, CPP 2026. Example only; general information, not tax advice.\n\n#SelfEmployed #CanadaTax #TaxDeductions",
+  "hashtags": "#SelfEmployed #CanadaTax #TaxDeductions",
+  "keywords": "recapture cca, capital cost allowance, selling business equipment canada, write off laptop canada, self employed tax canada, cca class 50, terminal loss, freelancer taxes canada",
+  "pinned": "Laptop only partly for work? Reply 60 and we'll run the mixed-use math 👇",
+  "cta": "But what if the laptop is only sixty percent for work? Reply sixty, and we'll run it."
+ },
+ "tt": {
+  "caption": "Wrote off your laptop, then sold it? 🇨🇦 CRA wants some back. The catch + the fix ✍️",
+  "keywords": "recapture cca · selling business laptop · write off laptop canada · capital cost allowance · self employed canada",
+  "hashtags": "#taxwriteoffs #selfemployedcanada #canadiantaxes #freelancer #cra",
+  "pinned": "Only 60% for work? Reply 60 👇",
+  "cta": "Reply 60."
+ },
+ "ig": {
+  "caption": "Wrote off your laptop, then sold it? 🇨🇦\n\nA $2,000 laptop claimed 100% has a tax value of $0. Sell it for $700 and the class goes to −$700: a recapture, added back to income. About $249 in tax + CPP for a $60K Manitoba freelancer (2026 rates).\n\nThe fix: buy the replacement the same year. $0 + $2,500 − $700 = $1,800 left to claim, no recapture.\n\nSources: CRA T4002 ch. 4, T2125. Example only, general info, not advice.",
+  "keywords": "recapture cca, selling business equipment, capital cost allowance, self employed canada, freelancer taxes",
+  "hashtags": "#taxwriteoffs #selfemployedcanada #canadiantaxes #freelancelife #taxtips #cra",
+  "pinned": "Only 60% for work? Reply 60 👇",
+  "cta": "Reply 60."
+ },
+ "eng": {
+  "question": "Laptop only partly for work? Reply 60.",
+  "save": "The recapture math and the same-year fix in one page.",
+  "share": "A freelancer friend about to sell an old laptop or camera.",
+  "follow": "Mixed business/personal use is the next video if viewers ask."
+ },
+ "seo": {
+  "primary": "recapture cca",
+  "secondary": "capital cost allowance (<750/mo, competition 26); depreciation recapture (<750/mo); write off laptop canada (<750/mo); self employed taxes (≈4,963/mo)",
+  "intent": "Someone who wrote off equipment wants to know what happens when they sell it.",
+  "audience": "Canadian freelancers and sole proprietors",
+  "angle": "The catch after a 100% write-off, with one worked number and the same-year fix.",
+  "questions": "What happens when I sell business equipment in Canada? · What is CCA recapture? · Do I pay tax when I sell a laptop I wrote off? · How do I avoid recapture?",
+  "pain": "A surprise tax bill after selling written-off gear."
+ },
+ "next": [
+  {
+   "topic": "Mixed use: laptop 60% for work (answer to this video's CTA)",
+   "why": "the CTA promises it; most freelancers' laptops are mixed use",
+   "intent": "can i write off my laptop if i use it personally",
+   "hook": "Your laptop is 60% work, 40% Netflix.",
+   "angle": "CCA only on the business share (needs a fact pass)",
+   "payoff": "the 60% version of B11's number"
+  },
+  {
+   "topic": "Same $10K side hustle in Alberta or Ontario (B10 vote)",
+   "why": "B10's CTA asked; depends on comments",
+   "intent": "side hustle tax alberta ontario",
+   "hook": "Same $10K, different province.",
+   "angle": "provincial rates at $100K",
+   "payoff": "one number vs $3,738"
+  },
+  {
+   "topic": "B1: when does a side gig become a business for CRA",
+   "why": "in PUBLISHING-PLAN, not made",
+   "intent": "am i self employed canada",
+   "hook": "When does CRA call it a business?",
+   "angle": "reasonable expectation of profit / commercial activity (needs a fact pass)",
+   "payoff": "a checklist"
+  }
+ ],
+ "series": "Real Tax Math (handwritten): answers B11's 'comment CATCH'; ends on a new loop (mixed use).",
+ "research": "vidIQ (CA, 2026-11-15): 'recapture capital cost allowance', 'capital cost allowance', 'depreciation recapture' all <750/mo; one Canadian CCA explainer (BrightBox, 5 min, 829 views) covers recapture in passing. Gap: a Short with one worked recapture number and the same-year fix. vidIQ credits: 20 (research 5, YouTube search 5, two title scores 10; 89 and 86).",
+ "retention": "Hook in the first 3 s ('sold it for $700?' + 'here's the catch'); the sign flip ($0 − $700) circled at 19 s; the cost circled at 30 s; the fix and the double-underlined $1,800 at 50 s; CTA loop at 53.5 s.",
+ "_label": "B12 · sold the written-off laptop: recapture (handwritten)",
+ "_mp4": "b12_share.mp4",
+ "_vo": "You wrote off the whole laptop. Two years later, you sell it for seven hundred. Here's the catch. Last time: a two-thousand-dollar laptop, claimed one hundred percent. Its tax value is now zero. Sell it for seven hundred, and that zero goes negative: minus seven hundred. CRA calls that recapture. It goes straight back into your business income. For our Manitoba freelancer, that's about two hundred and fifty dollars in tax and CPP. Fair, really. You deducted value the laptop never actually lost. The fix: buy the replacement in the same year. Its cost goes into the class first. Twenty-five hundred new, minus seven hundred sold: eighteen hundred left to claim. No recapture. But what if the laptop is only sixty percent for work? Reply sixty, and we'll run it.",
+ "_votc": "[00:00.20–00:07.21] You wrote off the whole laptop. Two years later, you sell it for seven hundred. Here's the catch.\n[00:07.61–00:14.70] Last time: a two-thousand-dollar laptop, claimed one hundred percent. Its tax value is now zero.\n[00:15.10–00:20.42] Sell it for seven hundred, and that zero goes negative: minus seven hundred.\n[00:20.77–00:26.43] CRA calls that recapture. It goes straight back into your business income.\n[00:26.83–00:32.72] For our Manitoba freelancer, that's about two hundred and fifty dollars in tax and CPP.\n[00:33.17–00:38.02] Fair, really. You deducted value the laptop never actually lost.\n[00:38.42–00:45.10] The fix: buy the replacement in the same year. Its cost goes into the class first.\n[00:45.45–00:52.91] Twenty-five hundred new, minus seven hundred sold: eighteen hundred left to claim. No recapture.\n[00:53.41–00:57.06] But what if the laptop is only sixty percent for work?\n[00:57.36–00:59.59] Reply sixty, and we'll run it.",
+ "cover": {
+  "timestamp_s": 20.55,
+  "ms": 20550,
+  "frame": "b12/cover.jpg",
+  "why": "settled push-in on the circled '-$700' with 'sold it for $700?' and 'tax value now = $0' above: the twist in one frame; camera held ≈20.3–20.9 s, no writing",
+  "visual_text": "handwritten: 'sold it for $700?', 'here's the catch', 'tax value now = $0', '$0 - $700 = -$700' (circled)",
+  "checked_in_render": "pending",
+  "metricool_ig": "manual action required (not scheduled; set videoCoverMilliseconds 20550 on /schedule)",
+  "metricool_tiktok": "manual action required (Business-account status unverified)",
+  "youtube": "manual — the user selects the cover at 00:20.6"
+ }
+}

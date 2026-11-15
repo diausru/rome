@@ -1,0 +1,11 @@
+{
+ "cost": 2000,
+ "sale": 700,
+ "new_laptop": 2500,
+ "ucc_open": 0,
+ "ucc_after_sale": -700,
+ "recapture": 700,
+ "tax_cpp_on_recapture": 248.94,
+ "per_dollar": 0.3556,
+ "ucc_with_new_same_year": 1800
+}

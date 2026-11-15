@@ -1,0 +1,72 @@
+[
+[
+"line00",
+0.2,
+"You wrote off the whole laptop. Two years later, you sell it for seven hundred. Here's the catch.",
+0.0,
+7.012
+],
+[
+"line01",
+7.612,
+"Last time: a two-thousand-dollar laptop, claimed one hundred percent. Its tax value is now zero.",
+0.0,
+7.089
+],
+[
+"line02",
+15.101,
+"Sell it for seven hundred, and that zero goes negative: minus seven hundred.",
+0.0,
+5.321
+],
+[
+"line03",
+20.772,
+"CRA calls that recapture. It goes straight back into your business income.",
+0.0,
+5.655
+],
+[
+"line04",
+26.827,
+"For our Manitoba freelancer, that's about two hundred and fifty dollars in tax and CPP.",
+0.0,
+5.889
+],
+[
+"line05",
+33.166,
+"Fair, really. You deducted value the laptop never actually lost.",
+0.0,
+4.853
+],
+[
+"line06",
+38.419,
+"The fix: buy the replacement in the same year. Its cost goes into the class first.",
+0.0,
+6.682
+],
+[
+"line07",
+45.451,
+"Twenty-five hundred new, minus seven hundred sold: eighteen hundred left to claim. No recapture.",
+0.0,
+7.458
+],
+[
+"line08",
+53.409,
+"But what if the laptop is only sixty percent for work?",
+0.0,
+3.65
+],
+[
+"line09",
+57.359,
+"Reply sixty, and we'll run it.",
+0.0,
+2.231
+]
+]

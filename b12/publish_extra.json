@@ -1,0 +1,5 @@
+{
+ "vo_stats": "130 words, 55.8 s of speech, ≈140 wpm. Last word ends at 00:59.59; video 01:02.19.",
+ "cues": "00:00.3 \"sold it for $700?\" · 00:05.0 \"here's the catch\" · 00:07.9 \"laptop $2,000 · 100% claimed\" · 00:12.6 \"tax value now = $0\" · 00:15.8 \"$0 - $700 = -$700\", -$700 circled ≈19.2 + push-in (cover 20.55) · 00:21.0 \"= recapture → income\" · 00:27.0 \"about $249\" circled ≈29.6 + push-in, \"tax + CPP\" · 00:33.4 \"value it never lost\" · 00:38.6 \"fix: replace it same year\" · 00:45.6 \"$0 + $2,500 - $700 = $1,800\" double-underlined ≈50.3 + push-in · 00:51.4 \"no recapture\" · 00:53.8 \"only 60% for work?\" · 00:57.0 hand-drawn 60/40 bar \"work\" · 00:58.9 \"reply 60\", underlined · hold.",
+ "drawing": "See build/timeline.json. Paper lines: sold it for $700? · here's the catch · laptop $2,000 · 100% claimed · tax value now = $0 · $0 - $700 = -$700 (circled) · = recapture → income · about $249 (circled) tax + CPP · value it never lost · fix: replace it same year · $0 + $2,500 - $700 = $1,800 (double underline) · no recapture · only 60% for work? · [60/40 bar, 'work'] · reply 60 (underlined) · hold."
+}
