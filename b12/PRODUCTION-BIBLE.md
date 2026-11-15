@@ -47,3 +47,5 @@ Mode: REALISTIC HANDWRITTEN EXPLAINER, series "Real Tax Math" (… → B2 → B1
 
 ## 6. Revision log
 - v1 (2026-11-15): preview fixes: "tax + CPP" moved off the circled $249; the "fix" line shortened so it isn't auto-shrunk; camera hold for the cover.
+- v1 render QC (2026-11-15): 1080×1920, 24 fps, 1492 frames, 62.17 s, H.264 + AAC 48 kHz stereo, full decode clean, −14.1 LUFS, peak −2.2 dBFS; cover frame 20.55 s checked (b12/cover.jpg); final CTA (60/40 bar, 'reply 60' underlined) readable at the hold.
+- Publishing Kit version 69 (74 cards).

@@ -91,7 +91,7 @@
   "frame": "b12/cover.jpg",
   "why": "settled push-in on the circled '-$700' with 'sold it for $700?' and 'tax value now = $0' above: the twist in one frame; camera held ≈20.3–20.9 s, no writing",
   "visual_text": "handwritten: 'sold it for $700?', 'here's the catch', 'tax value now = $0', '$0 - $700 = -$700' (circled)",
-  "checked_in_render": "pending",
+  "checked_in_render": "yes — frame at 20.55 s extracted to b12/cover.jpg: sharp; circled '-$700', 'tax value now = $0', 'here's the catch' and '$700?' readable; the source tag touches the top of the '?'; the left edge crops the line starts (push-in framing)",
   "metricool_ig": "manual action required (not scheduled; set videoCoverMilliseconds 20550 on /schedule)",
   "metricool_tiktok": "manual action required (Business-account status unverified)",
   "youtube": "manual — the user selects the cover at 00:20.6"
