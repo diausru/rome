@@ -1,0 +1,98 @@
+{
+ "video": {
+  "title": "Hobby or Business? When CRA Says Your Side Hustle Is Taxable (Canada) (handwritten)",
+  "duration": "68.85 s (1652 frames)",
+  "mp4": "b1/build/b1_final.mp4"
+ },
+ "sources": [
+  "CRA — What is a business? (canada.ca, page details 2026-08-31) · current · 'A business is an activity that you intend to carry on for profit and there is evidence to support that intention'; CRA looks at each case on its own merits; unreported income can bring a 10% penalty",
+  "CRA — Income Tax Audit Manual, ch. 27.2 'Pursuit of profit' (canada.ca) · current · Stewart v. Canada (SCC 2002) two-stage test: pursuit of profit or personal endeavour, then business or property; activities with a personal element must be carried on in a sufficiently commercial manner; objective factors include profit and loss history, training, intended course of action, capability to show a profit; a hobby only where the personal element substantially displaces commerciality; no source → no business income and no business loss",
+  "CRA T4127 (Jan 2026) and CPP 2026, via b9/calc.py · 2026 · tax + CPP for a Manitoba employee with a $60,000 salary plus self-employment income",
+  "Calculation (not a CRA rule): b1/calc.py → data.json. $60,000 salary; cakes: sales $8,000 − costs $3,000 = $5,000 profit → as a business: +$1,485.58 tax + $595.00 CPP = $2,080.58. First-year loss: $2,000 − $3,500 = −$1,500 → as a business it lowers income: $460.53 back; as a hobby: no income, no loss ($0). Dependencies: the facts of each case (intent, records, pricing, marketing, plan, profit history); other income; province; GST/HST is a separate test. Amounts are an example."
+ ],
+ "yt": {
+  "titles": [
+   "Hobby or Business? When CRA Says Your Side Hustle Is Taxable (Canada)",
+   "Selling Cakes on Weekends? CRA's Hobby vs Business Test",
+   "Side Hustle or Hobby in Canada: What CRA Actually Looks At"
+  ],
+  "description": "You sell cakes on weekends. Hobby or business? CRA has a test, and it changes your taxes.\n\nCRA: a business is an activity you intend to carry on for profit, with evidence to support that intention. Evidence means facts: prices, records, marketing, a plan, a real chance of profit. If it's a personal pastime, there's no business income, and no business loss either.\n\nExample (Manitoba, 2026): a $60,000 day job, cake sales $8,000, ingredients $3,000 = $5,000 profit.\n• As a business: about $2,081 in tax + CPP.\n• First year at a loss: $2,000 − $3,500 = −$1,500. As a business, that loss lowers the salary income: about $461 back. As a hobby: $0.\n\nSelling on Etsy? Does Etsy tell CRA? Yes or no, guess below.\n\nSources: CRA 'What is a business?'; CRA Income Tax Audit Manual ch. 27 (Stewart v. Canada, 2002 SCC); CRA T4127 2026 rates, CPP 2026. Example only; general information, not tax advice.\n\n#SideHustle #CanadaTax #SelfEmployed",
+  "hashtags": "#SideHustle #CanadaTax #SelfEmployed",
+  "keywords": "hobby or business canada, side hustle tax canada, cra business definition, is my side hustle a business, hobby income canada, self employed canada, business loss canada, side hustle taxes",
+  "pinned": "Does Etsy tell CRA? Yes or no, guess below 👇",
+  "cta": "Selling on Etsy? Does Etsy tell CRA? Yes or no, guess below."
+ },
+ "tt": {
+  "caption": "Selling cakes on weekends: hobby or business? 🇨🇦 CRA's test + the math ✍️",
+  "keywords": "hobby or business canada · side hustle tax canada · cra business · etsy taxes canada · self employed canada",
+  "hashtags": "#sidehustle #canadiantaxes #selfemployedcanada #smallbusiness #cra",
+  "pinned": "Does Etsy tell CRA? Yes or no 👇",
+  "cta": "Guess yes or no."
+ },
+ "ig": {
+  "caption": "Hobby or business? 🇨🇦\n\nCRA: a business is an activity you intend to carry on for profit, with evidence to back it (prices, records, marketing, a plan). A personal pastime has no business income and no business loss.\n\n$60K job + $5,000 cake profit → about $2,081 tax + CPP as a business. A $1,500 first-year loss → about $461 back as a business, $0 as a hobby (MB, 2026).\n\nSources: CRA, Stewart v. Canada (SCC). Example only, general info, not advice.",
+  "keywords": "hobby or business, side hustle canada, cra, self employed, canada taxes",
+  "hashtags": "#sidehustle #canadiantaxes #selfemployedcanada #smallbusinesscanada #taxtips #cra",
+  "pinned": "Does Etsy tell CRA? Yes or no 👇",
+  "cta": "Guess yes or no."
+ },
+ "eng": {
+  "question": "Does Etsy tell CRA? Yes or no.",
+  "save": "CRA's business test and the profit/loss math in one page.",
+  "share": "A friend selling crafts, cakes or vintage on the side.",
+  "follow": "Platform reporting (Etsy, Uber…) is the next video if viewers ask."
+ },
+ "seo": {
+  "primary": "hobby or business canada",
+  "secondary": "'hobby or business canada tax' <750/mo; tax deductions ≈6,499/mo; tax write offs ≈3,721/mo; tax planning ≈16,521/mo",
+  "intent": "A side seller wants to know whether CRA sees it as a business.",
+  "audience": "Canadians with side gigs: crafts, baking, reselling, freelancing",
+  "angle": "CRA's definition + the Stewart test, with one profit case and one loss case.",
+  "questions": "Is my side hustle a business? · Do I pay tax on hobby income in Canada? · Can I deduct side hustle losses? · What does CRA look at?",
+  "pain": "Not knowing whether to report; missing deductible losses; risk of unreported income."
+ },
+ "next": [
+  {
+   "topic": "Do platforms (Etsy, Uber, Airbnb) report sellers to CRA? (answer to this video's CTA)",
+   "why": "the CTA asks it; high interest",
+   "intent": "does etsy report to cra",
+   "hook": "You never got a slip. CRA may still know.",
+   "angle": "digital platform operator reporting (needs a fact pass)",
+   "payoff": "what's reported and from when"
+  },
+  {
+   "topic": "Same $10K side hustle in Alberta or Ontario (B10 vote)",
+   "why": "B10's CTA asked",
+   "intent": "side hustle tax alberta ontario",
+   "hook": "Same $10K, different province.",
+   "angle": "provincial rates at $100K",
+   "payoff": "one number vs $3,738"
+  },
+  {
+   "topic": "Losses year after year: when CRA says it's a hobby",
+   "why": "follows the loss case",
+   "intent": "side business loss every year canada",
+   "hook": "Five losing years in a row?",
+   "angle": "Stewart / commercial manner (needs a fact pass)",
+   "payoff": "the factors CRA weighs"
+  }
+ ],
+ "series": "Real Tax Math (handwritten): B1 from the plan; new arc after the laptop trilogy (B11–B13).",
+ "research": "vidIQ (CA, 2026-11-16): 'hobby or business canada tax' <750/mo; related 'tax planning' ≈16,521/mo, 'tax deductions' ≈6,499/mo. YouTube CA: hobby-vs-business Shorts exist but tiny (≤767 views) and none show numbers; one claims all gig income is business income from $1 (not used). vidIQ credits: 20 (research 5, YouTube search 5, two title scores 10; 88 and 84).",
+ "retention": "Hook in 3 s ('cakes on weekends: hobby or business?'); the rule by 16 s; the money from 30 s; circled $2,081 at 43 s (cover 45.0); loss case and $461 vs $0 at 52–61 s; CTA at 61.4 s.",
+ "_label": "B1 · hobby or business? (handwritten)",
+ "_mp4": "b1_final.mp4",
+ "_vo": "You sell cakes on weekends. Hobby or business? CRA has a test, and it changes your taxes. CRA's definition: a business is an activity you intend to carry on for profit, with evidence to back that intention. Evidence means facts: prices, records, marketing, a plan, a real chance of profit. If it's just a personal pastime, there's no business income. And no business loss either. Our Manitoba baker earns sixty thousand at a day job. Cakes bring in eight thousand; ingredients cost three. Five thousand profit. As a business, that's about two thousand and eighty in tax and CPP. But a business can also lose. First year: sales two thousand, costs thirty-five hundred. Minus fifteen hundred. That loss lowers the salary income: about four sixty back. A hobby gets nothing. Selling on Etsy? Does Etsy tell CRA? Yes or no, guess below.",
+ "_votc": "[00:00.20–00:07.04] You sell cakes on weekends. Hobby or business? CRA has a test, and it changes your taxes.\n[00:07.44–00:15.49] CRA's definition: a business is an activity you intend to carry on for profit, with evidence to back that intention.\n[00:15.84–00:23.02] Evidence means facts: prices, records, marketing, a plan, a real chance of profit.\n[00:23.37–00:29.51] If it's just a personal pastime, there's no business income. And no business loss either.\n[00:29.96–00:39.34] Our Manitoba baker earns sixty thousand at a day job. Cakes bring in eight thousand; ingredients cost three. Five thousand profit.\n[00:39.69–00:43.84] As a business, that's about two thousand and eighty in tax and CPP.\n[00:44.24–00:53.75] But a business can also lose. First year: sales two thousand, costs thirty-five hundred. Minus fifteen hundred.\n[00:54.10–01:00.87] That loss lowers the salary income: about four sixty back. A hobby gets nothing.\n[01:01.32–01:06.25] Selling on Etsy? Does Etsy tell CRA? Yes or no, guess below.",
+ "cover": {
+  "timestamp_s": 45.0,
+  "ms": 45000,
+  "frame": "b1/cover.jpg",
+  "why": "settled push-in on the circled '$2,081' (tax + CPP) under '= $5,000 profit' and the cake line; camera held 44.6–45.5 s, hand out of frame",
+  "visual_text": "handwritten: 'cakes $8K - $3K', '= $5,000 profit', 'tax + CPP: $2,081' (circled)",
+  "checked_in_render": "pending",
+  "metricool_ig": "manual action required (not scheduled; set videoCoverMilliseconds 45000 on /schedule)",
+  "metricool_tiktok": "manual action required (Business-account status unverified)",
+  "youtube": "manual — the user selects the cover at 00:45.0"
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "salary": 60000,
+ "profit": 5000,
+ "extra_tax": 1485.58,
+ "extra_cpp": 595.0,
+ "extra_total": 2080.58,
+ "loss": -1500,
+ "refund_from_loss": 460.53
+}

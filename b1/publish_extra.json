@@ -1,0 +1,5 @@
+{
+ "vo_stats": "142 words, 62.9 s of speech (tempo +4%). Last word ends at 01:06.25; video 01:08.85.",
+ "cues": "00:00.3 \"cakes on weekends:\" · 00:03.5 \"hobby or business?\" · 00:07.6 \"business = intent to profit\" · 00:12.6 \"+ evidence for it\" · 00:16.0 \"prices · records · a plan\" · 00:23.6 \"hobby: no income, no loss\" · 00:30.1 \"$60K job · cakes $8K - $3K\" · 00:35.0 \"= $5,000 profit\" · 00:39.7 \"tax + CPP: $2,081\" circled ≈43.3 + push-in (cover 45.0) · 00:46.4 \"year 1: $2K - $3.5K = -$1,500\", underlined ≈52.6 · 00:54.3 \"business: $461 back\" circled ≈58.2 · 00:59.2 \"hobby: $0\" · 01:01.4 \"does Etsy tell CRA?\" · tick boxes \"yes\" / \"no\" ≈64.6 · hold.",
+ "drawing": "See build/timeline.json. Paper lines: cakes on weekends: · hobby or business? · business = intent to profit · + evidence for it · prices · records · a plan · hobby: no income, no loss · $60K job · cakes $8K - $3K · = $5,000 profit · tax + CPP: $2,081 (circled) · year 1: $2K - $3.5K = -$1,500 (underlined) · business: $461 back (circled) · hobby: $0 · does Etsy tell CRA? · [ ] yes [ ] no · hold."
+}
