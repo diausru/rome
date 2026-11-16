@@ -44,3 +44,5 @@ Mode: REALISTIC HANDWRITTEN EXPLAINER, series "Real Tax Math" (engine `../b4/eng
 
 ## 6. Revision log
 - v1 (2026-11-16): preview fixes: tick boxes enlarged and spaced; "tax + CPP" moved into the line (it ran off the page); circle on $461 tightened; hand moved out for the cover hold.
+- v1 render QC (2026-11-16): 1080×1920, 24 fps, 1652 frames, 68.83 s, H.264 + AAC 48 kHz stereo, full decode clean, −14.0 LUFS, peak −2.4 dBFS; cover frame 45.0 s checked (b1/cover.jpg); final CTA (tick boxes yes/no) readable at the hold; the source tag covers the top lines in the last frame, as in B9.
+- Publishing Kit version 71 (76 cards).

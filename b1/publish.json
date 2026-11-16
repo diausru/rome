@@ -90,7 +90,7 @@
   "frame": "b1/cover.jpg",
   "why": "settled push-in on the circled '$2,081' (tax + CPP) under '= $5,000 profit' and the cake line; camera held 44.6–45.5 s, hand out of frame",
   "visual_text": "handwritten: 'cakes $8K - $3K', '= $5,000 profit', 'tax + CPP: $2,081' (circled)",
-  "checked_in_render": "pending",
+  "checked_in_render": "yes — frame at 45.0 s extracted to b1/cover.jpg: sharp; circled '$2,081' (the circle crosses the digits slightly), '…0 profit', 'cakes $8K - $3K' readable; hand out of frame; lower half empty paper",
   "metricool_ig": "manual action required (not scheduled; set videoCoverMilliseconds 45000 on /schedule)",
   "metricool_tiktok": "manual action required (Business-account status unverified)",
   "youtube": "manual — the user selects the cover at 00:45.0"
