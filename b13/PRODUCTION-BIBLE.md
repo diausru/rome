@@ -43,3 +43,5 @@ Mode: REALISTIC HANDWRITTEN EXPLAINER, series "Real Tax Math" (… → B11 → B
 
 ## 6. Revision log
 - v1 (2026-11-16): preview fixes: the "only the business part" line dropped (the voice says it) so $1,200 lands with the voice; CTA shortened to keep a 1.4 s hold; hand moved out of the push-in on $1,200 for the cover.
+- v1 render QC (2026-11-16): 1080×1920, 24 fps, 1479 frames, 61.63 s, H.264 + AAC 48 kHz stereo, full decode clean, −14.2 LUFS, peak −2.6 dBFS; cover frame 19.4 s checked (b13/cover.jpg); final CTA (log grid, 'comment LOG' underlined) readable at the hold.
+- Publishing Kit version 70 (75 cards).

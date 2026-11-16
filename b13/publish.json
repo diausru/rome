@@ -90,7 +90,7 @@
   "frame": "b13/cover.jpg",
   "why": "settled push-in on the circled '$1,200' with 'laptop: 60% work?' and '40% Netflix' above; hand out of frame; camera held 18.9–19.8 s",
   "visual_text": "handwritten: 'laptop: 60% work?', '40% Netflix', '$2,000 · 2026: 100% year 1', '60% x $2,000 = $1,200' (circled)",
-  "checked_in_render": "pending",
+  "checked_in_render": "yes — frame at 19.4 s extracted to b13/cover.jpg: sharp, hand out of frame; circled '$1,200', '100% year 1', '…% work?' and '…flix' readable; push-in crops the line starts; lower half is empty paper",
   "metricool_ig": "manual action required (not scheduled; set videoCoverMilliseconds 19400 on /schedule)",
   "metricool_tiktok": "manual action required (Business-account status unverified)",
   "youtube": "manual — the user selects the cover at 00:19.4"
