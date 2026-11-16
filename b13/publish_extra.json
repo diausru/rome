@@ -1,0 +1,5 @@
+{
+ "vo_stats": "136 words, 55.2 s of speech. Last word ends at 00:59.03; video 01:01.63.",
+ "cues": "00:00.3 \"laptop: 60% work?\" · 00:03.8 \"40% Netflix\" · 00:06.9 \"$2,000 · 2026: 100% year 1\" · 00:13.4 \"60% x $2,000 = $1,200\", $1,200 circled ≈17.8 + push-in (cover 19.4) · 00:20.0 \"$800 personal: never\" · 00:25.6 \"saves $427\" circled ≈28.2 + push-in, \"tax + CPP\" · 00:32.4 \"100% work: $711\" · 00:36.4 \"the 40% costs $285\" · 00:40.8 \"Jan 2027: 55% x $1,200 = $660\" · 00:47.0 \"saves $235\" · 00:49.7 \"60% must be reasonable\", underlined · 00:54.2 \"prove 60%?\" · 00:56.6 hand-ruled log grid · 00:58.1 \"comment LOG\", underlined · hold.",
+ "drawing": "See build/timeline.json. Paper lines: laptop: 60% work? · 40% Netflix · $2,000 · 2026: 100% year 1 · 60% x $2,000 = $1,200 (circled) · $800 personal: never · saves $427 (circled) tax + CPP · 100% work: $711 · the 40% costs $285 · Jan 2027: 55% x $1,200 = $660 · saves $235 · 60% must be reasonable (underlined) · prove 60%? · [log grid] comment LOG (underlined) · hold."
+}
