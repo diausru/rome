@@ -97,3 +97,24 @@ YouTube only · 16:00 America/Winnipeg · every 10 days from LF-05 (11-11), shif
 
 ## Correction 2026-10-18
 Everything else in this file marked as "placeholder media" is outdated: Blocks 1 and 2 carry the real videos (attached from Drive), and 2026-10-13, 10-15, 10-17 and LF-01 (10-14) are already PUBLISHED.
+
+## Batch 2026-11-17 (user command 2026-11-16): 53 new posts + duplicate cleanup — read-back verified
+Payloads: `channel/metricool/batch-2026-11-17/` (build.py → payloads.json). Times America/Winnipeg: TikTok 10:00 · IG Reel 11:00 · YouTube 16:00. Covers = `videoCoverMilliseconds` from each `publish.json` (IG/TikTok); YouTube thumbnails manual. AI flags on. Media: Drive (Tax Canada folder, link-shared) for B11/B12/B1; GitHub raw (byte-identical, sizes checked) for card Shorts, LF19–LF25 and ST01, because the My Drive root copies are not link-shared.
+
+| Date | Item | Note |
+|---|---|---|
+| Wed 2026-11-18 | LF-19 Paycheque (YouTube video) | id 430967276 |
+| Mon 2026-11-23 | B11 laptop 100% until Dec 31 (3 networks) | extra day: deadline Dec 31 · YT 430964393 |
+| Wed 2026-11-25 | LF-14 OAS clawback (moved from Dec 11) | id 430968616 |
+| Thu 2026-12-03 | B12 recapture (3 networks) | extra day · YT 430964647 |
+| Thu 2026-12-10 | B1 hobby or business (3 networks) | extra day · YT 430964984 |
+| Thu 2026-12-17 | R3 donations (3 networks) | extra day: gifts must be made by Dec 31 · YT 430965329 |
+| Mon 2027-01-04 | ST01 story "She Makes $9,800 a Month…" (YouTube video) | id 430967359 |
+| Wed 01-06 · Fri 01-08 · Wed 01-13 · Fri 01-15 · Wed 01-20 · Fri 01-22 | LF-20 RRSP · LF-25 Tax year · LF-22 Taxable income · LF-21 Capital gains · LF-24 Two jobs · LF-23 Side hustle | 430967484 · 430967572 · 430967758 · 430967837 · 430967919 · 430967990 |
+| Wed 2027-01-27 | LF-18 Refund (moved from Dec 30) | id 430968674 |
+| Fri 02-05 → Mon 03-01 (Mon/Wed/Fri) | R4, M29, M10, M3, M26, M7, M8, M9, M2, M14, M15 (3 networks each) | read-back 33/33 OK |
+
+Duplicate cleanup: LF-07…LF-10 were scheduled twice (user-finished posts with custom thumbnails on Dec 1/11/21/30 at 17:00 + copies from the long-form chat on Nov 18/20/25/27). The copies are now DRAFTS (not deleted): 430968139 (LF-07), 430968299 (LF-08), 430968354 (LF-09), 430968426 (LF-10).
+
+Not scheduled: B13 (not on Drive), H10/H29 (same topics as M10/M29), Drive folder "Province" reels (not this channel's projects).
+Scheduled through: Shorts **Mon 2027-03-01**; long-form **Wed 2027-01-27**.
