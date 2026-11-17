@@ -1,5 +1,7 @@
 Make ONE handwritten "Real Tax Math" Short on the topic in $ARGUMENTS (Russian or English; the user chooses topics — never pick one yourself from a previous CTA). Read ONLY `channel/HW-QUEUE.md` and the last project's `film.py` (template). Do not read other rule files unless something is unclear. Reply in Russian, short.
 
+Setup once per container: if `python3 -c "import cv2"` fails → `pip install -q opencv-python-headless pillow numpy`.
+
 Steps (one call each, no polling loops, no re-reading files you just wrote):
 1. Id: next free `b<N>` (see HW-QUEUE). Overlap: `grep -ril "<keyword>" */PUBLISH.md` (one call). Same object/person as the last video → tell the user and stop.
 2. Facts: 1–2 WebSearch/WebFetch on canada.ca / CRA / law text. Every figure with source + tax year. Unverified → don't use.
