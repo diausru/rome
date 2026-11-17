@@ -1,5 +1,6 @@
 # Router (2026-10-27). Two separate chats, read ONLY your file.
 - Long-form (16:9, YouTube): `longform/BOOT.md`. Commands: `/lf`, `/lf-status`, `/lf-fix`, `/lf-meta`.
+- Handwritten "Real Tax Math" Shorts (paper + hand + pen, Grady VO): commands `/hw <topic>` and `/hw-status`; read ONLY `.claude/commands/hw.md` + `channel/HW-QUEUE.md`; pipeline `tools/hw.py`. The user chooses each topic.
 - Shorts / card reels / handwritten: `channel/RULES-SHORTS.md` (full rules, unchanged) — reference only; the compact Shorts rules below are enough.
 Common: branch `claude/kling-ai-skill-install-goznyv`, commit+push, no PR; facts from canada.ca/CRA only; no AI video generation; Metricool/publishing only on explicit command; never print API keys; replies to the user in Russian, short.
 
