@@ -1,0 +1,5 @@
+{
+ "vo_stats": "133 words, VO ends 01:03.56; tempo 1.0.",
+ "cues": "00:00.3 'Uber: GST from ride #1' · 04.6 'no $30K pass' · 07.5 'CRA: must register' · 11.9 'even small suppliers' · 15.5 'DoorDash, food only:' · 19.2 'register after $30K' · 22.8 '$20K fares (GST inside)' · 30.5 'x 5/105 = $952 to CRA' underlined 34.6 · 38.2 'gas + repairs: $200 back' · 44.6 'insurance, interest: no' · 48.7 '= $752 to CRA' circled 51.6 + push-in (cover 53.4) · 54.4 'DoorDash, same $20K: $0' underlined · 58.9 'which app do you drive?' · 'Uber' / 'DoorDash' + two arrows · hold.",
+ "drawing": "See build/timeline.json. CTA mark: two hand-drawn up-arrows (B1 used tick boxes)."
+}

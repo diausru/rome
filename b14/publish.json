@@ -1,0 +1,90 @@
+{
+ "video": {
+  "title": "Uber Driver in Canada? You Owe GST From Ride #1 (handwritten)",
+  "duration": "",
+  "mp4": "b14/build/b14_final.mp4"
+ },
+ "sources": [
+  "CRA — GST/HST information for taxi operators and commercial ride-sharing drivers (canada.ca, page details 2026-08-31) · current · commercial ride-sharing drivers must register for GST/HST even if they are small suppliers; tax is usually already included in the fares; ITCs on GST/HST paid on gasoline, repairs, maintenance, washes, vehicle leases/purchases; no ITCs on insurance or interest",
+  "CRA — GST/HST Memorandum 2-2 Small suppliers (canada.ca, updated June 2026) · current · the $30,000 small supplier threshold does not apply to ride-sharing; other (e.g. delivery-only) suppliers generally register once taxable sales pass $30,000 in four consecutive calendar quarters; voluntary registration possible",
+  "Calculation (not a CRA rule): b14/calc.py → data.json. Manitoba, 2026, GST 5%. $20,000 fares incl. GST → GST inside = 20,000 × 5/105 = $952.38; gas + repairs for the rides $4,200 incl. GST → ITC 4,200 × 5/105 = $200.00; net to CRA $752.38. Delivery-only, same $20,000 (< $30,000): registration not required → $0. Dependencies: province (HST provinces use a different rate), business-use share of vehicle costs, other taxable sales, voluntary registration, quick method. Income tax is separate. Amounts are an example."
+ ],
+ "yt": {
+  "titles": [
+   "Uber Driver in Canada? You Owe GST From Ride #1",
+   "Uber vs DoorDash: Different GST Rules in Canada",
+   "Rideshare Drivers: No $30K GST Exemption (CRA)"
+  ],
+  "description": "Drive for Uber? CRA says commercial ride-sharing drivers must register for GST/HST even as small suppliers. There's no $30,000 pass.\n\nDelivering food only (DoorDash)? Different rule: registration is generally required once taxable sales pass $30,000 in four consecutive calendar quarters.\n\nExample (Manitoba, 2026, GST 5%): $20,000 in fares, GST included.\n• GST inside: 20,000 × 5/105 = about $952\n• GST paid on gas and repairs for the rides comes back as input tax credits: $200 here\n• Insurance and loan interest: no GST credit\n• Net to CRA: about $752\nSame $20,000 delivering food only: no GST registration required.\n\nWhich app do you drive for? Uber or DoorDash? Tell me below.\n\nSources: CRA 'GST/HST information for taxi operators and commercial ride-sharing drivers'; CRA GST/HST Memorandum 2-2 (Small suppliers). Example only; general information, not tax advice.\n\n#UberDriver #CanadaTax #GST",
+  "hashtags": "#UberDriver #CanadaTax #GST",
+  "keywords": "uber driver tax canada, uber driver taxes canada, gst for uber drivers, doordash tax canada, rideshare gst canada, small supplier 30000, how to file uber taxes canada, input tax credits",
+  "pinned": "Uber or DoorDash: which one do you drive? 👇",
+  "cta": "Which app do you drive for? Uber or DoorDash? Point to yours below."
+ },
+ "tt": {
+  "caption": "Uber = GST from ride #1. DoorDash = after $30K 🇨🇦 the math ✍️",
+  "keywords": "uber driver tax canada · doordash tax canada · gst rideshare · cra",
+  "hashtags": "#uberdriver #doordash #canadiantaxes #gst #cra",
+  "pinned": "Uber or DoorDash? 👇",
+  "cta": "Tell me which app."
+ },
+ "ig": {
+  "caption": "Uber vs DoorDash: different GST rules 🇨🇦\n\nCRA: ride-sharing drivers must register for GST/HST even as small suppliers. Food delivery only: generally after $30,000 in sales.\n\n$20K fares → about $952 GST inside, minus $200 back on gas + repairs = about $752 to CRA (MB, 2026). No GST credit on insurance or interest.\n\nSources: CRA ride-sharing GST/HST page, Memo 2-2. Example only, general info, not advice.",
+  "keywords": "uber driver canada, doordash canada, gst, cra, rideshare taxes",
+  "hashtags": "#uberdriver #doordashdriver #canadiantaxes #gst #taxtips #cra",
+  "pinned": "Uber or DoorDash? 👇",
+  "cta": "Tell me which app."
+ },
+ "eng": {
+  "question": "Uber or DoorDash: which do you drive?",
+  "save": "Ride-sharing vs delivery GST rule + the $752 math.",
+  "share": "A friend who just started driving for Uber.",
+  "follow": "The user picks the next topic."
+ },
+ "seo": {
+  "primary": "uber driver tax canada",
+  "secondary": "vidIQ CA 2026-11-18: 'uber driver tax canada' <750/mo (comp 23); 'uber driver taxes canada' / 'how to file uber taxes canada' <750 (comp 10)",
+  "intent": "A new Uber/DoorDash driver wants to know about GST.",
+  "audience": "Rideshare and delivery drivers in Canada",
+  "angle": "Same $20K, two apps, two GST rules.",
+  "questions": "Do Uber drivers need a GST number? · Does the $30K rule apply? · What GST comes back? · DoorDash GST?",
+  "pain": "Missing GST registration from the first ride."
+ },
+ "next": [
+  {
+   "topic": "Do Etsy / Uber / Airbnb report you to CRA? (queue #2)",
+   "why": "close to this audience",
+   "intent": "does uber report to cra",
+   "hook": "You never got a slip. CRA may still know.",
+   "angle": "digital platform reporting (needs a fact pass)",
+   "payoff": "what's reported"
+  },
+  {
+   "topic": "Meals with clients: why only 50% (queue #3)",
+   "why": "queue",
+   "intent": "meals and entertainment deduction",
+   "hook": "$400 dinner, $200 deduction.",
+   "angle": "50% rule",
+   "payoff": "the saving"
+  },
+  {
+   "topic": "Driver's car: business-use % and the logbook",
+   "why": "follows this video",
+   "intent": "uber driver car expenses canada",
+   "hook": "Your car isn't 100% Uber.",
+   "angle": "business-use share (needs a fact pass)",
+   "payoff": "what comes off"
+  }
+ ],
+ "series": "Real Tax Math (handwritten): B14, user-chosen queue topic #1.",
+ "research": "vidIQ (CA, 2026-11-18): 'uber driver tax canada' <750/mo, comp 23; long-tail variants all <750, comp 10–25. vidIQ credits: research 5 + title score 5.",
+ "retention": "Hook in 1 s ('Uber: GST from ride #1'); the rule by 12 s; DoorDash contrast at 15 s; money from 22 s; $952 at 31–35 s; circled $752 at 51.6 s (cover 53.4); DoorDash $0 at 54 s; CTA at 58.9 s.",
+ "_label": "B14 · Uber vs DoorDash GST (handwritten)",
+ "_mp4": "b14_final.mp4",
+ "_vo": "Drive for Uber? You owe GST from your very first ride. There's no thirty thousand dollar pass. CRA says commercial ride-sharing drivers must register for GST, even as small suppliers. Deliver food only, for DoorDash? Different rule: you register once sales pass thirty thousand. Our Manitoba driver takes in twenty thousand in fares. The GST is usually already inside the fare. Five over one hundred five. About nine hundred fifty-two dollars of that belongs to CRA. But the GST you paid on gas and repairs for the rides comes back. Here, two hundred dollars. Insurance and loan interest? No GST credit there. So about seven fifty-two goes to CRA. The same twenty thousand, delivering food only: no GST registration required. Which app do you drive for? Uber or DoorDash? Point to yours below.",
+ "_votc": "[00:00.20–00:06.74] Drive for Uber? You owe GST from your very first ride. There's no thirty thousand dollar pass.\n[00:07.14–00:14.01] CRA says commercial ride-sharing drivers must register for GST, even as small suppliers.\n[00:14.41–00:21.61] Deliver food only, for DoorDash? Different rule: you register once sales pass thirty thousand.\n[00:22.01–00:30.07] Our Manitoba driver takes in twenty thousand in fares. The GST is usually already inside the fare.\n[00:30.47–00:37.71] Five over one hundred five. About nine hundred fifty-two dollars of that belongs to CRA.\n[00:38.12–00:44.13] But the GST you paid on gas and repairs for the rides comes back. Here, two hundred dollars.\n[00:44.53–00:48.21] Insurance and loan interest? No GST credit there.\n[00:48.61–00:58.52] So about seven fifty-two goes to CRA. The same twenty thousand, delivering food only: no GST registration required.\n[00:58.92–01:03.56] Which app do you drive for? Uber or DoorDash? Point to yours below.",
+ "cover": {
+  "why": "settled push-in on circled '$752' in '= $752 to CRA'; camera held ≈52.9–54.0 s, hand out of frame",
+  "visual_text": "handwritten: 'x 5/105 = $952 to CRA', 'gas + repairs: $200 back', '= $752 to CRA' (circled)"
+ }
+}

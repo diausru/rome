@@ -1,0 +1,9 @@
+{
+ "fares": 20000,
+ "gst_in_fares": 952.38,
+ "costs": 4200,
+ "itc": 200.0,
+ "net_remit": 752.38,
+ "delivery_same_sales_gst": 0,
+ "delivery_threshold": 30000
+}
