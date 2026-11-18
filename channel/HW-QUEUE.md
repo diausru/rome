@@ -21,12 +21,13 @@ The user picks the topic. Never take the next topic from the previous video's CT
 | b12 | Sold the written-off laptop: recapture | 2026-11-15 |
 | b13 | Laptop 60% work | 2026-11-16 |
 | b1 | Hobby or business (CRA test) | 2026-11-16 |
+| b14 | Uber vs DoorDash: GST from ride #1 (queue #1) | 2026-11-18 |
 
 ## Next topics (checked 2026-11-17: no overlap with card Shorts, card queue #17/18/12/20/21/24/25/5, long-form LF-01…12; vidIQ CA demand)
 Ranked; every topic needs its own fact pass. The user picks.
 | # | Topic | Math on paper | vidIQ CA (2026-11-17) |
 |---|---|---|---|
-| 1 | Uber / DoorDash driver: GST from the first dollar + what's deductible | fares → GST → expenses → tax | many long-tail variants, all <750/mo, competition 8–25 (cluster demand, easy to rank) |
+| ~~1~~ | DONE as B14 (GST part; car business-use % still open) — Uber / DoorDash driver | fares → GST → expenses → tax | many long-tail variants, all <750/mo, competition 8–25 (cluster demand, easy to rank) |
 | 2 | Do Etsy / Uber / Airbnb report you to CRA? (platform reporting) | who gets a slip, what CRA sees | 'does etsy report to cra' <750; 'etsy shop' ≈13,462/mo |
 | 3 | Meals with clients: why only 50% | $400 bill → $200 → saving | 'meals and entertainment deduction' <750 (comp 24); 'small business tax deductions' ≈3,586 |
 | 4 | Day trading in a TFSA: when CRA taxes it as business income | gain → fully taxable vs tax-free | 'day trading tfsa canada' cluster <750, comp 13–41; 'day trading' CA ≈29,911 |

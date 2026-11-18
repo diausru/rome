@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Uber Driver in Canada? You Owe GST From Ride #1 (handwritten)",
-  "duration": "",
+  "duration": "66.83 s (1604 frames)",
   "mp4": "b14/build/b14_final.mp4"
  },
  "sources": [
@@ -85,6 +85,13 @@
  "_votc": "[00:00.20–00:06.74] Drive for Uber? You owe GST from your very first ride. There's no thirty thousand dollar pass.\n[00:07.14–00:14.01] CRA says commercial ride-sharing drivers must register for GST, even as small suppliers.\n[00:14.41–00:21.61] Deliver food only, for DoorDash? Different rule: you register once sales pass thirty thousand.\n[00:22.01–00:30.07] Our Manitoba driver takes in twenty thousand in fares. The GST is usually already inside the fare.\n[00:30.47–00:37.71] Five over one hundred five. About nine hundred fifty-two dollars of that belongs to CRA.\n[00:38.12–00:44.13] But the GST you paid on gas and repairs for the rides comes back. Here, two hundred dollars.\n[00:44.53–00:48.21] Insurance and loan interest? No GST credit there.\n[00:48.61–00:58.52] So about seven fifty-two goes to CRA. The same twenty thousand, delivering food only: no GST registration required.\n[00:58.92–01:03.56] Which app do you drive for? Uber or DoorDash? Point to yours below.",
  "cover": {
   "why": "settled push-in on circled '$752' in '= $752 to CRA'; camera held ≈52.9–54.0 s, hand out of frame",
-  "visual_text": "handwritten: 'x 5/105 = $952 to CRA', 'gas + repairs: $200 back', '= $752 to CRA' (circled)"
+  "visual_text": "handwritten: 'x 5/105 = $952 to CRA', 'gas + repairs: $200 back', '= $752 to CRA' (circled)",
+  "timestamp_s": 53.4,
+  "ms": 53400,
+  "frame": "b14/cover.jpg",
+  "metricool_ig": "manual action required (set videoCoverMilliseconds 53400 on /schedule)",
+  "metricool_tiktok": "manual action required (Business-account status unverified)",
+  "youtube": "manual — the user selects the cover at 00:53.4",
+  "checked_in_render": "yes — frame at 53.4 s extracted to b14/cover.jpg"
  }
 }
