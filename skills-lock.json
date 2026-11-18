@@ -1,11 +1,18 @@
 {
-  "version": 1,
+  "version": 2,
   "skills": {
+    "context-engineering-collection": {
+      "source": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+      "commit": "9ff0c99108b36d3b886defd825d8ac1f47dba374",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "7d2f1dc7a6612b5729f7de856de11ca41dcc3b9a63e83dfb8a85c85597a063af"
+    },
     "kling-cli": {
       "source": "klingai-tech/skills",
       "sourceType": "github",
       "skillPath": "SKILL.md",
-      "computedHash": "e52e3a6182e2feec132c1fa1081808372f268e50cb327d0ba7bfc475818d6d92"
+      "computedHash": "15717f18481d45656f00ac8f2445af7c54c53a13fc161bdd988dee74aaada436"
     }
   }
 }
