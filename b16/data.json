@@ -1,0 +1,11 @@
+{
+ "net": 60000,
+ "dinners": 12,
+ "bill": 400,
+ "spent": 4800,
+ "deductible": 2400.0,
+ "not_deductible": 2400.0,
+ "saving": 853.52,
+ "saving_per_dinner": 71.13,
+ "real_cost": 3946.48
+}

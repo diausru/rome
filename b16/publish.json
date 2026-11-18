@@ -1,0 +1,90 @@
+{
+ "video": {
+  "title": "$400 Client Dinner, $200 Deduction: CRA's 50% Meal Rule (handwritten)",
+  "duration": "",
+  "mp4": "b16/build/b16_final.mp4"
+ },
+ "sources": [
+  "CRA — T2125 Line 8523 Meals and entertainment (allowable part only) (canada.ca, page details 2026-08-31) · current · maximum claim is 50% of the lesser of the amount incurred and an amount reasonable in the circumstances; entertainment includes tickets, gratuities, cover charges, room rentals; the limit does not apply when you bill the client for the meal and entertainment costs and show them on the bill (other exceptions: restaurants/hotels, employee benefits, up to six all-employee events a year, charity fundraisers, construction camps; long-haul truckers 80%)",
+  "CRA T4127 (Jan 2026) and CPP 2026, via b4/calc.py · 2026 · tax + CPP for a Manitoba self-employed person with $60,000 net income",
+  "Calculation (not a CRA rule): b16/calc.py → data.json. 12 client dinners × $400 = $4,800; 50% = $2,400 deductible; $60,000 → $57,600 net income: tax + CPP saved $853.52 (≈$71.13 per dinner); real cost $4,800 − $853.52 = $3,946.48. Dependencies: province, income, whether the amount is reasonable, records. GST/HST input tax credits on meals have their own 50% rule (not shown). Amounts are an example."
+ ],
+ "yt": {
+  "titles": [
+   "$400 Client Dinner, $200 Deduction: CRA's 50% Meal Rule",
+   "Why CRA Only Lets You Deduct Half Your Client Meals",
+   "Business Meals in Canada: The 50% Rule, With Real Math"
+  ],
+  "description": "A $400 dinner with a client. CRA lets you deduct $200. Why?\n\nT2125 line 8523: you claim 50% of the lesser of what you spent and a reasonable amount. Tips count as entertainment, same limit.\n\nExample (Manitoba, 2026, self-employed, $60,000):\n• 12 client dinners × $400 = $4,800\n• × 50% = $2,400 off income\n• Tax + CPP saved: about $854 (≈$71 per dinner)\n• Real cost: about $3,950\n\nOne exception: bill the meal to your client and show it on the invoice, and the 50% limit doesn't apply.\n\nYour last client lunch: who paid, you or the client? Tell me below.\n\nSources: CRA T2125 line 8523; CRA T4127 2026 rates, CPP 2026. Example only; general information, not tax advice.\n\n#SmallBusiness #CanadaTax #SelfEmployed",
+  "hashtags": "#SmallBusiness #CanadaTax #SelfEmployed",
+  "keywords": "meals and entertainment deduction canada, business meals tax canada, 50% meal deduction, line 8523, client dinner write off, self employed deductions canada, small business tax deductions",
+  "pinned": "Who paid: you or the client? 👇",
+  "cta": "Your last client lunch: who paid? You, or the client? Tell me below."
+ },
+ "tt": {
+  "caption": "$400 client dinner → only $200 off 🇨🇦 CRA's 50% rule + the math ✍️",
+  "keywords": "meals and entertainment deduction · business meals canada · cra 50% rule",
+  "hashtags": "#smallbusiness #canadiantaxes #selfemployed #taxtips #cra",
+  "pinned": "Who paid? 👇",
+  "cta": "You or the client?"
+ },
+ "ig": {
+  "caption": "Why only half? 🇨🇦\n\nCRA line 8523: meals and entertainment = 50% of the lesser of what you spent and a reasonable amount. Tips included.\n\n12 dinners × $400 = $4,800 → $2,400 off income → about $854 tax + CPP saved (MB, self-employed $60K, 2026). Real cost ≈ $3,950.\n\nException: billed to the client and shown on the invoice → no 50% limit.\n\nSource: CRA T2125 line 8523. Example only, general info, not advice.",
+  "keywords": "business meals, self employed canada, cra, tax deductions, small business canada",
+  "hashtags": "#smallbusinesscanada #canadiantaxes #selfemployed #taxtips #cra #entrepreneur",
+  "pinned": "Who paid? 👇",
+  "cta": "You or the client?"
+ },
+ "eng": {
+  "question": "Who paid: you or the client?",
+  "save": "The 50% rule and the $854 math.",
+  "share": "A freelancer who takes clients to lunch.",
+  "follow": "The user picks the next topic."
+ },
+ "seo": {
+  "primary": "meals and entertainment deduction canada",
+  "secondary": "vidIQ CA 2026-11-18: seed <750/mo (comp 11); 'tax deductions' ≈6,525/mo",
+  "intent": "A self-employed person wants to know how much of a client meal is deductible.",
+  "audience": "Freelancers, consultants, small business owners in Canada",
+  "angle": "$400 → $200, then what it really saves",
+  "questions": "Are client meals deductible? · Why only 50%? · Do tips count? · Any exceptions?",
+  "pain": "Claiming 100% by mistake; not knowing the real saving."
+ },
+ "next": [
+  {
+   "topic": "Day trading in a TFSA (queue #4)",
+   "why": "queue",
+   "intent": "day trading tfsa canada",
+   "hook": "Tax-free account, taxed anyway?",
+   "angle": "business income in a TFSA",
+   "payoff": "the bill"
+  },
+  {
+   "topic": "Paying your spouse or kid (queue #5)",
+   "why": "queue",
+   "intent": "pay spouse from business canada",
+   "hook": "Hire your kid, cut your tax?",
+   "angle": "reasonable salary",
+   "payoff": "the saving"
+  },
+  {
+   "topic": "Bartering is income (queue #6)",
+   "why": "queue",
+   "intent": "bartering taxable canada",
+   "hook": "No cash changed hands.",
+   "angle": "fair market value",
+   "payoff": "$1,000 swap = $1,000 income"
+  }
+ ],
+ "series": "Real Tax Math (handwritten): B16, user-chosen queue topic #3.",
+ "research": "vidIQ (CA, 2026-11-18): 'meals and entertainment deduction canada' <750/mo, comp 11; 'tax deductions' ≈6,525/mo; 'meals' ≈14,740/mo. vidIQ credits: research 5 + title score 5.",
+ "retention": "Hook in 1 s ('$400 client dinner'); $200 at 3 s; the rule by 14 s; the money from 18 s; circled $854 at 34.4 s (cover 36.4); real cost at 39 s; exception at 42 s; CTA grid at 50 s.",
+ "_label": "B16 · client meals: why only 50% (handwritten)",
+ "_mp4": "b16_final.mp4",
+ "_vo": "A four hundred dollar dinner with a client. CRA lets you deduct two hundred. Here's why. Line eighty-five twenty-three: you claim fifty percent of the lesser of what you spent, or a reasonable amount. Tips count as entertainment, so they fall under the same limit. Our Manitoba consultant is self-employed and earns sixty thousand. Twelve client dinners a year, four hundred each. That's forty-eight hundred spent. Only twenty-four hundred comes off income. Tax and CPP saved: about eight hundred fifty-four dollars. Roughly seventy-one per dinner. So those dinners still cost about thirty-nine fifty. One exception: bill the meal to your client and show it on the invoice, and the fifty percent limit doesn't apply. Your last client lunch: who paid? You, or the client? Tell me below.",
+ "_votc": "[00:00.20–00:05.79] A four hundred dollar dinner with a client. CRA lets you deduct two hundred. Here's why.\n[00:06.19–00:13.69] Line eighty-five twenty-three: you claim fifty percent of the lesser of what you spent, or a reasonable amount.\n[00:14.09–00:17.36] Tips count as entertainment, so they fall under the same limit.\n[00:17.76–00:25.78] Our Manitoba consultant is self-employed and earns sixty thousand. Twelve client dinners a year, four hundred each.\n[00:26.18–00:30.75] That's forty-eight hundred spent. Only twenty-four hundred comes off income.\n[00:31.15–00:38.27] Tax and CPP saved: about eight hundred fifty-four dollars. Roughly seventy-one per dinner.\n[00:38.67–00:41.94] So those dinners still cost about thirty-nine fifty.\n[00:42.34–00:49.06] One exception: bill the meal to your client and show it on the invoice, and the fifty percent limit doesn't apply.\n[00:49.46–00:55.31] Your last client lunch: who paid? You, or the client? Tell me below.",
+ "cover": {
+  "why": "settled push-in on circled '$854' in 'tax + CPP saved: $854' under '$2,400 off income'; camera held ≈35.5–37.3 s, hand out of frame",
+  "visual_text": "handwritten: '12 dinners x $400 = $4,800', 'x 50% = $2,400 off income', 'tax + CPP saved: $854' (circled)"
+ }
+}
