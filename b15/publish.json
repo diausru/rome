@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Does Etsy Report You to CRA? The 30-Sale Rule (handwritten)",
-  "duration": "",
+  "duration": "69.08 s (1658 frames)",
   "mp4": "b15/build/b15_final.mp4"
  },
  "sources": [
@@ -86,6 +86,13 @@
  "_votc": "[00:00.20–00:07.56] You sell on Etsy and never got a tax slip. Does CRA know? Since twenty twenty-four, the platform may tell them.\n[00:07.96–00:16.46] Under CRA's digital platform rules, platforms report sellers: name, address, SIN, sales and fees.\n[00:16.86–00:22.10] Quarterly payments and the number of sales. You get a copy by January thirty-first.\n[00:22.50–00:30.21] One exception for goods: fewer than thirty sales, and two thousand eight hundred dollars or less. Both.\n[00:30.61–00:34.18] Twenty-nine sales for twenty-five hundred? Not reported.\n[00:34.58–00:41.16] Thirty-one sales, same amount? Reported. Twelve sales for three thousand? Reported too.\n[00:41.56–00:47.22] Reported or not, the rule is the same: a business pays tax on its profit.\n[00:47.62–01:00.32] Our Manitoba seller also earns sixty thousand at a job. Sales twenty-five hundred, costs nine hundred. Sixteen hundred profit: about six sixty-six in tax and CPP.\n[01:00.72–01:05.82] How many sales did you make this year? Under thirty, or over? Tell me below.",
  "cover": {
   "why": "settled push-in on circled '$666' in 'tax + CPP: $666' under the $1,600 profit line; camera held ≈58.3–60.0 s, hand out of frame",
-  "visual_text": "handwritten: '12 sales, $3,000: reported', '$2,500 - $900 = $1,600 profit', 'tax + CPP: $666' (circled)"
+  "visual_text": "handwritten: '12 sales, $3,000: reported', '$2,500 - $900 = $1,600 profit', 'tax + CPP: $666' (circled)",
+  "timestamp_s": 59.0,
+  "ms": 59000,
+  "frame": "b15/cover.jpg",
+  "metricool_ig": "manual action required (set videoCoverMilliseconds 59000 on /schedule)",
+  "metricool_tiktok": "manual action required (Business-account status unverified)",
+  "youtube": "manual — the user selects the cover at 00:59.0",
+  "checked_in_render": "yes — frame at 59.0 s extracted to b15/cover.jpg: circled '$666' under '$1,600 profit', hand out of frame"
  }
 }
