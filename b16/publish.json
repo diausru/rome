@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "$400 Client Dinner, $200 Deduction: CRA's 50% Meal Rule (handwritten)",
-  "duration": "",
+  "duration": "58.58 s (1406 frames)",
   "mp4": "b16/build/b16_final.mp4"
  },
  "sources": [
@@ -85,6 +85,13 @@
  "_votc": "[00:00.20–00:05.79] A four hundred dollar dinner with a client. CRA lets you deduct two hundred. Here's why.\n[00:06.19–00:13.69] Line eighty-five twenty-three: you claim fifty percent of the lesser of what you spent, or a reasonable amount.\n[00:14.09–00:17.36] Tips count as entertainment, so they fall under the same limit.\n[00:17.76–00:25.78] Our Manitoba consultant is self-employed and earns sixty thousand. Twelve client dinners a year, four hundred each.\n[00:26.18–00:30.75] That's forty-eight hundred spent. Only twenty-four hundred comes off income.\n[00:31.15–00:38.27] Tax and CPP saved: about eight hundred fifty-four dollars. Roughly seventy-one per dinner.\n[00:38.67–00:41.94] So those dinners still cost about thirty-nine fifty.\n[00:42.34–00:49.06] One exception: bill the meal to your client and show it on the invoice, and the fifty percent limit doesn't apply.\n[00:49.46–00:55.31] Your last client lunch: who paid? You, or the client? Tell me below.",
  "cover": {
   "why": "settled push-in on circled '$854' in 'tax + CPP saved: $854' under '$2,400 off income'; camera held ≈35.5–37.3 s, hand out of frame",
-  "visual_text": "handwritten: '12 dinners x $400 = $4,800', 'x 50% = $2,400 off income', 'tax + CPP saved: $854' (circled)"
+  "visual_text": "handwritten: '12 dinners x $400 = $4,800', 'x 50% = $2,400 off income', 'tax + CPP saved: $854' (circled)",
+  "timestamp_s": 36.4,
+  "ms": 36400,
+  "frame": "b16/cover.jpg",
+  "metricool_ig": "manual action required (set videoCoverMilliseconds 36400 on /schedule)",
+  "metricool_tiktok": "manual action required (Business-account status unverified)",
+  "youtube": "manual — the user selects the cover at 00:36.4",
+  "checked_in_render": "yes — frame at 36.4 s extracted to b16/cover.jpg: circled '$854' (circle touches the 4), '$4,800', '…00 off income' readable; hand out of frame"
  }
 }
