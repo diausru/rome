@@ -75,7 +75,7 @@ def final(p, cover):
     sh(sys.executable, "film.py", cwd=d, stdout=open(os.path.join(b, "render.log"), "w"))
     fin = os.path.join(b, f"{p}_final.mp4")
     sh("ffmpeg", "-y", "-v", "error", "-i", os.path.join(b, f"{p}_silent.mp4"), "-i", os.path.join(d, "vo", "vo_master.wav"),
-       "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", "alimiter=limit=0.70:level=false", "-c:a", "aac", "-b:a", "192k",
+       "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", "apad,alimiter=limit=0.70:level=false", "-c:a", "aac", "-b:a", "192k",
        "-ar", "48000", "-shortest", "-movflags", "+faststart", fin)
     pr = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "stream=codec_name,width,height,nb_frames",
                                     "-show_entries", "format=duration", "-of", "json", fin], capture_output=True, text=True).stdout)

@@ -1,0 +1,14 @@
+{
+ "cases": {
+  "29 sales $2,500": false,
+  "31 sales $2,500": true,
+  "12 sales $3,000": true
+ },
+ "salary": 60000,
+ "sales": 2500,
+ "costs": 900,
+ "profit": 1600,
+ "extra_tax": 475.38,
+ "extra_cpp": 190.4,
+ "extra_total": 665.78
+}
