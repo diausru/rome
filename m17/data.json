@@ -1,0 +1,49 @@
+{
+ "topic": "Part-time vs full-time: a single parent going from $24,000 to $40,000 (2025) loses part of the raise to federal tax, the Canada Workers Benefit phase-out (15% above $30,639 family) and the CCB reduction (7%, one child, above $38,237); on her last dollars about 36.5 cents of each is gone before provincial tax, CPP and EI",
+ "tax_year": 2025,
+ "example": {
+  "part": 24000,
+  "full": 40000,
+  "extra": 16000,
+  "fed_rate": 14.5,
+  "fed": 2320.0,
+  "cwb_max": 2813,
+  "cwb_thr": 30639,
+  "cwb_pct": 15,
+  "cwb_cut": 1404.15,
+  "cwb_left": 1408.85,
+  "ccb_thr": 38237,
+  "ccb_pct": 7,
+  "ccb_cut": 123.41,
+  "total": 3847.56,
+  "keep": 12152.44,
+  "share": 24.0,
+  "marg": 36.5,
+  "note": "example (not a CRA rule): Maya, single parent, one child under 6 not assumed (CCB reduction does not depend on age), 2025 working income = adjusted (family) net income: part-time $24,000 → full-time $40,000. Federal tax: both incomes are above the 2025 BPA $16,129 and below $57,375, so the extra $16,000 × 14.5% = $2,320.00 (other credits unchanged). CWB (family; a single parent with an eligible dependant claims the family amount): at $24,000 she is below the $30,639 reduction threshold → full $2,813 (assumes the basic amount is fully phased in at that income); at $40,000: $2,813 − 15% × ($40,000 − $30,639) = $2,813 − $1,404.15 = $1,408.85 → −$1,404.15. CCB (1 child, July 2026–June 2027 benefit year, based on 2025 AFNI): 7% × ($40,000 − $38,237) = $123.41 less per year. CGEB: no change (both incomes below $46,432). Total $3,847.56 (24.0%); kept $12,152.44. Marginal on dollars between $38,237 and $40,000: 14.5% + 15% + 7% = 36.5%. Provincial tax, CPP and EI not included."
+ },
+ "derive": {},
+ "spoken": {
+  "part": "twenty-four thousand",
+  "full": "forty thousand",
+  "cwb_pct": "fifteen",
+  "ccb_pct": "seven"
+ },
+ "spoken_manual": {
+  "extra": "sixteen thousand dollars = $16,000",
+  "fed": "twenty-three hundred and twenty = $2,320",
+  "fed_rate": "fourteen and a half percent",
+  "cwb_thr": "thirty thousand six hundred and thirty-nine = $30,639",
+  "cwb_cut": "fourteen hundred and four = $1,404.15",
+  "ccb_thr": "thirty-eight thousand = $38,237 (rounded in speech)",
+  "ccb_cut": "a hundred and twenty-three = $123.41",
+  "total": "almost four thousand = $3,847.56",
+  "marg": "about thirty-six cents = 36.5%"
+ },
+ "sources": {
+  "federal": "CRA What's new for 2025: lowest federal rate 14.5% for 2025 (15% Jan–Jun, 14% from July 1), BPA $16,129, first bracket to $57,375 (recorded in r2/m10/h10 data)",
+  "cwb": "canada.ca CRA 'Canada workers benefit – How much you can get' (2025 tax year): family basic maximum $2,813, reduced above $30,639 adjusted family net income, nil above $49,393 (15% of the excess: $18,754 × 15% = $2,813); family includes an eligible dependant; verified for m9; 2026 figures not yet published (Budget 2026 lists 2027 current-law values $2,943 / $32,064)",
+  "ccb": "canada.ca CRA CCB how much (July 2026–June 2027, based on 2025 AFNI): reduction above $38,237 — 7% for one child (m15 sources)",
+  "cgeb": "canada.ca CRA CGEB (July 2026–June 2027): 5% phase-out above $46,432 (m8/m15 sources)",
+  "acwb": "Budget 2026 Tax measures: advance CWB payments are half of the previous year's CWB; no requirement to repay any excess (not used in the script)"
+ }
+}

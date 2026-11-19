@@ -1,0 +1,46 @@
+{
+ "voice": "Grady (ElevenLabs via Higgsfield)",
+ "tempo": 1.04,
+ "beats": [
+  [
+   "hook",
+   "Maya went full-time: sixteen thousand dollars more a year. Almost four thousand of it never reaches her. Here's where it goes.",
+   0.35
+  ],
+  [
+   "c1",
+   "Maya is a single parent with one child. Part-time, she earned twenty-four thousand. Full-time: forty thousand.",
+   0.3
+  ],
+  [
+   "c2",
+   "Federal tax first: fourteen and a half percent of the extra. Twenty-three hundred and twenty dollars.",
+   0.3
+  ],
+  [
+   "c3",
+   "Then the Canada Workers Benefit. Above thirty thousand six hundred and thirty-nine, it shrinks fifteen percent. She loses fourteen hundred and four.",
+   0.3
+  ],
+  [
+   "c4",
+   "And from next July, the Child Benefit drops seven percent above thirty-eight thousand: another hundred and twenty-three.",
+   0.4
+  ],
+  [
+   "reveal",
+   "The twist: on her last dollars, about thirty-six cents of each one is gone. Before provincial tax, CPP and EI.",
+   0.3
+  ],
+  [
+   "action",
+   "So before you switch, count the benefits, not just the paycheque.",
+   0.3
+  ],
+  [
+   "cta",
+   "Next: why January's paycheque shrinks. Follow so you don't miss it.",
+   0.0
+  ]
+ ]
+}

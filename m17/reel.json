@@ -1,0 +1,244 @@
+{
+ "id": "m17",
+ "engine": "motion v1 (showreel/src/motion)",
+ "hook": {
+  "l1": "FULL-TIME: +$16,000.",
+  "l2": "$3,848 NEVER ARRIVES.",
+  "format": "Consequence-first (B Reaction + C Corrective): frame 0 = Maya, worried, at the kitchen table with her pay stub; red '−$3,848' counter already running; then the 'how it happens' rewind",
+  "concepts": [
+   {
+    "n": 1,
+    "format": "B Reaction / consequence first",
+    "idea": "worried single parent at the table + red −$3,848 counter running on frame 0; 'FULL-TIME: +$16,000. $3,848 NEVER ARRIVES.'",
+    "score": "first frame 5 · clarity 5 · curiosity 5 · fit 5 · story 5 · feasible 5 · credible 5 = 35 (chosen)"
+   },
+   {
+    "n": 2,
+    "format": "C Corrective",
+    "idea": "'More hours = more money? Not dollar for dollar.' on a calm kitchen plate",
+    "score": "3·5·4·5·5·5·5 = 32"
+   },
+   {
+    "n": 3,
+    "format": "D Pattern break",
+    "idea": "a $16,000 stack of coins on screen; three hands take coins away before the title appears",
+    "score": "5·3·4·4·5·3·4 = 28 (hands-in-photo hard without AI video)"
+   },
+   {
+    "n": 4,
+    "format": "A Impossible shot (code)",
+    "idea": "pay stub 'bleeds' red numbers that drip off the bottom of the frame",
+    "score": "4·3·4·4·4·4·4 = 27"
+   },
+   {
+    "n": 5,
+    "format": "E Silent action",
+    "idea": "a hand crossing out 'PART-TIME' and writing 'FULL-TIME' on a calendar, then the counter",
+    "score": "4·4·3·4·4·3·5 = 27 (handwriting = the /hw series look)"
+   }
+  ],
+  "why": "User asked for a consequence-first hook (show the loss before the explanation). #1 shows the outcome and the person on frame 0, is accurate (the $3,848 is computed in data.json and paid off beat by beat), and differs from M15 (struck bracket % card) and M14/M2.",
+  "timeline": "0.0–0.5 plate (Maya, hand on forehead) + 2-line kinetic headline + red counter starts · 0.5–1.5 counter runs to −$3,848 · 1.5–3.0 VO 'sixteen thousand dollars more… almost four thousand never reaches her' + impact SFX · 3.0–4.5 '◂◂ HOW IT HAPPENS' pill, VO 'Here's where it goes', cut into c1",
+  "muted": "yes — headline + counter carry it",
+  "metrics_after_publication": "YouTube Studio: stayed-to-watch / first 3 s, average view duration, % viewed, drop-off before 5 s, shares, saves; compare with M15 / M14. Real data only."
+ },
+ "hold_after_vo": 0.5,
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  },
+  "fall": {
+   "box": [
+    80,
+    600,
+    880,
+    660
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "rate": {
+   "box": [
+    80,
+    660,
+    880,
+    520
+   ],
+   "from": "reveal",
+   "to": "action"
+  }
+ },
+ "cues": [
+  {
+   "id": "sixteen",
+   "beat": "hook",
+   "word": "sixteen",
+   "sfx": "chime"
+  },
+  {
+   "id": "four",
+   "beat": "hook",
+   "word": "four",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "where",
+   "beat": "hook",
+   "word": "where",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "part",
+   "beat": "c1",
+   "word": "twenty-four",
+   "sfx": "tick"
+  },
+  {
+   "id": "full",
+   "beat": "c1",
+   "word": "forty",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "fed",
+   "beat": "c2",
+   "word": "Twenty-three",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "cwb",
+   "beat": "c3",
+   "word": "loses",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "c4",
+   "beat": "c4",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "ccb",
+   "beat": "c4",
+   "word": "another",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "cents",
+   "beat": "reveal",
+   "word": "cents",
+   "sfx": "tick"
+  },
+  {
+   "id": "count",
+   "beat": "action",
+   "word": "count",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c4",
+   "word": "another",
+   "offset": 1.2
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ],
+ "music": "work"
+}

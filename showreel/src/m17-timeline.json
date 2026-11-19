@@ -1,0 +1,53 @@
+{
+ "total": 67.513,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "Maya went full-time: sixteen thousand dollars more a year. Almost four thousand of it never reaches her. Here's where it goes.",
+   "start": 0.25,
+   "end": 10.413
+  },
+  {
+   "id": "c1",
+   "text": "Maya is a single parent with one child. Part-time, she earned twenty-four thousand. Full-time: forty thousand.",
+   "start": 10.763,
+   "end": 19.466
+  },
+  {
+   "id": "c2",
+   "text": "Federal tax first: fourteen and a half percent of the extra. Twenty-three hundred and twenty dollars.",
+   "start": 19.766,
+   "end": 27.069
+  },
+  {
+   "id": "c3",
+   "text": "Then the Canada Workers Benefit. Above thirty thousand six hundred and thirty-nine, it shrinks fifteen percent. She loses fourteen hundred and four.",
+   "start": 27.369,
+   "end": 38.208
+  },
+  {
+   "id": "c4",
+   "text": "And from next July, the Child Benefit drops seven percent above thirty-eight thousand: another hundred and twenty-three.",
+   "start": 38.508,
+   "end": 46.89
+  },
+  {
+   "id": "reveal",
+   "text": "The twist: on her last dollars, about thirty-six cents of each one is gone. Before provincial tax, CPP and EI.",
+   "start": 47.29,
+   "end": 57.547
+  },
+  {
+   "id": "action",
+   "text": "So before you switch, count the benefits, not just the paycheque.",
+   "start": 57.847,
+   "end": 62.446
+  },
+  {
+   "id": "cta",
+   "text": "Next: why January's paycheque shrinks. Follow so you don't miss it.",
+   "start": 62.746,
+   "end": 67.513
+  }
+ ]
+}
