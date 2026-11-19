@@ -16,6 +16,7 @@ Full Shorts rules: `channel/RULES-SHORTS.md` (read only if a rule is unclear). L
 - Reply in Russian, short. One video at a time, then STOP and wait.
 - Facts: every figure from CRA / canada.ca / law / province with tax year → `<p>/data.json` sources. Unverified = `[VERIFY]`, not shipped. Example ≠ CRA rule. No "secret/loophole".
 - Numbers only in code; generated photos have no text/numbers. No Kling / AI video. Motion = code (Remotion).
+- Hook module (user, 2026-11-19, mandatory): before the script, follow the APPLY block of `channel/HOOK-ENGINEERING.md` (5 hook concepts, score, chosen 0–4 s hook, 10-question QC → `<p>/HOOK.md`); hook = plate + code motion, no AI video.
 - Every Short passes `channel/REEL-CHECKLIST.md` (flag header, 3 scenes same people + camera moves + snow/steam, frame-0 kinetic hook, typed titles, word captions, glass panel + gold numbers, stamp re-hook 55–65 %, reveal, Grady VO + ducked music + cue SFX + sonic logo, check card + NEXT pill + "Follow so you don't miss it", sources footer, settled cover frame, QC pass).
 - Variety: hook + main visual differ from the last 2–3 reels.
 - VO: Higgsfield `text2speech_v2`, variant `elevenlabs`, preset `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678` (Grady); ≈135 words, 45–70 s; numbers as words; last line bridges to the next queue topic.

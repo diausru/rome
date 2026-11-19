@@ -11,6 +11,9 @@ Template episode: `longform/lf12-bonus/` (copy data.py/lines.py/gen_episode.py, 
 - Economy: no polling/monitors; one stills sheet before render, one contact sheet after; short outputs; one commit per milestone; report in Russian, ≤10 lines.
 - Never: Metricool without command; `mv` to /dev/null; `pkill -f` matching own shell.
 
+## Hook module (user, 2026-11-19, mandatory from LF-27)
+Before step 2 read the APPLY block of `channel/HOOK-ENGINEERING.md`: 5 hook concepts (≥3 formats) + score table + chosen 0–4 s timeline + story chain + 10-question QC → BLUEPRINT.md. Script L1–L3 = the chosen hook ("start from the end": the payoff/number first). Still = plate + code motion (no AI video).
+
 ## Pipeline (`/lf`)
 Env: VO/plates from Higgsfield CloudFront (needs network access; exact URLs via one `jobs_wait` timeout 0 per ≤12 jobs); render/stills with swangle (angle = black plates); `pip install faster-whisper torch transformers` if missing; `npm ci` in showreel if no node_modules. The container is reclaimed when the session idles: launch finish.sh with CH=900 TO=3000 and keep waiting in the foreground (≤585 s Bash waits) until OK; relaunch resumes from finished chunks.
 1. Facts + data.py → data.json. 2. lines.py → lines.json. 3. VO: `generate_audio_batch` ≤12 items, model `text2speech_v2`, variant `elevenlabs`, voice_type `preset`, voice_id `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678`, use_unlim false (429 → resubmit); save `jobs.txt` ("n jobid"); download without polling: `xargs -P20 -n2 longform/tools/vo_find.sh < jobs.txt` (set DATE/START in script); `python3 longform/tools/vo_words.py <ep>`.
