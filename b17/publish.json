@@ -1,7 +1,7 @@
 {
  "video": {
   "title": "Day Trading in a TFSA? CRA Can Tax It (handwritten)",
-  "duration": "",
+  "duration": "62.04 s (1489 frames)",
   "mp4": "b17/build/b17_final.mp4"
  },
  "hook": {
@@ -128,6 +128,13 @@
  "_votc": "[00:00.20–00:05.83] Twenty thousand in TFSA gains. Tax-free? Not if you trade like a pro.\n[00:06.22–00:11.98] CRA says a TFSA that carries on a business is taxable on that business income.\n[00:12.38–00:15.62] That includes capital gains from the trading. All of it.\n[00:16.02–00:22.48] Is it a business? A question of fact: how often you trade, how long you hold, what you know.\n[00:22.88–00:30.87] CRA warns: trade with a professional's frequency and experience, and it can be taxed as business income.\n[00:31.27–00:38.89] Our example: three hundred trades in a year, most held a day or two. Gains: twenty thousand.\n[00:39.29–00:47.83] If it's a business, the TFSA trust reports twenty thousand of taxable income on a T3. And you're jointly liable for the tax.\n[00:48.23–00:52.60] Buy and hold for the same twenty thousand? Usually, zero tax.\n[00:53.01–00:58.75] How many TFSA trades did you make this year? Under ten, or more? Tell me below.",
  "cover": {
   "why": "settled push-in on circled '$20,000' in 'taxable on a T3: $20,000' under 'gains: $20,000'; camera held ≈44.1–45.9 s, hand out of frame",
-  "visual_text": "handwritten: '300 trades · held 1-2 days', 'gains: $20,000', 'taxable on a T3: $20,000' (circled)"
+  "visual_text": "handwritten: '300 trades · held 1-2 days', 'gains: $20,000', 'taxable on a T3: $20,000' (circled)",
+  "timestamp_s": 44.6,
+  "ms": 44600,
+  "frame": "b17/cover.jpg",
+  "metricool_ig": "manual action required (set videoCoverMilliseconds 44600 on /schedule)",
+  "metricool_tiktok": "manual action required (Business-account status unverified)",
+  "youtube": "manual — the user selects the cover at 00:44.6",
+  "checked_in_render": "yes — frame at 44.6 s extracted to b17/cover.jpg: circled '$20,000' after 'on a T3:', 'gains: $20,000' above; hand out of frame"
  }
 }

@@ -24,6 +24,7 @@ The user picks the topic. Never take the next topic from the previous video's CT
 | b14 | Uber vs DoorDash: GST from ride #1 (queue #1) | 2026-11-18 |
 | b15 | Does Etsy tell CRA? Platform reporting, 30 sales / $2,800 (queue #2) | 2026-11-18 |
 | b16 | Client meals: why only 50% (queue #3) | 2026-11-18 |
+| b17 | Day trading in a TFSA: when CRA taxes it (queue #4; first hook-engineered opening) | 2026-11-19 |
 
 ## Next topics (checked 2026-11-17: no overlap with card Shorts, card queue #17/18/12/20/21/24/25/5, long-form LF-01…12; vidIQ CA demand)
 Ranked; every topic needs its own fact pass. The user picks.
@@ -32,7 +33,7 @@ Ranked; every topic needs its own fact pass. The user picks.
 | ~~1~~ | DONE as B14 (GST part; car business-use % still open) — Uber / DoorDash driver | fares → GST → expenses → tax | many long-tail variants, all <750/mo, competition 8–25 (cluster demand, easy to rank) |
 | ~~2~~ | DONE as B15 — Do Etsy / Uber / Airbnb report you to CRA? (platform reporting) | who gets a slip, what CRA sees | 'does etsy report to cra' <750; 'etsy shop' ≈13,462/mo |
 | ~~3~~ | DONE as B16 — Meals with clients: why only 50% | $400 bill → $200 → saving | 'meals and entertainment deduction' <750 (comp 24); 'small business tax deductions' ≈3,586 |
-| 4 | Day trading in a TFSA: when CRA taxes it as business income | gain → fully taxable vs tax-free | 'day trading tfsa canada' cluster <750, comp 13–41; 'day trading' CA ≈29,911 |
+| ~~4~~ | DONE as B17 — Day trading in a TFSA: when CRA taxes it as business income | gain → fully taxable vs tax-free | 'day trading tfsa canada' cluster <750, comp 13–41; 'day trading' CA ≈29,911 |
 | 5 | Paying your spouse or kid from the business | salary moved to a lower bracket, must be reasonable | not checked |
 | 6 | Bartering: trading services is income | $1,000 swap = $1,000 income | not checked |
 | 7 | December work, January payment: which year? (accrual) | year-end shift | not checked |
