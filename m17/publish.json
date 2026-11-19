@@ -1,10 +1,15 @@
 {
  "video": {
-  "title": "Full-Time Raise: $3,848 Never Arrives (Canada Benefits Math)"
+  "title": "Full-Time Raise: $3,848 Never Arrives (Canada Benefits Math)",
+  "mp4": "showreel/out/m17/m17-final.mp4 (share copy: m17-share.mp4)",
+  "duration": "1:08 (68.04 s), 1080×1920, 24 fps"
  },
  "cover": {
   "frame": "settled waterfall after the CCB step: +$16,000 → −$2,320 → −$1,404 → −$123 → KEEP $12,152 + red stamp '−$3,848 · 24% GONE'; Maya at the door with her son behind the panel",
-  "why": "key figures + person on one settled frame (cue 'cover' = word 'another' + 1.2 s)"
+  "why": "key figures + person on one settled frame (cue 'cover' = word 'another' + 1.2 s)",
+  "t": 46.17,
+  "ms": 46170,
+  "file": "m17/cover.jpg (extracted at 46.17 s from the final render)"
  },
  "hook": {
   "l1": "FULL-TIME: +$16,000.",
@@ -97,8 +102,11 @@
  "next": [
   {
    "topic": "Why January's paycheque shrinks (#18)",
-   "why": "queue next",
-   "intent": "january paycheque smaller canada"
+   "why": "queue next; bridged in the CTA",
+   "intent": "january paycheque smaller canada",
+   "hook": "Same salary, smaller January cheque.",
+   "angle": "CPP/EI restart every January",
+   "payoff": "how much and when it comes back"
   }
  ],
  "series": "Card series M17 (#17). First card Short under the Hook Engineering module (consequence-first hook, user request 2026-11-19).",

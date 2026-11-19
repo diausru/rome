@@ -78,8 +78,8 @@ const Fall = ({ f }: { f: number }) => {
           </div>
         );
       })}
-      <div style={{ position: 'absolute', left: x0, top: base + 52, ...label(T.mute), fontSize: 14 }}>FEDERAL 2025 · CWB 2025 · CCB JULY 2026–JUNE 2027 · BEFORE PROVINCIAL TAX, CPP, EI</div>
-      {f >= Q.ccb && <Stamp f={f} at={Q.ccb} text="−$3,848 · 24% GONE" x={430} y={y + 70} size={30} color={T.red} rotate={-4} />}
+      <div style={{ position: 'absolute', left: x0, top: base + 52, ...label(T.mute), fontSize: 14 }}>FEDERAL 2025 · CWB 2025 · CCB 2026–27 · BEFORE PROV. TAX, CPP, EI</div>
+      {f >= Q.ccb && <Stamp f={f} at={Q.ccb} text="−$3,848 · 24% GONE" x={300} y={y + 340} size={30} color={T.red} rotate={-4} />}
     </div>
   );
 };
