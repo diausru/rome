@@ -1,0 +1,7 @@
+{
+ "trades": 300,
+ "gains": 20000,
+ "taxable_if_business": 20000,
+ "taxable_if_not_business": 0,
+ "rate_shown": false
+}

@@ -1,0 +1,5 @@
+{
+ "vo_stats": "141 words, tempo 1.0; VO ends 00:58.75.",
+ "cues": "frame 0 '$20,000 TFSA gain:' + 'tax-free' in ink · 00:00.3 strike-out · 01.2 'taxable?' · 04.3 'if you trade like a pro' · 07.7 'TFSA business = taxable' · 12.4 'incl. capital gains: all' · 16.5 'business? a question of fact' · 20.6 'how often · how long · know-how' · 24.1 'pro frequency + experience' · 31.3 '300 trades · held 1-2 days' · 35.6 'gains: $20,000' · 39.3 'taxable on a T3: $20,000' circled 43.0 + push-in (cover 44.6) · 45.6 '+ you're jointly liable' · 49.6 'buy & hold: usually $0' underlined · 53.4 'TFSA trades this year?' · bubbles '< 10' '10+' · hold.",
+ "drawing": "See build/timeline.json. Hook: pre-inked lines written at negative times (tl.t = -4.6) so frame 0 already has ink and the pen on the paper. CTA mark: two answer bubbles (B16 used a grid)."
+}

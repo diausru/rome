@@ -1,0 +1,133 @@
+{
+ "video": {
+  "title": "Day Trading in a TFSA? CRA Can Tax It (handwritten)",
+  "duration": "",
+  "mp4": "b17/build/b17_final.mp4"
+ },
+ "hook": {
+  "format": "E Silent action + D Pattern break",
+  "selected": "Frame 0: '$20,000 TFSA gain: / tax-free' already in ink, pen on the paper; 0.3–1.1 s the pen strikes out 'tax-free'; 1.2–2.7 s writes 'taxable?'; VO 0.2 s 'Twenty thousand in TFSA gains. Tax-free? Not if you trade like a pro.'; 4.3 s 'if you trade like a pro' bridges into the rule.",
+  "first_frame_text": "$20,000 TFSA gain: / tax-free (being written)",
+  "muted": "yes — the strike-out of 'tax-free' and 'taxable?' carry the hook without sound",
+  "timeline": "0.0–0.5 pen finishing 'tax-free' (tight 2.05× on the two lines) · 0.5–1.5 strike-out · 1.5–3.0 'taxable?' + spoken 'Tax-free?' · 3.0–4.3 camera eases to 1.78×, 'if you trade like a pro'",
+  "concepts": [
+   {
+    "n": 1,
+    "format": "C Corrective",
+    "concept": "'Your TFSA isn't always tax-free.' written large at frame 0",
+    "score": "first frame 3 · clarity 5 · curiosity 4 · fit 5 · story 5 · feasible 5 · credible 5 = 32"
+   },
+   {
+    "n": 2,
+    "format": "E+D Silent action / pattern break",
+    "concept": "'$20,000 TFSA gain: tax-free' already on paper; pen strikes 'tax-free', writes 'taxable?'",
+    "score": "4 · 5 · 5 · 5 · 5 · 5 · 5 = 34 (chosen)"
+   },
+   {
+    "n": 3,
+    "format": "A Impossible shot (code-made)",
+    "concept": "a hand-drawn TFSA 'box' with the word 'tax-free' on it; the pen draws a crack through it",
+    "score": "4 · 3 · 4 · 4 · 4 · 3 · 4 = 26"
+   },
+   {
+    "n": 4,
+    "format": "D Pattern break",
+    "concept": "camera starts on a tally of 300 strokes (|||||) being drawn fast, then pulls back to '300 trades'",
+    "score": "5 · 2 · 4 · 4 · 4 · 4 · 5 = 28 (unclear for 1.5 s)"
+   },
+   {
+    "n": 5,
+    "format": "C Corrective (question)",
+    "concept": "'Day trading in a TFSA? CRA may tax it.' typed as the first line",
+    "score": "3 · 5 · 3 · 5 · 5 · 5 · 5 = 31 (same question format as B15)"
+   }
+  ],
+  "why": "Strongest first frame that is still accurate: it shows the misconception ('tax-free') and its correction in one silent action; differs from B14–B16 (statement / question / number-line openings, all starting on a blank sheet).",
+  "metrics_after_publication": "YouTube Studio: first-3-second retention ('stayed to watch' / intro retention), average view duration, average % viewed, drop-off before 5 s, rewatches, shares, saves; compare with B14–B16 (blank-sheet openings). Fill only from real data."
+ },
+ "sources": [
+  "CRA — Income Tax Folio S3-F10-C1 Qualified Investments (canada.ca, effective 2024-05-28) · current · ¶1.86: a TFSA is generally taxable under Part I on income from carrying on a business; ¶1.94.1: the TFSA holder is jointly and severally (solidarily) liable with the TFSA trust for the tax; whether a business is carried on is a question of fact (court factors, IT-479R)",
+  "CRA — Tax payable on non-qualified investments / TFSA issuers 'Taxes' page (canada.ca) · current · a TFSA trust that carries on a business is taxable on any income and any capital gains derived from the business; reported on a T3 return",
+  "CRA — What is a TFSA (canada.ca) · current · holders who trade with the frequency and experience of a professional trader may have the income taxed as business income",
+  "CRA IT-479R Transactions in securities (archived 1984, referenced by the Folio) · historical · factors include frequency of transactions, period of ownership, knowledge of securities markets",
+  "Example (not a CRA rule): b17/calc.py → data.json. 300 trades, mostly held 1–2 days, gains $20,000 → if a business: $20,000 taxable income in the TFSA trust; buy-and-hold growth of qualified investments: usually $0. The tax RATE on a TFSA trust was not found in the CRA pages checked, so no dollar tax is shown. Whether trading is a business depends on the facts."
+ ],
+ "yt": {
+  "titles": [
+   "Day Trading in a TFSA? CRA Can Tax It",
+   "Your TFSA Isn't Always Tax-Free (Day Trading)",
+   "TFSA Day Trading: When CRA Calls It a Business"
+  ],
+  "description": "$20,000 in TFSA gains. Tax-free? Not if you trade like a pro.\n\nCRA: a TFSA that carries on a business is taxable on that business income, including capital gains from the trading. Whether it's a business is a question of fact: how often you trade, how long you hold, what you know. CRA warns that trading with the frequency and experience of a professional can be taxed as business income.\n\nExample: 300 trades in a year, most held a day or two, gains $20,000.\n• If it's a business: the TFSA trust reports $20,000 of taxable income on a T3, and you're jointly liable for the tax.\n• Buy and hold for the same $20,000: usually $0 tax.\n\nHow many TFSA trades did you make this year: under 10 or more? Tell me below.\n\nSources: CRA Income Tax Folio S3-F10-C1; CRA 'What is a TFSA'; CRA TFSA issuers 'Taxes'. Example only; general information, not tax advice.\n\n#TFSA #CanadaTax #DayTrading",
+  "hashtags": "#TFSA #CanadaTax #DayTrading",
+  "keywords": "day trading tfsa canada, can you day trade in a tfsa, tfsa day trading, tfsa rules canada, tfsa business income, day trading taxes canada, cra tfsa",
+  "pinned": "Under 10 trades or more? 👇",
+  "cta": "How many TFSA trades did you make this year? Under ten, or more? Tell me below."
+ },
+ "tt": {
+  "caption": "Your TFSA isn't always tax-free 🇨🇦 day trading + CRA ✍️",
+  "keywords": "day trading tfsa · tfsa rules canada · cra",
+  "hashtags": "#tfsa #daytrading #canadiantaxes #investing #cra",
+  "pinned": "Under 10 or more? 👇",
+  "cta": "Under 10 or more?"
+ },
+ "ig": {
+  "caption": "TFSA = tax-free? Not always 🇨🇦\n\nCRA: a TFSA that carries on a business is taxable on that income, capital gains included. Trading with a professional's frequency and experience can be taxed as business income, and you're jointly liable.\n\n300 trades, $20,000 gains → $20,000 taxable if it's a business. Buy & hold: usually $0.\n\nSources: CRA Folio S3-F10-C1, CRA TFSA pages. Example only, general info, not advice.",
+  "keywords": "tfsa, day trading, investing canada, cra, canada taxes",
+  "hashtags": "#tfsa #daytrading #investingcanada #canadiantaxes #personalfinance #cra",
+  "pinned": "Under 10 or more? 👇",
+  "cta": "Under 10 or more?"
+ },
+ "eng": {
+  "question": "Under 10 TFSA trades or more?",
+  "save": "When a TFSA stops being tax-free.",
+  "share": "A friend who trades in a TFSA.",
+  "follow": "The user picks the next topic."
+ },
+ "seo": {
+  "primary": "day trading tfsa canada",
+  "secondary": "vidIQ CA 2026-11-19: seed <750/mo (comp 25); 'can you day trade in a tfsa' <750 (comp 26); 'day trading' CA ≈32,187",
+  "intent": "A TFSA trader wants to know if CRA can tax gains.",
+  "audience": "Canadian retail investors trading in a TFSA",
+  "angle": "tax-free struck out on paper, then the rule and the example",
+  "questions": "Can you day trade in a TFSA? · Does CRA tax TFSA trading? · What makes it a business? · Who pays?",
+  "pain": "Believing everything in a TFSA is tax-free."
+ },
+ "next": [
+  {
+   "topic": "Paying your spouse or kid (queue #5)",
+   "why": "queue",
+   "intent": "pay spouse from business canada",
+   "hook": "Hire your kid?",
+   "angle": "reasonable salary",
+   "payoff": "the saving"
+  },
+  {
+   "topic": "Bartering is income (queue #6)",
+   "why": "queue",
+   "intent": "bartering taxable canada",
+   "hook": "No cash changed hands.",
+   "angle": "fair market value",
+   "payoff": "$1,000 = $1,000"
+  },
+  {
+   "topic": "December work, January pay (queue #7)",
+   "why": "queue",
+   "intent": "which year income canada",
+   "hook": "Paid in January, taxed in…?",
+   "angle": "accrual",
+   "payoff": "year-end shift"
+  }
+ ],
+ "series": "Real Tax Math (handwritten): B17, queue #4 (user: '3, the next one on the list'). First video under the Hook Engineering module.",
+ "research": "vidIQ (CA, 2026-11-19): 'day trading tfsa canada' <750/mo comp 25; long-tail variants <750 comp 26–51; 'day trading' CA ≈32,187/mo. vidIQ credits: research 5 + title score 5.",
+ "retention": "Ink + pen at frame 0, strike-out at 0.3 s (hook); rule at 6–16 s; factors 16–31 s; example at 31 s; circled '$20,000' taxable at 43 s (cover 44.6); liability twist at 45.6 s; buy-and-hold $0 contrast at 48 s; CTA bubbles at 53 s.",
+ "_label": "B17 · day trading in a TFSA (handwritten)",
+ "_mp4": "b17_final.mp4",
+ "_vo": "Twenty thousand in TFSA gains. Tax-free? Not if you trade like a pro. CRA says a TFSA that carries on a business is taxable on that business income. That includes capital gains from the trading. All of it. Is it a business? A question of fact: how often you trade, how long you hold, what you know. CRA warns: trade with a professional's frequency and experience, and it can be taxed as business income. Our example: three hundred trades in a year, most held a day or two. Gains: twenty thousand. If it's a business, the TFSA trust reports twenty thousand of taxable income on a T3. And you're jointly liable for the tax. Buy and hold for the same twenty thousand? Usually, zero tax. How many TFSA trades did you make this year? Under ten, or more? Tell me below.",
+ "_votc": "[00:00.20–00:05.83] Twenty thousand in TFSA gains. Tax-free? Not if you trade like a pro.\n[00:06.22–00:11.98] CRA says a TFSA that carries on a business is taxable on that business income.\n[00:12.38–00:15.62] That includes capital gains from the trading. All of it.\n[00:16.02–00:22.48] Is it a business? A question of fact: how often you trade, how long you hold, what you know.\n[00:22.88–00:30.87] CRA warns: trade with a professional's frequency and experience, and it can be taxed as business income.\n[00:31.27–00:38.89] Our example: three hundred trades in a year, most held a day or two. Gains: twenty thousand.\n[00:39.29–00:47.83] If it's a business, the TFSA trust reports twenty thousand of taxable income on a T3. And you're jointly liable for the tax.\n[00:48.23–00:52.60] Buy and hold for the same twenty thousand? Usually, zero tax.\n[00:53.01–00:58.75] How many TFSA trades did you make this year? Under ten, or more? Tell me below.",
+ "cover": {
+  "why": "settled push-in on circled '$20,000' in 'taxable on a T3: $20,000' under 'gains: $20,000'; camera held ≈44.1–45.9 s, hand out of frame",
+  "visual_text": "handwritten: '300 trades · held 1-2 days', 'gains: $20,000', 'taxable on a T3: $20,000' (circled)"
+ }
+}
