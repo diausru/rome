@@ -1092,4 +1092,43 @@ const RouteHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook, year: YearHook, route: RouteHook };
+// ---------- LedgerHook: frame-0 hook — a bank statement types itself row by row (e-transfers); a running total climbs; a red "TAX CREDIT $0" stamp lands; a key word slides in and the stamp flips green to the payoff; title flips ----------
+// p.rows[{d, label, amt}] · p.rowsAt · p.step · p.total · p.totalLabel · p.stampAt · p.stampText · p.wordAt · p.chip · p.flipAt · p.flipText · p.flipSub · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const LedgerHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const rows = p.rows as Pn[]; const r0 = p.rowsAt ? p.rowsAt.t : p.t; const step = (p.step as number) ?? 0.22;
+  const st = p.stampAt ? prog(now, p.stampAt.t, 0.5, BACK) : 0; const wd = p.wordAt ? prog(now, p.wordAt.t, 0.7, BACK) : 0;
+  const fl = p.flipAt ? prog(now, p.flipAt.t, 0.8, INOUT) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const shown = rows.filter((_, i) => now >= r0 + i * step).length; const tot = (p.total as number) * shown / rows.length;
+  const PX = 200, PW = 880, RY = 310, RH = 44;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: 0.2 - 0.4 * cl(el / 22), y: 0, z: 0.08 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.76})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 76, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: 1 - out }}>
+        <div style={{ position: 'absolute', left: PX, top: RY - 56, width: PW, height: rows.length * RH + 80, borderRadius: 18, background: 'rgba(244,241,234,.08)', border: '1px solid rgba(255,255,255,.18)', backdropFilter: 'blur(8px)' }} />
+        <div style={{ position: 'absolute', left: PX + 30, top: RY - 44, fontFamily: COND, fontSize: 22, letterSpacing: 6, color: C.dim }}>CHEQUING · TRANSACTIONS</div>
+        {rows.map((r, i) => { const k = prog(now, r0 + i * step, 0.25); if (k <= 0) return null;
+          const txt = `${r.d} · ${r.label}`; const n = Math.ceil(txt.length * cl(k * 1.4));
+          return <div key={i} style={{ position: 'absolute', left: PX + 30, width: PW - 60, top: RY + i * RH, height: RH - 6, display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontFamily: COND, fontSize: 28, letterSpacing: 2, color: C.white, borderBottom: '1px solid rgba(255,255,255,.08)', opacity: cl(k * 3) }}>
+            <span>{txt.slice(0, n)}</span><span style={{ color: C.red, fontWeight: 700 }}>{k > 0.6 ? r.amt : ''}</span></div>; })}
+        <div style={{ position: 'absolute', left: 1160, width: 560, top: 300, textAlign: 'center', fontFamily: COND }}>
+          <div style={{ fontSize: 26, letterSpacing: 6, color: C.dim }}>{p.totalLabel}</div>
+          <div style={{ fontSize: 120, fontWeight: 700, color: C.gold, lineHeight: 1.05 }}>{fmt(tot)}</div></div>
+        {wd > 0.02 && <div style={{ position: 'absolute', left: 1160, width: 560, top: 510, textAlign: 'center', fontFamily: COND, opacity: cl(wd * 2), transform: `translateX(${(1 - wd) * 120}px)` }}>
+          <span style={{ display: 'inline-block', padding: '6px 26px', borderRadius: 12, background: 'linear-gradient(90deg,#C9A055,#F1D38E)', color: C.navy, fontSize: 48, fontWeight: 700, letterSpacing: 6 }}>{p.chip}</span></div>}
+        {st > 0.02 && <div style={{ position: 'absolute', left: 1160, width: 560, top: 630, textAlign: 'center', fontFamily: COND, opacity: cl(st * 2), transform: `scale(${1.4 - 0.4 * st}) rotate(${-5 + 5 * fl}deg)` }}>
+          <span style={{ display: 'inline-block', padding: '8px 30px', borderRadius: 14, border: `5px solid ${fl > 0.5 ? C.green : C.red}`, color: fl > 0.5 ? C.green : C.red, fontSize: 70, fontWeight: 700, background: 'rgba(7,11,20,.7)', opacity: fl > 0 && fl < 1 ? Math.abs(fl - 0.5) * 2 : 1 }}>{fl > 0.5 ? p.flipText : p.stampText}</span>
+          {fl > 0.5 && <div style={{ fontSize: 26, letterSpacing: 5, color: C.white, marginTop: 10 }}>{p.flipSub}</div>}</div>}
+      </div>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook, year: YearHook, route: RouteHook, ledger: LedgerHook };

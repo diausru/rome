@@ -33,7 +33,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 | 18 | What If You Work Two Jobs in Canada? | LF-07 rendered 2026-10-14, not published |
 | 19 | What If You Work Remotely? | rendered LF-26 (2026-11-19, `longform/lf26-remote`) |
 | 20 | What If You Have a Side Hustle? | rendered 2026-10-16 (LF-09, `longform/lf09-side-hustle`) |
-| 21 | What If You Support Your Parents? | queued |
+| 21 | What If You Support Your Parents? | rendered LF-27 (2026-11-19, `longform/lf27-parents`; covers #39, #40) |
 | 22 | What If You Sell Your Home? | rendered LF-11 (2026-10-24) |
 | 23 | What If You Receive a $20,000 Bonus? | queued |
 | 24 | What If You Make $100K in One Province and Move to Another? | queued |
@@ -71,8 +71,8 @@ Tier A = measured search demand ≥ ~3.5K/mo and low/medium competition; B = cle
 |---|---|---|---|---|
 | 37 | Your Parents Are Getting Older — What Financial Benefits Could Your Family Be Missing? | B |  | queued |
 | 38 | Disability Tax Credit Canada: How to Apply, What Doctors Must Prove, and What Happens Next | A |  | LF-05 rendered 2026-10-12, not published |
-| 39 | You Care for an Elderly Parent — Can You Claim Them on Your Taxes? | B | merge with #21 What If You Support Your Parents? | queued |
-| 40 | Canada Caregiver Credit Explained: Who Qualifies, How Much Can You Claim, and Why Claims Fail | B | pair with 3 | queued |
+| 39 | You Care for an Elderly Parent — Can You Claim Them on Your Taxes? | B | merge with #21 What If You Support Your Parents? | covered by LF-27 |
+| 40 | Canada Caregiver Credit Explained: Who Qualifies, How Much Can You Claim, and Why Claims Fail | B | pair with 3 | covered by LF-27 |
 | 41 | CRA Approved Your Disability Tax Credit — Can You Get Money Back for Previous Years? | A |  | queued |
 | 42 | Your Doctor Signed the Disability Tax Credit Form — Why Could CRA Still Reject It? | A | pair with 7 (one video: why rejected + how to fix) | queued |
 | 43 | Disability Tax Credit Denied? How to Request a Review and Strengthen Your Application | A | pair with 6 | queued |
@@ -139,7 +139,8 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 24. LF-24 → #15 What Happens When You Work Two Jobs in Canada? — rendered 2026-11-12 (proposed 2027-05-19)
 25. LF-25 → #16 The Complete Canadian Tax Year — From Your First Paycheque to Your Tax Return — rendered 2026-11-13 (proposed 2027-05-29)
 26. LF-26 → #19 What If You Work Remotely? — rendered 2026-11-19 (proposed 2027-06-08)
-27. LF-27 → #21 What If You Support Your Parents? (merge with #39) — queued
+27. LF-27 → #21 What If You Support Your Parents? (merge with #39) — rendered 2026-11-19 (proposed 2027-06-18)
+28. LF-28 → #37 Your Parents Are Getting Older — What Financial Benefits Could Your Family Be Missing? (check overlap with LF-14 OAS) — queued
 NOTE (2026-11-13): LF-23 (#14 side hustle) overlaps LF-09 (#20) and LF-24 (#15 two jobs) overlaps LF-07 (#18). Before each new episode, check the queue for an already-rendered topic with the same subject.
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)

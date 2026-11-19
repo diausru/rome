@@ -1,0 +1,12 @@
+{
+ "monthly": 500,
+ "year_sent": 6000,
+ "cca_max": 8601,
+ "dep_limit": 28798,
+ "rate_pct": 14.5,
+ "cca_credit": 1247,
+ "split_each": 624,
+ "ed_max": 16129,
+ "ed_credit_max": 2339,
+ "tax_year": 2025
+}
