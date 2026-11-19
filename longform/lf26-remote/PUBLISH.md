@@ -1,5 +1,5 @@
 # LF-26 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** pending render.
+**QC (2026-11-19):** 551.9 s (9:12), −13.8 LUFS, no black frames, contact sheet checked; 7-s empty plate at 4:15 fixed (chunk re-rendered).
 **File:** `LF26-1080p.mp4` · 1920×1080 · 30 fps · ≈9:12 · VO Grady (85 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** RouteHook (new). **Thumbnail:** made by the user.

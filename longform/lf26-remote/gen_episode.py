@@ -54,7 +54,7 @@ events = [
  K('L32', [dc('EITHER WAY', 140, 'L32', 'wrong')], kicker='05', fxIn='focus', fxOut='wipe', y=330),
  ST('L33', 'ALBERTA PAYROLL · $85,000 · LIVES IN…', [it('BC', f"GETS BACK ≈{m(-O['BC'])}", 'L34', 'British'), it('ON', f"OWES ≈{m(O['ON'])}", 'L35', 'Ontario'), it('MB', f"OWES ≈{m(O['MB'])}", 'L36', 'Manitoba'),
    it('PE', f"OWES ≈{m(O['PE'])}", 'L37', 'Prince'), it('NS', f"OWES ≈{m(O['NS'])}", 'L38', 'Nova'), it('?', 'WHICH TWO PROVINCES ARE ON YOUR PAPERWORK?', 'L39', 'paperwork')], fxIn='stagger', dimOthers=True, y=150),
- K('L40', [ln('BUT REMOTE WORK', 70, 'L40', 'remote'), ln('ALSO GIVES YOU SOMETHING', 90, 'L40', 'gives', gold=True), ln('IF YOU QUALIFY', 56, 'L41', 'qualify')], fxIn='glass', y=300),
+ K('L40', [ln('BUT REMOTE WORK', 70, 'L40'), ln('ALSO GIVES YOU SOMETHING', 90, 'L40', 'gives', gold=True), ln('IF YOU QUALIFY', 56, 'L41', 'qualify')], fxIn='glass', y=300),
  K('L42', [dc('THE HOME OFFICE', 140, 'L42', 'home')], kicker='06', fxIn='focus', fxOut='wipe', y=330),
  ST('L43', 'WORK SPACE IN THE HOME · DETAILED METHOD', [it('2023+', 'FLAT RATE METHOD GONE · DETAILED METHOD ONLY', 'L43', 'detailed'), it('1', 'REQUIRED TO WORK FROM HOME > 50% · 4 WEEKS IN A ROW', 'L45', 'half'),
    it('2', 'EMPLOYER SIGNS FORM T2200', 'L46', 'signs'), it('3', 'COSTS NOT PAID BACK BY YOUR EMPLOYER', 'L47', 'back'), it('✓', 'SAM CHECKS ALL THREE', 'L48', 'checks')], fxIn='glass', dimOthers=True, y=180),
