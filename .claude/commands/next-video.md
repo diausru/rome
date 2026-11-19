@@ -3,6 +3,7 @@ Steps (one batch each, short outputs, no polling loops):
 1. Facts: 1–2 WebSearch / law text → `<p>/data.json` (numbers, `spoken`, `sources` with year). Overlap grep in */PUBLISH.md.
 2. vidIQ: balance + 1 keyword_research (CA) [+ 2 title scores after render]; NexLev: 1 youtube_search shorts CA. Skip if not connected, say so.
 3. Script ≈135 words, 7–8 beats, last line = bridge "Next: <next queue topic>. Follow so you don't miss it." → ONE Higgsfield audio batch (Grady) → `<p>/vo-beats.json`, `<p>/vo-urls.txt`.
+3b. HOOK (mandatory, `channel/HOOK-ENGINEERING.md` top two sections): 5 hook concepts (≥3 formats A–E) scored, one picked with a reason, 0–4 s timeline, works muted, no logo/greeting first; record in the project notes + reel.json.
 4. `<p>/reel.json` (hook, layout, cues incl. cover + logo) → `python3 tools/short.py <p> vo`.
 5. ONE image batch: scene 1, then scenes 2–3 with scene 1 as image_references; upscale 4k; save `showreel/public/plates/<p>-s{1,2,3}-4k.jpg`; check no text.
 6. Copy the template to `showreel/src/<P>V3.tsx`, change hook + main visual + reveal (different from the last 2–3), register in Root.tsx.

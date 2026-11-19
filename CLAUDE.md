@@ -19,6 +19,7 @@ Full Shorts rules: `channel/RULES-SHORTS.md` (read only if a rule is unclear). L
 - Numbers only in code; generated photos have no text/numbers. No Kling / AI video. Motion = code (Remotion).
 - Every Short passes `channel/REEL-CHECKLIST.md` (flag header, 3 scenes same people + camera moves + snow/steam, frame-0 kinetic hook, typed titles, word captions, glass panel + gold numbers, stamp re-hook 55–65 %, reveal, Grady VO + ducked music + cue SFX + sonic logo, check card + NEXT pill + "Follow so you don't miss it", sources footer, settled cover frame, QC pass).
 - Variety: hook + main visual differ from the last 2–3 reels.
+- HOOK ENGINEERING (mandatory for every Short, user 2026-11-19): `channel/HOOK-ENGINEERING.md` — 5 hook concepts (formats A–E) before the script, pick + justify, 0–4 s plan, frame 0 = action/ink (no logo, greeting, blank sheet), works muted, promise paid off, 10 QC questions; real analytics only.
 - VO: Higgsfield `text2speech_v2`, variant `elevenlabs`, preset `e2a2d2e6-9ed2-59cd-82af-feaa27f8a678` (Grady); ≈135 words, 45–70 s; numbers as words; last line bridges to the next queue topic.
 - Photos: `gpt_image_2_5` 9:16 "no text, no numbers, no letters, no logos" → `upscale_image` 4k.
 - Pipeline: `tools/short.py <p> vo | stills | final` (template = last `showreel/src/<P>V3.tsx`).
