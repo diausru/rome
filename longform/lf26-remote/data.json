@@ -1,0 +1,28 @@
+{
+ "salary": 85000,
+ "ab_prov": 4970,
+ "ns_prov": 9549,
+ "ab_tax": 15197,
+ "ns_tax": 19776,
+ "gap": 4579,
+ "gap_pp": 176,
+ "others": {
+  "BC": -570,
+  "ON": 354,
+  "MB": 2601,
+  "NS": 4579,
+  "PE": 3679
+ },
+ "rent": 21600,
+ "util": 1500,
+ "internet": 900,
+ "expenses": 24000,
+ "room_pct": 10,
+ "claim": 2400,
+ "save": 892,
+ "shared_pct": 2.9,
+ "shared_claim": 686,
+ "shared_save": 255,
+ "net_owing": 3687,
+ "net_pp": 142
+}

@@ -1050,4 +1050,46 @@ const YearHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook, year: YearHook };
+// ---------- RouteHook: frame-0 hook — two city pins (payroll province vs home province) joined by a drawn arc; a pay chip travels the arc; two tax cards rise under the pins; red OWES stamp; title flips ----------
+// p.a {city, prov, role, label, value} (left/west) · p.b {...} (right/east) · p.arcAt · p.cardsAt · p.owe · p.oweAt · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const RouteHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const ar = p.arcAt ? prog(now, p.arcAt.t, 1.6, INOUT) : 0; const cd = p.cardsAt ? prog(now, p.cardsAt.t, 0.8, BACK) : 0;
+  const ow = p.oweAt ? prog(now, p.oweAt.t, 0.7, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const A = { x: 480, y: 470 }, B = { x: 1440, y: 470 }, Q = { x: 960, y: 250 };
+  const bz = (t: number) => ({ x: (1 - t) ** 2 * A.x + 2 * (1 - t) * t * Q.x + t * t * B.x, y: (1 - t) ** 2 * A.y + 2 * (1 - t) * t * Q.y + t * t * B.y });
+  const dot = bz(ar); const sides = [p.a, p.b] as Pn[];
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.74})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 80, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: 1 - out }}>
+        <svg width={1920} height={1080} style={{ position: 'absolute', left: 0, top: 0 }}>
+          <path d={`M ${A.x} ${A.y} Q ${Q.x} ${Q.y} ${B.x} ${B.y}`} pathLength={1} fill="none" stroke="rgba(241,211,142,.85)" strokeWidth={5} strokeDasharray="1 1" strokeDashoffset={1 - ar} strokeLinecap="round" />
+        </svg>
+        {ar > 0.02 && ar < 0.995 && <div style={{ position: 'absolute', left: dot.x - 70, top: dot.y - 26, width: 140, height: 52, borderRadius: 12, background: 'linear-gradient(90deg,#C9A055,#F1D38E)', fontFamily: COND, fontSize: 28, fontWeight: 700, color: C.navy, textAlign: 'center', lineHeight: '52px', letterSpacing: 2, boxShadow: '0 8px 30px rgba(0,0,0,.5)' }}>PAY</div>}
+        {sides.map((s, i) => { const P0 = i ? B : A; const k = prog(now, p.t + 0.2 + i * 0.35, 0.7, BACK); const isHome = i === 1;
+          return <div key={i}>
+            <div style={{ position: 'absolute', left: P0.x - 22, top: P0.y - 22, width: 44, height: 44, borderRadius: 22, background: isHome ? C.green : C.gold, opacity: cl(k * 2), transform: `scale(${k})`, boxShadow: `0 0 ${30 * k}px ${isHome ? 'rgba(127,211,160,.6)' : 'rgba(241,211,142,.6)'}` }} />
+            <div style={{ position: 'absolute', left: isHome ? P0.x + 44 : P0.x - 44 - 420, width: 420, top: P0.y - 52, textAlign: isHome ? 'left' : 'right', fontFamily: COND, opacity: cl(k * 2) }}>
+              <div style={{ fontSize: 48, fontWeight: 700, color: C.white, letterSpacing: 3 }}>{s.city}</div>
+              <div style={{ fontSize: 24, letterSpacing: 5, color: isHome ? C.green : C.gold }}>{s.role}</div></div>
+            {cd > 0.02 && <div style={{ position: 'absolute', left: P0.x - 260, top: P0.y + 60, width: 520, height: 190, borderRadius: 18, background: 'rgba(244,241,234,.09)', border: `2px solid ${isHome ? 'rgba(127,211,160,.7)' : 'rgba(241,211,142,.6)'}`, backdropFilter: 'blur(8px)', fontFamily: COND, textAlign: 'center', boxSizing: 'border-box', paddingTop: 22, opacity: cl(cd * 2), transform: `translateY(${(1 - cd) * 40}px)` }}>
+              <div style={{ fontSize: 24, letterSpacing: 4, color: C.dim }}>{s.label}</div>
+              <div style={{ fontSize: 76, fontWeight: 700, color: isHome ? C.white : C.gold, lineHeight: 1.15 }}>{fmt(s.value * cl(cd))}</div>
+              <div style={{ fontSize: 22, letterSpacing: 4, color: C.dim }}>{s.prov}</div></div>}
+          </div>; })}
+        {ow > 0.02 && <div style={{ position: 'absolute', left: 0, right: 0, top: 800, textAlign: 'center', fontFamily: COND, opacity: cl(ow * 2), transform: `scale(${0.7 + 0.3 * ow}) rotate(${-4 * ow}deg)` }}>
+          <span style={{ display: 'inline-block', padding: '8px 30px', borderRadius: 14, border: `4px solid ${C.red}`, color: C.red, fontSize: 66, fontWeight: 700, background: 'rgba(7,11,20,.65)' }}>OWES {fmt(p.owe)}</span></div>}
+      </div>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook, year: YearHook, route: RouteHook };

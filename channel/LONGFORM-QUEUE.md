@@ -31,7 +31,7 @@ Produced one at a time, only on the user's command. Production order = "Recommen
 |---|---|---|
 | 17 | What If You Move From Manitoba to Alberta? | LF-04 rendered 2026-10-12, not published |
 | 18 | What If You Work Two Jobs in Canada? | LF-07 rendered 2026-10-14, not published |
-| 19 | What If You Work Remotely? | queued |
+| 19 | What If You Work Remotely? | rendered LF-26 (2026-11-19, `longform/lf26-remote`) |
 | 20 | What If You Have a Side Hustle? | rendered 2026-10-16 (LF-09, `longform/lf09-side-hustle`) |
 | 21 | What If You Support Your Parents? | queued |
 | 22 | What If You Sell Your Home? | rendered LF-11 (2026-10-24) |
@@ -138,7 +138,8 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 23. LF-23 → #14 You Have a Side Hustle in Canada — What Actually Gets Taxed? — rendered 2026-11-09 (proposed 2027-05-09)
 24. LF-24 → #15 What Happens When You Work Two Jobs in Canada? — rendered 2026-11-12 (proposed 2027-05-19)
 25. LF-25 → #16 The Complete Canadian Tax Year — From Your First Paycheque to Your Tax Return — rendered 2026-11-13 (proposed 2027-05-29)
-26. LF-26 → #19 What If You Work Remotely? — queued
+26. LF-26 → #19 What If You Work Remotely? — rendered 2026-11-19 (proposed 2027-06-08)
+27. LF-27 → #21 What If You Support Your Parents? (merge with #39) — queued
 NOTE (2026-11-13): LF-23 (#14 side hustle) overlaps LF-09 (#20) and LF-24 (#15 two jobs) overlaps LF-07 (#18). Before each new episode, check the queue for an already-rendered topic with the same subject.
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)

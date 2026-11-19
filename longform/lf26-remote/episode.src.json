@@ -1,0 +1,2469 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: canada.ca \u00b7 CRA: determine the province of employment; your province of residence; home office expenses for employees (detailed method, T2200, T777S); instalments; TD1; CRA T4127 (2026) \u00b7 Examples, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "Sam works from his kitchen in Halifax. His company is in Calgary. He has never once set foot in that office."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "Every paycheque looked fine. Then he filed his tax return. And he owed four thousand, five hundred and seventy-nine dollars."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "Same salary. Same job. No mistake on his part. Just one box on his T four that nobody explained to him."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "And by the end of this video, you'll know which box that is. And the one form that can cut the bill."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "Today: what actually happens to your taxes when you work remotely in Canada."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 0.35,
+   "text": "All numbers: the twenty twenty-six tax year, an eighty-five thousand dollar salary, single, no other income. Examples, not real people. General information, not advice."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 1.0,
+   "text": "First, the two provinces in Sam's life."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "There's the province where he lives. Nova Scotia."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "And there's the province his payroll uses. That's called the province of employment. It's in box ten of his T four."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 0.35,
+   "text": "These two can be different. And when they are, that's where the trouble starts."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 1.0,
+   "text": "Let's start with the one that decides your tax."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "For the C R A, your provincial tax depends on the province where you lived on December thirty-first."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "Not where your employer is. Not where the head office is. Where you live."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "Sam lived in Nova Scotia on December thirty-first. So his whole year is taxed at Nova Scotia rates."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 1.0,
+   "text": "Now, the payroll side."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 0.35,
+   "text": "Your employer has to pick a province for your pay deductions. The C R A has rules for that."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "If you report to an office in person, it's the province of that office."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "If you don't report to any office, it's generally the province where your employer's business is, and where your pay comes from."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 0.35,
+   "text": "There's one exception for remote workers. If you'd normally go to a specific office, without your remote work agreement, that office's province can count."
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "But Sam was hired remote. There's no office he'd go to. So his employer used Alberta."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "And one more detail from the C R A: your home office is generally not your employer's establishment."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "So now we have Sam's whole problem."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "His payroll took tax at Alberta rates. But he owes tax at Nova Scotia rates."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 1.0,
+   "text": "Here's what that looks like in real numbers."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "Federal tax is the same everywhere. Only the provincial part changes."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 0.35,
+   "text": "At Alberta rates, Sam's provincial tax on eighty-five thousand dollars is about four thousand, nine hundred and seventy dollars."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 0.35,
+   "text": "At Nova Scotia rates, it's about nine thousand, five hundred and forty-nine."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "His payroll took about fifteen thousand, one hundred and ninety-seven dollars in income tax."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 0.35,
+   "text": "His real income tax is about nineteen thousand, seven hundred and seventy-six."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 0.35,
+   "text": "The gap: four thousand, five hundred and seventy-nine dollars. Due with his return."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "That's about one hundred and seventy-six dollars he didn't pay on each paycheque, all year."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 1.0,
+   "text": "Now, this doesn't always go the wrong way."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "Same employer in Alberta, same salary, but a different home."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "Live in British Columbia, and Sam would get about five hundred and seventy dollars back."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "Live in Ontario, and he'd owe about three hundred and fifty-four."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "Manitoba: about two thousand, six hundred and one."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 0.35,
+   "text": "Prince Edward Island: about three thousand, six hundred and seventy-nine."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "And Nova Scotia: the four thousand, five hundred and seventy-nine we already saw."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "So the question is never just \"do I work remotely\". It's \"which two provinces are on my paperwork\"."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "But before you blame the payroll department, there's a second half to this story. Because remote work also gives you something."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "And this part is worth real money. If you qualify."
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 1.0,
+   "text": "It's the home office deduction. Officially: work space in the home expenses."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "Since twenty twenty-three, the temporary flat rate method is gone. There's only one way now: the detailed method."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "To use it, the C R A sets a few conditions."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "One. You were required to work from home more than half the time, for at least four weeks in a row."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 0.35,
+   "text": "Two. Your employer signs Form T twenty-two hundred."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 0.35,
+   "text": "Three. Your employer didn't pay you back for those costs."
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "Sam checks all three. So let's build his claim."
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 1.0,
+   "text": "Sam rents. His rent is one thousand, eight hundred dollars a month. Twenty-one thousand, six hundred a year."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 0.35,
+   "text": "Electricity and heat: one thousand, five hundred. His monthly internet fees: nine hundred."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "Twenty-four thousand dollars of home costs in total."
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.mp3",
+   "gap": 0.35,
+   "text": "Now, what share of that is work?"
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.mp3",
+   "gap": 0.35,
+   "text": "Sam's office is a separate room. Ten percent of his apartment's floor space. And he uses it only for work."
+  },
+  {
+   "id": "L54",
+   "file": "vo/L54.mp3",
+   "gap": 0.35,
+   "text": "For a room like that, the C R A says you don't count hours. You use the floor space."
+  },
+  {
+   "id": "L55",
+   "file": "vo/L55.mp3",
+   "gap": 0.35,
+   "text": "Ten percent of twenty-four thousand dollars. A two thousand, four hundred dollar deduction."
+  },
+  {
+   "id": "L56",
+   "file": "vo/L56.mp3",
+   "gap": 0.35,
+   "text": "At Sam's tax rate in Nova Scotia, that cuts his tax by about eight hundred and ninety-two dollars."
+  },
+  {
+   "id": "L57",
+   "file": "vo/L57.mp3",
+   "gap": 0.35,
+   "text": "But what if Sam worked at the kitchen table instead?"
+  },
+  {
+   "id": "L58",
+   "file": "vo/L58.mp3",
+   "gap": 0.35,
+   "text": "Then hours count. The C R A's own example: a space that's twelve percent of the home, used forty hours out of one hundred and sixty-eight in a week."
+  },
+  {
+   "id": "L59",
+   "file": "vo/L59.mp3",
+   "gap": 0.35,
+   "text": "That's about two point nine percent."
+  },
+  {
+   "id": "L60",
+   "file": "vo/L60.mp3",
+   "gap": 0.35,
+   "text": "On the same twenty-four thousand dollars, that's a six hundred and eighty-six dollar deduction. About two hundred and fifty-five dollars of tax."
+  },
+  {
+   "id": "L61",
+   "file": "vo/L61.mp3",
+   "gap": 0.35,
+   "text": "Same person. Same job. A separate room is worth more than three times as much."
+  },
+  {
+   "id": "L62",
+   "file": "vo/L62.mp3",
+   "gap": 0.35,
+   "text": "And some things you can't claim as a salaried employee. Mortgage interest. Property tax. Home insurance. Furniture."
+  },
+  {
+   "id": "L63",
+   "file": "vo/L63.mp3",
+   "gap": 1.0,
+   "text": "So where does that leave Sam?"
+  },
+  {
+   "id": "L64",
+   "file": "vo/L64.mp3",
+   "gap": 0.35,
+   "text": "He owed four thousand, five hundred and seventy-nine dollars. The home office cuts about eight hundred and ninety-two."
+  },
+  {
+   "id": "L65",
+   "file": "vo/L65.mp3",
+   "gap": 0.35,
+   "text": "He still owes about three thousand, six hundred and eighty-seven."
+  },
+  {
+   "id": "L66",
+   "file": "vo/L66.mp3",
+   "gap": 0.35,
+   "text": "And that number matters for one more reason."
+  },
+  {
+   "id": "L67",
+   "file": "vo/L67.mp3",
+   "gap": 0.35,
+   "text": "If your net tax owing is more than three thousand dollars this year, and in either of the two years before, the C R A can ask you to pay by instalments."
+  },
+  {
+   "id": "L68",
+   "file": "vo/L68.mp3",
+   "gap": 0.35,
+   "text": "Four times a year. March, June, September, and December."
+  },
+  {
+   "id": "L69",
+   "file": "vo/L69.mp3",
+   "gap": 0.35,
+   "text": "So if Sam does nothing, next year could start with a quarterly bill."
+  },
+  {
+   "id": "L70",
+   "file": "vo/L70.mp3",
+   "gap": 1.0,
+   "text": "Here's the fix. And it takes five minutes."
+  },
+  {
+   "id": "L71",
+   "file": "vo/L71.mp3",
+   "gap": 0.35,
+   "text": "On the federal T D one form, there's a line: additional tax to be deducted."
+  },
+  {
+   "id": "L72",
+   "file": "vo/L72.mp3",
+   "gap": 0.35,
+   "text": "Sam asks his employer to take about one hundred and forty-two dollars more from each paycheque."
+  },
+  {
+   "id": "L73",
+   "file": "vo/L73.mp3",
+   "gap": 0.35,
+   "text": "That spreads the bill across the whole year. No surprise in April."
+  },
+  {
+   "id": "L74",
+   "file": "vo/L74.mp3",
+   "gap": 1.0,
+   "text": "Now, the checklist for anyone working remotely."
+  },
+  {
+   "id": "L75",
+   "file": "vo/L75.mp3",
+   "gap": 0.35,
+   "text": "One. Look at box ten on your T four. That's your province of employment."
+  },
+  {
+   "id": "L76",
+   "file": "vo/L76.mp3",
+   "gap": 0.35,
+   "text": "Two. Compare it with the province you'll live in on December thirty-first."
+  },
+  {
+   "id": "L77",
+   "file": "vo/L77.mp3",
+   "gap": 0.35,
+   "text": "Three. If they're different, estimate the gap. Then use the T D one to cover it."
+  },
+  {
+   "id": "L78",
+   "file": "vo/L78.mp3",
+   "gap": 0.35,
+   "text": "Four. If you were required to work from home, ask your employer for a T twenty-two hundred."
+  },
+  {
+   "id": "L79",
+   "file": "vo/L79.mp3",
+   "gap": 0.35,
+   "text": "Five. Measure your work space. And keep your rent, utility, and internet bills."
+  },
+  {
+   "id": "L80",
+   "file": "vo/L80.mp3",
+   "gap": 1.0,
+   "text": "So, what did we learn?"
+  },
+  {
+   "id": "L81",
+   "file": "vo/L81.mp3",
+   "gap": 0.35,
+   "text": "One. Your provincial tax follows where you live on December thirty-first."
+  },
+  {
+   "id": "L82",
+   "file": "vo/L82.mp3",
+   "gap": 0.35,
+   "text": "Two. Your payroll can use a different province. And the difference shows up on your return."
+  },
+  {
+   "id": "L83",
+   "file": "vo/L83.mp3",
+   "gap": 0.35,
+   "text": "Three. It can go either way: a bill or a refund."
+  },
+  {
+   "id": "L84",
+   "file": "vo/L84.mp3",
+   "gap": 0.35,
+   "text": "Four. A home office can cut the bill, but only with the detailed method and a T twenty-two hundred."
+  },
+  {
+   "id": "L85",
+   "file": "vo/L85.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: what happens to your taxes when you support your parents. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "Same job, two provinces"
+  },
+  {
+   "at": "L7",
+   "title": "01 \u00b7 Two provinces"
+  },
+  {
+   "at": "L11",
+   "title": "02 \u00b7 Who decides your tax"
+  },
+  {
+   "at": "L15",
+   "title": "03 \u00b7 The payroll province"
+  },
+  {
+   "at": "L24",
+   "title": "04 \u00b7 The real numbers"
+  },
+  {
+   "at": "L32",
+   "title": "05 \u00b7 It can go either way"
+  },
+  {
+   "at": "L42",
+   "title": "06 \u00b7 The home office deduction"
+  },
+  {
+   "at": "L49",
+   "title": "07 \u00b7 Sam's claim"
+  },
+  {
+   "at": "L63",
+   "title": "08 \u00b7 The bill"
+  },
+  {
+   "at": "L70",
+   "title": "09 \u00b7 The fix"
+  },
+  {
+   "at": "L74",
+   "title": "Checklist"
+  },
+  {
+   "at": "L80",
+   "title": "Verdict"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "route",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf26/plates/s1.jpg",
+      "depth": "lf/lf26/plates/s1_d.png",
+      "dim": 0.74
+     },
+     "kicker": "SAM \u00b7 $85,000 \u00b7 REMOTE \u00b7 THE 2026 TAX YEAR",
+     "title": "SAME JOB. TWO PROVINCES.",
+     "a": {
+      "city": "CALGARY",
+      "role": "PAYROLL \u00b7 ALBERTA",
+      "label": "TAX TAKEN \u00b7 AB RATES",
+      "value": 15197,
+      "prov": "WITHHELD ALL YEAR"
+     },
+     "b": {
+      "city": "HALIFAX",
+      "role": "HE LIVES HERE \u00b7 NOVA SCOTIA",
+      "label": "REAL TAX \u00b7 NS RATES",
+      "value": 19776,
+      "prov": "ON HIS RETURN"
+     },
+     "arcAt": {
+      "at": "L1",
+      "word": "company"
+     },
+     "cardsAt": {
+      "at": "L2",
+      "word": "paycheque"
+     },
+     "owe": 4579,
+     "oweAt": {
+      "at": "L2",
+      "word": "owed"
+     },
+     "qAt": {
+      "at": "L4",
+      "word": "box"
+     },
+     "question": "WHICH BOX? WHICH FORM?",
+     "out": {
+      "at": "L6",
+      "off": -0.9
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 360,
+     "w": 1600,
+     "at": "L6",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "THE 2026 TAX YEAR \u00b7 $85,000 SALARY \u00b7 SINGLE \u00b7 NO OTHER INCOME",
+       "size": 44,
+       "at": "L6"
+      },
+      {
+       "text": "EXAMPLES, NOT REAL PEOPLE \u00b7 GENERAL INFO, NOT ADVICE",
+       "size": 40,
+       "at": "L6",
+       "word": "Examples"
+      }
+     ],
+     "kicker": "THE FINE PRINT"
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L7",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "TWO PROVINCES",
+       "size": 140,
+       "gold": true,
+       "at": "L7",
+       "word": "provinces"
+      }
+     ],
+     "kicker": "01"
+    }
+   ]
+  },
+  {
+   "at": "L8",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L8",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "SAM'S TWO PROVINCES",
+     "items": [
+      {
+       "n": "NS",
+       "head": "WHERE HE LIVES \u00b7 NOVA SCOTIA",
+       "at": "L8",
+       "word": "Nova"
+      },
+      {
+       "n": "AB",
+       "head": "PROVINCE OF EMPLOYMENT \u00b7 WHAT PAYROLL USES",
+       "at": "L9",
+       "word": "employment"
+      },
+      {
+       "n": "T4",
+       "head": "BOX 10 \u00b7 PROVINCE OF EMPLOYMENT",
+       "at": "L9",
+       "word": "box"
+      },
+      {
+       "n": "\u2260",
+       "head": "THEY CAN BE DIFFERENT",
+       "at": "L10",
+       "word": "different"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L11",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHO DECIDES YOUR TAX",
+       "size": 120,
+       "gold": true,
+       "at": "L11",
+       "word": "decides"
+      }
+     ],
+     "kicker": "02"
+    }
+   ]
+  },
+  {
+   "at": "L12",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 260,
+     "w": 1600,
+     "at": "L12",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "PROVINCIAL TAX =",
+       "size": 70,
+       "at": "L12",
+       "word": "provincial"
+      },
+      {
+       "anim": "decode",
+       "text": "WHERE YOU LIVE ON DEC 31",
+       "size": 100,
+       "gold": true,
+       "at": "L12",
+       "word": "December"
+      },
+      {
+       "text": "NOT THE EMPLOYER \u00b7 NOT THE HEAD OFFICE",
+       "size": 48,
+       "at": "L13",
+       "word": "employer",
+       "gold": true
+      },
+      {
+       "text": "SAM: NOVA SCOTIA \u2192 ALL OF 2026 AT NS RATES",
+       "size": 48,
+       "at": "L14",
+       "word": "whole"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L15",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE PAYROLL PROVINCE",
+       "size": 120,
+       "gold": true,
+       "at": "L15",
+       "word": "payroll"
+      }
+     ],
+     "kicker": "03"
+    }
+   ]
+  },
+  {
+   "at": "L16",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 170,
+     "w": 1400,
+     "at": "L16",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "PROVINCE OF EMPLOYMENT \u00b7 CRA RULES",
+     "items": [
+      {
+       "n": "1",
+       "head": "YOU REPORT TO AN OFFICE IN PERSON \u2192 THAT PROVINCE",
+       "at": "L17",
+       "word": "report"
+      },
+      {
+       "n": "2",
+       "head": "NO OFFICE \u2192 GENERALLY WHERE THE BUSINESS IS AND PAYS YOU",
+       "at": "L18",
+       "word": "generally"
+      },
+      {
+       "n": "3",
+       "head": "REMOTE AGREEMENT \u00b7 YOU'D NORMALLY GO TO AN OFFICE \u2192 THAT OFFICE",
+       "at": "L19",
+       "word": "exception"
+      },
+      {
+       "n": "SAM",
+       "head": "HIRED REMOTE \u00b7 NO OFFICE \u2192 ALBERTA",
+       "at": "L20",
+       "word": "Alberta"
+      },
+      {
+       "n": "\u2302",
+       "head": "YOUR HOME OFFICE \u2260 AN EMPLOYER ESTABLISHMENT",
+       "at": "L21",
+       "word": "establishment"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L22",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L22",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "SAM'S PROBLEM",
+       "size": 90,
+       "at": "L22",
+       "word": "problem"
+      },
+      {
+       "text": "PAYROLL: ALBERTA RATES",
+       "size": 60,
+       "at": "L23",
+       "word": "Alberta"
+      },
+      {
+       "text": "HIS RETURN: NOVA SCOTIA RATES",
+       "size": 60,
+       "at": "L23",
+       "word": "Nova",
+       "gold": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L24",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L24",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE REAL NUMBERS",
+       "size": 140,
+       "gold": true,
+       "at": "L24",
+       "word": "numbers"
+      }
+     ],
+     "kicker": "04"
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L25",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "INCOME TAX ON $85,000 \u00b7 2026",
+     "sub": "FEDERAL TAX IS THE SAME \u00b7 ONLY THE PROVINCIAL PART CHANGES",
+     "labelW": 620,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "PROVINCIAL \u00b7 AB RATES \u00b7 $4,970",
+       "value": 4970
+      },
+      {
+       "name": "PROVINCIAL \u00b7 NS RATES \u00b7 $9,549",
+       "value": 9549
+      },
+      {
+       "name": "WITHHELD \u00b7 AB \u00b7 $15,197",
+       "value": 15197
+      },
+      {
+       "name": "REAL TAX \u00b7 NS \u00b7 $19,776",
+       "value": 19776
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L26",
+       "word": "Alberta"
+      },
+      {
+       "at": "L27",
+       "word": "Nova"
+      },
+      {
+       "at": "L28",
+       "word": "payroll"
+      },
+      {
+       "at": "L29",
+       "word": "real"
+      }
+     ],
+     "note": "GAP $4,579 \u00b7 DUE WITH HIS RETURN \u00b7 \u2248$176 PER PAYCHEQUE"
+    }
+   ]
+  },
+  {
+   "at": "L32",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L32",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "EITHER WAY",
+       "size": 140,
+       "gold": true,
+       "at": "L32",
+       "word": "wrong"
+      }
+     ],
+     "kicker": "05"
+    }
+   ]
+  },
+  {
+   "at": "L33",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 150,
+     "w": 1400,
+     "at": "L33",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "ALBERTA PAYROLL \u00b7 $85,000 \u00b7 LIVES IN\u2026",
+     "items": [
+      {
+       "n": "BC",
+       "head": "GETS BACK \u2248$570",
+       "at": "L34",
+       "word": "British"
+      },
+      {
+       "n": "ON",
+       "head": "OWES \u2248$354",
+       "at": "L35",
+       "word": "Ontario"
+      },
+      {
+       "n": "MB",
+       "head": "OWES \u2248$2,601",
+       "at": "L36",
+       "word": "Manitoba"
+      },
+      {
+       "n": "PE",
+       "head": "OWES \u2248$3,679",
+       "at": "L37",
+       "word": "Prince"
+      },
+      {
+       "n": "NS",
+       "head": "OWES \u2248$4,579",
+       "at": "L38",
+       "word": "Nova"
+      },
+      {
+       "n": "?",
+       "head": "WHICH TWO PROVINCES ARE ON YOUR PAPERWORK?",
+       "at": "L39",
+       "word": "paperwork"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L40",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L40",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "BUT REMOTE WORK",
+       "size": 70,
+       "at": "L40",
+       "word": "remote"
+      },
+      {
+       "text": "ALSO GIVES YOU SOMETHING",
+       "size": 90,
+       "at": "L40",
+       "word": "gives",
+       "gold": true
+      },
+      {
+       "text": "IF YOU QUALIFY",
+       "size": 56,
+       "at": "L41",
+       "word": "qualify"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L42",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L42",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE HOME OFFICE",
+       "size": 140,
+       "gold": true,
+       "at": "L42",
+       "word": "home"
+      }
+     ],
+     "kicker": "06"
+    }
+   ]
+  },
+  {
+   "at": "L43",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L43",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "WORK SPACE IN THE HOME \u00b7 DETAILED METHOD",
+     "items": [
+      {
+       "n": "2023+",
+       "head": "FLAT RATE METHOD GONE \u00b7 DETAILED METHOD ONLY",
+       "at": "L43",
+       "word": "detailed"
+      },
+      {
+       "n": "1",
+       "head": "REQUIRED TO WORK FROM HOME > 50% \u00b7 4 WEEKS IN A ROW",
+       "at": "L45",
+       "word": "half"
+      },
+      {
+       "n": "2",
+       "head": "EMPLOYER SIGNS FORM T2200",
+       "at": "L46",
+       "word": "signs"
+      },
+      {
+       "n": "3",
+       "head": "COSTS NOT PAID BACK BY YOUR EMPLOYER",
+       "at": "L47",
+       "word": "back"
+      },
+      {
+       "n": "\u2713",
+       "head": "SAM CHECKS ALL THREE",
+       "at": "L48",
+       "word": "checks"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L48",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L48",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "SAM'S CLAIM",
+       "size": 140,
+       "gold": true,
+       "at": "L48",
+       "word": "claim"
+      }
+     ],
+     "kicker": "07"
+    }
+   ]
+  },
+  {
+   "at": "L49",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L49",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "SAM'S HOME COSTS \u00b7 2026",
+     "sub": "HALIFAX \u00b7 RENTS",
+     "labelW": 640,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "RENT \u00b7 $1,800 \u00d7 12 \u00b7 $21,600",
+       "value": 21600
+      },
+      {
+       "name": "ELECTRICITY + HEAT \u00b7 $1,500",
+       "value": 1500
+      },
+      {
+       "name": "INTERNET \u00b7 MONTHLY FEES \u00b7 $900",
+       "value": 900
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L49",
+       "word": "year"
+      },
+      {
+       "at": "L50",
+       "word": "Electricity"
+      },
+      {
+       "at": "L50",
+       "word": "internet"
+      }
+     ],
+     "note": "TOTAL $24,000"
+    }
+   ]
+  },
+  {
+   "at": "L52",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L52",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "WHAT SHARE IS WORK?",
+     "items": [
+      {
+       "n": "10%",
+       "head": "SEPARATE ROOM \u00b7 10% OF THE FLOOR SPACE \u00b7 WORK ONLY",
+       "at": "L53",
+       "word": "separate"
+      },
+      {
+       "n": "\u2302",
+       "head": "A DESIGNATED ROOM: DON'T COUNT HOURS \u00b7 USE FLOOR SPACE",
+       "at": "L54",
+       "word": "hours"
+      },
+      {
+       "n": "$2,400",
+       "head": "10% \u00d7 $24,000 = THE DEDUCTION",
+       "at": "L55",
+       "word": "deduction"
+      },
+      {
+       "n": "\u2212$892",
+       "head": "LESS TAX \u00b7 AT HIS NOVA SCOTIA RATE",
+       "at": "L56",
+       "word": "cuts"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L57",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L57",
+     "fxIn": "slideL",
+     "fxOut": "vapor",
+     "title": "SEPARATE ROOM vs KITCHEN TABLE",
+     "sub": "KITCHEN TABLE: 12% OF THE HOME \u00d7 40 \u00f7 168 HOURS \u2248 2.9%",
+     "labelW": 600,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "ROOM \u00b7 DEDUCTION $2,400",
+       "value": 2400
+      },
+      {
+       "name": "KITCHEN \u00b7 DEDUCTION $686",
+       "value": 686
+      },
+      {
+       "name": "ROOM \u00b7 TAX SAVED $892",
+       "value": 892
+      },
+      {
+       "name": "KITCHEN \u00b7 TAX SAVED $255",
+       "value": 255
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L57",
+       "word": "kitchen"
+      },
+      {
+       "at": "L60",
+       "word": "deduction"
+      },
+      {
+       "at": "L60",
+       "word": "tax"
+      },
+      {
+       "at": "L61",
+       "word": "separate"
+      }
+     ],
+     "note": "SALARIED: NO MORTGAGE INTEREST \u00b7 PROPERTY TAX \u00b7 HOME INSURANCE \u00b7 FURNITURE"
+    }
+   ]
+  },
+  {
+   "at": "L63",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L63",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE BILL",
+       "size": 150,
+       "gold": true,
+       "at": "L63",
+       "word": "leave"
+      }
+     ],
+     "kicker": "08"
+    }
+   ]
+  },
+  {
+   "at": "L64",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L64",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "SAM'S BALANCE OWING",
+     "sub": "2026 \u00b7 NOVA SCOTIA",
+     "labelW": 600,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "GAP \u00b7 $4,579",
+       "value": 4579
+      },
+      {
+       "name": "HOME OFFICE \u00b7 \u2212$892",
+       "value": 892
+      },
+      {
+       "name": "STILL OWES \u00b7 $3,687",
+       "value": 3687
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L64",
+       "word": "owed"
+      },
+      {
+       "at": "L64",
+       "word": "cuts"
+      },
+      {
+       "at": "L65",
+       "word": "still"
+      }
+     ],
+     "note": "NET TAX OWING > $3,000 \u00b7 THIS YEAR + ONE OF THE TWO BEFORE \u2192 INSTALMENTS"
+    }
+   ]
+  },
+  {
+   "at": "L66",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L66",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "WHY $3,000 MATTERS",
+     "items": [
+      {
+       "n": "$3K",
+       "head": "NET TAX OWING \u00b7 THIS YEAR AND ONE OF THE TWO BEFORE",
+       "at": "L67",
+       "word": "three"
+      },
+      {
+       "n": "4\u00d7",
+       "head": "INSTALMENTS \u00b7 MAR 15 \u00b7 JUN 15 \u00b7 SEP 15 \u00b7 DEC 15",
+       "at": "L68",
+       "word": "March"
+      },
+      {
+       "n": "!",
+       "head": "DO NOTHING \u2192 NEXT YEAR MAY START WITH A QUARTERLY BILL",
+       "at": "L69",
+       "word": "quarterly"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L70",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L70",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE FIX",
+       "size": 150,
+       "gold": true,
+       "at": "L70",
+       "word": "fix"
+      }
+     ],
+     "kicker": "09"
+    }
+   ]
+  },
+  {
+   "at": "L71",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 270,
+     "w": 1600,
+     "at": "L71",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "FEDERAL TD1 \u00b7 \"ADDITIONAL TAX TO BE DEDUCTED\"",
+       "size": 56,
+       "at": "L71"
+      },
+      {
+       "anim": "morph",
+       "size": 110,
+       "gold": true,
+       "seq": [
+        {
+         "text": "+$0 PER PAYCHEQUE",
+         "t": 0
+        },
+        {
+         "text": "+$142 PER PAYCHEQUE",
+         "at": "L72",
+         "word": "forty"
+        }
+       ],
+       "at": "L72"
+      },
+      {
+       "text": "SPREAD OVER THE YEAR \u00b7 NO SURPRISE IN APRIL",
+       "size": 50,
+       "at": "L73",
+       "word": "surprise"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L74",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L74",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "REMOTE WORKER CHECKLIST",
+     "items": [
+      {
+       "n": "T4",
+       "head": "BOX 10 = YOUR PROVINCE OF EMPLOYMENT",
+       "at": "L75",
+       "word": "ten"
+      },
+      {
+       "n": "DEC 31",
+       "head": "COMPARE WITH WHERE YOU LIVE",
+       "at": "L76",
+       "word": "Compare"
+      },
+      {
+       "n": "TD1",
+       "head": "DIFFERENT? ESTIMATE THE GAP \u00b7 ADD EXTRA TAX",
+       "at": "L77",
+       "word": "gap"
+      },
+      {
+       "n": "T2200",
+       "head": "REQUIRED TO WORK FROM HOME? ASK FOR IT",
+       "at": "L78",
+       "word": "ask"
+      },
+      {
+       "n": "M\u00b2",
+       "head": "MEASURE THE SPACE \u00b7 KEEP RENT, UTILITY, INTERNET BILLS",
+       "at": "L79",
+       "word": "Measure"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L80",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L80",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT DID WE LEARN?",
+       "size": 140,
+       "gold": true,
+       "at": "L80",
+       "word": "learn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L81",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L81",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "REMOTE WORK \u00b7 4 RULES",
+     "items": [
+      {
+       "n": "1",
+       "head": "PROVINCIAL TAX FOLLOWS WHERE YOU LIVE ON DEC 31",
+       "at": "L81",
+       "word": "One"
+      },
+      {
+       "n": "2",
+       "head": "PAYROLL CAN USE ANOTHER PROVINCE \u00b7 YOUR RETURN SETTLES IT",
+       "at": "L82",
+       "word": "Two"
+      },
+      {
+       "n": "3",
+       "head": "IT CAN GO EITHER WAY \u00b7 A BILL OR A REFUND",
+       "at": "L83",
+       "word": "Three"
+      },
+      {
+       "n": "4",
+       "head": "HOME OFFICE: DETAILED METHOD + T2200",
+       "at": "L84",
+       "word": "Four"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L85",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L85",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 96,
+       "gold": true,
+       "seq": [
+        {
+         "text": "WORKING REMOTELY \u00b7 YOUR TAXES",
+         "t": 0
+        },
+        {
+         "text": "SUPPORTING YOUR PARENTS",
+         "at": "L85",
+         "word": "parents"
+        }
+       ],
+       "at": "L85"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L85",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.05
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L15",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L24",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.25
+    }
+   ]
+  },
+  {
+   "at": "L32",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L42",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    },
+    {
+     "x": -30,
+     "y": 10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L49",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L63",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L70",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L74",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L80",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.15
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf26/plates/s1.jpg",
+    "depth": "lf/lf26/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf26/plates/s2.jpg",
+    "depth": "lf/lf26/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf26/plates/s3.jpg",
+    "depth": "lf/lf26/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf26/plates/s4.jpg",
+    "depth": "lf/lf26/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf26/plates/s5.jpg",
+    "depth": "lf/lf26/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf26/plates/s6.jpg",
+    "depth": "lf/lf26/plates/s6_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L8"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L8",
+   "word": "Nova"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "employment"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L9",
+   "word": "box"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L10",
+   "word": "different"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L11"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L12"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L16"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L17",
+   "word": "report"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L18",
+   "word": "generally"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L19",
+   "word": "exception"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L20",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L21",
+   "word": "establishment"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L22"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L24"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L25"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L26",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L27",
+   "word": "Nova"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "payroll"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "real"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L32"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L33"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "British"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "Manitoba"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L37",
+   "word": "Prince"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L38",
+   "word": "Nova"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L39",
+   "word": "paperwork"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L40"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L42"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L43"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "detailed"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L45",
+   "word": "half"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L46",
+   "word": "signs"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L47",
+   "word": "back"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L48",
+   "word": "checks"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L48"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L49"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L49",
+   "word": "year"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L50",
+   "word": "Electricity"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L50",
+   "word": "internet"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L52"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L53",
+   "word": "separate"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L54",
+   "word": "hours"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L55",
+   "word": "deduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L56",
+   "word": "cuts"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L57"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L57",
+   "word": "kitchen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L60",
+   "word": "deduction"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L60",
+   "word": "tax"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L61",
+   "word": "separate"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L63"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L64"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L64",
+   "word": "owed"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L64",
+   "word": "cuts"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L65",
+   "word": "still"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L66"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L67",
+   "word": "three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L68",
+   "word": "March"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L69",
+   "word": "quarterly"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L70"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L71"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L74"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L75",
+   "word": "ten"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L76",
+   "word": "Compare"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L77",
+   "word": "gap"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L78",
+   "word": "ask"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L79",
+   "word": "Measure"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L80"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L81"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L81",
+   "word": "One"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L82",
+   "word": "Two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L83",
+   "word": "Three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L84",
+   "word": "Four"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L85"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.2,
+   "at": "L1",
+   "word": "company"
+  },
+  {
+   "name": "tick",
+   "vol": 0.2,
+   "at": "L2",
+   "word": "paycheque"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.24,
+   "at": "L2",
+   "word": "owed"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L15"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L24"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L32"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L42"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L49"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L63"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L70"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L74"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L80"
+  }
+ ],
+ "ticker": [
+  "SAM \u00b7 PAYROLL AB \u00b7 LIVES NS \u00b7 OWES $4,579",
+  "PROVINCIAL TAX = WHERE YOU LIVE ON DEC 31",
+  "T4 BOX 10 = PROVINCE OF EMPLOYMENT",
+  "HOME OFFICE ROOM 10% \u2192 $2,400 DEDUCTION \u2192 \u2212$892",
+  "TD1 EXTRA TAX \u2248$142 PER PAY",
+  "EXAMPLES \u00b7 2026"
+ ],
+ "audio": "lf/lf26/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}
