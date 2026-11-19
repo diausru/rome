@@ -1,5 +1,5 @@
 # LF-27 — PUBLISH PACKAGE (YouTube long-form)
-**QC:** pending render.
+**QC (2026-11-19):** 532.7 s (8:53), −13.8 LUFS, no black frames, contact sheet checked; static 30-s hook tail replaced by promise cards (first 2 chunks re-rendered).
 **File:** `LF27-1080p.mp4` · 1920×1080 · 30 fps · ≈8:53 · VO Grady (74 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** LedgerHook (new; first episode built with the Hook module). **Thumbnail:** made by the user.

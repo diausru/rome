@@ -604,17 +604,84 @@
      "flipText": "\u2248$1,247",
      "flipSub": "FEDERAL CREDIT \u00b7 2025",
      "qAt": {
-      "at": "L5",
-      "word": "support"
+      "at": "L4",
+      "word": "word"
      },
      "question": "WHAT'S THE WORD?",
      "out": {
-      "at": "L7",
+      "at": "L5",
       "off": -0.9
      }
     }
    ],
    "off": -1.0
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L5",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "SUPPORTING YOUR PARENTS",
+       "size": 96,
+       "at": "L5"
+      },
+      {
+       "text": "WHY MOST PEOPLE GET THIS RULE BACKWARDS",
+       "size": 52,
+       "at": "L5",
+       "word": "backwards",
+       "gold": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 260,
+     "w": 1400,
+     "at": "L6",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "BY THE END YOU WILL KNOW",
+     "items": [
+      {
+       "n": "1",
+       "head": "THE WORD",
+       "at": "L6",
+       "word": "word"
+      },
+      {
+       "n": "2",
+       "head": "WHAT IT'S WORTH",
+       "at": "L6",
+       "word": "worth"
+      },
+      {
+       "n": "3",
+       "head": "THE LINE THAT CAN BE WORTH ALMOST 2\u00d7",
+       "at": "L6",
+       "word": "twice"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
   },
   {
    "at": "L7",
@@ -1811,6 +1878,34 @@
    "name": "whoosh",
    "vol": 0.09,
    "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L5"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L6",
+   "word": "word"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L6",
+   "word": "worth"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L6",
+   "word": "twice"
   },
   {
    "name": "whoosh",
