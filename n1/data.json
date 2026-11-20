@@ -19,5 +19,14 @@
   "index26": "canada.ca Adjustment of personal income tax and benefit amounts (2026-03-12): BPA max $16,452 for 2026",
   "rates26": "canada.ca current-year tax rates (2026-06-25): federal 2026 first bracket $58,523, rate 14%"
  },
- "verify": "Manitoba thresholds: canada.ca 2026 page shows $47,564/$101,200 but T4127 table summary shows 47,000/100,000. NOT used in the reel."
+ "verify": "Manitoba thresholds: canada.ca 2026 page shows $47,564/$101,200 but T4127 table summary shows 47,000/100,000. NOT used in the reel.",
+ "derive": {},
+ "spoken": {
+  "bpa26": "sixteen thousand four hundred fifty-two dollars",
+  "bpa27": "sixteen thousand eight hundred seventy-nine",
+  "diff": "four hundred twenty-seven dollars",
+  "mb_bpa": "fifteen thousand seven hundred eighty",
+  "cpp_new": "four point seven five percent",
+  "cpp_old": "four point nine five"
+ }
 }

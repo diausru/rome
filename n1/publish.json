@@ -54,5 +54,17 @@
   "save": "2027 numbers.",
   "share": "Manitobans.",
   "follow": "Next: part-time vs full-time."
- }
+ },
+ "seo": {
+  "primary": "2027 tax changes canada",
+  "secondary": "basic personal amount 2027, manitoba tax 2027, cpp 2027 (vidIQ/NexLev skipped: urgent news)",
+  "intent": "What changes on my 2027 taxes?",
+  "audience": "Manitoba employees.",
+  "angle": "Federal indexed vs Manitoba frozen + proposed CPP cut.",
+  "questions": "What is the 2027 basic personal amount? Is Manitoba indexed in 2027?"
+ },
+ "next": [],
+ "series": "News",
+ "research": "see n1/data.json",
+ "retention": "see n1/data.json"
 }
