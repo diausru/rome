@@ -1,10 +1,15 @@
 {
  "video": {
-  "title": "N1 · 2027: federal amounts indexed, Manitoba frozen (news)"
+  "title": "N1 · 2027: federal amounts indexed, Manitoba frozen (news)",
+  "mp4": "showreel/out/n1/n1-final.mp4 (share copy: n1-share.mp4)",
+  "duration": "1:07 (67.75 s), 1080×1920, 24 fps"
  },
  "cover": {
   "frame": "CPP 4.95% → 4.75% with stamp 'UP TO $146/YR BACK'",
-  "why": "number + payoff"
+  "why": "number + payoff",
+  "t": 42.6,
+  "ms": 42600,
+  "file": "n1/cover.jpg (extracted at 42.6 s from the final render)"
  },
  "sources": [
   {
