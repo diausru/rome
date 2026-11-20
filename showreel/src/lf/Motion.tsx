@@ -1131,4 +1131,44 @@ const LedgerHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
   );
 };
 
-export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook, year: YearHook, route: RouteHook, ledger: LedgerHook };
+// ---------- ShiftHook: frame-0 hook — an income ruler with bracket bands; the bracket lines slide from 2026 to 2027 positions while the salary pin stays put; the tax counter drops; frozen-province chips appear; title flips ----------
+// p.b26[] · p.b27[] · p.rates[] · p.max · p.salary · p.shiftAt · p.t26 · p.t27 · p.saveAt · p.frozen[] · p.frozenAt · p.frozenLabel · p.kicker · p.title · p.qAt · p.question · p.out · p.bg
+const ShiftHook: React.FC<{ p: Pn; c: Ctx }> = ({ p, c }) => {
+  const now = c.now; const el = now - p.t; const out = p.out ? prog(now, p.out.t, 0.9, INOUT) : 0;
+  const sh = p.shiftAt ? prog(now, p.shiftAt.t, 1.6, INOUT) : 0; const sv = p.saveAt ? prog(now, p.saveAt.t, 0.7, BACK) : 0;
+  const fz = p.frozenAt ? prog(now, p.frozenAt.t, 0.8, BACK) : 0; const qk = p.qAt ? prog(now, p.qAt.t, 0.7) : 0;
+  const intro = prog(now, p.t + 0.1, 0.9, INOUT);
+  const fmt = (v: number) => '$' + Math.round(v).toLocaleString('en-US');
+  const X0 = 160, W = 1600, Y = 420, H = 110; const mx = p.max as number; const xo = (v: number) => X0 + W * Math.min(1, v / mx);
+  const b26 = p.b26 as number[], b27 = p.b27 as number[]; const b = b26.map((v, i) => v + (b27[i] - v) * sh);
+  const edges = [0, ...b, mx]; const rates = p.rates as string[]; const cols = ['rgba(127,211,160,.55)', 'rgba(241,211,142,.55)', 'rgba(229,128,110,.55)'];
+  const tax = (p.t26 as number) + ((p.t27 as number) - (p.t26 as number)) * sh;
+  return (
+    <div style={{ position: 'absolute', left: -p.x, top: -p.y, width: 1920, height: 1080, background: C.navy, overflow: 'hidden' }}>
+      {p.bg && <div style={{ position: 'absolute', inset: 0 }}>
+        <DepthPhoto src={p.bg.src} depth={p.bg.depth} t={el} amt={0.06} cam={{ x: -0.3 + 0.6 * cl(el / 22), y: 0, z: 0.05 + 0.2 * cl(el / 22) }} />
+        <div style={{ position: 'absolute', inset: 0, background: `rgba(7,11,20,${p.bg.dim ?? 0.76})` }} /></div>}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 74, textAlign: 'center', fontFamily: COND, opacity: 1 - out }}>
+        <div style={{ fontSize: 32, letterSpacing: 10, color: C.gold }}>{p.kicker}</div>
+        <div style={{ fontSize: qk > 0.5 ? 56 : 78, height: 100, lineHeight: '100px', fontWeight: 700, color: C.white, letterSpacing: 2, textTransform: 'uppercase', textShadow: '0 6px 30px rgba(0,0,0,.7)', opacity: qk > 0 && qk < 1 ? Math.abs(qk - 0.5) * 2 : 1 }}>{qk > 0.5 ? p.question : p.title}</div>
+      </div>
+      <div style={{ opacity: (1 - out) * intro }}>
+        <div style={{ position: 'absolute', left: X0, top: Y - 70, fontFamily: COND, fontSize: 40, fontWeight: 700, color: sh > 0.5 ? C.green : C.white, letterSpacing: 4 }}>FEDERAL BRACKETS · {sh > 0.5 ? '2027' : '2026'}</div>
+        {edges.slice(0, -1).map((a, i) => <div key={i} style={{ position: 'absolute', left: xo(a), top: Y, width: xo(edges[i + 1]) - xo(a), height: H, background: cols[i % 3], borderRight: '2px solid rgba(255,255,255,.5)' }}>
+          <div style={{ fontFamily: COND, fontSize: 44, fontWeight: 700, color: C.navy, textAlign: 'center', lineHeight: `${H}px` }}>{rates[i]}</div></div>)}
+        {b.map((v, i) => xo(v) < X0 + W - 20 && <div key={'l' + i} style={{ position: 'absolute', left: xo(v) - 150, width: 300, top: Y + H + 14, textAlign: 'center', fontFamily: COND, fontSize: 34, fontWeight: 700, color: C.gold }}>{fmt(v)}</div>)}
+        <div style={{ position: 'absolute', left: xo(p.salary) - 3, top: Y - 24, width: 6, height: H + 48, background: C.white, boxShadow: '0 0 18px rgba(255,255,255,.7)' }} />
+        <div style={{ position: 'absolute', left: xo(p.salary) - 230, width: 460, top: Y - 74, textAlign: 'center', fontFamily: COND, fontSize: 32, fontWeight: 700, letterSpacing: 3, color: C.white, whiteSpace: 'nowrap' }}>YOUR SALARY · {fmt(p.salary)}</div>
+        <div style={{ position: 'absolute', left: 0, right: 0, top: 650, textAlign: 'center', fontFamily: COND }}>
+          <div style={{ fontSize: 26, letterSpacing: 6, color: C.dim }}>FEDERAL TAX AT {fmt(p.salary)} · BEFORE OTHER CREDITS</div>
+          <div style={{ fontSize: 96, fontWeight: 700, color: C.white, lineHeight: 1.1 }}>{fmt(tax)}
+            {sv > 0.02 && <span style={{ marginLeft: 30, display: 'inline-block', padding: '4px 22px', borderRadius: 14, border: `4px solid ${C.green}`, color: C.green, fontSize: 64, opacity: cl(sv * 2), transform: `scale(${0.7 + 0.3 * sv})` }}>−{fmt((p.t26 as number) - (p.t27 as number))}</span>}</div></div>
+        {fz > 0.02 && <div style={{ position: 'absolute', left: 0, right: 0, top: 850, textAlign: 'center', fontFamily: COND, opacity: cl(fz * 2), transform: `translateY(${(1 - fz) * 30}px)` }}>
+          <span style={{ fontSize: 28, letterSpacing: 5, color: C.dim, marginRight: 20 }}>{p.frozenLabel}</span>
+          {(p.frozen as string[]).map((k, i) => <span key={i} style={{ display: 'inline-block', margin: '0 8px', padding: '4px 20px', borderRadius: 10, border: '3px solid rgba(143,179,232,.8)', color: C.blue, fontSize: 40, fontWeight: 700, background: 'rgba(7,11,20,.6)' }}>{k}</span>)}</div>}
+      </div>
+    </div>
+  );
+};
+
+export const PANELS_MOTION: Record<string, React.FC<{ p: Pn; c: Ctx }>> = { opening: OpeningScene, ptable: ProgressiveTable, collage: CollageHook, stubs: StubsHook, race: RaceHook, stacks: StacksHook, gauges: GaugeHook, curve: CurveChart, sold: SoldHook, bonus: BonusHook, fedprov: FedProvHook, oas: OasHook, window: WindowHook, ccb: CcbHook, breaks: BreakHook, refund: RefundHook, paytl: PayHook, deposit: DepositHook, half: HalfHook, column: ColumnHook, ping: PingHook, twin: TwinHook, year: YearHook, route: RouteHook, ledger: LedgerHook, shift: ShiftHook };

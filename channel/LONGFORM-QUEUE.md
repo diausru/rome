@@ -140,7 +140,8 @@ Mapping checked against the folders and `longform/LONGFORM-BIBLE.md` (2026-10-17
 25. LF-25 → #16 The Complete Canadian Tax Year — From Your First Paycheque to Your Tax Return — rendered 2026-11-13 (proposed 2027-05-29)
 26. LF-26 → #19 What If You Work Remotely? — rendered 2026-11-19 (proposed 2027-06-08)
 27. LF-27 → #21 What If You Support Your Parents? (merge with #39) — rendered 2026-11-19 (proposed 2027-06-18)
-28. LF-28 → #37 Your Parents Are Getting Older — What Financial Benefits Could Your Family Be Missing? (check overlap with LF-14 OAS) — queued
+28. LF-28 → URGENT user topic: New Canada Tax Brackets 2027 (provinces + families) — rendered 2026-11-20 (publish ASAP)
+29. LF-29 → #37 Your Parents Are Getting Older — What Financial Benefits Could Your Family Be Missing? (check overlap with LF-14 OAS) — queued
 NOTE (2026-11-13): LF-23 (#14 side hustle) overlaps LF-09 (#20) and LF-24 (#15 two jobs) overlaps LF-07 (#18). Before each new episode, check the queue for an already-rendered topic with the same subject.
 
 ## Rule: long-form must be completely different from the Shorts (user, 2026-10-07)

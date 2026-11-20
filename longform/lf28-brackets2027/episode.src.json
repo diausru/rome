@@ -1,0 +1,2234 @@
+{
+ "fps": 30,
+ "lead": 0.8,
+ "tail": 2.0,
+ "footer": "Sources: canada.ca \u00b7 CRA T4127 Payroll Deductions Formulas 124th ed. (Jan 1 2027) and 122nd ed. (Jan 2026); CCB how much; Canada Groceries and Essentials Benefit; ESDC EI 2027 rate; CRA CPP rates; MP/RRSP limits \u00b7 Examples, general info, not advice",
+ "vo": [
+  {
+   "id": "L1",
+   "file": "vo/L1.mp3",
+   "gap": 0.35,
+   "text": "On January first, twenty twenty-seven, every federal tax bracket in Canada moves up. Your salary doesn't have to change at all."
+  },
+  {
+   "id": "L2",
+   "file": "vo/L2.mp3",
+   "gap": 0.35,
+   "text": "Earn seventy-five thousand dollars in both years, and your federal tax goes down by about one hundred and fifty-nine dollars."
+  },
+  {
+   "id": "L3",
+   "file": "vo/L3.mp3",
+   "gap": 0.35,
+   "text": "But in three provinces, the provincial tax-free basic amount doesn't move at all. And in two of them, the brackets are frozen too."
+  },
+  {
+   "id": "L4",
+   "file": "vo/L4.mp3",
+   "gap": 0.35,
+   "text": "So who wins in twenty twenty-seven, who stands still, and what changes for families with kids? Let's go through it, number by number."
+  },
+  {
+   "id": "L5",
+   "file": "vo/L5.mp3",
+   "gap": 0.35,
+   "text": "All numbers come from the C R A's payroll formulas for January twenty twenty-seven, and from canada dot c a. Examples, not real people. General information, not advice."
+  },
+  {
+   "id": "L6",
+   "file": "vo/L6.mp3",
+   "gap": 1.0,
+   "text": "First: why the brackets move at all."
+  },
+  {
+   "id": "L7",
+   "file": "vo/L7.mp3",
+   "gap": 0.35,
+   "text": "Every year, the federal tax brackets and most credits are indexed to inflation."
+  },
+  {
+   "id": "L8",
+   "file": "vo/L8.mp3",
+   "gap": 0.35,
+   "text": "For twenty twenty-seven, the federal indexation rate is two point six percent."
+  },
+  {
+   "id": "L9",
+   "file": "vo/L9.mp3",
+   "gap": 0.35,
+   "text": "That means every bracket line moves up by two point six percent. And so does the basic personal amount."
+  },
+  {
+   "id": "L10",
+   "file": "vo/L10.mp3",
+   "gap": 1.0,
+   "text": "Here are the new federal brackets for twenty twenty-seven."
+  },
+  {
+   "id": "L11",
+   "file": "vo/L11.mp3",
+   "gap": 0.35,
+   "text": "Fourteen percent on the first sixty thousand and forty-four dollars."
+  },
+  {
+   "id": "L12",
+   "file": "vo/L12.mp3",
+   "gap": 0.35,
+   "text": "Twenty point five percent up to one hundred and twenty thousand and eighty-eight."
+  },
+  {
+   "id": "L13",
+   "file": "vo/L13.mp3",
+   "gap": 0.35,
+   "text": "Twenty-six percent up to one hundred and eighty-six thousand, one hundred and fifty-seven."
+  },
+  {
+   "id": "L14",
+   "file": "vo/L14.mp3",
+   "gap": 0.35,
+   "text": "Twenty-nine percent up to two hundred and sixty-five thousand, two hundred and three."
+  },
+  {
+   "id": "L15",
+   "file": "vo/L15.mp3",
+   "gap": 0.35,
+   "text": "And thirty-three percent above that."
+  },
+  {
+   "id": "L16",
+   "file": "vo/L16.mp3",
+   "gap": 0.35,
+   "text": "The rates themselves don't change. Only the lines move."
+  },
+  {
+   "id": "L17",
+   "file": "vo/L17.mp3",
+   "gap": 0.35,
+   "text": "And the basic personal amount goes from sixteen thousand, four hundred and fifty-two dollars, to sixteen thousand, eight hundred and seventy-nine."
+  },
+  {
+   "id": "L18",
+   "file": "vo/L18.mp3",
+   "gap": 0.35,
+   "text": "That's four hundred and twenty-seven dollars more you can earn before federal tax starts. Worth about sixty dollars."
+  },
+  {
+   "id": "L19",
+   "file": "vo/L19.mp3",
+   "gap": 1.0,
+   "text": "Now, what does that mean for you?"
+  },
+  {
+   "id": "L20",
+   "file": "vo/L20.mp3",
+   "gap": 0.35,
+   "text": "Let's keep the salary exactly the same, and only change the year. Federal tax only, before other credits."
+  },
+  {
+   "id": "L21",
+   "file": "vo/L21.mp3",
+   "gap": 0.35,
+   "text": "At fifty thousand dollars, you save about sixty dollars."
+  },
+  {
+   "id": "L22",
+   "file": "vo/L22.mp3",
+   "gap": 0.35,
+   "text": "At seventy-five thousand, about one hundred and fifty-nine."
+  },
+  {
+   "id": "L23",
+   "file": "vo/L23.mp3",
+   "gap": 0.35,
+   "text": "At one hundred thousand, also about one hundred and fifty-nine."
+  },
+  {
+   "id": "L24",
+   "file": "vo/L24.mp3",
+   "gap": 0.35,
+   "text": "At one hundred and fifty thousand, about three hundred and twenty-six."
+  },
+  {
+   "id": "L25",
+   "file": "vo/L25.mp3",
+   "gap": 0.35,
+   "text": "Not life-changing. But here's the real point."
+  },
+  {
+   "id": "L26",
+   "file": "vo/L26.mp3",
+   "gap": 0.35,
+   "text": "Say your salary goes up by exactly two point six percent. From seventy-five thousand, to seventy-six thousand, nine hundred and fifty."
+  },
+  {
+   "id": "L27",
+   "file": "vo/L27.mp3",
+   "gap": 0.35,
+   "text": "Your federal tax goes up too. From about nine thousand, two hundred and sixty-eight, to about nine thousand, five hundred and nine."
+  },
+  {
+   "id": "L28",
+   "file": "vo/L28.mp3",
+   "gap": 0.35,
+   "text": "But it rises in step with your pay. That's what indexing does. It stops inflation from quietly pushing you into a higher bracket."
+  },
+  {
+   "id": "L29",
+   "file": "vo/L29.mp3",
+   "gap": 0.35,
+   "text": "That has a name. Bracket creep. And in twenty twenty-seven, not every province protects you from it."
+  },
+  {
+   "id": "L30",
+   "file": "vo/L30.mp3",
+   "gap": 1.0,
+   "text": "Here's where it gets interesting."
+  },
+  {
+   "id": "L31",
+   "file": "vo/L31.mp3",
+   "gap": 0.35,
+   "text": "Provinces set their own brackets. And their own indexing."
+  },
+  {
+   "id": "L32",
+   "file": "vo/L32.mp3",
+   "gap": 0.35,
+   "text": "Ontario indexes by two point one percent. The first bracket line moves from fifty-three thousand, eight hundred and ninety-one, to fifty-five thousand and twenty-three. The basic amount goes up by two hundred and seventy-two dollars."
+  },
+  {
+   "id": "L33",
+   "file": "vo/L33.mp3",
+   "gap": 0.35,
+   "text": "Alberta caps its indexing at two percent. Its first line moves from sixty-one thousand, two hundred, to sixty-two thousand, four hundred and twenty-four."
+  },
+  {
+   "id": "L34",
+   "file": "vo/L34.mp3",
+   "gap": 0.35,
+   "text": "Saskatchewan indexes by two point six percent. And then adds an extra five hundred dollars to its basic amount. It goes from twenty thousand, three hundred and eighty-one, to twenty-one thousand, four hundred and eleven."
+  },
+  {
+   "id": "L35",
+   "file": "vo/L35.mp3",
+   "gap": 0.35,
+   "text": "Nova Scotia indexes by three point five percent. Its basic amount rises to twelve thousand, three hundred and fifty."
+  },
+  {
+   "id": "L36",
+   "file": "vo/L36.mp3",
+   "gap": 0.35,
+   "text": "New Brunswick: two point six percent. Fourteen thousand and nineteen."
+  },
+  {
+   "id": "L37",
+   "file": "vo/L37.mp3",
+   "gap": 1.0,
+   "text": "Now, the three that stand still."
+  },
+  {
+   "id": "L38",
+   "file": "vo/L38.mp3",
+   "gap": 0.35,
+   "text": "British Columbia has paused indexing for its brackets and most credits. From twenty twenty-seven to twenty thirty, they stay at twenty twenty-six levels."
+  },
+  {
+   "id": "L39",
+   "file": "vo/L39.mp3",
+   "gap": 0.35,
+   "text": "Manitoba isn't indexing its brackets or its basic amount either. The lines stay at forty-seven thousand and one hundred thousand."
+  },
+  {
+   "id": "L40",
+   "file": "vo/L40.mp3",
+   "gap": 0.35,
+   "text": "And Prince Edward Island's basic amount stays at fifteen thousand dollars."
+  },
+  {
+   "id": "L41",
+   "file": "vo/L41.mp3",
+   "gap": 0.35,
+   "text": "So what is the bigger basic amount worth, province by province?"
+  },
+  {
+   "id": "L42",
+   "file": "vo/L42.mp3",
+   "gap": 0.35,
+   "text": "In Saskatchewan, about one hundred and eight dollars."
+  },
+  {
+   "id": "L43",
+   "file": "vo/L43.mp3",
+   "gap": 0.35,
+   "text": "In Nova Scotia, about thirty-seven. In Alberta, about thirty-six. In New Brunswick, about thirty-three. In Ontario, about fourteen."
+  },
+  {
+   "id": "L44",
+   "file": "vo/L44.mp3",
+   "gap": 0.35,
+   "text": "In British Columbia, Manitoba, and Prince Edward Island: zero."
+  },
+  {
+   "id": "L45",
+   "file": "vo/L45.mp3",
+   "gap": 0.35,
+   "text": "And in B C and Manitoba, where the brackets are frozen, a raise can push more of your income into a higher provincial bracket. That's bracket creep at work."
+  },
+  {
+   "id": "L46",
+   "file": "vo/L46.mp3",
+   "gap": 1.0,
+   "text": "Now, families. Because some of the biggest numbers aren't in the brackets at all."
+  },
+  {
+   "id": "L47",
+   "file": "vo/L47.mp3",
+   "gap": 0.35,
+   "text": "The Canada child benefit is recalculated every July. And it's indexed to inflation."
+  },
+  {
+   "id": "L48",
+   "file": "vo/L48.mp3",
+   "gap": 0.35,
+   "text": "Right now, from July twenty twenty-six to June twenty twenty-seven, the maximum is eight thousand, one hundred and fifty-seven dollars a year for each child under six."
+  },
+  {
+   "id": "L49",
+   "file": "vo/L49.mp3",
+   "gap": 0.35,
+   "text": "And six thousand, eight hundred and eighty-three dollars for each child from six to seventeen."
+  },
+  {
+   "id": "L50",
+   "file": "vo/L50.mp3",
+   "gap": 0.35,
+   "text": "The full amount goes to families with adjusted family net income under thirty-eight thousand, two hundred and thirty-seven dollars. Above that, it starts to shrink."
+  },
+  {
+   "id": "L51",
+   "file": "vo/L51.mp3",
+   "gap": 0.35,
+   "text": "These payments are based on your twenty twenty-five return."
+  },
+  {
+   "id": "L52",
+   "file": "vo/L52.mp3",
+   "gap": 0.35,
+   "text": "And here's the key for twenty twenty-seven: the payments that start in July twenty twenty-seven will be based on your twenty twenty-six return. So file it on time."
+  },
+  {
+   "id": "L53",
+   "file": "vo/L53.mp3",
+   "gap": 0.35,
+   "text": "If your child is eligible for the disability tax credit, the child disability benefit can add up to three thousand, four hundred and eighty dollars a year."
+  },
+  {
+   "id": "L54",
+   "file": "vo/L54.mp3",
+   "gap": 0.35,
+   "text": "And the G S T credit has a new name. Since July twenty twenty-six, it's the Canada Groceries and Essentials Benefit."
+  },
+  {
+   "id": "L55",
+   "file": "vo/L55.mp3",
+   "gap": 0.35,
+   "text": "Up to six hundred and seventy-nine dollars for a single person. Up to eight hundred and ninety for a couple. Plus up to two hundred and thirty-four for each child under nineteen."
+  },
+  {
+   "id": "L56",
+   "file": "vo/L56.mp3",
+   "gap": 0.35,
+   "text": "That includes a temporary twenty-five percent increase, set for five years."
+  },
+  {
+   "id": "L57",
+   "file": "vo/L57.mp3",
+   "gap": 1.0,
+   "text": "Now, your paycheque in January twenty twenty-seven."
+  },
+  {
+   "id": "L58",
+   "file": "vo/L58.mp3",
+   "gap": 0.35,
+   "text": "C P P: the first earnings ceiling rises to seventy-six thousand, seven hundred dollars. The second one, to eighty-seven thousand, four hundred."
+  },
+  {
+   "id": "L59",
+   "file": "vo/L59.mp3",
+   "gap": 0.35,
+   "text": "E I: the rate is one dollar and sixty-four cents per one hundred dollars. On up to seventy thousand, eight hundred dollars. A maximum of one thousand, one hundred and sixty-one dollars and twelve cents."
+  },
+  {
+   "id": "L60",
+   "file": "vo/L60.mp3",
+   "gap": 0.35,
+   "text": "So if you earn above those ceilings, your January paycheque can be a little smaller than your December one."
+  },
+  {
+   "id": "L61",
+   "file": "vo/L61.mp3",
+   "gap": 0.35,
+   "text": "And for savers: the R R S P dollar limit for twenty twenty-seven is thirty-five thousand, three hundred and ninety dollars."
+  },
+  {
+   "id": "L62",
+   "file": "vo/L62.mp3",
+   "gap": 0.35,
+   "text": "The T F S A limit for twenty twenty-seven wasn't on canada dot c a yet when we checked. Watch for it."
+  },
+  {
+   "id": "L63",
+   "file": "vo/L63.mp3",
+   "gap": 1.0,
+   "text": "So here's your twenty twenty-seven checklist."
+  },
+  {
+   "id": "L64",
+   "file": "vo/L64.mp3",
+   "gap": 0.35,
+   "text": "One. Check your first paycheque in January. C P P and E I start over, with new ceilings."
+  },
+  {
+   "id": "L65",
+   "file": "vo/L65.mp3",
+   "gap": 0.35,
+   "text": "Two. If you live in B C, Manitoba, or P E I, expect less inflation relief on the provincial side."
+  },
+  {
+   "id": "L66",
+   "file": "vo/L66.mp3",
+   "gap": 0.35,
+   "text": "Three. Families: file your twenty twenty-six return on time. It sets your child benefit from July twenty twenty-seven."
+  },
+  {
+   "id": "L67",
+   "file": "vo/L67.mp3",
+   "gap": 0.35,
+   "text": "Four. Check the new Canada Groceries and Essentials Benefit. It's based on your tax return. So again: file."
+  },
+  {
+   "id": "L68",
+   "file": "vo/L68.mp3",
+   "gap": 0.35,
+   "text": "Five. Update your R R S P plan with the new limit, and your T F S A when it's announced."
+  },
+  {
+   "id": "L69",
+   "file": "vo/L69.mp3",
+   "gap": 1.0,
+   "text": "So, what did we learn?"
+  },
+  {
+   "id": "L70",
+   "file": "vo/L70.mp3",
+   "gap": 0.35,
+   "text": "One. In twenty twenty-seven, federal brackets and the basic personal amount rise by two point six percent. The rates stay the same."
+  },
+  {
+   "id": "L71",
+   "file": "vo/L71.mp3",
+   "gap": 0.35,
+   "text": "Two. Same salary means a little less federal tax. A raise that keeps up with inflation means your tax just keeps up too."
+  },
+  {
+   "id": "L72",
+   "file": "vo/L72.mp3",
+   "gap": 0.35,
+   "text": "Three. Provinces don't move together. Saskatchewan adds an extra five hundred dollars. B C, Manitoba, and P E I keep their basic amounts frozen."
+  },
+  {
+   "id": "L73",
+   "file": "vo/L73.mp3",
+   "gap": 0.35,
+   "text": "Four. For families, the biggest numbers are the child benefit and the new groceries benefit. And both start with filing your return."
+  },
+  {
+   "id": "L74",
+   "file": "vo/L74.mp3",
+   "gap": 0.35,
+   "text": "Next on this channel: the benefits your aging parents could be missing. Subscribe, so you don't miss it."
+  }
+ ],
+ "chapters": [
+  {
+   "at": "L1",
+   "title": "Your tax brackets move in 2027"
+  },
+  {
+   "at": "L6",
+   "title": "01 \u00b7 Why brackets move"
+  },
+  {
+   "at": "L10",
+   "title": "02 \u00b7 The new federal brackets"
+  },
+  {
+   "at": "L19",
+   "title": "03 \u00b7 What it means for you"
+  },
+  {
+   "at": "L30",
+   "title": "04 \u00b7 The provinces"
+  },
+  {
+   "at": "L37",
+   "title": "05 \u00b7 The three that stand still"
+  },
+  {
+   "at": "L46",
+   "title": "06 \u00b7 Families: CCB and the new groceries benefit"
+  },
+  {
+   "at": "L57",
+   "title": "07 \u00b7 Your paycheque and savings"
+  },
+  {
+   "at": "L63",
+   "title": "Checklist"
+  },
+  {
+   "at": "L69",
+   "title": "Verdict"
+  }
+ ],
+ "events": [
+  {
+   "at": "L1",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "shift",
+     "x": 0,
+     "y": 0,
+     "w": 1920,
+     "at": "L1",
+     "glass": false,
+     "fxIn": "fade",
+     "fxOut": "fade",
+     "inDur": 0.01,
+     "off": -1.0,
+     "bg": {
+      "src": "lf/lf28/plates/s1.jpg",
+      "depth": "lf/lf28/plates/s1_d.png",
+      "dim": 0.78
+     },
+     "kicker": "JANUARY 1, 2027 \u00b7 FEDERAL INDEXATION +2.6%",
+     "title": "YOUR TAX BRACKETS MOVE",
+     "b26": [
+      58523,
+      117045
+     ],
+     "b27": [
+      60044,
+      120088
+     ],
+     "rates": [
+      "14%",
+      "20.5%",
+      "26%"
+     ],
+     "max": 140000,
+     "salary": 75000,
+     "shiftAt": {
+      "at": "L1",
+      "word": "moves"
+     },
+     "t26": 9268,
+     "t27": 9109,
+     "saveAt": {
+      "at": "L2",
+      "word": "down"
+     },
+     "frozen": [
+      "BC",
+      "MB",
+      "PE"
+     ],
+     "frozenAt": {
+      "at": "L3",
+      "word": "three"
+     },
+     "frozenLabel": "PROVINCIAL BASIC AMOUNT FROZEN:",
+     "qAt": {
+      "at": "L4",
+      "word": "wins"
+     },
+     "question": "WHO WINS IN 2027?",
+     "out": {
+      "at": "L5",
+      "off": -0.9
+     }
+    }
+   ],
+   "off": -1.0
+  },
+  {
+   "at": "L5",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 360,
+     "w": 1600,
+     "at": "L5",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "SOURCES: CRA PAYROLL FORMULAS (JAN 2027) \u00b7 CANADA.CA",
+       "size": 44,
+       "at": "L5"
+      },
+      {
+       "text": "EXAMPLES, NOT REAL PEOPLE \u00b7 GENERAL INFO, NOT ADVICE",
+       "size": 40,
+       "at": "L5",
+       "word": "Examples"
+      }
+     ],
+     "kicker": "THE FINE PRINT"
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L6",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHY BRACKETS MOVE",
+       "size": 130,
+       "gold": true,
+       "at": "L6",
+       "word": "move"
+      }
+     ],
+     "kicker": "01"
+    }
+   ]
+  },
+  {
+   "at": "L7",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 270,
+     "w": 1600,
+     "at": "L7",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "INDEXED TO INFLATION \u00b7 EVERY YEAR",
+       "size": 60,
+       "at": "L7"
+      },
+      {
+       "anim": "morph",
+       "size": 150,
+       "gold": true,
+       "seq": [
+        {
+         "text": "2026",
+         "t": 0
+        },
+        {
+         "text": "2027 \u00b7 +2.6%",
+         "at": "L8",
+         "word": "two"
+        }
+       ],
+       "at": "L8"
+      },
+      {
+       "text": "EVERY BRACKET LINE + THE BASIC PERSONAL AMOUNT",
+       "size": 48,
+       "at": "L9",
+       "word": "basic"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L10",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L10",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE NEW FEDERAL BRACKETS",
+       "size": 110,
+       "gold": true,
+       "at": "L10",
+       "word": "brackets"
+      }
+     ],
+     "kicker": "02"
+    }
+   ]
+  },
+  {
+   "at": "L11",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 150,
+     "w": 1400,
+     "at": "L11",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "FEDERAL BRACKETS \u00b7 2027",
+     "items": [
+      {
+       "n": "14%",
+       "head": "UP TO $60,044",
+       "at": "L11",
+       "word": "Fourteen"
+      },
+      {
+       "n": "20.5%",
+       "head": "$60,044 \u2013 $120,088",
+       "at": "L12",
+       "word": "Twenty"
+      },
+      {
+       "n": "26%",
+       "head": "$120,088 \u2013 $186,157",
+       "at": "L13",
+       "word": "Twenty"
+      },
+      {
+       "n": "29%",
+       "head": "$186,157 \u2013 $265,203",
+       "at": "L14",
+       "word": "Twenty"
+      },
+      {
+       "n": "33%",
+       "head": "ABOVE $265,203",
+       "at": "L15",
+       "word": "thirty"
+      },
+      {
+       "n": "=",
+       "head": "SAME RATES \u00b7 ONLY THE LINES MOVE",
+       "at": "L16",
+       "word": "lines"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L17",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 280,
+     "w": 1600,
+     "at": "L17",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "lines": [
+      {
+       "text": "BASIC PERSONAL AMOUNT",
+       "size": 64,
+       "at": "L17"
+      },
+      {
+       "anim": "morph",
+       "size": 150,
+       "gold": true,
+       "seq": [
+        {
+         "text": "$16,452",
+         "t": 0
+        },
+        {
+         "text": "$16,879",
+         "at": "L17",
+         "word": "eight"
+        }
+       ],
+       "at": "L17"
+      },
+      {
+       "text": "+$427 TAX-FREE \u00b7 WORTH \u2248$60",
+       "size": 52,
+       "at": "L18",
+       "word": "Worth"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L19",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT IT MEANS FOR YOU",
+       "size": 120,
+       "gold": true,
+       "at": "L19",
+       "word": "mean"
+      }
+     ],
+     "kicker": "03"
+    }
+   ]
+  },
+  {
+   "at": "L20",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 290,
+     "w": 1400,
+     "at": "L20",
+     "fxIn": "glass",
+     "fxOut": "vapor",
+     "title": "SAME SALARY \u00b7 FEDERAL TAX SAVED IN 2027",
+     "sub": "FEDERAL ONLY \u00b7 BEFORE OTHER CREDITS",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "$50,000",
+       "value": 60
+      },
+      {
+       "name": "$75,000",
+       "value": 159
+      },
+      {
+       "name": "$100,000",
+       "value": 159
+      },
+      {
+       "name": "$150,000",
+       "value": 326
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L21",
+       "word": "fifty"
+      },
+      {
+       "at": "L22",
+       "word": "seventy"
+      },
+      {
+       "at": "L23",
+       "word": "hundred"
+      },
+      {
+       "at": "L24",
+       "word": "fifty"
+      }
+     ],
+     "note": "2026 vs 2027 TABLES \u00b7 CRA T4127"
+    }
+   ]
+  },
+  {
+   "at": "L25",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L25",
+     "fxIn": "slideR",
+     "fxOut": "collapse",
+     "title": "THE REAL POINT: A 2.6% RAISE",
+     "items": [
+      {
+       "n": "$",
+       "head": "$75,000 \u2192 $76,950",
+       "at": "L26",
+       "word": "seventy"
+      },
+      {
+       "n": "TAX",
+       "head": "$9,268 \u2192 $9,509 \u00b7 RISES IN STEP",
+       "at": "L27",
+       "word": "nine"
+      },
+      {
+       "n": "=",
+       "head": "INDEXING STOPS INFLATION PUSHING YOU UP A BRACKET",
+       "at": "L28",
+       "word": "stops"
+      },
+      {
+       "n": "!",
+       "head": "BRACKET CREEP \u00b7 NOT EVERY PROVINCE PROTECTS YOU",
+       "at": "L29",
+       "word": "creep"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L30",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE PROVINCES",
+       "size": 140,
+       "gold": true,
+       "at": "L30",
+       "word": "interesting"
+      }
+     ],
+     "kicker": "04"
+    }
+   ]
+  },
+  {
+   "at": "L31",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L31",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "PROVINCIAL INDEXING \u00b7 2027",
+     "items": [
+      {
+       "n": "ON",
+       "head": "+2.1% \u00b7 FIRST LINE $53,891 \u2192 $55,023 \u00b7 BASIC +$272",
+       "at": "L32",
+       "word": "Ontario"
+      },
+      {
+       "n": "AB",
+       "head": "+2% CAP \u00b7 FIRST LINE $61,200 \u2192 $62,424",
+       "at": "L33",
+       "word": "Alberta"
+      },
+      {
+       "n": "SK",
+       "head": "+2.6% + $500 \u00b7 BASIC $20,381 \u2192 $21,411",
+       "at": "L34",
+       "word": "Saskatchewan"
+      },
+      {
+       "n": "NS",
+       "head": "+3.5% \u00b7 BASIC $12,350",
+       "at": "L35",
+       "word": "Nova"
+      },
+      {
+       "n": "NB",
+       "head": "+2.6% \u00b7 BASIC $14,019",
+       "at": "L36",
+       "word": "Brunswick"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L37",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "THE THREE THAT STAND STILL",
+       "size": 110,
+       "gold": true,
+       "at": "L37",
+       "word": "still"
+      }
+     ],
+     "kicker": "05"
+    }
+   ]
+  },
+  {
+   "at": "L38",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 240,
+     "w": 1400,
+     "at": "L38",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "FROZEN IN 2027",
+     "items": [
+      {
+       "n": "BC",
+       "head": "INDEXING PAUSED \u00b7 2027\u20132030 AT 2026 LEVELS",
+       "at": "L38",
+       "word": "paused"
+      },
+      {
+       "n": "MB",
+       "head": "NOT INDEXED \u00b7 LINES STAY $47,000 / $100,000",
+       "at": "L39",
+       "word": "Manitoba"
+      },
+      {
+       "n": "PE",
+       "head": "BASIC AMOUNT STAYS $15,000",
+       "at": "L40",
+       "word": "Prince"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L41",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "split",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L41",
+     "fxIn": "slideR",
+     "fxOut": "vapor",
+     "title": "WHAT THE BIGGER BASIC AMOUNT IS WORTH \u00b7 2027",
+     "sub": "INCREASE \u00d7 LOWEST PROVINCIAL RATE",
+     "labelW": 520,
+     "fs": 36,
+     "vs": 52,
+     "noTotal": true,
+     "items": [
+      {
+       "name": "SASKATCHEWAN",
+       "value": 108
+      },
+      {
+       "name": "NOVA SCOTIA",
+       "value": 37
+      },
+      {
+       "name": "ALBERTA",
+       "value": 36
+      },
+      {
+       "name": "NEW BRUNSWICK",
+       "value": 33
+      },
+      {
+       "name": "ONTARIO",
+       "value": 14
+      },
+      {
+       "name": "BC \u00b7 MB \u00b7 PE",
+       "value": 0
+      }
+     ],
+     "rowAt": [
+      {
+       "at": "L42",
+       "word": "Saskatchewan"
+      },
+      {
+       "at": "L43",
+       "word": "Nova"
+      },
+      {
+       "at": "L43",
+       "word": "Alberta"
+      },
+      {
+       "at": "L43",
+       "word": "Brunswick"
+      },
+      {
+       "at": "L43",
+       "word": "Ontario"
+      },
+      {
+       "at": "L44",
+       "word": "zero"
+      }
+     ],
+     "note": "BC + MB: FROZEN BRACKETS \u2192 BRACKET CREEP ON A RAISE"
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L46",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "FAMILIES",
+       "size": 150,
+       "gold": true,
+       "at": "L46",
+       "word": "families"
+      }
+     ],
+     "kicker": "06"
+    }
+   ]
+  },
+  {
+   "at": "L47",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 140,
+     "w": 1400,
+     "at": "L47",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "CANADA CHILD BENEFIT \u00b7 JULY 2026 \u2013 JUNE 2027",
+     "items": [
+      {
+       "n": "$8,157",
+       "head": "PER CHILD UNDER 6 \u00b7 PER YEAR",
+       "at": "L48",
+       "word": "eight"
+      },
+      {
+       "n": "$6,883",
+       "head": "PER CHILD 6 TO 17 \u00b7 PER YEAR",
+       "at": "L49",
+       "word": "six"
+      },
+      {
+       "n": "$38,237",
+       "head": "FULL AMOUNT BELOW THIS FAMILY NET INCOME",
+       "at": "L50",
+       "word": "thirty"
+      },
+      {
+       "n": "2025",
+       "head": "BASED ON YOUR 2025 RETURN",
+       "at": "L51",
+       "word": "based"
+      },
+      {
+       "n": "JUL 27",
+       "head": "NEXT YEAR: BASED ON YOUR 2026 RETURN \u00b7 FILE ON TIME",
+       "at": "L52",
+       "word": "key"
+      },
+      {
+       "n": "$3,480",
+       "head": "CHILD DISABILITY BENEFIT \u00b7 UP TO, PER YEAR",
+       "at": "L53",
+       "word": "three"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L54",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 220,
+     "w": 1400,
+     "at": "L54",
+     "fxIn": "slideL",
+     "fxOut": "collapse",
+     "title": "GST CREDIT \u2192 CANADA GROCERIES AND ESSENTIALS BENEFIT",
+     "items": [
+      {
+       "n": "$679",
+       "head": "SINGLE \u00b7 UP TO",
+       "at": "L55",
+       "word": "six"
+      },
+      {
+       "n": "$890",
+       "head": "COUPLE \u00b7 UP TO",
+       "at": "L55",
+       "word": "eight"
+      },
+      {
+       "n": "$234",
+       "head": "PER CHILD UNDER 19 \u00b7 UP TO",
+       "at": "L55",
+       "word": "two"
+      },
+      {
+       "n": "+25%",
+       "head": "TEMPORARY INCREASE \u00b7 FIVE YEARS",
+       "at": "L56",
+       "word": "twenty"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L57",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L57",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "YOUR PAYCHEQUE",
+       "size": 140,
+       "gold": true,
+       "at": "L57",
+       "word": "paycheque"
+      }
+     ],
+     "kicker": "07"
+    }
+   ]
+  },
+  {
+   "at": "L58",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 170,
+     "w": 1400,
+     "at": "L58",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "JANUARY 2027 \u00b7 CPP \u00b7 EI \u00b7 SAVINGS",
+     "items": [
+      {
+       "n": "CPP",
+       "head": "FIRST CEILING $76,700 \u00b7 SECOND $87,400",
+       "at": "L58",
+       "word": "ceiling"
+      },
+      {
+       "n": "EI",
+       "head": "$1.64 PER $100 \u00b7 UP TO $70,800 \u00b7 MAX $1,161.12",
+       "at": "L59",
+       "word": "sixty"
+      },
+      {
+       "n": "JAN",
+       "head": "ABOVE THE CEILINGS? JANUARY PAY CAN BE SMALLER THAN DECEMBER",
+       "at": "L60",
+       "word": "smaller"
+      },
+      {
+       "n": "RRSP",
+       "head": "2027 DOLLAR LIMIT $35,390",
+       "at": "L61",
+       "word": "limit"
+      },
+      {
+       "n": "TFSA",
+       "head": "2027 LIMIT NOT YET ON CANADA.CA WHEN CHECKED",
+       "at": "L62",
+       "word": "yet"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L63",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 180,
+     "w": 1400,
+     "at": "L63",
+     "fxIn": "stagger",
+     "fxOut": "collapse",
+     "title": "YOUR 2027 CHECKLIST",
+     "items": [
+      {
+       "n": "1",
+       "head": "JANUARY PAYCHEQUE \u00b7 CPP + EI START OVER",
+       "at": "L64",
+       "word": "One"
+      },
+      {
+       "n": "2",
+       "head": "BC \u00b7 MB \u00b7 PE: LESS PROVINCIAL INFLATION RELIEF",
+       "at": "L65",
+       "word": "Two"
+      },
+      {
+       "n": "3",
+       "head": "FAMILIES: FILE 2026 ON TIME \u2192 CCB FROM JULY 2027",
+       "at": "L66",
+       "word": "Three"
+      },
+      {
+       "n": "4",
+       "head": "NEW GROCERIES BENEFIT \u00b7 BASED ON YOUR RETURN",
+       "at": "L67",
+       "word": "Four"
+      },
+      {
+       "n": "5",
+       "head": "NEW RRSP LIMIT \u00b7 TFSA WHEN ANNOUNCED",
+       "at": "L68",
+       "word": "Five"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L69",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 330,
+     "w": 1600,
+     "at": "L69",
+     "glass": false,
+     "fxIn": "focus",
+     "fxOut": "wipe",
+     "lines": [
+      {
+       "anim": "decode",
+       "text": "WHAT DID WE LEARN?",
+       "size": 140,
+       "gold": true,
+       "at": "L69",
+       "word": "learn"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "at": "L70",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "steps",
+     "x": 260,
+     "y": 200,
+     "w": 1400,
+     "at": "L70",
+     "fxIn": "glass",
+     "fxOut": "collapse",
+     "title": "2027 \u00b7 4 RULES",
+     "items": [
+      {
+       "n": "1",
+       "head": "FEDERAL LINES + BASIC AMOUNT +2.6% \u00b7 SAME RATES",
+       "at": "L70",
+       "word": "One"
+      },
+      {
+       "n": "2",
+       "head": "SAME SALARY \u2192 A LITTLE LESS FEDERAL TAX",
+       "at": "L71",
+       "word": "Two"
+      },
+      {
+       "n": "3",
+       "head": "PROVINCES DIFFER \u00b7 SK +$500 \u00b7 BC/MB/PE FROZEN",
+       "at": "L72",
+       "word": "Three"
+      },
+      {
+       "n": "4",
+       "head": "FAMILIES: CCB + GROCERIES BENEFIT START WITH FILING",
+       "at": "L73",
+       "word": "Four"
+      }
+     ],
+     "dimOthers": true
+    }
+   ]
+  },
+  {
+   "at": "L74",
+   "type": "scene",
+   "panels": [
+    {
+     "type": "khero",
+     "x": 160,
+     "y": 300,
+     "w": 1600,
+     "at": "L74",
+     "glass": false,
+     "fxIn": "glass",
+     "fxOut": "fade",
+     "lines": [
+      {
+       "anim": "morph",
+       "size": 96,
+       "gold": true,
+       "seq": [
+        {
+         "text": "TAX BRACKETS 2027",
+         "t": 0
+        },
+        {
+         "text": "BENEFITS AGING PARENTS MISS",
+         "at": "L74",
+         "word": "benefits"
+        }
+       ],
+       "at": "L74"
+      },
+      {
+       "text": "NEXT ON TAX SECRETS CANADA",
+       "size": 50,
+       "at": "L74",
+       "word": "Subscribe"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "at": "L1",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 0,
+     "y": 20,
+     "z": 0.05
+    },
+    {
+     "x": 0,
+     "y": -20,
+     "z": 0.3
+    }
+   ]
+  },
+  {
+   "at": "L6",
+   "plate": "s1",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L10",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L19",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.25
+    }
+   ]
+  },
+  {
+   "at": "L30",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": -40,
+     "y": 0,
+     "z": 0.05
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.18
+    }
+   ]
+  },
+  {
+   "at": "L37",
+   "plate": "s4",
+   "cam": [
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    },
+    {
+     "x": -30,
+     "y": 10,
+     "z": 0.05
+    }
+   ]
+  },
+  {
+   "at": "L46",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": 40,
+     "y": 10,
+     "z": 0.1
+    },
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L54",
+   "plate": "s6",
+   "cam": [
+    {
+     "x": 50,
+     "y": 0,
+     "z": 0.12
+    },
+    {
+     "x": -50,
+     "y": 0,
+     "z": 0.12
+    }
+   ]
+  },
+  {
+   "at": "L57",
+   "plate": "s5",
+   "cam": [
+    {
+     "x": -30,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": 30,
+     "y": 0,
+     "z": 0.2
+    }
+   ]
+  },
+  {
+   "at": "L63",
+   "plate": "s3",
+   "cam": [
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.0
+    },
+    {
+     "x": 40,
+     "y": -10,
+     "z": 0.15
+    }
+   ]
+  },
+  {
+   "at": "L69",
+   "plate": "s2",
+   "cam": [
+    {
+     "x": 40,
+     "y": 0,
+     "z": 0.0
+    },
+    {
+     "x": -40,
+     "y": 10,
+     "z": 0.15
+    }
+   ]
+  }
+ ],
+ "plates": {
+  "s1": {
+   "photo": {
+    "src": "lf/lf28/plates/s1.jpg",
+    "depth": "lf/lf28/plates/s1_d.png",
+    "amt": 0.05
+   }
+  },
+  "s2": {
+   "photo": {
+    "src": "lf/lf28/plates/s2.jpg",
+    "depth": "lf/lf28/plates/s2_d.png",
+    "amt": 0.05
+   }
+  },
+  "s3": {
+   "photo": {
+    "src": "lf/lf28/plates/s3.jpg",
+    "depth": "lf/lf28/plates/s3_d.png",
+    "amt": 0.05
+   }
+  },
+  "s4": {
+   "photo": {
+    "src": "lf/lf28/plates/s4.jpg",
+    "depth": "lf/lf28/plates/s4_d.png",
+    "amt": 0.05
+   }
+  },
+  "s5": {
+   "photo": {
+    "src": "lf/lf28/plates/s5.jpg",
+    "depth": "lf/lf28/plates/s5_d.png",
+    "amt": 0.05
+   }
+  },
+  "s6": {
+   "photo": {
+    "src": "lf/lf28/plates/s6.jpg",
+    "depth": "lf/lf28/plates/s6_d.png",
+    "amt": 0.05
+   }
+  }
+ },
+ "sfx": [
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L1"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L5"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L7"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L10"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L11"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L11",
+   "word": "Fourteen"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L12",
+   "word": "Twenty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L13",
+   "word": "Twenty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L14",
+   "word": "Twenty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L15",
+   "word": "thirty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L16",
+   "word": "lines"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L17"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L19"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L20"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L21",
+   "word": "fifty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L22",
+   "word": "seventy"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L23",
+   "word": "hundred"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L24",
+   "word": "fifty"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L25"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L26",
+   "word": "seventy"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L27",
+   "word": "nine"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L28",
+   "word": "stops"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L29",
+   "word": "creep"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L30"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L31"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L32",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L33",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L34",
+   "word": "Saskatchewan"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L35",
+   "word": "Nova"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L36",
+   "word": "Brunswick"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L37"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L38"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L38",
+   "word": "paused"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L39",
+   "word": "Manitoba"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L40",
+   "word": "Prince"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L41"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L42",
+   "word": "Saskatchewan"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "Nova"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "Alberta"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "Brunswick"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L43",
+   "word": "Ontario"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L44",
+   "word": "zero"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L46"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L47"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L48",
+   "word": "eight"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L49",
+   "word": "six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L50",
+   "word": "thirty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L51",
+   "word": "based"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L52",
+   "word": "key"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L53",
+   "word": "three"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L54"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L55",
+   "word": "six"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L55",
+   "word": "eight"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L55",
+   "word": "two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L56",
+   "word": "twenty"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L57"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L58"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L58",
+   "word": "ceiling"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L59",
+   "word": "sixty"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L60",
+   "word": "smaller"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L61",
+   "word": "limit"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L62",
+   "word": "yet"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L63"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L64",
+   "word": "One"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L65",
+   "word": "Two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L66",
+   "word": "Three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L67",
+   "word": "Four"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L68",
+   "word": "Five"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L69"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L70"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L70",
+   "word": "One"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L71",
+   "word": "Two"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L72",
+   "word": "Three"
+  },
+  {
+   "name": "tick",
+   "vol": 0.12,
+   "at": "L73",
+   "word": "Four"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.09,
+   "at": "L74"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.22,
+   "at": "L1",
+   "word": "moves"
+  },
+  {
+   "name": "chime",
+   "vol": 0.18,
+   "at": "L2",
+   "word": "down"
+  },
+  {
+   "name": "thump",
+   "vol": 0.22,
+   "at": "L3",
+   "word": "three"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L6"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L10"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L19"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L30"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L37"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L46"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L54"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L57"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L63"
+  },
+  {
+   "name": "whoosh",
+   "vol": 0.06,
+   "at": "L69"
+  }
+ ],
+ "ticker": [
+  "FEDERAL INDEXATION 2027: +2.6%",
+  "FEDERAL BRACKETS 2027: $60,044 \u00b7 $120,088 \u00b7 $186,157 \u00b7 $265,203",
+  "BASIC PERSONAL AMOUNT $16,452 \u2192 $16,879",
+  "BC \u00b7 MB \u00b7 PE: PROVINCIAL BASIC AMOUNT FROZEN",
+  "CCB UNDER 6: $8,157/YR \u00b7 6\u201317: $6,883/YR",
+  "RRSP 2027 LIMIT $35,390"
+ ],
+ "audio": "lf/lf28/mix.wav",
+ "music": "music.wav",
+ "musicVol": 0.05
+}
