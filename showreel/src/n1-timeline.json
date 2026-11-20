@@ -1,0 +1,47 @@
+{
+ "total": 67.225,
+ "beats": [
+  {
+   "id": "hook",
+   "text": "On January first, twenty twenty-seven, Ottawa lets you earn more before federal tax. Manitoba doesn't.",
+   "start": 0.25,
+   "end": 8.135
+  },
+  {
+   "id": "c1",
+   "text": "The federal basic personal amount rises from sixteen thousand four hundred fifty-two dollars to sixteen thousand eight hundred seventy-nine. The brackets move up too.",
+   "start": 8.485,
+   "end": 20.321
+  },
+  {
+   "id": "c2",
+   "text": "That's four hundred twenty-seven dollars more tax-free. At fourteen percent, about sixty dollars less federal tax.",
+   "start": 20.621,
+   "end": 30.131
+  },
+  {
+   "id": "c3",
+   "text": "Plus a proposed cut: the base CPP rate drops from four point nine five to four point seven five percent. Up to one hundred forty-six dollars a year back on your pay.",
+   "start": 30.431,
+   "end": 44.548
+  },
+  {
+   "id": "reveal",
+   "text": "The catch in Manitoba: no indexing for twenty twenty-seven. The provincial basic amount stays at fifteen thousand seven hundred eighty.",
+   "start": 44.848,
+   "end": 54.447
+  },
+  {
+   "id": "action",
+   "text": "Check your first pay stub in January, and update your TD1 if your situation changed.",
+   "start": 54.747,
+   "end": 59.756
+  },
+  {
+   "id": "cta",
+   "text": "Next: part-time or full-time, what you really keep. Follow so you don't miss it.",
+   "start": 60.056,
+   "end": 66.925
+  }
+ ]
+}

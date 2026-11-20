@@ -1,0 +1,200 @@
+{
+ "id": "n1",
+ "hook": {
+  "l1": "2027: TAX-FREE AMOUNT UP",
+  "l2": "MANITOBA? FROZEN"
+ },
+ "hold_after_vo": 0.5,
+ "music": "pension",
+ "layout": {
+  "hook_text": {
+   "box": [
+    80,
+    440,
+    880,
+    800
+   ],
+   "from": "start",
+   "to": "c1"
+  },
+  "chips": {
+   "box": [
+    80,
+    620,
+    880,
+    660
+   ],
+   "from": "c1",
+   "to": "reveal"
+  },
+  "split": {
+   "box": [
+    80,
+    660,
+    880,
+    560
+   ],
+   "from": "reveal",
+   "to": "action"
+  },
+  "end": {
+   "box": [
+    80,
+    700,
+    880,
+    560
+   ],
+   "from": "action",
+   "to": "end"
+  },
+  "captions": {
+   "box": [
+    80,
+    1296,
+    880,
+    120
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "titles": {
+   "box": [
+    80,
+    176,
+    920,
+    110
+   ],
+   "from": "c1",
+   "to": "action"
+  },
+  "header": {
+   "box": [
+    80,
+    92,
+    920,
+    50
+   ],
+   "from": "start",
+   "to": "end"
+  }
+ },
+ "cues": [
+  {
+   "id": "more",
+   "beat": "hook",
+   "word": "more",
+   "sfx": "tick"
+  },
+  {
+   "id": "doesnt",
+   "beat": "hook",
+   "word": "doesn't.",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "c1",
+   "beat": "c1",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "rises",
+   "beat": "c1",
+   "word": "rises",
+   "sfx": "chime"
+  },
+  {
+   "id": "brackets",
+   "beat": "c1",
+   "word": "brackets",
+   "sfx": "tick"
+  },
+  {
+   "id": "c2",
+   "beat": "c2",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "sixty",
+   "beat": "c2",
+   "word": "sixty",
+   "sfx": "chime"
+  },
+  {
+   "id": "c3",
+   "beat": "c3",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "drops",
+   "beat": "c3",
+   "word": "drops",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "onefortysix",
+   "beat": "c3",
+   "word": "forty-six",
+   "sfx": [
+    "riser",
+    "impact"
+   ],
+   "dur": 0.45,
+   "gain": 0.65
+  },
+  {
+   "id": "reveal",
+   "beat": "reveal",
+   "at": 0,
+   "sfx": "swish"
+  },
+  {
+   "id": "noindex",
+   "beat": "reveal",
+   "word": "indexing",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "stays",
+   "beat": "reveal",
+   "word": "stays",
+   "sfx": "chime"
+  },
+  {
+   "id": "td1",
+   "beat": "action",
+   "word": "TD1",
+   "sfx": "tick"
+  },
+  {
+   "id": "next",
+   "beat": "cta",
+   "word": "Next:",
+   "sfx": "whoosh"
+  },
+  {
+   "id": "follow",
+   "beat": "cta",
+   "word": "Follow"
+  },
+  {
+   "id": "cover",
+   "beat": "c3",
+   "word": "forty-six",
+   "offset": 1.4
+  },
+  {
+   "id": "logo",
+   "end": true,
+   "offset": 0.1,
+   "sfx": "logo"
+  }
+ ]
+}

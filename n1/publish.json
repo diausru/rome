@@ -1,0 +1,52 @@
+{
+ "video": {
+  "title": "N1 · 2027: federal amounts indexed, Manitoba frozen (news)"
+ },
+ "cover": {
+  "frame": "CPP 4.95% → 4.75% with stamp 'UP TO $146/YR BACK'",
+  "why": "number + payoff"
+ },
+ "sources": [
+  {
+   "source": "CRA T4127-JAN 124th ed.",
+   "year": "2027",
+   "supports": "BPA $16,879, $60,044 threshold, MB no indexing, MB BPA $15,780, CPP 4.75% proposed, YMPE/exemption"
+  },
+  {
+   "source": "canada.ca indexation + current-year rates",
+   "year": "2026",
+   "supports": "BPA $16,452, $58,523 threshold"
+  }
+ ],
+ "yt": {
+  "titles": [
+   "2027 Tax Changes Canada: Manitoba Gets Nothing?",
+   "Basic Personal Amount 2027: $16,879 (Manitoba Frozen)",
+   "CPP Cut 2027 + New Tax Brackets Explained"
+  ],
+  "description": "2027 tax changes: federal amounts are indexed, Manitoba's are not.\n\n• Federal basic personal amount (max): $16,452 (2026) → $16,879 (2027). +$427 × 14% ≈ $60 less federal tax.\n• First federal bracket ends at $60,044 in 2027 (was $58,523).\n• Proposed: the base CPP rate falls from 4.95% to 4.75% (employee). 0.20% × ($76,700 − $3,500) = up to $146.40 a year. Only if enacted as proposed.\n• Manitoba: no indexing for 2027. The provincial basic personal amount stays $15,780.\n\nCheck your first 2027 pay stub and update your TD1 / TD1MB if your situation changed.\n\nNext: part-time vs full-time, what you really keep.\n\nSources: CRA T4127 Payroll Deductions Formulas, 124th ed., effective Jan 1 2027; canada.ca 2026 tax rates and indexation pages. Example. General information, not advice.\n\n#CanadaTax #Manitoba #Tax2027",
+  "hashtags": "#CanadaTax #Manitoba #Tax2027 #CPP",
+  "keywords": "2027 tax brackets canada, basic personal amount 2027, manitoba tax 2027, cpp 2027 rate, t4127 2027",
+  "pinned": "Is the CPP cut law yet? Not until enacted. General info, not advice.",
+  "cta": "Follow for the next one: part-time vs full-time."
+ },
+ "tt": {
+  "caption": "2027: Ottawa raises your tax-free amount to $16,879. Manitoba? Frozen at $15,780 ❄️ Plus a proposed CPP cut.",
+  "keywords": "2027 tax changes canada · manitoba tax · cpp 2027",
+  "hashtags": "#canadiantaxes #manitoba #winnipeg #personalfinancecanada #tax2027",
+  "pinned": "CPP cut = proposed, not law yet. (General info, not advice.)",
+  "cta": "Follow for the next one: part-time vs full-time."
+ },
+ "ig": {
+  "caption": "2027 tax changes 🇨🇦\n\n↑ Federal BPA: $16,452 → $16,879 (≈ $60 less tax)\n↑ First bracket ends at $60,044\n↓ CPP base rate 4.95% → 4.75% (proposed): up to $146/yr\n❄️ Manitoba: no indexing, BPA stays $15,780\n\nCheck your first 2027 pay stub.\n\nSource: CRA T4127 (Jan 2027). General info, not advice.",
+  "keywords": "2027 tax changes, manitoba tax, cpp 2027",
+  "hashtags": "#canadiantaxes #manitoba #winnipeg #tax2027",
+  "pinned": "Save this for January 📌",
+  "cta": "Send to someone in Manitoba."
+ },
+ "eng": {
+  "question": "Will you feel $60 on your paycheque?",
+  "save": "2027 numbers.",
+  "share": "Manitobans."
+ }
+}

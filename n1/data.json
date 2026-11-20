@@ -1,0 +1,23 @@
+{
+ "topic": "2027 indexation: federal BPA and brackets up, Manitoba not indexed, proposed CPP base rate cut",
+ "tax_year": "2026 vs 2027",
+ "example": {
+  "bpa26": 16452,
+  "bpa27": 16879,
+  "diff": 427,
+  "rate": 0.14,
+  "saving": 59.78,
+  "cpp_old": 0.0495,
+  "cpp_new": 0.0475,
+  "ymce": 73200,
+  "cpp_saving": 146.4,
+  "mb_bpa": 15780,
+  "note": "example: 427 x 14% = 59.78 (max BPA, federal only, NI under $186,157). CPP: (4.95%-4.75%) x (76,700-3,500) = 0.002 x 73,200 = 146.40 max per employee, if enacted."
+ },
+ "sources": {
+  "t4127_27": "CRA T4127-JAN 124th Edition, effective Jan 1 2027 (page 2026-11-19): BPAF $16,879 max ($15,214 at NI >= $265,203); 'No indexing applies to British Columbia, Manitoba and Prince Edward Island'; BPAMB $15,780; base CPP 4.95% -> 4.75% announced Apr 28 2026, 'if enacted as proposed'; YMPE $76,700, basic exemption $3,500; first federal threshold 60,044 (Table 8.1)",
+  "index26": "canada.ca Adjustment of personal income tax and benefit amounts (2026-03-12): BPA max $16,452 for 2026",
+  "rates26": "canada.ca current-year tax rates (2026-06-25): federal 2026 first bracket $58,523, rate 14%"
+ },
+ "verify": "Manitoba thresholds: canada.ca 2026 page shows $47,564/$101,200 but T4127 table summary shows 47,000/100,000. NOT used in the reel."
+}
