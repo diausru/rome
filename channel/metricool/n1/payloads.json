@@ -1,0 +1,117 @@
+[
+ {
+  "net": "tiktok",
+  "h": 10,
+  "info": {
+   "autoPublish": true,
+   "draft": false,
+   "descendants": [],
+   "shortener": false,
+   "smartLinkData": {
+    "ids": []
+   },
+   "media": [
+    "https://drive.google.com/file/d/1opDJrIUi3qOjhXceIu09iej9tIFkumL-/view?usp=drivesdk"
+   ],
+   "mediaAltText": [],
+   "hasNotReadNotes": false,
+   "publicationDate": {
+    "dateTime": "2026-11-27T10:00:00",
+    "timezone": "America/Winnipeg"
+   },
+   "providers": [
+    {
+     "network": "tiktok"
+    }
+   ],
+   "text": "2027: Ottawa raises your tax-free amount to $16,879. Manitoba? Frozen at $15,780 ❄️ Plus a proposed CPP cut.\n\nFull-length breakdowns on YouTube: search Tax Secrets Canada · Instagram: styleofcanada\n\n#canadiantaxes #manitoba #winnipeg #personalfinancecanada #tax2027",
+   "firstCommentText": "CPP cut = proposed, not law yet. (General info, not advice.)",
+   "videoCoverMilliseconds": 42600,
+   "tiktokData": {
+    "privacyOption": "PUBLIC_TO_EVERYONE",
+    "title": "2027 Tax Changes Canada: Manitoba Gets Nothing?",
+    "photoCoverIndex": 0,
+    "isAigc": true
+   }
+  }
+ },
+ {
+  "net": "instagram",
+  "h": 11,
+  "info": {
+   "autoPublish": true,
+   "draft": false,
+   "descendants": [],
+   "shortener": false,
+   "smartLinkData": {
+    "ids": []
+   },
+   "media": [
+    "https://drive.google.com/file/d/1opDJrIUi3qOjhXceIu09iej9tIFkumL-/view?usp=drivesdk"
+   ],
+   "mediaAltText": [],
+   "hasNotReadNotes": false,
+   "publicationDate": {
+    "dateTime": "2026-11-27T11:00:00",
+    "timezone": "America/Winnipeg"
+   },
+   "providers": [
+    {
+     "network": "instagram"
+    }
+   ],
+   "text": "2027 tax changes 🇨🇦\n\n↑ Federal BPA: $16,452 → $16,879 (≈ $60 less tax)\n↑ First bracket ends at $60,044\n↓ CPP base rate 4.95% → 4.75% (proposed): up to $146/yr\n❄️ Manitoba: no indexing, BPA stays $15,780\n\nCheck your first 2027 pay stub.\n\nSource: CRA T4127 (Jan 2027). General info, not advice.\n\n🎥 Full-length breakdowns on YouTube: search Tax Secrets Canada\n🎵 TikTok: taxsecretscanada\n\n#canadiantaxes #manitoba #winnipeg #tax2027",
+   "firstCommentText": "Save this for January 📌",
+   "videoCoverMilliseconds": 42600,
+   "instagramData": {
+    "type": "REEL",
+    "showReelOnFeed": true,
+    "isAiGenerated": true
+   }
+  }
+ },
+ {
+  "net": "youtube",
+  "h": 17,
+  "info": {
+   "autoPublish": true,
+   "draft": false,
+   "descendants": [],
+   "shortener": false,
+   "smartLinkData": {
+    "ids": []
+   },
+   "media": [
+    "https://drive.google.com/file/d/1opDJrIUi3qOjhXceIu09iej9tIFkumL-/view?usp=drivesdk"
+   ],
+   "mediaAltText": [],
+   "hasNotReadNotes": false,
+   "publicationDate": {
+    "dateTime": "2026-11-27T17:00:00",
+    "timezone": "America/Winnipeg"
+   },
+   "providers": [
+    {
+     "network": "youtube"
+    }
+   ],
+   "text": "2027 tax changes: federal amounts are indexed, Manitoba's are not.\n\n• Federal basic personal amount (max): $16,452 (2026) → $16,879 (2027). +$427 × 14% ≈ $60 less federal tax.\n• First federal bracket ends at $60,044 in 2027 (was $58,523).\n• Proposed: the base CPP rate falls from 4.95% to 4.75% (employee). 0.20% × ($76,700 − $3,500) = up to $146.40 a year. Only if enacted as proposed.\n• Manitoba: no indexing for 2027. The provincial basic personal amount stays $15,780.\n\nCheck your first 2027 pay stub and update your TD1 / TD1MB if your situation changed.\n\nNext: part-time vs full-time, what you really keep.\n\nMore quick tax checks on TikTok (taxsecretscanada) and Instagram (styleofcanada).\n\nSources: CRA T4127 Payroll Deductions Formulas, 124th ed., effective Jan 1 2027; canada.ca 2026 tax rates and indexation pages. Example. General information, not advice.\n\n#CanadaTax #Manitoba #Tax2027",
+   "firstCommentText": "Is the CPP cut law yet? Not until enacted. General info, not advice.",
+   "youtubeData": {
+    "title": "2027 Tax Changes Canada: Manitoba Gets Nothing?",
+    "type": "short",
+    "privacy": "public",
+    "tags": [
+     "2027 tax brackets canada",
+     "basic personal amount 2027",
+     "manitoba tax 2027",
+     "cpp 2027 rate",
+     "t4127 2027"
+    ],
+    "category": "EDUCATION",
+    "madeForKids": false,
+    "isAiGeneratedContent": true
+   }
+  }
+ }
+]
