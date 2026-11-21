@@ -11,6 +11,9 @@ Template episode: `longform/lf12-bonus/` (copy data.py/lines.py/gen_episode.py, 
 - Economy: no polling/monitors; one stills sheet before render, one contact sheet after; short outputs; one commit per milestone; report in Russian, ≤10 lines.
 - Never: Metricool without command; `mv` to /dev/null; `pkill -f` matching own shell.
 
+## Research standard (user, 2026-11-20)
+For tax facts follow `channel/RESEARCH-BRIEF-2026-27.md` (official primary documents, dated, section-level; discrepancies explained; open discrepancies listed there).
+
 ## Hook module (user, 2026-11-19, mandatory from LF-27)
 Before step 2 read the APPLY block of `channel/HOOK-ENGINEERING.md`: 5 hook concepts (≥3 formats) + score table + chosen 0–4 s timeline + story chain + 10-question QC → BLUEPRINT.md. Script L1–L3 = the chosen hook ("start from the end": the payoff/number first). Still = plate + code motion (no AI video).
 
