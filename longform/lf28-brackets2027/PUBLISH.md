@@ -1,7 +1,7 @@
 # LF-28 — PUBLISH PACKAGE (YouTube long-form) — URGENT
 **QC (2026-11-21):** 593.2 s (9:53), −13.8 LUFS, no black frames, contact sheet checked.
 **File:** `LF28-1080p.mp4` · 1920×1080 · 30 fps · ≈9:53 · VO Grady (74 lines) · AAC
-**Status:** rendered, NOT scheduled (Metricool only on command).
+**Status:** SCHEDULED in Metricool (user command 2026-11-21): YouTube public video, 2026-11-27 14:00 America/Winnipeg, post id 436294442, autoPublish, cover 12 s.
 **Intro type:** ShiftHook (new). **Thumbnail:** made by the user.
 
 ## Titles
