@@ -1,5 +1,5 @@
 # LF-28 — PUBLISH PACKAGE (YouTube long-form) — URGENT
-**QC:** pending render.
+**QC (2026-11-21):** 593.2 s (9:53), −13.8 LUFS, no black frames, contact sheet checked.
 **File:** `LF28-1080p.mp4` · 1920×1080 · 30 fps · ≈9:53 · VO Grady (74 lines) · AAC
 **Status:** rendered, NOT scheduled (Metricool only on command).
 **Intro type:** ShiftHook (new). **Thumbnail:** made by the user.
