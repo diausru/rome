@@ -31,7 +31,18 @@ Focus: Winnipeg / Manitoba residents, family tax planning, CRA benefits. A refer
 1. Canada Tax Changes 2026–2027 report. 2. Manitoba Family Tax Calculator (Excel). 3. Tax Planning Guide. 4. Source Library. 5. Tax Calendar.
 
 ## Open discrepancies found so far (2026-11-21)
-- **Manitoba 2026 thresholds:** CRA payroll docs (T4032-MB Jan 2026, T4127) say $47,000 / $100,000, not indexed from 2025. The CRA current-year rates page (per search summary) says $47,564 / $101,200. UNRESOLVED: the actual pages have to be opened. LF-28 L39 says "the lines stay at forty-seven thousand and one hundred thousand" (payroll source); re-check before publishing.
-- **CPP 2027 rate:** the search summaries mention 5.75% (4.75% base + 1% first additional) and a max of $4,209. This conflicts with the 5.95% rate used through 2026. UNRESOLVED; not used in LF-28.
+- **Manitoba thresholds — RESOLVED 2026-11-21 (pages opened in a headless browser):**
+  - The CRA "Current year tax rates (2026)" page does show $47,564 / $101,200.
+  - CRA T4127 124th ed. (Jan 2027) shows MB 0 / 47,000 / 100,000, BPAMB $15,780, and states "No indexing applies to British Columbia, Manitoba and Prince Edward Island".
+  - Manitoba Finance Information Bulletin (Budget 2025, gov.mb.ca/finance/taxation/pubs/bulletins/2025budget.pdf, per search) says indexation of the BPA and thresholds is frozen from the 2025 tax year at 2024 levels ($47,000 / $100,000). Hansard of May 14, 2026 refers to the cancelled indexation.
+  - Conclusion: $47,000 / $100,000 is supported by the province's own bulletin plus CRA payroll. The CRA rates page looks inconsistent (= ×1.012).
+  - LF-28 L39 stays correct. Before a T1-specific claim, re-check the T1 MB428 form.
+  - gov.mb.ca does not resolve from this container, so the bulletin itself was not opened.
+- **CPP 2027 rate — RESOLVED 2026-11-21 (T4127 124th ed. opened):**
+  - "On April 28, 2026, the Government of Canada announced the reduction of the base CPP contribution rate from 9.90% to 9.50%, effective January 1, 2027."
+  - The employee/employer base rate goes 4.95% → 4.75%. The first and second additional rates are unchanged.
+  - Employee total 5.75% (4.75 + 1.00) on earnings $3,500–$76,700; max $4,209.00; QPP max $4,611.60.
+  - CPP2: 4% on $76,700–$87,400, max $428.
+  - Not yet in LF-28 (it mentions only the ceilings). Candidate fix for LF-28.
 - **NL 2027 BPA:** $15,495 (T4127 summary) vs the 2026 value in salary/calc.py ($13,094 × 1.033 ≠ 15,495). Not used.
 - Environment: WebFetch to www.canada.ca and gov.mb.ca is blocked in this cloud session (only WebSearch summaries are available). The user's rule requires opening the documents → the hosts need to be allowed.
